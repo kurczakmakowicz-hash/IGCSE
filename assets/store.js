@@ -124,7 +124,10 @@ window.Store = (function () {
     version: 1,
     confidence: {},   // itemId -> 0 | 1 | 2
     cards: {},        // itemId -> SRS card
-    settings: { examDate: '2027-05-10', theme: 'auto', vocabDirection: 'fr-en', vocabMode: 'type' },
+    settings: {
+      examDate: '2027-05-10', theme: 'auto', vocabDirection: 'fr-en', vocabMode: 'type',
+      speechAuto: true, speechRate: 0.9, speechVoice: ''
+    },
     log: {}           // 'YYYY-MM-DD' -> number of reviews
   };
 

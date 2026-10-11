@@ -114,6 +114,23 @@ const forms = Match.verbAnswers(["j'ai", 'je suis allée', 'nous nous levons', '
 });
 check(forms.indexOf('levons') < 0, 'reflexive pronoun is not optional');
 
+console.log('\nReading aloud: what gets spoken');
+const Speech = require('../assets/speech.js');
+[
+  ['château (m)', 'château'],
+  ['beau/belle (adj)', 'beau, belle'],
+  ['lent(e) (adj)', 'lent, lente'],
+  ['ennuyeux/euse (adj)', 'ennuyeux, ennuyeuse'],
+  ['(aller à la) pêche (f)', 'aller à la pêche'],
+  ['grandes vacances (f pl)', 'grandes vacances'],
+  ['le lundi/le mardi… etc (adv)', 'le lundi, le mardi'],
+  ['Je ne mange **jamais** de viande.', 'Je ne mange jamais de viande.'],
+].forEach(function (c) { eq(Speech.speakable(c[0]), c[1], 'speaks ' + JSON.stringify(c[0])); });
+eq(Speech.speakableRow('il est allé · elle est allée · on est allé(e)(s)'), 'il est allé, elle est allée, on est allé',
+  'table row drops (e)(s) shorthand');
+eq(Speech.speakableRow('nous sommes allé(e)s'), 'nous sommes allés', 'table row plural shorthand');
+check(Speech.supported === false, 'no speech engine outside a browser: buttons are simply not shown');
+
 console.log('\nGenerated French data');
 require('../data/french.js');
 require('../data/french_verbs.js');

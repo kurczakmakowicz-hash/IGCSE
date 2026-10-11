@@ -331,9 +331,27 @@
   function frenchTabs(active) {
     var tabs = [['overview', '#/s/french', 'Overview'], ['vocab', '#/vocab', 'Vocabulary'],
       ['grammar', '#/grammar', 'Grammar'], ['verbs', '#/verbs', 'Verbs']];
-    return el('nav.tabs', { 'aria-label': 'French sections' }, tabs.map(function (t) {
+    var nav = el('nav.tabs', { 'aria-label': 'French sections' }, tabs.map(function (t) {
       return el('a', { href: t[1], text: t[2], class: t[0] === active ? 'on' : null });
     }));
+    if (Speech.supported) {
+      var toggle = el('button.speech-toggle', { type: 'button', onclick: function () {
+        S.setSetting('speechAuto', !S.settings().speechAuto);
+        paint();
+        if (S.settings().speechAuto) Speech.say('Lecture automatique activée.');
+        else Speech.stop();
+      } });
+      var paint = function () {
+        var on = S.settings().speechAuto;
+        toggle.textContent = on ? '🔊 Read aloud: on' : '🔇 Read aloud: off';
+        toggle.setAttribute('aria-pressed', String(on));
+        toggle.title = on ? 'French is read out automatically. Click to read only when you press 🔊.'
+          : 'French is read only when you press 🔊. Click to read it out automatically.';
+      };
+      paint();
+      nav.appendChild(toggle);
+    }
+    return nav;
   }
 
   function dueIn(items) {
@@ -617,6 +635,35 @@
     return span;
   }
 
+  /* ---------- reading French aloud ---------- */
+
+  var Speech = window.Speech;
+
+  function applySpeechSettings() {
+    Speech.configure({ voice: S.settings().speechVoice, rate: Number(S.settings().speechRate) || 0.9 });
+  }
+
+  /* A 🔊 button that reads `text` in French. Pressing it does not take the
+   * cursor out of the answer box. */
+  function sayButton(text, label) {
+    if (!Speech.supported || !text) return null;
+    return el('button.say', {
+      type: 'button', title: 'Listen', 'aria-label': 'Listen' + (label ? ': ' + label : ''),
+      onmousedown: function (e) { e.preventDefault(); },
+      onclick: function () { Speech.say(text); }
+    }, [label ? '🔊 ' + label : '🔊']);
+  }
+
+  /* Read aloud now, if the student has automatic reading switched on. */
+  function autoSay(text) {
+    if (S.settings().speechAuto) Speech.say(text);
+  }
+
+  /* French text with a 🔊 button after it. */
+  function spoken(text, say) {
+    return el('span', {}, [rich(text), document.createTextNode(' '), sayButton(say || Speech.speakable(text))]);
+  }
+
   /* A card answered by typing. o.check(value) returns {right, note};
    * o.reveal() builds whatever to show once it has been checked. */
   function typedCard(o, onGrade) {
@@ -649,6 +696,7 @@
       verdict.textContent = (res.right ? '✓ ' : '✗ ') + (res.note || (res.right ? 'Correct' : 'Not quite'));
       var extra = o.reveal ? o.reveal(res.right) : null;
       if (extra) card.appendChild(el('div.answer', {}, [extra]));
+      if (o.onReveal) o.onReveal(res.right);
       check.remove();
       wrap.appendChild(gradeButtons(o.item, onGrade));
       // Typing it correctly is a strong signal, so Enter means "Good" after a
@@ -692,6 +740,7 @@
       btn.remove();
       card.appendChild(el('div.answer', {}, [o.back]));
       wrap.appendChild(gradeButtons(o.item, onGrade));
+      if (o.onReveal) o.onReveal();
     }
     document.onkeydown = function (e) {
       if (!ownKey(e)) return;
@@ -701,22 +750,43 @@
   }
 
   function vocabCard(item, onGrade) {
-    var showFrench = S.settings().vocabDirection === 'fr-en';
-    var prompt = showFrench ? item.fr : item.en;
-    var expected = showFrench ? item.en : item.fr;
+    var dir = S.settings().vocabDirection;
+    if (dir === 'listen' && !Speech.supported) dir = 'fr-en';
+    var fr = Speech.speakable(item.fr);
     var label = 'French vocabulary · ' + (item.themes[0] ? item.themes[0].subTitle : '');
-    if (S.settings().vocabMode === 'flip') {
+    var flip = S.settings().vocabMode === 'flip';
+
+    if (dir === 'listen') {
+      // Listening practice: hear the word, never see it until you answer.
+      Speech.say(fr);
+      var play = el('div.prompt', {}, [sayButton(fr, 'Play again'),
+        el('div.small.muted', { style: 'margin-top:.4rem', text: flip ? 'What does it mean?' : 'Type what it means in English.' })]);
+      var reveal = el('div', {}, [spoken(item.fr, fr), el('div.muted', { text: item.en })]);
+      if (flip) return flipCard({ item: item, label: label, front: play, back: reveal }, onGrade);
+      return typedCard({
+        item: item, label: label, prompt: play, placeholder: 'in English…',
+        check: function (v) { return { right: accepts(item.en, v), note: item.en }; },
+        reveal: function () { return el('div', {}, [spoken(item.fr, fr)]); }
+      }, onGrade);
+    }
+
+    var showFrench = dir === 'fr-en';
+    var expected = showFrench ? item.en : item.fr;
+    if (showFrench) autoSay(fr);
+    var prompt = showFrench ? el('div.prompt', {}, [spoken(item.fr, fr)]) : el('div.prompt', { text: item.en });
+    if (flip) {
       return flipCard({
-        item: item, label: label,
-        front: el('div.prompt', { text: prompt }),
-        back: el('div.prompt', { text: expected })
+        item: item, label: label, front: prompt,
+        back: showFrench ? el('div.prompt', { text: item.en }) : el('div.prompt', {}, [spoken(item.fr, fr)]),
+        onReveal: function () { if (!showFrench) autoSay(fr); }
       }, onGrade);
     }
     return typedCard({
-      item: item, label: label, french: !showFrench,
-      prompt: el('div.prompt', { text: prompt }),
+      item: item, label: label, french: !showFrench, prompt: prompt,
       placeholder: showFrench ? 'in English…' : 'en français…',
-      check: function (v) { return { right: accepts(expected, v), note: expected }; }
+      check: function (v) { return { right: accepts(expected, v), note: expected }; },
+      reveal: showFrench ? null : function () { return el('div', {}, [sayButton(fr, 'Hear it')]); },
+      onReveal: function () { if (!showFrench) autoSay(fr); }
     }, onGrade);
   }
 
@@ -743,8 +813,11 @@
       ? el('div', {}, [gapPrompt(c), c.hint ? el('div.small.muted', { style: 'margin-top:.3rem', text: 'Hint: ' + c.hint }) : null])
       : el('div', {}, [
         el('div.small', { style: 'font-weight:600;margin-bottom:.3rem', text: c.instruction }),
-        el('div.prompt', {}, [rich(c.prompt)])
+        // Not read out if it has digits: "20h30" spoken aloud is the answer.
+        el('div.prompt', {}, [/\d/.test(c.prompt) ? rich(c.prompt) : spoken(c.prompt)])
       ]);
+    // Once answered, read out the correct French sentence.
+    var full = c.type === 'gap' ? c.prompt.replace('___', c.answers[0]) : c.answers[0];
     return typedCard({
       item: item, label: label, french: true, prompt: prompt,
       placeholder: c.type === 'gap' ? 'the missing word(s)…' : 'the whole sentence…',
@@ -756,15 +829,21 @@
       reveal: function () {
         var kids = [el('div', {}, [
           el('b', { text: c.answers.length > 1 ? 'Accepted: ' : 'Answer: ' }),
-          document.createTextNode(c.answers.join('   ·   '))
+          document.createTextNode(c.answers.join('   ·   ')),
+          c.type === 'transform' ? document.createTextNode(' ') : null,
+          c.type === 'transform' ? sayButton(Speech.speakable(full)) : null
         ])];
         if (c.type === 'gap') {
-          kids.push(el('div.small', { style: 'margin-top:.35rem' }, [rich(c.prompt.replace('___', '**' + c.answers[0] + '**'))]));
+          kids.push(el('div.small', { style: 'margin-top:.35rem' }, [
+            rich(c.prompt.replace('___', '**' + c.answers[0] + '**')), document.createTextNode(' '),
+            sayButton(Speech.speakable(full))
+          ]));
         }
         kids.push(el('div.small.muted', { style: 'margin-top:.2rem', text: c.en }));
         kids.push(el('div.small', { style: 'margin-top:.5rem' }, [el('b', { text: 'Why: ' }), rich(c.why)]));
         return el('div', {}, kids);
-      }
+      },
+      onReveal: function () { autoSay(Speech.speakable(full)); }
     }, onGrade);
   }
 
@@ -775,7 +854,8 @@
     var forms = item.forms[person];
     var imperative = item.tense.id === 'imperative';
     var prompt = el('div', {}, [
-      el('div.prompt', {}, [el('b', { text: item.verb.inf }), el('span.muted', { text: '  — ' + item.verb.en })]),
+      el('div.prompt', {}, [el('b', { text: item.verb.inf }), document.createTextNode(' '),
+        sayButton(item.verb.inf), el('span.muted', { text: '  — ' + item.verb.en })]),
       el('div.row', { style: 'margin-top:.45rem' }, [
         el('span.pill', { text: item.tense.name + ' · ' + item.tense.fr }),
         el('span.pill.person', { text: imperative ? 'command to: ' + person : person })
@@ -790,13 +870,14 @@
         if (Match.accentSlip(ok, v)) return { right: false, note: 'Check the accents.' };
         return { right: false };
       },
-      reveal: function (right) { return verbReveal(item, right ? null : forms); }
+      reveal: function (right) { return verbReveal(item, right ? null : forms); },
+      onReveal: function () { autoSay(forms[0]); }
     }, onGrade);
   }
 
   function verbReveal(item, forms) {
     var kids = [];
-    if (forms) kids.push(el('div', {}, [el('b', { text: 'Answer: ' }), document.createTextNode(forms.join('  /  '))]));
+    if (forms) kids.push(el('div', {}, [el('b', { text: 'Answer: ' }), document.createTextNode(forms.join('  /  ') + ' '), sayButton(forms[0])]));
     kids.push(conjTable(item));
     if (item.verb.aux === 'être' && (item.tense.id === 'perfect' || item.tense.id === 'pluperfect')) {
       kids.push(el('div.small.muted', { text: 'Takes être, so the past participle agrees with the subject.' }));
@@ -805,7 +886,9 @@
   }
 
   function conjTable(item) {
-    return el('table.conj', {}, item.table.map(function (r) { return el('tr', {}, [el('td', { text: r })]); }));
+    return el('table.conj', {}, item.table.map(function (r) {
+      return el('tr', {}, [el('td', { text: r }), el('td', {}, [sayButton(Speech.speakableRow(r))])]);
+    }));
   }
 
   /* ---------- view: Vocabulary drill ---------- */
@@ -844,7 +927,8 @@
         return el('option', { value: o[0], text: o[1], selected: S.settings()[key] === o[0] ? '' : null });
       }));
     }
-    var dirSelect = settingSelect('vocabDirection', 'Direction', [['fr-en', 'French → English'], ['en-fr', 'English → French']]);
+    var dirSelect = settingSelect('vocabDirection', 'Direction', [['fr-en', 'French → English'], ['en-fr', 'English → French']]
+      .concat(Speech.supported ? [['listen', 'Listen → English']] : []));
     var modeSelect = settingSelect('vocabMode', 'Answer mode', [['type', 'Type the answer'], ['flip', 'Flip cards']]);
     var size = sizeSelect([10, 20, 40], 20);
 
@@ -854,7 +938,8 @@
       ]),
       el('div.small.muted', { style: 'margin-top:.6rem', text:
         pool.length + ' words in scope · ' + dueIn(pool) + ' due · ' + unseenCount + ' not yet seen. ' +
-        'Typing is slower but proves you know it; flip cards cover more ground.' })
+        'Typing is slower but proves you know it; flip cards cover more ground. ' +
+        (Speech.supported ? '"Listen → English" plays the word without showing it — practice for the Listening paper.' : '') })
     ]));
 
     var slot = el('div.review');
@@ -1206,6 +1291,55 @@
 
   /* ---------- view: Data ---------- */
 
+  function speechPanel() {
+    var panel = el('div.panel', { style: 'margin:.8rem 0' }, [el('h3', { text: 'Reading French aloud' })]);
+    if (!Speech.supported) {
+      panel.appendChild(el('p.small.muted', { text: 'This browser cannot speak. Chrome, Edge, Safari and Firefox all can.' }));
+      return panel;
+    }
+    var body = el('div');
+    panel.appendChild(body);
+    function render() {
+      body.textContent = '';
+      var voices = Speech.frenchVoices();
+      body.appendChild(el('p.small.muted', { text:
+        'Uses the voices built into this device, so it works offline and nothing is sent anywhere. ' +
+        'Quality depends on the device: iPhone, iPad and Mac voices are good, and Chrome adds "Google français".' }));
+      if (!voices.length) {
+        body.appendChild(el('p.small', { style: 'color:var(--shaky)', text:
+          'No French voice found on this device, so French will be read with an English accent or not at all. ' +
+          'Windows: Settings → Time & language → Speech → Add voices → Français. ' +
+          'Android: Settings → Text-to-speech → install French for Google. ' +
+          'On iPhone/iPad/Mac: Settings → Accessibility → Spoken Content → Voices → French.' }));
+      }
+      var current = Speech.voice();
+      var voiceSelect = el('select', { 'aria-label': 'French voice', onchange: function () {
+        S.setSetting('speechVoice', this.value); applySpeechSettings(); test();
+      } }, [el('option', { value: '', text: 'Best available' + (current && !S.settings().speechVoice ? ' (' + current.name + ')' : '') })]
+        .concat(voices.map(function (v) {
+          return el('option', { value: v.voiceURI, text: v.name + ' — ' + v.lang + (v.localService ? '' : ' (online)'),
+            selected: S.settings().speechVoice === v.voiceURI ? '' : null });
+        })));
+      var rateSelect = el('select', { 'aria-label': 'Speed', onchange: function () {
+        S.setSetting('speechRate', Number(this.value)); applySpeechSettings(); test();
+      } }, [[0.7, 'Slow'], [0.9, 'Normal'], [1.05, 'Native speed']].map(function (r) {
+        return el('option', { value: String(r[0]), text: r[1], selected: Number(S.settings().speechRate) === r[0] ? '' : null });
+      }));
+      var auto = el('label.small', {}, [
+        el('input', { type: 'checkbox', checked: S.settings().speechAuto ? '' : null, onchange: function () {
+          S.setSetting('speechAuto', this.checked);
+        } }),
+        ' Read French out automatically on each card'
+      ]);
+      function test() { Speech.say('Bonjour ! Je m\'appelle Léa et j\'habite à Lyon avec ma famille.'); }
+      body.appendChild(el('div.row', {}, [voiceSelect, rateSelect, el('button.btn', { text: '🔊 Test', onclick: test })]));
+      body.appendChild(el('div', { style: 'margin-top:.5rem' }, [auto]));
+    }
+    render();
+    Speech.onVoices(function () { if (panel.isConnected) render(); });
+    return panel;
+  }
+
   function viewData() {
     var out = el('div');
     out.appendChild(el('h1', { text: 'Settings and data' }));
@@ -1234,6 +1368,8 @@
         } })
       ])
     ]));
+
+    out.appendChild(speechPanel());
 
     out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
       el('h3', { text: 'Export French flashcards' }),
@@ -1314,6 +1450,7 @@
 
   function route() {
     document.onkeydown = null;
+    Speech.stop();
     var r = parseHash();
     var node;
     switch (r.parts[0]) {
@@ -1348,6 +1485,7 @@
   });
 
   applyTheme();
+  applySpeechSettings();
   window.addEventListener('hashchange', route);
   route();
 })();

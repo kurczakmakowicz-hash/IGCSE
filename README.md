@@ -54,6 +54,17 @@ future, conditional, pluperfect and imperative. One card per verb and tense;
 each time it comes up it asks for a different person, and the full table is
 shown after you answer. Forms can be typed with or without the pronoun.
 
+**Read aloud.** French words, completed grammar sentences and verb forms have
+a 🔊 button and, unless switched off, are read out at the moment that helps:
+the French word as the card appears, or the correct answer once you have
+answered (never before, where hearing it would give the answer away). A
+*Listen → English* vocabulary mode plays the word without showing it, as
+practice for the Listening paper. It uses the browser's built-in speech
+(Web Speech API), so it works offline and sends nothing anywhere — but the
+voice is whatever the device has: Apple devices and Chrome have good French
+voices; Windows and Android may need one installed (the Data page says how,
+and lets you pick the voice and speed).
+
 **Export.** The Data page downloads the French vocabulary, grammar and verb
 cards as tab-separated files for Anki or Quizlet, for anyone who prefers those.
 
@@ -119,6 +130,7 @@ assets/app.js         views and routing
 assets/store.js       catalogue + progress state
 assets/srs.js         spaced-repetition scheduling
 assets/match.js       answer matching (vocabulary, French grammar, verbs)
+assets/speech.js      reading French aloud (Web Speech API)
 data/*.js             generated content — do not edit by hand
 content/french/grammar/*.json   French grammar topics (edit these)
 tools/build_syllabus.py   spec PDF -> data/<subject>.js

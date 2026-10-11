@@ -250,3 +250,18 @@ table.conj td { padding: .12rem 0; }
 .verb-grid td, .verb-grid th { text-align: center; padding-right: .4rem; }
 .verb-grid td:first-child, .verb-grid th:first-child { text-align: left; white-space: nowrap; }
 .verb-grid .dot { width: .7em; height: .7em; margin: 0; }
+
+/* ---------- read aloud ---------- */
+button.say {
+  border: 1px solid var(--line); background: var(--panel-2); color: var(--ink-soft);
+  border-radius: 999px; padding: .05rem .45rem; font-size: .85rem; line-height: 1.5;
+  cursor: pointer; vertical-align: middle;
+}
+button.say:hover { border-color: var(--accent); color: var(--ink); }
+.prompt > button.say:only-child, .prompt > button.say:first-child { font-size: 1rem; padding: .35rem .9rem; }
+.speech-toggle {
+  margin-left: auto; align-self: center; border: 1px solid var(--line); background: var(--panel);
+  color: var(--ink-soft); border-radius: 999px; padding: .2rem .65rem; font: 500 .8rem/1.4 var(--sans); cursor: pointer;
+}
+.speech-toggle[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+table.conj td + td { padding-left: .5rem; }
