@@ -15,6 +15,10 @@ window.Store = (function () {
   var subjects = {};
   var points = {};   // subjectId -> [point]
   var vocab = [];    // deduplicated across themes
+  var grammarTopics = [];  // French grammar topics, each with its card items
+  var grammar = [];        // every grammar card item
+  var verbs = [];          // French verbs, each with one item per tense
+  var verbItems = [];
   var byId = {};
 
   function buildCatalogue() {
@@ -75,13 +79,52 @@ window.Store = (function () {
     });
   }
 
+  /* French grammar cards and the verb-conjugation deck live in their own data
+   * files; a missing file just means that part of the app is empty. */
+  function buildFrenchExtras() {
+    var g = window.IGCSE_DATA && window.IGCSE_DATA.frenchGrammar;
+    (g ? g.topics : []).forEach(function (t) {
+      var topic = {
+        id: t.id, area: t.area, title: t.title, spec: t.spec,
+        receptive: t.receptive, summary: t.summary, items: []
+      };
+      t.cards.forEach(function (c) {
+        var item = { id: 'french#g#' + c.id, kind: 'grammar', subject: 'french', card: c, topic: topic };
+        topic.items.push(item);
+        grammar.push(item);
+        byId[item.id] = item;
+      });
+      grammarTopics.push(topic);
+    });
+
+    var v = window.IGCSE_DATA && window.IGCSE_DATA.frenchVerbs;
+    if (!v) return;
+    var tenseInfo = {};
+    v.tenses.forEach(function (t) { tenseInfo[t.id] = t; });
+    v.verbs.forEach(function (verb) {
+      var entry = { inf: verb.inf, en: verb.en, group: verb.group, aux: verb.aux, items: [] };
+      v.tenses.forEach(function (t) {
+        var data = verb.tenses[t.id];
+        if (!data) return;
+        var item = {
+          id: 'french#verb#' + verb.inf + '#' + t.id, kind: 'verb', subject: 'french',
+          verb: entry, tense: tenseInfo[t.id], forms: data.forms, table: data.table
+        };
+        entry.items.push(item);
+        verbItems.push(item);
+        byId[item.id] = item;
+      });
+      verbs.push(entry);
+    });
+  }
+
   /* ---------- persistence ---------- */
 
   var blank = {
     version: 1,
     confidence: {},   // itemId -> 0 | 1 | 2
     cards: {},        // itemId -> SRS card
-    settings: { examDate: '2027-05-10', theme: 'auto', vocabDirection: 'fr-en' },
+    settings: { examDate: '2027-05-10', theme: 'auto', vocabDirection: 'fr-en', vocabMode: 'type' },
     log: {}           // 'YYYY-MM-DD' -> number of reviews
   };
 
@@ -196,7 +239,7 @@ window.Store = (function () {
   }
 
   function subjectItems(sid) {
-    return sid === 'french' ? vocab : (points[sid] || []);
+    return sid === 'french' ? vocab.concat(grammar, verbItems) : (points[sid] || []);
   }
 
   function exportJSON() { return JSON.stringify(state, null, 2); }
@@ -222,6 +265,7 @@ window.Store = (function () {
   }
 
   buildCatalogue();
+  buildFrenchExtras();
   state = load();
 
   return {
@@ -229,6 +273,10 @@ window.Store = (function () {
     subjects: subjects,
     points: points,
     vocab: vocab,
+    grammarTopics: grammarTopics,
+    grammar: grammar,
+    verbs: verbs,
+    verbItems: verbItems,
     byId: byId,
     subjectItems: subjectItems,
     confidence: confidence,

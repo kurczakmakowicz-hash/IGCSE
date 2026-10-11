@@ -75,5 +75,73 @@ check(SRS.isDue(null), 'an unseen card is due');
 check(SRS.isDue({ due: SRS.today() - 1 }), 'an overdue card is due');
 check(!SRS.isDue({ due: SRS.today() + 1 }), 'a future card is not due');
 
+console.log('\nFrench answer matching (grammar and verbs: accents count)');
+[
+  [['sont allées'], 'sont allées', true, 'exact'],
+  [['sont allées'], 'Sont Allées', true, 'capitals ignored'],
+  [['sont allées'], '  sont   allées ', true, 'spacing ignored'],
+  [['sont allées'], 'sont allees', false, 'missing accent is wrong'],
+  [['sont allées'], 'sont allés', false, 'wrong agreement is wrong'],
+  [["Je l'ai vu."], 'je l’ai vu', true, 'curly apostrophe and final full stop ignored'],
+  [["Je l'ai vu."], 'je lai vu', false, 'missing apostrophe is wrong'],
+  [['Est-ce que tu viens ?'], 'Est-ce que tu viens?', true, 'French spacing before ? ignored'],
+  [['Est-ce que tu viens ?'], 'Est ce que tu viens', false, 'missing hyphen is wrong'],
+  [['Vas-y !'], 'vas-y', true, 'exclamation mark ignored'],
+  [['ma sœur'], 'ma soeur', true, 'oe accepted for œ'],
+  [['du'], '', false, 'empty answer is wrong'],
+].forEach(function (c) {
+  check(Match.acceptsFrench(c[0], c[1]) === c[2], JSON.stringify(c[0]) + ' <- ' + JSON.stringify(c[1]) + '  ' + c[3]);
+});
+check(Match.accentSlip(['sont allées'], 'sont allees'), 'accent slip is spotted');
+check(!Match.accentSlip(['sont allées'], 'sont allées'), 'a right answer is not an accent slip');
+check(!Match.accentSlip(['sont allées'], 'sont partis'), 'a wrong word is not an accent slip');
+
+const forms = Match.verbAnswers(["j'ai", 'je suis allée', 'nous nous levons', 'va']);
+['ai', "j'ai", 'suis allée', 'nous levons', 'nous nous levons', 'va'].forEach(function (f) {
+  check(forms.indexOf(f) >= 0, 'verb form accepted: ' + f);
+});
+check(forms.indexOf('levons') < 0, 'reflexive pronoun is not optional');
+
+console.log('\nGenerated French data');
+require('../data/french.js');
+require('../data/french_verbs.js');
+const fr = global.window.IGCSE_DATA.french;
+const vocab = [];
+fr.topics.forEach(function (t) { t.subtopics.forEach(function (s) { s.vocab.forEach(function (v) { vocab.push(v); }); }); });
+check(vocab.length > 2000, 'over 2,000 vocabulary entries (' + vocab.length + ')');
+check(vocab.every(function (v) { return v.fr && v.en; }), 'every entry has French and English');
+check(!vocab.some(function (v) { return /Issue \d|Pearson|Specification|\(continued\)/.test(v.fr + ' ' + v.en); }),
+  'no page headers or footers parsed as words');
+const has = function (fr, en) { return vocab.some(function (v) { return v.fr === fr && v.en === en; }); };
+check(has('salut', 'hello'), 'entry whose dash sits in its own text run: salut');
+check(has('crème solaire (f)', 'suncream, sunblock, sunscreen'), 'gloss wrapped onto a second line is kept whole');
+check(has('dans quelle mesure/jusqu’à quel point est-ce que', 'to what extent?'), 'entry running across the gutter');
+check(has('four à micro-ondes (m)', 'microwave'), 'French split over two lines is rejoined');
+
+const V = global.window.IGCSE_DATA.frenchVerbs;
+check(V.verbs.length >= 50, 'at least 50 verbs (' + V.verbs.length + ')');
+let complete = true;
+V.verbs.forEach(function (v) {
+  Object.keys(v.tenses).forEach(function (t) {
+    const want = t === 'imperative' ? ['tu', 'nous', 'vous'] : V.persons;
+    want.forEach(function (p) { if (!(v.tenses[t].forms[p] || []).length) { complete = false; console.log('   missing', v.inf, t, p); } });
+  });
+});
+check(complete, 'every verb has a form for every person in every tense it lists');
+const aller = V.verbs.find(function (v) { return v.inf === 'aller'; });
+eq(aller.tenses.perfect.forms.elle, ['elle est allée'], 'aller perfect: elle est allée');
+eq(aller.tenses.perfect.forms.ils, ['ils sont allés'], 'aller perfect: ils sont allés');
+check(aller.tenses.perfect.forms.vous.indexOf('vous êtes allée') >= 0, 'polite singular vous accepted for être verbs');
+const lever = V.verbs.find(function (v) { return v.inf === 'se lever'; });
+eq(lever.tenses.perfect.forms.tu, ["tu t'es levé", "tu t'es levée"], 'reflexive perfect: tu t\'es levé(e)');
+eq(V.verbs.find(function (v) { return v.inf === 'faire'; }).tenses.future.forms.nous, ['nous ferons'], 'irregular future stem: ferons');
+
+console.log('\nGrammar topics');
+const { validateFiles, filesFrom } = require('./validate_grammar.js');
+const grammarFiles = filesFrom([]);
+const grammarErrs = validateFiles(grammarFiles);
+grammarErrs.forEach(function (e) { console.log('   ' + e); });
+check(grammarFiles.length > 0 && !grammarErrs.length, grammarFiles.length + ' grammar topic files are valid');
+
 console.log(failures ? '\n' + failures + ' FAILURE(S)\n' : '\nAll tests passed.\n');
 process.exit(failures ? 1 : 0);

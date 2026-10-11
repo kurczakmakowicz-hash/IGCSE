@@ -140,7 +140,7 @@
         ]),
         el('div.small.muted', { style: 'margin:.25rem 0 .5rem' , text:
           pct(t.started, t.total) + '% of ' + t.total.toLocaleString() +
-          (sid === 'french' ? ' words started' : ' spec points started') }),
+          (sid === 'french' ? ' French cards started' : ' spec points started') }),
         progressBar(t),
         el('div.small', { style: 'margin-top:.5rem;color:var(--ink-faint)',
           text: due ? due + ' due for review' : 'nothing due' })
@@ -328,18 +328,52 @@
 
   /* ---------- view: French subject ---------- */
 
+  function frenchTabs(active) {
+    var tabs = [['overview', '#/s/french', 'Overview'], ['vocab', '#/vocab', 'Vocabulary'],
+      ['grammar', '#/grammar', 'Grammar'], ['verbs', '#/verbs', 'Verbs']];
+    return el('nav.tabs', { 'aria-label': 'French sections' }, tabs.map(function (t) {
+      return el('a', { href: t[1], text: t[2], class: t[0] === active ? 'on' : null });
+    }));
+  }
+
+  function dueIn(items) {
+    return items.filter(function (i) { return S.confidence(i.id) > 0 && SRS.isDue(S.card(i.id)); }).length;
+  }
+
   function frenchSubject(out, subject) {
-    var t = S.tally(S.vocab);
-    out.appendChild(el('div.panel', {}, [
-      el('div.spread', { style: 'margin-bottom:.5rem' }, [
-        el('h3', { text: t.started + ' of ' + S.vocab.length.toLocaleString() + ' prescribed words started' }),
-        el('a.btn.primary', { href: '#/vocab', text: 'Vocabulary drill' })
-      ]),
-      progressBar(t), el('div', { style: 'height:.5rem' }), legend(t)
+    out.insertBefore(frenchTabs('overview'), out.children[1]);
+    var tenses = S.verbs.length ? S.verbs[0].items.length : 0;
+    var parts = [
+      ['Vocabulary', S.vocab, '#/vocab', S.vocab.length.toLocaleString() + ' words from the prescribed list in Appendix 1'],
+      ['Grammar', S.grammar, '#/grammar', S.grammarTopics.length + ' topics covering the specification\'s grammar list'],
+      ['Verbs', S.verbItems, '#/verbs', S.verbs.length + ' key verbs, up to ' + tenses + ' tenses each']
+    ];
+    var grid = el('div.grid', { style: 'margin-top:.4rem' });
+    parts.forEach(function (p) {
+      var t = S.tally(p[1]);
+      var due = dueIn(p[1]);
+      grid.appendChild(el('a.panel.subject-card', { href: p[2] }, [
+        el('div.spread', {}, [el('h3', { text: p[0] }), el('span.code', { text: p[1].length.toLocaleString() + ' cards' })]),
+        el('div.small.muted', { style: 'margin:.25rem 0 .5rem', text: p[3] }),
+        progressBar(t),
+        el('div.small', { style: 'margin-top:.5rem;color:var(--ink-faint)',
+          text: t.started + ' started · ' + (due ? due + ' due' : 'nothing due') })
+      ]));
+    });
+    out.appendChild(grid);
+    out.appendChild(el('div.panel', { style: 'margin-top:.8rem' }, [
+      el('h3', { text: 'A sensible daily routine' }),
+      el('ol.small', { style: 'margin:.4rem 0 0;padding-left:1.2rem' }, [
+        el('li', {}, ['Clear ', el('a', { href: '#/review/french', text: 'everything due' }), ' first — that is what keeps old cards from fading.']),
+        el('li', { text: 'Then add new cards: one grammar topic (read its notes, then about 10 cards), 20 words from one vocabulary theme, and 10 verb cards.' }),
+        el('li', { text: 'Typed French is marked strictly on accents, as in the Paper 2 grammar task. Use the accent buttons under the answer box.' })
+      ])
     ]));
-    out.appendChild(el('p.small.muted', { style: 'margin:.9rem 0 0', text:
-      'This is the minimum core vocabulary list from Appendix 1 of the specification, ' +
-      'organised by theme. Drill a section at a time rather than the whole list.' }));
+
+    out.appendChild(el('h2', { text: 'Vocabulary by theme' }));
+    out.appendChild(el('p.small.muted', { style: 'margin:-.3rem 0 .7rem', text:
+      'The minimum core vocabulary list from Appendix 1 of the specification. ' +
+      'Drill a section at a time rather than the whole list.' }));
 
     subject.topics.forEach(function (topic) {
       var det = el('details.topic');
@@ -379,11 +413,7 @@
       var ca = S.card(a.id), cb = S.card(b.id);
       return (ca ? ca.due : 0) - (cb ? cb.due : 0);
     });
-    var out = el('div.review');
-    var done = 0;
-    var total = queue.length;
-
-    if (!total) {
+    if (!queue.length) {
       return el('div.empty', {}, [
         el('span.big', { text: '✓' }),
         el('div', { text: 'Nothing due for review' + (subjectId ? ' in ' + S.subjects[subjectId].name : '') + '.' }),
@@ -391,47 +421,90 @@
         el('a.btn', { href: '#/today', text: 'Back to today' })
       ]);
     }
+    var out = el('div.review');
+    runSession(out, queue, function (reviews) {
+      return el('div.empty', {}, [
+        el('span.big', { text: '✓' }),
+        el('div', { text: 'Queue clear — ' + reviews + ' reviewed.' }),
+        el('a.btn', { href: '#/today', text: 'Back to today' })
+      ]);
+    });
+    return out;
+  }
 
+  /* Work through a queue of cards. "Again" puts a card back a few places on,
+   * so the session ends only when every card has been answered at least "Hard". */
+  function runSession(slot, queue, onFinish) {
+    var total = queue.length, finished = 0, reviews = 0;
     var meter = el('div.queue-meter');
-    var slot = el('div');
-    out.appendChild(meter);
-    out.appendChild(slot);
-
-    function updateMeter() {
-      meter.textContent = '';
-      meter.appendChild(el('div.bar', { style: 'flex:1' }, [
-        el('i.solid', { style: 'width:' + pct(done, total) + '%' })
-      ]));
-      meter.appendChild(el('span.small.faint', { text: done + ' / ' + total }));
-    }
+    var cardSlot = el('div');
+    slot.textContent = '';
+    slot.appendChild(meter);
+    slot.appendChild(cardSlot);
 
     function next() {
-      updateMeter();
+      meter.textContent = '';
+      meter.appendChild(el('div.bar', { style: 'flex:1' }, [
+        el('i.solid', { style: 'width:' + pct(finished, total) + '%' })
+      ]));
+      meter.appendChild(el('span.small.faint', { text: finished + ' / ' + total }));
+      cardSlot.textContent = '';
       if (!queue.length) {
-        slot.textContent = '';
-        slot.appendChild(el('div.empty', {}, [
-          el('span.big', { text: '✓' }),
-          el('div', { text: 'Queue clear — ' + done + ' reviewed.' }),
-          el('a.btn', { href: '#/today', text: 'Back to today' })
-        ]));
+        document.onkeydown = null;
+        cardSlot.appendChild(onFinish(reviews));
         renderNav();
         return;
       }
       var item = queue.shift();
-      slot.textContent = '';
-      slot.appendChild(item.kind === 'vocab' ? vocabCard(item, answer) : pointCard(item, answer));
-
-      function answer(g) {
+      cardSlot.appendChild(cardFor(item, function (g) {
         S.review(item.id, g);
-        done++;
-        // "Again" puts the item back a few cards later in the same session.
+        reviews++;
         if (g === 0) queue.splice(Math.min(4, queue.length), 0, item);
+        else finished++;
         next();
-      }
+      }));
     }
-
     next();
-    return out;
+  }
+
+  /* Due cards first, most overdue first, then cards never seen, in the order given. */
+  function buildQueue(pool, n) {
+    var due = pool.filter(function (i) { return S.confidence(i.id) > 0 && SRS.isDue(S.card(i.id)); })
+      .sort(function (a, b) { return (S.card(a.id) || { due: 0 }).due - (S.card(b.id) || { due: 0 }).due; });
+    var unseen = pool.filter(function (i) { return S.confidence(i.id) === 0; });
+    return due.concat(unseen).slice(0, n);
+  }
+
+  function startPractice(slot, queue) {
+    if (!queue.length) {
+      slot.textContent = '';
+      slot.appendChild(el('div.empty', {}, [
+        el('span.big', { text: '✓' }),
+        el('div', { text: 'Nothing due and nothing new here — pick another set, or come back when cards fall due.' })
+      ]));
+      return;
+    }
+    runSession(slot, queue, function (reviews) {
+      return el('div.empty', {}, [
+        el('span.big', { text: '✓' }),
+        el('div', { text: 'Set done — ' + reviews + ' answers.' }),
+        el('button.btn', { text: 'Another set', onclick: route })
+      ]);
+    });
+    slot.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function sizeSelect(options, chosen) {
+    return el('select', { 'aria-label': 'Set size' }, options.map(function (n) {
+      return el('option', { value: String(n), text: n === 1e9 ? 'all' : n + ' cards', selected: n === chosen ? '' : null });
+    }));
+  }
+
+  function cardFor(item, onGrade) {
+    if (item.kind === 'vocab') return vocabCard(item, onGrade);
+    if (item.kind === 'grammar') return grammarCard(item, onGrade);
+    if (item.kind === 'verb') return verbCard(item, onGrade);
+    return pointCard(item, onGrade);
   }
 
   function gradeButtons(item, onGrade) {
@@ -497,23 +570,50 @@
   }
 
   var accepts = window.Match.accepts;
+  var Match = window.Match;
+  var ACCENTS = ['é', 'è', 'ê', 'ë', 'à', 'â', 'î', 'ï', 'ô', 'û', 'ù', 'ç', 'œ'];
 
-  function vocabCard(item, onGrade) {
-    var dir = S.settings().vocabDirection;
-    var showFrench = dir === 'fr-en';
-    var prompt = showFrench ? item.fr : item.en;
-    var expected = showFrench ? item.en : item.fr;
+  /* Buttons that type accented letters into the answer box: most keyboards
+   * make them awkward, and the grammar task marks them. */
+  function accentBar(input) {
+    return el('div.accents', { 'aria-label': 'Accented letters' }, ACCENTS.map(function (ch) {
+      return el('button', {
+        type: 'button', tabindex: '-1', text: ch, title: 'Type ' + ch,
+        onmousedown: function (e) { e.preventDefault(); },   // keep focus in the box
+        onclick: function () {
+          if (input.disabled) return;
+          var a = input.selectionStart, b = input.selectionEnd;
+          if (a === null || a === undefined) { a = b = input.value.length; }
+          input.value = input.value.slice(0, a) + ch + input.value.slice(b);
+          input.selectionStart = input.selectionEnd = a + ch.length;
+          input.focus();
+        }
+      });
+    }));
+  }
 
+  /* Text with **bold** spans, which the grammar cards use to point at words. */
+  function rich(text) {
+    var span = el('span');
+    String(text).split('**').forEach(function (part, i) {
+      if (part) span.appendChild(i % 2 ? el('b', { text: part }) : document.createTextNode(part));
+    });
+    return span;
+  }
+
+  /* A card answered by typing. o.check(value) returns {right, note};
+   * o.reveal() builds whatever to show once it has been checked. */
+  function typedCard(o, onGrade) {
     var wrap = el('div');
     var input = el('input.vocab-input', {
-      type: 'text', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false',
-      placeholder: showFrench ? 'in English…' : 'en français…'
+      type: 'text', autocomplete: 'off', autocapitalize: 'off', autocorrect: 'off',
+      spellcheck: 'false', lang: o.french ? 'fr' : 'en', placeholder: o.placeholder || '',
+      'aria-label': 'Your answer'
     });
-    var verdict = el('div.verdict');
+    var verdict = el('div.verdict', { 'aria-live': 'polite' });
     var card = el('div.card', {}, [
-      el('div.small.faint', { text: 'French vocabulary · ' + (item.themes[0] ? item.themes[0].subTitle : '') }),
-      el('div.prompt', { text: prompt }),
-      input, verdict
+      el('div.small.faint', { text: o.label }),
+      o.prompt, input, o.french ? accentBar(input) : null, verdict
     ]);
     wrap.appendChild(card);
 
@@ -526,29 +626,166 @@
     function doCheck() {
       if (checked) return;
       checked = true;
-      var right = accepts(expected, input.value);
+      var res = o.check(input.value);
       input.disabled = true;
-      verdict.className = 'verdict ' + (right ? 'ok' : 'no');
-      verdict.textContent = right ? '✓ ' + expected : '✗ ' + expected;
+      verdict.className = 'verdict ' + (res.right ? 'ok' : 'no');
+      verdict.textContent = (res.right ? '✓ ' : '✗ ') + (res.note || (res.right ? 'Correct' : 'Not quite'));
+      var extra = o.reveal ? o.reveal(res.right) : null;
+      if (extra) card.appendChild(el('div.answer', {}, [extra]));
       check.remove();
-      wrap.appendChild(gradeButtons(item, onGrade));
-      // Typing it correctly is a strong signal; suggest Good, but let the
-      // student override — knowing it after a struggle is not the same thing.
-      var hint = el('div.small.faint', { style: 'text-align:center;margin-top:.4rem',
-        text: right ? 'Correct — "Good" unless it was a struggle.' : 'Wrong — "Again" unless it was a typo.' });
-      wrap.appendChild(hint);
+      wrap.appendChild(gradeButtons(o.item, onGrade));
+      // Typing it correctly is a strong signal, so Enter means "Good" after a
+      // right answer and "Again" after a wrong one; the buttons override.
+      wrap.appendChild(el('div.small.faint', { style: 'text-align:center;margin-top:.4rem', text: res.right
+        ? 'Right — Enter for "Good", or "Hard" if it was a struggle.'
+        : 'Wrong — Enter for "Again", unless it was only a typo.' }));
+      var grade = res.right ? 2 : 0;
       document.onkeydown = function (e) {
-        if (e.target.tagName === 'INPUT') return;
+        if (e.key === 'Enter') { e.preventDefault(); onGrade(grade); return; }
         var i = ['1', '2', '3', '4'].indexOf(e.key);
         if (i >= 0) { e.preventDefault(); onGrade(i); }
       };
     }
 
     input.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') { e.preventDefault(); checked ? onGrade(2) : doCheck(); }
+      if (e.key !== 'Enter') return;
+      e.preventDefault();
+      e.stopPropagation();   // or the same keypress would also grade the card
+      doCheck();
     });
     setTimeout(function () { input.focus(); }, 0);
     return wrap;
+  }
+
+  /* A card answered in your head, then self-graded. */
+  function flipCard(o, onGrade) {
+    var wrap = el('div');
+    var card = el('div.card', {}, [el('div.small.faint', { text: o.label }), o.front]);
+    wrap.appendChild(card);
+    var shown = false;
+    var btn = el('button.btn.primary', {
+      style: 'margin-top:.8rem;width:100%', text: 'Show answer', onclick: show
+    });
+    wrap.appendChild(btn);
+    function show() {
+      if (shown) return;
+      shown = true;
+      btn.remove();
+      card.appendChild(el('div.answer', {}, [o.back]));
+      wrap.appendChild(gradeButtons(o.item, onGrade));
+    }
+    document.onkeydown = function (e) {
+      if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); show(); }
+    };
+    return wrap;
+  }
+
+  function vocabCard(item, onGrade) {
+    var showFrench = S.settings().vocabDirection === 'fr-en';
+    var prompt = showFrench ? item.fr : item.en;
+    var expected = showFrench ? item.en : item.fr;
+    var label = 'French vocabulary · ' + (item.themes[0] ? item.themes[0].subTitle : '');
+    if (S.settings().vocabMode === 'flip') {
+      return flipCard({
+        item: item, label: label,
+        front: el('div.prompt', { text: prompt }),
+        back: el('div.prompt', { text: expected })
+      }, onGrade);
+    }
+    return typedCard({
+      item: item, label: label, french: !showFrench,
+      prompt: el('div.prompt', { text: prompt }),
+      placeholder: showFrench ? 'in English…' : 'en français…',
+      check: function (v) { return { right: accepts(expected, v), note: expected }; }
+    }, onGrade);
+  }
+
+  function gapPrompt(c) {
+    var parts = c.prompt.split('___');
+    return el('div.prompt', {}, [
+      rich(parts[0]), el('span.blank', { text: '______' }),
+      c.base ? el('span.base', { text: ' (' + c.base + ')' }) : null,
+      rich(parts[1] || '')
+    ]);
+  }
+
+  function grammarCard(item, onGrade) {
+    var c = item.card;
+    var label = 'Grammar · ' + item.topic.title;
+    if (c.type === 'flip') {
+      return flipCard({
+        item: item, label: label,
+        front: el('div.prompt', {}, [rich(c.front)]),
+        back: el('div', { style: 'white-space:pre-line' }, [rich(c.back)])
+      }, onGrade);
+    }
+    var prompt = c.type === 'gap'
+      ? el('div', {}, [gapPrompt(c), c.hint ? el('div.small.muted', { style: 'margin-top:.3rem', text: 'Hint: ' + c.hint }) : null])
+      : el('div', {}, [
+        el('div.small', { style: 'font-weight:600;margin-bottom:.3rem', text: c.instruction }),
+        el('div.prompt', {}, [rich(c.prompt)])
+      ]);
+    return typedCard({
+      item: item, label: label, french: true, prompt: prompt,
+      placeholder: c.type === 'gap' ? 'the missing word(s)…' : 'the whole sentence…',
+      check: function (v) {
+        if (Match.acceptsFrench(c.answers, v)) return { right: true };
+        if (Match.accentSlip(c.answers, v)) return { right: false, note: 'Check the accents — the grammar task marks them.' };
+        return { right: false };
+      },
+      reveal: function () {
+        var kids = [el('div', {}, [
+          el('b', { text: c.answers.length > 1 ? 'Accepted: ' : 'Answer: ' }),
+          document.createTextNode(c.answers.join('   ·   '))
+        ])];
+        if (c.type === 'gap') {
+          kids.push(el('div.small', { style: 'margin-top:.35rem' }, [rich(c.prompt.replace('___', '**' + c.answers[0] + '**'))]));
+        }
+        kids.push(el('div.small.muted', { style: 'margin-top:.2rem', text: c.en }));
+        kids.push(el('div.small', { style: 'margin-top:.5rem' }, [el('b', { text: 'Why: ' }), rich(c.why)]));
+        return el('div', {}, kids);
+      }
+    }, onGrade);
+  }
+
+  /* One card per verb and tense; the person changes every time it comes up. */
+  function verbCard(item, onGrade) {
+    var persons = Object.keys(item.forms);
+    var person = persons[Math.floor(Math.random() * persons.length)];
+    var forms = item.forms[person];
+    var imperative = item.tense.id === 'imperative';
+    var prompt = el('div', {}, [
+      el('div.prompt', {}, [el('b', { text: item.verb.inf }), el('span.muted', { text: '  — ' + item.verb.en })]),
+      el('div.row', { style: 'margin-top:.45rem' }, [
+        el('span.pill', { text: item.tense.name + ' · ' + item.tense.fr }),
+        el('span.pill.person', { text: imperative ? 'command to: ' + person : person })
+      ])
+    ]);
+    return typedCard({
+      item: item, label: 'Verbs · ' + item.verb.group, french: true, prompt: prompt,
+      placeholder: imperative ? 'the command…' : person + ' …',
+      check: function (v) {
+        var ok = Match.verbAnswers(forms);
+        if (Match.acceptsFrench(ok, v)) return { right: true, note: forms.join('  /  ') };
+        if (Match.accentSlip(ok, v)) return { right: false, note: 'Check the accents.' };
+        return { right: false };
+      },
+      reveal: function (right) { return verbReveal(item, right ? null : forms); }
+    }, onGrade);
+  }
+
+  function verbReveal(item, forms) {
+    var kids = [];
+    if (forms) kids.push(el('div', {}, [el('b', { text: 'Answer: ' }), document.createTextNode(forms.join('  /  '))]));
+    kids.push(conjTable(item));
+    if (item.verb.aux === 'être' && (item.tense.id === 'perfect' || item.tense.id === 'pluperfect')) {
+      kids.push(el('div.small.muted', { text: 'Takes être, so the past participle agrees with the subject.' }));
+    }
+    return el('div', {}, kids);
+  }
+
+  function conjTable(item) {
+    return el('table.conj', {}, item.table.map(function (r) { return el('tr', {}, [el('td', { text: r })]); }));
   }
 
   /* ---------- view: Vocabulary drill ---------- */
@@ -556,16 +793,16 @@
   function viewVocab(query) {
     var out = el('div');
     out.appendChild(el('h1', { text: 'French vocabulary' }));
+    out.appendChild(frenchTabs('vocab'));
 
     var scope = query.scope || 'all';
     var pool = S.vocab.filter(function (w) {
       return scope === 'all' || w.themes.some(function (t) { return t.subId === scope; });
     });
-    // Unseen words first, then anything due — the point is to widen coverage.
-    var unseen = pool.filter(function (w) { return S.confidence(w.id) === 0; });
-    var due = pool.filter(function (w) { return S.confidence(w.id) > 0 && SRS.isDue(S.card(w.id)); });
+    var unseenCount = pool.filter(function (w) { return S.confidence(w.id) === 0; }).length;
 
     var scopeSelect = el('select', {
+      'aria-label': 'Theme',
       onchange: function () { location.hash = '#/vocab?scope=' + encodeURIComponent(this.value); }
     }, [el('option', { value: 'all', text: 'All themes (' + S.vocab.length + ' words)', selected: scope === 'all' ? '' : null })]);
     S.subjects.french.topics.forEach(function (topic) {
@@ -579,68 +816,261 @@
       scopeSelect.appendChild(group);
     });
 
-    var dirSelect = el('select', {
-      onchange: function () { S.setSetting('vocabDirection', this.value); }
-    }, [
-      el('option', { value: 'fr-en', text: 'French → English', selected: S.settings().vocabDirection === 'fr-en' ? '' : null }),
-      el('option', { value: 'en-fr', text: 'English → French', selected: S.settings().vocabDirection === 'en-fr' ? '' : null })
-    ]);
-    var sizeSelect = el('select', {}, [10, 20, 40].map(function (n) {
-      return el('option', { value: String(n), text: n + ' words', selected: n === 20 ? '' : null });
-    }));
+    function settingSelect(key, label, options) {
+      return el('select', {
+        'aria-label': label,
+        onchange: function () { S.setSetting(key, this.value); }
+      }, options.map(function (o) {
+        return el('option', { value: o[0], text: o[1], selected: S.settings()[key] === o[0] ? '' : null });
+      }));
+    }
+    var dirSelect = settingSelect('vocabDirection', 'Direction', [['fr-en', 'French → English'], ['en-fr', 'English → French']]);
+    var modeSelect = settingSelect('vocabMode', 'Answer mode', [['type', 'Type the answer'], ['flip', 'Flip cards']]);
+    var size = sizeSelect([10, 20, 40], 20);
 
     out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
-      el('div.row', {}, [scopeSelect, dirSelect, sizeSelect,
+      el('div.row', {}, [scopeSelect, dirSelect, modeSelect, size,
         el('button.btn.primary', { text: 'Start', onclick: start })
       ]),
       el('div.small.muted', { style: 'margin-top:.6rem', text:
-        pool.length + ' words in scope · ' + due.length + ' due · ' + unseen.length + ' not yet seen' })
+        pool.length + ' words in scope · ' + dueIn(pool) + ' due · ' + unseenCount + ' not yet seen. ' +
+        'Typing is slower but proves you know it; flip cards cover more ground.' })
     ]));
 
     var slot = el('div.review');
     out.appendChild(slot);
 
     function start() {
-      var n = parseInt(sizeSelect.value, 10);
-      var queue = due.concat(shuffle(unseen)).slice(0, n);
-      if (!queue.length) {
-        slot.textContent = '';
-        slot.appendChild(el('div.empty', { text: 'Nothing left in this section.' }));
-        return;
-      }
-      var total = queue.length, done = 0;
-      var meter = el('div.queue-meter');
-      var cardSlot = el('div');
-      slot.textContent = '';
-      slot.appendChild(meter);
-      slot.appendChild(cardSlot);
+      // Due words first; new words shuffled, since the list is alphabetical.
+      var due = buildQueue(pool.filter(function (w) { return S.confidence(w.id) > 0; }), 1e9);
+      var unseen = shuffle(pool.filter(function (w) { return S.confidence(w.id) === 0; }));
+      startPractice(slot, due.concat(unseen).slice(0, parseInt(size.value, 10)));
+    }
+    return out;
+  }
 
-      function next() {
-        meter.textContent = '';
-        meter.appendChild(el('div.bar', { style: 'flex:1' }, [el('i.solid', { style: 'width:' + pct(done, total) + '%' })]));
-        meter.appendChild(el('span.small.faint', { text: done + ' / ' + total }));
-        if (!queue.length) {
-          cardSlot.textContent = '';
-          cardSlot.appendChild(el('div.empty', {}, [
-            el('span.big', { text: '✓' }),
-            el('div', { text: done + ' words reviewed.' }),
-            el('button.btn', { text: 'Another set', onclick: function () { location.reload(); } })
-          ]));
-          renderNav();
+  /* ---------- view: French grammar ---------- */
+
+  function topicById(id) {
+    for (var i = 0; i < S.grammarTopics.length; i++) if (S.grammarTopics[i].id === id) return S.grammarTopics[i];
+    return null;
+  }
+
+  function viewGrammarIndex() {
+    var out = el('div');
+    out.appendChild(el('h1', { text: 'French grammar' }));
+    out.appendChild(frenchTabs('grammar'));
+    if (!S.grammarTopics.length) {
+      out.appendChild(el('div.empty', { text: 'No grammar cards loaded — data/french_grammar.js is missing.' }));
+      return out;
+    }
+    out.appendChild(el('p.muted', { text:
+      'Every point on the specification\'s grammar list, each with revision notes and cards. ' +
+      'Gap cards copy the Paper 2 grammar task: change the word in brackets so that it fits. ' +
+      'Topics tagged R are receptive only — you need to recognise them, not produce them.' }));
+
+    var gaps = S.grammar.filter(function (i) { return i.card.type === 'gap'; });
+    var topicSelect = el('select', { 'aria-label': 'Topic' }, [
+      el('option', { value: 'exam', text: 'Exam-style mix: gap sentences from every topic (' + gaps.length + ')' }),
+      el('option', { value: 'all', text: 'All topics in order (' + S.grammar.length + ' cards)' })
+    ].concat(S.grammarTopics.map(function (t) {
+      return el('option', { value: t.id, text: t.title + ' (' + t.items.length + ')' });
+    })));
+    var size = sizeSelect([10, 20, 40], 10);
+    var slot = el('div.review');
+    out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
+      el('div.row', {}, [topicSelect, size, el('button.btn.primary', { text: 'Start', onclick: function () {
+        var n = parseInt(size.value, 10);
+        if (topicSelect.value === 'exam') {
+          // Like the Paper 2 grammar task: a shuffled mix rather than one topic at a time.
+          var due = buildQueue(gaps.filter(function (i) { return S.confidence(i.id) > 0; }), 1e9);
+          var fresh = shuffle(gaps.filter(function (i) { return S.confidence(i.id) === 0; }));
+          startPractice(slot, due.concat(fresh).slice(0, n));
           return;
         }
-        var item = queue.shift();
-        cardSlot.textContent = '';
-        cardSlot.appendChild(vocabCard(item, function (g) {
-          S.review(item.id, g);
-          done++;
-          if (g === 0) queue.splice(Math.min(4, queue.length), 0, item);
-          next();
-        }));
-      }
-      next();
-    }
+        var pool = topicSelect.value === 'all' ? S.grammar : topicById(topicSelect.value).items;
+        startPractice(slot, buildQueue(pool, n));
+      } })]),
+      el('div.small.muted', { style: 'margin-top:.6rem', text: dueIn(S.grammar) + ' due · ' +
+        S.tally(S.grammar).newCount + ' not yet seen. New cards come in topic order, easiest first.' })
+    ]));
+    out.appendChild(slot);
 
+    var areas = [];
+    S.grammarTopics.forEach(function (t) { if (areas.indexOf(t.area) < 0) areas.push(t.area); });
+    areas.forEach(function (area) {
+      out.appendChild(el('h2', { text: area }));
+      var list = el('div.panel.topic-list');
+      S.grammarTopics.forEach(function (t) {
+        if (t.area !== area) return;
+        list.appendChild(el('a.topic-row', { href: '#/grammar/' + encodeURIComponent(t.id) }, [
+          el('span.t', {}, [document.createTextNode(t.title + ' '),
+            t.receptive ? el('span.tag', { text: 'R', title: 'Receptive only' }) : null]),
+          el('span.small.faint', { text: t.items.length + ' cards' }),
+          el('div', { style: 'width:5.5rem' }, [progressBar(S.tally(t.items))])
+        ]));
+      });
+      out.appendChild(list);
+    });
+    return out;
+  }
+
+  /* What a card asks and what it expects, for the reference list. */
+  function cardSummary(c) {
+    if (c.type === 'flip') return [rich(c.front), rich(c.back)];
+    var q = c.type === 'gap'
+      ? el('span', {}, [rich(c.prompt.replace('___', '___' + (c.base ? ' (' + c.base + ')' : ''))),
+        c.hint ? el('span.faint', { text: '  hint: ' + c.hint }) : null])
+      : el('span', {}, [el('span.faint', { text: c.instruction + ' ' }), rich(c.prompt)]);
+    return [q, el('span', { text: c.answers.join('  ·  ') })];
+  }
+
+  function viewGrammarTopic(id) {
+    var t = topicById(id);
+    if (!t) return el('div.empty', {}, [el('div', { text: 'Unknown grammar topic.' }), el('a.btn', { href: '#/grammar', text: 'All topics' })]);
+    var out = el('div');
+    out.appendChild(el('h1', { text: 'French grammar' }));
+    out.appendChild(frenchTabs('grammar'));
+    out.appendChild(el('div.small', { style: 'margin:.2rem 0 .5rem' }, [el('a', { href: '#/grammar', text: '← All topics' })]));
+    out.appendChild(el('h2', { style: 'margin-top:.3rem' }, [document.createTextNode(t.title + ' '),
+      t.receptive ? el('span.tag', { text: 'Receptive only' }) : null]));
+    out.appendChild(el('p.small.muted', { style: 'margin-top:-.3rem', text: 'Specification: ' + t.spec }));
+    out.appendChild(el('div.panel.notes', {}, [
+      el('h3', { text: 'Revision notes' }),
+      el('ul', {}, t.summary.map(function (line) { return el('li', {}, [rich(line)]); }))
+    ]));
+
+    var tt = S.tally(t.items);
+    var size = sizeSelect([10, 20, 1e9], 10);
+    var slot = el('div.review');
+    out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
+      el('div.spread', { style: 'margin-bottom:.5rem' }, [
+        el('h3', { text: tt.started + ' of ' + tt.total + ' cards started · ' + dueIn(t.items) + ' due' }),
+        el('div.row', {}, [size, el('button.btn.primary', { text: 'Practise', onclick: function () {
+          startPractice(slot, buildQueue(t.items, parseInt(size.value, 10)));
+        } })])
+      ]),
+      progressBar(tt)
+    ]));
+    out.appendChild(slot);
+
+    var rows = t.items.map(function (item) {
+      var parts = cardSummary(item.card);
+      return el('tr', {}, [
+        el('td.small.faint', { text: item.card.type }),
+        el('td.small', {}, [parts[0]]),
+        el('td.small', {}, [parts[1]])
+      ]);
+    });
+    out.appendChild(el('details.topic', { style: 'margin-top:1rem' }, [
+      el('summary', {}, [el('span.t', { text: 'All ' + t.items.length + ' cards, with answers' })]),
+      el('div.topic-body', {}, [el('table.plain', {}, rows)])
+    ]));
+    return out;
+  }
+
+  /* ---------- view: French verbs ---------- */
+
+  var TENSE_ABBR = { present: 'Pres', perfect: 'Perf', imperfect: 'Imperf', future: 'Fut',
+    conditional: 'Cond', pluperfect: 'Plup', imperative: 'Imper' };
+
+  function tenseList() {
+    var d = window.IGCSE_DATA && window.IGCSE_DATA.frenchVerbs;
+    return d ? d.tenses : [];
+  }
+
+  function viewVerbs(query) {
+    var out = el('div');
+    out.appendChild(el('h1', { text: 'French verbs' }));
+    out.appendChild(frenchTabs('verbs'));
+    if (!S.verbs.length) {
+      out.appendChild(el('div.empty', { text: 'No verb data loaded — data/french_verbs.js is missing.' }));
+      return out;
+    }
+    out.appendChild(el('p.muted', { text:
+      'One card per verb and tense. Each time a card comes up it asks for a different person, ' +
+      'so you cannot get by on one memorised form. Type the form with or without the pronoun.' }));
+
+    var tenses = tenseList();
+    var groups = [];
+    S.verbs.forEach(function (v) { if (groups.indexOf(v.group) < 0) groups.push(v.group); });
+    var tenseSelect = el('select', { 'aria-label': 'Tense' }, [el('option', { value: 'all', text: 'All tenses' })]
+      .concat(tenses.map(function (t) {
+        return el('option', { value: t.id, text: t.name + ' (' + t.fr + ')', selected: query.tense === t.id ? '' : null });
+      })));
+    var groupSelect = el('select', { 'aria-label': 'Verbs' }, [el('option', { value: 'all', text: 'All ' + S.verbs.length + ' verbs' })]
+      .concat(groups.map(function (g) { return el('option', { value: g, text: g + ' verbs' }); })));
+    var size = sizeSelect([10, 20, 40], 10);
+    var slot = el('div.review');
+
+    function pool() {
+      var order = tenses.map(function (t) { return t.id; });
+      // New cards come tense by tense: every present before any perfect.
+      return S.verbItems.filter(function (i) {
+        return (tenseSelect.value === 'all' || i.tense.id === tenseSelect.value) &&
+          (groupSelect.value === 'all' || i.verb.group === groupSelect.value);
+      }).sort(function (a, b) { return order.indexOf(a.tense.id) - order.indexOf(b.tense.id); });
+    }
+    out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
+      el('div.row', {}, [tenseSelect, groupSelect, size, el('button.btn.primary', { text: 'Start', onclick: function () {
+        startPractice(slot, buildQueue(pool(), parseInt(size.value, 10)));
+      } })]),
+      el('div.small.muted', { style: 'margin-top:.6rem', text:
+        S.verbItems.length + ' cards · ' + dueIn(S.verbItems) + ' due · ' + S.tally(S.verbItems).newCount + ' not yet seen' })
+    ]));
+    out.appendChild(slot);
+
+    // Overview grid: one dot per verb and tense.
+    var head = el('tr', {}, [el('th', { text: 'Verb' })].concat(tenses.map(function (t) {
+      return el('th', { title: t.name + ' (' + t.fr + ')', text: TENSE_ABBR[t.id] || t.name });
+    })));
+    var rows = [head];
+    S.verbs.forEach(function (v) {
+      var byTense = {};
+      v.items.forEach(function (i) { byTense[i.tense.id] = i; });
+      rows.push(el('tr', {}, [
+        el('td', {}, [el('a', { href: '#/verbs/' + encodeURIComponent(v.inf), text: v.inf }),
+          el('span.small.faint', { text: '  ' + v.en })])
+      ].concat(tenses.map(function (t) {
+        var i = byTense[t.id];
+        if (!i) return el('td.faint', { text: '–' });
+        var c = S.confidence(i.id);
+        return el('td', {}, [el('span.dot', { class: c === 2 ? 'solid' : c === 1 ? 'shaky' : 'new',
+          title: v.inf + ' · ' + t.name + ': ' + (c === 2 ? 'solid' : c === 1 ? 'shaky' : 'not started') })]);
+      }))));
+    });
+    out.appendChild(el('h2', { text: 'Progress by verb' }));
+    out.appendChild(el('div.panel', { style: 'overflow-x:auto' }, [el('table.plain.verb-grid', {}, rows)]));
+    return out;
+  }
+
+  function viewVerb(inf) {
+    var v = null;
+    S.verbs.forEach(function (x) { if (x.inf === inf) v = x; });
+    if (!v) return el('div.empty', {}, [el('div', { text: 'Unknown verb.' }), el('a.btn', { href: '#/verbs', text: 'All verbs' })]);
+    var out = el('div');
+    out.appendChild(el('h1', { text: 'French verbs' }));
+    out.appendChild(frenchTabs('verbs'));
+    out.appendChild(el('div.small', { style: 'margin:.2rem 0 .5rem' }, [el('a', { href: '#/verbs', text: '← All verbs' })]));
+    out.appendChild(el('h2', { style: 'margin-top:.3rem' }, [document.createTextNode(v.inf + ' '),
+      el('span.muted', { style: 'font-weight:400', text: '— ' + v.en })]));
+    out.appendChild(el('p.small.muted', { style: 'margin-top:-.3rem', text: v.group +
+      ' · perfect tense with ' + v.aux }));
+    var slot = el('div.review');
+    out.appendChild(el('div.row', { style: 'margin:.4rem 0 .8rem' }, [
+      el('button.btn.primary', { text: 'Practise this verb', onclick: function () {
+        startPractice(slot, buildQueue(v.items, 1e9));
+      } })
+    ]));
+    out.appendChild(slot);
+    var grid = el('div.grid');
+    v.items.forEach(function (i) {
+      grid.appendChild(el('div.panel', {}, [
+        el('div.spread', {}, [el('h3', { text: i.tense.name }), el('span.small.faint', { text: i.tense.fr })]),
+        conjTable(i)
+      ]));
+    });
+    out.appendChild(grid);
     return out;
   }
 
@@ -669,14 +1099,19 @@
 
   function weakRow(rec) {
     var item = rec.item;
-    var label = item.kind === 'vocab'
-      ? item.fr + ' — ' + item.en
+    var label = item.kind === 'vocab' ? item.fr + ' — ' + item.en
+      : item.kind === 'grammar' ? plainCard(item.card)
+      : item.kind === 'verb' ? item.verb.inf + ' — ' + item.tense.name + ' (' + item.tense.fr + ')'
       : item.ref + '  ' + item.text;
+    var where = item.kind === 'vocab' ? (item.themes[0] ? item.themes[0].subTitle : '')
+      : item.kind === 'grammar' ? 'Grammar · ' + item.topic.title
+      : item.kind === 'verb' ? 'Verbs'
+      : item.subTitle;
     return el('tr', {}, [
       el('td.small', {}, [
         el('div', {}, [
           el('span.mono.faint', { text: S.subjects[item.subject].name + ' · ' }),
-          document.createTextNode(item.kind === 'vocab' ? (item.themes[0] ? item.themes[0].subTitle : '') : item.subTitle)
+          document.createTextNode(where)
         ]),
         el('div', { text: label })
       ]),
@@ -684,6 +1119,48 @@
         text: rec.card.lapses + '\u00d7 wrong' }),
       el('td', {}, [confidenceControl(item, renderNav)])
     ]);
+  }
+
+  function plainCard(c) {
+    var text = c.type === 'flip' ? c.front
+      : c.type === 'gap' ? c.prompt.replace('___', '___' + (c.base ? ' (' + c.base + ')' : '')) + (c.hint ? '  [' + c.hint + ']' : '')
+      : c.instruction + ' ' + c.prompt;
+    return text.replace(/\*\*/g, '');
+  }
+
+  /* ---------- flashcard export (Anki / Quizlet) ---------- */
+
+  function tsvField(s) { return String(s).replace(/\*\*/g, '').replace(/[\t\r\n]+/g, ' ').trim(); }
+  function tsv(rows) {
+    return rows.map(function (r) { return r.map(tsvField).join('\t'); }).join('\n') + '\n';
+  }
+  var EXPORTS = {
+    vocabulary: function () {
+      return tsv(S.vocab.map(function (w) {
+        var t = w.themes[0];
+        return [w.fr, w.en, 'igcse-french vocab ' + (t ? t.subId : '')];
+      }));
+    },
+    grammar: function () {
+      return tsv(S.grammar.map(function (i) {
+        var c = i.card;
+        var back = c.type === 'flip' ? c.back : c.answers.join(' / ') + ' — ' + c.why;
+        return [plainCard(c), back, 'igcse-french grammar ' + i.topic.id];
+      }));
+    },
+    verbs: function () {
+      return tsv(S.verbItems.map(function (i) {
+        return [i.verb.inf + ' (' + i.verb.en + ') — ' + i.tense.name + ' / ' + i.tense.fr, i.table.join('; '),
+          'igcse-french verbs ' + i.tense.id];
+      }));
+    }
+  };
+  function download(name, text) {
+    var url = URL.createObjectURL(new Blob([text], { type: 'text/tab-separated-values;charset=utf-8' }));
+    var a = el('a', { href: url, download: name });
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(url); a.remove(); }, 0);
   }
 
   function viewWeak() {
@@ -738,6 +1215,17 @@
       ])
     ]));
 
+    out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
+      el('h3', { text: 'Export French flashcards' }),
+      el('p.small.muted', { text: 'Tab-separated text files: front, back, tags. Anki imports them directly (File → Import); ' +
+        'for Quizlet, open the file and paste it into Create → Import. Progress is not included.' }),
+      el('div.row', {}, Object.keys(EXPORTS).map(function (k) {
+        return el('button.btn', { text: k.charAt(0).toUpperCase() + k.slice(1), onclick: function () {
+          download('igcse-french-' + k + '.tsv', EXPORTS[k]());
+        } });
+      }))
+    ]));
+
     var stats = el('table.plain');
     stats.appendChild(el('tr', {}, [el('th', { text: 'Subject' }), el('th', { text: 'Items' }),
       el('th', { text: 'Started' }), el('th', { text: 'Solid' }), el('th', { text: 'Due' })]));
@@ -776,7 +1264,8 @@
     links.push(['#/review', 'Review'], ['#/weak', 'Weak spots'], ['#/data', 'Data']);
     links.forEach(function (l) {
       var a = el('a', { href: l[0], text: l[1] });
-      if (hash === l[0] || hash.indexOf(l[0] + '/') === 0) a.className = 'on';
+      if (hash === l[0] || hash.indexOf(l[0] + '/') === 0 ||
+          (l[0] === '#/s/french' && /^#\/(vocab|grammar|verbs)\b/.test(hash))) a.className = 'on';
       if (l[0] === '#/review') {
         var n = S.dueCount(null);
         if (n) a.appendChild(el('span.badge', { text: String(n) }));
@@ -807,6 +1296,8 @@
       case 's': node = viewSubject(r.parts[1]); break;
       case 'review': node = viewReview(r.parts[1] || null); break;
       case 'vocab': node = viewVocab(r.query); break;
+      case 'grammar': node = r.parts[1] ? viewGrammarTopic(decodeURIComponent(r.parts[1])) : viewGrammarIndex(); break;
+      case 'verbs': node = r.parts[1] ? viewVerb(decodeURIComponent(r.parts[1])) : viewVerbs(r.query); break;
       case 'weak': node = viewWeak(); break;
       case 'data': node = viewData(); break;
       default: node = viewToday();

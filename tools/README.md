@@ -6,7 +6,7 @@
 ## Usage
 
 ```sh
-pip install pypdf
+pip install pypdf pdfplumber
 mkdir specs
 
 # Pearson moves these URLs between issues; check the qualification page if a
@@ -27,8 +27,11 @@ Expected output:
 biology    5 topics    176 items  -> data/biology.js
 chemistry  4 topics    182 items  -> data/chemistry.js
 maths      6 topics    241 items  -> data/maths.js
-french     6 topics   2341 items  -> data/french.js
+french     6 topics   2312 items  -> data/french.js
 ```
+
+Add subject names to rebuild only those, e.g.
+`python3 tools/build_syllabus.py specs data french`.
 
 If a count moves a long way, the PDF layout has changed and the parser needs
 attention — diff the generated file before committing it.
@@ -45,9 +48,30 @@ attention — diff the generated file before committing it.
   right-hand *Notes* column bleeds into the PDF's text layer and is filtered out
   by dropping lines that are mostly symbols.
 - **French** is the Appendix 1 vocabulary list, printed two columns to a page.
-  It is read with pypdf's layout mode and split on the wide gutter between
-  columns. The five themes are followed by a non-topic-specific section
-  (prepositions, verbs, question words…) which is kept as a sixth pseudo-theme.
+  A plain text layer mangles it (glosses that wrap onto a second line lose
+  their second half, entries whose dash is set apart vanish, page footers turn
+  into "words"), so it is read with pdfplumber from word positions and
+  typefaces: bold rows are headings, a fixed x position starts the right-hand
+  column, rows closer than normal line spacing are one wrapped entry, and the
+  English gloss is the italic half. The build checks itself — every entry
+  must have both halves, and the entry count matches the number of dashes on
+  those pages (2,320, of which 8 are repeats within a sub-topic). The five
+  themes are followed by a non-topic-specific section (prepositions, verbs,
+  question words…) kept as a sixth pseudo-theme.
+
+## French grammar and verbs
+
+These are not parsed from the spec.
+
+- `content/french/grammar/<topic>.json` — one file per point on the spec's
+  grammar list: revision notes plus `flip`, `gap` and `transform` cards. The
+  format is documented by `tools/validate_grammar.js`. After editing, run
+  `node tools/build_grammar.js`, which validates every file and rewrites
+  `data/french_grammar.js`. A typed card is only as fair as its `answers`
+  list: list every correct form in full, never `allé(e)`.
+- `tools/build_verbs.py` (`pip install verbecc`) regenerates
+  `data/french_verbs.js`. The verb list is at the top of the script; the build
+  refuses any verb verbecc would have to guess rather than look up.
 
 ## Caveats
 
@@ -56,6 +80,7 @@ of all four subjects has been checked against the source documents, and the
 item counts above are the verified baseline — but individual statements may
 carry stray fragments. Treat `data/` as a study aid, not as the specification.
 
-Item ids used for progress (`biology#2.44`, `french#v#lac (m)`) are derived from
-the spec reference or the French word. Progress is keyed on those, so a rebuild
+Item ids used for progress (`biology#2.44`, `french#v#lac (m)`,
+`french#g#articles-03`, `french#verb#aller#perfect`) are derived from the spec
+reference, the French word, the grammar card id, or the verb and tense. Progress is keyed on those, so a rebuild
 that renumbers or rewords an item silently orphans its history.

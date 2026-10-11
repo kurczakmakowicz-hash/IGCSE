@@ -8,7 +8,7 @@ the actual specification content rather than a generic flashcard box.
 | Biology | 4BI1 | 176 spec points (42 Paper 2 only, 14 practicals) |
 | Chemistry | 4CH1 | 182 spec points (52 Paper 2 only, 12 practicals) |
 | Mathematics A | 4MA1 | 241 items, Higher Tier (78 Higher-only) |
-| French | 4FR1 | 2,125 words of prescribed vocabulary |
+| French | 4FR1 | 2,145 prescribed words, ~40 grammar topics, 60 verbs × 7 tenses |
 
 Target series: **May/June 2027**.
 
@@ -35,10 +35,27 @@ your head or on paper, reveal what the specification actually requires, then
 rate yourself. Intervals are shown on the grade buttons so you can see what each
 answer costs you.
 
-**French vocabulary drill.** The minimum core vocabulary list from Appendix 1 of
-the specification, by theme, drilled by typing. Answers are compared ignoring
-accents and articles, and any listed alternative is accepted. French → English
-or English → French.
+**French vocabulary.** The minimum core vocabulary list from Appendix 1 of
+the specification, by theme. Drill by typing (answers compared ignoring accents
+and articles; any listed alternative is accepted) or as flip cards, French →
+English or English → French.
+
+**French grammar.** Every point on the specification's grammar list as a topic
+with revision notes and cards. Most cards copy the Paper 2 grammar task —
+*change the word in brackets so that it fits* — and are typed and auto-marked;
+the rest are rule and recognition cards you answer in your head. Points the
+spec marks (R), receptive only, get recognition cards only. Typed French is
+marked strictly on accents, apostrophes and hyphens, as the exam marks them,
+with accent buttons under the answer box and a specific "check the accents"
+message when that is the only slip.
+
+**French verbs.** 60 high-frequency verbs in the present, perfect, imperfect,
+future, conditional, pluperfect and imperative. One card per verb and tense;
+each time it comes up it asks for a different person, and the full table is
+shown after you answer. Forms can be typed with or without the pronoun.
+
+**Export.** The Data page downloads the French vocabulary, grammar and verb
+cards as tab-separated files for Anki or Quizlet, for anyone who prefers those.
 
 **Weak spots.** Everything you have actually failed in review, most-failed
 first. This is the only ranking in the app that is not self-reported, and it is
@@ -79,6 +96,14 @@ Specifications used:
 - Mathematics A (4MA1) — Issue 2, November 2017
 - French (4FR1) — Issue 3, January 2026
 
+The French grammar cards are the exception: they are written to the spec's
+grammar list (original sentences, not taken from any textbook or past paper),
+kept as one JSON file per topic in `content/french/grammar/`, and were checked
+by an independent reviewer pass for French accuracy and for whether every
+correct answer is accepted. Verb tables are generated from the
+[verbecc](https://github.com/bretttolbert/verbecc) conjugation tables by
+`tools/build_verbs.py`.
+
 Pearson reissues specifications from time to time. If yours differs, rerun the
 parser against the current PDFs — see `tools/README.md`.
 
@@ -93,11 +118,16 @@ index.html            shell
 assets/app.js         views and routing
 assets/store.js       catalogue + progress state
 assets/srs.js         spaced-repetition scheduling
-assets/match.js       vocabulary answer matching
-data/*.js             generated syllabus content
-tools/build_syllabus.py   spec PDF -> data/
-tools/test.js         unit tests
+assets/match.js       answer matching (vocabulary, French grammar, verbs)
+data/*.js             generated content — do not edit by hand
+content/french/grammar/*.json   French grammar topics (edit these)
+tools/build_syllabus.py   spec PDF -> data/<subject>.js
+tools/build_grammar.js    content/french/grammar -> data/french_grammar.js
+tools/build_verbs.py      verbecc -> data/french_verbs.js
+tools/validate_grammar.js schema checks for the grammar topics
+tools/test.js         unit and data tests
 ```
 
-Run the tests with `node tools/test.js` — they cover the scheduling maths and
-the vocabulary answer matching, which are the only two pieces of real logic.
+Run the tests with `node tools/test.js` — they cover the scheduling maths, the
+answer matching, and sanity checks on the generated French data (no page
+headers parsed as words, every verb form present, every grammar topic valid).

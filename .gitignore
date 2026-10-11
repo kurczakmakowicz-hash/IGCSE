@@ -3,3 +3,4 @@ shots/
 node_modules/
 *.pyc
 __pycache__/
+verbecc.log

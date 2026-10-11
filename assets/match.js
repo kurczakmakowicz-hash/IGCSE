@@ -42,7 +42,65 @@ window.Match = (function () {
     return alternatives(expected).indexOf(g) >= 0;
   }
 
-  return { normalise: normalise, alternatives: alternatives, accepts: accepts };
+  /* ---------- French answers: grammar gaps, rewrites, verb forms ----------
+   *
+   * The Paper 2 grammar task marks spelling, so here accents, apostrophes and
+   * hyphens all count. What does not count: capitals, spacing, punctuation
+   * (including French spacing before ? and !) and the **bold** markers that
+   * prompts use to highlight words. */
+  function normaliseFrench(s) {
+    return String(s)
+      .normalize('NFC')
+      .toLowerCase()
+      .replace(/\*\*/g, '')
+      .replace(/[\u2018\u2019\u02bc`\u00b4]/g, "'")
+      .replace(/[\u2010\u2011\u2013]/g, '-')
+      .replace(/\u0153/g, 'oe').replace(/\u00e6/g, 'ae')     // œ, æ typed as oe, ae
+      .replace(/[.,!?;:\u2026"\u00ab\u00bb\u201c\u201d()]/g, ' ')
+      .replace(/\s*'\s*/g, "'")
+      .replace(/\s*-\s*/g, '-')
+      .replace(/[\s\u00a0\u202f]+/g, ' ')
+      .trim();
+  }
+
+  function stripAccents(s) {
+    return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function acceptsFrench(answers, given) {
+    var g = normaliseFrench(given);
+    if (!g) return false;
+    return answers.some(function (a) { return normaliseFrench(a) === g; });
+  }
+
+  /* Right apart from accents: worth telling the student exactly that. */
+  function accentSlip(answers, given) {
+    var g = stripAccents(normaliseFrench(given));
+    if (!g || acceptsFrench(answers, given)) return false;
+    return answers.some(function (a) { return stripAccents(normaliseFrench(a)) === g; });
+  }
+
+  /* A conjugated form without its subject pronoun: "j'ai" -> "ai",
+   * "nous nous levons" -> "nous levons", "elle est allée" -> "est allée". */
+  var SUBJECT = /^(je |j'|tu |il |elle |on |nous |vous |ils |elles )/;
+  function withoutSubject(form) {
+    return String(form).replace(SUBJECT, '');
+  }
+
+  /* Every accepted way to type a verb form: with or without the pronoun. */
+  function verbAnswers(forms) {
+    var out = [];
+    forms.forEach(function (f) {
+      [f, withoutSubject(f)].forEach(function (v) { if (out.indexOf(v) < 0) out.push(v); });
+    });
+    return out;
+  }
+
+  return {
+    normalise: normalise, alternatives: alternatives, accepts: accepts,
+    normaliseFrench: normaliseFrench, acceptsFrench: acceptsFrench,
+    accentSlip: accentSlip, withoutSubject: withoutSubject, verbAnswers: verbAnswers
+  };
 })();
 
 if (typeof module !== 'undefined' && module.exports) module.exports = window.Match;

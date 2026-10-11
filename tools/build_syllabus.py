@@ -1,9 +1,10 @@
 """Parse the official Pearson Edexcel International GCSE specification PDFs into
 structured JSON used by the study app.
 
-Usage:  python3 tools/build_syllabus.py <dir-with-spec-pdfs>
+Usage:  python3 tools/build_syllabus.py <dir-with-spec-pdfs> [outdir] [subject ...]
 
-Expects bio.pdf, chem.pdf, maths.pdf, french.pdf in that directory. Downloads
+Expects bio.pdf, chem.pdf, maths.pdf, french.pdf in that directory; name
+subjects (biology chemistry maths french) to rebuild only those. Downloads
 are not automated because Pearson's URLs change between spec issues; see
 tools/README.md for the current links.
 """
@@ -223,99 +224,171 @@ def parse_maths(path):
 
 
 # --------------------------------------------------------------------------
-# French: the prescribed vocabulary list is printed two columns to a page under
-# five themes; the grammar list is a flat set of headings.
+# French: the prescribed vocabulary list (Appendix 1) is printed two columns to
+# a page under five themes, then a non-topic-specific section kept as a sixth
+# pseudo-theme. Each entry is "French – English", with the English set in
+# italics. A plain text layer loses too much here (wrapped glosses, entries
+# split across the gutter), so this reads word positions and typefaces with
+# pdfplumber instead.
 # --------------------------------------------------------------------------
 
 THEME_RE = re.compile(r"^Theme ([A-E])\s*[–-]\s*(.+)$")
 GENERAL_HEADING = "Non-topic-specific vocabulary"
-GENERAL_SECTIONS = [
-    "Abbreviations/acronyms", "Social conventions", "Prepositions", "Adjectives",
-    "Verbs", "Adverbs", "Colours", "Quantities", "Conjunctions", "Time expressions",
-    "Question words", "Other general expressions", "Other words",
-    "Countries and continents", "Nationalities, etc.",
-    "Geographical areas and mountains",
-]
-FR_SUB_RE = re.compile(r"^(\d)\s+([A-Za-z].+)$")
-VOCAB_RE = re.compile(r"^(.{1,60}?)\s+[–-]\s+(.+)$")
+GUTTER = 300                 # x between the two vocabulary columns
+RIGHT_START = (305, 313)     # x0 range where right-column entries begin
+FOOTER_TOP = 780             # running footer and page number sit below this
+ROW_TOL = 3                  # words within this many points share a row
+WRAP_GAP = 16                # rows closer than this are one wrapped entry
+DASHES = ("–", "-")
+
+
+def _italic(w):
+    return "Italic" in w["fontname"]
+
+
+def _rows(words):
+    rows = []
+    for w in sorted(words, key=lambda w: (w["top"], w["x0"])):
+        if rows and abs(w["top"] - rows[-1]["top"]) <= ROW_TOL:
+            rows[-1]["words"].append(w)
+        else:
+            rows.append({"top": w["top"], "words": [w]})
+    for r in rows:
+        r["words"].sort(key=lambda w: w["x0"])
+    return rows
+
+
+def _tidy(s):
+    s = re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\(\s+", "(", s)
+    s = re.sub(r"\s+\)", ")", s)
+    s = re.sub(r"\bM (me|lle)\s*:", r"M\1:", s)   # superscript in Mme, Mlle
+    return re.sub(r"\s+:", ":", s)
+
+
+def _french_events(path):
+    """Yield ('heading', size, text) and ('entry', words) in reading order."""
+    import pdfplumber
+    started = False
+    with pdfplumber.open(path) as pdf:
+        for page in pdf.pages:
+            words = [w for w in page.extract_words(x_tolerance=1.5, extra_attrs=["fontname", "size"])
+                     if w["top"] < FOOTER_TOP and "Trebuchet" not in w["fontname"]]
+            text = " ".join(w["text"] for w in words)
+            if not started:
+                if not re.search(r"Theme A\s*[–-]", text):
+                    continue
+                started = True
+            if text.lstrip().startswith("Appendix 2"):
+                return
+            bold = [w for w in words if "Bold" in w["fontname"]]
+            body = [w for w in words if "Bold" not in w["fontname"]]
+            # Headings span the page width and split it into bands; each band
+            # is read left column top to bottom, then right column.
+            heads = []
+            for r in _rows(bold):
+                bottom = max(w["bottom"] for w in r["words"])
+                line = " ".join(w["text"] for w in r["words"])
+                if heads and r["top"] - heads[-1]["bottom"] < 12:
+                    heads[-1]["text"] += " " + line
+                    heads[-1]["bottom"] = bottom
+                else:
+                    heads.append({"top": r["top"], "bottom": bottom, "text": line,
+                                  "size": round(r["words"][0]["size"])})
+            cuts = [h["top"] for h in heads] + [float("inf")]
+            bands = [(-1, cuts[0], None)] + [(h["top"] + 1, cuts[i + 1], h) for i, h in enumerate(heads)]
+            for lo, hi, head in bands:
+                if head:
+                    yield ("heading", head["size"], head["text"])
+                band = [w for w in body if lo <= w["top"] < hi]
+                # Right-column entries start at one fixed x; a word that merely
+                # runs past the gutter continues the left-hand entry.
+                side = {}
+                for r in _rows(band):
+                    prev = None
+                    for w in r["words"]:
+                        right = ((w["x0"] >= GUTTER and prev is None)
+                                 or (prev is not None and side[id(prev)] == 1)
+                                 or RIGHT_START[0] <= w["x0"] <= RIGHT_START[1])
+                        side[id(w)] = 1 if right else 0
+                        prev = w
+                for col in (0, 1):
+                    entries = []
+                    for r in _rows([w for w in band if side[id(w)] == col]):
+                        if entries and r["top"] - entries[-1]["last"] < WRAP_GAP:
+                            entries[-1]["words"] += r["words"]
+                            entries[-1]["last"] = r["top"]
+                        else:
+                            entries.append({"words": list(r["words"]), "last": r["top"]})
+                    for e in entries:
+                        yield ("entry", e["words"])
+
+
+def _split_entry(words):
+    """French and English halves of one entry, split on its dash; the typeface
+    (English is italic) is the fallback when the dash is missing or doubled."""
+    toks = [w["text"] for w in words]
+    dash = [i for i, t in enumerate(toks) if t in DASHES]
+    glued = [i for i, t in enumerate(toks) if len(t) > 1 and t[0] == "–"]
+    if len(dash) == 1:
+        fr, en = toks[:dash[0]], toks[dash[0] + 1:]
+    elif not dash and len(glued) == 1:
+        fr, en = toks[:glued[0]], [toks[glued[0]][1:]] + toks[glued[0] + 1:]
+    else:
+        fr = [w["text"] for w in words if not _italic(w) and w["text"] not in DASHES]
+        en = [w["text"] for w in words if _italic(w) and w["text"] not in DASHES]
+    en_s = _tidy(" ".join(en))
+    en_s = re.sub(r"\b([b-hj-z]) ([a-z]{3,})", r"\1\2", en_s)   # kerning: "j ournalist"
+    return _tidy(" ".join(fr)), en_s
 
 
 def parse_french(path):
-    raw = pages(path, layout=True)
-    lines = []
-    for page in raw:
-        for line in page.split("\n"):
-            s = line.rstrip()
-            if s.strip() and not NOISE.match(s.strip()):
-                lines.append(s)
-
-    start = next(i for i, l in enumerate(lines) if THEME_RE.match(l.strip()))
-    # The five themes are followed by a general vocabulary section that has its
-    # own unnumbered headings, then by the appendices.
-    general = next(i for i, l in enumerate(lines[start:], start)
-                   if l.strip() == GENERAL_HEADING)
-    end = next(i for i, l in enumerate(lines[general:], general)
-               if l.strip().startswith("Appendix 2"))
-
     themes, theme, sub = [], None, None
-    for line in lines[start:general]:
-        stripped = line.strip()
-        m = THEME_RE.match(stripped)
-        if m:
-            theme = {"id": m.group(1), "title": m.group(2).strip(), "subtopics": []}
-            themes.append(theme)
-            sub = None
-            continue
-        if theme is None:
-            continue
-        # Sub-topic headings ("1    Life in the town and rural life") are numbered
-        # and carry no "fr - en" dash, so test them before the column split: the
-        # gap after the number is as wide as the gutter between vocabulary columns.
-        collapsed = re.sub(r"\s+", " ", stripped)
-        m = FR_SUB_RE.match(collapsed)
-        if m and not VOCAB_RE.match(collapsed):
-            sub = {"id": f"{theme['id']}{m.group(1)}", "title": m.group(2).strip(),
-                   "vocab": []}
-            theme["subtopics"].append(sub)
-            continue
-        # Column-split on the wide gutter between the two vocabulary columns.
-        cells = [c.strip() for c in re.split(r"\s{5,}", stripped) if c.strip()]
-        if sub is None:
-            continue
-        for cell in cells:
-            m = VOCAB_RE.match(cell)
-            if m:
-                fr, en = m.group(1).strip(), m.group(2).strip()
-                if fr and en and len(fr) < 60:
-                    sub["vocab"].append({"fr": fr, "en": en})
-    # Non-topic-specific vocabulary, kept as a sixth pseudo-theme.
-    gen = {"id": "F", "title": GENERAL_HEADING, "subtopics": []}
-    sub = None
-    for line in lines[general:end]:
-        collapsed = re.sub(r"\s+", " ", line.strip())
-        base = collapsed.replace(" (continued)", "")
-        if base in GENERAL_SECTIONS:
-            sub = next((s for s in gen["subtopics"] if s["title"] == base), None)
+    for ev in _french_events(path):
+        if ev[0] == "heading":
+            text = re.sub(r"\s+", " ", ev[2]).strip()
+            m = THEME_RE.match(text)
+            if m or text == GENERAL_HEADING:
+                theme = {"id": m.group(1) if m else "F",
+                         "title": m.group(2).strip() if m else GENERAL_HEADING,
+                         "subtopics": []}
+                themes.append(theme)
+                sub = None
+                continue
+            title = re.sub(r"\s*\(continued\)$", "", text).strip()
+            m = re.match(r"^(\d)\s+(.+)$", title)
+            num, title = (m.group(1), m.group(2)) if m else (None, title)
+            sub = next((s for s in theme["subtopics"] if s["title"] == title), None)
             if sub is None:
-                sub = {"id": f"F{len(gen['subtopics']) + 1}", "title": base, "vocab": []}
-                gen["subtopics"].append(sub)
+                sub = {"id": theme["id"] + (num or str(len(theme["subtopics"]) + 1)),
+                       "title": title, "vocab": []}
+                theme["subtopics"].append(sub)
             continue
         if sub is None:
-            continue
-        for cell in [c.strip() for c in re.split(r"\s{5,}", line.strip()) if c.strip()]:
-            m = VOCAB_RE.match(cell)
-            if m and len(m.group(1).strip()) < 60:
-                sub["vocab"].append({"fr": m.group(1).strip(), "en": m.group(2).strip()})
-    themes.append(gen)
+            raise ValueError("vocabulary entry before any sub-topic: %r"
+                             % " ".join(w["text"] for w in ev[1]))
+        fr, en = _split_entry(ev[1])
+        sub["vocab"].append({"fr": fr, "en": en})
 
-    # A word can be printed twice inside one sub-topic where a column wraps.
     for t in themes:
         for s in t["subtopics"]:
+            # A French phrase too long for its line can push the dash and gloss
+            # onto a row of their own: rejoin the two halves.
+            merged = []
+            for e in s["vocab"]:
+                if merged and not e["fr"] and not merged[-1]["en"]:
+                    merged[-1]["en"] = e["en"]
+                else:
+                    merged.append(e)
+            bad = [e for e in merged if not e["fr"] or not e["en"]]
+            if bad:
+                raise ValueError("incomplete vocabulary entries in %s: %r" % (s["id"], bad))
+            # A word can be printed twice inside one sub-topic.
             seen, uniq = set(), []
-            for w in s["vocab"]:
-                if w["fr"] not in seen:
-                    seen.add(w["fr"])
-                    uniq.append(w)
+            for e in merged:
+                if e["fr"] not in seen:
+                    seen.add(e["fr"])
+                    uniq.append(e)
             s["vocab"] = uniq
     return [t for t in themes if any(s["vocab"] for s in t["subtopics"])]
 
@@ -384,14 +457,16 @@ def main():
     outdir = sys.argv[2] if len(sys.argv) > 2 else "data"
     os.makedirs(outdir, exist_ok=True)
 
-    parsed = {
-        "biology": parse_science(os.path.join(src, "bio.pdf"),
-                                 "1 The nature and variety", "3 Assessment information"),
-        "chemistry": parse_science(os.path.join(src, "chem.pdf"),
-                                   "1 Principles of chemistry", "3 Assessment information"),
-        "maths": parse_maths(os.path.join(src, "maths.pdf")),
-        "french": parse_french(os.path.join(src, "french.pdf")),
+    only = set(sys.argv[3:]) or {"biology", "chemistry", "maths", "french"}
+    builders = {
+        "biology": lambda: parse_science(os.path.join(src, "bio.pdf"),
+                                         "1 The nature and variety", "3 Assessment information"),
+        "chemistry": lambda: parse_science(os.path.join(src, "chem.pdf"),
+                                           "1 Principles of chemistry", "3 Assessment information"),
+        "maths": lambda: parse_maths(os.path.join(src, "maths.pdf")),
+        "french": lambda: parse_french(os.path.join(src, "french.pdf")),
     }
+    parsed = {sid: build() for sid, build in builders.items() if sid in only}
     for subject_id, topics in parsed.items():
         items = sum(len(s.get("points", s.get("vocab", []))) for t in topics
                     for s in t["subtopics"])
