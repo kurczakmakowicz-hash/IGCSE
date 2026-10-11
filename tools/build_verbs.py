@@ -38,15 +38,15 @@ VERBS = [
     ("appeler", "to call", "spelling change", True),
     ("préférer", "to prefer", "spelling change", False),
     ("payer", "to pay (for)", "spelling change", True),
-    ("envoyer", "to send", "spelling change", True),
-    # être in compound tenses
-    ("arriver", "to arrive", "être verb", False),
-    ("entrer", "to enter, to go in", "être verb", True),
-    ("rester", "to stay", "être verb", True),
-    ("tomber", "to fall", "être verb", False),
-    ("monter", "to go up, to get on", "être verb", True),
-    ("descendre", "to go down, to get off", "être verb", True),
-    ("rentrer", "to go home, to return", "être verb", True),
+    ("envoyer", "to send", "irregular", True),
+    # regular, but être in compound tenses
+    ("arriver", "to arrive, to happen", "regular, with être", False),
+    ("entrer", "to enter, to go in", "regular, with être", True),
+    ("rester", "to stay, to remain", "regular, with être", True),
+    ("tomber", "to fall", "regular, with être", False),
+    ("monter", "to go up, to get on", "regular, with être", True),
+    ("descendre", "to go down, to get off", "regular, with être", True),
+    ("rentrer", "to go home, to return", "regular, with être", True),
     # irregular
     ("avoir", "to have", "irregular", False),
     ("être", "to be", "irregular", False),
@@ -56,7 +56,7 @@ VERBS = [
     ("devenir", "to become", "irregular", False),
     ("revenir", "to come back", "irregular", True),
     ("prendre", "to take", "irregular", True),
-    ("apprendre", "to learn", "irregular", True),
+    ("apprendre", "to learn, to teach", "irregular", True),
     ("comprendre", "to understand", "irregular", False),
     ("pouvoir", "to be able to, can", "irregular", False),
     ("vouloir", "to want", "irregular", False),
@@ -105,7 +105,10 @@ PERSONS = ["je", "tu", "il", "elle", "on", "nous", "vous", "ils", "elles"]
 ROWS = [["je"], ["tu"], ["il", "elle", "on"], ["nous"], ["vous"], ["ils", "elles"]]
 
 ARCHAIC = {"je puis"}
-REFORMED = re.compile(r"préfèrer")
+# 1990 spelling reform: accepted, never shown. verbecc knows préfèrerai;
+# connaît/naît without the circumflex are added here.
+REFORMED = re.compile(r"préfèrer|(conn|n)ai(t|tr)")
+REFORM_CIRCUMFLEX = {"connaître", "naître"}
 
 # Who a participle can agree with when the auxiliary is être. "vous" may be
 # one person (polite) or several; "on" is often used for "nous".
@@ -152,6 +155,9 @@ def build():
             forms = {}
             for x in rows:
                 forms.setdefault(str(x["pr"]), []).extend(x["c"])
+            if inf in REFORM_CIRCUMFLEX:
+                for p in forms:
+                    forms[p] += [f.replace("aît", "ait") for f in forms[p] if "aît" in f]
             if tid in COMPOUND and aux == "être":
                 # Rebuild from "subject + auxiliary" with every participle the
                 # subject can take (verbecc lists only plural for vous, etc.).

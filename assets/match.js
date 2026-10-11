@@ -100,11 +100,14 @@ window.Match = (function () {
     return String(form).replace(SUBJECT, '');
   }
 
-  /* Every accepted way to type a verb form: with or without the pronoun. */
+  /* Every accepted way to type a verb form: with or without the pronoun.
+   * Except reflexive nous/vous: "nous nous levons" minus its subject reads
+   * exactly like the classic slip "nous levons", so only the full form counts. */
   function verbAnswers(forms) {
     var out = [];
     forms.forEach(function (f) {
-      [f, withoutSubject(f)].forEach(function (v) { if (out.indexOf(v) < 0) out.push(v); });
+      var bare = /^(nous nous|vous vous) /.test(f) ? f : withoutSubject(f);
+      [f, bare].forEach(function (v) { if (out.indexOf(v) < 0) out.push(v); });
     });
     return out;
   }

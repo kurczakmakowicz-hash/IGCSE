@@ -1103,8 +1103,13 @@
       .concat(tenses.map(function (t) {
         return el('option', { value: t.id, text: t.name + ' (' + t.fr + ')', selected: query.tense === t.id ? '' : null });
       })));
+    var etre = S.verbs.filter(function (v) { return v.aux === 'être'; }).length;
     var groupSelect = el('select', { 'aria-label': 'Verbs' }, [el('option', { value: 'all', text: 'All ' + S.verbs.length + ' verbs' })]
-      .concat(groups.map(function (g) { return el('option', { value: g, text: g + ' verbs' }); })));
+      .concat(groups.map(function (g) {
+        var name = g === 'regular, with être' ? 'Regular verbs taking être' : g.charAt(0).toUpperCase() + g.slice(1) + ' verbs';
+        return el('option', { value: g, text: name });
+      }))
+      .concat([el('option', { value: 'aux:être', text: 'Every verb taking être in the perfect (' + etre + ')' })]));
     var size = sizeSelect([10, 20, 40], 10);
     var slot = el('div.review');
 
@@ -1113,7 +1118,8 @@
       // New cards come tense by tense: every present before any perfect.
       return S.verbItems.filter(function (i) {
         return (tenseSelect.value === 'all' || i.tense.id === tenseSelect.value) &&
-          (groupSelect.value === 'all' || i.verb.group === groupSelect.value);
+          (groupSelect.value === 'all' || i.verb.group === groupSelect.value ||
+            (groupSelect.value === 'aux:être' && i.verb.aux === 'être'));
       }).sort(function (a, b) { return order.indexOf(a.tense.id) - order.indexOf(b.tense.id); });
     }
     out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [

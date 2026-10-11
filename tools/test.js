@@ -109,10 +109,13 @@ check(!Match.accentSlip(['sont allées'], 'sont allées'), 'a right answer is no
 check(!Match.accentSlip(['sont allées'], 'sont partis'), 'a wrong word is not an accent slip');
 
 const forms = Match.verbAnswers(["j'ai", 'je suis allée', 'nous nous levons', 'va']);
-['ai', "j'ai", 'suis allée', 'nous levons', 'nous nous levons', 'va'].forEach(function (f) {
+['ai', "j'ai", 'suis allée', 'nous nous levons', 'va'].forEach(function (f) {
   check(forms.indexOf(f) >= 0, 'verb form accepted: ' + f);
 });
 check(forms.indexOf('levons') < 0, 'reflexive pronoun is not optional');
+check(forms.indexOf('nous levons') < 0, '"nous levons" (reflexive pronoun forgotten) is not accepted');
+check(Match.verbAnswers(['vous vous êtes levés']).indexOf('vous êtes levés') < 0, '"vous êtes levés" is not accepted for se lever');
+check(Match.verbAnswers(['je me lève']).indexOf('me lève') >= 0, 'je me lève can drop its subject: me lève');
 
 console.log('\nReading aloud: what gets spoken');
 const Speech = require('../assets/speech.js');
