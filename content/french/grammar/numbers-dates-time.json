@@ -11,11 +11,12 @@
     "et appears in 21, 31, 41, 51, 61 and 71 (vingt et un, soixante et onze) but not in 81 or 91 (quatre-vingt-un, quatre-vingt-onze).",
     "vingt and cent take -s only when multiplied and nothing follows: quatre-vingts, deux cents, but quatre-vingt-trois, deux cent dix. mille never takes -s: deux mille.",
     "Ordinals add -ième: deuxième, troisième, cinquième, neuvième; first is premier / première.",
-    "Dates use normal numbers except the first: le premier mai, le quatorze juillet; years: en deux mille vingt-cinq. Months and days have no capital.",
-    "Time: Il est huit heures et quart / et demie / moins le quart; midi et demi; 24-hour clock: dix-sept heures quarante (17h40).",
+    "Dates use normal numbers except the first: le premier mai, le quatorze juillet, le vendredi treize août; years: en deux mille vingt-cinq. Months and days have no capital.",
+    "lundi = on Monday (one occasion); le lundi = on Mondays (every week). Months take en (en mai); seasons take en (en été, en automne, en hiver), except au printemps.",
+    "Time: Quelle heure est-il ? — Il est huit heures et quart / et demie / moins le quart; midi et demi. 12-hour clock: du matin, de l'après-midi, du soir; 24-hour clock: dix-sept heures quarante (17h40).",
     "Quantities take plain de: un kilo de pommes, une bouteille d'eau, un paquet de chips; but la moitié is followed by de + article: la moitié du gâteau.",
-    "depuis + present for something still going on: J'apprends le français depuis cinq ans (I have been learning French for five years).",
-    "depuis + imperfect for something that had been going on when something else happened: J'attendais depuis une heure quand le bus est arrivé (I had been waiting for an hour when the bus arrived)."
+    "Approximate numbers end in -aine and take de: une dizaine de (about ten), une vingtaine de (about twenty), une centaine de (about a hundred). une douzaine de = a dozen: une douzaine d'œufs.",
+    "depuis + a point in time = since: depuis deux mille dix-neuf, depuis le trois mars, depuis huit heures. The verb is in the present for something still going on."
   ],
   "cards": [
     {
@@ -109,6 +110,30 @@
       "why": "The first of the month is the only date that uses the ordinal: le premier mai, but le deux mai."
     },
     {
+      "id": "numbers-dates-time-21",
+      "type": "transform",
+      "instruction": "Write the date in words.",
+      "prompt": "Le mariage de ma cousine aura lieu le samedi 21 juin.",
+      "answers": ["Le mariage de ma cousine aura lieu le samedi vingt et un juin.", "Le mariage de ma cousine aura lieu le samedi vingt-et-un juin."],
+      "en": "My cousin's wedding will take place on Saturday 21st June.",
+      "why": "A full date is le + day + number + month, with no capitals and a normal number (only the 1st is premier): le samedi vingt et un juin (reformed spelling: vingt-et-un)."
+    },
+    {
+      "id": "numbers-dates-time-22",
+      "type": "flip",
+      "front": "lundi or le lundi: what is the difference?",
+      "back": "lundi (no article) = on Monday, one particular Monday: Lundi, je vais chez le dentiste. le lundi = on Mondays, every Monday: Le lundi, je fais de la natation. It works for every day: le samedi soir = on Saturday evenings. Days and months have no capital letter."
+    },
+    {
+      "id": "numbers-dates-time-23",
+      "type": "gap",
+      "prompt": "Chez nous, il pleut beaucoup en automne, mais ___ printemps il fait souvent beau.",
+      "hint": "(in)",
+      "answers": ["au"],
+      "en": "Where we live, it rains a lot in autumn, but in spring the weather is often nice.",
+      "why": "Seasons take en (en été, en automne, en hiver), but printemps starts with a consonant, so it takes au: au printemps. Months take en: en mai, en octobre."
+    },
+    {
       "id": "numbers-dates-time-12",
       "type": "flip",
       "front": "How do you say quarter past, half past, quarter to, and half past twelve?",
@@ -142,6 +167,24 @@
       "why": "With the 24-hour clock, say the minutes as a number (trente), not et demie."
     },
     {
+      "id": "numbers-dates-time-24",
+      "type": "transform",
+      "instruction": "Answer the question in a full sentence, writing the time in words.",
+      "prompt": "Quelle heure est-il ? (9h50)",
+      "answers": ["Il est dix heures moins dix.", "Il est neuf heures cinquante.", "Il est dix heures moins dix du matin.", "Il est neuf heures cinquante du matin."],
+      "en": "What time is it? It's ten to ten.",
+      "why": "Answer Quelle heure est-il ? with Il est + the time. Minutes to the hour use moins and count back from the next hour (dix heures moins dix), or you can say the minutes as a number: neuf heures cinquante."
+    },
+    {
+      "id": "numbers-dates-time-25",
+      "type": "gap",
+      "prompt": "Le mercredi, mon cours de piano commence à quatre heures ___.",
+      "hint": "(4 p.m., using the 12-hour clock)",
+      "answers": ["de l'après-midi"],
+      "en": "On Wednesdays my piano lesson starts at four in the afternoon.",
+      "why": "With the 12-hour clock, add du matin (a.m.), de l'après-midi (afternoon) or du soir (evening): quatre heures de l'après-midi = 16h."
+    },
+    {
       "id": "numbers-dates-time-16",
       "type": "flip",
       "front": "How do you say a kilo of, a bottle of, a packet of, a dozen, half of?",
@@ -157,28 +200,19 @@
       "why": "After a quantity, use plain de, never des: un kilo de pommes."
     },
     {
-      "id": "numbers-dates-time-18",
-      "type": "gap",
-      "prompt": "J'habite dans cette ville ___ trois ans.",
-      "hint": "(for; I still live here)",
-      "answers": ["depuis"],
-      "en": "I have lived in this town for three years.",
-      "why": "For something that started in the past and is still going on, use depuis + present tense."
-    },
-    {
-      "id": "numbers-dates-time-19",
+      "id": "numbers-dates-time-26",
       "type": "flip",
-      "front": "How do you use depuis with the present and with the imperfect?",
-      "back": "depuis + present = have been doing (and still are): J'attends depuis dix minutes (I have been waiting for ten minutes). depuis + imperfect = had been doing (when something else happened): J'attendais depuis dix minutes quand le bus est arrivé (I had been waiting for ten minutes when the bus arrived). Do not use the perfect or pluperfect for these sentences."
+      "front": "What do une dizaine, une vingtaine and une centaine mean, and how do you use them?",
+      "back": "They give a rough number: une dizaine (about ten), une quinzaine (about fifteen; une quinzaine de jours = a fortnight), une vingtaine (about twenty), une trentaine (about thirty), une centaine (about a hundred). Like other quantities they take de: une vingtaine d'élèves, une centaine de personnes. une douzaine means a dozen: une douzaine d'œufs (a dozen eggs)."
     },
     {
-      "id": "numbers-dates-time-20",
-      "type": "gap",
-      "prompt": "Quand je suis arrivé à la gare, mes parents ___ depuis une heure.",
-      "base": "attendre",
-      "answers": ["attendaient"],
-      "en": "When I arrived at the station, my parents had been waiting for an hour.",
-      "why": "For something that had been going on when something else happened, use depuis + imperfect: ils attendaient (had been waiting)."
+      "id": "numbers-dates-time-18",
+      "type": "transform",
+      "instruction": "Write the time in words.",
+      "prompt": "Nous attendons notre vol depuis 6h30.",
+      "answers": ["Nous attendons notre vol depuis six heures et demie.", "Nous attendons notre vol depuis six heures trente."],
+      "en": "We have been waiting for our flight since half past six.",
+      "why": "depuis + a clock time means since: depuis six heures et demie (or six heures trente). The verb stays in the present because we are still waiting."
     }
   ]
 }

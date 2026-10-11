@@ -9,11 +9,11 @@
     "quelqu'un = someone / anyone; quelque chose = something / anything: Quelqu'un a appelé. Tu veux quelque chose ?",
     "tout le monde (everybody) and chacun / chacune (each one) take a singular verb: Tout le monde est là. Chacun a son portable.",
     "plusieurs = several; certains / certaines = some (people or things): Certains aiment le sport, d'autres préfèrent la lecture.",
-    "personne (nobody) and rien (nothing) need ne before the verb: Je ne vois personne. Il n'y a rien. As subject: Personne n'est venu. Rien ne marche.",
-    "In the perfect, rien goes before the past participle but personne goes after it: Je n'ai rien mangé. Je n'ai vu personne.",
+    "personne (nobody) and rien (nothing) need ne before the verb and no pas: Je ne vois personne. Il n'y a rien.",
+    "As the subject, personne and rien come first and ne comes straight after them, before any pronoun and the verb (avoir or être in the perfect): Personne ne répond. Personne ne m'a aidé. Rien ne s'est passé.",
     "An adjective after quelque chose, rien, quelqu'un or personne takes de and stays masculine singular: quelque chose de nouveau, rien d'intéressant.",
-    "Questions: qui ? = who?, also after a preposition (Avec qui sors-tu ?); que + inversion or qu'est-ce que + subject + verb = what? (object): Que fais-tu ? Qu'est-ce que tu fais ?",
-    "qu'est-ce qui ? = what? when 'what' is the subject: Qu'est-ce qui se passe ? quoi = what after a preposition: De quoi as-tu besoin ?",
+    "Who? qui, also after a preposition (Avec qui sors-tu ?). Long forms: qui est-ce qui when 'who' is the subject (Qui est-ce qui parle ?), qui est-ce que when it is the object (Qui est-ce que tu attends ?).",
+    "What? (object): que + inversion or qu'est-ce que + subject + verb: Que fais-tu ? Qu'est-ce que tu fais ? qu'est-ce qui when 'what' is the subject: Qu'est-ce qui se passe ? quoi after a preposition: De quoi as-tu besoin ?",
     "lequel ? laquelle ? lesquels ? lesquelles ? = which one(s)?, agreeing with the noun: Voici deux robes. Laquelle préfères-tu ?"
   ],
   "cards": [
@@ -62,8 +62,8 @@
     {
       "id": "pron-indefinite-interrogative-06",
       "type": "flip",
-      "front": "How do you use personne (nobody) and rien (nothing)?",
-      "back": "Both need ne before the verb: Je ne connais personne. Il ne fait rien. As the subject they come first: Personne ne m'a appelé. Rien n'est gratuit. In the perfect, rien goes before the participle (je n'ai rien fait), personne after it (je n'ai vu personne)."
+      "front": "How do you say 'nobody' and 'nothing' when they are the subject of the sentence?",
+      "back": "Put Personne or Rien first, then ne (n' before a vowel) + verb, with no pas: Personne ne comprend. Rien n'est gratuit. In the perfect, ne still comes straight after Personne or Rien, before any pronoun and avoir or être: Personne ne m'a aidé. Rien ne s'est passé. On their own they make a short answer: Qui est là ? — Personne. Qu'est-ce que tu veux ? — Rien."
     },
     {
       "id": "pron-indefinite-interrogative-07",
@@ -77,20 +77,20 @@
     {
       "id": "pron-indefinite-interrogative-08",
       "type": "transform",
-      "instruction": "Make the sentence negative by replacing the words in bold with ne ... rien.",
-      "prompt": "J'ai acheté **quelque chose** au marché.",
-      "answers": ["Je n'ai rien acheté au marché."],
-      "en": "I didn't buy anything at the market.",
-      "why": "In the perfect, ne ... rien goes round avoir, so rien comes before the participle: je n'ai rien acheté."
+      "instruction": "Make the sentence negative by replacing the word in bold with personne.",
+      "prompt": "**Quelqu'un** a téléphoné ce matin.",
+      "answers": ["Personne n'a téléphoné ce matin."],
+      "en": "Nobody phoned this morning.",
+      "why": "As the subject, personne comes first and ne goes before the auxiliary, with no pas: Personne n'a téléphoné."
     },
     {
       "id": "pron-indefinite-interrogative-09",
       "type": "transform",
-      "instruction": "Make the sentence negative by replacing the words in bold with ne ... personne.",
-      "prompt": "Nous avons rencontré **quelqu'un** en ville.",
-      "answers": ["Nous n'avons rencontré personne en ville."],
-      "en": "We didn't meet anyone in town.",
-      "why": "Unlike rien, personne goes after the past participle: nous n'avons rencontré personne."
+      "instruction": "Make the sentence negative by replacing the words in bold with rien.",
+      "prompt": "**Quelque chose** a changé dans mon village.",
+      "answers": ["Rien n'a changé dans mon village."],
+      "en": "Nothing has changed in my village.",
+      "why": "As the subject, rien comes first and ne (n' before a vowel) goes before the auxiliary, with no pas: Rien n'a changé."
     },
     {
       "id": "pron-indefinite-interrogative-10",
@@ -113,26 +113,35 @@
     {
       "id": "pron-indefinite-interrogative-12",
       "type": "flip",
-      "front": "How do you ask 'who?' and 'what?' in French?",
-      "back": "Who? qui: Qui parle ? Qui as-tu vu ? What? (object): que + inversion (Que fais-tu ?) or qu'est-ce que + subject + verb (Qu'est-ce que tu fais ?). What? (subject): qu'est-ce qui + verb (Qu'est-ce qui se passe ?). After a preposition: quoi (Avec quoi ? De quoi parles-tu ?)."
+      "front": "What are the different ways to ask 'who?'?",
+      "back": "'Who' as the subject: qui or qui est-ce qui + verb: Qui veut du gâteau ? Qui est-ce qui veut du gâteau ? 'Who' as the object: qui + inversion or qui est-ce que + subject + verb: Qui attends-tu ? Qui est-ce que tu attends ? After a preposition: Avec qui sors-tu ? À qui est-ce que tu écris ? Do not mix up qui est-ce qui (who?) and qu'est-ce qui (what?)."
     },
     {
       "id": "pron-indefinite-interrogative-13",
       "type": "gap",
-      "prompt": "___ tu fais ce week-end ?",
-      "hint": "(what)",
-      "answers": ["Qu'est-ce que"],
-      "en": "What are you doing this weekend?",
-      "why": "A subject + verb follows with no inversion, so 'what' (object) is qu'est-ce que."
+      "prompt": "___ tu as invité à ta fête ?",
+      "hint": "(who, using the est-ce form)",
+      "answers": ["Qui est-ce que"],
+      "en": "Who did you invite to your party?",
+      "why": "'who' is the object here (tu is the subject of as invité), so the long form is qui est-ce que + subject + verb; qui est-ce qui is only for 'who' as the subject."
+    },
+    {
+      "id": "pron-indefinite-interrogative-20",
+      "type": "transform",
+      "instruction": "Rewrite the question using the long form qui est-ce qui or qui est-ce que.",
+      "prompt": "Qui a gagné le match ?",
+      "answers": ["Qui est-ce qui a gagné le match ?"],
+      "en": "Who won the match?",
+      "why": "'who' is the subject of a gagné, so the long form is qui est-ce qui + verb; qui est-ce que is used when 'who' is the object (Qui est-ce que tu as vu ?)."
     },
     {
       "id": "pron-indefinite-interrogative-14",
       "type": "gap",
-      "prompt": "___ fais-tu après les cours ?",
+      "prompt": "___ penses-tu de ce film ?",
       "hint": "(what)",
       "answers": ["Que"],
-      "en": "What do you do after lessons?",
-      "why": "The verb and subject are inverted (fais-tu), so 'what' (object) is que."
+      "en": "What do you think of this film?",
+      "why": "The verb and subject are inverted (penses-tu), so 'what' (object) is que; Que penses-tu de... ? is the usual way to ask for an opinion."
     },
     {
       "id": "pron-indefinite-interrogative-15",

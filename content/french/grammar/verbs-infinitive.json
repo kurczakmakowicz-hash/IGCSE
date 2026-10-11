@@ -145,7 +145,7 @@
       "type": "transform",
       "instruction": "Join the two sentences using pour + infinitive.",
       "prompt": "Je travaille le samedi. Je gagne de l'argent.",
-      "answers": ["Je travaille le samedi pour gagner de l'argent.", "Pour gagner de l'argent, je travaille le samedi."],
+      "answers": ["Je travaille le samedi pour gagner de l'argent.", "Pour gagner de l'argent, je travaille le samedi.", "Le samedi, je travaille pour gagner de l'argent.", "Je travaille pour gagner de l'argent le samedi."],
       "en": "I work on Saturdays to earn money.",
       "why": "pour + infinitive gives the purpose: the second verb becomes the infinitive gagner."
     },
@@ -160,6 +160,18 @@
       "type": "flip",
       "front": "Recognise: what does 'Elle s'est fait couper les cheveux' mean?",
       "back": "She had her hair cut. se faire + infinitive = to have something done to or for yourself: Il s'est fait opérer = He had an operation. Recognise it in reading and listening."
+    },
+    {
+      "id": "verbs-infinitive-19",
+      "type": "flip",
+      "front": "Recognise: translate 'Ce film m'a fait rire.'",
+      "back": "This film made me laugh. faire + infinitive = to make someone do something. The object pronoun (m') goes in front of the faire part (here in front of a), not in front of the infinitive, and fait never agrees: Ce film nous a fait pleurer = This film made us cry."
+    },
+    {
+      "id": "verbs-infinitive-20",
+      "type": "flip",
+      "front": "Recognise: translate 'Nous allons faire repeindre la cuisine.'",
+      "back": "We are going to have the kitchen repainted. faire + infinitive = to have something done by someone else: we are not doing the painting ourselves. Compare: Nous allons repeindre la cuisine = We are going to repaint the kitchen (ourselves)."
     }
   ]
 }

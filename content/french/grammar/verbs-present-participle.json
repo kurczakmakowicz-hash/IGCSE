@@ -70,7 +70,7 @@
       "type": "transform",
       "instruction": "Replace the words in bold with en + present participle.",
       "prompt": "On apprend beaucoup **quand on voyage**.",
-      "answers": ["On apprend beaucoup en voyageant."],
+      "answers": ["On apprend beaucoup en voyageant.", "En voyageant, on apprend beaucoup."],
       "en": "You learn a lot by travelling.",
       "why": "voyager: nous voyageons → voyageant (the e after g stays). Both verbs have the same subject, on."
     },

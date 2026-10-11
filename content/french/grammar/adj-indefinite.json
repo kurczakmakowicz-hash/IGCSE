@@ -7,7 +7,7 @@
   "receptive": false,
   "summary": [
     "chaque (each, every) never changes and is followed by a singular noun with no article: chaque matin, chaque fille.",
-    "quelques (a few, some) is plural and goes before the noun: quelques amis, quelques idées.",
+    "quelques (a few, some) is plural and goes before the noun: quelques amis, quelques idées. Singular quelque is mostly found in set phrases: quelque temps (some time), quelque part (somewhere).",
     "plusieurs (several) never changes and is always plural: plusieurs fois, plusieurs villes.",
     "tout agrees with the noun and is followed by the article: tout le temps, toute la journée, tous les jours, toutes les semaines.",
     "tous les / toutes les + time word = every: tous les samedis = chaque samedi.",
@@ -88,6 +88,12 @@
       "answers": ["quelques"],
       "en": "I bought a few postcards for my grandparents.",
       "why": "Before a plural noun quelque takes an -s: quelques cartes = a few cards."
+    },
+    {
+      "id": "adj-indefinite-19",
+      "type": "flip",
+      "front": "quelque or quelques: what is the difference?",
+      "back": "quelque + singular noun = some, found mostly in set phrases (as in quelque chose): quelque temps (some time, a while), quelque part (somewhere). quelques + plural noun = a few: quelques jours, quelques amis. J'ai habité quelque temps en Espagne (I lived in Spain for a while). J'ai laissé mon portable quelque part (I've left my phone somewhere)."
     },
     {
       "id": "adj-indefinite-10",

@@ -132,9 +132,9 @@
       "type": "gap",
       "prompt": "___ qui fument mettent leur santé en danger.",
       "hint": "(those)",
-      "answers": ["Ceux"],
+      "answers": ["Ceux", "Celles"],
       "en": "Those who smoke put their health at risk.",
-      "why": "For people in general, 'those who' is ceux qui (masculine plural)."
+      "why": "For people in general, 'those who' is ceux qui (masculine plural), the usual choice. Celles qui is also correct but would refer only to women."
     },
     {
       "id": "pron-demonstrative-16",

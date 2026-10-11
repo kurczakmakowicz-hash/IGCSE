@@ -13,7 +13,7 @@
     "About 16 verbs of movement or change of state take être (MRS VANDERTRAMP): aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, rentrer, devenir, revenir: je suis allé(e).",
     "With être, the participle agrees with the subject like an adjective: il est parti, elle est partie, ils sont partis, elles sont parties. A mixed group is masculine plural: Paul et Marie sont arrivés.",
     "With avoir, the participle does not agree with the subject: elle a mangé, nous avons fini. (It only agrees with a direct object placed before it: Ta robe ? Je l'ai achetée.)",
-    "All reflexive verbs take être and agree: je me suis levé(e), elle s'est couchée, ils se sont amusés.",
+    "All reflexive verbs take être and agree with the subject: je me suis levé(e), elle s'est couchée, ils se sont amusés, vous vous êtes levée (one woman, polite vous). Watch out: no agreement when a part of the body follows: elle s'est lavé les mains.",
     "Negatives go round the auxiliary: je n'ai pas mangé, elle n'est jamais venue. Object pronouns go before the auxiliary: je l'ai vu."
   ],
   "cards": [
@@ -186,36 +186,47 @@
     {
       "id": "verbs-perfect-21",
       "type": "flip",
-      "front": "How do reflexive verbs form the perfect tense?",
-      "back": "With être. The reflexive pronoun goes before the auxiliary and the participle agrees with the subject: je me suis réveillé(e), tu t'es habillé(e), il s'est lavé, elle s'est levée, nous nous sommes amusé(e)s, vous vous êtes couché(e)(s), ils se sont reposés, elles se sont reposées."
+      "front": "Reflexive verbs take être in the perfect. How does the participle agree with nous and vous?",
+      "back": "It agrees with the people the pronoun stands for, so check the context. nous: nous nous sommes reposés (all male or a mixed group), nous nous sommes reposées (all female). vous: vous vous êtes levé (one man, polite vous), vous vous êtes levée (one woman, polite vous), vous vous êtes levés (several people, all male or mixed), vous vous êtes levées (several women)."
     },
     {
       "id": "verbs-perfect-22",
       "type": "gap",
-      "prompt": "Hier, ma mère ___ à six heures.",
+      "prompt": "Madame Dupont, vous ___ tôt ce matin ?",
       "base": "se lever",
-      "answers": ["s'est levée"],
-      "en": "Yesterday my mother got up at six o'clock.",
-      "why": "Reflexive verbs take être; the participle agrees with ma mère (feminine): s'est levée."
+      "hint": "(perfect tense)",
+      "answers": ["vous êtes levée"],
+      "en": "Mrs Dupont, did you get up early this morning?",
+      "why": "Reflexive verbs take être: vous vous êtes + participle. Here vous is one woman addressed politely, so the participle is feminine singular, with no -s: levée."
     },
     {
       "id": "verbs-perfect-23",
       "type": "gap",
-      "prompt": "Samedi soir, Emma et sa cousine ___ à la fête.",
-      "base": "s'amuser",
+      "prompt": "Après la randonnée, mes cousins ___ pendant une heure.",
+      "base": "se reposer",
       "hint": "(perfect tense)",
-      "answers": ["se sont amusées"],
-      "en": "On Saturday evening Emma and her cousin had fun at the party.",
-      "why": "Reflexive verb → être; two girls = feminine plural, so add -es: se sont amusées."
+      "answers": ["se sont reposés"],
+      "en": "After the hike my cousins rested for an hour.",
+      "why": "Reflexive verbs take être: ils se sont + participle. mes cousins is masculine plural, so add -s: reposés."
     },
     {
       "id": "verbs-perfect-24",
       "type": "transform",
-      "instruction": "Make this sentence negative using ne...pas.",
-      "prompt": "Ma sœur s'est couchée tard.",
-      "answers": ["Ma sœur ne s'est pas couchée tard."],
-      "en": "My sister didn't go to bed late.",
-      "why": "With a reflexive verb in the perfect, ne goes before the reflexive pronoun and pas after the auxiliary: ne s'est pas couchée. The participle still agrees with ma sœur."
+      "instruction": "Make this sentence negative using ne...jamais.",
+      "prompt": "Mon petit frère a pris l'avion.",
+      "answers": ["Mon petit frère n'a jamais pris l'avion."],
+      "en": "My little brother has never been on a plane.",
+      "why": "In the perfect tense the negative goes round the auxiliary: ne becomes n' before a, and jamais goes between a and the participle pris."
+    },
+    {
+      "id": "verbs-perfect-25",
+      "type": "gap",
+      "prompt": "Avant de manger, Léa ___ les mains.",
+      "base": "se laver",
+      "hint": "(perfect tense)",
+      "answers": ["s'est lavé"],
+      "en": "Before eating, Léa washed her hands.",
+      "why": "Watch out: reflexive verbs take être, but when a part of the body follows the verb (les mains), the participle does not agree: elle s'est lavé les mains. Compare: elle s'est lavée = she had a wash."
     }
   ]
 }

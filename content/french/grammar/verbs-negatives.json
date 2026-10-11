@@ -48,11 +48,11 @@
     {
       "id": "verbs-negatives-05",
       "type": "transform",
-      "instruction": "Make this sentence negative using ne...pas.",
-      "prompt": "Il y a une piscine dans mon village.",
-      "answers": ["Il n'y a pas de piscine dans mon village."],
-      "en": "There isn't a swimming pool in my village.",
-      "why": "With il y a, n' goes before y and pas after a. une becomes de after the negative."
+      "instruction": "Make this sentence negative using ne...plus.",
+      "prompt": "Il y a des magasins dans mon quartier.",
+      "answers": ["Il n'y a plus de magasins dans mon quartier."],
+      "en": "There are no longer any shops in my area.",
+      "why": "With il y a, n' goes before y and plus after a. des becomes de after the negative."
     },
     {
       "id": "verbs-negatives-06",

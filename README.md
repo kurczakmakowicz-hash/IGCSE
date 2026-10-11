@@ -8,7 +8,7 @@ the actual specification content rather than a generic flashcard box.
 | Biology | 4BI1 | 176 spec points (42 Paper 2 only, 14 practicals) |
 | Chemistry | 4CH1 | 182 spec points (52 Paper 2 only, 12 practicals) |
 | Mathematics A | 4MA1 | 241 items, Higher Tier (78 Higher-only) |
-| French | 4FR1 | 2,145 prescribed words, ~40 grammar topics, 60 verbs × 7 tenses |
+| French | 4FR1 | 2,145 prescribed words · 39 grammar topics (738 cards) · 60 verbs × 7 tenses (400 cards) |
 
 Target series: **May/June 2027**.
 
@@ -109,9 +109,13 @@ Specifications used:
 
 The French grammar cards are the exception: they are written to the spec's
 grammar list (original sentences, not taken from any textbook or past paper),
-kept as one JSON file per topic in `content/french/grammar/`, and were checked
-by an independent reviewer pass for French accuracy and for whether every
-correct answer is accepted. Verb tables are generated from the
+kept as one JSON file per topic in `content/french/grammar/`. Every topic was
+checked by a reviewer who did not write it, for French accuracy and for whether
+every correct answer is accepted; then every typed card was answered blind (by
+a solver who never saw the answer key) and any correct answer the key missed
+was added. Coverage was checked line by line against the spec's grammar list.
+That is a lot of checking, not a guarantee: if a card marks a right answer
+wrong, fix its `answers` list and rebuild. Verb tables are generated from the
 [verbecc](https://github.com/bretttolbert/verbecc) conjugation tables by
 `tools/build_verbs.py`.
 

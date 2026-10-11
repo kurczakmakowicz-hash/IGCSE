@@ -12,7 +12,7 @@
     "Subordinating conjunctions introduce a clause: quand / lorsque (when), puisque / comme (since, as), si (if), pendant que (while), parce que (because).",
     "comme meaning as / since goes at the start of the sentence: Comme il pleuvait, nous sommes restés à la maison.",
     "si becomes s' only before il and ils: s'il fait beau, but si elle vient.",
-    "After quand and lorsque, use the future when the action is in the future: Quand je serai grand, je serai médecin.",
+    "After quand and lorsque, use the future when the action is in the future: Quand il fera beau, nous ferons un pique-nique.",
     "bien que (although) is followed by the subjunctive; you only need to recognise it: bien qu'il soit fatigué."
   ],
   "cards": [
@@ -139,11 +139,11 @@
     {
       "id": "conjunctions-16",
       "type": "gap",
-      "prompt": "Quand je ___ grand, j'habiterai au bord de la mer.",
-      "base": "être",
-      "answers": ["serai"],
-      "en": "When I'm older, I'll live by the sea.",
-      "why": "The action is in the future (j'habiterai), so quand is followed by the future tense too: je serai, not je suis."
+      "prompt": "Lorsque mes cousins ___ chez nous en août, nous irons à la plage tous les jours.",
+      "base": "venir",
+      "answers": ["viendront"],
+      "en": "When my cousins come to our house in August, we'll go to the beach every day.",
+      "why": "The visit is still to come (nous irons), so lorsque is followed by the future too: ils viendront (irregular stem viendr-), not ils viennent."
     },
     {
       "id": "conjunctions-17",

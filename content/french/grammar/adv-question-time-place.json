@@ -116,6 +116,24 @@
       "why": "là-bas = over there: grave accent on là and a hyphen."
     },
     {
+      "id": "adv-question-time-place-19",
+      "type": "gap",
+      "prompt": "En été, il y a des touristes ___ dans la vieille ville.",
+      "hint": "(everywhere)",
+      "answers": ["partout"],
+      "en": "In summer there are tourists everywhere in the old town.",
+      "why": "partout = everywhere; it is one word and never changes."
+    },
+    {
+      "id": "adv-question-time-place-20",
+      "type": "gap",
+      "prompt": "Excusez-moi, est-ce qu'il y a une pharmacie près d'___ ?",
+      "hint": "(here)",
+      "answers": ["ici"],
+      "en": "Excuse me, is there a chemist's near here?",
+      "why": "ici = here, so près d'ici = near here (de becomes d' before the vowel). là means there and là-bas over there."
+    },
+    {
       "id": "adv-question-time-place-13",
       "type": "flip",
       "front": "Where do short adverbs such as déjà, souvent and toujours go in the perfect tense?",

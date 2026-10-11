@@ -111,17 +111,17 @@
     {
       "id": "verbs-imperative-12",
       "type": "flip",
-      "front": "Where do pronouns go in positive and negative commands? Use se lever.",
-      "back": "Positive: after the verb with a hyphen, and te/me become toi/moi: Lève-toi ! Levons-nous ! Levez-vous ! Negative: in front of the verb in their normal form: Ne te lève pas ! Ne vous levez pas ! Object pronouns work the same way: Prends-le ! / Ne le prends pas !"
+      "front": "Where do the pronouns go in reflexive commands with vous and nous, positive and negative?",
+      "back": "Positive: after the verb, joined by a hyphen: Reposez-vous ! Habillons-nous ! Negative: back in front of the verb, inside ne ... pas: Ne vous disputez pas ! Ne nous énervons pas ! With tu, te becomes toi only in a positive command: Habille-toi ! but Ne t'habille pas ! Object pronouns follow the same pattern: Prenez-le ! / Ne le prenez pas !"
     },
     {
       "id": "verbs-imperative-13",
       "type": "gap",
-      "prompt": "Il est sept heures, ___ ! Tu vas être en retard.",
-      "base": "se lever",
-      "answers": ["lève-toi"],
-      "en": "It's seven o'clock, get up! You're going to be late.",
-      "why": "Positive reflexive command: the pronoun goes after the verb with a hyphen and te becomes toi: Lève-toi !"
+      "prompt": "Les enfants, ___ vite : votre bus arrive dans cinq minutes !",
+      "base": "s'habiller",
+      "answers": ["habillez-vous"],
+      "en": "Children, get dressed quickly: your bus comes in five minutes!",
+      "why": "Speaking to several children (votre bus), so use the vous form. In a positive command the reflexive pronoun goes after the verb with a hyphen: habillez-vous."
     },
     {
       "id": "verbs-imperative-14",
@@ -137,37 +137,37 @@
       "id": "verbs-imperative-15",
       "type": "transform",
       "instruction": "Make the command negative.",
-      "prompt": "Lève-toi !",
-      "answers": ["Ne te lève pas !"],
-      "en": "Don't get up!",
-      "why": "In a negative command the pronoun goes back in front of the verb as te, and ne ... pas goes round both."
+      "prompt": "Couchons-nous tard ce soir !",
+      "answers": ["Ne nous couchons pas tard ce soir !"],
+      "en": "Let's not go to bed late tonight!",
+      "why": "In a negative command the reflexive pronoun goes back in front of the verb, and ne ... pas goes round the pronoun and the verb together: Ne nous couchons pas."
     },
     {
       "id": "verbs-imperative-16",
       "type": "transform",
       "instruction": "Replace the words in bold with a pronoun.",
-      "prompt": "Achète **le pain** !",
-      "answers": ["Achète-le !"],
-      "en": "Buy it!",
-      "why": "In a positive command the object pronoun goes after the verb, joined by a hyphen: Achète-le !"
+      "prompt": "Invitons **Sarah** à la fête !",
+      "answers": ["Invitons-la à la fête !"],
+      "en": "Let's invite her to the party!",
+      "why": "Sarah is a feminine direct object, so la. In a positive command it goes after the verb, joined by a hyphen: Invitons-la."
     },
     {
       "id": "verbs-imperative-17",
       "type": "transform",
       "instruction": "Make the command negative.",
-      "prompt": "Mange-les !",
-      "answers": ["Ne les mange pas !"],
-      "en": "Don't eat them!",
-      "why": "In a negative command the pronoun goes back in front of the verb: Ne les mange pas !"
+      "prompt": "Téléphonez-lui ce soir !",
+      "answers": ["Ne lui téléphonez pas ce soir !"],
+      "en": "Don't phone him / her tonight!",
+      "why": "In a negative command the pronoun goes back in front of the verb, and ne ... pas goes round both: Ne lui téléphonez pas."
     },
     {
       "id": "verbs-imperative-18",
       "type": "transform",
       "instruction": "Replace the words in bold with a pronoun.",
-      "prompt": "Envoie-moi **la photo** !",
-      "answers": ["Envoie-la-moi !"],
-      "en": "Send it to me!",
-      "why": "With two pronouns after a positive command, the direct object comes first and both are joined by hyphens: Envoie-la-moi !"
+      "prompt": "Montrez-moi **vos photos** !",
+      "answers": ["Montrez-les-moi !"],
+      "en": "Show them to me!",
+      "why": "vos photos becomes les. With two pronouns after a positive command, the direct object comes first and all the parts are joined by hyphens: Montrez-les-moi !"
     }
   ]
 }

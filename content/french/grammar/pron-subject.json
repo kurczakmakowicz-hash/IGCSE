@@ -13,6 +13,7 @@
     "on means we (very common in speech), one, or people in general, and always takes the il/elle form of the verb: on va, on mange.",
     "tu is for one person you know well (friend, family member, child, pet).",
     "vous is for one person you speak to politely (a stranger, a teacher, an adult you don't know) and for any group of people.",
+    "Once you choose tu or vous, keep it everywhere: ton / votre, te / vous (reflexive), lève-toi / levez-vous, s'il te plaît / s'il vous plaît.",
     "Changing nous to on: nous allons → on va; nous jouons → on joue."
   ],
   "cards": [
@@ -164,6 +165,24 @@
       "answers": ["Tu veux venir au cinéma ce soir ?", "Veux-tu venir au cinéma ce soir ?", "Est-ce que tu veux venir au cinéma ce soir ?"],
       "en": "Do you want to come to the cinema tonight?",
       "why": "A friend is addressed with tu, so the verb changes to the tu form: tu veux."
+    },
+    {
+      "id": "pron-subject-19",
+      "type": "transform",
+      "instruction": "You work at a hotel reception. Rewrite the sentence for a guest, using vous.",
+      "prompt": "Assieds-toi, s'il te plaît, et remplis ta fiche.",
+      "answers": ["Asseyez-vous, s'il vous plaît, et remplissez votre fiche.", "Assoyez-vous, s'il vous plaît, et remplissez votre fiche."],
+      "en": "Please sit down and fill in your form.",
+      "why": "Everything linked to tu changes to vous: the imperatives (assieds-toi → asseyez-vous, remplis → remplissez), s'il te plaît → s'il vous plaît, and ta → votre."
+    },
+    {
+      "id": "pron-subject-20",
+      "type": "transform",
+      "instruction": "You are now asking a friend. Rewrite the question using tu.",
+      "prompt": "Vous vous occupez de votre chien tous les jours ?",
+      "answers": ["Tu t'occupes de ton chien tous les jours ?", "T'occupes-tu de ton chien tous les jours ?", "Est-ce que tu t'occupes de ton chien tous les jours ?"],
+      "en": "Do you look after your dog every day?",
+      "why": "With tu, the reflexive pronoun becomes te (t' before a vowel), the verb takes the tu form, and votre becomes ton: tu t'occupes de ton chien."
     }
   ]
 }

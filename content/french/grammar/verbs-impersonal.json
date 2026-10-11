@@ -104,11 +104,12 @@
     {
       "id": "verbs-impersonal-11",
       "type": "gap",
-      "prompt": "Prends ton parapluie, il ___ depuis ce matin !",
-      "base": "pleuvoir",
-      "answers": ["pleut"],
-      "en": "Take your umbrella, it's been raining since this morning!",
-      "why": "depuis + present tense for something still going on: il pleut."
+      "prompt": "Hier, il ___ toute la journée, alors nous avons fait un bonhomme de neige.",
+      "base": "neiger",
+      "hint": "(perfect tense)",
+      "answers": ["a neigé"],
+      "en": "Yesterday it snowed all day, so we made a snowman.",
+      "why": "neiger is only used with il. A completed event on one particular day → perfect: il a neigé (neiger takes avoir)."
     },
     {
       "id": "verbs-impersonal-12",

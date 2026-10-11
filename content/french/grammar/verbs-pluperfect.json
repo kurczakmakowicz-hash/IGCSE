@@ -11,7 +11,7 @@
     "Imperfect of être: j'étais, tu étais, il était, nous étions, vous étiez, ils étaient.",
     "Verbs that take être in the perfect take être in the pluperfect, and so do reflexive verbs: nous étions arrivés, elle s'était levée.",
     "With être, the past participle agrees with the subject: Mes amies étaient déjà parties.",
-    "With avoir, the past participle only agrees with a direct object placed before the verb: les photos qu'il avait prises.",
+    "Recognise: with avoir, the past participle only agrees with a direct object placed before the verb: les photos qu'il avait prises.",
     "Use it for something that had already happened before another past event: J'avais déjà mangé quand il est arrivé.",
     "déjà and ne ... pas go round the auxiliary: Le film avait déjà commencé. Je n'avais pas compris."
   ],
@@ -164,18 +164,18 @@
     {
       "id": "verbs-pluperfect-17",
       "type": "flip",
-      "front": "In the pluperfect with avoir, when does the past participle agree?",
+      "front": "Recognise: in the pluperfect with avoir, when does the past participle agree?",
       "back": "Only when a direct object comes before the verb (often que, la, l' or les): Où sont les clés que j'avais laissées sur la table ? La lettre ? Je l'avais déjà lue. With no direct object in front there is no agreement: Elle avait fini."
     },
     {
       "id": "verbs-pluperfect-18",
       "type": "gap",
-      "prompt": "Mon père a imprimé les photos que ma sœur ___ pendant les vacances.",
-      "base": "prendre",
+      "prompt": "Il n'a pas pu appeler sa mère parce qu'il ___ son portable à la maison.",
+      "base": "oublier",
       "hint": "pluperfect",
-      "answers": ["avait prises"],
-      "en": "My dad printed the photos that my sister had taken during the holidays.",
-      "why": "prendre takes avoir, but que (= les photos, feminine plural) is a direct object placed before the verb, so the participle agrees with it: prises."
+      "answers": ["avait oublié"],
+      "en": "He couldn't call his mother because he had left his phone at home.",
+      "why": "Forgetting the phone happened before he tried to call, so the pluperfect is used: il avait (imperfect of avoir) + oublié. The object comes after the verb, so there is no agreement."
     }
   ]
 }
