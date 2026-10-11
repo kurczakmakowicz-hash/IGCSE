@@ -1,0 +1,172 @@
+{
+  "id": "adj-possessive",
+  "order": 8,
+  "area": "Adjectives",
+  "title": "Possessive adjectives",
+  "spec": "Adjectives: possessive",
+  "receptive": false,
+  "summary": [
+    "Possessive adjectives agree with the thing owned, not with the owner: mon frère, ma sœur, mes parents.",
+    "my: mon, ma, mes; your (tu): ton, ta, tes; his/her/its: son, sa, ses.",
+    "our: notre, nos; your (vous): votre, vos; their: leur, leurs.",
+    "Before a feminine singular word starting with a vowel or silent h, use mon, ton, son: mon amie, ton école, son histoire.",
+    "If the next word starts with a consonant, go back to ma, ta, sa: ma meilleure amie.",
+    "son, sa and ses can mean his, her or its; only the noun owned decides the form: Paul aime sa mère (his), Julie aime son père (her).",
+    "leur goes with one thing, leurs with more than one: leur maison, leurs enfants.",
+    "With parts of the body French usually uses le, la, les instead: J'ai mal à la tête. Je me lave les mains."
+  ],
+  "cards": [
+    {
+      "id": "adj-possessive-01",
+      "type": "flip",
+      "front": "Give all the possessive adjectives (my, your, his/her, our, your, their).",
+      "back": "my: mon / ma / mes; your (tu): ton / ta / tes; his, her, its: son / sa / ses; our: notre / nos; your (vous): votre / vos; their: leur / leurs. (Order: masculine singular / feminine singular / plural; notre, votre and leur are the same for both genders.)"
+    },
+    {
+      "id": "adj-possessive-02",
+      "type": "gap",
+      "prompt": "J'habite avec ___ mère et mon beau-père.",
+      "base": "mon",
+      "answers": ["ma"],
+      "en": "I live with my mother and my stepfather.",
+      "why": "mère is feminine singular and starts with a consonant: ma."
+    },
+    {
+      "id": "adj-possessive-03",
+      "type": "gap",
+      "prompt": "___ parents sont assez stricts.",
+      "base": "mon",
+      "answers": ["Mes"],
+      "en": "My parents are quite strict.",
+      "why": "parents is plural: mes."
+    },
+    {
+      "id": "adj-possessive-04",
+      "type": "gap",
+      "prompt": "Tu as fini ___ devoirs ?",
+      "base": "ton",
+      "answers": ["tes"],
+      "en": "Have you finished your homework?",
+      "why": "devoirs is plural (homework is plural in French): tes."
+    },
+    {
+      "id": "adj-possessive-05",
+      "type": "flip",
+      "front": "Why do you say mon amie and ton école, even though amie and école are feminine?",
+      "back": "Before a feminine singular word starting with a vowel or silent h, ma/ta/sa become mon/ton/son so the vowels don't clash: mon amie, ton école, son histoire. If an adjective starting with a consonant comes first, go back to ma/ta/sa: ma meilleure amie."
+    },
+    {
+      "id": "adj-possessive-06",
+      "type": "gap",
+      "prompt": "Je vais au parc avec ___ amie Sarah.",
+      "base": "mon",
+      "answers": ["mon"],
+      "en": "I'm going to the park with my friend Sarah.",
+      "why": "amie is feminine but starts with a vowel, so ma becomes mon."
+    },
+    {
+      "id": "adj-possessive-07",
+      "type": "gap",
+      "prompt": "Samedi, je vais en ville avec ___ meilleure amie.",
+      "base": "mon",
+      "answers": ["ma"],
+      "en": "On Saturday I'm going into town with my best friend.",
+      "why": "The next word, meilleure, starts with a consonant, so the feminine ma is used."
+    },
+    {
+      "id": "adj-possessive-08",
+      "type": "flip",
+      "front": "Does son / sa / ses mean 'his' or 'her'?",
+      "back": "Either – it agrees with the thing owned, not with the owner. Paul range sa chambre (his room). Julie adore son frère (her brother). Context tells you whether it means his or her."
+    },
+    {
+      "id": "adj-possessive-09",
+      "type": "gap",
+      "prompt": "Paul range ___ chambre.",
+      "base": "son",
+      "hint": "(his)",
+      "answers": ["sa"],
+      "en": "Paul is tidying his bedroom.",
+      "why": "chambre is feminine, so sa – even though Paul is male."
+    },
+    {
+      "id": "adj-possessive-10",
+      "type": "gap",
+      "prompt": "Julie adore ___ petit frère.",
+      "base": "son",
+      "hint": "(her)",
+      "answers": ["son"],
+      "en": "Julie loves her little brother.",
+      "why": "frère is masculine, so son – even though Julie is female."
+    },
+    {
+      "id": "adj-possessive-11",
+      "type": "gap",
+      "prompt": "Cet été, nous passons ___ vacances en Italie.",
+      "base": "notre",
+      "answers": ["nos"],
+      "en": "This summer we're spending our holiday in Italy.",
+      "why": "vacances is plural, so nos."
+    },
+    {
+      "id": "adj-possessive-12",
+      "type": "flip",
+      "front": "leur or leurs? And what do you use with parts of the body?",
+      "back": "leur + one thing (leur chien), leurs + more than one (leurs enfants). Don't confuse it with the pronoun leur (to them), which never takes -s. With parts of the body use le, la, les: Il se brosse les dents. J'ai mal au dos."
+    },
+    {
+      "id": "adj-possessive-13",
+      "type": "gap",
+      "prompt": "Les enfants promènent ___ chien tous les soirs.",
+      "base": "leur",
+      "answers": ["leur"],
+      "en": "The children walk their dog every evening.",
+      "why": "They have one dog, so leur (singular), even though there are several owners."
+    },
+    {
+      "id": "adj-possessive-14",
+      "type": "gap",
+      "prompt": "Mes cousins ont vendu ___ vélos.",
+      "base": "leur",
+      "answers": ["leurs"],
+      "en": "My cousins sold their bikes.",
+      "why": "vélos is plural, so leurs."
+    },
+    {
+      "id": "adj-possessive-15",
+      "type": "gap",
+      "prompt": "Monsieur, vous avez oublié ___ clés !",
+      "base": "votre",
+      "answers": ["vos"],
+      "en": "Sir, you've forgotten your keys!",
+      "why": "clés is plural, so vos."
+    },
+    {
+      "id": "adj-possessive-16",
+      "type": "transform",
+      "instruction": "Rewrite using a possessive adjective instead of de + the owner.",
+      "prompt": "C'est le livre de Marie.",
+      "answers": ["C'est son livre."],
+      "en": "It's her book.",
+      "why": "livre is masculine, so son – even though Marie is female."
+    },
+    {
+      "id": "adj-possessive-17",
+      "type": "transform",
+      "instruction": "Rewrite using a possessive adjective instead of de + the owner.",
+      "prompt": "C'est la maison de mes grands-parents.",
+      "answers": ["C'est leur maison."],
+      "en": "It's their house.",
+      "why": "One house belonging to several people: leur."
+    },
+    {
+      "id": "adj-possessive-18",
+      "type": "transform",
+      "instruction": "Rewrite using a possessive adjective instead of de + the owner.",
+      "prompt": "Ce sont les chaussures de Thomas.",
+      "answers": ["Ce sont ses chaussures."],
+      "en": "They're his shoes.",
+      "why": "chaussures is plural, so ses."
+    }
+  ]
+}

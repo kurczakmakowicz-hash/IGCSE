@@ -1,0 +1,169 @@
+{
+  "id": "articles",
+  "order": 3,
+  "area": "Articles",
+  "title": "Definite, indefinite and partitive articles",
+  "spec": "Articles: definite, indefinite and partitive, including use of de after negatives",
+  "receptive": false,
+  "summary": [
+    "the: le (m), la (f), l' (before a vowel or silent h), les (plural): le parc, la gare, l'hôtel, les magasins.",
+    "a / some: un (m), une (f), des (plural): un vélo, une maison, des amis.",
+    "some / any (the partitive): du (m), de la (f), de l' (before a vowel), des (plural): du pain, de la viande, de l'eau, des fraises. French needs it even when English leaves 'some' out.",
+    "à + le = au and à + les = aux: Je vais au cinéma, aux États-Unis. À la and à l' don't change: à la piscine, à l'école.",
+    "de + le = du and de + les = des: près du parc, à côté des magasins. De la and de l' don't change: en face de la gare.",
+    "After a negative, un, une, des, du, de la and de l' all become de (d' before a vowel): Je n'ai pas de frère. Il n'y a plus d'eau.",
+    "After être the article stays: Ce n'est pas un problème.",
+    "After quantities use de: beaucoup de touristes, un kilo de pommes, une bouteille d'eau.",
+    "With aimer, adorer, préférer and détester use le, la, l', les, even after a negative: J'aime le chocolat. Je n'aime pas les maths.",
+    "In careful written French, des becomes de before a plural adjective that comes before the noun: de belles plages."
+  ],
+  "cards": [
+    {
+      "id": "articles-01",
+      "type": "flip",
+      "front": "What are the French words for 'the' and 'a'?",
+      "back": "the: le (m), la (f), l' (before a vowel or silent h), les (plural): le parc, la gare, l'hôtel, les magasins. a: un (m), une (f); plural des (some): un vélo, une maison, des amis."
+    },
+    {
+      "id": "articles-02",
+      "type": "flip",
+      "front": "What do du, de la, de l' and des mean, and when must you use them?",
+      "back": "They mean 'some' or 'any' (the partitive): du pain, de la viande, de l'eau, des fraises. English often leaves 'some' out, but French cannot: Je bois du lait – I drink milk."
+    },
+    {
+      "id": "articles-03",
+      "type": "gap",
+      "prompt": "Au petit-déjeuner, je bois toujours ___ lait.",
+      "hint": "(some)",
+      "answers": ["du"],
+      "en": "At breakfast I always drink milk.",
+      "why": "lait is masculine and means an unspecified amount, so use the partitive: de + le = du."
+    },
+    {
+      "id": "articles-04",
+      "type": "gap",
+      "prompt": "Après le match, j'avais soif, alors j'ai bu ___.",
+      "hint": "(some water)",
+      "answers": ["de l'eau"],
+      "en": "After the match I was thirsty, so I drank some water.",
+      "why": "eau is feminine but starts with a vowel, so the partitive is de l': de l'eau."
+    },
+    {
+      "id": "articles-05",
+      "type": "flip",
+      "front": "What happens when à or de meets le or les?",
+      "back": "à + le = au, à + les = aux; de + le = du, de + les = des. à la, à l', de la and de l' don't change: Je vais au cinéma, à la piscine, aux magasins. C'est près du parc, à côté de la gare."
+    },
+    {
+      "id": "articles-06",
+      "type": "gap",
+      "prompt": "Ce soir, je vais ___ cinéma avec mes copains.",
+      "hint": "(to the)",
+      "answers": ["au"],
+      "en": "This evening I'm going to the cinema with my friends.",
+      "why": "cinéma is masculine, and à + le always becomes au."
+    },
+    {
+      "id": "articles-07",
+      "type": "gap",
+      "prompt": "Cet été, mes parents vont ___ États-Unis.",
+      "hint": "(to the)",
+      "answers": ["aux"],
+      "en": "This summer my parents are going to the United States.",
+      "why": "les États-Unis is plural, and à + les always becomes aux."
+    },
+    {
+      "id": "articles-08",
+      "type": "gap",
+      "prompt": "La boulangerie est à côté ___ parc.",
+      "hint": "(of the)",
+      "answers": ["du"],
+      "en": "The baker's is next to the park.",
+      "why": "à côté de + le parc: de + le always becomes du."
+    },
+    {
+      "id": "articles-09",
+      "type": "flip",
+      "front": "What happens to un, une, des, du, de la and de l' after a negative or a quantity?",
+      "back": "They all become de (d' before a vowel): J'ai un frère → Je n'ai pas de frère. Il y a de l'eau → Il n'y a pas d'eau. After quantities too: beaucoup de touristes, un kilo de pommes, une bouteille d'eau. But le, la, l', les don't change: Je n'aime pas le café."
+    },
+    {
+      "id": "articles-10",
+      "type": "gap",
+      "prompt": "Il n'y a pas ___ piscine dans mon village.",
+      "hint": "(a)",
+      "answers": ["de"],
+      "en": "There isn't a swimming pool in my village.",
+      "why": "After a negative, un and une become de: pas de piscine."
+    },
+    {
+      "id": "articles-11",
+      "type": "gap",
+      "prompt": "Mon frère est végétarien : il ne mange jamais ___ viande.",
+      "hint": "(any)",
+      "answers": ["de"],
+      "en": "My brother is a vegetarian: he never eats meat.",
+      "why": "After ne ... jamais, the partitive de la becomes de."
+    },
+    {
+      "id": "articles-12",
+      "type": "gap",
+      "prompt": "Nous ne pouvons pas aller au restaurant : nous n'avons plus ___.",
+      "hint": "(any money)",
+      "answers": ["d'argent"],
+      "en": "We can't go to the restaurant: we haven't got any money left.",
+      "why": "After ne ... plus, de l' becomes de, shortened to d' before a vowel: plus d'argent."
+    },
+    {
+      "id": "articles-13",
+      "type": "gap",
+      "prompt": "En été, il y a beaucoup ___ touristes sur la plage.",
+      "hint": "(of)",
+      "answers": ["de"],
+      "en": "In summer there are lots of tourists on the beach.",
+      "why": "After expressions of quantity (beaucoup, peu, assez, trop, un kilo) use de, not des."
+    },
+    {
+      "id": "articles-14",
+      "type": "flip",
+      "front": "Which article do you use after aimer, adorer, préférer and détester – and with jobs?",
+      "back": "The definite article (le, la, l', les), even where English has none: J'aime le chocolat. Je déteste les maths. It stays after a negative: Je n'aime pas le poisson. With a job after être there is no article: Mon père est médecin."
+    },
+    {
+      "id": "articles-15",
+      "type": "gap",
+      "prompt": "Ma sœur adore ___ musique classique.",
+      "hint": "(no article in English)",
+      "answers": ["la"],
+      "en": "My sister loves classical music.",
+      "why": "After verbs of liking and disliking, French uses the definite article: adorer la musique."
+    },
+    {
+      "id": "articles-16",
+      "type": "transform",
+      "instruction": "Make the sentence negative using ne ... pas.",
+      "prompt": "J'ai un chien.",
+      "answers": ["Je n'ai pas de chien."],
+      "en": "I haven't got a dog.",
+      "why": "After a negative, un becomes de."
+    },
+    {
+      "id": "articles-17",
+      "type": "transform",
+      "instruction": "Make the sentence negative using ne ... pas.",
+      "prompt": "J'aime le fromage.",
+      "answers": ["Je n'aime pas le fromage."],
+      "en": "I don't like cheese.",
+      "why": "Only un, une, des and the partitive change to de after a negative; le, la, l', les stay: Je n'aime pas le fromage."
+    },
+    {
+      "id": "articles-18",
+      "type": "transform",
+      "instruction": "Make the sentence negative using ne ... pas.",
+      "prompt": "C'est une bonne idée.",
+      "answers": ["Ce n'est pas une bonne idée."],
+      "en": "It's not a good idea.",
+      "why": "After être the article does not change to de: ce n'est pas une bonne idée."
+    }
+  ]
+}

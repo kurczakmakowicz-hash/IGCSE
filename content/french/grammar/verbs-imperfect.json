@@ -1,0 +1,222 @@
+{
+  "id": "verbs-imperfect",
+  "order": 28,
+  "area": "Verbs",
+  "title": "Imperfect tense (and perfect vs imperfect)",
+  "spec": "Verbs: tenses: imperfect",
+  "receptive": false,
+  "summary": [
+    "Formation: take the nous form of the present, remove -ons and add -ais, -ais, -ait, -ions, -iez, -aient: nous finissons → je finissais.",
+    "The only irregular stem is être → ét-: j'étais, c'était, nous étions.",
+    "Spelling: -ger verbs keep the e before a (je mangeais, ils nageaient, but nous mangions); -cer verbs take ç before a (je commençais, but nous commencions).",
+    "Use it for descriptions in the past: La maison était grande et il y avait un jardin.",
+    "Use it for repeated or habitual actions ('used to' / 'would'): Quand j'étais petit, je jouais au parc tous les jours.",
+    "Use it for an action in progress ('was ...ing'), often interrupted by a perfect: Je regardais la télé quand le téléphone a sonné.",
+    "Use it for weather, feelings and opinions in the past: Il faisait beau. J'avais peur. C'était génial !",
+    "Perfect = a single completed event (what happened). Imperfect = background, description or habit (what was going on, what used to happen).",
+    "Imperfect clues: d'habitude, souvent, tous les jours, le samedi, autrefois, quand j'étais petit(e). Perfect clues: soudain, tout à coup, un jour, ce jour-là, une fois."
+  ],
+  "cards": [
+    {
+      "id": "verbs-imperfect-01",
+      "type": "flip",
+      "front": "How do you form the imperfect tense?",
+      "back": "Take the nous form of the present, remove -ons and add -ais, -ais, -ait, -ions, -iez, -aient. nous jouons → je jouais; nous finissons → il finissait; nous faisons → ils faisaient; nous prenons → vous preniez."
+    },
+    {
+      "id": "verbs-imperfect-02",
+      "type": "flip",
+      "front": "Which verb has an irregular imperfect stem?",
+      "back": "Only être: ét- → j'étais, tu étais, il était, nous étions, vous étiez, ils étaient. Everything else follows the nous rule, even avoir (nous avons → j'avais) and aller (nous allons → j'allais)."
+    },
+    {
+      "id": "verbs-imperfect-03",
+      "type": "gap",
+      "prompt": "Quand j'étais petit, je ___ au foot tous les samedis.",
+      "base": "jouer",
+      "answers": ["jouais"],
+      "en": "When I was little, I used to play football every Saturday.",
+      "why": "A repeated action in the past (tous les samedis) → imperfect: je jouais."
+    },
+    {
+      "id": "verbs-imperfect-04",
+      "type": "gap",
+      "prompt": "Quand ils étaient petits, mes cousins ___ souvent chez nous.",
+      "base": "venir",
+      "answers": ["venaient"],
+      "en": "When they were little, my cousins often came to our house.",
+      "why": "Habitual past → imperfect. Stem from nous venons → ven- + -aient."
+    },
+    {
+      "id": "verbs-imperfect-05",
+      "type": "gap",
+      "prompt": "Quand nous étions jeunes, nous ___ toujours nos devoirs avant le dîner.",
+      "base": "finir",
+      "answers": ["finissions"],
+      "en": "When we were young, we always finished our homework before dinner.",
+      "why": "Habit in the past → imperfect. Stem from nous finissons → finiss- + -ions."
+    },
+    {
+      "id": "verbs-imperfect-06",
+      "type": "gap",
+      "prompt": "Autrefois, mes grands-parents ___ dans une ferme.",
+      "base": "habiter",
+      "answers": ["habitaient"],
+      "en": "In the past my grandparents lived on a farm.",
+      "why": "autrefois describes how things used to be → imperfect: ils habitaient."
+    },
+    {
+      "id": "verbs-imperfect-07",
+      "type": "gap",
+      "prompt": "Mon ancienne école primaire ___ petite, mais les profs étaient sympas.",
+      "base": "être",
+      "answers": ["était"],
+      "en": "My old primary school was small, but the teachers were nice.",
+      "why": "Description in the past → imperfect. être has the irregular stem ét-: elle était."
+    },
+    {
+      "id": "verbs-imperfect-08",
+      "type": "gap",
+      "prompt": "Quand j'étais petite, je ___ beaucoup de bonbons.",
+      "base": "manger",
+      "answers": ["mangeais"],
+      "en": "When I was little, I used to eat lots of sweets.",
+      "why": "Habitual past → imperfect. -ger verbs keep the e before a to keep the g soft: je mangeais."
+    },
+    {
+      "id": "verbs-imperfect-09",
+      "type": "gap",
+      "prompt": "Quand j'étais au collège, les cours ___ à huit heures.",
+      "base": "commencer",
+      "answers": ["commençaient"],
+      "en": "When I was at secondary school, lessons started at eight o'clock.",
+      "why": "Habitual past → imperfect. -cer verbs take ç before a to keep the soft c: commençaient."
+    },
+    {
+      "id": "verbs-imperfect-10",
+      "type": "flip",
+      "front": "What are the main uses of the imperfect?",
+      "back": "1 Description in the past: C'était un village calme. 2 Habits and repeated actions ('used to'): Je nageais tous les jours. 3 An action in progress ('was ...ing'): Je lisais quand... 4 Weather, feelings and opinions: Il faisait froid. J'étais content. C'était nul."
+    },
+    {
+      "id": "verbs-imperfect-11",
+      "type": "flip",
+      "front": "How do you say 'it was', 'there was / there were', 'the weather was nice' and 'you had to' in the past?",
+      "back": "c'était, il y avait, il faisait beau, il fallait. These almost always go in the imperfect when you describe a past scene: C'était super, il y avait beaucoup de monde et il faisait chaud."
+    },
+    {
+      "id": "verbs-imperfect-12",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the imperfect.",
+      "prompt": "Je suis fatigué et j'ai faim.",
+      "answers": ["J'étais fatigué et j'avais faim."],
+      "en": "I was tired and I was hungry.",
+      "why": "Feelings and states in the past → imperfect: j'étais (irregular stem ét-) and j'avais."
+    },
+    {
+      "id": "verbs-imperfect-13",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the imperfect.",
+      "prompt": "Nous mangeons à la cantine.",
+      "answers": ["Nous mangions à la cantine."],
+      "en": "We used to eat in the canteen.",
+      "why": "Before the i of -ions the g is already soft, so no extra e: nous mangions."
+    },
+    {
+      "id": "verbs-imperfect-14",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the imperfect.",
+      "prompt": "Il y a beaucoup de monde et c'est génial.",
+      "answers": ["Il y avait beaucoup de monde et c'était génial."],
+      "en": "There were lots of people and it was great.",
+      "why": "il y a → il y avait; c'est → c'était. Both describe a past scene."
+    },
+    {
+      "id": "verbs-imperfect-15",
+      "type": "flip",
+      "front": "Perfect or imperfect: how do you decide?",
+      "back": "Perfect = a completed single event, what happened next: Soudain, j'ai entendu un bruit. Imperfect = the background, a description, or something that used to happen or was going on: Il était minuit et il pleuvait. Test: if English could say 'was ...ing' or 'used to', use the imperfect."
+    },
+    {
+      "id": "verbs-imperfect-16",
+      "type": "gap",
+      "prompt": "Quand il était petit, Hugo ___ peur du noir.",
+      "base": "avoir",
+      "answers": ["avait"],
+      "en": "When he was little, Hugo was afraid of the dark.",
+      "why": "A feeling that lasted over a period of the past → imperfect: il avait peur."
+    },
+    {
+      "id": "verbs-imperfect-17",
+      "type": "gap",
+      "prompt": "Quand j'habitais à Paris, ma mère ___ au marché tous les samedis.",
+      "base": "aller",
+      "answers": ["allait"],
+      "en": "When I lived in Paris, my mother went to the market every Saturday.",
+      "why": "tous les samedis shows a habit → imperfect: elle allait."
+    },
+    {
+      "id": "verbs-imperfect-18",
+      "type": "gap",
+      "prompt": "Hier soir, je ___ mes devoirs quand mon portable a sonné.",
+      "base": "faire",
+      "answers": ["faisais"],
+      "en": "Last night I was doing my homework when my phone rang.",
+      "why": "An action in progress ('was doing') interrupted by an event in the perfect → imperfect: je faisais."
+    },
+    {
+      "id": "verbs-imperfect-19",
+      "type": "gap",
+      "prompt": "Mes parents dormaient quand le voleur ___ dans la maison.",
+      "base": "entrer",
+      "answers": ["est entré"],
+      "en": "My parents were sleeping when the burglar came into the house.",
+      "why": "The sudden event that interrupts the background action → perfect. entrer takes être: le voleur est entré."
+    },
+    {
+      "id": "verbs-imperfect-20",
+      "type": "gap",
+      "prompt": "Quand je suis arrivé à la gare, il ___ et je n'avais pas de parapluie.",
+      "base": "pleuvoir",
+      "answers": ["pleuvait"],
+      "en": "When I arrived at the station, it was raining and I didn't have an umbrella.",
+      "why": "Weather as background to an event → imperfect: il pleuvait."
+    },
+    {
+      "id": "verbs-imperfect-21",
+      "type": "gap",
+      "prompt": "D'habitude, Paul prenait le bus, mais ce jour-là, il ___ un taxi.",
+      "base": "prendre",
+      "answers": ["a pris"],
+      "en": "Paul usually took the bus, but that day he took a taxi.",
+      "why": "ce jour-là marks one completed occasion, in contrast with the habit (prenait) → perfect: il a pris."
+    },
+    {
+      "id": "verbs-imperfect-22",
+      "type": "gap",
+      "prompt": "L'année dernière, mes parents ___ en Grèce pour la première fois.",
+      "base": "aller",
+      "answers": ["sont allés"],
+      "en": "Last year my parents went to Greece for the first time.",
+      "why": "pour la première fois marks a single completed event → perfect. aller takes être and agrees: sont allés."
+    },
+    {
+      "id": "verbs-imperfect-23",
+      "type": "transform",
+      "instruction": "Rewrite in the past: imperfect for the background action, perfect for the event.",
+      "prompt": "Je lis quand ma mère arrive.",
+      "answers": ["Je lisais quand ma mère est arrivée."],
+      "en": "I was reading when my mother arrived.",
+      "why": "The ongoing action (lire) → imperfect: je lisais. The interruption → perfect with être and agreement: ma mère est arrivée."
+    },
+    {
+      "id": "verbs-imperfect-24",
+      "type": "transform",
+      "instruction": "Rewrite in the past: imperfect for the weather, perfect for the action.",
+      "prompt": "Il fait froid, alors je mets un pull.",
+      "answers": ["Il faisait froid, alors j'ai mis un pull."],
+      "en": "It was cold, so I put on a jumper.",
+      "why": "Weather as background → imperfect: il faisait froid. A single completed action → perfect: j'ai mis (irregular participle of mettre)."
+    }
+  ]
+}

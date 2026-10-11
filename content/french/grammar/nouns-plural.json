@@ -1,0 +1,168 @@
+{
+  "id": "nouns-plural",
+  "order": 2,
+  "area": "Nouns",
+  "title": "Singular and plural nouns",
+  "spec": "Nouns: singular and plural forms",
+  "receptive": false,
+  "summary": [
+    "Most nouns add a silent -s in the plural: un livre → des livres, une maison → des maisons. You hear the plural in the article: les, des.",
+    "Nouns ending in -s, -x or -z do not change: un bus → des bus, un prix → des prix, un nez → des nez.",
+    "Nouns ending in -eau or -eu add -x: un gâteau → des gâteaux, un jeu → des jeux, un neveu → des neveux.",
+    "Most nouns ending in -al change to -aux: un animal → des animaux, un journal → des journaux. A few just add -s: des festivals, des carnavals.",
+    "A few nouns in -ail and -ou take -x: un travail → des travaux, un genou → des genoux, un bijou → des bijoux. Most others just add -s: des trous.",
+    "Irregular plurals: un œil → des yeux, monsieur → messieurs, madame → mesdames.",
+    "Some nouns are plural in French but singular in English: les cheveux (hair), les vacances (holiday), les devoirs (homework), les informations (the news).",
+    "In compounds made of an adjective + a noun, both parts take -s: des grands-parents, des petits-enfants. Un week-end → des week-ends.",
+    "When the noun is plural, the verb and adjectives change too: les châteaux sont beaux."
+  ],
+  "cards": [
+    {
+      "id": "nouns-plural-01",
+      "type": "flip",
+      "front": "How do most French nouns form the plural, and how can you hear it?",
+      "back": "Add -s, which is silent: un vélo → des vélos, une rue → des rues. You hear the plural in the article (les, des) and in liaison before a vowel: in les enfants the s is sounded like a z."
+    },
+    {
+      "id": "nouns-plural-02",
+      "type": "flip",
+      "front": "What happens to nouns ending in -s, -x or -z in the plural?",
+      "back": "Nothing – they stay the same: un bus → des bus, un pays → des pays, un prix → des prix, un nez → des nez."
+    },
+    {
+      "id": "nouns-plural-03",
+      "type": "gap",
+      "prompt": "Le matin, les ___ sont souvent en retard.",
+      "base": "bus",
+      "answers": ["bus"],
+      "en": "In the morning the buses are often late.",
+      "why": "Nouns ending in -s, -x or -z don't change in the plural: un bus → des bus."
+    },
+    {
+      "id": "nouns-plural-04",
+      "type": "flip",
+      "front": "What is the plural of nouns ending in -eau, -eu and -al?",
+      "back": "-eau and -eu add -x: un bateau → des bateaux, un cheveu → des cheveux. -al becomes -aux: un cheval → des chevaux, un hôpital → des hôpitaux. Exceptions that just add -s: un festival → des festivals, un pneu → des pneus."
+    },
+    {
+      "id": "nouns-plural-05",
+      "type": "gap",
+      "prompt": "À la pâtisserie, j'ai acheté deux ___ au chocolat.",
+      "base": "gâteau",
+      "answers": ["gâteaux"],
+      "en": "At the cake shop I bought two chocolate cakes.",
+      "why": "Nouns ending in -eau add -x in the plural: gâteau → gâteaux."
+    },
+    {
+      "id": "nouns-plural-06",
+      "type": "gap",
+      "prompt": "Mon petit frère passe trop de temps à jouer aux ___ vidéo.",
+      "base": "jeu",
+      "answers": ["jeux"],
+      "en": "My little brother spends too much time playing video games.",
+      "why": "Nouns ending in -eu add -x in the plural: jeu → jeux."
+    },
+    {
+      "id": "nouns-plural-07",
+      "type": "gap",
+      "prompt": "Il y a beaucoup d'___ à la ferme de mon oncle.",
+      "base": "animal",
+      "answers": ["animaux"],
+      "en": "There are lots of animals on my uncle's farm.",
+      "why": "Most nouns ending in -al change to -aux in the plural: un animal → des animaux."
+    },
+    {
+      "id": "nouns-plural-08",
+      "type": "gap",
+      "prompt": "Mon grand-père lit deux ___ chaque matin.",
+      "base": "journal",
+      "answers": ["journaux"],
+      "en": "My grandfather reads two newspapers every morning.",
+      "why": "-al becomes -aux in the plural: un journal → des journaux."
+    },
+    {
+      "id": "nouns-plural-09",
+      "type": "gap",
+      "prompt": "Cet été, nous allons à deux ___ de musique.",
+      "base": "festival",
+      "answers": ["festivals"],
+      "en": "This summer we're going to two music festivals.",
+      "why": "festival is an exception to the -al → -aux rule: it just adds -s (like carnaval → carnavals)."
+    },
+    {
+      "id": "nouns-plural-10",
+      "type": "flip",
+      "front": "Give the plural of: un œil, un travail, un genou, monsieur, madame.",
+      "back": "des yeux, des travaux, des genoux, messieurs, mesdames. Like genou, a few -ou nouns take -x (bijou → bijoux, chou → choux); most just add -s (un trou → des trous)."
+    },
+    {
+      "id": "nouns-plural-11",
+      "type": "gap",
+      "prompt": "Ma grand-mère a les ___ bleus.",
+      "base": "œil",
+      "answers": ["yeux"],
+      "en": "My grandmother has blue eyes.",
+      "why": "œil has an irregular plural: yeux. French uses les for physical features: elle a les yeux bleus."
+    },
+    {
+      "id": "nouns-plural-12",
+      "type": "gap",
+      "prompt": "Il y a des ___ dans ma rue, donc c'est très bruyant.",
+      "base": "travail",
+      "answers": ["travaux"],
+      "en": "There are roadworks in my street, so it's very noisy.",
+      "why": "travail → travaux (-ail → -aux). In the plural, les travaux often means building work or roadworks."
+    },
+    {
+      "id": "nouns-plural-13",
+      "type": "gap",
+      "prompt": "Mon frère est tombé de son vélo et il s'est fait mal aux ___.",
+      "base": "genou",
+      "answers": ["genoux"],
+      "en": "My brother fell off his bike and hurt his knees.",
+      "why": "genou is one of the few -ou nouns that add -x: genoux (like bijoux and choux)."
+    },
+    {
+      "id": "nouns-plural-14",
+      "type": "flip",
+      "front": "Which everyday nouns are plural in French but singular in English?",
+      "back": "les cheveux (hair), les vacances (holiday), les devoirs (homework), les informations or les infos (the news). So the verb and adjectives are plural: Mes cheveux sont courts – My hair is short."
+    },
+    {
+      "id": "nouns-plural-15",
+      "type": "gap",
+      "prompt": "Ma sœur a les ___ longs et bruns.",
+      "base": "cheveu",
+      "answers": ["cheveux"],
+      "en": "My sister has long brown hair.",
+      "why": "Hair is plural in French: les cheveux (-eu adds -x). The adjectives are masculine plural too: longs, bruns."
+    },
+    {
+      "id": "nouns-plural-16",
+      "type": "gap",
+      "prompt": "Le dimanche, je rends visite à mes ___.",
+      "base": "grand-parent",
+      "answers": ["grands-parents"],
+      "en": "On Sundays I visit my grandparents.",
+      "why": "In an adjective + noun compound, both parts take -s: grands-parents, petits-enfants."
+    },
+    {
+      "id": "nouns-plural-17",
+      "type": "transform",
+      "instruction": "Put the words in bold into the plural.",
+      "prompt": "J'ai acheté **un cadeau** pour **mon neveu**.",
+      "answers": ["J'ai acheté des cadeaux pour mes neveux."],
+      "en": "I bought presents for my nephews.",
+      "why": "-eau and -eu nouns add -x (cadeaux, neveux); un → des and mon → mes."
+    },
+    {
+      "id": "nouns-plural-18",
+      "type": "transform",
+      "instruction": "Rewrite the whole sentence in the plural.",
+      "prompt": "Le château est très beau.",
+      "answers": ["Les châteaux sont très beaux."],
+      "en": "The castles are very beautiful.",
+      "why": "château → châteaux (-eau + x); the verb becomes sont and beau → beaux."
+    }
+  ]
+}

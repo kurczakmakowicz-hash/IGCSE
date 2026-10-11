@@ -1,0 +1,165 @@
+{
+  "id": "pron-disjunctive",
+  "order": 17,
+  "area": "Pronouns",
+  "title": "Emphatic (disjunctive) pronouns",
+  "spec": "Pronouns: disjunctive/emphatic",
+  "receptive": false,
+  "summary": [
+    "The emphatic pronouns are moi, toi, lui, elle, nous, vous, eux, elles.",
+    "Use them after prepositions: avec moi, pour toi, sans lui, à côté d'elle, chez nous.",
+    "chez + emphatic pronoun = at / to someone's house: chez moi (at my place), chez eux (at their house).",
+    "Use them for emphasis, usually with the subject pronoun as well: Moi, je préfère le rap. Lui, il est très sportif.",
+    "Use them after c'est and ce sont: C'est moi ! C'est lui qui a gagné. Ce sont elles.",
+    "Use them after que in comparisons: Mon frère est plus grand que moi.",
+    "Use them on their own and with aussi / non plus: Qui veut du gâteau ? — Moi ! Moi aussi. Moi non plus.",
+    "lui means him only (her is elle); eux is them for males or a mixed group, elles for females.",
+    "Add -même(s) for -self: moi-même (myself), elle-même (herself), eux-mêmes (themselves)."
+  ],
+  "cards": [
+    {
+      "id": "pron-disjunctive-01",
+      "type": "flip",
+      "front": "List the eight emphatic (disjunctive) pronouns with their meanings.",
+      "back": "moi (me), toi (you, informal), lui (him), elle (her), nous (us), vous (you, polite or plural), eux (them, masc. or mixed), elles (them, all female)."
+    },
+    {
+      "id": "pron-disjunctive-02",
+      "type": "gap",
+      "prompt": "Tu veux venir au cinéma avec ___ ce soir ?",
+      "hint": "(me)",
+      "answers": ["moi"],
+      "en": "Do you want to come to the cinema with me tonight?",
+      "why": "After a preposition such as avec, use the emphatic pronoun: avec moi."
+    },
+    {
+      "id": "pron-disjunctive-03",
+      "type": "gap",
+      "prompt": "Mon frère ? Je vais au match avec ___ samedi.",
+      "hint": "(him)",
+      "answers": ["lui"],
+      "en": "My brother? I'm going to the match with him on Saturday.",
+      "why": "After a preposition, 'him' is the emphatic pronoun lui."
+    },
+    {
+      "id": "pron-disjunctive-04",
+      "type": "gap",
+      "prompt": "Maman, ce cadeau est pour ___ !",
+      "hint": "(you, informal)",
+      "answers": ["toi"],
+      "en": "Mum, this present is for you!",
+      "why": "After pour, the informal 'you' is toi (not tu)."
+    },
+    {
+      "id": "pron-disjunctive-05",
+      "type": "flip",
+      "front": "What does chez + emphatic pronoun mean?",
+      "back": "At or to someone's house: chez moi (at my place / home), chez toi, chez lui, chez elle, chez nous, chez vous, chez eux, chez elles. Je rentre chez moi = I'm going home."
+    },
+    {
+      "id": "pron-disjunctive-06",
+      "type": "gap",
+      "prompt": "Mes grands-parents ? Nous passons Noël chez ___.",
+      "hint": "(them)",
+      "answers": ["eux"],
+      "en": "My grandparents? We spend Christmas at their house.",
+      "why": "Grandparents are a mixed group, so 'them' after chez is eux."
+    },
+    {
+      "id": "pron-disjunctive-07",
+      "type": "transform",
+      "instruction": "Replace the words in bold with an emphatic pronoun.",
+      "prompt": "Nous dînons chez **ma grand-mère**.",
+      "answers": ["Nous dînons chez elle."],
+      "en": "We are having dinner at her house.",
+      "why": "ma grand-mère is feminine singular, so the emphatic pronoun after chez is elle."
+    },
+    {
+      "id": "pron-disjunctive-08",
+      "type": "flip",
+      "front": "eux or elles? And how do you say 'her' after a preposition?",
+      "back": "eux = them for males or a mixed group (avec eux); elles = them for females only (avec elles). 'Her' after a preposition is elle (pour elle); lui only ever means him here."
+    },
+    {
+      "id": "pron-disjunctive-09",
+      "type": "gap",
+      "prompt": "Mes cousines ? L'été dernier, je suis parti en vacances avec ___.",
+      "hint": "(them)",
+      "answers": ["elles"],
+      "en": "My cousins? Last summer I went on holiday with them.",
+      "why": "cousines are all female, so 'them' after avec is elles."
+    },
+    {
+      "id": "pron-disjunctive-10",
+      "type": "transform",
+      "instruction": "Replace the words in bold with an emphatic pronoun.",
+      "prompt": "Je joue au tennis avec **mes copains**.",
+      "answers": ["Je joue au tennis avec eux."],
+      "en": "I play tennis with them.",
+      "why": "mes copains is masculine plural, so the emphatic pronoun after avec is eux."
+    },
+    {
+      "id": "pron-disjunctive-11",
+      "type": "flip",
+      "front": "Apart from after prepositions, when else do you use emphatic pronouns?",
+      "back": "For emphasis: Moi, je préfère le jazz. After c'est / ce sont: C'est lui ! In comparisons after que: plus grand que toi. On their own: Qui a faim ? — Moi !"
+    },
+    {
+      "id": "pron-disjunctive-12",
+      "type": "gap",
+      "prompt": "___, je préfère la musique classique, mais mon frère adore le rap.",
+      "hint": "(me, for emphasis)",
+      "answers": ["Moi"],
+      "en": "Personally, I prefer classical music, but my brother loves rap.",
+      "why": "For emphasis, the emphatic pronoun goes at the start, followed by the subject pronoun: Moi, je..."
+    },
+    {
+      "id": "pron-disjunctive-13",
+      "type": "gap",
+      "prompt": "C'est ___ qui a gagné le match.",
+      "hint": "(him)",
+      "answers": ["lui"],
+      "en": "It was him who won the match.",
+      "why": "After c'est, use the emphatic pronoun: c'est lui."
+    },
+    {
+      "id": "pron-disjunctive-14",
+      "type": "transform",
+      "instruction": "Replace the words in bold with an emphatic pronoun.",
+      "prompt": "Ma sœur est plus grande que **mon frère**.",
+      "answers": ["Ma sœur est plus grande que lui."],
+      "en": "My sister is taller than him.",
+      "why": "In comparisons, the pronoun after que is emphatic: que lui."
+    },
+    {
+      "id": "pron-disjunctive-15",
+      "type": "flip",
+      "front": "How do you say 'me too' and 'me neither'?",
+      "back": "Moi aussi (agreeing with a positive): J'adore le chocolat. — Moi aussi ! Moi non plus (agreeing with a negative): Je n'aime pas le foot. — Moi non plus. Also toi aussi, lui non plus, etc."
+    },
+    {
+      "id": "pron-disjunctive-16",
+      "type": "gap",
+      "prompt": "Je n'aime pas les films d'horreur. — ___ non plus.",
+      "hint": "(me)",
+      "answers": ["Moi"],
+      "en": "I don't like horror films. — Me neither.",
+      "why": "On its own or with non plus, the pronoun must be emphatic: Moi non plus."
+    },
+    {
+      "id": "pron-disjunctive-17",
+      "type": "flip",
+      "front": "How do you say myself, herself, themselves with même?",
+      "back": "Emphatic pronoun + hyphen + même(s): moi-même, toi-même, lui-même, elle-même, nous-mêmes, vous-même(s), eux-mêmes, elles-mêmes. J'ai fait ce gâteau moi-même."
+    },
+    {
+      "id": "pron-disjunctive-18",
+      "type": "gap",
+      "prompt": "Mes parents ont repeint la maison ___.",
+      "hint": "(themselves)",
+      "answers": ["eux-mêmes"],
+      "en": "My parents repainted the house themselves.",
+      "why": "Emphatic pronoun + -même, which adds -s in the plural: eux-mêmes (parents is a mixed group)."
+    }
+  ]
+}

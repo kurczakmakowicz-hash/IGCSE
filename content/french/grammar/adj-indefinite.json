@@ -1,0 +1,165 @@
+{
+  "id": "adj-indefinite",
+  "order": 7,
+  "area": "Adjectives",
+  "title": "Indefinite adjectives (chaque, quelque, tout…)",
+  "spec": "Adjectives: indefinite (e.g. chaque, quelque)",
+  "receptive": false,
+  "summary": [
+    "chaque (each, every) never changes and is followed by a singular noun with no article: chaque matin, chaque fille.",
+    "quelques (a few, some) is plural and goes before the noun: quelques amis, quelques idées.",
+    "plusieurs (several) never changes and is always plural: plusieurs fois, plusieurs villes.",
+    "tout agrees with the noun and is followed by the article: tout le temps, toute la journée, tous les jours, toutes les semaines.",
+    "tous les / toutes les + time word = every: tous les samedis = chaque samedi.",
+    "autre agrees in number; des becomes d' in front of it: un autre jour, d'autres pays.",
+    "même before a noun means same and agrees in number: la même école, les mêmes vêtements.",
+    "certains / certaines (some, certain) agree with a plural noun: certains profs, certaines matières.",
+    "tout le monde means everyone and takes a singular verb: tout le monde est là."
+  ],
+  "cards": [
+    {
+      "id": "adj-indefinite-01",
+      "type": "flip",
+      "front": "What does chaque mean, and does it ever change form?",
+      "back": "chaque = each / every. It never changes and is always followed by a singular noun with no article: chaque jour, chaque semaine, chaque élève."
+    },
+    {
+      "id": "adj-indefinite-02",
+      "type": "flip",
+      "front": "Give the four forms of tout + the definite article.",
+      "back": "tout le (masc. sing.), toute la (fem. sing.), tous les (masc. plural), toutes les (fem. plural): tout le week-end, toute la classe, tous les garçons, toutes les filles."
+    },
+    {
+      "id": "adj-indefinite-03",
+      "type": "gap",
+      "prompt": "Ma mère travaille ___ la journée.",
+      "base": "tout",
+      "answers": ["toute"],
+      "en": "My mother works all day.",
+      "why": "journée is feminine singular, so tout becomes toute."
+    },
+    {
+      "id": "adj-indefinite-04",
+      "type": "gap",
+      "prompt": "Nous avons cours de français ___ les jours.",
+      "base": "tout",
+      "answers": ["tous"],
+      "en": "We have French lessons every day.",
+      "why": "jours is masculine plural, so tout becomes tous; tous les jours = every day."
+    },
+    {
+      "id": "adj-indefinite-05",
+      "type": "gap",
+      "prompt": "Dans ma classe, ___ les filles aiment la natation.",
+      "base": "tout",
+      "answers": ["toutes"],
+      "en": "In my class, all the girls like swimming.",
+      "why": "filles is feminine plural, so tout becomes toutes."
+    },
+    {
+      "id": "adj-indefinite-06",
+      "type": "gap",
+      "prompt": "Mon petit frère a mangé ___ le gâteau !",
+      "base": "tout",
+      "answers": ["tout"],
+      "en": "My little brother ate the whole cake!",
+      "why": "gâteau is masculine singular, so tout stays as it is: tout le gâteau = the whole cake."
+    },
+    {
+      "id": "adj-indefinite-07",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using chaque instead of the words in bold.",
+      "prompt": "Je fais du sport **tous les matins**.",
+      "answers": ["Je fais du sport chaque matin."],
+      "en": "I do sport every morning.",
+      "why": "chaque is followed by a singular noun with no article: tous les matins = chaque matin."
+    },
+    {
+      "id": "adj-indefinite-08",
+      "type": "flip",
+      "front": "quelques or plusieurs: what is the difference?",
+      "back": "quelques = a few / some (a small number): quelques minutes. plusieurs = several (more than two, never changes): plusieurs semaines. Both go before a plural noun with no article."
+    },
+    {
+      "id": "adj-indefinite-09",
+      "type": "gap",
+      "prompt": "J'ai acheté ___ cartes postales pour mes grands-parents.",
+      "base": "quelque",
+      "answers": ["quelques"],
+      "en": "I bought a few postcards for my grandparents.",
+      "why": "Before a plural noun quelque takes an -s: quelques cartes = a few cards."
+    },
+    {
+      "id": "adj-indefinite-10",
+      "type": "gap",
+      "prompt": "Nous sommes allés à Paris ___ fois.",
+      "hint": "(several)",
+      "answers": ["plusieurs"],
+      "en": "We have been to Paris several times.",
+      "why": "plusieurs (several) is always plural and never changes form."
+    },
+    {
+      "id": "adj-indefinite-11",
+      "type": "flip",
+      "front": "Why do you say d'autres pays and not des autres pays for 'other countries'?",
+      "back": "When an adjective comes before a plural noun, des becomes de (d' before a vowel): d'autres pays, d'autres idées. Singular: un autre jour, une autre fois."
+    },
+    {
+      "id": "adj-indefinite-12",
+      "type": "gap",
+      "prompt": "L'année prochaine, je voudrais visiter d'___ pays.",
+      "base": "autre",
+      "answers": ["autres"],
+      "en": "Next year I would like to visit other countries.",
+      "why": "autre agrees in number with the plural noun pays, so it adds -s; des becomes d' before it."
+    },
+    {
+      "id": "adj-indefinite-13",
+      "type": "transform",
+      "instruction": "Make the words in bold plural.",
+      "prompt": "J'ai **un autre stylo**.",
+      "answers": ["J'ai d'autres stylos."],
+      "en": "I have other pens.",
+      "why": "The plural of un is normally des, but des becomes d' before the adjective autres; autre and stylo both add -s."
+    },
+    {
+      "id": "adj-indefinite-14",
+      "type": "flip",
+      "front": "What does même mean before a noun, and how does it agree?",
+      "back": "Before a noun même = same. It agrees in number only (no feminine change, as it already ends in -e): le même prof, la même équipe, les mêmes idées."
+    },
+    {
+      "id": "adj-indefinite-15",
+      "type": "gap",
+      "prompt": "Mes amis et moi portons les ___ baskets.",
+      "base": "même",
+      "answers": ["mêmes"],
+      "en": "My friends and I wear the same trainers.",
+      "why": "même agrees in number with the plural noun baskets, so it adds -s: les mêmes baskets."
+    },
+    {
+      "id": "adj-indefinite-16",
+      "type": "gap",
+      "prompt": "Pour moi, ___ matières sont plus faciles que d'autres.",
+      "base": "certain",
+      "answers": ["certaines"],
+      "en": "For me, some subjects are easier than others.",
+      "why": "certain agrees with matières, which is feminine plural: certaines."
+    },
+    {
+      "id": "adj-indefinite-17",
+      "type": "flip",
+      "front": "What does tout le monde mean, and is the verb singular or plural?",
+      "back": "tout le monde = everyone / everybody. It takes a singular verb: Tout le monde est content. Tout le monde aime les vacances."
+    },
+    {
+      "id": "adj-indefinite-18",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using the correct form of tout + les instead of chaque. Change the verb too.",
+      "prompt": "**Chaque maison** a un jardin.",
+      "answers": ["Toutes les maisons ont un jardin."],
+      "en": "All the houses have a garden.",
+      "why": "maison is feminine, so chaque maison becomes toutes les maisons; the subject is now plural, so a becomes ont."
+    }
+  ]
+}

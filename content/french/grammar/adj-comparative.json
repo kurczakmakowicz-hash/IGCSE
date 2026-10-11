@@ -1,0 +1,179 @@
+{
+  "id": "adj-comparative",
+  "order": 5,
+  "area": "Adjectives",
+  "title": "Comparative and superlative adjectives",
+  "spec": "Adjectives: comparative and superlative: regular, including meilleur, pire",
+  "receptive": false,
+  "summary": [
+    "plus + adjective + que = more ... than: Le train est plus rapide que le bus.",
+    "moins + adjective + que = less ... than; aussi + adjective + que = as ... as: Le vélo est moins cher que la voiture. Je suis aussi grand que mon père.",
+    "The adjective still agrees with the noun it describes: Ma sœur est plus sportive que mon frère.",
+    "After que use a stressed pronoun: Il est plus âgé que moi. Elle est aussi sympa que toi.",
+    "Superlative: le/la/les + plus (or moins) + adjective = the most (or least): C'est la plus grande ville de France.",
+    "If the adjective normally goes after the noun, so does the superlative, with the article repeated: le film le plus intéressant, les matières les plus difficiles.",
+    "After a superlative, 'in' is de: le meilleur élève de la classe, la plus haute tour du monde.",
+    "bon → meilleur (better) → le meilleur (the best), agreeing like any adjective: meilleure, meilleurs, meilleures. Never say plus bon.",
+    "mauvais → pire (worse) → le pire (the worst); plus mauvais and le plus mauvais are also correct: La pollution est pire qu'avant."
+  ],
+  "cards": [
+    {
+      "id": "adj-comparative-01",
+      "type": "flip",
+      "front": "How do you say 'more ... than', 'less ... than' and 'as ... as' with an adjective?",
+      "back": "plus ... que, moins ... que, aussi ... que: Le train est plus rapide que le car. Le vélo est moins cher que la voiture. Mon frère est aussi grand que mon père."
+    },
+    {
+      "id": "adj-comparative-02",
+      "type": "gap",
+      "prompt": "En ville, le métro est ___ que le bus.",
+      "base": "rapide",
+      "hint": "(more ... than)",
+      "answers": ["plus rapide"],
+      "en": "In town the underground is faster than the bus.",
+      "why": "more ... than = plus + adjective + que; rapide already ends in -e."
+    },
+    {
+      "id": "adj-comparative-03",
+      "type": "flip",
+      "front": "Does the adjective agree in a comparison? Which pronoun follows que?",
+      "back": "Yes – it agrees with the noun or pronoun it describes: Ma sœur est plus sportive que mon frère. Les fraises sont moins chères que les cerises. After que use moi, toi, lui, elle, nous, vous, eux, elles: Elle est plus âgée que moi."
+    },
+    {
+      "id": "adj-comparative-04",
+      "type": "gap",
+      "prompt": "Ma sœur est ___ que mon frère : elle joue au foot et au tennis.",
+      "base": "sportif",
+      "hint": "(more ... than)",
+      "answers": ["plus sportive"],
+      "en": "My sister is sportier than my brother: she plays football and tennis.",
+      "why": "The adjective agrees with ma sœur (feminine): plus sportive que."
+    },
+    {
+      "id": "adj-comparative-05",
+      "type": "gap",
+      "prompt": "Au marché, les légumes sont ___ qu'au supermarché.",
+      "base": "cher",
+      "hint": "(less ... than)",
+      "answers": ["moins chers"],
+      "en": "At the market, vegetables are less expensive than at the supermarket.",
+      "why": "less ... than = moins + adjective + que; chers agrees with légumes (masculine plural)."
+    },
+    {
+      "id": "adj-comparative-06",
+      "type": "gap",
+      "prompt": "Ma petite sœur est déjà ___ que moi !",
+      "base": "grand",
+      "hint": "(as ... as)",
+      "answers": ["aussi grande"],
+      "en": "My little sister is already as tall as me!",
+      "why": "as ... as = aussi + adjective + que; grande agrees with ma petite sœur."
+    },
+    {
+      "id": "adj-comparative-07",
+      "type": "flip",
+      "front": "How do you form the superlative ('the most', 'the least') and where does it go?",
+      "back": "le/la/les + plus/moins + adjective, agreeing with the noun. Adjectives that go before the noun keep that position: la plus grande ville. Others go after, with the article repeated: le film le plus drôle, les élèves les moins bavards. 'In' after a superlative is de: la plus belle plage de France."
+    },
+    {
+      "id": "adj-comparative-08",
+      "type": "gap",
+      "prompt": "Le mont Blanc est ___ montagne de France.",
+      "base": "haut",
+      "hint": "(the highest)",
+      "answers": ["la plus haute"],
+      "en": "Mont Blanc is the highest mountain in France.",
+      "why": "haut goes before the noun, so the superlative does too: la plus haute (agreeing with montagne). 'In' after a superlative is de."
+    },
+    {
+      "id": "adj-comparative-09",
+      "type": "gap",
+      "prompt": "C'est le film ___ de l'année.",
+      "base": "intéressant",
+      "hint": "(the most)",
+      "answers": ["le plus intéressant"],
+      "en": "It's the most interesting film of the year.",
+      "why": "intéressant goes after the noun, so the superlative does too, with the article repeated: le film le plus intéressant."
+    },
+    {
+      "id": "adj-comparative-10",
+      "type": "gap",
+      "prompt": "Pour moi, les matières ___ sont les sciences.",
+      "base": "difficile",
+      "hint": "(the most)",
+      "answers": ["les plus difficiles"],
+      "en": "For me, the most difficult subjects are the sciences.",
+      "why": "The superlative follows the noun and agrees with matières (feminine plural): les plus difficiles."
+    },
+    {
+      "id": "adj-comparative-11",
+      "type": "flip",
+      "front": "How do you say 'better' and 'the best' (adjective)?",
+      "back": "bon → meilleur (better), le meilleur (the best). It agrees: meilleur, meilleure, meilleurs, meilleures: ma meilleure amie, les meilleurs joueurs. Never say plus bon. (Don't confuse it with the adverb mieux: Elle chante mieux que moi.)"
+    },
+    {
+      "id": "adj-comparative-12",
+      "type": "gap",
+      "prompt": "Je trouve que la cuisine italienne est ___ que la cuisine anglaise.",
+      "base": "bon",
+      "hint": "(better)",
+      "answers": ["meilleure"],
+      "en": "I think Italian food is better than English food.",
+      "why": "better = meilleur, never plus bon; it agrees with cuisine (feminine): meilleure."
+    },
+    {
+      "id": "adj-comparative-13",
+      "type": "gap",
+      "prompt": "Selon les clients, c'est ___ restaurant de la ville.",
+      "base": "bon",
+      "hint": "(the best)",
+      "answers": ["le meilleur"],
+      "en": "According to the customers, it's the best restaurant in town.",
+      "why": "the best = le meilleur (masculine singular to match restaurant); 'in' after a superlative is de."
+    },
+    {
+      "id": "adj-comparative-14",
+      "type": "flip",
+      "front": "How do you say 'worse' and 'the worst'?",
+      "back": "mauvais → pire (worse), le/la pire, les pires (the worst). plus mauvais and le plus mauvais are also correct. Le temps est pire qu'hier. C'est la pire journée de ma vie."
+    },
+    {
+      "id": "adj-comparative-15",
+      "type": "gap",
+      "prompt": "Aujourd'hui, le temps est ___ qu'hier : il pleut et il fait froid.",
+      "base": "mauvais",
+      "hint": "(worse)",
+      "answers": ["pire", "plus mauvais"],
+      "en": "Today the weather is worse than yesterday: it's raining and it's cold.",
+      "why": "worse = pire (plus mauvais is also correct)."
+    },
+    {
+      "id": "adj-comparative-16",
+      "type": "gap",
+      "prompt": "Le dernier jour, il a plu sans arrêt : c'était ___ journée des vacances.",
+      "base": "mauvais",
+      "hint": "(the worst)",
+      "answers": ["la pire", "la plus mauvaise"],
+      "en": "On the last day it rained non-stop: it was the worst day of the holiday.",
+      "why": "the worst = la pire (or la plus mauvaise), agreeing with journée (feminine)."
+    },
+    {
+      "id": "adj-comparative-17",
+      "type": "transform",
+      "instruction": "Combine into one sentence using plus ... que and the adjective in brackets.",
+      "prompt": "Léa a seize ans. Thomas a quatorze ans. (âgé)",
+      "answers": ["Léa est plus âgée que Thomas."],
+      "en": "Léa is older than Thomas.",
+      "why": "plus + adjective + que; âgée agrees with Léa (feminine)."
+    },
+    {
+      "id": "adj-comparative-18",
+      "type": "transform",
+      "instruction": "Rewrite using the superlative: 'It's the most interesting town.'",
+      "prompt": "C'est une ville intéressante.",
+      "answers": ["C'est la ville la plus intéressante."],
+      "en": "It's the most interesting town.",
+      "why": "intéressante normally follows the noun, so the superlative does too, with the article repeated: la ville la plus intéressante."
+    }
+  ]
+}

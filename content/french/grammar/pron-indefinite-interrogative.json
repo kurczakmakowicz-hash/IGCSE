@@ -1,0 +1,171 @@
+{
+  "id": "pron-indefinite-interrogative",
+  "order": 21,
+  "area": "Pronouns",
+  "title": "Indefinite and interrogative pronouns",
+  "spec": "Pronouns: indefinite (e.g. quelqu'un); interrogative (e.g. qui, que)",
+  "receptive": false,
+  "summary": [
+    "quelqu'un = someone / anyone; quelque chose = something / anything: Quelqu'un a appelé. Tu veux quelque chose ?",
+    "tout le monde (everybody) and chacun / chacune (each one) take a singular verb: Tout le monde est là. Chacun a son portable.",
+    "plusieurs = several; certains / certaines = some (people or things): Certains aiment le sport, d'autres préfèrent la lecture.",
+    "personne (nobody) and rien (nothing) need ne before the verb: Je ne vois personne. Il n'y a rien. As subject: Personne n'est venu. Rien ne marche.",
+    "In the perfect, rien goes before the past participle but personne goes after it: Je n'ai rien mangé. Je n'ai vu personne.",
+    "An adjective after quelque chose, rien, quelqu'un or personne takes de and stays masculine singular: quelque chose de nouveau, rien d'intéressant.",
+    "Questions: qui ? = who?; que + inversion or qu'est-ce que + subject + verb = what? (object): Que fais-tu ? Qu'est-ce que tu fais ?",
+    "qu'est-ce qui ? = what? when 'what' is the subject: Qu'est-ce qui se passe ? quoi = what after a preposition: De quoi as-tu besoin ?",
+    "lequel ? laquelle ? lesquels ? lesquelles ? = which one(s)?, agreeing with the noun: Voici deux robes. Laquelle préfères-tu ?"
+  ],
+  "cards": [
+    {
+      "id": "pron-indefinite-interrogative-01",
+      "type": "flip",
+      "front": "What do quelqu'un, quelque chose, tout le monde, chacun, plusieurs and certains mean?",
+      "back": "quelqu'un = someone / anyone; quelque chose = something / anything; tout le monde = everybody (singular verb); chacun / chacune = each one; plusieurs = several; certains / certaines = some (of them). Tout le monde aime les vacances."
+    },
+    {
+      "id": "pron-indefinite-interrogative-02",
+      "type": "gap",
+      "prompt": "Il y a ___ à la porte !",
+      "hint": "(someone)",
+      "answers": ["quelqu'un"],
+      "en": "There's someone at the door!",
+      "why": "'someone' is quelqu'un: one word, with an apostrophe."
+    },
+    {
+      "id": "pron-indefinite-interrogative-03",
+      "type": "gap",
+      "prompt": "En été, ___ va à la plage.",
+      "hint": "(everybody)",
+      "answers": ["tout le monde"],
+      "en": "In summer everybody goes to the beach.",
+      "why": "'everybody' is tout le monde, which takes a singular verb: va."
+    },
+    {
+      "id": "pron-indefinite-interrogative-04",
+      "type": "gap",
+      "prompt": "Mes deux sœurs ont un vélo ; ___ a le sien.",
+      "hint": "(each one)",
+      "answers": ["chacune"],
+      "en": "My two sisters have a bike; each one has her own.",
+      "why": "'each one' is chacun, which becomes chacune for females and takes a singular verb."
+    },
+    {
+      "id": "pron-indefinite-interrogative-05",
+      "type": "gap",
+      "prompt": "J'ai invité dix amis, mais ___ n'ont pas pu venir.",
+      "hint": "(several)",
+      "answers": ["plusieurs"],
+      "en": "I invited ten friends, but several couldn't come.",
+      "why": "'several' is plusieurs, which never changes and takes a plural verb."
+    },
+    {
+      "id": "pron-indefinite-interrogative-06",
+      "type": "flip",
+      "front": "How do you use personne (nobody) and rien (nothing)?",
+      "back": "Both need ne before the verb: Je ne connais personne. Il ne fait rien. As the subject they come first: Personne ne m'a appelé. Rien n'est gratuit. In the perfect, rien goes before the participle (je n'ai rien fait), personne after it (je n'ai vu personne)."
+    },
+    {
+      "id": "pron-indefinite-interrogative-07",
+      "type": "transform",
+      "instruction": "Make the sentence negative by replacing the words in bold with ne ... rien.",
+      "prompt": "Il mange **quelque chose**.",
+      "answers": ["Il ne mange rien."],
+      "en": "He doesn't eat anything.",
+      "why": "ne goes before the verb and rien replaces quelque chose after it."
+    },
+    {
+      "id": "pron-indefinite-interrogative-08",
+      "type": "transform",
+      "instruction": "Make the sentence negative by replacing the words in bold with ne ... rien.",
+      "prompt": "J'ai acheté **quelque chose** au marché.",
+      "answers": ["Je n'ai rien acheté au marché."],
+      "en": "I didn't buy anything at the market.",
+      "why": "In the perfect, ne ... rien goes round avoir, so rien comes before the participle: je n'ai rien acheté."
+    },
+    {
+      "id": "pron-indefinite-interrogative-09",
+      "type": "transform",
+      "instruction": "Make the sentence negative by replacing the words in bold with ne ... personne.",
+      "prompt": "Nous avons rencontré **quelqu'un** en ville.",
+      "answers": ["Nous n'avons rencontré personne en ville."],
+      "en": "We didn't meet anyone in town.",
+      "why": "Unlike rien, personne goes after the past participle: nous n'avons rencontré personne."
+    },
+    {
+      "id": "pron-indefinite-interrogative-10",
+      "type": "gap",
+      "prompt": "___ n'est venu à ma fête.",
+      "hint": "(nobody)",
+      "answers": ["Personne"],
+      "en": "Nobody came to my party.",
+      "why": "As a subject, personne comes first and still needs ne before the verb (no pas): Personne n'est venu."
+    },
+    {
+      "id": "pron-indefinite-interrogative-11",
+      "type": "gap",
+      "prompt": "Ma mère a préparé quelque chose de ___ pour le dîner.",
+      "base": "délicieux",
+      "answers": ["délicieux"],
+      "en": "My mum has made something delicious for dinner.",
+      "why": "After quelque chose de, the adjective stays masculine singular, even though chose looks feminine."
+    },
+    {
+      "id": "pron-indefinite-interrogative-12",
+      "type": "flip",
+      "front": "How do you ask 'who?' and 'what?' in French?",
+      "back": "Who? qui: Qui parle ? Qui as-tu vu ? What? (object): que + inversion (Que fais-tu ?) or qu'est-ce que + subject + verb (Qu'est-ce que tu fais ?). What? (subject): qu'est-ce qui + verb (Qu'est-ce qui se passe ?). After a preposition: quoi (Avec quoi ? De quoi parles-tu ?)."
+    },
+    {
+      "id": "pron-indefinite-interrogative-13",
+      "type": "gap",
+      "prompt": "___ tu fais ce week-end ?",
+      "hint": "(what)",
+      "answers": ["Qu'est-ce que"],
+      "en": "What are you doing this weekend?",
+      "why": "A subject + verb follows with no inversion, so 'what' (object) is qu'est-ce que."
+    },
+    {
+      "id": "pron-indefinite-interrogative-14",
+      "type": "gap",
+      "prompt": "___ fais-tu après les cours ?",
+      "hint": "(what)",
+      "answers": ["Que"],
+      "en": "What do you do after lessons?",
+      "why": "The verb and subject are inverted (fais-tu), so 'what' (object) is que."
+    },
+    {
+      "id": "pron-indefinite-interrogative-15",
+      "type": "gap",
+      "prompt": "___ s'est passé hier soir ?",
+      "hint": "(what)",
+      "answers": ["Qu'est-ce qui"],
+      "en": "What happened last night?",
+      "why": "'what' is the subject of the verb here, so it is qu'est-ce qui."
+    },
+    {
+      "id": "pron-indefinite-interrogative-16",
+      "type": "gap",
+      "prompt": "De ___ avez-vous besoin ?",
+      "hint": "(what)",
+      "answers": ["quoi"],
+      "en": "What do you need?",
+      "why": "After a preposition (de), 'what' is quoi."
+    },
+    {
+      "id": "pron-indefinite-interrogative-17",
+      "type": "flip",
+      "front": "How do you ask 'which one?' or 'which ones?'",
+      "back": "lequel ? (masc. sing.), laquelle ? (fem. sing.), lesquels ? (masc. pl.), lesquelles ? (fem. pl.), agreeing with the noun meant: Voici deux robes. Laquelle préfères-tu ? Tu as vu ses films ? Lesquels ?"
+    },
+    {
+      "id": "pron-indefinite-interrogative-18",
+      "type": "gap",
+      "prompt": "J'ai deux pulls, un rouge et un vert. ___ préfères-tu ?",
+      "hint": "(which one)",
+      "answers": ["Lequel"],
+      "en": "I've got two jumpers, a red one and a green one. Which one do you prefer?",
+      "why": "'which one' refers to un pull (masculine singular), so lequel."
+    }
+  ]
+}

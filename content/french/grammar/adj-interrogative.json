@@ -1,0 +1,151 @@
+{
+  "id": "adj-interrogative",
+  "order": 9,
+  "area": "Adjectives",
+  "title": "Interrogative adjective quel",
+  "spec": "Adjectives: interrogative (e.g. quel, quelle, quels, quelles)",
+  "receptive": false,
+  "summary": [
+    "quel means 'which' or 'what' and agrees with its noun: quel (m sg), quelle (f sg), quels (m pl), quelles (f pl).",
+    "All four forms sound the same, so the spelling depends on the noun: Quel sport ? Quelle matière ? Quels films ? Quelles chaussures ?",
+    "quel can go straight before a noun: Quel temps fait-il ? Quelle heure est-il ?",
+    "With être, quel agrees with the noun after the verb: Quelle est ta couleur préférée ? Quels sont tes passe-temps ?",
+    "quel can follow a preposition: À quelle heure ? De quelle couleur ? Dans quel pays ?",
+    "In exclamations, quel + noun means 'What a ...!' or 'What ...!', with no un or une: Quelle belle vue ! Quel dommage !",
+    "quel always goes with a noun; for 'what' with just a verb use qu'est-ce que: Qu'est-ce que tu fais ?"
+  ],
+  "cards": [
+    {
+      "id": "adj-interrogative-01",
+      "type": "flip",
+      "front": "What are the four forms of quel, and why do they matter if they sound the same?",
+      "back": "quel (m sg), quelle (f sg), quels (m pl), quelles (f pl). They are all pronounced the same, but in writing quel must agree with its noun: Quel film ? Quelle émission ? Quels jeux ? Quelles couleurs ?"
+    },
+    {
+      "id": "adj-interrogative-02",
+      "type": "gap",
+      "prompt": "___ sport préfères-tu ?",
+      "base": "quel",
+      "answers": ["Quel"],
+      "en": "Which sport do you prefer?",
+      "why": "sport is masculine singular: quel."
+    },
+    {
+      "id": "adj-interrogative-03",
+      "type": "gap",
+      "prompt": "___ matière est-ce que tu détestes ?",
+      "base": "quel",
+      "answers": ["Quelle"],
+      "en": "Which subject do you hate?",
+      "why": "matière is feminine singular: quelle."
+    },
+    {
+      "id": "adj-interrogative-04",
+      "type": "gap",
+      "prompt": "___ films aimes-tu regarder ?",
+      "base": "quel",
+      "answers": ["Quels"],
+      "en": "What films do you like watching?",
+      "why": "films is masculine plural: quels."
+    },
+    {
+      "id": "adj-interrogative-05",
+      "type": "gap",
+      "prompt": "___ chaussures vas-tu acheter pour la fête ?",
+      "base": "quel",
+      "answers": ["Quelles"],
+      "en": "Which shoes are you going to buy for the party?",
+      "why": "chaussures is feminine plural: quelles."
+    },
+    {
+      "id": "adj-interrogative-06",
+      "type": "gap",
+      "prompt": "Dans ___ pays aimerais-tu travailler plus tard ?",
+      "base": "quel",
+      "answers": ["quel"],
+      "en": "Which country would you like to work in later on?",
+      "why": "pays is masculine singular – the -s is part of the word: quel."
+    },
+    {
+      "id": "adj-interrogative-07",
+      "type": "flip",
+      "front": "How does quel agree in a question with être, such as 'What is your favourite colour?'",
+      "back": "quel agrees with the noun after être: Quelle est ta couleur préférée ? (couleur, f sg). Quels sont tes passe-temps ? (m pl). Quelles sont tes matières préférées ? (f pl)."
+    },
+    {
+      "id": "adj-interrogative-08",
+      "type": "gap",
+      "prompt": "___ est ta couleur préférée ?",
+      "base": "quel",
+      "answers": ["Quelle"],
+      "en": "What is your favourite colour?",
+      "why": "quel agrees with the noun after être: couleur is feminine singular, so quelle."
+    },
+    {
+      "id": "adj-interrogative-09",
+      "type": "gap",
+      "prompt": "___ sont tes passe-temps ?",
+      "base": "quel",
+      "answers": ["Quels"],
+      "en": "What are your hobbies?",
+      "why": "passe-temps is masculine, and sont shows it is plural here: quels."
+    },
+    {
+      "id": "adj-interrogative-10",
+      "type": "gap",
+      "prompt": "___ sont les avantages d'habiter à la campagne ?",
+      "base": "quel",
+      "answers": ["Quels"],
+      "en": "What are the advantages of living in the countryside?",
+      "why": "avantages is masculine plural: quels."
+    },
+    {
+      "id": "adj-interrogative-11",
+      "type": "gap",
+      "prompt": "À ___ heure commence le film ?",
+      "base": "quel",
+      "answers": ["quelle"],
+      "en": "What time does the film start?",
+      "why": "heure is feminine singular: à quelle heure."
+    },
+    {
+      "id": "adj-interrogative-12",
+      "type": "flip",
+      "front": "How do you use quel in exclamations?",
+      "back": "quel + noun (+ adjective) means 'What a ...!' or 'What ...!', with no un or une: Quel dommage ! (What a pity!) Quelle belle journée ! (What a lovely day!) Quels beaux paysages ! (What beautiful scenery!)"
+    },
+    {
+      "id": "adj-interrogative-13",
+      "type": "gap",
+      "prompt": "___ belle vue depuis ta chambre !",
+      "base": "quel",
+      "answers": ["Quelle"],
+      "en": "What a beautiful view from your bedroom!",
+      "why": "Exclamatory quel agrees with vue (feminine singular) and needs no article: Quelle belle vue !"
+    },
+    {
+      "id": "adj-interrogative-14",
+      "type": "flip",
+      "front": "quel or qu'est-ce que? How do you say 'What are you doing?' and 'What film are you watching?'",
+      "back": "Qu'est-ce que tu fais ? – 'what' with just a verb. Quel film regardes-tu ? – 'what' or 'which' + a noun. quel always goes with a noun (or with être + a noun)."
+    },
+    {
+      "id": "adj-interrogative-15",
+      "type": "transform",
+      "instruction": "Write the question this sentence answers, using quel + the noun in brackets and the tu form of préférer.",
+      "prompt": "Je préfère les maths. (matière)",
+      "answers": ["Quelle matière préfères-tu ?", "Quelle matière est-ce que tu préfères ?", "Tu préfères quelle matière ?"],
+      "en": "Which subject do you prefer?",
+      "why": "matière is feminine singular, so quelle; then invert (préfères-tu), use est-ce que, or put quelle matière at the end."
+    },
+    {
+      "id": "adj-interrogative-16",
+      "type": "transform",
+      "instruction": "Rewrite as an exclamation beginning with quel, keeping the adjective after the noun.",
+      "prompt": "Le temps est horrible.",
+      "answers": ["Quel temps horrible !"],
+      "en": "What horrible weather!",
+      "why": "Exclamatory quel agrees with temps (masculine singular) and takes no article."
+    }
+  ]
+}

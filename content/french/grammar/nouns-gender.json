@@ -1,0 +1,165 @@
+{
+  "id": "nouns-gender",
+  "order": 1,
+  "area": "Nouns",
+  "title": "Gender of nouns",
+  "spec": "Nouns: gender",
+  "receptive": false,
+  "summary": [
+    "Every French noun is masculine or feminine, so learn each one with its article: le livre, la table, un parc, une gare.",
+    "With l' and les you cannot hear the gender, so note it when you learn the word: l'hôtel (m), l'école (f).",
+    "Endings that are usually masculine: -age, -ment, -eau, -isme, -oir, -ier: le voyage, le bâtiment, le gâteau, le tourisme, le couloir, le quartier.",
+    "Endings that are usually feminine: -tion, -sion, -té, -ure, -ie, -ette, -ence, -ée: la natation, la télévision, la santé, la voiture, la boulangerie, la journée.",
+    "Learn the common exceptions: la plage, la page, l'image (f), l'eau (f), la peau, le musée, le lycée, le silence.",
+    "Days, months, seasons and languages are masculine: le lundi, le printemps, l'été (m), le français.",
+    "Some nouns change meaning with gender: le tour (a trip round) / la tour (a tower), le livre (a book) / la livre (a pound), le poste (a job) / la poste (the post office).",
+    "Many job nouns have a feminine form: un infirmier → une infirmière, un vendeur → une vendeuse, un acteur → une actrice, un musicien → une musicienne.",
+    "Job nouns that already end in -e are the same for both: un journaliste / une journaliste, un dentiste / une dentiste."
+  ],
+  "cards": [
+    {
+      "id": "nouns-gender-01",
+      "type": "flip",
+      "front": "Why should you always learn a French noun with le/la or un/une?",
+      "back": "Gender changes the article, the adjectives and the pronouns, and you usually can't work it out from the meaning: le livre (m), la table (f). With l' and les the gender is hidden, so note it: l'hôtel (m), l'école (f)."
+    },
+    {
+      "id": "nouns-gender-02",
+      "type": "flip",
+      "front": "Name six noun endings that are usually masculine.",
+      "back": "-age (le fromage), -ment (le bâtiment), -eau (le bateau), -isme (le tourisme), -oir (le couloir), -ier (le quartier)."
+    },
+    {
+      "id": "nouns-gender-03",
+      "type": "flip",
+      "front": "Name six noun endings that are usually feminine.",
+      "back": "-tion/-sion (la natation, la télévision), -té (la santé), -ure (la voiture), -ie (la boulangerie), -ette (la baguette), -ence (la différence). Most nouns in -ée are feminine too: la journée, l'idée."
+    },
+    {
+      "id": "nouns-gender-04",
+      "type": "gap",
+      "prompt": "Le matin, mon père va à ___ boulangerie pour acheter des croissants.",
+      "hint": "(the)",
+      "answers": ["la"],
+      "en": "In the morning my father goes to the baker's to buy croissants.",
+      "why": "-ie is a feminine ending: la boulangerie, la pharmacie, la géographie."
+    },
+    {
+      "id": "nouns-gender-05",
+      "type": "gap",
+      "prompt": "Pour mon anniversaire, ma grand-mère a fait ___ gâteau au chocolat.",
+      "hint": "(a)",
+      "answers": ["un"],
+      "en": "For my birthday my grandmother made a chocolate cake.",
+      "why": "-eau is a masculine ending: un gâteau, un bateau, un cadeau."
+    },
+    {
+      "id": "nouns-gender-06",
+      "type": "flip",
+      "front": "Which common nouns break the ending rules?",
+      "back": "Feminine although they end in -age: la plage, la page, l'image. Masculine although they end in -ée: le musée, le lycée. Masculine although it ends in -ence: le silence. Feminine although they end in -eau: l'eau, la peau."
+    },
+    {
+      "id": "nouns-gender-07",
+      "type": "gap",
+      "prompt": "Il y a ___ plage magnifique près de notre hôtel.",
+      "hint": "(a)",
+      "answers": ["une"],
+      "en": "There is a magnificent beach near our hotel.",
+      "why": "plage is feminine, an exception to the masculine -age ending (like la page and l'image)."
+    },
+    {
+      "id": "nouns-gender-08",
+      "type": "gap",
+      "prompt": "Demain, nous allons visiter ___ musée des sciences.",
+      "hint": "(the)",
+      "answers": ["le"],
+      "en": "Tomorrow we are going to visit the science museum.",
+      "why": "Most nouns in -ée are feminine, but musée (like lycée) is masculine."
+    },
+    {
+      "id": "nouns-gender-09",
+      "type": "flip",
+      "front": "What do these pairs mean: le tour / la tour, le livre / la livre, le poste / la poste, le mode / la mode?",
+      "back": "le tour = a tour, a trip round; la tour = a tower. le livre = a book; la livre = a pound (money, or 500 g). le poste = a job, a position or a (TV) set; la poste = the post office. le mode = a method, a way; la mode = fashion."
+    },
+    {
+      "id": "nouns-gender-10",
+      "type": "gap",
+      "prompt": "Du haut de ___ tour, on voit toute la ville.",
+      "hint": "(the)",
+      "answers": ["la"],
+      "en": "From the top of the tower you can see the whole town.",
+      "why": "la tour = a tower; le tour = a tour or a trip round something."
+    },
+    {
+      "id": "nouns-gender-11",
+      "type": "gap",
+      "prompt": "Ce week-end, on va faire ___ tour du lac à vélo.",
+      "hint": "(the)",
+      "answers": ["le"],
+      "en": "This weekend we're going to cycle round the lake.",
+      "why": "le tour = a trip round something (faire le tour de); la tour = a tower."
+    },
+    {
+      "id": "nouns-gender-12",
+      "type": "gap",
+      "prompt": "Pour envoyer ce colis, il faut aller à ___ poste.",
+      "hint": "(the)",
+      "answers": ["la"],
+      "en": "To send this parcel you have to go to the post office.",
+      "why": "la poste = the post office; le poste = a job or position."
+    },
+    {
+      "id": "nouns-gender-13",
+      "type": "flip",
+      "front": "How do job nouns change to refer to a woman?",
+      "back": "Often just add -e: un avocat → une avocate. Also -ier/-er → -ière/-ère (infirmière, boulangère), -ien → -ienne (musicienne), -eur → -euse (vendeuse, chanteuse), -teur → -trice (actrice, directrice). Nouns already ending in -e don't change: un/une journaliste, un/une secrétaire."
+    },
+    {
+      "id": "nouns-gender-14",
+      "type": "gap",
+      "prompt": "Ma tante travaille comme ___ dans un hôpital à Lyon.",
+      "base": "infirmier",
+      "answers": ["infirmière"],
+      "en": "My aunt works as a nurse in a hospital in Lyon.",
+      "why": "-ier becomes -ière for a woman, with a grave accent: une infirmière."
+    },
+    {
+      "id": "nouns-gender-15",
+      "type": "gap",
+      "prompt": "Plus tard, Chloé voudrait devenir ___.",
+      "base": "acteur",
+      "answers": ["actrice"],
+      "en": "Later on, Chloé would like to become an actress.",
+      "why": "Most job nouns in -teur become -trice for a woman: un acteur → une actrice. No article is needed after devenir or être with a job."
+    },
+    {
+      "id": "nouns-gender-16",
+      "type": "gap",
+      "prompt": "Ma sœur rêve de devenir ___ dans un groupe de rock.",
+      "base": "chanteur",
+      "answers": ["chanteuse"],
+      "en": "My sister dreams of becoming a singer in a rock band.",
+      "why": "chanteur comes from the verb chanter, so it follows the -eur → -euse pattern (like vendeur → vendeuse), not -teur → -trice."
+    },
+    {
+      "id": "nouns-gender-17",
+      "type": "gap",
+      "prompt": "Ma mère est ___ pour une chaîne de télévision.",
+      "base": "journaliste",
+      "answers": ["journaliste"],
+      "en": "My mother is a journalist for a TV channel.",
+      "why": "Nouns ending in -e (journaliste, dentiste, secrétaire, élève) are the same for both genders; only the article shows it: une journaliste."
+    },
+    {
+      "id": "nouns-gender-18",
+      "type": "transform",
+      "instruction": "Rewrite the sentence so it is about a female cousin, changing the words in bold.",
+      "prompt": "**Mon cousin** est **musicien**.",
+      "answers": ["Ma cousine est musicienne."],
+      "en": "My (female) cousin is a musician.",
+      "why": "cousin → cousine, so mon → ma; -ien doubles the n and adds -e: musicienne."
+    }
+  ]
+}

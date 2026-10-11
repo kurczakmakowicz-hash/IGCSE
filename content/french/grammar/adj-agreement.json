@@ -1,0 +1,213 @@
+{
+  "id": "adj-agreement",
+  "order": 4,
+  "area": "Adjectives",
+  "title": "Adjective agreement and position",
+  "spec": "Adjectives: agreement",
+  "receptive": false,
+  "summary": [
+    "Adjectives agree with the noun in gender and number: add -e for feminine, -s for plural, -es for feminine plural: un pull noir, une jupe noire, des pulls noirs, des jupes noires.",
+    "If the adjective already ends in -e, don't add another (une maison moderne), but -é still adds -e (fatiguée). If it ends in -s or -x, the masculine plural doesn't change (des garçons français, des enfants heureux).",
+    "Feminine patterns: -eux → -euse (heureuse), -if → -ive (sportive), -er → -ère (chère), -on → -onne (bonne), -el → -elle (naturelle), -ien → -ienne (italienne).",
+    "Learn the one-offs: blanc → blanche, long → longue, gentil → gentille, frais → fraîche, gros → grosse.",
+    "Adjectives in -al have the masculine plural -aux: des problèmes sociaux (but des questions sociales).",
+    "beau, nouveau and vieux become bel, nouvel and vieil before a masculine singular noun starting with a vowel or silent h: un bel hôtel, un nouvel ami, un vieil homme. Feminine: belle, nouvelle, vieille.",
+    "marron and orange never change: des chaussures marron, une jupe orange. Two-word colours don't change either: une veste bleu foncé.",
+    "Most adjectives go after the noun: une voiture rouge, un film français. BAGS adjectives go before: Beauty (beau, joli), Age (jeune, vieux, nouveau), Good/bad (bon, mauvais), Size (grand, petit, gros): une jolie maison, un bon repas.",
+    "A few change meaning with position: mon ancien collège (my former school) / un château ancien (an old castle); un grand homme (a great man) / un homme grand (a tall man)."
+  ],
+  "cards": [
+    {
+      "id": "adj-agreement-01",
+      "type": "flip",
+      "front": "What are the four forms of a regular adjective like noir?",
+      "back": "noir (m sg), noire (f sg), noirs (m pl), noires (f pl): un pull noir, une jupe noire, des pulls noirs, des jupes noires. The adjective agrees with the noun it describes."
+    },
+    {
+      "id": "adj-agreement-02",
+      "type": "gap",
+      "prompt": "Ma meilleure amie est très ___ avec moi.",
+      "base": "patient",
+      "answers": ["patiente"],
+      "en": "My best friend is very patient with me.",
+      "why": "amie is feminine singular, so add -e: patiente."
+    },
+    {
+      "id": "adj-agreement-03",
+      "type": "flip",
+      "front": "When does an adjective NOT add -e or -s?",
+      "back": "If it already ends in -e, it adds no extra -e: un livre rouge, une robe rouge (but -é does add -e: fatigué → fatiguée). If it ends in -s or -x, it adds no extra -s in the masculine plural: un pull gris → des pulls gris; un enfant heureux → des enfants heureux."
+    },
+    {
+      "id": "adj-agreement-04",
+      "type": "gap",
+      "prompt": "Mes petites sœurs sont assez ___.",
+      "base": "timide",
+      "answers": ["timides"],
+      "en": "My little sisters are quite shy.",
+      "why": "timide already ends in -e, so the feminine plural just adds -s: timides."
+    },
+    {
+      "id": "adj-agreement-05",
+      "type": "flip",
+      "front": "How do adjectives ending in -eux, -if, -er, -on, -el and -ien form the feminine?",
+      "back": "-eux → -euse (heureux → heureuse), -if → -ive (sportif → sportive), -er → -ère (cher → chère), -on → -onne (bon → bonne), -el → -elle (naturel → naturelle), -ien → -ienne (canadien → canadienne)."
+    },
+    {
+      "id": "adj-agreement-06",
+      "type": "gap",
+      "prompt": "Ma grand-mère est toujours ___ quand nous lui rendons visite.",
+      "base": "heureux",
+      "answers": ["heureuse"],
+      "en": "My grandmother is always happy when we visit her.",
+      "why": "-eux becomes -euse in the feminine: heureuse."
+    },
+    {
+      "id": "adj-agreement-07",
+      "type": "gap",
+      "prompt": "Ma tante est très ___ : elle fait du vélo tous les jours.",
+      "base": "sportif",
+      "answers": ["sportive"],
+      "en": "My aunt is very sporty: she goes cycling every day.",
+      "why": "-if becomes -ive in the feminine: sportive."
+    },
+    {
+      "id": "adj-agreement-08",
+      "type": "gap",
+      "prompt": "Au marché, les fraises sont trop ___ en ce moment.",
+      "base": "cher",
+      "answers": ["chères"],
+      "en": "At the market, strawberries are too expensive at the moment.",
+      "why": "fraises is feminine plural: -er becomes -ère, then add -s: chères."
+    },
+    {
+      "id": "adj-agreement-09",
+      "type": "gap",
+      "prompt": "Cette tarte aux pommes est vraiment ___ !",
+      "base": "bon",
+      "answers": ["bonne"],
+      "en": "This apple tart is really good!",
+      "why": "-on doubles the n and adds -e in the feminine: bonne."
+    },
+    {
+      "id": "adj-agreement-10",
+      "type": "gap",
+      "prompt": "Ma mère préfère la cuisine ___.",
+      "base": "traditionnel",
+      "answers": ["traditionnelle"],
+      "en": "My mother prefers traditional cooking.",
+      "why": "-el doubles the l and adds -e in the feminine: traditionnelle."
+    },
+    {
+      "id": "adj-agreement-11",
+      "type": "flip",
+      "front": "Give the feminine of blanc, long, gentil, frais and gros – and the masculine plural of social.",
+      "back": "blanche, longue, gentille, fraîche, grosse. Adjectives in -al have the masculine plural -aux: social → sociaux (but the feminine plural is regular: sociales)."
+    },
+    {
+      "id": "adj-agreement-12",
+      "type": "gap",
+      "prompt": "Mes grands-parents habitent dans une maison ___ au bord de la mer.",
+      "base": "blanc",
+      "answers": ["blanche"],
+      "en": "My grandparents live in a white house by the sea.",
+      "why": "blanc has an irregular feminine: blanche."
+    },
+    {
+      "id": "adj-agreement-13",
+      "type": "gap",
+      "prompt": "Au lycée, nous parlons souvent des problèmes ___.",
+      "base": "social",
+      "answers": ["sociaux"],
+      "en": "At school we often talk about social problems.",
+      "why": "problèmes is masculine plural, and adjectives in -al change to -aux: sociaux."
+    },
+    {
+      "id": "adj-agreement-14",
+      "type": "flip",
+      "front": "Give all the forms of beau, nouveau and vieux.",
+      "back": "beau, bel, belle, beaux, belles; nouveau, nouvel, nouvelle, nouveaux, nouvelles; vieux, vieil, vieille, vieux, vieilles. bel, nouvel and vieil are used only before a masculine singular noun starting with a vowel or silent h: un bel endroit, un nouvel ordinateur, un vieil ami."
+    },
+    {
+      "id": "adj-agreement-15",
+      "type": "gap",
+      "prompt": "Nous habitons dans un ___ appartement au centre-ville.",
+      "base": "beau",
+      "answers": ["bel"],
+      "en": "We live in a beautiful flat in the town centre.",
+      "why": "Before a masculine singular noun starting with a vowel or silent h, beau becomes bel."
+    },
+    {
+      "id": "adj-agreement-16",
+      "type": "gap",
+      "prompt": "Le ___ hôtel près de la gare est très moderne.",
+      "base": "nouveau",
+      "answers": ["nouvel"],
+      "en": "The new hotel near the station is very modern.",
+      "why": "hôtel is masculine and starts with a silent h, so nouveau becomes nouvel."
+    },
+    {
+      "id": "adj-agreement-17",
+      "type": "gap",
+      "prompt": "Un ___ homme m'a demandé le chemin de la gare.",
+      "base": "vieux",
+      "answers": ["vieil"],
+      "en": "An old man asked me the way to the station.",
+      "why": "homme is masculine and starts with a silent h, so vieux becomes vieil."
+    },
+    {
+      "id": "adj-agreement-18",
+      "type": "gap",
+      "prompt": "Les plages de cette région sont très ___.",
+      "base": "beau",
+      "answers": ["belles"],
+      "en": "The beaches in this region are very beautiful.",
+      "why": "plages is feminine plural: belle + s = belles."
+    },
+    {
+      "id": "adj-agreement-19",
+      "type": "flip",
+      "front": "Which colour adjectives never change?",
+      "back": "marron and orange (they are also nouns – a chestnut, an orange): des yeux marron, des chaussettes orange. Two-word colours don't change either: une robe bleu clair. Other colours agree as normal: une veste verte, des baskets blanches."
+    },
+    {
+      "id": "adj-agreement-20",
+      "type": "gap",
+      "prompt": "Pour la fête, Julie porte des chaussures ___.",
+      "base": "marron",
+      "answers": ["marron"],
+      "en": "For the party, Julie is wearing brown shoes.",
+      "why": "marron (like orange) is invariable: it never adds -e or -s."
+    },
+    {
+      "id": "adj-agreement-21",
+      "type": "flip",
+      "front": "Most adjectives go after the noun. Which ones go before? (BAGS)",
+      "back": "Beauty: beau, joli. Age: jeune, vieux, nouveau. Good/bad: bon, mauvais. Size: grand, petit, gros. E.g. une jolie ville, un vieux pont, un bon film, une grande maison. Colours and nationalities always go after: un vélo bleu, une voiture allemande."
+    },
+    {
+      "id": "adj-agreement-22",
+      "type": "transform",
+      "instruction": "Add both adjectives in brackets, in the correct form and their usual position (without et).",
+      "prompt": "Nous avons une voiture. (petit, rouge)",
+      "answers": ["Nous avons une petite voiture rouge."],
+      "en": "We have a small red car.",
+      "why": "petit is a BAGS (size) adjective, so it goes before the noun; colours go after. Both agree with voiture (f): petite, rouge."
+    },
+    {
+      "id": "adj-agreement-23",
+      "type": "transform",
+      "instruction": "Rewrite the sentence about Marie instead of Marc.",
+      "prompt": "Marc est sportif et généreux.",
+      "answers": ["Marie est sportive et généreuse."],
+      "en": "Marie is sporty and generous.",
+      "why": "In the feminine, -if becomes -ive and -eux becomes -euse."
+    },
+    {
+      "id": "adj-agreement-24",
+      "type": "flip",
+      "front": "How does position change the meaning of ancien, cher and grand?",
+      "back": "Before the noun: mon ancien collège (my former school), mes chers amis (my dear friends), un grand homme (a great man). After the noun: une maison ancienne (an old house), un hôtel cher (an expensive hotel), un homme grand (a tall man)."
+    }
+  ]
+}

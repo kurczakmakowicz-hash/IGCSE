@@ -1,0 +1,162 @@
+{
+  "id": "pron-relative",
+  "order": 20,
+  "area": "Pronouns",
+  "title": "Relative pronouns (qui, que, où, lequel, dont)",
+  "spec": "Pronouns: relative: qui, que, où, lequel, auquel, duquel, dont (R)",
+  "receptive": false,
+  "summary": [
+    "Relative pronouns link two ideas and refer back to a noun: J'ai un frère qui s'appelle Hugo.",
+    "qui (who, which, that) is the subject of the next verb, so a verb follows it: la fille qui chante. qui never shortens.",
+    "que (who(m), which, that) is the object, so a subject + verb follows it: le film que j'ai vu. que becomes qu' before a vowel: le livre qu'il lit.",
+    "où means where, and also when after a time expression: la ville où j'habite, le jour où je suis né.",
+    "After a preposition, use lequel, laquelle, lesquels, lesquelles for things, agreeing with the noun: le stylo avec lequel j'écris. For people, use qui: l'ami avec qui je joue.",
+    "à + lequel = auquel (auxquels, auxquelles; à laquelle does not change): le concours auquel j'ai participé.",
+    "de + lequel = duquel (desquels, desquelles; de laquelle does not change), used after près de, à côté de, en face de: le parc près duquel j'habite.",
+    "dont means whose, of which or about which, and replaces de + noun: le garçon dont le père est pilote. You only need to recognise and translate it.",
+    "ce qui and ce que mean 'what' (the thing that): Ce qui m'intéresse, c'est la musique. Je fais ce que je veux."
+  ],
+  "cards": [
+    {
+      "id": "pron-relative-01",
+      "type": "flip",
+      "front": "How do you choose between qui and que?",
+      "back": "qui is the subject, so a verb follows it: le prof qui parle. que is the object, so a subject + verb follows it: le prof que j'aime. Quick test: verb next → qui. que becomes qu' before a vowel (le cadeau qu'il a acheté); qui never shortens."
+    },
+    {
+      "id": "pron-relative-02",
+      "type": "gap",
+      "prompt": "J'ai une sœur ___ joue du violon.",
+      "hint": "(who)",
+      "answers": ["qui"],
+      "en": "I have a sister who plays the violin.",
+      "why": "The next word is a verb (joue), so the relative pronoun is the subject: qui."
+    },
+    {
+      "id": "pron-relative-03",
+      "type": "gap",
+      "prompt": "Le film ___ nous avons vu hier était nul.",
+      "hint": "(that / which)",
+      "answers": ["que"],
+      "en": "The film (that) we saw yesterday was rubbish.",
+      "why": "A subject (nous) follows, so the pronoun is the object of the verb: que."
+    },
+    {
+      "id": "pron-relative-04",
+      "type": "transform",
+      "instruction": "Join the two sentences using qui or que.",
+      "prompt": "J'ai un chien. Il s'appelle Max.",
+      "answers": ["J'ai un chien qui s'appelle Max."],
+      "en": "I have a dog called Max.",
+      "why": "The dog is the subject of s'appelle, so qui replaces il."
+    },
+    {
+      "id": "pron-relative-05",
+      "type": "transform",
+      "instruction": "Join the two sentences using qui or que.",
+      "prompt": "Voici le cadeau. Anna a acheté ce cadeau.",
+      "answers": ["Voici le cadeau qu'Anna a acheté."],
+      "en": "Here is the present (that) Anna bought.",
+      "why": "The present is the object of a acheté, so que; it shortens to qu' before the vowel of Anna."
+    },
+    {
+      "id": "pron-relative-06",
+      "type": "flip",
+      "front": "What are the two meanings of the relative pronoun où?",
+      "back": "Where (place): le collège où je vais, la ville où elle habite. When (after a time expression such as le jour, l'année, le moment): le jour où je suis né, l'été où nous sommes allés en Italie. Never use quand after a time noun."
+    },
+    {
+      "id": "pron-relative-07",
+      "type": "gap",
+      "prompt": "Je me souviens du jour ___ nous sommes arrivés en France.",
+      "hint": "(when)",
+      "answers": ["où"],
+      "en": "I remember the day (when) we arrived in France.",
+      "why": "After a time expression such as le jour, 'when' is où, not quand."
+    },
+    {
+      "id": "pron-relative-08",
+      "type": "flip",
+      "front": "Which relative pronoun do you use after a preposition (avec, sur, pour, dans...)?",
+      "back": "For things: lequel (masc. sing.), laquelle (fem. sing.), lesquels (masc. pl.), lesquelles (fem. pl.), agreeing with the noun: la boîte dans laquelle..., les raisons pour lesquelles... For people, qui is usual: la fille avec qui je danse."
+    },
+    {
+      "id": "pron-relative-09",
+      "type": "gap",
+      "prompt": "C'est le stylo avec ___ j'ai écrit ma lettre.",
+      "hint": "(which)",
+      "answers": ["lequel"],
+      "en": "It's the pen I wrote my letter with.",
+      "why": "After a preposition, a thing needs lequel; stylo is masculine singular."
+    },
+    {
+      "id": "pron-relative-10",
+      "type": "gap",
+      "prompt": "La table sur ___ j'ai posé mon portable est cassée.",
+      "hint": "(which)",
+      "answers": ["laquelle"],
+      "en": "The table I put my phone on is broken.",
+      "why": "After the preposition sur, a feminine singular thing (table) needs laquelle."
+    },
+    {
+      "id": "pron-relative-11",
+      "type": "gap",
+      "prompt": "Voici les raisons pour ___ je veux devenir médecin.",
+      "hint": "(which)",
+      "answers": ["lesquelles"],
+      "en": "Here are the reasons why I want to become a doctor.",
+      "why": "After pour, raisons (feminine plural) needs lesquelles."
+    },
+    {
+      "id": "pron-relative-12",
+      "type": "flip",
+      "front": "What are auquel and duquel?",
+      "back": "à + lequel = auquel (auxquels, auxquelles; à laquelle unchanged), after verbs with à such as participer à, penser à: le match auquel j'ai assisté. de + lequel = duquel (desquels, desquelles; de laquelle unchanged), after près de, à côté de, en face de: l'hôtel en face duquel il y a un parc."
+    },
+    {
+      "id": "pron-relative-13",
+      "type": "gap",
+      "prompt": "Le concours ___ j'ai participé était difficile.",
+      "hint": "(in which: participer à)",
+      "answers": ["auquel"],
+      "en": "The competition I took part in was difficult.",
+      "why": "participer is followed by à, and à + lequel (concours is masculine singular) combines to auquel."
+    },
+    {
+      "id": "pron-relative-14",
+      "type": "gap",
+      "prompt": "Le parc près ___ nous habitons est très calme.",
+      "hint": "(which)",
+      "answers": ["duquel"],
+      "en": "The park we live near is very quiet.",
+      "why": "près de + lequel (parc is masculine singular) combines to près duquel."
+    },
+    {
+      "id": "pron-relative-15",
+      "type": "flip",
+      "front": "What does dont mean? (Recognise it; you don't need to use it.)",
+      "back": "whose, of which, about which: it replaces de + noun. le garçon dont le père est pilote (the boy whose father is a pilot); le livre dont j'ai besoin (the book I need: avoir besoin de); la ville dont je parle (the town I'm talking about: parler de)."
+    },
+    {
+      "id": "pron-relative-16",
+      "type": "flip",
+      "front": "Translate: Mon amie Inès, dont la mère est infirmière, veut travailler dans un hôpital.",
+      "back": "My friend Inès, whose mother is a nurse, wants to work in a hospital. (dont + noun = whose + noun.)"
+    },
+    {
+      "id": "pron-relative-17",
+      "type": "flip",
+      "front": "What do ce qui and ce que mean, and how do you choose?",
+      "back": "Both mean 'what' (the thing that). ce qui is the subject, so a verb follows: Ce qui m'énerve, c'est le bruit. ce que is the object, so a subject + verb follows: Je ne sais pas ce que je veux faire."
+    },
+    {
+      "id": "pron-relative-18",
+      "type": "gap",
+      "prompt": "Je ne comprends pas ___ tu dis.",
+      "hint": "(what)",
+      "answers": ["ce que"],
+      "en": "I don't understand what you're saying.",
+      "why": "'what' meaning 'the thing that' is ce que here, because a subject (tu) follows."
+    }
+  ]
+}

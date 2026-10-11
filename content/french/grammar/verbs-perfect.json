@@ -1,0 +1,221 @@
+{
+  "id": "verbs-perfect",
+  "order": 27,
+  "area": "Verbs",
+  "title": "Perfect tense (passé composé)",
+  "spec": "Verbs: tenses: perfect",
+  "receptive": false,
+  "summary": [
+    "The perfect tense describes a completed action in the past: J'ai joué au foot = I played / I have played football.",
+    "Most verbs use the present of avoir + past participle: j'ai mangé, tu as fini, il a vendu, nous avons regardé, ils ont choisi.",
+    "Regular past participles: -er → -é (parler → parlé), -ir → -i (finir → fini), -re → -u (vendre → vendu).",
+    "Learn the irregular participles: fait, pris, mis, vu, lu, écrit, bu, eu, été, pu, voulu, dû, dit, ouvert, reçu, venu: j'ai fait, elle a pris, nous avons bu.",
+    "About 16 verbs of movement or change of state take être (MRS VANDERTRAMP): aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, rentrer, devenir, revenir: je suis allé(e).",
+    "With être, the participle agrees with the subject like an adjective: il est parti, elle est partie, ils sont partis, elles sont parties. A mixed group is masculine plural: Paul et Marie sont arrivés.",
+    "With avoir, the participle does not agree with the subject: elle a mangé, nous avons fini.",
+    "All reflexive verbs take être and agree: je me suis levé(e), elle s'est couchée, ils se sont amusés.",
+    "Negatives go round the auxiliary: je n'ai pas mangé, elle n'est jamais venue. Object pronouns go before the auxiliary: je l'ai vu."
+  ],
+  "cards": [
+    {
+      "id": "verbs-perfect-01",
+      "type": "flip",
+      "front": "How do you form the perfect tense of most verbs?",
+      "back": "Present of avoir + past participle: j'ai joué, tu as joué, il/elle a joué, nous avons joué, vous avez joué, ils/elles ont joué. Regular participles: -er → -é (manger → mangé), -ir → -i (choisir → choisi), -re → -u (attendre → attendu). It means 'I played' or 'I have played'."
+    },
+    {
+      "id": "verbs-perfect-02",
+      "type": "gap",
+      "prompt": "Hier soir, nous ___ un match de foot à la télé.",
+      "base": "regarder",
+      "answers": ["avons regardé"],
+      "en": "Last night we watched a football match on TV.",
+      "why": "hier soir → perfect: nous avons + regardé (-er verbs → -é)."
+    },
+    {
+      "id": "verbs-perfect-03",
+      "type": "gap",
+      "prompt": "Le week-end dernier, Lucas ___ ses devoirs très vite.",
+      "base": "finir",
+      "answers": ["a fini"],
+      "en": "Last weekend Lucas finished his homework very quickly.",
+      "why": "A single completed action → perfect: il a + fini (-ir verbs → -i)."
+    },
+    {
+      "id": "verbs-perfect-04",
+      "type": "gap",
+      "prompt": "Mes parents ___ leur vieille voiture le mois dernier.",
+      "base": "vendre",
+      "answers": ["ont vendu"],
+      "en": "My parents sold their old car last month.",
+      "why": "le mois dernier → perfect: ils ont + vendu (-re verbs → -u)."
+    },
+    {
+      "id": "verbs-perfect-05",
+      "type": "flip",
+      "front": "Give the past participles of faire, prendre, mettre, voir, lire, écrire, boire, avoir and être.",
+      "back": "fait, pris, mis, vu, lu, écrit, bu, eu, été: j'ai fait, j'ai pris, j'ai mis, j'ai vu, j'ai lu, j'ai écrit, j'ai bu, j'ai eu, j'ai été. All of these take avoir."
+    },
+    {
+      "id": "verbs-perfect-06",
+      "type": "flip",
+      "front": "Give the past participles of pouvoir, vouloir, devoir, dire, ouvrir, recevoir and venir.",
+      "back": "pu, voulu, dû, dit, ouvert, reçu, venu. Watch the circumflex on dû and the cedilla on reçu. venir takes être: elle est venue."
+    },
+    {
+      "id": "verbs-perfect-07",
+      "type": "gap",
+      "prompt": "Hier, au zoo, ma sœur ___ cinquante photos.",
+      "base": "prendre",
+      "answers": ["a pris"],
+      "en": "Yesterday at the zoo, my sister took fifty photos.",
+      "why": "prendre has an irregular participle: pris. elle a pris."
+    },
+    {
+      "id": "verbs-perfect-08",
+      "type": "gap",
+      "prompt": "Samedi dernier, nous ___ du vélo à la campagne.",
+      "base": "faire",
+      "answers": ["avons fait"],
+      "en": "Last Saturday we went cycling in the countryside.",
+      "why": "faire has an irregular participle: fait. nous avons fait."
+    },
+    {
+      "id": "verbs-perfect-09",
+      "type": "gap",
+      "prompt": "Hier, Chloé ___ un long message à sa correspondante.",
+      "base": "écrire",
+      "answers": ["a écrit"],
+      "en": "Yesterday Chloé wrote a long message to her penfriend.",
+      "why": "écrire has an irregular participle: écrit. It takes avoir, so there is no agreement with Chloé."
+    },
+    {
+      "id": "verbs-perfect-10",
+      "type": "gap",
+      "prompt": "Est-ce que tu ___ mon message hier soir ?",
+      "base": "recevoir",
+      "answers": ["as reçu"],
+      "en": "Did you get my message last night?",
+      "why": "recevoir has the irregular participle reçu, with a cedilla to keep the soft c sound."
+    },
+    {
+      "id": "verbs-perfect-11",
+      "type": "gap",
+      "prompt": "Hier, Thomas ___ rester au lit toute la journée.",
+      "base": "devoir",
+      "hint": "(perfect tense)",
+      "answers": ["a dû"],
+      "en": "Yesterday Thomas had to stay in bed all day.",
+      "why": "devoir has the irregular participle dû, with a circumflex (du without it means 'some')."
+    },
+    {
+      "id": "verbs-perfect-12",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the perfect tense.",
+      "prompt": "Je lis un roman.",
+      "answers": ["J'ai lu un roman."],
+      "en": "I read a novel.",
+      "why": "lire has the irregular participle lu: j'ai lu."
+    },
+    {
+      "id": "verbs-perfect-13",
+      "type": "flip",
+      "front": "Which verbs take être in the perfect tense?",
+      "back": "All reflexive verbs, plus about 16 verbs of movement or change of state (MRS VANDERTRAMP): monter, rester, sortir, venir, aller, naître, descendre, entrer, rentrer, tomber, retourner, arriver, mourir, partir, plus devenir and revenir. je suis allé(e), elle est née, ils sont partis."
+    },
+    {
+      "id": "verbs-perfect-14",
+      "type": "flip",
+      "front": "How does the past participle agree when the verb takes être?",
+      "back": "Like an adjective, with the subject: add -e for feminine, -s for masculine plural, -es for feminine plural. il est arrivé, elle est arrivée, ils sont arrivés, elles sont arrivées. A mixed group is masculine plural: Max et Léa sont arrivés. With avoir there is no agreement with the subject: elle a mangé."
+    },
+    {
+      "id": "verbs-perfect-15",
+      "type": "gap",
+      "prompt": "L'été dernier, ma tante ___ en Australie.",
+      "base": "aller",
+      "answers": ["est allée"],
+      "en": "Last summer my aunt went to Australia.",
+      "why": "aller takes être, and the participle agrees with ma tante (feminine singular): allée."
+    },
+    {
+      "id": "verbs-perfect-16",
+      "type": "gap",
+      "prompt": "Mon grand-père ___ en Algérie en 1950.",
+      "base": "naître",
+      "answers": ["est né"],
+      "en": "My grandfather was born in Algeria in 1950.",
+      "why": "naître takes être and has the irregular participle né. French says 'is born' in the perfect where English says 'was born'."
+    },
+    {
+      "id": "verbs-perfect-17",
+      "type": "gap",
+      "prompt": "Ce matin, Inès et Clara ___ du bus devant le collège.",
+      "base": "descendre",
+      "answers": ["sont descendues"],
+      "en": "This morning Inès and Clara got off the bus outside school.",
+      "why": "descendre takes être here; two girls = feminine plural, so add -es: descendues."
+    },
+    {
+      "id": "verbs-perfect-18",
+      "type": "gap",
+      "prompt": "Mes frères ___ à la maison très tard samedi soir.",
+      "base": "rentrer",
+      "answers": ["sont rentrés"],
+      "en": "My brothers came home very late on Saturday night.",
+      "why": "rentrer takes être; mes frères is masculine plural, so add -s: rentrés."
+    },
+    {
+      "id": "verbs-perfect-19",
+      "type": "gap",
+      "prompt": "Pendant le match, Hugo ___ et il s'est cassé le bras.",
+      "base": "tomber",
+      "answers": ["est tombé"],
+      "en": "During the match Hugo fell and broke his arm.",
+      "why": "tomber takes être; Hugo is masculine singular, so no extra ending: tombé."
+    },
+    {
+      "id": "verbs-perfect-20",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the perfect tense.",
+      "prompt": "Elle sort avec ses amis.",
+      "answers": ["Elle est sortie avec ses amis."],
+      "en": "She went out with her friends.",
+      "why": "sortir takes être, so the participle agrees with elle: sortie."
+    },
+    {
+      "id": "verbs-perfect-21",
+      "type": "flip",
+      "front": "How do reflexive verbs form the perfect tense?",
+      "back": "With être. The reflexive pronoun goes before the auxiliary and the participle agrees with the subject: je me suis réveillé(e), tu t'es habillé(e), il s'est lavé, elle s'est levée, nous nous sommes amusé(e)s, vous vous êtes couché(e)(s), ils se sont reposés, elles se sont reposées."
+    },
+    {
+      "id": "verbs-perfect-22",
+      "type": "gap",
+      "prompt": "Hier, ma mère ___ à six heures.",
+      "base": "se lever",
+      "answers": ["s'est levée"],
+      "en": "Yesterday my mother got up at six o'clock.",
+      "why": "Reflexive verbs take être; the participle agrees with ma mère (feminine): s'est levée."
+    },
+    {
+      "id": "verbs-perfect-23",
+      "type": "gap",
+      "prompt": "Samedi soir, Emma et sa cousine ___ à la fête.",
+      "base": "s'amuser",
+      "hint": "(perfect tense)",
+      "answers": ["se sont amusées"],
+      "en": "On Saturday evening Emma and her cousin had fun at the party.",
+      "why": "Reflexive verb → être; two girls = feminine plural, so add -es: se sont amusées."
+    },
+    {
+      "id": "verbs-perfect-24",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...jamais.",
+      "prompt": "Mes parents sont allés au Japon.",
+      "answers": ["Mes parents ne sont jamais allés au Japon."],
+      "en": "My parents have never been to Japan.",
+      "why": "The negative goes round the auxiliary: ne sont jamais allés. The participle still agrees with mes parents."
+    }
+  ]
+}

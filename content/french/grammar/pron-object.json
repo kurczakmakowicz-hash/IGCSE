@@ -1,0 +1,219 @@
+{
+  "id": "pron-object",
+  "order": 15,
+  "area": "Pronouns",
+  "title": "Direct and indirect object pronouns, y and en",
+  "spec": "Pronouns: object: direct and indirect; use of y, en",
+  "receptive": false,
+  "summary": [
+    "Direct object pronouns replace a noun that the verb acts on directly: le (him/it), la (her/it), les (them): Je regarde le match → Je le regarde.",
+    "le and la become l' before a vowel or silent h: J'aime cette chanson → Je l'aime.",
+    "me, te, nous, vous can be direct or indirect: Il me voit (he sees me), Il me parle (he speaks to me). me and te become m' and t' before a vowel.",
+    "Indirect object pronouns replace à + a person: lui (to him / to her), leur (to them): Je parle à ma mère → Je lui parle. leur never adds an -s here.",
+    "Common verbs with à + person: parler à, téléphoner à, dire à, demander à, donner à, offrir à, envoyer à, écrire à, répondre à.",
+    "y replaces à + a place or thing, or a place after en, dans, chez etc.: Je vais au parc → J'y vais. Je joue au foot → J'y joue.",
+    "en replaces de + noun (du, de la, de l', des): Je bois du lait → J'en bois. J'ai besoin d'argent → J'en ai besoin.",
+    "With a number or quantity, use en and keep the number or quantity at the end: J'ai deux sœurs → J'en ai deux.",
+    "In simple tenses all these pronouns go straight before the verb: Je les vois. Elle leur téléphone. Nous y allons."
+  ],
+  "cards": [
+    {
+      "id": "pron-object-01",
+      "type": "flip",
+      "front": "What are the direct object pronouns, and where do they go?",
+      "back": "me (me), te (you), le (him / it), la (her / it), nous (us), vous (you), les (them). me, te, le, la become m', t', l' before a vowel or silent h. They go straight before the verb: Je le vois. Il m'aide."
+    },
+    {
+      "id": "pron-object-02",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Je regarde **la télévision** le soir.",
+      "answers": ["Je la regarde le soir."],
+      "en": "I watch it in the evening.",
+      "why": "la télévision is feminine singular, so the direct object pronoun is la, placed before the verb."
+    },
+    {
+      "id": "pron-object-03",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Nous prenons **le bus** pour aller au collège.",
+      "answers": ["Nous le prenons pour aller au collège."],
+      "en": "We take it to go to school.",
+      "why": "le bus is masculine singular, so the direct object pronoun is le, placed before the verb."
+    },
+    {
+      "id": "pron-object-04",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "J'adore **mes grands-parents**.",
+      "answers": ["Je les adore."],
+      "en": "I love them.",
+      "why": "mes grands-parents is plural, so the pronoun is les. je no longer shortens because les starts with a consonant."
+    },
+    {
+      "id": "pron-object-05",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Elle achète **l'ordinateur** en ligne.",
+      "answers": ["Elle l'achète en ligne."],
+      "en": "She buys it online.",
+      "why": "l'ordinateur is masculine singular (le), and le becomes l' before the vowel of achète."
+    },
+    {
+      "id": "pron-object-06",
+      "type": "gap",
+      "prompt": "Tu vois souvent ton cousin ? — Oui, je ___ vois tous les week-ends.",
+      "hint": "(him)",
+      "answers": ["le"],
+      "en": "Do you often see your cousin? — Yes, I see him every weekend.",
+      "why": "voir takes a direct object, so 'him' is le, placed before the verb."
+    },
+    {
+      "id": "pron-object-07",
+      "type": "gap",
+      "prompt": "Ton frère ___ cherche partout !",
+      "hint": "(you, informal)",
+      "answers": ["te"],
+      "en": "Your brother is looking for you everywhere!",
+      "why": "chercher takes a direct object, and 'you' (tu form) as an object pronoun is te, before the verb."
+    },
+    {
+      "id": "pron-object-08",
+      "type": "flip",
+      "front": "What are lui and leur, and when do you use them?",
+      "back": "Indirect object pronouns: they replace à + a person. lui = to him or to her; leur = to them. Je parle à mon père → Je lui parle. Je téléphone à mes amis → Je leur téléphone. leur as a pronoun never takes an -s."
+    },
+    {
+      "id": "pron-object-09",
+      "type": "flip",
+      "front": "Name some common verbs followed by à + person (so they take lui / leur).",
+      "back": "parler à, téléphoner à, dire à, demander à, donner à, offrir à, envoyer à, écrire à, répondre à, prêter à, ressembler à. Watch out: English 'I phone her' and 'I ask him' are je lui téléphone and je lui demande in French."
+    },
+    {
+      "id": "pron-object-10",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Je téléphone **à ma grand-mère** le dimanche.",
+      "answers": ["Je lui téléphone le dimanche."],
+      "en": "I phone her on Sundays.",
+      "why": "téléphoner à + person takes an indirect object pronoun: à ma grand-mère → lui."
+    },
+    {
+      "id": "pron-object-11",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Nous offrons un cadeau **à nos professeurs**.",
+      "answers": ["Nous leur offrons un cadeau."],
+      "en": "We give them a present.",
+      "why": "à + plural people becomes leur, which goes before the verb."
+    },
+    {
+      "id": "pron-object-12",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Le prof explique la règle **aux élèves**.",
+      "answers": ["Le prof leur explique la règle."],
+      "en": "The teacher explains the rule to them.",
+      "why": "aux élèves = à + les élèves, plural people, so the indirect object pronoun is leur."
+    },
+    {
+      "id": "pron-object-13",
+      "type": "gap",
+      "prompt": "Mes copains m'ont envoyé un message, alors je ___ ai répondu tout de suite.",
+      "hint": "(to them)",
+      "answers": ["leur"],
+      "en": "My friends sent me a message, so I replied to them straight away.",
+      "why": "répondre à + people takes leur, which goes before avoir in the perfect."
+    },
+    {
+      "id": "pron-object-14",
+      "type": "flip",
+      "front": "What does y replace, and what does it mean?",
+      "back": "à + a place or thing, or a place after en, dans, chez, sur etc. It means 'there' or 'about it / to it'. Je vais au cinéma → J'y vais. Elle habite en Suisse → Elle y habite. Je pense à l'examen → J'y pense."
+    },
+    {
+      "id": "pron-object-15",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Je vais **à la piscine** le mercredi.",
+      "answers": ["J'y vais le mercredi."],
+      "en": "I go there on Wednesdays.",
+      "why": "à + a place becomes y, before the verb; je shortens to j' before y."
+    },
+    {
+      "id": "pron-object-16",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Mes cousins habitent **au Canada**.",
+      "answers": ["Mes cousins y habitent."],
+      "en": "My cousins live there.",
+      "why": "au Canada is a place introduced by à (au = à + le), so it becomes y."
+    },
+    {
+      "id": "pron-object-17",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Il joue **au tennis** le samedi.",
+      "answers": ["Il y joue le samedi."],
+      "en": "He plays it on Saturdays.",
+      "why": "jouer à + a sport is à + a thing, so au tennis becomes y."
+    },
+    {
+      "id": "pron-object-18",
+      "type": "gap",
+      "prompt": "Le Maroc ? Nous ___ allons cet été.",
+      "hint": "(there)",
+      "answers": ["y"],
+      "en": "Morocco? We're going there this summer.",
+      "why": "'there' referring to a place already mentioned is y, placed before the verb."
+    },
+    {
+      "id": "pron-object-19",
+      "type": "flip",
+      "front": "What does en replace, and what does it mean?",
+      "back": "de + noun, including du, de la, de l', des and verbs with de (avoir besoin de, parler de). It means 'some', 'any', 'of it' or 'of them'. Je bois du jus → J'en bois. Il a besoin d'aide → Il en a besoin. Je n'en veux pas."
+    },
+    {
+      "id": "pron-object-20",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Je mange **des fruits** tous les jours.",
+      "answers": ["J'en mange tous les jours."],
+      "en": "I eat some every day.",
+      "why": "des + noun is replaced by en, before the verb; je shortens to j' before en."
+    },
+    {
+      "id": "pron-object-21",
+      "type": "gap",
+      "prompt": "Des frites ? Mon petit frère ___ mange tous les jours !",
+      "hint": "(some)",
+      "answers": ["en"],
+      "en": "Chips? My little brother eats them every day!",
+      "why": "The understood object is des frites (des + noun), so the pronoun is en, not les."
+    },
+    {
+      "id": "pron-object-22",
+      "type": "flip",
+      "front": "How do you use en with numbers and quantities?",
+      "back": "Replace the noun with en and keep the number or quantity word after the verb: J'ai deux sœurs → J'en ai deux. Il y a beaucoup de touristes → Il y en a beaucoup. J'ai une voiture → J'en ai une. English often leaves 'of them' out, but French cannot leave out en."
+    },
+    {
+      "id": "pron-object-23",
+      "type": "transform",
+      "instruction": "Replace the word in bold with a pronoun, keeping the number.",
+      "prompt": "J'ai trois **frères**.",
+      "answers": ["J'en ai trois."],
+      "en": "I've got three (of them).",
+      "why": "With a number, the noun becomes en before the verb and the number stays at the end: j'en ai trois."
+    },
+    {
+      "id": "pron-object-24",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun, keeping the quantity.",
+      "prompt": "Elle achète un kilo **de tomates**.",
+      "answers": ["Elle en achète un kilo."],
+      "en": "She buys a kilo (of them).",
+      "why": "de + noun after a quantity becomes en before the verb; the quantity un kilo stays after the verb."
+    }
+  ]
+}

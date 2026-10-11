@@ -1,0 +1,164 @@
+{
+  "id": "pron-possessive",
+  "order": 19,
+  "area": "Pronouns",
+  "title": "Possessive pronouns (le mien…)",
+  "spec": "Pronouns: possessive (e.g. le mien)",
+  "receptive": false,
+  "summary": [
+    "Possessive pronouns mean mine, yours, his, hers, ours, theirs. They replace a possessive adjective + noun: mon vélo → le mien.",
+    "They agree with the thing owned, not with the owner: Paul a perdu sa clé → Paul a perdu la sienne.",
+    "mine: le mien, la mienne, les miens, les miennes. yours (tu): le tien, la tienne, les tiens, les tiennes. his / hers: le sien, la sienne, les siens, les siennes.",
+    "ours: le nôtre, la nôtre, les nôtres. yours (vous): le vôtre, la vôtre, les vôtres. theirs: le leur, la leur, les leurs.",
+    "le nôtre and le vôtre have a circumflex, unlike the adjectives notre and votre: notre maison → la nôtre.",
+    "le and les combine with à and de: à + le mien = au mien, à + les miens = aux miens, de + le mien = du mien.",
+    "After être you can also show ownership with à + emphatic pronoun: Ce livre est à moi (this book is mine)."
+  ],
+  "cards": [
+    {
+      "id": "pron-possessive-01",
+      "type": "flip",
+      "front": "What is a possessive pronoun? Give an example.",
+      "back": "A word for mine, yours, his, hers, ours or theirs that replaces a possessive adjective + noun. It always includes le, la or les: Ce n'est pas ton stylo, c'est le mien (it's mine)."
+    },
+    {
+      "id": "pron-possessive-02",
+      "type": "flip",
+      "front": "Give all four forms of mine, yours (tu) and his / hers.",
+      "back": "mine: le mien, la mienne, les miens, les miennes. yours (tu): le tien, la tienne, les tiens, les tiennes. his / hers: le sien, la sienne, les siens, les siennes. (Order: masc. sing., fem. sing., masc. pl., fem. pl.)"
+    },
+    {
+      "id": "pron-possessive-03",
+      "type": "flip",
+      "front": "Give the forms of ours, yours (vous) and theirs.",
+      "back": "ours: le nôtre, la nôtre, les nôtres. yours (vous): le vôtre, la vôtre, les vôtres. theirs: le leur, la leur, les leurs. Note the circumflex on nôtre / vôtre, which the adjectives notre / votre do not have."
+    },
+    {
+      "id": "pron-possessive-04",
+      "type": "gap",
+      "prompt": "Ta maison est grande, mais ___ est petite.",
+      "base": "le mien",
+      "answers": ["la mienne"],
+      "en": "Your house is big, but mine is small.",
+      "why": "It replaces ma maison (feminine singular), so le mien becomes la mienne."
+    },
+    {
+      "id": "pron-possessive-05",
+      "type": "gap",
+      "prompt": "Tes parents sont stricts ? ___ sont plutôt sympas.",
+      "base": "le mien",
+      "answers": ["Les miens"],
+      "en": "Are your parents strict? Mine are quite nice.",
+      "why": "It replaces mes parents (masculine plural), so les miens."
+    },
+    {
+      "id": "pron-possessive-06",
+      "type": "gap",
+      "prompt": "J'ai oublié ma calculatrice. Je peux emprunter ___ ?",
+      "base": "le tien",
+      "answers": ["la tienne"],
+      "en": "I've forgotten my calculator. Can I borrow yours?",
+      "why": "It replaces ta calculatrice (feminine singular), so le tien becomes la tienne."
+    },
+    {
+      "id": "pron-possessive-07",
+      "type": "flip",
+      "front": "Does le sien mean 'his' or 'hers'?",
+      "back": "Either. Like son / sa / ses, it agrees with the thing owned, not the owner: Luc a pris sa veste → Luc a pris la sienne (his). Marie a pris son manteau → Marie a pris le sien (hers)."
+    },
+    {
+      "id": "pron-possessive-08",
+      "type": "gap",
+      "prompt": "Marc a ses baskets, mais sa sœur a oublié ___.",
+      "base": "le sien",
+      "answers": ["les siennes"],
+      "en": "Marc has his trainers, but his sister has forgotten hers.",
+      "why": "It replaces ses baskets, which is feminine plural, so les siennes; the owner being a girl does not matter."
+    },
+    {
+      "id": "pron-possessive-09",
+      "type": "gap",
+      "prompt": "Notre école est moderne. Et ___ ?",
+      "base": "le vôtre",
+      "answers": ["la vôtre"],
+      "en": "Our school is modern. What about yours?",
+      "why": "It replaces votre école (feminine singular), so la vôtre, with a circumflex."
+    },
+    {
+      "id": "pron-possessive-10",
+      "type": "gap",
+      "prompt": "Vos enfants sont sages, mais ___ sont bruyants !",
+      "base": "le nôtre",
+      "answers": ["les nôtres"],
+      "en": "Your children are well behaved, but ours are noisy!",
+      "why": "It replaces nos enfants (plural), so les nôtres, with a circumflex."
+    },
+    {
+      "id": "pron-possessive-11",
+      "type": "gap",
+      "prompt": "Mes cousins ont une maison à la campagne ; ___ est plus grande que la nôtre.",
+      "base": "le leur",
+      "answers": ["la leur"],
+      "en": "My cousins have a house in the country; theirs is bigger than ours.",
+      "why": "It replaces leur maison (feminine singular, one house), so la leur."
+    },
+    {
+      "id": "pron-possessive-12",
+      "type": "gap",
+      "prompt": "Ces places sont à nous ; ___ sont au fond de la salle.",
+      "base": "le leur",
+      "answers": ["les leurs"],
+      "en": "These seats are ours; theirs are at the back of the hall.",
+      "why": "It replaces leurs places (plural), so les leurs."
+    },
+    {
+      "id": "pron-possessive-13",
+      "type": "flip",
+      "front": "What happens to le mien after à or de?",
+      "back": "le and les combine as usual: à + le mien = au mien, à + les miens = aux miens, de + le mien = du mien, de + les miens = des miens. la stays: à la mienne. Tu parles souvent à tes parents ? Moi, je parle tous les jours aux miens."
+    },
+    {
+      "id": "pron-possessive-14",
+      "type": "gap",
+      "prompt": "Tu ressembles à ton père ? Moi, je ne ressemble pas du tout ___.",
+      "base": "le mien",
+      "hint": "(à + le mien)",
+      "answers": ["au mien"],
+      "en": "Do you look like your dad? I don't look like mine at all.",
+      "why": "ressembler is followed by à, and à + le mien combines to au mien."
+    },
+    {
+      "id": "pron-possessive-15",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a possessive pronoun.",
+      "prompt": "Ce n'est pas mon sac, c'est **ton sac**.",
+      "answers": ["Ce n'est pas mon sac, c'est le tien."],
+      "en": "It's not my bag, it's yours.",
+      "why": "ton sac is masculine singular, so it becomes le tien."
+    },
+    {
+      "id": "pron-possessive-16",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a possessive pronoun.",
+      "prompt": "Mes notes sont meilleures que **tes notes**.",
+      "answers": ["Mes notes sont meilleures que les tiennes."],
+      "en": "My marks are better than yours.",
+      "why": "tes notes is feminine plural, so it becomes les tiennes."
+    },
+    {
+      "id": "pron-possessive-17",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a possessive pronoun.",
+      "prompt": "Je préfère ma ville à **sa ville**.",
+      "answers": ["Je préfère ma ville à la sienne."],
+      "en": "I prefer my town to his (or hers).",
+      "why": "sa ville is feminine singular, so it becomes la sienne; à la does not combine."
+    },
+    {
+      "id": "pron-possessive-18",
+      "type": "flip",
+      "front": "What is another way to say 'it's mine' after être?",
+      "back": "être à + emphatic pronoun: Ce portable est à moi (this mobile is mine). Also à toi, à lui, à elle, à nous, à vous, à eux, à elles. C'est à qui ? = Whose is it?"
+    }
+  ]
+}

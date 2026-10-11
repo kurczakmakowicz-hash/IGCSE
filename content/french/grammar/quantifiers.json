@@ -1,0 +1,167 @@
+{
+  "id": "quantifiers",
+  "order": 12,
+  "area": "Quantifiers/intensifiers",
+  "title": "Quantifiers and intensifiers",
+  "spec": "Quantifiers/intensifiers: e.g. très, assez, beaucoup, peu, trop",
+  "receptive": false,
+  "summary": [
+    "Intensifiers go in front of an adjective or adverb: très (very), assez (quite), trop (too), vraiment (really), si (so), un peu (a bit): Le film était très long.",
+    "beaucoup (a lot) goes with a verb, never with an adjective: J'aime beaucoup le sport. Never say très beaucoup.",
+    "Before a noun, beaucoup de, trop de, assez de, peu de and un peu de always take plain de (d' before a vowel), never du, de la or des: beaucoup de devoirs, peu d'argent.",
+    "peu de = not much / few (negative idea); un peu de = a little (positive idea): J'ai peu de temps. J'ai un peu de temps.",
+    "assez means quite (assez cher) or enough (assez de temps); trop means too (trop cher) or too much / too many (trop de bruit).",
+    "si and tellement mean so in front of an adjective or adverb: Elle est si drôle ! Il parle tellement vite !",
+    "In the perfect tense beaucoup, trop and assez go between avoir and the past participle: J'ai trop mangé.",
+    "bien des + plural noun means many and is the exception that keeps des: bien des touristes."
+  ],
+  "cards": [
+    {
+      "id": "quantifiers-01",
+      "type": "flip",
+      "front": "très or beaucoup: when do you use each?",
+      "back": "très goes in front of an adjective or adverb: très grand, très vite. beaucoup goes with a verb (J'aime beaucoup lire) or with de + noun (beaucoup de livres). Never say très beaucoup."
+    },
+    {
+      "id": "quantifiers-02",
+      "type": "gap",
+      "prompt": "Ce pull est ___ cher ; je ne peux pas l'acheter.",
+      "hint": "(too)",
+      "answers": ["trop"],
+      "en": "This jumper is too expensive; I can't buy it.",
+      "why": "trop (too) goes in front of the adjective cher."
+    },
+    {
+      "id": "quantifiers-03",
+      "type": "gap",
+      "prompt": "Ma chambre est ___ grande, mais je la partage avec ma sœur.",
+      "hint": "(quite)",
+      "answers": ["assez", "plutôt"],
+      "en": "My bedroom is quite big, but I share it with my sister.",
+      "why": "assez (quite) goes in front of the adjective; plutôt (rather) also works."
+    },
+    {
+      "id": "quantifiers-04",
+      "type": "gap",
+      "prompt": "Il fait ___ froid aujourd'hui !",
+      "hint": "(really)",
+      "answers": ["vraiment"],
+      "en": "It's really cold today!",
+      "why": "vraiment (really) intensifies the adjective froid and goes in front of it."
+    },
+    {
+      "id": "quantifiers-05",
+      "type": "gap",
+      "prompt": "J'aime ___ jouer au foot avec mes copains.",
+      "hint": "(a lot)",
+      "answers": ["beaucoup"],
+      "en": "I like playing football with my mates a lot.",
+      "why": "beaucoup modifies the verb aimer and goes straight after it."
+    },
+    {
+      "id": "quantifiers-06",
+      "type": "flip",
+      "front": "What comes after beaucoup, trop, assez and peu when they are followed by a noun?",
+      "back": "Always plain de (d' before a vowel or silent h), never du, de la or des, whatever the gender or number: beaucoup de monde, trop de sucre, assez de chaises, peu d'argent."
+    },
+    {
+      "id": "quantifiers-07",
+      "type": "gap",
+      "prompt": "Il y a ___ voitures dans le centre-ville.",
+      "hint": "(too many)",
+      "answers": ["trop de"],
+      "en": "There are too many cars in the town centre.",
+      "why": "trop de + noun = too much / too many; de does not change to des before a plural noun."
+    },
+    {
+      "id": "quantifiers-08",
+      "type": "gap",
+      "prompt": "Je mange ___ légumes parce que c'est bon pour la santé.",
+      "hint": "(a lot of)",
+      "answers": ["beaucoup de"],
+      "en": "I eat a lot of vegetables because it's good for my health.",
+      "why": "beaucoup de + noun, with plain de even though légumes is plural."
+    },
+    {
+      "id": "quantifiers-09",
+      "type": "gap",
+      "prompt": "Je n'ai pas ___ temps pour faire du sport.",
+      "hint": "(enough)",
+      "answers": ["assez de"],
+      "en": "I don't have enough time to do sport.",
+      "why": "assez de + noun = enough; the quantity word is followed by plain de."
+    },
+    {
+      "id": "quantifiers-10",
+      "type": "transform",
+      "instruction": "Replace the word in bold with beaucoup de.",
+      "prompt": "Il y a **des** touristes en été.",
+      "answers": ["Il y a beaucoup de touristes en été."],
+      "en": "There are a lot of tourists in summer.",
+      "why": "After a quantity word, des becomes de: beaucoup de touristes."
+    },
+    {
+      "id": "quantifiers-11",
+      "type": "flip",
+      "front": "What is the difference between peu de and un peu de?",
+      "back": "peu de = not much / few, a negative idea: J'ai peu d'amis (I haven't got many friends). un peu de = a little, a positive idea: Je voudrais un peu de sucre (I'd like a bit of sugar)."
+    },
+    {
+      "id": "quantifiers-12",
+      "type": "gap",
+      "prompt": "Ma famille mange ___ viande ; nous sommes presque végétariens.",
+      "hint": "(not much)",
+      "answers": ["peu de"],
+      "en": "My family doesn't eat much meat; we are almost vegetarian.",
+      "why": "peu de + noun = not much / little, followed by plain de, not de la."
+    },
+    {
+      "id": "quantifiers-13",
+      "type": "gap",
+      "prompt": "Je voudrais ___ lait dans mon thé, s'il vous plaît.",
+      "hint": "(a little)",
+      "answers": ["un peu de"],
+      "en": "I'd like a little milk in my tea, please.",
+      "why": "un peu de + noun = a little (positive), followed by plain de, not du."
+    },
+    {
+      "id": "quantifiers-14",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using peu de instead of beaucoup de.",
+      "prompt": "Il y a beaucoup d'espaces verts dans ma ville.",
+      "answers": ["Il y a peu d'espaces verts dans ma ville."],
+      "en": "There are few green spaces in my town.",
+      "why": "peu de works like beaucoup de; de becomes d' before a vowel: peu d'espaces."
+    },
+    {
+      "id": "quantifiers-15",
+      "type": "flip",
+      "front": "How do you say 'so' in front of an adjective, as in 'she is so funny'?",
+      "back": "si or tellement before the adjective or adverb: Elle est si drôle ! Il parle tellement vite ! Often followed by que: Il était si fatigué qu'il s'est endormi."
+    },
+    {
+      "id": "quantifiers-16",
+      "type": "gap",
+      "prompt": "Le voyage était ___ long que je me suis endormi dans le train.",
+      "hint": "(so)",
+      "answers": ["si", "tellement"],
+      "en": "The journey was so long that I fell asleep on the train.",
+      "why": "si or tellement (so) goes in front of the adjective long; ... que = ... that."
+    },
+    {
+      "id": "quantifiers-17",
+      "type": "flip",
+      "front": "Where do beaucoup, trop and assez go in the perfect tense?",
+      "back": "Between avoir/être and the past participle: J'ai beaucoup aimé le film. Tu as trop mangé. Nous avons assez travaillé."
+    },
+    {
+      "id": "quantifiers-18",
+      "type": "gap",
+      "prompt": "Hier soir, j'ai ___ mangé et maintenant j'ai mal au ventre.",
+      "hint": "(too much)",
+      "answers": ["trop"],
+      "en": "Last night I ate too much and now I've got stomach ache.",
+      "why": "In the perfect tense trop goes between the auxiliary avoir and the past participle mangé."
+    }
+  ]
+}

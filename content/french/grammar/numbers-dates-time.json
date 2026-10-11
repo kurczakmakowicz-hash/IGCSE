@@ -1,0 +1,168 @@
+{
+  "id": "numbers-dates-time",
+  "order": 39,
+  "area": "Numbers, quantity, dates and time",
+  "title": "Numbers, dates, time and quantities",
+  "spec": "Numbers, quantity, dates and time, including use of depuis with present and imperfect tenses",
+  "receptive": false,
+  "summary": [
+    "70-79 are built on soixante: soixante-dix (70), soixante et onze (71), soixante-douze (72) … soixante-dix-neuf (79).",
+    "80-99 are built on quatre-vingts: quatre-vingts (80), quatre-vingt-un (81), quatre-vingt-dix (90), quatre-vingt-dix-neuf (99).",
+    "et appears in 21, 31, 41, 51, 61 and 71 (vingt et un, soixante et onze) but not in 81 or 91 (quatre-vingt-un, quatre-vingt-onze).",
+    "vingt and cent take -s only when multiplied and nothing follows: quatre-vingts, deux cents, but quatre-vingt-trois, deux cent dix. mille never takes -s: deux mille.",
+    "Ordinals add -ième: deuxième, troisième, cinquième, neuvième; first is premier / première.",
+    "Dates use normal numbers except the first: le premier mai, le quatorze juillet; years: en deux mille vingt-cinq. Months and days have no capital.",
+    "Time: Il est huit heures et quart / et demie / moins le quart; midi et demi; 24-hour clock: dix-sept heures quarante (17h40).",
+    "Quantities take de: un kilo de pommes, une bouteille d'eau, un paquet de chips, la moitié du gâteau.",
+    "depuis + present for something still going on: J'apprends le français depuis cinq ans (I have been learning French for five years)."
+  ],
+  "cards": [
+    {
+      "id": "numbers-dates-time-01",
+      "type": "flip",
+      "front": "How are the numbers 70-99 built in French?",
+      "back": "70-79 = soixante + 10-19: soixante-dix, soixante et onze, soixante-quinze. 80-99 = quatre-vingt(s) + 0-19: quatre-vingts, quatre-vingt-un, quatre-vingt-dix, quatre-vingt-dix-neuf. et only in 21-71, never in 81 or 91."
+    },
+    {
+      "id": "numbers-dates-time-02",
+      "type": "gap",
+      "prompt": "Ma grand-mère a ___ ans.",
+      "hint": "(75, in words)",
+      "answers": ["soixante-quinze"],
+      "en": "My grandmother is 75.",
+      "why": "75 = 60 + 15: soixante-quinze, with a hyphen."
+    },
+    {
+      "id": "numbers-dates-time-03",
+      "type": "gap",
+      "prompt": "Mon arrière-grand-père a ___ ans.",
+      "hint": "(80, in words)",
+      "answers": ["quatre-vingts"],
+      "en": "My great-grandfather is 80.",
+      "why": "80 = four twenties; vingt is multiplied and nothing follows, so it takes -s: quatre-vingts."
+    },
+    {
+      "id": "numbers-dates-time-04",
+      "type": "gap",
+      "prompt": "Le billet de train coûte ___ euros.",
+      "hint": "(91, in words)",
+      "answers": ["quatre-vingt-onze"],
+      "en": "The train ticket costs 91 euros.",
+      "why": "91 = 80 + 11: quatre-vingt-onze. No et and no -s on vingt, because a number follows."
+    },
+    {
+      "id": "numbers-dates-time-05",
+      "type": "gap",
+      "prompt": "Il y a ___ jours en mai.",
+      "hint": "(31, in words)",
+      "answers": ["trente et un", "trente-et-un"],
+      "en": "There are 31 days in May.",
+      "why": "21, 31, 41, 51, 61 and 71 use et: trente et un (the reformed spelling trente-et-un is also accepted)."
+    },
+    {
+      "id": "numbers-dates-time-06",
+      "type": "flip",
+      "front": "When do vingt and cent take an -s, and what about mille?",
+      "back": "Only when they are multiplied and nothing follows: quatre-vingts, deux cents, trois cents. With a number after them, no -s: quatre-vingt-deux, deux cent vingt. mille never changes: deux mille, trois mille euros."
+    },
+    {
+      "id": "numbers-dates-time-07",
+      "type": "gap",
+      "prompt": "Il y a ___ élèves dans mon collège.",
+      "hint": "(200, in words)",
+      "answers": ["deux cents", "deux-cents"],
+      "en": "There are 200 pupils in my school.",
+      "why": "cent is multiplied by deux and nothing follows, so it takes -s: deux cents."
+    },
+    {
+      "id": "numbers-dates-time-08",
+      "type": "gap",
+      "prompt": "Mon petit frère est né en ___.",
+      "hint": "(2010, in words)",
+      "answers": ["deux mille dix", "deux-mille-dix"],
+      "en": "My little brother was born in 2010.",
+      "why": "Years are said as full numbers; mille never takes -s: deux mille dix."
+    },
+    {
+      "id": "numbers-dates-time-09",
+      "type": "flip",
+      "front": "How do you form ordinal numbers (first, second...) and write dates?",
+      "back": "Add -ième to the number: deuxième, troisième, quatrième (drop the final -e), cinquième (add u), neuvième (f → v). First = premier / première. Dates use normal numbers except the 1st: le premier avril, le deux avril, le vingt et un avril."
+    },
+    {
+      "id": "numbers-dates-time-10",
+      "type": "gap",
+      "prompt": "C'est la ___ fois que je viens en France.",
+      "base": "premier",
+      "answers": ["première"],
+      "en": "It's the first time I've come to France.",
+      "why": "premier is an adjective and agrees with the feminine noun fois: première."
+    },
+    {
+      "id": "numbers-dates-time-11",
+      "type": "gap",
+      "prompt": "Mon anniversaire, c'est le ___ mai.",
+      "hint": "(1st, in words)",
+      "answers": ["premier"],
+      "en": "My birthday is on 1st May.",
+      "why": "The first of the month is the only date that uses the ordinal: le premier mai, but le deux mai."
+    },
+    {
+      "id": "numbers-dates-time-12",
+      "type": "flip",
+      "front": "How do you say quarter past, half past, quarter to, and half past twelve?",
+      "back": "et quart, et demie, moins le quart: Il est trois heures et quart / et demie; Il est quatre heures moins le quart. After midi and minuit, demi has no -e: midi et demi, minuit et demi."
+    },
+    {
+      "id": "numbers-dates-time-13",
+      "type": "gap",
+      "prompt": "Le cours de maths commence à neuf heures et ___.",
+      "hint": "(half past)",
+      "answers": ["demie"],
+      "en": "The maths lesson starts at half past nine.",
+      "why": "After heures, demi agrees with the feminine noun heure: et demie."
+    },
+    {
+      "id": "numbers-dates-time-14",
+      "type": "gap",
+      "prompt": "Il est ___ heures moins le quart.",
+      "hint": "(it is 7:45; write the hour in words)",
+      "answers": ["huit"],
+      "en": "It's quarter to eight.",
+      "why": "moins le quart counts back from the next hour: 7:45 = huit heures moins le quart."
+    },
+    {
+      "id": "numbers-dates-time-15",
+      "type": "transform",
+      "instruction": "Write the time in words, using the 24-hour clock.",
+      "prompt": "Le film commence à 20h30.",
+      "answers": ["Le film commence à vingt heures trente."],
+      "en": "The film starts at 20:30.",
+      "why": "With the 24-hour clock, say the minutes as a number (trente), not et demie."
+    },
+    {
+      "id": "numbers-dates-time-16",
+      "type": "flip",
+      "front": "How do you say a kilo of, a bottle of, a packet of, a dozen, half of?",
+      "back": "un kilo de, une bouteille de, un paquet de, une douzaine de, la moitié de: un kilo de tomates, une bouteille d'eau, un paquet de biscuits, une douzaine d'œufs, la moitié du gâteau."
+    },
+    {
+      "id": "numbers-dates-time-17",
+      "type": "gap",
+      "prompt": "Je voudrais un kilo ___ pommes, s'il vous plaît.",
+      "hint": "(of)",
+      "answers": ["de"],
+      "en": "I'd like a kilo of apples, please.",
+      "why": "After a quantity, use plain de, never des: un kilo de pommes."
+    },
+    {
+      "id": "numbers-dates-time-18",
+      "type": "gap",
+      "prompt": "J'habite dans cette ville ___ trois ans.",
+      "hint": "(for; I still live here)",
+      "answers": ["depuis"],
+      "en": "I have lived in this town for three years.",
+      "why": "For something that started in the past and is still going on, use depuis + present tense."
+    }
+  ]
+}

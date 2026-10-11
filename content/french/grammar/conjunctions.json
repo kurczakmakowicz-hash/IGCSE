@@ -1,0 +1,164 @@
+{
+  "id": "conjunctions",
+  "order": 38,
+  "area": "Conjunctions",
+  "title": "Coordinating and subordinating conjunctions",
+  "spec": "Conjunctions: co-ordinating (e.g. car, donc, ensuite) and subordinating (e.g. lorsque, puisque, comme)",
+  "receptive": false,
+  "summary": [
+    "Coordinating conjunctions join two equal ideas: et (and), mais (but), ou (or), car (because), donc (so): Il pleut, donc je reste à la maison.",
+    "Sequencing words order events: d'abord (first), puis / ensuite (then), alors (so, then), enfin (finally).",
+    "car and parce que both mean because; car is a little more formal and cannot start a sentence; parce que becomes parce qu' before a vowel.",
+    "Subordinating conjunctions introduce a clause: quand / lorsque (when), puisque / comme (since, as), si (if), pendant que (while), parce que (because).",
+    "comme meaning as / since goes at the start of the sentence: Comme il pleuvait, nous sommes restés à la maison.",
+    "si becomes s' only before il and ils: s'il fait beau, but si elle vient.",
+    "After quand and lorsque, use the future when the action is in the future: Quand je serai grand, je serai médecin.",
+    "bien que (although) is followed by the subjunctive; you only need to recognise it: bien qu'il soit fatigué."
+  ],
+  "cards": [
+    {
+      "id": "conjunctions-01",
+      "type": "flip",
+      "front": "Give the French for: and, but, or, because, so / therefore, then.",
+      "back": "et, mais, ou, car (or parce que), donc (or alors), puis / ensuite. J'aime le foot mais je préfère le tennis."
+    },
+    {
+      "id": "conjunctions-02",
+      "type": "gap",
+      "prompt": "J'aime le français ___ je n'aime pas les maths.",
+      "hint": "(but)",
+      "answers": ["mais"],
+      "en": "I like French but I don't like maths.",
+      "why": "mais (but) joins two contrasting ideas."
+    },
+    {
+      "id": "conjunctions-03",
+      "type": "gap",
+      "prompt": "Tu préfères le thé ___ le café ?",
+      "hint": "(or)",
+      "answers": ["ou"],
+      "en": "Do you prefer tea or coffee?",
+      "why": "ou (or) has no accent; où with an accent means where."
+    },
+    {
+      "id": "conjunctions-04",
+      "type": "gap",
+      "prompt": "Il pleuvait, ___ nous sommes restés à la maison.",
+      "hint": "(so)",
+      "answers": ["donc", "alors"],
+      "en": "It was raining, so we stayed at home.",
+      "why": "donc or alors (so) introduces a result."
+    },
+    {
+      "id": "conjunctions-05",
+      "type": "gap",
+      "prompt": "D'abord, je prends une douche, ___ je m'habille.",
+      "hint": "(then)",
+      "answers": ["puis", "ensuite", "après"],
+      "en": "First I have a shower, then I get dressed.",
+      "why": "puis or ensuite (then) puts actions in order after d'abord (first)."
+    },
+    {
+      "id": "conjunctions-06",
+      "type": "flip",
+      "front": "car or parce que: what is the difference?",
+      "back": "Both mean because. car is slightly more formal and cannot start a sentence. parce que can, and becomes parce qu' before a vowel: parce qu'il fait froid."
+    },
+    {
+      "id": "conjunctions-07",
+      "type": "gap",
+      "prompt": "J'aimerais travailler à l'étranger ___ j'adore voyager.",
+      "hint": "(because)",
+      "answers": ["car", "parce que"],
+      "en": "I would like to work abroad because I love travelling.",
+      "why": "car or parce que (because) gives a reason; both are correct in the middle of a sentence."
+    },
+    {
+      "id": "conjunctions-08",
+      "type": "transform",
+      "instruction": "Join the two sentences with parce que.",
+      "prompt": "Elle est fatiguée. Elle a mal dormi.",
+      "answers": ["Elle est fatiguée parce qu'elle a mal dormi."],
+      "en": "She is tired because she slept badly.",
+      "why": "parce que gives the reason; que becomes qu' before a vowel: parce qu'elle."
+    },
+    {
+      "id": "conjunctions-09",
+      "type": "flip",
+      "front": "Give the French for: when (two ways), since / as (two ways), if, while.",
+      "back": "quand / lorsque, puisque / comme, si, pendant que. Lorsque je suis arrivé, il pleuvait. Puisque tu es là, aide-moi !"
+    },
+    {
+      "id": "conjunctions-10",
+      "type": "gap",
+      "prompt": "___ j'étais petit, j'habitais à la campagne.",
+      "hint": "(when)",
+      "answers": ["Quand", "Lorsque"],
+      "en": "When I was little, I lived in the countryside.",
+      "why": "quand or lorsque (when) introduces a time clause; lorsque is slightly more formal."
+    },
+    {
+      "id": "conjunctions-11",
+      "type": "gap",
+      "prompt": "___ tu es malade, tu devrais rester au lit.",
+      "hint": "(since)",
+      "answers": ["Puisque", "Comme"],
+      "en": "Since you're ill, you should stay in bed.",
+      "why": "puisque or comme (since, as) gives a reason that is already known; comme in this sense starts the sentence."
+    },
+    {
+      "id": "conjunctions-12",
+      "type": "gap",
+      "prompt": "Mon père fait la cuisine ___ ma mère lit le journal.",
+      "hint": "(while)",
+      "answers": ["pendant que", "tandis que", "alors que"],
+      "en": "My father does the cooking while my mother reads the newspaper.",
+      "why": "pendant que (while) links two actions happening at the same time."
+    },
+    {
+      "id": "conjunctions-13",
+      "type": "flip",
+      "front": "When does si become s'?",
+      "back": "Only before il and ils: s'il pleut, s'ils viennent. It stays si before elle, on and other vowels: si elle veut, si on va au parc."
+    },
+    {
+      "id": "conjunctions-14",
+      "type": "transform",
+      "instruction": "Join the two sentences into one, starting with the French for 'if'. Keep the verbs as they are.",
+      "prompt": "Il pleut. Je reste à la maison.",
+      "answers": ["S'il pleut, je reste à la maison."],
+      "en": "If it rains, I stay at home.",
+      "why": "si introduces the condition and becomes s' before il: s'il pleut."
+    },
+    {
+      "id": "conjunctions-15",
+      "type": "flip",
+      "front": "Which tense follows quand or lorsque when you talk about the future?",
+      "back": "The future, unlike English: Quand j'aurai dix-huit ans, j'apprendrai à conduire (When I am eighteen...). Not quand j'ai dix-huit ans for a future event."
+    },
+    {
+      "id": "conjunctions-16",
+      "type": "gap",
+      "prompt": "Quand je ___ grand, je voudrais être pilote.",
+      "base": "être",
+      "answers": ["serai"],
+      "en": "When I'm older, I'd like to be a pilot.",
+      "why": "The action is in the future, so quand is followed by the future tense: je serai."
+    },
+    {
+      "id": "conjunctions-17",
+      "type": "transform",
+      "instruction": "Join the two sentences into one, starting with Comme (as / since).",
+      "prompt": "Il pleuvait. Nous sommes restés à la maison.",
+      "answers": ["Comme il pleuvait, nous sommes restés à la maison."],
+      "en": "As it was raining, we stayed at home.",
+      "why": "comme meaning as / since introduces the reason and goes at the start of the sentence."
+    },
+    {
+      "id": "conjunctions-18",
+      "type": "flip",
+      "front": "What does bien que mean, and what is special about the verb after it?",
+      "back": "bien que = although. It is followed by the subjunctive, which you only need to recognise: Bien qu'il soit malade, il va au collège (Although he is ill, he goes to school)."
+    }
+  ]
+}

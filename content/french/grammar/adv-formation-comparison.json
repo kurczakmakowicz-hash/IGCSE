@@ -1,0 +1,170 @@
+{
+  "id": "adv-formation-comparison",
+  "order": 10,
+  "area": "Adverbs",
+  "title": "Forming adverbs; comparative and superlative (mieux, le mieux)",
+  "spec": "Adverbs: comparative and superlative: regular, including mieux, le mieux",
+  "receptive": false,
+  "summary": [
+    "Most adverbs are the feminine adjective + -ment: lent → lente → lentement; heureux → heureuse → heureusement.",
+    "If the masculine adjective ends in a vowel, add -ment to the masculine: vrai → vraiment, poli → poliment, facile → facilement.",
+    "Adjectives in -ant change to -amment and those in -ent to -emment (both said 'amment'): courant → couramment, évident → évidemment.",
+    "Learn the irregular ones: bon → bien, mauvais → mal, rapide → vite (or rapidement), gentil → gentiment.",
+    "Comparative: plus / moins / aussi + adverb + que: Il court plus vite que moi.",
+    "Superlative: le plus / le moins + adverb, always with le: C'est Léa qui nage le plus vite.",
+    "bien → mieux (better) → le mieux (best): Je chante mieux que mon frère.",
+    "meilleur is the adjective (with a noun, agrees); mieux is the adverb (with a verb, never changes): une meilleure note, elle joue mieux."
+  ],
+  "cards": [
+    {
+      "id": "adv-formation-comparison-01",
+      "type": "flip",
+      "front": "How are most French adverbs formed from adjectives?",
+      "back": "Take the feminine form of the adjective and add -ment: lent → lente → lentement (slowly); doux → douce → doucement (gently); heureux → heureuse → heureusement (luckily)."
+    },
+    {
+      "id": "adv-formation-comparison-02",
+      "type": "gap",
+      "prompt": "Mon grand-père marche très ___.",
+      "base": "lent",
+      "answers": ["lentement"],
+      "en": "My grandfather walks very slowly.",
+      "why": "Feminine adjective lente + -ment gives the adverb lentement."
+    },
+    {
+      "id": "adv-formation-comparison-03",
+      "type": "gap",
+      "prompt": "___, il ne pleut pas aujourd'hui !",
+      "base": "heureux",
+      "answers": ["Heureusement"],
+      "en": "Luckily, it isn't raining today!",
+      "why": "The feminine of heureux is heureuse; add -ment: heureusement."
+    },
+    {
+      "id": "adv-formation-comparison-04",
+      "type": "flip",
+      "front": "When do you add -ment to the masculine adjective instead of the feminine?",
+      "back": "When the masculine adjective already ends in a vowel: vrai → vraiment, poli → poliment, absolu → absolument, facile → facilement, rapide → rapidement."
+    },
+    {
+      "id": "adv-formation-comparison-05",
+      "type": "gap",
+      "prompt": "Après le match, je suis ___ fatigué.",
+      "base": "vrai",
+      "answers": ["vraiment"],
+      "en": "After the match, I'm really tired.",
+      "why": "vrai ends in a vowel, so -ment is added straight to the masculine: vraiment."
+    },
+    {
+      "id": "adv-formation-comparison-06",
+      "type": "flip",
+      "front": "How do adjectives ending in -ant and -ent form their adverbs?",
+      "back": "-ant → -amment and -ent → -emment, both pronounced 'amment': courant → couramment, évident → évidemment, récent → récemment, patient → patiemment. Watch out: lent → lentement."
+    },
+    {
+      "id": "adv-formation-comparison-07",
+      "type": "gap",
+      "prompt": "Ma correspondante parle anglais ___.",
+      "base": "courant",
+      "answers": ["couramment"],
+      "en": "My penfriend speaks English fluently.",
+      "why": "Adjectives ending in -ant form their adverb with -amment: courant → couramment."
+    },
+    {
+      "id": "adv-formation-comparison-08",
+      "type": "transform",
+      "instruction": "Replace the words in bold with one adverb.",
+      "prompt": "Le prof répond **avec patience**.",
+      "answers": ["Le prof répond patiemment."],
+      "en": "The teacher answers patiently.",
+      "why": "patient ends in -ent, so the adverb ends in -emment: patiemment."
+    },
+    {
+      "id": "adv-formation-comparison-09",
+      "type": "flip",
+      "front": "What are the adverbs from bon, mauvais and rapide?",
+      "back": "bon → bien (well), mauvais → mal (badly), rapide → vite or rapidement (quickly). Also gentil → gentiment (kindly)."
+    },
+    {
+      "id": "adv-formation-comparison-10",
+      "type": "gap",
+      "prompt": "Hier soir, j'ai ___ dormi à cause du bruit.",
+      "base": "mauvais",
+      "answers": ["mal"],
+      "en": "Last night I slept badly because of the noise.",
+      "why": "The adverb from mauvais is irregular: mal. Short adverbs go between avoir and the past participle."
+    },
+    {
+      "id": "adv-formation-comparison-11",
+      "type": "flip",
+      "front": "How do you compare adverbs, and which article does the superlative use?",
+      "back": "plus / moins / aussi + adverb + que: Il conduit plus lentement que moi. Superlative: le plus / le moins + adverb, always le, whatever the subject: Ma sœur court le plus vite."
+    },
+    {
+      "id": "adv-formation-comparison-12",
+      "type": "gap",
+      "prompt": "Mon père conduit ___ que ma mère.",
+      "base": "prudent",
+      "hint": "(more carefully)",
+      "answers": ["plus prudemment"],
+      "en": "My father drives more carefully than my mother.",
+      "why": "Comparative of an adverb: plus + adverb + que; prudent → prudemment (-ent → -emment)."
+    },
+    {
+      "id": "adv-formation-comparison-13",
+      "type": "gap",
+      "prompt": "Léa court ___ de toute l'équipe.",
+      "base": "vite",
+      "hint": "(the fastest)",
+      "answers": ["le plus vite"],
+      "en": "Léa runs the fastest in the whole team.",
+      "why": "Superlative of an adverb: le plus + adverb. It is always le, even with a female subject."
+    },
+    {
+      "id": "adv-formation-comparison-14",
+      "type": "gap",
+      "prompt": "Mon copain nage ___ que moi.",
+      "base": "bien",
+      "hint": "(as well)",
+      "answers": ["aussi bien"],
+      "en": "My mate swims as well as me.",
+      "why": "Comparison of equality: aussi + adverb + que. bien itself does not change here."
+    },
+    {
+      "id": "adv-formation-comparison-15",
+      "type": "flip",
+      "front": "meilleur or mieux: how do you choose?",
+      "back": "meilleur is an adjective: it describes a noun and agrees (un meilleur film, une meilleure note). mieux is an adverb: it describes a verb and never changes (elle chante mieux). bien → mieux → le mieux."
+    },
+    {
+      "id": "adv-formation-comparison-16",
+      "type": "gap",
+      "prompt": "Depuis mon séjour en France, je parle ___ qu'avant.",
+      "base": "bien",
+      "hint": "(better)",
+      "answers": ["mieux"],
+      "en": "Since my stay in France, I speak better than before.",
+      "why": "'Better' describes the verb parler, so use the adverb mieux (never plus bien)."
+    },
+    {
+      "id": "adv-formation-comparison-17",
+      "type": "gap",
+      "prompt": "Dans ma famille, c'est ma mère qui cuisine ___.",
+      "base": "bien",
+      "hint": "(the best)",
+      "answers": ["le mieux"],
+      "en": "In my family, it's my mother who cooks the best.",
+      "why": "The superlative of the adverb bien is le mieux; it stays le even though the subject is feminine."
+    },
+    {
+      "id": "adv-formation-comparison-18",
+      "type": "gap",
+      "prompt": "Ma sœur a eu une ___ note que moi en maths.",
+      "base": "bon",
+      "hint": "(better)",
+      "answers": ["meilleure"],
+      "en": "My sister got a better mark than me in maths.",
+      "why": "'Better' describes the noun note, so use the adjective meilleur, which agrees with the feminine noun: meilleure."
+    }
+  ]
+}

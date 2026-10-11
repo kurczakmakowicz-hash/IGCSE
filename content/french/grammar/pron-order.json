@@ -1,0 +1,168 @@
+{
+  "id": "pron-order",
+  "order": 16,
+  "area": "Pronouns",
+  "title": "Position and order of object pronouns",
+  "spec": "Pronouns: position and order of object pronouns",
+  "receptive": false,
+  "summary": [
+    "In simple tenses, object pronouns go straight before the verb: Je le vois. Elle leur parle.",
+    "In the perfect (and other compound tenses), they go before avoir or être: Je l'ai vu. Nous y sommes allés.",
+    "With a verb + infinitive, they go before the infinitive they belong to: Je vais le faire. Tu peux m'aider ?",
+    "In negatives, ne goes before the pronoun(s) and pas after the verb or auxiliary: Je ne le vois pas. Je ne l'ai pas vu.",
+    "In positive commands, pronouns go after the verb with hyphens, and me / te become moi / toi: Prends-le ! Aide-moi ! Donne-le-moi !",
+    "In negative commands, they go back before the verb: Ne le prends pas ! Ne me parle pas !",
+    "With two pronouns before the verb, the order is me/te/se/nous/vous → le/la/les → lui/leur → y → en: Il me le donne. Je le lui donne. Il y en a.",
+    "In the perfect with avoir, the past participle agrees with a direct object pronoun placed before it: Les photos ? Je les ai vues.",
+    "There is no agreement with lui, leur, y or en: Je leur ai parlé. Des pommes ? J'en ai acheté."
+  ],
+  "cards": [
+    {
+      "id": "pron-order-01",
+      "type": "flip",
+      "front": "Where does an object pronoun go: (a) present, (b) perfect, (c) verb + infinitive, (d) positive command?",
+      "back": "(a) before the verb: je le vois. (b) before avoir / être: je l'ai vu. (c) before the infinitive: je vais le voir. (d) after the verb with a hyphen: regarde-le !"
+    },
+    {
+      "id": "pron-order-02",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "J'ai vu **le film** hier.",
+      "answers": ["Je l'ai vu hier."],
+      "en": "I saw it yesterday.",
+      "why": "In the perfect the pronoun goes before avoir; le shortens to l' before ai."
+    },
+    {
+      "id": "pron-order-03",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Nous avons téléphoné **à nos cousins**.",
+      "answers": ["Nous leur avons téléphoné."],
+      "en": "We phoned them.",
+      "why": "à + people becomes leur, which goes before avoir in the perfect. No agreement with an indirect pronoun."
+    },
+    {
+      "id": "pron-order-04",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Je vais acheter **ce jean**.",
+      "answers": ["Je vais l'acheter."],
+      "en": "I'm going to buy it.",
+      "why": "With verb + infinitive, the pronoun goes before the infinitive it belongs to: l'acheter (le shortens before a vowel)."
+    },
+    {
+      "id": "pron-order-05",
+      "type": "flip",
+      "front": "Where do ne and pas go when there is an object pronoun?",
+      "back": "ne goes before the pronoun(s); pas goes after the verb, or after avoir / être in the perfect: je ne le connais pas, je ne l'ai pas vu. With verb + infinitive, ne ... pas goes round the first verb: je ne vais pas le faire."
+    },
+    {
+      "id": "pron-order-06",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Je ne regarde pas **les infos**.",
+      "answers": ["Je ne les regarde pas."],
+      "en": "I don't watch it (the news).",
+      "why": "les infos is plural, so les; it goes between ne and the verb: je ne les regarde pas."
+    },
+    {
+      "id": "pron-order-07",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Je ne vais pas inviter **Lucas**.",
+      "answers": ["Je ne vais pas l'inviter."],
+      "en": "I'm not going to invite him.",
+      "why": "ne ... pas goes round aller, and the pronoun goes before the infinitive: l'inviter."
+    },
+    {
+      "id": "pron-order-08",
+      "type": "flip",
+      "front": "Where do object pronouns go in commands (imperatives)?",
+      "back": "Positive: after the verb, joined by hyphens; me → moi, te → toi: Regarde-le ! Écoutez-moi ! With two pronouns, direct before indirect: Donne-le-moi ! Envoie-la-lui ! Negative: back before the verb in the normal order: Ne le regarde pas ! Ne me le donne pas !"
+    },
+    {
+      "id": "pron-order-09",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Prends **ton manteau** !",
+      "answers": ["Prends-le !"],
+      "en": "Take it!",
+      "why": "In a positive command the pronoun follows the verb with a hyphen: prends-le."
+    },
+    {
+      "id": "pron-order-10",
+      "type": "transform",
+      "instruction": "Make the command negative.",
+      "prompt": "Achète-les !",
+      "answers": ["Ne les achète pas !"],
+      "en": "Don't buy them!",
+      "why": "In a negative command the pronoun goes back before the verb: ne les achète pas."
+    },
+    {
+      "id": "pron-order-11",
+      "type": "gap",
+      "prompt": "Passe-___ le sel, s'il te plaît !",
+      "hint": "(me)",
+      "answers": ["moi"],
+      "en": "Pass me the salt, please!",
+      "why": "After a positive command, me becomes moi: passe-moi."
+    },
+    {
+      "id": "pron-order-12",
+      "type": "flip",
+      "front": "In what order do two object pronouns go before the verb?",
+      "back": "me / te / se / nous / vous → le / la / les → lui / leur → y → en. Il me le prête (he lends it to me). Je la leur montre (I show it to them). Je lui en ai parlé (I told him / her about it). Il y en a trois (there are three of them)."
+    },
+    {
+      "id": "pron-order-13",
+      "type": "transform",
+      "instruction": "Replace the words in bold with pronouns.",
+      "prompt": "Je donne **le cadeau à ma mère**.",
+      "answers": ["Je le lui donne."],
+      "en": "I give it to her.",
+      "why": "le cadeau → le, à ma mère → lui; le comes before lui: je le lui donne."
+    },
+    {
+      "id": "pron-order-14",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Mon père me prête **sa voiture**.",
+      "answers": ["Mon père me la prête."],
+      "en": "My dad lends it to me.",
+      "why": "sa voiture → la; me comes before la in the pronoun order: me la prête."
+    },
+    {
+      "id": "pron-order-15",
+      "type": "gap",
+      "prompt": "Il y a des œufs ? — Oui, il y ___ a six.",
+      "hint": "(of them)",
+      "answers": ["en"],
+      "en": "Are there any eggs? — Yes, there are six (of them).",
+      "why": "With a number, the noun is replaced by en, and y always comes before en: il y en a six."
+    },
+    {
+      "id": "pron-order-16",
+      "type": "flip",
+      "front": "When does a past participle agree with an object pronoun?",
+      "back": "In the perfect with avoir, it agrees with a direct object pronoun (le, la, l', les, me, te, nous, vous) placed before it: Ta robe ? Je l'ai achetée. Mes clés ? Je les ai perdues. No agreement with lui, leur, y or en: Je leur ai écrit. Des pommes ? J'en ai acheté."
+    },
+    {
+      "id": "pron-order-17",
+      "type": "gap",
+      "prompt": "Les photos de la fête ? Je les ai ___ sur Instagram.",
+      "base": "voir",
+      "answers": ["vues"],
+      "en": "The photos from the party? I saw them on Instagram.",
+      "why": "les stands for les photos (feminine plural) and comes before avoir, so the participle agrees: vues."
+    },
+    {
+      "id": "pron-order-18",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Je n'ai pas fait **mes devoirs**.",
+      "answers": ["Je ne les ai pas faits."],
+      "en": "I haven't done it (my homework).",
+      "why": "les goes between ne and avoir; it stands for mes devoirs (masculine plural) and comes before avoir, so fait agrees: faits."
+    }
+  ]
+}

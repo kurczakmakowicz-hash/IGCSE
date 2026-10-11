@@ -1,0 +1,164 @@
+{
+  "id": "pron-demonstrative",
+  "order": 18,
+  "area": "Pronouns",
+  "title": "Demonstrative pronouns (ça, cela, celui…)",
+  "spec": "Pronouns: demonstrative (e.g. ça, cela, celui)",
+  "receptive": false,
+  "summary": [
+    "ça and cela mean 'that' or 'it' and refer to an idea, an activity or something not named; ça is everyday, cela more formal: Ça me plaît. Cela dépend.",
+    "ceci means 'this' and is mostly written: Lisez ceci attentivement.",
+    "ce is used with être; it becomes c' before e and é: C'est génial. C'était nul. Ce sont mes amis.",
+    "For a general comment, use c'est + masculine adjective: La natation, c'est bon pour la santé.",
+    "celui (masc. sing.), celle (fem. sing.), ceux (masc. pl.), celles (fem. pl.) mean 'the one(s)' and agree with the noun they replace.",
+    "celui cannot stand alone: add -ci (this one / these) or -là (that one / those): Quel pull ? Celui-ci.",
+    "celui + qui / que = the one who / that: J'ai deux frères ; celui qui joue au rugby s'appelle Tom.",
+    "celui + de shows who something belongs to: Ce n'est pas mon vélo, c'est celui de ma sœur (my sister's)."
+  ],
+  "cards": [
+    {
+      "id": "pron-demonstrative-01",
+      "type": "flip",
+      "front": "What do ça, cela and ceci mean, and when are they used?",
+      "back": "ça = that / it (everyday), cela = that / it (more formal or written), ceci = this. They refer to an idea, an activity or something not named, and never change form: Ça coûte combien ? Cela m'intéresse. Ça ne fait rien."
+    },
+    {
+      "id": "pron-demonstrative-02",
+      "type": "gap",
+      "prompt": "Faire du shopping avec mes parents ? Non, ___ m'énerve !",
+      "hint": "(that)",
+      "answers": ["ça", "cela"],
+      "en": "Going shopping with my parents? No, that annoys me!",
+      "why": "An activity or idea is referred to with ça (or the more formal cela), not il or elle."
+    },
+    {
+      "id": "pron-demonstrative-03",
+      "type": "gap",
+      "prompt": "Je voudrais un billet pour Paris. — D'accord, ___ fait quarante euros.",
+      "hint": "(that)",
+      "answers": ["ça", "cela"],
+      "en": "I'd like a ticket to Paris. — OK, that comes to forty euros.",
+      "why": "ça (or cela) refers to the whole situation, here the price of what was asked for: ça fait..."
+    },
+    {
+      "id": "pron-demonstrative-04",
+      "type": "flip",
+      "front": "How is ce used with être?",
+      "back": "c'est (it is / that is), ce sont (they are / these are), c'était (it was), ce sera (it will be). ce becomes c' before e and é. For a general comment use c'est + masculine adjective: Le ski, c'est fatigant. La musique, c'est important."
+    },
+    {
+      "id": "pron-demonstrative-05",
+      "type": "gap",
+      "prompt": "La natation, ___ bon pour la santé.",
+      "hint": "(it is)",
+      "answers": ["c'est"],
+      "en": "Swimming is good for your health.",
+      "why": "A general comment about an activity uses c'est + masculine adjective: c'est bon (not elle est bonne)."
+    },
+    {
+      "id": "pron-demonstrative-06",
+      "type": "gap",
+      "prompt": "Regarde la photo : ___ mes cousins de Lyon.",
+      "hint": "(these are)",
+      "answers": ["ce sont"],
+      "en": "Look at the photo: these are my cousins from Lyon.",
+      "why": "Before a plural noun, written French uses ce sont rather than c'est."
+    },
+    {
+      "id": "pron-demonstrative-07",
+      "type": "flip",
+      "front": "What are the four forms of celui, and what do they mean?",
+      "back": "celui (masc. sing.), celle (fem. sing.), ceux (masc. pl.), celles (fem. pl.) = the one / the ones. They agree with the noun they replace and must be followed by -ci / -là, qui / que or de."
+    },
+    {
+      "id": "pron-demonstrative-08",
+      "type": "flip",
+      "front": "What is the difference between celui-ci and celui-là?",
+      "back": "-ci = this one / these (nearer), -là = that one / those (further away): Quel gâteau veux-tu ? — Celui-ci. Je préfère ces chaussures-là → je préfère celles-là."
+    },
+    {
+      "id": "pron-demonstrative-09",
+      "type": "gap",
+      "prompt": "Quelle veste préfères-tu ? — ___, la noire.",
+      "hint": "(that one)",
+      "answers": ["Celle-là"],
+      "en": "Which jacket do you prefer? — That one, the black one.",
+      "why": "veste is feminine singular, so celle; -là means 'that one'."
+    },
+    {
+      "id": "pron-demonstrative-10",
+      "type": "gap",
+      "prompt": "Ces baskets-là sont trop chères. Je vais prendre ___.",
+      "hint": "(these ones)",
+      "answers": ["celles-ci"],
+      "en": "Those trainers are too expensive. I'm going to take these ones.",
+      "why": "baskets is feminine plural, so celles; -ci means 'these (ones)'."
+    },
+    {
+      "id": "pron-demonstrative-11",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a demonstrative pronoun.",
+      "prompt": "Je vais acheter **ce sac-ci**.",
+      "answers": ["Je vais acheter celui-ci."],
+      "en": "I'm going to buy this one.",
+      "why": "sac is masculine singular, so ce sac-ci becomes celui-ci."
+    },
+    {
+      "id": "pron-demonstrative-12",
+      "type": "flip",
+      "front": "What do celui qui and celui que mean?",
+      "back": "The one who / that. Use qui when a verb follows, que when a subject follows: celle qui chante (the one who is singing), celui que je préfère (the one I prefer), ceux qui recyclent (those who recycle)."
+    },
+    {
+      "id": "pron-demonstrative-13",
+      "type": "gap",
+      "prompt": "J'ai deux sœurs : ___ qui habite à Londres s'appelle Emma.",
+      "hint": "(the one)",
+      "answers": ["celle"],
+      "en": "I have two sisters: the one who lives in London is called Emma.",
+      "why": "It refers to one sister (feminine singular), so celle; celle qui = the one who."
+    },
+    {
+      "id": "pron-demonstrative-14",
+      "type": "gap",
+      "prompt": "J'aime bien les films d'action, mais ___ que je préfère, ce sont les comédies.",
+      "hint": "(the ones)",
+      "answers": ["ceux"],
+      "en": "I quite like action films, but the ones I prefer are comedies.",
+      "why": "It refers to films (masculine plural), so ceux; ceux que = the ones that."
+    },
+    {
+      "id": "pron-demonstrative-15",
+      "type": "gap",
+      "prompt": "___ qui fument mettent leur santé en danger.",
+      "hint": "(those / people)",
+      "answers": ["Ceux"],
+      "en": "Those who smoke put their health at risk.",
+      "why": "For people in general, 'those who' is ceux qui (masculine plural)."
+    },
+    {
+      "id": "pron-demonstrative-16",
+      "type": "flip",
+      "front": "How do you say 'my brother's' or 'Léa's' without repeating the noun?",
+      "back": "celui / celle / ceux / celles + de: Ce n'est pas mon vélo, c'est celui de mon frère (my brother's). Mes notes sont meilleures que celles de Léa (Léa's). French has no 's, so de shows who owns it."
+    },
+    {
+      "id": "pron-demonstrative-17",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a demonstrative pronoun.",
+      "prompt": "Ma chambre est plus grande que **la chambre** de ma sœur.",
+      "answers": ["Ma chambre est plus grande que celle de ma sœur."],
+      "en": "My bedroom is bigger than my sister's.",
+      "why": "chambre is feminine singular, so la chambre de becomes celle de."
+    },
+    {
+      "id": "pron-demonstrative-18",
+      "type": "gap",
+      "prompt": "Ce n'est pas mon portable, c'est ___ de Thomas.",
+      "hint": "(the one)",
+      "answers": ["celui"],
+      "en": "It's not my mobile, it's Thomas's.",
+      "why": "portable is masculine singular, so celui; celui de = the one belonging to."
+    }
+  ]
+}

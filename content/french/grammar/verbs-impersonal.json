@@ -1,0 +1,171 @@
+{
+  "id": "verbs-impersonal",
+  "order": 25,
+  "area": "Verbs",
+  "title": "Impersonal verbs (il faut, il y a…)",
+  "spec": "Verbs: impersonal verbs (e.g. il faut)",
+  "receptive": false,
+  "summary": [
+    "Impersonal verbs are only used with il, which means 'it' or 'there', never 'he': il faut, il pleut, il y a.",
+    "il faut + infinitive = you must / we must / it is necessary to: Il faut recycler le plastique. il ne faut pas = you mustn't: Il ne faut pas jeter les déchets par terre.",
+    "il faut + noun = you need: Il faut un passeport pour voyager. Past: il fallait; future: il faudra.",
+    "il y a = there is / there are: Il y a un cinéma en ville. Past description: il y avait; future: il y aura; negative: il n'y a pas de...",
+    "il y a + a length of time = ago: Je suis arrivé ici il y a deux ans.",
+    "Weather: il pleut, il neige, il fait beau / chaud / froid / mauvais, il y a du vent / du soleil. Past: il pleuvait, il faisait beau; future: il pleuvra, il fera chaud.",
+    "il est + adjective + de + infinitive = it is ... to ...: Il est important de manger équilibré. Il est difficile de trouver un emploi.",
+    "il vaut mieux + infinitive = it's better to: Il vaut mieux prendre le train.",
+    "il reste = there is / are ... left (always singular): Il reste deux places. il s'agit de = it's about: Dans ce livre, il s'agit d'une famille pauvre."
+  ],
+  "cards": [
+    {
+      "id": "verbs-impersonal-01",
+      "type": "flip",
+      "front": "What does il faut mean, and what follows it?",
+      "back": "It means 'you must / we must / it is necessary to' and never changes for the person. Followed by an infinitive: Il faut protéger l'environnement. Followed by a noun it means 'you need': Il faut un billet pour entrer."
+    },
+    {
+      "id": "verbs-impersonal-02",
+      "type": "gap",
+      "prompt": "Il ___ éteindre la lumière quand on quitte une pièce.",
+      "base": "falloir",
+      "answers": ["faut"],
+      "en": "You must switch off the light when you leave a room.",
+      "why": "falloir is only used with il. In the present it is il faut, followed by an infinitive."
+    },
+    {
+      "id": "verbs-impersonal-03",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using il ne faut pas + infinitive.",
+      "prompt": "On ne doit pas fumer ici.",
+      "answers": ["Il ne faut pas fumer ici."],
+      "en": "You mustn't smoke here.",
+      "why": "il ne faut pas + infinitive means 'you mustn't': ne...pas goes round faut."
+    },
+    {
+      "id": "verbs-impersonal-04",
+      "type": "gap",
+      "prompt": "Demain, il ___ partir à six heures pour prendre l'avion.",
+      "base": "falloir",
+      "hint": "(simple future)",
+      "answers": ["faudra"],
+      "en": "Tomorrow we'll have to leave at six to catch the plane.",
+      "why": "The simple future of il faut is il faudra; demain points to the future."
+    },
+    {
+      "id": "verbs-impersonal-05",
+      "type": "gap",
+      "prompt": "Quand j'étais à l'école primaire, il ___ porter un uniforme.",
+      "base": "falloir",
+      "answers": ["fallait"],
+      "en": "When I was at primary school, we had to wear a uniform.",
+      "why": "A rule that applied over a period in the past → imperfect: il fallait."
+    },
+    {
+      "id": "verbs-impersonal-06",
+      "type": "flip",
+      "front": "What do il y a, il y avait and il y aura mean?",
+      "back": "il y a = there is / there are; il y avait = there was / there were (imperfect, for description); il y aura = there will be. Negative: il n'y a pas de... With a length of time, il y a means 'ago': il y a trois ans = three years ago."
+    },
+    {
+      "id": "verbs-impersonal-07",
+      "type": "gap",
+      "prompt": "Quand j'étais petit, il y ___ un parc derrière ma maison.",
+      "base": "avoir",
+      "answers": ["avait"],
+      "en": "When I was little, there was a park behind my house.",
+      "why": "Describing how things were in the past → imperfect: il y avait."
+    },
+    {
+      "id": "verbs-impersonal-08",
+      "type": "gap",
+      "prompt": "L'année prochaine, il y ___ une nouvelle piscine dans notre ville.",
+      "base": "avoir",
+      "hint": "(simple future)",
+      "answers": ["aura"],
+      "en": "Next year there will be a new swimming pool in our town.",
+      "why": "The simple future of il y a is il y aura."
+    },
+    {
+      "id": "verbs-impersonal-09",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...pas.",
+      "prompt": "Il y a des magasins dans mon village.",
+      "answers": ["Il n'y a pas de magasins dans mon village."],
+      "en": "There aren't any shops in my village.",
+      "why": "n' goes before y and pas after a; des becomes de after a negative."
+    },
+    {
+      "id": "verbs-impersonal-10",
+      "type": "flip",
+      "front": "How do you say: it's raining, it's snowing, the weather's nice, it's windy? And in the past and future?",
+      "back": "il pleut, il neige, il fait beau, il y a du vent (also il fait chaud / froid / mauvais, il y a du soleil / du brouillard). Past description: il pleuvait, il neigeait, il faisait beau. Future: il pleuvra, il neigera, il fera beau."
+    },
+    {
+      "id": "verbs-impersonal-11",
+      "type": "gap",
+      "prompt": "Prends ton parapluie, il ___ depuis ce matin !",
+      "base": "pleuvoir",
+      "answers": ["pleut"],
+      "en": "Take your umbrella, it's been raining since this morning!",
+      "why": "depuis + present tense for something still going on: il pleut."
+    },
+    {
+      "id": "verbs-impersonal-12",
+      "type": "gap",
+      "prompt": "Selon la météo, demain il ___ froid dans le nord.",
+      "base": "faire",
+      "hint": "(simple future)",
+      "answers": ["fera"],
+      "en": "According to the forecast, tomorrow it will be cold in the north.",
+      "why": "Weather uses il fait + adjective; the simple future of faire is il fera."
+    },
+    {
+      "id": "verbs-impersonal-13",
+      "type": "flip",
+      "front": "How does il est + adjective + de work?",
+      "back": "il est + adjective + de + infinitive = it is ... to ...: Il est important de dormir huit heures. Il est interdit de fumer. Il est difficile de trouver un petit boulot. de becomes d' before a vowel or silent h: Il est essentiel d'économiser l'énergie."
+    },
+    {
+      "id": "verbs-impersonal-14",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using il est + adjective + de + infinitive.",
+      "prompt": "Manger des fruits, c'est important.",
+      "answers": ["Il est important de manger des fruits."],
+      "en": "It is important to eat fruit.",
+      "why": "il est + adjective + de + infinitive: Il est important de manger."
+    },
+    {
+      "id": "verbs-impersonal-15",
+      "type": "flip",
+      "front": "What do il vaut mieux, il reste and il s'agit de mean?",
+      "back": "il vaut mieux + infinitive = it's better to: Il vaut mieux réserver à l'avance. il reste = there is / are ... left: Il reste trois billets. il s'agit de = it's about / it's a question of: Dans ce film, il s'agit d'une famille qui déménage. The subject is always il: never say 'ce film s'agit de'."
+    },
+    {
+      "id": "verbs-impersonal-16",
+      "type": "gap",
+      "prompt": "Le concert est presque complet : il ne ___ que deux places.",
+      "base": "rester",
+      "answers": ["reste"],
+      "en": "The concert is almost sold out: there are only two seats left.",
+      "why": "il reste is impersonal, so the verb stays singular even before a plural noun: il reste deux places, not 'restent'."
+    },
+    {
+      "id": "verbs-impersonal-17",
+      "type": "gap",
+      "prompt": "Il ___ mieux prendre le train que la voiture en ville.",
+      "base": "valoir",
+      "answers": ["vaut"],
+      "en": "It's better to take the train than the car in town.",
+      "why": "il vaut mieux + infinitive = it's better to (valoir in the present: il vaut)."
+    },
+    {
+      "id": "verbs-impersonal-18",
+      "type": "gap",
+      "prompt": "Dans ce roman, il ___ d'une fille qui part vivre en Afrique.",
+      "base": "s'agir",
+      "answers": ["s'agit"],
+      "en": "This novel is about a girl who goes to live in Africa.",
+      "why": "il s'agit de = it's about. It is only used with il, so the reflexive pronoun is s': il s'agit."
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "id": "pron-subject",
+  "order": 13,
+  "area": "Pronouns",
+  "title": "Subject pronouns, on, tu and vous",
+  "spec": "Pronouns: personal: all subjects, including on; Verbs: modes of address: tu, vous",
+  "receptive": false,
+  "summary": [
+    "The subject pronouns are je, tu, il, elle, on, nous, vous, ils, elles.",
+    "je becomes j' before a vowel or silent h: j'aime, j'habite.",
+    "il and elle also mean it, matching the gender of the noun: Le vélo ? Il est neuf. La voiture ? Elle est rouge.",
+    "ils is used for a group of males or a mixed group; elles only for an all-female group: Paul et Julie → ils.",
+    "on means we (very common in speech), one, or people in general, and always takes the il/elle form of the verb: on va, on mange.",
+    "tu is for one person you know well (friend, family member, child, pet).",
+    "vous is for one person you speak to politely (a stranger, a teacher, an adult you don't know) and for any group of people.",
+    "Changing nous to on: nous allons → on va; nous jouons → on joue."
+  ],
+  "cards": [
+    {
+      "id": "pron-subject-01",
+      "type": "flip",
+      "front": "List the nine French subject pronouns with their English meanings.",
+      "back": "je (I), tu (you, informal), il (he/it), elle (she/it), on (we/one/people), nous (we), vous (you, polite or plural), ils (they, masc. or mixed), elles (they, all female)."
+    },
+    {
+      "id": "pron-subject-02",
+      "type": "gap",
+      "prompt": "Ma sœur et moi, ___ allons au collège à pied.",
+      "hint": "(we)",
+      "answers": ["nous"],
+      "en": "My sister and I walk to school.",
+      "why": "Ma sœur et moi = we; the verb allons is the nous form."
+    },
+    {
+      "id": "pron-subject-03",
+      "type": "flip",
+      "front": "When does je become j'?",
+      "back": "Before a vowel or a silent h: j'aime, j'écoute, j'habite. Not before a consonant: je joue, je vais, je suis."
+    },
+    {
+      "id": "pron-subject-04",
+      "type": "transform",
+      "instruction": "Rewrite the sentence with je instead of nous.",
+      "prompt": "Nous habitons à Londres.",
+      "answers": ["J'habite à Londres."],
+      "en": "I live in London.",
+      "why": "je becomes j' before the silent h of habite; the verb changes to the je form."
+    },
+    {
+      "id": "pron-subject-05",
+      "type": "flip",
+      "front": "ils or elles: which do you use for a mixed group?",
+      "back": "ils. elles is only for an all-female group (or all feminine nouns). Marc et ses sœurs → ils; Léa et Chloé → elles. Even one male in a group of ten makes it ils."
+    },
+    {
+      "id": "pron-subject-06",
+      "type": "gap",
+      "prompt": "Ma tante et mon oncle ? ___ viennent ce week-end.",
+      "hint": "(they)",
+      "answers": ["Ils"],
+      "en": "My aunt and uncle? They're coming this weekend.",
+      "why": "A mixed group of male and female takes ils."
+    },
+    {
+      "id": "pron-subject-07",
+      "type": "gap",
+      "prompt": "Mes sœurs et ma mère ? ___ adorent faire du shopping.",
+      "hint": "(they)",
+      "answers": ["Elles"],
+      "en": "My sisters and my mother? They love going shopping.",
+      "why": "An all-female group takes elles."
+    },
+    {
+      "id": "pron-subject-08",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a subject pronoun.",
+      "prompt": "**Le livre et la lampe** sont sur la table.",
+      "answers": ["Ils sont sur la table."],
+      "en": "They are on the table.",
+      "why": "A masculine and a feminine noun together count as masculine plural: ils."
+    },
+    {
+      "id": "pron-subject-09",
+      "type": "gap",
+      "prompt": "Où est ton vélo ? — ___ est dans le garage.",
+      "hint": "(it)",
+      "answers": ["Il"],
+      "en": "Where's your bike? — It's in the garage.",
+      "why": "vélo is masculine, so 'it' is il."
+    },
+    {
+      "id": "pron-subject-10",
+      "type": "gap",
+      "prompt": "Tu aimes ma nouvelle robe ? — Oui, ___ est très jolie.",
+      "hint": "(it)",
+      "answers": ["elle"],
+      "en": "Do you like my new dress? — Yes, it's very pretty.",
+      "why": "robe is feminine, so 'it' is elle."
+    },
+    {
+      "id": "pron-subject-11",
+      "type": "flip",
+      "front": "What can on mean, and which verb form does it take?",
+      "back": "on = we (very common in speech), one / you in general, or people / they in general. It always takes the il/elle form of the verb: On va au cinéma ? En France, on mange tard."
+    },
+    {
+      "id": "pron-subject-12",
+      "type": "gap",
+      "prompt": "Le week-end, on ___ souvent au parc avec nos copains.",
+      "base": "aller",
+      "hint": "present tense",
+      "answers": ["va"],
+      "en": "At the weekend we often go to the park with our friends.",
+      "why": "on always takes the third-person singular (il/elle) form of the verb: on va."
+    },
+    {
+      "id": "pron-subject-13",
+      "type": "gap",
+      "prompt": "En France, on ___ beaucoup de pain.",
+      "base": "manger",
+      "hint": "present tense",
+      "answers": ["mange"],
+      "en": "In France, people eat a lot of bread.",
+      "why": "Here on means people in general; it still takes the il/elle form: on mange."
+    },
+    {
+      "id": "pron-subject-14",
+      "type": "transform",
+      "instruction": "Rewrite the sentence with nous instead of on.",
+      "prompt": "On joue au tennis le mercredi.",
+      "answers": ["Nous jouons au tennis le mercredi."],
+      "en": "We play tennis on Wednesdays.",
+      "why": "on takes the il/elle form; nous takes the -ons form: on joue → nous jouons."
+    },
+    {
+      "id": "pron-subject-15",
+      "type": "transform",
+      "instruction": "Rewrite the sentence with on instead of nous.",
+      "prompt": "Nous allons à la plage.",
+      "answers": ["On va à la plage."],
+      "en": "We're going to the beach.",
+      "why": "on meaning we takes the il/elle form of the verb: nous allons → on va."
+    },
+    {
+      "id": "pron-subject-16",
+      "type": "flip",
+      "front": "tu or vous: when do you use each?",
+      "back": "tu: one person you know well: a friend, a family member, a child, a pet. vous: one person you address politely (a stranger, shop assistant, teacher, older adult) and always for more than one person."
+    },
+    {
+      "id": "pron-subject-17",
+      "type": "transform",
+      "instruction": "You are now asking a stranger. Rewrite the question using vous.",
+      "prompt": "Tu as l'heure ?",
+      "answers": ["Vous avez l'heure ?", "Avez-vous l'heure ?", "Est-ce que vous avez l'heure ?"],
+      "en": "Have you got the time?",
+      "why": "A stranger is addressed with vous, so the verb changes to the vous form: vous avez."
+    },
+    {
+      "id": "pron-subject-18",
+      "type": "transform",
+      "instruction": "You are now asking a friend. Rewrite the question using tu.",
+      "prompt": "Vous voulez venir au cinéma ce soir ?",
+      "answers": ["Tu veux venir au cinéma ce soir ?", "Veux-tu venir au cinéma ce soir ?", "Est-ce que tu veux venir au cinéma ce soir ?"],
+      "en": "Do you want to come to the cinema tonight?",
+      "why": "A friend is addressed with tu, so the verb changes to the tu form: tu veux."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "adv-question-time-place",
+  "order": 11,
+  "area": "Adverbs",
+  "title": "Question adverbs, adverbs of time and place, adverbial phrases",
+  "spec": "Adverbs: interrogative (e.g. comment, quand); adverbs of time and place (e.g. aujourd'hui, demain, ici, là-bas); common adverbial phrases",
+  "receptive": false,
+  "summary": [
+    "Question words: comment (how), quand (when), où (where), pourquoi (why), combien (how much / how many): Où habites-tu ?",
+    "combien de + noun with no article: Combien de frères as-tu ?",
+    "Three ways to ask with a question word: Où vas-tu ? / Où est-ce que tu vas ? / Tu vas où ?",
+    "où (where) has a grave accent; ou without an accent means or.",
+    "Time adverbs: hier, aujourd'hui, demain, déjà, bientôt, souvent, toujours (always or still), maintenant: Demain, je vais à Paris.",
+    "Place adverbs: ici (here), là (there), là-bas (over there), partout (everywhere): Il y a des fleurs partout.",
+    "Short adverbs like déjà, souvent, toujours go between avoir/être and the past participle: J'ai déjà mangé.",
+    "Useful adverbial phrases: de temps en temps (from time to time), tout de suite (straight away), d'habitude (usually), en ce moment (at the moment), à l'avenir (in the future)."
+  ],
+  "cards": [
+    {
+      "id": "adv-question-time-place-01",
+      "type": "flip",
+      "front": "Give the French for: how, when, where, why, how much / how many.",
+      "back": "comment, quand, où, pourquoi, combien. Comment vas-tu ? Quand pars-tu ? Où habites-tu ? Pourquoi ris-tu ? Combien ça coûte ?"
+    },
+    {
+      "id": "adv-question-time-place-02",
+      "type": "gap",
+      "prompt": "___ t'appelles-tu ?",
+      "hint": "(how)",
+      "answers": ["Comment"],
+      "en": "What's your name?",
+      "why": "comment = how; Comment t'appelles-tu ? literally means 'How do you call yourself?'"
+    },
+    {
+      "id": "adv-question-time-place-03",
+      "type": "gap",
+      "prompt": "___ habites-tu ? — J'habite à Lyon.",
+      "hint": "(where)",
+      "answers": ["Où"],
+      "en": "Where do you live? — I live in Lyon.",
+      "why": "où = where and needs its grave accent; ou without an accent means or."
+    },
+    {
+      "id": "adv-question-time-place-04",
+      "type": "gap",
+      "prompt": "___ es-tu en retard ? — Parce que j'ai raté le bus.",
+      "hint": "(why)",
+      "answers": ["Pourquoi"],
+      "en": "Why are you late? — Because I missed the bus.",
+      "why": "pourquoi = why; the answer usually starts with parce que (because)."
+    },
+    {
+      "id": "adv-question-time-place-05",
+      "type": "gap",
+      "prompt": "___ est-ce que tu pars en vacances ? — Le 3 août.",
+      "hint": "(when)",
+      "answers": ["Quand"],
+      "en": "When are you going on holiday? — On 3rd August.",
+      "why": "quand = when; it can be followed by est-ce que or by inversion (Quand pars-tu ?)."
+    },
+    {
+      "id": "adv-question-time-place-06",
+      "type": "flip",
+      "front": "How do you use combien, and what are the three ways to ask a question with a question word?",
+      "back": "combien de + noun, no article: Combien de cousins as-tu ? Three ways: Où vas-tu ? (inversion) / Où est-ce que tu vas ? / Tu vas où ? (informal)."
+    },
+    {
+      "id": "adv-question-time-place-07",
+      "type": "gap",
+      "prompt": "___ de frères et sœurs as-tu ?",
+      "hint": "(how many)",
+      "answers": ["Combien"],
+      "en": "How many brothers and sisters have you got?",
+      "why": "combien de + noun = how many; there is no article after de."
+    },
+    {
+      "id": "adv-question-time-place-08",
+      "type": "transform",
+      "instruction": "Write the question that this sentence answers, using a question word for the words in bold. Use tu.",
+      "prompt": "Je vais **au stade**.",
+      "answers": ["Où vas-tu ?", "Où est-ce que tu vas ?", "Tu vas où ?"],
+      "en": "Where are you going?",
+      "why": "The words in bold give a place, so the question word is où; it can go with inversion, est-ce que, or at the end in speech."
+    },
+    {
+      "id": "adv-question-time-place-09",
+      "type": "transform",
+      "instruction": "Write the question that this sentence answers, using a question word for the words in bold.",
+      "prompt": "Elle a **deux** chats.",
+      "answers": ["Combien de chats a-t-elle ?", "Combien de chats est-ce qu'elle a ?", "Elle a combien de chats ?"],
+      "en": "How many cats has she got?",
+      "why": "A number is asked for with combien de + noun; inversion needs -t- between a and elle: a-t-elle."
+    },
+    {
+      "id": "adv-question-time-place-10",
+      "type": "flip",
+      "front": "Give the French for: yesterday, today, tomorrow, already, soon, often, always/still, here, there, over there, everywhere.",
+      "back": "hier, aujourd'hui, demain, déjà, bientôt, souvent, toujours, ici, là, là-bas, partout. Note toujours also means still: Il pleut toujours = It's still raining."
+    },
+    {
+      "id": "adv-question-time-place-11",
+      "type": "gap",
+      "prompt": "___, je suis allé au marché avec ma mère.",
+      "hint": "(yesterday)",
+      "answers": ["Hier"],
+      "en": "Yesterday I went to the market with my mother.",
+      "why": "hier = yesterday; time words like hier, aujourd'hui and demain usually go at the start or end of the sentence."
+    },
+    {
+      "id": "adv-question-time-place-12",
+      "type": "gap",
+      "prompt": "Tu vois le grand bâtiment ___ ? C'est la mairie.",
+      "hint": "(over there)",
+      "answers": ["là-bas"],
+      "en": "Can you see the big building over there? It's the town hall.",
+      "why": "là-bas = over there: grave accent on là and a hyphen."
+    },
+    {
+      "id": "adv-question-time-place-13",
+      "type": "flip",
+      "front": "Where do short adverbs such as déjà, souvent and toujours go in the perfect tense?",
+      "back": "Between the auxiliary (avoir/être) and the past participle: J'ai déjà fini. Nous sommes souvent allés à la plage. Il a toujours aimé le sport."
+    },
+    {
+      "id": "adv-question-time-place-14",
+      "type": "transform",
+      "instruction": "Add déjà (already) in the correct place.",
+      "prompt": "J'ai visité le château.",
+      "answers": ["J'ai déjà visité le château."],
+      "en": "I have already visited the castle.",
+      "why": "In the perfect tense a short adverb goes between avoir and the past participle."
+    },
+    {
+      "id": "adv-question-time-place-15",
+      "type": "flip",
+      "front": "What do these phrases mean: de temps en temps, tout de suite, d'habitude, en ce moment, à l'avenir?",
+      "back": "from time to time, straight away, usually, at the moment, in the future. D'habitude, je prends le bus. En ce moment, je révise. À l'avenir, je voudrais voyager."
+    },
+    {
+      "id": "adv-question-time-place-16",
+      "type": "gap",
+      "prompt": "Je vais au cinéma ___, mais pas très souvent.",
+      "hint": "(from time to time)",
+      "answers": ["de temps en temps", "de temps à autre"],
+      "en": "I go to the cinema from time to time, but not very often.",
+      "why": "de temps en temps = from time to time, an adverbial phrase of frequency."
+    },
+    {
+      "id": "adv-question-time-place-17",
+      "type": "gap",
+      "prompt": "___, je prends le bus pour aller au collège, mais aujourd'hui j'y vais à pied.",
+      "hint": "(usually)",
+      "answers": ["D'habitude", "Normalement", "Généralement", "Habituellement", "En général"],
+      "en": "Usually I take the bus to school, but today I'm walking there.",
+      "why": "d'habitude = usually; normalement, généralement and en général are also correct."
+    },
+    {
+      "id": "adv-question-time-place-18",
+      "type": "gap",
+      "prompt": "Range ta chambre ___ !",
+      "hint": "(straight away)",
+      "answers": ["tout de suite", "immédiatement"],
+      "en": "Tidy your room straight away!",
+      "why": "tout de suite = straight away / right now; immédiatement means the same."
+    }
+  ]
+}

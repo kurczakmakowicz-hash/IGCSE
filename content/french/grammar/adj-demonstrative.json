@@ -1,0 +1,149 @@
+{
+  "id": "adj-demonstrative",
+  "order": 6,
+  "area": "Adjectives",
+  "title": "Demonstrative adjectives (ce, cet, cette, ces)",
+  "spec": "Adjectives: demonstrative (ce, cet, cette, ces)",
+  "receptive": false,
+  "summary": [
+    "ce + masculine singular noun: ce village, ce garçon.",
+    "cet + masculine singular noun starting with a vowel or silent h: cet hôtel, cet ami, cet été.",
+    "cette + feminine singular noun, even before a vowel: cette ville, cette école.",
+    "ces + any plural noun, masculine or feminine: ces magasins, ces filles, ces hôtels.",
+    "They mean 'this' or 'that' (ces = 'these' or 'those'); the context tells you which.",
+    "Choose ce or cet by the very next word: ce nouvel hôtel (n is a consonant), cet énorme gâteau (é is a vowel).",
+    "Add -ci (here) or -là (there) to the noun to contrast two things: ce pull-ci (this jumper) / ce pull-là (that jumper).",
+    "Useful time phrases: ce matin, ce soir, ce week-end, cet été, cet hiver, cette semaine, cette année."
+  ],
+  "cards": [
+    {
+      "id": "adj-demonstrative-01",
+      "type": "flip",
+      "front": "What are the four forms of the demonstrative adjective (this / that / these / those)?",
+      "back": "ce (m sg): ce livre; cet (m sg before a vowel or silent h): cet arbre, cet hôtel; cette (f sg): cette rue; ces (all plurals): ces livres, ces rues."
+    },
+    {
+      "id": "adj-demonstrative-02",
+      "type": "gap",
+      "prompt": "Tu as déjà vu ___ film ?",
+      "base": "ce",
+      "answers": ["ce"],
+      "en": "Have you already seen this film?",
+      "why": "film is masculine singular and starts with a consonant: ce."
+    },
+    {
+      "id": "adj-demonstrative-03",
+      "type": "gap",
+      "prompt": "J'adore ___ chanson !",
+      "base": "ce",
+      "answers": ["cette"],
+      "en": "I love this song!",
+      "why": "chanson is feminine singular: cette."
+    },
+    {
+      "id": "adj-demonstrative-04",
+      "type": "gap",
+      "prompt": "___ chaussures sont très confortables.",
+      "base": "ce",
+      "answers": ["Ces"],
+      "en": "These shoes are very comfortable.",
+      "why": "chaussures is plural: ces is used for all plurals, masculine or feminine."
+    },
+    {
+      "id": "adj-demonstrative-05",
+      "type": "flip",
+      "front": "When do you use cet rather than ce?",
+      "back": "Before a masculine singular word starting with a vowel or silent h, so the sounds run together: cet ordinateur, cet homme, cet été, cet hiver. Feminine nouns always take cette, even before a vowel: cette école, cette amie."
+    },
+    {
+      "id": "adj-demonstrative-06",
+      "type": "gap",
+      "prompt": "___ hôtel est trop cher pour nous.",
+      "base": "ce",
+      "answers": ["Cet"],
+      "en": "This hotel is too expensive for us.",
+      "why": "hôtel is masculine singular and starts with a silent h: cet."
+    },
+    {
+      "id": "adj-demonstrative-07",
+      "type": "gap",
+      "prompt": "Nous allons faire du ski ___ hiver.",
+      "base": "ce",
+      "answers": ["cet"],
+      "en": "We're going skiing this winter.",
+      "why": "hiver is masculine and starts with a silent h: cet hiver (like cet été)."
+    },
+    {
+      "id": "adj-demonstrative-08",
+      "type": "gap",
+      "prompt": "___ année, je passe mes examens.",
+      "base": "ce",
+      "answers": ["Cette"],
+      "en": "This year I'm taking my exams.",
+      "why": "année is feminine, so cette – never cet, even though it starts with a vowel."
+    },
+    {
+      "id": "adj-demonstrative-09",
+      "type": "flip",
+      "front": "Ce or cet? ___ nouvel appartement / ___ énorme gâteau",
+      "back": "Look at the very next word, not the noun: ce nouvel appartement (nouvel starts with a consonant), cet énorme gâteau (énorme starts with a vowel)."
+    },
+    {
+      "id": "adj-demonstrative-10",
+      "type": "gap",
+      "prompt": "Regarde ___ énorme gâteau !",
+      "base": "ce",
+      "answers": ["cet"],
+      "en": "Look at this enormous cake!",
+      "why": "gâteau is masculine and the next word, énorme, starts with a vowel: cet."
+    },
+    {
+      "id": "adj-demonstrative-11",
+      "type": "gap",
+      "prompt": "Regarde ___ nouvel appartement !",
+      "base": "ce",
+      "answers": ["ce"],
+      "en": "Look at this new flat!",
+      "why": "The next word, nouvel, starts with a consonant, so ce – even though appartement starts with a vowel."
+    },
+    {
+      "id": "adj-demonstrative-12",
+      "type": "flip",
+      "front": "How do you contrast 'this one (here)' with 'that one (there)'?",
+      "back": "Add -ci or -là to the noun with a hyphen: Je prends ce pull-ci, pas ce pull-là (this jumper, not that one). Cette robe-ci est plus chère que cette robe-là."
+    },
+    {
+      "id": "adj-demonstrative-13",
+      "type": "gap",
+      "prompt": "Quel pull préfères-tu : ce pull-ci ou ce pull-___ ?",
+      "hint": "(that one there)",
+      "answers": ["là"],
+      "en": "Which jumper do you prefer: this one or that one?",
+      "why": "-là (with a grave accent) points to the one further away; -ci to the nearer one."
+    },
+    {
+      "id": "adj-demonstrative-14",
+      "type": "flip",
+      "front": "How do you say this morning, this evening, this week, this summer and this year?",
+      "back": "ce matin, ce soir, cette semaine, cet été, cette année. Also: ce week-end, cet hiver, cet après-midi."
+    },
+    {
+      "id": "adj-demonstrative-15",
+      "type": "transform",
+      "instruction": "Replace the article in bold with the correct form of ce.",
+      "prompt": "**L'**ordinateur est très rapide.",
+      "answers": ["Cet ordinateur est très rapide."],
+      "en": "This computer is very fast.",
+      "why": "ordinateur is masculine singular and starts with a vowel: cet."
+    },
+    {
+      "id": "adj-demonstrative-16",
+      "type": "transform",
+      "instruction": "Replace the article in bold with the correct form of ce.",
+      "prompt": "**L'**école est très grande.",
+      "answers": ["Cette école est très grande."],
+      "en": "This school is very big.",
+      "why": "école is feminine, so cette. L' hides the gender – the adjective grande shows it."
+    }
+  ]
+}

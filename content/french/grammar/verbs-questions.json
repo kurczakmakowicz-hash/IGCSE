@@ -1,0 +1,171 @@
+{
+  "id": "verbs-questions",
+  "order": 24,
+  "area": "Verbs",
+  "title": "Asking questions",
+  "spec": "Verbs: interrogative forms",
+  "receptive": false,
+  "summary": [
+    "Intonation: say a statement with a rising voice and add a question mark: Tu viens ce soir ? It is informal but very common in speech.",
+    "est-ce que in front of a statement makes a question: Est-ce que tu viens ce soir ? Before a vowel it becomes est-ce qu': Est-ce qu'il pleut ?",
+    "Inversion: swap the subject pronoun and the verb and join them with a hyphen: Viens-tu ce soir ? Aimez-vous le sport ?",
+    "If the verb ends in a vowel and the pronoun is il, elle or on, add -t- between them: A-t-il un frère ? Va-t-elle au marché ? Parle-t-on anglais ici ?",
+    "With a noun subject, keep the noun first and add a pronoun after the verb: Ton frère joue-t-il au foot ? Or use est-ce que: Est-ce que ton frère joue au foot ?",
+    "Question words go first, followed by est-ce que or inversion: Où est-ce que tu habites ? Où habites-tu ? Quand pars-tu ? Pourquoi est-ce qu'il pleure ?",
+    "Qu'est-ce que = what (as the object), with normal word order: Qu'est-ce que tu fais ? With inversion use que: Que fais-tu ? Qu'est-ce qui = what (as the subject): Qu'est-ce qui se passe ?",
+    "In the perfect tense, invert the auxiliary only: As-tu fini ? Est-elle partie ? A-t-il mangé ?",
+    "In casual speech the question word may come at the end (Tu habites où ?), but in written answers use est-ce que or inversion."
+  ],
+  "cards": [
+    {
+      "id": "verbs-questions-01",
+      "type": "flip",
+      "front": "What are the three ways to turn 'Tu aimes le sport.' into a yes/no question?",
+      "back": "1 Intonation: Tu aimes le sport ? 2 est-ce que: Est-ce que tu aimes le sport ? 3 Inversion: Aimes-tu le sport ? All three mean 'Do you like sport?'. Intonation is the most informal; inversion the most formal."
+    },
+    {
+      "id": "verbs-questions-02",
+      "type": "transform",
+      "instruction": "Turn this statement into a question using est-ce que.",
+      "prompt": "Tu as un animal.",
+      "answers": ["Est-ce que tu as un animal ?"],
+      "en": "Do you have a pet?",
+      "why": "Put est-ce que in front of the statement; the word order does not change."
+    },
+    {
+      "id": "verbs-questions-03",
+      "type": "transform",
+      "instruction": "Turn this statement into a question using est-ce que.",
+      "prompt": "Il fait beau aujourd'hui.",
+      "answers": ["Est-ce qu'il fait beau aujourd'hui ?"],
+      "en": "Is the weather nice today?",
+      "why": "que elides to qu' before a vowel: est-ce qu'il."
+    },
+    {
+      "id": "verbs-questions-04",
+      "type": "flip",
+      "front": "How does inversion work, and when do you add -t-?",
+      "back": "Swap the subject pronoun and the verb and add a hyphen: Vous parlez → Parlez-vous ? If the verb ends in a vowel and the pronoun is il, elle or on, insert -t-: Il a → A-t-il ? Elle va → Va-t-elle ? On mange → Mange-t-on ? No -t- if the verb already ends in -t or -d: Est-il ? Prend-elle ? Inversion is avoided with je, except in set phrases like Puis-je... ?"
+    },
+    {
+      "id": "verbs-questions-05",
+      "type": "transform",
+      "instruction": "Turn this statement into a question using inversion.",
+      "prompt": "Vous habitez près d'ici.",
+      "answers": ["Habitez-vous près d'ici ?"],
+      "en": "Do you live near here?",
+      "why": "Swap the pronoun and the verb and join them with a hyphen: Habitez-vous."
+    },
+    {
+      "id": "verbs-questions-06",
+      "type": "transform",
+      "instruction": "Turn this statement into a question using inversion.",
+      "prompt": "Elle a une sœur.",
+      "answers": ["A-t-elle une sœur ?"],
+      "en": "Does she have a sister?",
+      "why": "a ends in a vowel, so -t- is added before elle to make it easier to say: A-t-elle."
+    },
+    {
+      "id": "verbs-questions-07",
+      "type": "transform",
+      "instruction": "Turn this statement into a question using inversion.",
+      "prompt": "Il joue au tennis.",
+      "answers": ["Joue-t-il au tennis ?"],
+      "en": "Does he play tennis?",
+      "why": "joue ends in a vowel, so -t- goes between the verb and il: Joue-t-il."
+    },
+    {
+      "id": "verbs-questions-08",
+      "type": "flip",
+      "front": "Give the French for: where, when, how, why, how much / how many, who, what, which.",
+      "back": "où, quand, comment, pourquoi, combien (de + noun), qui, que / qu'est-ce que (quoi after a preposition), quel / quelle / quels / quelles + noun. Remember the accent on où: ou without it means 'or'."
+    },
+    {
+      "id": "verbs-questions-09",
+      "type": "gap",
+      "prompt": "___ est-ce que tu vas au collège ? – En bus.",
+      "hint": "(how)",
+      "answers": ["Comment"],
+      "en": "How do you get to school? – By bus.",
+      "why": "comment = how. The question word goes first, followed by est-ce que and normal word order."
+    },
+    {
+      "id": "verbs-questions-10",
+      "type": "gap",
+      "prompt": "___ habites-tu ? – À Lyon.",
+      "hint": "(where)",
+      "answers": ["Où"],
+      "en": "Where do you live? – In Lyon.",
+      "why": "où = where, followed here by inversion (habites-tu). It needs its grave accent: ou means 'or'."
+    },
+    {
+      "id": "verbs-questions-11",
+      "type": "gap",
+      "prompt": "___ de frères et sœurs as-tu ?",
+      "hint": "(how many)",
+      "answers": ["Combien"],
+      "en": "How many brothers and sisters do you have?",
+      "why": "combien de + noun = how many / how much. de stays de whatever the noun."
+    },
+    {
+      "id": "verbs-questions-12",
+      "type": "flip",
+      "front": "qu'est-ce que, que, qu'est-ce qui, quoi: what's the difference?",
+      "back": "All mean 'what'. qu'est-ce que + normal word order: Qu'est-ce que tu manges ? que + inversion: Que manges-tu ? qu'est-ce qui when 'what' is the subject of the verb: Qu'est-ce qui se passe ? quoi after a preposition: À quoi penses-tu ? De quoi parles-tu ?"
+    },
+    {
+      "id": "verbs-questions-13",
+      "type": "gap",
+      "prompt": "___ tu fais le week-end ?",
+      "hint": "(what)",
+      "answers": ["Qu'est-ce que"],
+      "en": "What do you do at the weekend?",
+      "why": "The word order after the gap is normal (tu fais), so 'what' must be qu'est-ce que. que on its own needs inversion: Que fais-tu ?"
+    },
+    {
+      "id": "verbs-questions-14",
+      "type": "transform",
+      "instruction": "Rewrite the question using inversion.",
+      "prompt": "Qu'est-ce que tu manges à midi ?",
+      "answers": ["Que manges-tu à midi ?"],
+      "en": "What do you eat at lunchtime?",
+      "why": "With inversion, qu'est-ce que becomes que and the pronoun follows the verb: Que manges-tu."
+    },
+    {
+      "id": "verbs-questions-15",
+      "type": "transform",
+      "instruction": "Make a question using the question word in brackets. Use est-ce que or inversion.",
+      "prompt": "Tu pars en vacances. (quand)",
+      "answers": ["Quand est-ce que tu pars en vacances ?", "Quand pars-tu en vacances ?"],
+      "en": "When are you going on holiday?",
+      "why": "The question word goes first, then either est-ce que + normal order or inversion."
+    },
+    {
+      "id": "verbs-questions-16",
+      "type": "transform",
+      "instruction": "Make a question using the words in brackets. Use est-ce que or inversion.",
+      "prompt": "Il arrive. (à quelle heure)",
+      "answers": ["À quelle heure est-ce qu'il arrive ?", "À quelle heure arrive-t-il ?"],
+      "en": "What time is he arriving?",
+      "why": "est-ce que elides before il (est-ce qu'il); with inversion, arrive ends in a vowel so -t- is added: arrive-t-il."
+    },
+    {
+      "id": "verbs-questions-17",
+      "type": "transform",
+      "instruction": "Turn this statement into a question using inversion.",
+      "prompt": "Tu as fini tes devoirs.",
+      "answers": ["As-tu fini tes devoirs ?"],
+      "en": "Have you finished your homework?",
+      "why": "In the perfect tense, only the auxiliary is inverted: As-tu + fini."
+    },
+    {
+      "id": "verbs-questions-18",
+      "type": "transform",
+      "instruction": "Turn this statement into a question using inversion.",
+      "prompt": "Ta sœur aime la musique.",
+      "answers": ["Ta sœur aime-t-elle la musique ?"],
+      "en": "Does your sister like music?",
+      "why": "With a noun subject, keep the noun first and add the matching pronoun after the verb; aime ends in a vowel, so add -t-: aime-t-elle."
+    }
+  ]
+}

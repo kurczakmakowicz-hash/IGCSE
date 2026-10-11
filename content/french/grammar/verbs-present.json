@@ -1,0 +1,220 @@
+{
+  "id": "verbs-present",
+  "order": 22,
+  "area": "Verbs",
+  "title": "Present tense (regular and irregular)",
+  "spec": "Verbs: regular and irregular forms of verbs; all persons of verbs, singular and plural; tenses: present",
+  "receptive": false,
+  "summary": [
+    "Regular -er verbs: drop -er and add -e, -es, -e, -ons, -ez, -ent: je joue, nous jouons, ils jouent.",
+    "Regular -ir verbs (like finir): -is, -is, -it, -issons, -issez, -issent: je finis, nous finissons, elles choisissent.",
+    "Regular -re verbs (like vendre): -s, -s, no ending, -ons, -ez, -ent: je vends, il vend, nous attendons, ils répondent.",
+    "Learn the key irregulars by heart: être (je suis, nous sommes, ils sont), avoir (j'ai, ils ont), aller (je vais, ils vont), faire (je fais, vous faites, ils font).",
+    "pouvoir, vouloir, devoir and savoir are irregular and are followed by an infinitive: je peux sortir, ils veulent partir, nous devons travailler, elle sait nager.",
+    "prendre: je prends, nous prenons, ils prennent (apprendre and comprendre work the same). venir: je viens, nous venons, ils viennent (devenir and revenir work the same).",
+    "sortir, partir and dormir lose their last stem consonant in the singular: je sors, il part, tu dors; but nous sortons, ils partent, ils dorment.",
+    "Spelling changes keep the sound: -ger verbs add e before -ons (nous mangeons) and -cer verbs take ç before -ons (nous commençons).",
+    "acheter, appeler and préférer change their stem when the ending is silent (je, tu, il, ils): j'achète, il appelle, ils préfèrent; but nous achetons, vous appelez, nous préférons.",
+    "The present means 'I play', 'I am playing' and 'I do play'. With depuis it means 'have been doing': J'apprends le français depuis cinq ans."
+  ],
+  "cards": [
+    {
+      "id": "verbs-present-01",
+      "type": "flip",
+      "front": "How do you form the present tense of a regular -er verb like jouer?",
+      "back": "Remove -er and add -e, -es, -e, -ons, -ez, -ent: je joue, tu joues, il/elle/on joue, nous jouons, vous jouez, ils/elles jouent. The -e, -es and -ent endings are all silent."
+    },
+    {
+      "id": "verbs-present-02",
+      "type": "gap",
+      "prompt": "Le samedi, mes parents ___ au tennis avec leurs amis.",
+      "base": "jouer",
+      "answers": ["jouent"],
+      "en": "On Saturdays my parents play tennis with their friends.",
+      "why": "Regular -er verb with a plural subject (mes parents = ils): stem jou- + -ent."
+    },
+    {
+      "id": "verbs-present-03",
+      "type": "flip",
+      "front": "What are the present-tense endings of regular -ir and -re verbs?",
+      "back": "-ir (finir): je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent. -re (vendre): je vends, tu vends, il vend, nous vendons, vous vendez, ils vendent. Watch out: the il/elle form of -re verbs has no ending at all (il vend)."
+    },
+    {
+      "id": "verbs-present-04",
+      "type": "gap",
+      "prompt": "À la cantine, nous ___ toujours le menu végétarien.",
+      "base": "choisir",
+      "answers": ["choisissons"],
+      "en": "In the canteen we always choose the vegetarian menu.",
+      "why": "Regular -ir verbs add -iss- in the plural: nous choisissons."
+    },
+    {
+      "id": "verbs-present-05",
+      "type": "gap",
+      "prompt": "Mon frère ___ le bus devant la poste tous les matins.",
+      "base": "attendre",
+      "answers": ["attend"],
+      "en": "My brother waits for the bus outside the post office every morning.",
+      "why": "Regular -re verb: the il/elle form is just the stem with no ending: il attend."
+    },
+    {
+      "id": "verbs-present-06",
+      "type": "flip",
+      "front": "Give the present tense of être, avoir, aller and faire for je, nous and ils.",
+      "back": "être: je suis, nous sommes, ils sont. avoir: j'ai, nous avons, ils ont. aller: je vais, nous allons, ils vont. faire: je fais, nous faisons, ils font (and vous faites, never 'faisez')."
+    },
+    {
+      "id": "verbs-present-07",
+      "type": "gap",
+      "prompt": "Mes cousins ___ en vacances en Espagne chaque été.",
+      "base": "aller",
+      "answers": ["vont"],
+      "en": "My cousins go on holiday to Spain every summer.",
+      "why": "aller is irregular: ils/elles vont."
+    },
+    {
+      "id": "verbs-present-08",
+      "type": "gap",
+      "prompt": "Qu'est-ce que vous ___ le week-end ?",
+      "base": "faire",
+      "answers": ["faites"],
+      "en": "What do you do at the weekend?",
+      "why": "faire is irregular in the vous form: vous faites (like vous êtes and vous dites)."
+    },
+    {
+      "id": "verbs-present-09",
+      "type": "flip",
+      "front": "Give the present of pouvoir, vouloir, devoir and savoir. What follows them?",
+      "back": "pouvoir: je peux, il peut, nous pouvons, ils peuvent. vouloir: je veux, il veut, nous voulons, ils veulent. devoir: je dois, il doit, nous devons, ils doivent. savoir: je sais, il sait, nous savons, ils savent. All four are followed by an infinitive: Je dois partir. Elle sait nager."
+    },
+    {
+      "id": "verbs-present-10",
+      "type": "gap",
+      "prompt": "Les élèves ne ___ pas utiliser leur portable en classe.",
+      "base": "pouvoir",
+      "answers": ["peuvent"],
+      "en": "Pupils can't use their mobile phones in class.",
+      "why": "pouvoir is irregular: ils peuvent. The second verb (utiliser) stays in the infinitive."
+    },
+    {
+      "id": "verbs-present-11",
+      "type": "gap",
+      "prompt": "Ma petite sœur ne ___ pas encore nager.",
+      "base": "savoir",
+      "answers": ["sait"],
+      "en": "My little sister can't swim yet.",
+      "why": "savoir: je sais, tu sais, il/elle sait. savoir + infinitive means 'to know how to'."
+    },
+    {
+      "id": "verbs-present-12",
+      "type": "gap",
+      "prompt": "Le matin, nous ___ le train de sept heures pour aller au lycée.",
+      "base": "prendre",
+      "answers": ["prenons"],
+      "en": "In the morning we take the seven o'clock train to go to school.",
+      "why": "prendre: nous prenons with one n; only ils/elles prennent has two."
+    },
+    {
+      "id": "verbs-present-13",
+      "type": "gap",
+      "prompt": "Mes grands-parents ___ nous voir tous les dimanches.",
+      "base": "venir",
+      "answers": ["viennent"],
+      "en": "My grandparents come to see us every Sunday.",
+      "why": "venir: ils viennent (stem vienn- + -ent). Only nous venons and vous venez keep the ven- stem."
+    },
+    {
+      "id": "verbs-present-14",
+      "type": "gap",
+      "prompt": "Le vendredi soir, je ___ avec mes copains.",
+      "base": "sortir",
+      "answers": ["sors"],
+      "en": "On Friday evenings I go out with my friends.",
+      "why": "sortir drops the t in the singular: je sors, tu sors, il sort; the plural keeps it: nous sortons, ils sortent."
+    },
+    {
+      "id": "verbs-present-15",
+      "type": "flip",
+      "front": "Give the je, nous and ils forms of mettre, dire, voir, lire, écrire and boire.",
+      "back": "mettre: je mets, nous mettons, ils mettent. dire: je dis, nous disons, ils disent (vous dites). voir: je vois, nous voyons, ils voient. lire: je lis, nous lisons, ils lisent. écrire: j'écris, nous écrivons, ils écrivent. boire: je bois, nous buvons, ils boivent."
+    },
+    {
+      "id": "verbs-present-16",
+      "type": "transform",
+      "instruction": "Rewrite the sentence with nous as the subject.",
+      "prompt": "Je mets la table et j'écris le menu.",
+      "answers": ["Nous mettons la table et nous écrivons le menu.", "Nous mettons la table et écrivons le menu."],
+      "en": "We lay the table and write the menu.",
+      "why": "mettre: nous mettons (double t); écrire adds a v in the plural: nous écrivons."
+    },
+    {
+      "id": "verbs-present-17",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the plural, starting with Ils.",
+      "prompt": "Il boit du thé et lit le journal.",
+      "answers": ["Ils boivent du thé et lisent le journal.", "Ils boivent du thé et ils lisent le journal."],
+      "en": "They drink tea and read the newspaper.",
+      "why": "boire: il boit → ils boivent; lire: il lit → ils lisent (an s appears in the plural)."
+    },
+    {
+      "id": "verbs-present-18",
+      "type": "flip",
+      "front": "Which verbs change their spelling in the present tense, and why?",
+      "back": "-ger verbs add e before -ons to keep the soft g: nous mangeons, nous nageons. -cer verbs use ç before -ons to keep the soft c: nous commençons. acheter, appeler and préférer change the stem when the ending is silent (je, tu, il, ils): j'achète, il appelle, ils préfèrent; but nous achetons, vous appelez, nous préférons."
+    },
+    {
+      "id": "verbs-present-19",
+      "type": "gap",
+      "prompt": "Nous ___ au restaurant italien le vendredi soir.",
+      "base": "manger",
+      "answers": ["mangeons"],
+      "en": "We eat at the Italian restaurant on Friday evenings.",
+      "why": "-ger verbs keep an e before -ons so the g stays soft: nous mangeons."
+    },
+    {
+      "id": "verbs-present-20",
+      "type": "gap",
+      "prompt": "Nous ___ les cours à huit heures et demie.",
+      "base": "commencer",
+      "answers": ["commençons"],
+      "en": "We start lessons at half past eight.",
+      "why": "-cer verbs need ç before o to keep the soft s sound: nous commençons."
+    },
+    {
+      "id": "verbs-present-21",
+      "type": "gap",
+      "prompt": "Ma mère ___ toujours des légumes bio au marché.",
+      "base": "acheter",
+      "answers": ["achète"],
+      "en": "My mother always buys organic vegetables at the market.",
+      "why": "acheter takes a grave accent when the ending is silent: elle achète (but nous achetons)."
+    },
+    {
+      "id": "verbs-present-22",
+      "type": "gap",
+      "prompt": "Mon frère ___ souvent ses amis le soir.",
+      "base": "appeler",
+      "answers": ["appelle"],
+      "en": "My brother often phones his friends in the evening.",
+      "why": "appeler doubles the l when the ending is silent: il appelle (but nous appelons)."
+    },
+    {
+      "id": "verbs-present-23",
+      "type": "gap",
+      "prompt": "Mes amis ___ le foot au rugby.",
+      "base": "préférer",
+      "answers": ["préfèrent"],
+      "en": "My friends prefer football to rugby.",
+      "why": "The second é of préférer becomes è when the ending is silent: ils préfèrent (but vous préférez)."
+    },
+    {
+      "id": "verbs-present-24",
+      "type": "gap",
+      "prompt": "Mon frère et moi, nous ___ l'espagnol depuis deux ans.",
+      "base": "apprendre",
+      "answers": ["apprenons"],
+      "en": "My brother and I have been learning Spanish for two years.",
+      "why": "depuis + present tense describes something that started in the past and is still going on. apprendre works like prendre: nous apprenons."
+    }
+  ]
+}

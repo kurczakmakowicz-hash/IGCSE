@@ -1,0 +1,169 @@
+{
+  "id": "verbs-negatives",
+  "order": 23,
+  "area": "Verbs",
+  "title": "Negative forms",
+  "spec": "Verbs: negative forms",
+  "receptive": false,
+  "summary": [
+    "ne goes before the verb and pas goes after it: Je ne mange pas de viande. ne becomes n' before a vowel or silent h: Il n'aime pas le sport.",
+    "Other negatives work the same way: ne...jamais (never), ne...plus (no longer), ne...rien (nothing), ne...personne (nobody), ne...que (only), ne...pas encore (not yet), ne...aucun(e) (no, not a single), ne...ni...ni (neither...nor).",
+    "After a negative, un, une, du, de la, de l' and des become de (d' before a vowel): J'ai un chien → Je n'ai pas de chien. Il boit du café → Il ne boit jamais de café.",
+    "le, la, l' and les do not change: Je n'aime pas les maths. After être the article stays too: Ce n'est pas un problème.",
+    "ne...que is not a true negative, so the article stays: Je ne mange que des légumes.",
+    "In the perfect tense the negative goes round the auxiliary: Je n'ai pas fini. Elle n'est jamais allée en France. Nous n'avons rien acheté.",
+    "But personne, que, aucun(e) and ni...ni go after the past participle: Je n'ai vu personne. Il n'a mangé qu'une pomme.",
+    "Object and reflexive pronouns stay next to the verb, inside the negative: Je ne le vois pas. Je ne l'ai pas vu. Elle ne se lève jamais tôt.",
+    "Before an infinitive, both parts go together in front of it: Ne pas fumer. J'ai décidé de ne plus manger de viande.",
+    "personne and rien can be the subject: Personne n'est venu. Rien ne marche. They can also be one-word answers: Qu'est-ce que tu fais ? – Rien."
+  ],
+  "cards": [
+    {
+      "id": "verbs-negatives-01",
+      "type": "flip",
+      "front": "Where do ne and pas go in a present-tense sentence?",
+      "back": "Round the conjugated verb: ne before, pas after. Je ne regarde pas la télé. ne shortens to n' before a vowel or silent h: Nous n'habitons pas en ville."
+    },
+    {
+      "id": "verbs-negatives-02",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...pas.",
+      "prompt": "Mon frère aime les maths.",
+      "answers": ["Mon frère n'aime pas les maths."],
+      "en": "My brother doesn't like maths.",
+      "why": "ne becomes n' before the vowel of aime. les is a definite article, so it does not change after the negative."
+    },
+    {
+      "id": "verbs-negatives-03",
+      "type": "flip",
+      "front": "What do ne...jamais, ne...plus, ne...rien, ne...personne, ne...que, ne...pas encore, ne...aucun(e) and ne...ni...ni mean?",
+      "back": "never; no longer / not any more; nothing; nobody; only; not yet; no / not a single; neither...nor. Je ne fume jamais. Il ne travaille plus. Je ne fais rien. Je ne connais personne. Elle n'a que dix euros. Je n'ai pas encore mangé. Il n'a aucun ami. Je n'aime ni le thé ni le café."
+    },
+    {
+      "id": "verbs-negatives-04",
+      "type": "flip",
+      "front": "What happens to un, une, du, de la and des after a negative?",
+      "back": "They all become de (d' before a vowel): J'ai une sœur → Je n'ai pas de sœur. Il mange du pain → Il ne mange pas de pain. Nous avons des animaux → Nous n'avons pas d'animaux. Exceptions: le, la, les never change (Je n'aime pas les carottes), and after être or ne...que the article stays (Ce n'est pas un problème)."
+    },
+    {
+      "id": "verbs-negatives-05",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...pas.",
+      "prompt": "Il y a une piscine dans mon village.",
+      "answers": ["Il n'y a pas de piscine dans mon village."],
+      "en": "There isn't a swimming pool in my village.",
+      "why": "With il y a, n' goes before y and pas after a. une becomes de after the negative."
+    },
+    {
+      "id": "verbs-negatives-06",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...plus.",
+      "prompt": "Mon père boit du café.",
+      "answers": ["Mon père ne boit plus de café."],
+      "en": "My father doesn't drink coffee any more.",
+      "why": "ne...plus goes round the verb, and du becomes de after a negative."
+    },
+    {
+      "id": "verbs-negatives-07",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using ne...que instead of seulement.",
+      "prompt": "Elle mange seulement des légumes.",
+      "answers": ["Elle ne mange que des légumes."],
+      "en": "She only eats vegetables.",
+      "why": "ne...que means 'only' and que goes directly before the thing it limits. It is not a true negative, so des does not change to de."
+    },
+    {
+      "id": "verbs-negatives-08",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...aucun(e).",
+      "prompt": "J'ai une idée.",
+      "answers": ["Je n'ai aucune idée."],
+      "en": "I have no idea.",
+      "why": "aucun(e) replaces the article and agrees with the noun: idée is feminine, so aucune."
+    },
+    {
+      "id": "verbs-negatives-09",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...ni...ni.",
+      "prompt": "Il aime le thé et le café.",
+      "answers": ["Il n'aime ni le thé ni le café."],
+      "en": "He likes neither tea nor coffee.",
+      "why": "ne goes before the verb and ni replaces et, going before each noun. The definite articles stay."
+    },
+    {
+      "id": "verbs-negatives-10",
+      "type": "flip",
+      "front": "Where does the negative go in the perfect tense?",
+      "back": "Round the auxiliary (avoir or être): Je n'ai pas mangé. Elle n'est jamais venue. Nous n'avons rien acheté. BUT personne, que, aucun(e) and ni...ni go after the past participle: Je n'ai vu personne. Il n'a mangé qu'une pomme."
+    },
+    {
+      "id": "verbs-negatives-11",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...pas encore.",
+      "prompt": "J'ai fini mes devoirs.",
+      "answers": ["Je n'ai pas encore fini mes devoirs."],
+      "en": "I haven't finished my homework yet.",
+      "why": "In the perfect tense, ne...pas encore goes round the auxiliary: n'ai pas encore + fini."
+    },
+    {
+      "id": "verbs-negatives-12",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...jamais.",
+      "prompt": "Nous sommes allés en Italie.",
+      "answers": ["Nous ne sommes jamais allés en Italie."],
+      "en": "We have never been to Italy.",
+      "why": "jamais goes between the auxiliary (sommes) and the past participle (allés)."
+    },
+    {
+      "id": "verbs-negatives-13",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...rien (rien replaces quelque chose).",
+      "prompt": "Elle a acheté quelque chose au marché.",
+      "answers": ["Elle n'a rien acheté au marché."],
+      "en": "She didn't buy anything at the market.",
+      "why": "rien behaves like pas: it goes between the auxiliary and the past participle."
+    },
+    {
+      "id": "verbs-negatives-14",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...personne (personne replaces quelqu'un).",
+      "prompt": "J'ai vu quelqu'un dans le parc.",
+      "answers": ["Je n'ai vu personne dans le parc."],
+      "en": "I didn't see anyone in the park.",
+      "why": "Unlike pas and rien, personne goes after the past participle: n'ai vu personne."
+    },
+    {
+      "id": "verbs-negatives-15",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...pas.",
+      "prompt": "Je l'ai invitée à ma fête.",
+      "answers": ["Je ne l'ai pas invitée à ma fête."],
+      "en": "I didn't invite her to my party.",
+      "why": "The object pronoun stays attached to the auxiliary: ne + l' + ai + pas + participle."
+    },
+    {
+      "id": "verbs-negatives-16",
+      "type": "transform",
+      "instruction": "Make this sentence negative using ne...jamais.",
+      "prompt": "Mon frère se lève tôt le dimanche.",
+      "answers": ["Mon frère ne se lève jamais tôt le dimanche."],
+      "en": "My brother never gets up early on Sundays.",
+      "why": "With a reflexive verb, ne goes before the reflexive pronoun: ne se lève jamais."
+    },
+    {
+      "id": "verbs-negatives-17",
+      "type": "flip",
+      "front": "How do you make an infinitive negative?",
+      "back": "Put both parts of the negative together in front of the infinitive: Ne pas fumer. Ne pas marcher sur la pelouse. J'ai décidé de ne plus manger de viande. J'essaie de ne jamais arriver en retard."
+    },
+    {
+      "id": "verbs-negatives-18",
+      "type": "transform",
+      "instruction": "Make the infinitive negative using ne pas.",
+      "prompt": "Le prof nous demande de parler en classe.",
+      "answers": ["Le prof nous demande de ne pas parler en classe."],
+      "en": "The teacher asks us not to talk in class.",
+      "why": "Before an infinitive, ne pas goes together in front of it: de ne pas parler."
+    }
+  ]
+}

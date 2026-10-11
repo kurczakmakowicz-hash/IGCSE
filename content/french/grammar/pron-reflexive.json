@@ -1,0 +1,166 @@
+{
+  "id": "pron-reflexive",
+  "order": 14,
+  "area": "Pronouns",
+  "title": "Reflexive pronouns and reflexive verbs",
+  "spec": "Pronouns: reflexive; Verbs: regular and irregular forms of verbs, including reflexive verbs",
+  "receptive": false,
+  "summary": [
+    "A reflexive verb has an extra pronoun that refers back to the subject: se laver (to wash oneself) → je me lave.",
+    "The reflexive pronouns are me, te, se, nous, vous, se: je me couche, tu te couches, il se couche, nous nous couchons, vous vous couchez, elles se couchent.",
+    "me, te and se become m', t', s' before a vowel or silent h: je m'appelle, tu t'habilles, elle s'amuse. nous and vous never shorten.",
+    "In the negative, ne goes before the reflexive pronoun and pas after the verb: je ne me lève pas.",
+    "In the perfect tense every reflexive verb takes être, and the past participle agrees with the subject: elle s'est levée, nous nous sommes amusés.",
+    "In the negative perfect, ne ... pas goes round the pronoun and être: je ne me suis pas réveillé.",
+    "After another verb, the reflexive pronoun matches the subject and goes before the infinitive: je vais me coucher, nous voulons nous reposer.",
+    "In positive commands the pronoun goes after the verb with a hyphen, and te becomes toi: lève-toi, dépêchons-nous, asseyez-vous.",
+    "In negative commands the pronoun stays before the verb: ne te lève pas, ne vous inquiétez pas."
+  ],
+  "cards": [
+    {
+      "id": "pron-reflexive-01",
+      "type": "flip",
+      "front": "What is a reflexive verb, and what are the six reflexive pronouns?",
+      "back": "A verb with an extra pronoun that refers back to the subject, e.g. se laver (to wash oneself). je me lave, tu te laves, il/elle/on se lave, nous nous lavons, vous vous lavez, ils/elles se lavent."
+    },
+    {
+      "id": "pron-reflexive-02",
+      "type": "gap",
+      "prompt": "Le matin, je ___ à sept heures.",
+      "base": "se réveiller",
+      "answers": ["me réveille"],
+      "en": "In the morning I wake up at seven o'clock.",
+      "why": "With je, the reflexive pronoun is me, and the verb takes the normal je ending: je me réveille."
+    },
+    {
+      "id": "pron-reflexive-03",
+      "type": "flip",
+      "front": "When do me, te and se become m', t' and s'?",
+      "back": "Before a vowel or silent h: je m'appelle, tu t'habilles, il s'intéresse au sport, elles s'entendent bien. nous and vous never shorten: nous nous habillons."
+    },
+    {
+      "id": "pron-reflexive-04",
+      "type": "gap",
+      "prompt": "Ma petite sœur ___ Chloé.",
+      "base": "s'appeler",
+      "answers": ["s'appelle"],
+      "en": "My little sister is called Chloé.",
+      "why": "se becomes s' before a vowel; appeler doubles the l in the il/elle form: elle s'appelle."
+    },
+    {
+      "id": "pron-reflexive-05",
+      "type": "gap",
+      "prompt": "Tu ___ bien avec tes parents ?",
+      "base": "s'entendre",
+      "answers": ["t'entends"],
+      "en": "Do you get on well with your parents?",
+      "why": "te becomes t' before a vowel, and entendre takes the tu ending -s: tu t'entends."
+    },
+    {
+      "id": "pron-reflexive-06",
+      "type": "gap",
+      "prompt": "Le samedi, nous ___ dans le parc avec nos amis.",
+      "base": "se promener",
+      "answers": ["nous promenons"],
+      "en": "On Saturdays we go for a walk in the park with our friends.",
+      "why": "The nous form needs nous twice, subject and reflexive pronoun: nous nous promenons. There is no accent in the nous form of promener."
+    },
+    {
+      "id": "pron-reflexive-07",
+      "type": "flip",
+      "front": "Where do ne and pas go with a reflexive verb in the present tense?",
+      "back": "ne goes before the reflexive pronoun and pas after the verb, so the pronoun stays next to its verb: je ne me lève pas, il ne s'ennuie jamais, nous ne nous disputons pas."
+    },
+    {
+      "id": "pron-reflexive-08",
+      "type": "transform",
+      "instruction": "Make the sentence negative using ne ... pas.",
+      "prompt": "Je me lève tôt le dimanche.",
+      "answers": ["Je ne me lève pas tôt le dimanche."],
+      "en": "I don't get up early on Sundays.",
+      "why": "ne goes before the reflexive pronoun and pas after the verb: je ne me lève pas."
+    },
+    {
+      "id": "pron-reflexive-09",
+      "type": "flip",
+      "front": "How do reflexive verbs form the perfect tense?",
+      "back": "Always with être, with the reflexive pronoun before être; the past participle agrees with the subject: je me suis levé(e), tu t'es levé(e), il s'est levé, elle s'est levée, nous nous sommes levé(e)s, vous vous êtes levé(e)(s), ils se sont levés, elles se sont levées."
+    },
+    {
+      "id": "pron-reflexive-10",
+      "type": "gap",
+      "prompt": "Hier, Sophie ___ à six heures.",
+      "base": "se lever",
+      "answers": ["s'est levée"],
+      "en": "Yesterday Sophie got up at six o'clock.",
+      "why": "Reflexive verbs take être in the perfect; the participle agrees with the feminine singular subject: elle s'est levée."
+    },
+    {
+      "id": "pron-reflexive-11",
+      "type": "gap",
+      "prompt": "Samedi dernier, mes amis et moi, nous ___ à la fête.",
+      "base": "s'amuser",
+      "answers": ["nous sommes amusés"],
+      "en": "Last Saturday my friends and I had fun at the party.",
+      "why": "Perfect with être: nous nous sommes + participle. mes amis et moi is a masculine (mixed) plural subject, so amusés."
+    },
+    {
+      "id": "pron-reflexive-12",
+      "type": "transform",
+      "instruction": "Put the sentence into the perfect tense.",
+      "prompt": "Elle se couche à dix heures.",
+      "answers": ["Elle s'est couchée à dix heures."],
+      "en": "She went to bed at ten o'clock.",
+      "why": "se coucher takes être in the perfect: s'est (se shortens before est), and the participle agrees with elle: couchée."
+    },
+    {
+      "id": "pron-reflexive-13",
+      "type": "transform",
+      "instruction": "Make the sentence negative using ne ... pas.",
+      "prompt": "Je me suis réveillé à l'heure.",
+      "answers": ["Je ne me suis pas réveillé à l'heure."],
+      "en": "I didn't wake up on time.",
+      "why": "In the perfect, ne goes before the reflexive pronoun and pas after être: je ne me suis pas réveillé."
+    },
+    {
+      "id": "pron-reflexive-14",
+      "type": "flip",
+      "front": "What happens to the reflexive pronoun when a reflexive verb is an infinitive after another verb?",
+      "back": "It stays, matches the subject and goes just before the infinitive: je vais me coucher, tu dois te dépêcher, nous voulons nous reposer, elles aiment se baigner. Never 'je vais se coucher'."
+    },
+    {
+      "id": "pron-reflexive-15",
+      "type": "gap",
+      "prompt": "Ce soir, tu dois ___ tôt parce que tu as un examen demain.",
+      "base": "se coucher",
+      "answers": ["te coucher"],
+      "en": "Tonight you must go to bed early because you have an exam tomorrow.",
+      "why": "After devoir the reflexive verb is an infinitive, but its pronoun still matches the subject tu: tu dois te coucher."
+    },
+    {
+      "id": "pron-reflexive-16",
+      "type": "flip",
+      "front": "How do you give a command with a reflexive verb, positive and negative?",
+      "back": "Positive: pronoun after the verb with a hyphen, and te becomes toi: lève-toi !, dépêchons-nous !, asseyez-vous ! Negative: pronoun back before the verb: ne te lève pas !, ne vous inquiétez pas !"
+    },
+    {
+      "id": "pron-reflexive-17",
+      "type": "gap",
+      "prompt": "Il est sept heures et demie ! ___, tu vas être en retard !",
+      "base": "se dépêcher",
+      "hint": "(command, tu form)",
+      "answers": ["Dépêche-toi"],
+      "en": "It's half past seven! Hurry up, you're going to be late!",
+      "why": "Positive command: the pronoun follows the verb with a hyphen and te becomes toi; -er verbs drop the -s in the tu command: dépêche-toi."
+    },
+    {
+      "id": "pron-reflexive-18",
+      "type": "transform",
+      "instruction": "Make the command negative.",
+      "prompt": "Lève-toi !",
+      "answers": ["Ne te lève pas !"],
+      "en": "Don't get up!",
+      "why": "In a negative command the pronoun goes back before the verb and toi becomes te: ne te lève pas."
+    }
+  ]
+}

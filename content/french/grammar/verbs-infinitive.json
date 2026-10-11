@@ -1,0 +1,164 @@
+{
+  "id": "verbs-infinitive",
+  "order": 26,
+  "area": "Verbs",
+  "title": "Verbs followed by an infinitive",
+  "spec": "Verbs: verbs followed by an infinitive, with or without a preposition; dependent infinitives (faire réparer) (R)",
+  "receptive": false,
+  "summary": [
+    "When two verbs come together, only the first is conjugated and the second stays in the infinitive: J'aime nager. Nous allons sortir.",
+    "No preposition after aimer, adorer, détester, préférer, vouloir, pouvoir, devoir, savoir, aller, espérer: Je préfère lire. Elle espère devenir médecin.",
+    "à + infinitive after commencer, apprendre, aider, réussir, continuer: J'apprends à conduire. Il a réussi à trouver un emploi.",
+    "de + infinitive after décider, essayer, oublier, arrêter, finir, choisir, refuser and avoir envie / besoin / peur: J'ai décidé de partir. de becomes d' before a vowel: J'ai oublié d'acheter du pain.",
+    "pour + infinitive = (in order) to: Je travaille pour gagner de l'argent. sans + infinitive = without ...ing: Il est parti sans dire au revoir.",
+    "English '-ing' after a preposition is an infinitive in French: avant de manger (before eating), au lieu de travailler (instead of working).",
+    "Object pronouns go in front of the infinitive they belong to: Je vais le faire. Je veux lui parler.",
+    "Recognise only: faire + infinitive = to have something done: Je fais réparer mon vélo (I'm having my bike repaired)."
+  ],
+  "cards": [
+    {
+      "id": "verbs-infinitive-01",
+      "type": "flip",
+      "front": "Which common verbs are followed directly by an infinitive, with no preposition?",
+      "back": "aimer, adorer, détester, préférer, vouloir, pouvoir, devoir, savoir, aller, espérer (and il faut): J'adore danser. Je sais nager. Nous allons voyager. Elle espère devenir médecin."
+    },
+    {
+      "id": "verbs-infinitive-02",
+      "type": "gap",
+      "prompt": "Ma sœur ___ devenir vétérinaire plus tard.",
+      "base": "vouloir",
+      "answers": ["veut"],
+      "en": "My sister wants to become a vet later on.",
+      "why": "vouloir is followed directly by an infinitive. Only the first verb is conjugated: elle veut + devenir."
+    },
+    {
+      "id": "verbs-infinitive-03",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using the verb in brackets + infinitive.",
+      "prompt": "Je fais du ski. (adorer)",
+      "answers": ["J'adore faire du ski."],
+      "en": "I love skiing.",
+      "why": "adorer + infinitive with no preposition; je becomes j' before the vowel of adore. English '-ing' is an infinitive here."
+    },
+    {
+      "id": "verbs-infinitive-04",
+      "type": "flip",
+      "front": "Name five verbs followed by à + infinitive.",
+      "back": "commencer à, apprendre à, aider à, réussir à, continuer à (also s'habituer à and hésiter à): J'ai commencé à jouer du piano. Il m'aide à faire mes devoirs. Elle a réussi à trouver un stage."
+    },
+    {
+      "id": "verbs-infinitive-05",
+      "type": "gap",
+      "prompt": "Mon petit frère apprend ___ nager à la piscine municipale.",
+      "hint": "(à or de?)",
+      "answers": ["à"],
+      "en": "My little brother is learning to swim at the local swimming pool.",
+      "why": "apprendre is followed by à + infinitive: apprendre à nager."
+    },
+    {
+      "id": "verbs-infinitive-06",
+      "type": "gap",
+      "prompt": "Est-ce que tu peux m'aider ___ ranger ma chambre ?",
+      "hint": "(à or de?)",
+      "answers": ["à"],
+      "en": "Can you help me tidy my room?",
+      "why": "aider quelqu'un à + infinitive = to help someone (to) do something."
+    },
+    {
+      "id": "verbs-infinitive-07",
+      "type": "flip",
+      "front": "Name verbs and expressions followed by de + infinitive.",
+      "back": "décider de, essayer de, oublier de, arrêter de, finir de, choisir de, refuser de, avoir envie de, avoir besoin de, avoir peur de: J'ai décidé de faire un apprentissage. de becomes d' before a vowel or silent h: J'ai oublié d'apporter mon livre."
+    },
+    {
+      "id": "verbs-infinitive-08",
+      "type": "gap",
+      "prompt": "J'essaie ___ manger cinq fruits et légumes par jour.",
+      "hint": "(à or de?)",
+      "answers": ["de"],
+      "en": "I try to eat five portions of fruit and vegetables a day.",
+      "why": "essayer is followed by de + infinitive."
+    },
+    {
+      "id": "verbs-infinitive-09",
+      "type": "gap",
+      "prompt": "Mon père a arrêté ___ fumer l'année dernière.",
+      "hint": "(à or de?)",
+      "answers": ["de"],
+      "en": "My father stopped smoking last year.",
+      "why": "arrêter is followed by de + infinitive. English 'stopped smoking' becomes arrêter de fumer."
+    },
+    {
+      "id": "verbs-infinitive-10",
+      "type": "gap",
+      "prompt": "Nous avons envie ___ partir au bord de la mer.",
+      "hint": "(à or de?)",
+      "answers": ["de"],
+      "en": "We feel like going to the seaside.",
+      "why": "avoir envie de + infinitive = to feel like doing / to want to do."
+    },
+    {
+      "id": "verbs-infinitive-11",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using réussir à + infinitive in the perfect tense.",
+      "prompt": "Je trouve un petit boulot.",
+      "answers": ["J'ai réussi à trouver un petit boulot."],
+      "en": "I managed to find a part-time job.",
+      "why": "réussir à + infinitive; in the perfect only réussir changes (j'ai réussi) and trouver stays in the infinitive."
+    },
+    {
+      "id": "verbs-infinitive-12",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using décider de + infinitive in the perfect tense.",
+      "prompt": "Je mange moins de sucre.",
+      "answers": ["J'ai décidé de manger moins de sucre."],
+      "en": "I decided to eat less sugar.",
+      "why": "décider de + infinitive; the perfect is j'ai décidé, and manger stays in the infinitive."
+    },
+    {
+      "id": "verbs-infinitive-13",
+      "type": "flip",
+      "front": "How do you say 'in order to', 'without ...ing' and 'before ...ing' with a verb?",
+      "back": "pour + infinitive: Je fais du baby-sitting pour gagner de l'argent. sans + infinitive: Elle est partie sans dire au revoir. avant de + infinitive: Lave-toi les mains avant de manger."
+    },
+    {
+      "id": "verbs-infinitive-14",
+      "type": "gap",
+      "prompt": "Je mets de l'argent de côté ___ acheter une voiture.",
+      "hint": "(in order to)",
+      "answers": ["pour"],
+      "en": "I'm saving money (in order) to buy a car.",
+      "why": "pour + infinitive expresses purpose: in order to."
+    },
+    {
+      "id": "verbs-infinitive-15",
+      "type": "gap",
+      "prompt": "Il est sorti ___ fermer la porte à clé.",
+      "hint": "(without)",
+      "answers": ["sans"],
+      "en": "He went out without locking the door.",
+      "why": "sans + infinitive = without ...ing. French uses the infinitive where English uses '-ing'."
+    },
+    {
+      "id": "verbs-infinitive-16",
+      "type": "transform",
+      "instruction": "Join the two sentences using pour + infinitive.",
+      "prompt": "Je travaille le samedi. Je gagne de l'argent.",
+      "answers": ["Je travaille le samedi pour gagner de l'argent."],
+      "en": "I work on Saturdays to earn money.",
+      "why": "pour + infinitive gives the purpose: the second verb becomes the infinitive gagner."
+    },
+    {
+      "id": "verbs-infinitive-17",
+      "type": "flip",
+      "front": "Recognise: what does faire + infinitive mean? (e.g. Je fais réparer mon vélo.)",
+      "back": "To have something done, or to make someone do something. Je fais réparer mon vélo = I'm having my bike repaired. Nous avons fait construire un garage = We had a garage built. Le prof nous fait travailler = The teacher makes us work. You need to understand this, not produce it."
+    },
+    {
+      "id": "verbs-infinitive-18",
+      "type": "flip",
+      "front": "Recognise: what does 'Elle s'est fait couper les cheveux' mean?",
+      "back": "She had her hair cut. se faire + infinitive = to have something done to or for yourself: Il s'est fait opérer = He had an operation. Recognise it in reading and listening."
+    }
+  ]
+}
