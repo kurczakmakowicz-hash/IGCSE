@@ -37,6 +37,18 @@ console.log('\nVocabulary answer matching');
   ['to love', 'to hate', false, 'wrong verb'],
   ['cloudy', 'cloud', false, 'near miss is still wrong'],
   ['news stand, kiosk', 'news', false, 'half an alternative is wrong'],
+  ['agent de police (m/f)', 'agent de police', true, 'part-of-speech marker (m/f) is not an alternative'],
+  ['agent de police (m/f)', 'f', false, '...and its letters are not answers'],
+  ['voisin(e) (m/f)', 'voisin', true, 'feminine ending optional'],
+  ['voisin(e) (m/f)', 'voisine', true, 'feminine form accepted'],
+  ['aller simple (m/adj)', 'aller simple (m/adj)', true, 'typing the entry exactly as shown'],
+  ['beau/belle (adj)', 'belle', true, 'slash alternatives still split'],
+  ['bon séjour (adj+m)', 'bon sejour', true, 'combined marker (adj+m)'],
+  ['grandes vacances (f pl)', 'grandes vacances', true, 'marker (f pl)'],
+  ['thé (m)', 'thé', true, 'a word that looks like filler without its accent'],
+  ['thé (m)', 'le thé', true, '...with its article'],
+  ['thé (m)', 'café', false, '...and a wrong word is still wrong'],
+  ['à', 'à', true, 'preposition à'],
 ].forEach(function (c) {
   check(Match.accepts(c[0], c[1]) === c[2],
     JSON.stringify(c[0]) + ' <- ' + JSON.stringify(c[1]) + '  ' + c[3]);

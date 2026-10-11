@@ -436,6 +436,8 @@
    * so the session ends only when every card has been answered at least "Hard". */
   function runSession(slot, queue, onFinish) {
     var total = queue.length, finished = 0, reviews = 0;
+    // Starting a new set on the same page abandons this one.
+    var token = slot.session = {};
     var meter = el('div.queue-meter');
     var cardSlot = el('div');
     slot.textContent = '';
@@ -456,7 +458,11 @@
         return;
       }
       var item = queue.shift();
+      var graded = false;
+      document.onkeydown = null;   // the previous card's shortcuts must not reach this one
       cardSlot.appendChild(cardFor(item, function (g) {
+        if (graded || slot.session !== token) return;
+        graded = true;
         S.review(item.id, g);
         reviews++;
         if (g === 0) queue.splice(Math.min(4, queue.length), 0, item);
@@ -484,6 +490,9 @@
       ]));
       return;
     }
+    // Focus would otherwise stay on the Start button, and the next Enter or
+    // Space would start the set over.
+    if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
     runSession(slot, queue, function (reviews) {
       return el('div.empty', {}, [
         el('span.big', { text: '✓' }),
@@ -507,6 +516,13 @@
     return pointCard(item, onGrade);
   }
 
+  /* Card shortcuts must leave keys alone when they are aimed at a control
+   * (Enter on a focused grade button means that button) and ignore auto-repeat,
+   * so holding a key down cannot answer cards the student has not seen. */
+  function ownKey(e) {
+    return !e.repeat && !/^(BUTTON|A|SELECT|INPUT|TEXTAREA)$/.test(e.target.tagName);
+  }
+
   function gradeButtons(item, onGrade) {
     var card = S.card(item.id);
     var opts = [[0, 'Again'], [1, 'Hard'], [2, 'Good'], [3, 'Easy']];
@@ -524,7 +540,7 @@
       text: 'Keys 1–4'
     }));
     document.onkeydown = function (e) {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (!ownKey(e)) return;
       var i = ['1', '2', '3', '4'].indexOf(e.key);
       if (i >= 0) { e.preventDefault(); onGrade(i); }
     };
@@ -627,6 +643,7 @@
       if (checked) return;
       checked = true;
       var res = o.check(input.value);
+      input.blur();   // some browsers keep focus on a disabled field
       input.disabled = true;
       verdict.className = 'verdict ' + (res.right ? 'ok' : 'no');
       verdict.textContent = (res.right ? '✓ ' : '✗ ') + (res.note || (res.right ? 'Correct' : 'Not quite'));
@@ -641,6 +658,7 @@
         : 'Wrong — Enter for "Again", unless it was only a typo.' }));
       var grade = res.right ? 2 : 0;
       document.onkeydown = function (e) {
+        if (!ownKey(e)) return;
         if (e.key === 'Enter') { e.preventDefault(); onGrade(grade); return; }
         var i = ['1', '2', '3', '4'].indexOf(e.key);
         if (i >= 0) { e.preventDefault(); onGrade(i); }
@@ -650,6 +668,7 @@
     input.addEventListener('keydown', function (e) {
       if (e.key !== 'Enter') return;
       e.preventDefault();
+      if (e.repeat) return;
       e.stopPropagation();   // or the same keypress would also grade the card
       doCheck();
     });
@@ -675,6 +694,7 @@
       wrap.appendChild(gradeButtons(o.item, onGrade));
     }
     document.onkeydown = function (e) {
+      if (!ownKey(e)) return;
       if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); show(); }
     };
     return wrap;
@@ -871,8 +891,8 @@
 
     var gaps = S.grammar.filter(function (i) { return i.card.type === 'gap'; });
     var topicSelect = el('select', { 'aria-label': 'Topic' }, [
-      el('option', { value: 'exam', text: 'Exam-style mix: gap sentences from every topic (' + gaps.length + ')' }),
-      el('option', { value: 'all', text: 'All topics in order (' + S.grammar.length + ' cards)' })
+      el('option', { value: 'all', text: 'All topics in order (' + S.grammar.length + ' cards)' }),
+      el('option', { value: 'exam', text: 'Exam-style mix: gap sentences from every topic (' + gaps.length + ')' })
     ].concat(S.grammarTopics.map(function (t) {
       return el('option', { value: t.id, text: t.title + ' (' + t.items.length + ')' });
     })));
@@ -1160,7 +1180,7 @@
     var a = el('a', { href: url, download: name });
     document.body.appendChild(a);
     a.click();
-    setTimeout(function () { URL.revokeObjectURL(url); a.remove(); }, 0);
+    setTimeout(function () { URL.revokeObjectURL(url); a.remove(); }, 30000);   // some browsers fetch late
   }
 
   function viewWeak() {
@@ -1274,6 +1294,10 @@
     });
   }
 
+  function decode(s) {
+    try { return decodeURIComponent(s); } catch (e) { return s; }
+  }
+
   function parseHash() {
     var raw = (location.hash || '#/today').slice(1);
     var qi = raw.indexOf('?');
@@ -1281,7 +1305,7 @@
     if (qi >= 0) {
       raw.slice(qi + 1).split('&').forEach(function (kv) {
         var p = kv.split('=');
-        query[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || '');
+        query[decode(p[0])] = decode(p[1] || '');
       });
       raw = raw.slice(0, qi);
     }
@@ -1296,8 +1320,8 @@
       case 's': node = viewSubject(r.parts[1]); break;
       case 'review': node = viewReview(r.parts[1] || null); break;
       case 'vocab': node = viewVocab(r.query); break;
-      case 'grammar': node = r.parts[1] ? viewGrammarTopic(decodeURIComponent(r.parts[1])) : viewGrammarIndex(); break;
-      case 'verbs': node = r.parts[1] ? viewVerb(decodeURIComponent(r.parts[1])) : viewVerbs(r.query); break;
+      case 'grammar': node = r.parts[1] ? viewGrammarTopic(decode(r.parts[1])) : viewGrammarIndex(); break;
+      case 'verbs': node = r.parts[1] ? viewVerb(decode(r.parts[1])) : viewVerbs(r.query); break;
       case 'weak': node = viewWeak(); break;
       case 'data': node = viewData(); break;
       default: node = viewToday();

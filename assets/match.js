@@ -9,26 +9,39 @@ window.Match = (function () {
   /* Words that carry no information here: English infinitive markers and
    * articles, and French articles and partitives. */
   var FILLER = /\b(to|the|a|an|le|la|les|l|un|une|des|du|de|d)\b/g;
+  var FILLER_WORD = /^(to|the|a|an|le|la|les|l|un|une|des|du|de|d)$/;
 
   function normalise(s) {
-    return String(s)
+    var plain = String(s)
       .toLowerCase()
       .normalize('NFD').replace(/[\u0300-\u036f]/g, '')  // strip accents
       .replace(/['‘’]/g, "'")
       .replace(/[^a-z0-9' ]/g, ' ')
-      .replace(FILLER, ' ')
       .replace(/\s+/g, ' ')
       .trim();
+    var core = plain.replace(FILLER, ' ').replace(/\s+/g, ' ').trim();
+    if (core || !plain) return core;
+    // The word itself looks like filler once accents go (thé, à, de, là):
+    // keep its last word, dropping only articles in front of it.
+    var words = plain.split(' ');
+    while (words.length > 1 && FILLER_WORD.test(words[0])) words.shift();
+    return words.join(' ');
   }
 
   /* Every form of the expected answer that should be accepted: each
    * comma/slash/"or"-separated alternative, both with a bracketed aside
    * treated as optional and with it treated as part of the answer. So
    * "(to go) fishing" accepts "fishing" and "to go fishing" alike. */
+  /* Part-of-speech markers such as (m), (f pl), (m/f), (adj+m), (inv adj):
+   * not part of the answer, and their slashes are not alternatives. */
+  var MARKER = /\(\s*(?:(?:m|f|v|n|pl|adj|adv|prep|pron|conj|inv)\b[\s\/+]*)+\)/g;
+
   function alternatives(expected) {
-    var out = [];
-    String(expected).split(/[,\/;]|\bor\b/).forEach(function (chunk) {
-      [chunk.replace(/\([^)]*\)/g, ' '), chunk].forEach(function (variant) {
+    // The whole gloss counts too, for a student who types every alternative.
+    var out = [normalise(String(expected).replace(MARKER, ' '))];
+    String(expected).replace(MARKER, ' ').split(/[,\/;]|\bor\b/).forEach(function (chunk) {
+      // "(to go) fishing": the aside optional, or kept; "voisin(e)": glued on.
+      [chunk.replace(/\([^)]*\)/g, ' '), chunk, chunk.replace(/(\w)\((\w+)\)/g, '$1$2')].forEach(function (variant) {
         var n = normalise(variant);
         if (n && out.indexOf(n) < 0) out.push(n);
       });
@@ -37,7 +50,7 @@ window.Match = (function () {
   }
 
   function accepts(expected, given) {
-    var g = normalise(given);
+    var g = normalise(String(given).replace(MARKER, ' '));
     if (!g) return false;
     return alternatives(expected).indexOf(g) >= 0;
   }
