@@ -115,11 +115,11 @@
     {
       "id": "adj-demonstrative-13",
       "type": "gap",
-      "prompt": "Quel pull préfères-tu : ce pull-ci ou ce pull-___ ?",
-      "hint": "(that one there)",
-      "answers": ["là"],
-      "en": "Which jumper do you prefer: this one or that one?",
-      "why": "-là (with a grave accent) points to the one further away; -ci to the nearer one."
+      "prompt": "Tu connais ___ acteurs ?",
+      "base": "ce",
+      "answers": ["ces"],
+      "en": "Do you know these actors?",
+      "why": "acteurs is plural, so ces – there is no special form before a vowel in the plural (never 'cets' or 'cettes')."
     },
     {
       "id": "adj-demonstrative-14",

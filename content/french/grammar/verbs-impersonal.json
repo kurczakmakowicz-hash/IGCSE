@@ -28,6 +28,7 @@
       "type": "gap",
       "prompt": "Il ___ éteindre la lumière quand on quitte une pièce.",
       "base": "falloir",
+      "hint": "(present tense)",
       "answers": ["faut"],
       "en": "You must switch off the light when you leave a room.",
       "why": "falloir is only used with il. In the present it is il faut, followed by an infinitive."
@@ -87,12 +88,12 @@
     },
     {
       "id": "verbs-impersonal-09",
-      "type": "transform",
-      "instruction": "Make this sentence negative using ne...pas.",
-      "prompt": "Il y a des magasins dans mon village.",
-      "answers": ["Il n'y a pas de magasins dans mon village."],
-      "en": "There aren't any shops in my village.",
-      "why": "n' goes before y and pas after a; des becomes de after a negative."
+      "type": "gap",
+      "prompt": "Mes parents ont acheté cette maison ___ dix ans.",
+      "hint": "(ago)",
+      "answers": ["il y a"],
+      "en": "My parents bought this house ten years ago.",
+      "why": "il y a + a length of time means 'ago'. It goes in front of the time (il y a dix ans), and the verb is in a past tense."
     },
     {
       "id": "verbs-impersonal-10",
@@ -154,9 +155,10 @@
       "type": "gap",
       "prompt": "Il ___ mieux prendre le train que la voiture en ville.",
       "base": "valoir",
+      "hint": "(present tense)",
       "answers": ["vaut"],
       "en": "It's better to take the train than the car in town.",
-      "why": "il vaut mieux + infinitive = it's better to (valoir in the present: il vaut)."
+      "why": "il vaut mieux + infinitive = it's better to (valoir in the present: il vaut). You will also meet the conditional il vaudrait mieux = it would be better to."
     },
     {
       "id": "verbs-impersonal-18",

@@ -11,7 +11,7 @@
     "ce is used with être; it becomes c' before e and é: C'est génial. C'était nul. Ce sont mes amis.",
     "For a general comment, use c'est + masculine adjective: La natation, c'est bon pour la santé.",
     "celui (masc. sing.), celle (fem. sing.), ceux (masc. pl.), celles (fem. pl.) mean 'the one(s)' and agree with the noun they replace.",
-    "celui cannot stand alone: add -ci (this one / these) or -là (that one / those): Quel pull ? Celui-ci.",
+    "celui never stands alone: it is followed by -ci (this one / these) or -là (that one / those), by qui / que, or by de: Quel pull ? Celui-ci.",
     "celui + qui / que = the one who / that: J'ai deux frères ; celui qui joue au rugby s'appelle Tom.",
     "celui + de shows who something belongs to: Ce n'est pas mon vélo, c'est celui de ma sœur (my sister's)."
   ],
@@ -131,7 +131,7 @@
       "id": "pron-demonstrative-15",
       "type": "gap",
       "prompt": "___ qui fument mettent leur santé en danger.",
-      "hint": "(those / people)",
+      "hint": "(those)",
       "answers": ["Ceux"],
       "en": "Those who smoke put their health at risk.",
       "why": "For people in general, 'those who' is ceux qui (masculine plural)."

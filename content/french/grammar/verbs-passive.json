@@ -1,0 +1,92 @@
+{
+  "id": "verbs-passive",
+  "order": 33,
+  "area": "Verbs",
+  "title": "Passive voice (recognition)",
+  "spec": "Verbs: passive voice (R)",
+  "receptive": true,
+  "summary": [
+    "You only need to recognise and understand the passive, not produce it.",
+    "The passive shows what is done to the subject: être + past participle: La maison est vendue = The house is sold.",
+    "The participle agrees with the subject like an adjective: Les fenêtres sont nettoyées.",
+    "par introduces who or what does the action: Le match est regardé par des millions de supporters.",
+    "The tense is shown by être: est construit (is built), a été construit (was built / has been built), sera construit (will be built).",
+    "With a few verbs of feeling, de replaces par: Ce professeur est respecté de tous.",
+    "Don't confuse it with the perfect of être verbs: elle est partie = she has left (not passive); la lettre est envoyée = the letter is sent (passive).",
+    "French often avoids the passive by using on: On parle français ici = French is spoken here."
+  ],
+  "cards": [
+    {
+      "id": "verbs-passive-01",
+      "type": "flip",
+      "front": "What is the passive voice and how is it formed?",
+      "back": "The passive shows what is done to the subject rather than what the subject does. Form: être + past participle (+ par + the doer): Le gâteau est préparé par mon père = The cake is prepared by my father. The tense is shown by être."
+    },
+    {
+      "id": "verbs-passive-02",
+      "type": "flip",
+      "front": "Translate: Les tables sont réservées pour ce soir. Why -es on réservées?",
+      "back": "The tables are reserved for this evening. In the passive the participle agrees with the subject like an adjective: les tables is feminine plural, so réservées."
+    },
+    {
+      "id": "verbs-passive-03",
+      "type": "flip",
+      "front": "Translate: Le match est regardé par des millions de supporters.",
+      "back": "The match is watched by millions of fans. par introduces the person or thing doing the action."
+    },
+    {
+      "id": "verbs-passive-04",
+      "type": "flip",
+      "front": "Translate: En ville, la pollution est causée surtout par les voitures.",
+      "back": "In town, pollution is caused mainly by cars. Present passive: est + causée (feminine, agreeing with la pollution)."
+    },
+    {
+      "id": "verbs-passive-05",
+      "type": "flip",
+      "front": "Translate: Ce château a été construit au quinzième siècle.",
+      "back": "This castle was built in the fifteenth century. a été + past participle is the passive in the perfect tense: 'was built' or 'has been built'."
+    },
+    {
+      "id": "verbs-passive-06",
+      "type": "flip",
+      "front": "Translate: Le voleur a été arrêté par la police devant la banque.",
+      "back": "The thief was arrested by the police outside the bank. Perfect passive: a été arrêté."
+    },
+    {
+      "id": "verbs-passive-07",
+      "type": "flip",
+      "front": "Translate: Ma sœur a été choisie pour l'équipe de basket.",
+      "back": "My sister was (has been) chosen for the basketball team. choisie agrees with ma sœur (feminine singular)."
+    },
+    {
+      "id": "verbs-passive-08",
+      "type": "flip",
+      "front": "Translate: Les résultats des examens seront publiés en août.",
+      "back": "The exam results will be published in August. seront (future of être) + past participle = future passive: 'will be ...'."
+    },
+    {
+      "id": "verbs-passive-09",
+      "type": "flip",
+      "front": "Elle est partie or Elle est invitée: which is passive, and how can you tell?",
+      "back": "Elle est invitée (she is invited) is passive: inviter normally takes avoir in the perfect (elle a invité), so est + invitée must be passive. Elle est partie (she has left) is the ordinary perfect tense of partir, one of the être verbs. Ask yourself: is something being done to her by someone?"
+    },
+    {
+      "id": "verbs-passive-10",
+      "type": "flip",
+      "front": "Which sentence is passive? (a) Nous sommes allés au parc. (b) Nous sommes invités chez Marc. (c) Nous avons visité le musée.",
+      "back": "(b) We are invited to Marc's house. (a) is the perfect tense of aller, an être verb (we went to the park), and (c) is the perfect tense with avoir (we visited the museum)."
+    },
+    {
+      "id": "verbs-passive-11",
+      "type": "flip",
+      "front": "How does French often avoid the passive? Translate: On a volé mon vélo. / Ici, on parle anglais.",
+      "back": "With on + an active verb: 'My bike has been stolen.' / 'English is spoken here.' English often uses a passive where French prefers on."
+    },
+    {
+      "id": "verbs-passive-12",
+      "type": "flip",
+      "front": "Translate: On m'a offert un portable pour mon anniversaire.",
+      "back": "I was given a mobile phone for my birthday. French cannot make 'I' the subject of a passive here, so it uses on: literally 'someone gave me a phone'."
+    }
+  ]
+}

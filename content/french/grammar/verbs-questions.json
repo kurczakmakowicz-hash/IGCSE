@@ -105,7 +105,7 @@
       "hint": "(how many)",
       "answers": ["Combien"],
       "en": "How many brothers and sisters do you have?",
-      "why": "combien de + noun = how many / how much. de stays de whatever the noun."
+      "why": "combien de + noun = how many / how much. de does not change for masculine, feminine or plural nouns, but it becomes d' before a vowel: combien d'élèves."
     },
     {
       "id": "verbs-questions-12",

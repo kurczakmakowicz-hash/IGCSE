@@ -33,11 +33,11 @@
     {
       "id": "articles-03",
       "type": "gap",
-      "prompt": "Au petit-déjeuner, je bois toujours ___ lait.",
+      "prompt": "Le soir, nous mangeons souvent ___ soupe aux légumes.",
       "hint": "(some)",
-      "answers": ["du"],
-      "en": "At breakfast I always drink milk.",
-      "why": "lait is masculine and means an unspecified amount, so use the partitive: de + le = du."
+      "answers": ["de la"],
+      "en": "In the evening we often have vegetable soup.",
+      "why": "soupe is feminine and means an unspecified amount, so the partitive is de la – never du with a feminine noun."
     },
     {
       "id": "articles-04",

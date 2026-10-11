@@ -13,8 +13,9 @@
     "Ordinals add -ième: deuxième, troisième, cinquième, neuvième; first is premier / première.",
     "Dates use normal numbers except the first: le premier mai, le quatorze juillet; years: en deux mille vingt-cinq. Months and days have no capital.",
     "Time: Il est huit heures et quart / et demie / moins le quart; midi et demi; 24-hour clock: dix-sept heures quarante (17h40).",
-    "Quantities take de: un kilo de pommes, une bouteille d'eau, un paquet de chips, la moitié du gâteau.",
-    "depuis + present for something still going on: J'apprends le français depuis cinq ans (I have been learning French for five years)."
+    "Quantities take plain de: un kilo de pommes, une bouteille d'eau, un paquet de chips; but la moitié is followed by de + article: la moitié du gâteau.",
+    "depuis + present for something still going on: J'apprends le français depuis cinq ans (I have been learning French for five years).",
+    "depuis + imperfect for something that had been going on when something else happened: J'attendais depuis une heure quand le bus est arrivé (I had been waiting for an hour when the bus arrived)."
   ],
   "cards": [
     {
@@ -163,6 +164,21 @@
       "answers": ["depuis"],
       "en": "I have lived in this town for three years.",
       "why": "For something that started in the past and is still going on, use depuis + present tense."
+    },
+    {
+      "id": "numbers-dates-time-19",
+      "type": "flip",
+      "front": "How do you use depuis with the present and with the imperfect?",
+      "back": "depuis + present = have been doing (and still are): J'attends depuis dix minutes (I have been waiting for ten minutes). depuis + imperfect = had been doing (when something else happened): J'attendais depuis dix minutes quand le bus est arrivé (I had been waiting for ten minutes when the bus arrived). Do not use the perfect or pluperfect for these sentences."
+    },
+    {
+      "id": "numbers-dates-time-20",
+      "type": "gap",
+      "prompt": "Quand je suis arrivé à la gare, mes parents ___ depuis une heure.",
+      "base": "attendre",
+      "answers": ["attendaient"],
+      "en": "When I arrived at the station, my parents had been waiting for an hour.",
+      "why": "For something that had been going on when something else happened, use depuis + imperfect: ils attendaient (had been waiting)."
     }
   ]
 }

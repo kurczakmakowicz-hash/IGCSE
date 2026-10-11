@@ -56,7 +56,7 @@
       "hint": "(then)",
       "answers": ["puis", "ensuite", "après"],
       "en": "First I have a shower, then I get dressed.",
-      "why": "puis or ensuite (then) puts actions in order after d'abord (first)."
+      "why": "puis or ensuite (then) puts actions in order after d'abord (first); après is also used in everyday French."
     },
     {
       "id": "conjunctions-06",
@@ -139,11 +139,11 @@
     {
       "id": "conjunctions-16",
       "type": "gap",
-      "prompt": "Quand je ___ grand, je voudrais être pilote.",
+      "prompt": "Quand je ___ grand, j'habiterai au bord de la mer.",
       "base": "être",
       "answers": ["serai"],
-      "en": "When I'm older, I'd like to be a pilot.",
-      "why": "The action is in the future, so quand is followed by the future tense: je serai."
+      "en": "When I'm older, I'll live by the sea.",
+      "why": "The action is in the future (j'habiterai), so quand is followed by the future tense too: je serai, not je suis."
     },
     {
       "id": "conjunctions-17",

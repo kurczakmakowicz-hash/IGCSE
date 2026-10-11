@@ -1,0 +1,151 @@
+{
+  "id": "verbs-perfect-infinitive",
+  "order": 35,
+  "area": "Verbs",
+  "title": "Perfect infinitive (après avoir / après être)",
+  "spec": "Verbs: perfect infinitive",
+  "receptive": false,
+  "summary": [
+    "après avoir + past participle = 'after doing' or 'after having done': Après avoir mangé, j'ai fait mes devoirs.",
+    "Verbs that take être in the perfect use après être + past participle: Après être arrivé, il a appelé sa mère.",
+    "With être, the participle agrees with the subject of the main clause: Après être rentrées, mes sœurs ont dîné.",
+    "Reflexive verbs use après + reflexive pronoun + être, with the pronoun matching the subject: Après m'être levé, j'ai pris une douche. Après nous être habillés, nous sommes sortis.",
+    "The same person must do both actions: Après avoir fini le match, les joueurs sont rentrés (the players finished and went home).",
+    "The main clause can be in any tense: Après avoir passé mes examens, je partirai en vacances.",
+    "The après part can come first or second: Je suis sorti après avoir mangé."
+  ],
+  "cards": [
+    {
+      "id": "verbs-perfect-infinitive-01",
+      "type": "flip",
+      "front": "What does après avoir + past participle mean? Give an example.",
+      "back": "'After doing' or 'after having done'. Après avoir regardé le film, nous sommes allés au café = After watching (having watched) the film, we went to the café. English often uses '-ing' here, but French needs avoir + past participle."
+    },
+    {
+      "id": "verbs-perfect-infinitive-02",
+      "type": "gap",
+      "prompt": "Après avoir ___ mes devoirs, j'ai joué aux jeux vidéo.",
+      "base": "finir",
+      "answers": ["fini"],
+      "en": "After finishing my homework, I played video games.",
+      "why": "après avoir + past participle: finir -> fini."
+    },
+    {
+      "id": "verbs-perfect-infinitive-03",
+      "type": "gap",
+      "prompt": "Après ___ le petit déjeuner, je suis parti au collège.",
+      "base": "prendre",
+      "answers": ["avoir pris"],
+      "en": "After having breakfast, I left for school.",
+      "why": "prendre takes avoir in the perfect, so: après avoir + pris (irregular past participle)."
+    },
+    {
+      "id": "verbs-perfect-infinitive-04",
+      "type": "gap",
+      "prompt": "Après ___ le film, nous sommes allés au café.",
+      "base": "voir",
+      "answers": ["avoir vu"],
+      "en": "After seeing the film, we went to the café.",
+      "why": "voir takes avoir and its past participle is vu: après avoir vu."
+    },
+    {
+      "id": "verbs-perfect-infinitive-05",
+      "type": "flip",
+      "front": "When do you use après être instead of après avoir? What happens to the participle?",
+      "back": "With verbs that take être in the perfect (aller, arriver, partir, sortir, rentrer, tomber etc.). The participle agrees with the subject of the main clause: Après être arrivée à la gare, ma mère a acheté un billet. Après être sortis, les garçons ont joué au foot."
+    },
+    {
+      "id": "verbs-perfect-infinitive-06",
+      "type": "gap",
+      "prompt": "Après ___ à l'hôtel, mon père a garé la voiture.",
+      "base": "arriver",
+      "answers": ["être arrivé"],
+      "en": "After arriving at the hotel, my father parked the car.",
+      "why": "arriver takes être, so après être arrivé; mon père is masculine singular, so no extra ending."
+    },
+    {
+      "id": "verbs-perfect-infinitive-07",
+      "type": "gap",
+      "prompt": "Après ___ de l'école, ma sœur a promené le chien.",
+      "base": "rentrer",
+      "answers": ["être rentrée"],
+      "en": "After getting home from school, my sister walked the dog.",
+      "why": "rentrer takes être; the participle agrees with ma sœur (feminine singular): rentrée."
+    },
+    {
+      "id": "verbs-perfect-infinitive-08",
+      "type": "gap",
+      "prompt": "Après être ___ du cinéma, les filles ont pris un taxi.",
+      "base": "sortir",
+      "answers": ["sorties"],
+      "en": "After leaving the cinema, the girls took a taxi.",
+      "why": "sortir takes être; the participle agrees with les filles (feminine plural): sorties."
+    },
+    {
+      "id": "verbs-perfect-infinitive-09",
+      "type": "transform",
+      "instruction": "Join the sentences using après + perfect infinitive.",
+      "prompt": "J'ai mangé. Ensuite, je suis sorti.",
+      "answers": ["Après avoir mangé, je suis sorti.", "Je suis sorti après avoir mangé."],
+      "en": "After eating, I went out.",
+      "why": "manger takes avoir, so après avoir mangé; the subject (je) is the same for both actions."
+    },
+    {
+      "id": "verbs-perfect-infinitive-10",
+      "type": "flip",
+      "front": "How do you form the perfect infinitive of a reflexive verb?",
+      "back": "après + reflexive pronoun + être + past participle. The pronoun matches the subject and the participle agrees with it: Après m'être réveillé(e), j'ai mangé. Après s'être douchée, elle s'est habillée. Après nous être préparés, nous sommes partis."
+    },
+    {
+      "id": "verbs-perfect-infinitive-11",
+      "type": "gap",
+      "prompt": "Après ___, Thomas s'est habillé.",
+      "base": "se doucher",
+      "answers": ["s'être douché"],
+      "en": "After having a shower, Thomas got dressed.",
+      "why": "Reflexive verb: après s'être + past participle; Thomas is masculine singular, so douché."
+    },
+    {
+      "id": "verbs-perfect-infinitive-12",
+      "type": "gap",
+      "prompt": "Après ___ très tôt, je suis allée courir dans le parc.",
+      "base": "se lever",
+      "answers": ["m'être levée"],
+      "en": "After getting up very early, I went running in the park.",
+      "why": "The subject is je, so se becomes m'; allée shows that je is female, so levée agrees."
+    },
+    {
+      "id": "verbs-perfect-infinitive-13",
+      "type": "transform",
+      "instruction": "Join the sentences using après + perfect infinitive.",
+      "prompt": "Elle est rentrée. Ensuite, elle a dîné.",
+      "answers": ["Après être rentrée, elle a dîné.", "Elle a dîné après être rentrée."],
+      "en": "After getting home, she had dinner.",
+      "why": "rentrer takes être, so après être rentrée, with the participle agreeing with elle."
+    },
+    {
+      "id": "verbs-perfect-infinitive-14",
+      "type": "transform",
+      "instruction": "Join the sentences using après + perfect infinitive.",
+      "prompt": "Nous nous sommes habillés. Ensuite, nous sommes sortis.",
+      "answers": ["Après nous être habillés, nous sommes sortis.", "Nous sommes sortis après nous être habillés."],
+      "en": "After getting dressed, we went out.",
+      "why": "Reflexive verb: après nous être habillés; the pronoun matches nous and habillés agrees with a masculine plural subject."
+    },
+    {
+      "id": "verbs-perfect-infinitive-15",
+      "type": "gap",
+      "prompt": "Après ___ mes examens, je partirai en vacances.",
+      "base": "passer",
+      "answers": ["avoir passé"],
+      "en": "After taking my exams, I will go on holiday.",
+      "why": "passer un examen takes avoir: après avoir passé. The main clause can be in any tense, here the future."
+    },
+    {
+      "id": "verbs-perfect-infinitive-16",
+      "type": "flip",
+      "front": "Is this right? 'Après avoir mangé, ma mère m'a appelé.' (meaning: after I had eaten, my mother called me)",
+      "back": "No. The perfect infinitive must have the same subject as the main verb, so this sentence says that my mother had eaten. To say what you mean, use two full verbs: J'avais mangé quand ma mère m'a appelé(e)."
+    }
+  ]
+}

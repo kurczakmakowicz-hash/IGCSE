@@ -205,7 +205,7 @@
       "type": "transform",
       "instruction": "Rewrite in the past: imperfect for the background action, perfect for the event.",
       "prompt": "Je lis quand ma mère arrive.",
-      "answers": ["Je lisais quand ma mère est arrivée."],
+      "answers": ["Je lisais quand ma mère est arrivée.", "J'étais en train de lire quand ma mère est arrivée."],
       "en": "I was reading when my mother arrived.",
       "why": "The ongoing action (lire) → imperfect: je lisais. The interruption → perfect with être and agreement: ma mère est arrivée."
     },

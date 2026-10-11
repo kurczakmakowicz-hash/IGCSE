@@ -1,0 +1,168 @@
+{
+  "id": "verbs-present-participle",
+  "order": 36,
+  "area": "Verbs",
+  "title": "Present participle and en + -ant",
+  "spec": "Verbs: present participle, including use after en",
+  "receptive": false,
+  "summary": [
+    "Form: take the nous form of the present, remove -ons and add -ant: nous regardons -> regardant, nous finissons -> finissant, nous faisons -> faisant.",
+    "-ger and -cer verbs keep their nous spelling: nous mangeons -> mangeant, nous commençons -> commençant.",
+    "Only three are irregular: être -> étant, avoir -> ayant, savoir -> sachant.",
+    "en + present participle = while, on or by doing something: Je chante en prenant ma douche. On apprend en écoutant.",
+    "The en + -ant action is done by the subject of the main verb: En sortant du cinéma, nous avons vu Marc (we were coming out).",
+    "tout en + -ant stresses that two things happen at the same time: Il révise tout en écoutant de la musique.",
+    "Used as a verb, the present participle never changes its ending: en arrivant, whoever is arriving.",
+    "With reflexive verbs the pronoun matches the subject: en me levant, en nous promenant.",
+    "Don't use -ant for English '-ing' after another verb or for 'am doing': J'aime nager (I like swimming). Je mange (I am eating)."
+  ],
+  "cards": [
+    {
+      "id": "verbs-present-participle-01",
+      "type": "flip",
+      "front": "How do you form the present participle (the '-ing' form)?",
+      "back": "Take the nous form of the present tense, remove -ons and add -ant: nous parlons -> parlant, nous finissons -> finissant, nous prenons -> prenant, nous faisons -> faisant. Used as a verb, it never changes its ending."
+    },
+    {
+      "id": "verbs-present-participle-02",
+      "type": "gap",
+      "prompt": "Je prends mon petit déjeuner en ___ les infos.",
+      "base": "regarder",
+      "answers": ["regardant"],
+      "en": "I have my breakfast while watching the news.",
+      "why": "nous regardons -> regard- + -ant. en + present participle = while doing."
+    },
+    {
+      "id": "verbs-present-participle-03",
+      "type": "gap",
+      "prompt": "Mon père écoute la radio en ___ sa voiture.",
+      "base": "conduire",
+      "answers": ["conduisant"],
+      "en": "My dad listens to the radio while driving his car.",
+      "why": "nous conduisons -> conduis- + -ant = conduisant."
+    },
+    {
+      "id": "verbs-present-participle-04",
+      "type": "gap",
+      "prompt": "On reste en forme en ___ du sport régulièrement.",
+      "base": "faire",
+      "answers": ["faisant"],
+      "en": "You keep fit by doing sport regularly.",
+      "why": "nous faisons -> fais- + -ant. Here en + -ant means 'by doing'."
+    },
+    {
+      "id": "verbs-present-participle-05",
+      "type": "flip",
+      "front": "What can en + present participle mean? Give examples.",
+      "back": "While: Je chante en prenant ma douche (I sing while having a shower). By: On apprend en pratiquant (You learn by practising). On/when: En arrivant au collège, j'ai vu mes amis (On arriving at school, I saw my friends). The same person does both actions."
+    },
+    {
+      "id": "verbs-present-participle-06",
+      "type": "gap",
+      "prompt": "En ___ mes devoirs tôt, j'ai pu sortir avec mes amis.",
+      "base": "finir",
+      "answers": ["finissant"],
+      "en": "By finishing my homework early, I was able to go out with my friends.",
+      "why": "-ir verbs like finir have nous finissons, so the present participle is finissant."
+    },
+    {
+      "id": "verbs-present-participle-07",
+      "type": "transform",
+      "instruction": "Replace the words in bold with en + present participle.",
+      "prompt": "On apprend beaucoup **quand on voyage**.",
+      "answers": ["On apprend beaucoup en voyageant."],
+      "en": "You learn a lot by travelling.",
+      "why": "voyager: nous voyageons -> voyageant (the e after g stays). Both verbs have the same subject, on."
+    },
+    {
+      "id": "verbs-present-participle-08",
+      "type": "flip",
+      "front": "Which present participles have a spelling change or are irregular?",
+      "back": "-ger verbs keep the e: mangeant, nageant, voyageant. -cer verbs keep the ç: commençant, lançant. Irregular: être -> étant, avoir -> ayant, savoir -> sachant."
+    },
+    {
+      "id": "verbs-present-participle-09",
+      "type": "gap",
+      "prompt": "Ne parle pas en ___, s'il te plaît !",
+      "base": "manger",
+      "answers": ["mangeant"],
+      "en": "Don't talk while you're eating, please!",
+      "why": "manger keeps the e before -ant to keep the soft g sound: nous mangeons -> mangeant."
+    },
+    {
+      "id": "verbs-present-participle-10",
+      "type": "gap",
+      "prompt": "En ___ ses études, Lucie a trouvé un petit boulot.",
+      "base": "commencer",
+      "answers": ["commençant"],
+      "en": "When she started her studies, Lucie found a part-time job.",
+      "why": "commencer keeps the ç before a to keep the soft c sound: nous commençons -> commençant."
+    },
+    {
+      "id": "verbs-present-participle-11",
+      "type": "gap",
+      "prompt": "___ malade, je suis resté au lit toute la journée.",
+      "base": "être",
+      "answers": ["Étant"],
+      "en": "Being ill, I stayed in bed all day.",
+      "why": "être has the irregular present participle étant."
+    },
+    {
+      "id": "verbs-present-participle-12",
+      "type": "gap",
+      "prompt": "___ peu de temps, nous avons pris un taxi.",
+      "base": "avoir",
+      "answers": ["Ayant"],
+      "en": "Having little time, we took a taxi.",
+      "why": "avoir has the irregular present participle ayant."
+    },
+    {
+      "id": "verbs-present-participle-13",
+      "type": "gap",
+      "prompt": "___ que le magasin fermait à midi, nous sommes partis tôt.",
+      "base": "savoir",
+      "answers": ["Sachant"],
+      "en": "Knowing that the shop closed at midday, we left early.",
+      "why": "savoir has the irregular present participle sachant."
+    },
+    {
+      "id": "verbs-present-participle-14",
+      "type": "transform",
+      "instruction": "Join the sentences: turn the verb in bold into en + present participle.",
+      "prompt": "Je fais mes devoirs. **J'écoute** de la musique.",
+      "answers": ["Je fais mes devoirs en écoutant de la musique.", "En écoutant de la musique, je fais mes devoirs.", "Je fais mes devoirs tout en écoutant de la musique.", "Tout en écoutant de la musique, je fais mes devoirs."],
+      "en": "I do my homework while listening to music.",
+      "why": "Both actions are done by the same person at the same time: en écoutant (nous écoutons -> écoutant)."
+    },
+    {
+      "id": "verbs-present-participle-15",
+      "type": "flip",
+      "front": "What does tout en + present participle add? Translate: Elle travaille tout en écoutant la radio.",
+      "back": "'She works while listening to the radio (at the same time).' tout stresses that the two actions happen together. It can also show a contrast: Tout en étant fatigué, il a fini le marathon = Although he was tired, he finished the marathon."
+    },
+    {
+      "id": "verbs-present-participle-16",
+      "type": "gap",
+      "prompt": "Ma sœur fait ses devoirs tout en ___ des messages à ses amies.",
+      "base": "envoyer",
+      "answers": ["envoyant"],
+      "en": "My sister does her homework while sending messages to her friends.",
+      "why": "nous envoyons -> envoy- + -ant = envoyant. tout en stresses that both things happen at the same time."
+    },
+    {
+      "id": "verbs-present-participle-17",
+      "type": "gap",
+      "prompt": "En ___ ce matin, j'ai vu qu'il neigeait.",
+      "base": "se réveiller",
+      "answers": ["me réveillant"],
+      "en": "When I woke up this morning, I saw that it was snowing.",
+      "why": "With a reflexive verb the pronoun matches the subject (je), so se becomes me: en me réveillant."
+    },
+    {
+      "id": "verbs-present-participle-18",
+      "type": "flip",
+      "front": "How do you say 'I like swimming' and 'I am eating'? Why not use -ant?",
+      "back": "J'aime nager (verb + infinitive) and Je mange or Je suis en train de manger. The present participle is not used after another verb or to make English '-ing' tenses; French uses the infinitive or the ordinary present."
+    }
+  ]
+}

@@ -87,7 +87,7 @@
       "type": "transform",
       "instruction": "Write the question that this sentence answers, using a question word for the words in bold.",
       "prompt": "Elle a **deux** chats.",
-      "answers": ["Combien de chats a-t-elle ?", "Combien de chats est-ce qu'elle a ?", "Elle a combien de chats ?"],
+      "answers": ["Combien de chats a-t-elle ?", "Combien a-t-elle de chats ?", "Combien de chats est-ce qu'elle a ?", "Combien est-ce qu'elle a de chats ?", "Elle a combien de chats ?"],
       "en": "How many cats has she got?",
       "why": "A number is asked for with combien de + noun; inversion needs -t- between a and elle: a-t-elle."
     },

@@ -12,7 +12,7 @@
     "Learn the irregular participles: fait, pris, mis, vu, lu, écrit, bu, eu, été, pu, voulu, dû, dit, ouvert, reçu, venu: j'ai fait, elle a pris, nous avons bu.",
     "About 16 verbs of movement or change of state take être (MRS VANDERTRAMP): aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, rentrer, devenir, revenir: je suis allé(e).",
     "With être, the participle agrees with the subject like an adjective: il est parti, elle est partie, ils sont partis, elles sont parties. A mixed group is masculine plural: Paul et Marie sont arrivés.",
-    "With avoir, the participle does not agree with the subject: elle a mangé, nous avons fini.",
+    "With avoir, the participle does not agree with the subject: elle a mangé, nous avons fini. (It only agrees with a direct object placed before it: Ta robe ? Je l'ai achetée.)",
     "All reflexive verbs take être and agree: je me suis levé(e), elle s'est couchée, ils se sont amusés.",
     "Negatives go round the auxiliary: je n'ai pas mangé, elle n'est jamais venue. Object pronouns go before the auxiliary: je l'ai vu."
   ],
@@ -145,7 +145,7 @@
       "base": "naître",
       "answers": ["est né"],
       "en": "My grandfather was born in Algeria in 1950.",
-      "why": "naître takes être and has the irregular participle né. French says 'is born' in the perfect where English says 'was born'."
+      "why": "naître takes être and has the irregular participle né: il est né = he was born (elle est née for a woman)."
     },
     {
       "id": "verbs-perfect-17",
@@ -211,11 +211,11 @@
     {
       "id": "verbs-perfect-24",
       "type": "transform",
-      "instruction": "Make this sentence negative using ne...jamais.",
-      "prompt": "Mes parents sont allés au Japon.",
-      "answers": ["Mes parents ne sont jamais allés au Japon."],
-      "en": "My parents have never been to Japan.",
-      "why": "The negative goes round the auxiliary: ne sont jamais allés. The participle still agrees with mes parents."
+      "instruction": "Make this sentence negative using ne...pas.",
+      "prompt": "Ma sœur s'est couchée tard.",
+      "answers": ["Ma sœur ne s'est pas couchée tard."],
+      "en": "My sister didn't go to bed late.",
+      "why": "With a reflexive verb in the perfect, ne goes before the reflexive pronoun and pas after the auxiliary: ne s'est pas couchée. The participle still agrees with ma sœur."
     }
   ]
 }

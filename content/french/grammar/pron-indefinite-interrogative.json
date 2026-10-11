@@ -12,7 +12,7 @@
     "personne (nobody) and rien (nothing) need ne before the verb: Je ne vois personne. Il n'y a rien. As subject: Personne n'est venu. Rien ne marche.",
     "In the perfect, rien goes before the past participle but personne goes after it: Je n'ai rien mangé. Je n'ai vu personne.",
     "An adjective after quelque chose, rien, quelqu'un or personne takes de and stays masculine singular: quelque chose de nouveau, rien d'intéressant.",
-    "Questions: qui ? = who?; que + inversion or qu'est-ce que + subject + verb = what? (object): Que fais-tu ? Qu'est-ce que tu fais ?",
+    "Questions: qui ? = who?, also after a preposition (Avec qui sors-tu ?); que + inversion or qu'est-ce que + subject + verb = what? (object): Que fais-tu ? Qu'est-ce que tu fais ?",
     "qu'est-ce qui ? = what? when 'what' is the subject: Qu'est-ce qui se passe ? quoi = what after a preposition: De quoi as-tu besoin ?",
     "lequel ? laquelle ? lesquels ? lesquelles ? = which one(s)?, agreeing with the noun: Voici deux robes. Laquelle préfères-tu ?"
   ],
@@ -166,6 +166,15 @@
       "answers": ["Lequel"],
       "en": "I've got two jumpers, a red one and a green one. Which one do you prefer?",
       "why": "'which one' refers to un pull (masculine singular), so lequel."
+    },
+    {
+      "id": "pron-indefinite-interrogative-19",
+      "type": "gap",
+      "prompt": "Avec ___ vas-tu au concert samedi ?",
+      "hint": "(who)",
+      "answers": ["qui"],
+      "en": "Who are you going to the concert with on Saturday?",
+      "why": "'who' is qui, even after a preposition: avec qui ? quoi is only for things: avec quoi ? (with what?)."
     }
   ]
 }

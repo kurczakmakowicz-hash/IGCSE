@@ -21,7 +21,7 @@
       "id": "pron-relative-01",
       "type": "flip",
       "front": "How do you choose between qui and que?",
-      "back": "qui is the subject, so a verb follows it: le prof qui parle. que is the object, so a subject + verb follows it: le prof que j'aime. Quick test: verb next → qui. que becomes qu' before a vowel (le cadeau qu'il a acheté); qui never shortens."
+      "back": "qui is the subject, so a verb follows it: le prof qui parle. que is the object, so a subject + verb follows it: le prof que j'aime. Quick test: if the verb comes next (possibly after ne or an object pronoun: la fille qui me parle), use qui. que becomes qu' before a vowel (le cadeau qu'il a acheté); qui never shortens."
     },
     {
       "id": "pron-relative-02",
@@ -55,7 +55,7 @@
       "type": "transform",
       "instruction": "Join the two sentences using qui or que.",
       "prompt": "Voici le cadeau. Anna a acheté ce cadeau.",
-      "answers": ["Voici le cadeau qu'Anna a acheté."],
+      "answers": ["Voici le cadeau qu'Anna a acheté.", "Voici le cadeau qu'a acheté Anna."],
       "en": "Here is the present (that) Anna bought.",
       "why": "The present is the object of a acheté, so que; it shortens to qu' before the vowel of Anna."
     },

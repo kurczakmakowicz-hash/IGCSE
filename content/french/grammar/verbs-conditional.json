@@ -1,0 +1,177 @@
+{
+  "id": "verbs-conditional",
+  "order": 30,
+  "area": "Verbs",
+  "title": "Conditional (and si clauses)",
+  "spec": "Verbs: tenses: conditional",
+  "receptive": false,
+  "summary": [
+    "The conditional means 'would': future stem + imperfect endings -ais, -ais, -ait, -ions, -iez, -aient: je jouerais, nous finirions, ils vendraient.",
+    "-re verbs drop the final e: prendre -> je prendrais, attendre -> il attendrait.",
+    "Irregular verbs use their future stems: je serais, j'aurais, j'irais, je ferais, je pourrais, je voudrais, je devrais, je saurais, je viendrais, je verrais.",
+    "Use it to be polite: Je voudrais un café, s'il vous plaît. Pourriez-vous m'aider ?",
+    "j'aimerais (I would like) and je préférerais (I would prefer) are useful for future plans: J'aimerais travailler à l'étranger.",
+    "devoir and pouvoir in the conditional mean 'should' and 'could': Tu devrais manger plus de fruits. On pourrait aller au cinéma.",
+    "Imaginary situation: si + imperfect, then the conditional: Si j'avais de l'argent, je voyagerais.",
+    "Real possibility: si + present, then the future: S'il pleut demain, nous resterons à la maison.",
+    "Never put the future or the conditional straight after si meaning 'if': Si j'avais le temps (not si j'aurais le temps).",
+    "si shortens to s' only before il and ils: s'il fait beau, but si elle vient."
+  ],
+  "cards": [
+    {
+      "id": "verbs-conditional-01",
+      "type": "flip",
+      "front": "How do you form the conditional, and what does it mean?",
+      "back": "Future stem + the imperfect endings -ais, -ais, -ait, -ions, -iez, -aient. jouer -> je jouerais, finir -> nous finirions, prendre -> ils prendraient. It translates 'would': je jouerais = I would play."
+    },
+    {
+      "id": "verbs-conditional-02",
+      "type": "gap",
+      "prompt": "Avec plus de temps libre, je ___ plus souvent au foot.",
+      "base": "jouer",
+      "hint": "conditional",
+      "answers": ["jouerais"],
+      "en": "With more free time, I would play football more often.",
+      "why": "Conditional = infinitive (the future stem) + the imperfect ending -ais: je jouerais."
+    },
+    {
+      "id": "verbs-conditional-03",
+      "type": "gap",
+      "prompt": "À ta place, je ___ le train ; c'est plus rapide.",
+      "base": "prendre",
+      "answers": ["prendrais"],
+      "en": "If I were you, I would take the train; it's quicker.",
+      "why": "À ta place (in your place) gives advice, so the conditional is used. -re verbs drop the e: prendr- + -ais."
+    },
+    {
+      "id": "verbs-conditional-04",
+      "type": "flip",
+      "front": "Which verbs have an irregular stem in the conditional?",
+      "back": "The same ones as in the future: être -> je serais, avoir -> j'aurais, aller -> j'irais, faire -> je ferais, pouvoir -> je pourrais, vouloir -> je voudrais, devoir -> je devrais, savoir -> je saurais, venir -> je viendrais, voir -> je verrais, falloir -> il faudrait."
+    },
+    {
+      "id": "verbs-conditional-05",
+      "type": "gap",
+      "prompt": "Bonjour, je ___ deux billets pour Marseille, s'il vous plaît.",
+      "base": "vouloir",
+      "hint": "would like",
+      "answers": ["voudrais"],
+      "en": "Hello, I would like two tickets for Marseille, please.",
+      "why": "je voudrais (vouloir in the conditional) is the polite way to ask for something; je veux sounds rude."
+    },
+    {
+      "id": "verbs-conditional-06",
+      "type": "flip",
+      "front": "Give six useful conditional phrases for requests, advice and plans.",
+      "back": "Je voudrais... (I would like...), J'aimerais... (I would like...), Je préférerais... (I would prefer...), Pourriez-vous... ? (Could you...?), Tu devrais... (You should...), Ce serait génial (It would be great)."
+    },
+    {
+      "id": "verbs-conditional-07",
+      "type": "gap",
+      "prompt": "Tu ___ boire plus d'eau quand tu fais du sport.",
+      "base": "devoir",
+      "hint": "should",
+      "answers": ["devrais"],
+      "en": "You should drink more water when you do sport.",
+      "why": "devoir in the conditional means 'should': tu devrais (stem devr- + -ais)."
+    },
+    {
+      "id": "verbs-conditional-08",
+      "type": "gap",
+      "prompt": "Plus tard, mon copain et moi ___ faire le tour du monde.",
+      "base": "aimer",
+      "hint": "would like",
+      "answers": ["aimerions"],
+      "en": "Later on, my friend and I would like to travel round the world.",
+      "why": "mon copain et moi = nous; conditional of aimer: aimer + -ions = aimerions."
+    },
+    {
+      "id": "verbs-conditional-09",
+      "type": "transform",
+      "instruction": "Make the question more polite by using the conditional.",
+      "prompt": "Pouvez-vous fermer la fenêtre ?",
+      "answers": ["Pourriez-vous fermer la fenêtre ?", "Est-ce que vous pourriez fermer la fenêtre ?", "Vous pourriez fermer la fenêtre ?"],
+      "en": "Could you close the window?",
+      "why": "pouvoir has the conditional stem pourr-: vous pourriez. Pourriez-vous is the polite form of Pouvez-vous."
+    },
+    {
+      "id": "verbs-conditional-10",
+      "type": "flip",
+      "front": "Which tenses go together in a sentence with si (if)?",
+      "back": "Real possibility: si + present, then the future: Si tu viens, on ira au parc (If you come, we'll go to the park). Imaginary situation: si + imperfect, then the conditional: Si tu venais, on irait au parc (If you came, we would go to the park). The verb straight after si is never future or conditional."
+    },
+    {
+      "id": "verbs-conditional-11",
+      "type": "gap",
+      "prompt": "Si ma mère avait plus d'argent, elle ___ une nouvelle voiture.",
+      "base": "acheter",
+      "answers": ["achèterait"],
+      "en": "If my mother had more money, she would buy a new car.",
+      "why": "si + imperfect (avait) is followed by the conditional. acheter takes a grave accent in its stem: achèter- + -ait."
+    },
+    {
+      "id": "verbs-conditional-12",
+      "type": "gap",
+      "prompt": "Si nous habitions à la campagne, nous ___ un chien.",
+      "base": "avoir",
+      "answers": ["aurions"],
+      "en": "If we lived in the countryside, we would have a dog.",
+      "why": "si + imperfect, then the conditional. avoir has the irregular stem aur-: nous aurions."
+    },
+    {
+      "id": "verbs-conditional-13",
+      "type": "gap",
+      "prompt": "S'il faisait beau, on ___ à la plage.",
+      "base": "aller",
+      "answers": ["irait"],
+      "en": "If the weather were nice, we would go to the beach.",
+      "why": "si + imperfect (faisait), then the conditional. aller has the stem ir-, and on takes the il ending -ait: on irait."
+    },
+    {
+      "id": "verbs-conditional-14",
+      "type": "gap",
+      "prompt": "Si mes parents ___ riches, ils habiteraient dans une grande maison.",
+      "base": "être",
+      "answers": ["étaient"],
+      "en": "If my parents were rich, they would live in a big house.",
+      "why": "The verb after si goes in the imperfect (ils étaient), not the conditional; the conditional (habiteraient) is in the other half of the sentence."
+    },
+    {
+      "id": "verbs-conditional-15",
+      "type": "gap",
+      "prompt": "Si ma sœur ___ à Paris, elle irait au musée tous les week-ends.",
+      "base": "habiter",
+      "answers": ["habitait"],
+      "en": "If my sister lived in Paris, she would go to the museum every weekend.",
+      "why": "The main verb (irait) is conditional, so the si clause is in the imperfect: elle habitait."
+    },
+    {
+      "id": "verbs-conditional-16",
+      "type": "gap",
+      "prompt": "S'il pleut demain, nous ___ à la maison.",
+      "base": "rester",
+      "hint": "simple future",
+      "answers": ["resterons"],
+      "en": "If it rains tomorrow, we will stay at home.",
+      "why": "si + present (il pleut) for a real possibility, then the future: nous resterons."
+    },
+    {
+      "id": "verbs-conditional-17",
+      "type": "gap",
+      "prompt": "Si tu ___ faim plus tard, tu pourras manger un sandwich.",
+      "base": "avoir",
+      "answers": ["as"],
+      "en": "If you are hungry later, you will be able to eat a sandwich.",
+      "why": "The main verb (pourras) is in the future, so the si clause is in the present: tu as faim."
+    },
+    {
+      "id": "verbs-conditional-18",
+      "type": "transform",
+      "instruction": "Make the situation imaginary: change the present to the imperfect and the future to the conditional.",
+      "prompt": "Si j'ai le temps, je ferai du vélo.",
+      "answers": ["Si j'avais le temps, je ferais du vélo.", "Je ferais du vélo si j'avais le temps."],
+      "en": "If I had time, I would go cycling.",
+      "why": "Imaginary situation: si + imperfect (j'avais), then the conditional (je ferais, from the stem fer-)."
+    }
+  ]
+}

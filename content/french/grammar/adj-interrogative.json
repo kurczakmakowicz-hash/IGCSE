@@ -60,11 +60,11 @@
     {
       "id": "adj-interrogative-06",
       "type": "gap",
-      "prompt": "Dans ___ pays aimerais-tu travailler plus tard ?",
+      "prompt": "Dans ___ pays est-ce que ton père est né ?",
       "base": "quel",
       "answers": ["quel"],
-      "en": "Which country would you like to work in later on?",
-      "why": "pays is masculine singular – the -s is part of the word: quel."
+      "en": "Which country was your father born in?",
+      "why": "pays is masculine and singular here (a person is born in one country) – the -s is part of the word and doesn't make it plural: quel."
     },
     {
       "id": "adj-interrogative-07",
@@ -134,9 +134,9 @@
       "type": "transform",
       "instruction": "Write the question this sentence answers, using quel + the noun in brackets and the tu form of préférer.",
       "prompt": "Je préfère les maths. (matière)",
-      "answers": ["Quelle matière préfères-tu ?", "Quelle matière est-ce que tu préfères ?", "Tu préfères quelle matière ?"],
+      "answers": ["Quelle matière préfères-tu ?", "Quelle matière est-ce que tu préfères ?", "Tu préfères quelle matière ?", "Quelle matière tu préfères ?"],
       "en": "Which subject do you prefer?",
-      "why": "matière is feminine singular, so quelle; then invert (préfères-tu), use est-ce que, or put quelle matière at the end."
+      "why": "matière is feminine singular, so quelle; then invert (préfères-tu) or use est-ce que; in informal French you can also keep the normal word order (Quelle matière tu préfères ? / Tu préfères quelle matière ?)."
     },
     {
       "id": "adj-interrogative-16",

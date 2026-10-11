@@ -1,0 +1,236 @@
+{
+  "id": "verbs-future",
+  "order": 29,
+  "area": "Verbs",
+  "title": "Near future and simple future",
+  "spec": "Verbs: tenses: immediate/near future; simple future",
+  "receptive": false,
+  "summary": [
+    "Near future: present of aller + infinitive means 'going to': Je vais réviser ce soir. Ils vont partir demain.",
+    "In the negative, ne ... pas goes round the part of aller: Nous n'allons pas sortir ce week-end. A reflexive pronoun stays in front of the infinitive and matches the subject: Je vais me coucher. Nous allons nous lever tôt.",
+    "Simple future of regular verbs: infinitive + -ai, -as, -a, -ons, -ez, -ont: je jouerai, tu finiras, nous regarderons.",
+    "-re verbs drop the final e before the endings: prendre -> je prendrai, attendre -> ils attendront.",
+    "Irregular stems take the same endings: être -> ser-, avoir -> aur-, aller -> ir-, faire -> fer-: je serai, nous aurons, ils iront, il fera beau.",
+    "More irregular stems: pouvoir -> pourr-, vouloir -> voudr-, devoir -> devr-, savoir -> saur-, venir -> viendr-, voir -> verr-, envoyer -> enverr-, il faut -> il faudra.",
+    "Every future stem ends in r. Verbs like acheter add a grave accent: j'achèterai, elle achètera.",
+    "After quand (and lorsque, dès que), use the future when the action is still to come, even though English uses the present: Quand j'aurai dix-huit ans, j'apprendrai à conduire.",
+    "Use the near future for plans and things about to happen, and the simple future for predictions and things further ahead; using both in your writing shows range.",
+    "Don't confuse the future (je serai = I will be) with the conditional (je serais = I would be)."
+  ],
+  "cards": [
+    {
+      "id": "verbs-future-01",
+      "type": "flip",
+      "front": "How do you form the near future (le futur proche)?",
+      "back": "Present tense of aller + infinitive: je vais jouer, tu vas jouer, il/elle/on va jouer, nous allons jouer, vous allez jouer, ils/elles vont jouer. It means 'going to': Je vais jouer au tennis = I'm going to play tennis."
+    },
+    {
+      "id": "verbs-future-02",
+      "type": "gap",
+      "prompt": "Demain, nous ___ au parc avec le chien.",
+      "base": "jouer",
+      "hint": "near future",
+      "answers": ["allons jouer"],
+      "en": "Tomorrow we are going to play in the park with the dog.",
+      "why": "Near future = present of aller (nous allons) + the infinitive, which does not change: allons jouer."
+    },
+    {
+      "id": "verbs-future-03",
+      "type": "gap",
+      "prompt": "Je suis très fatigué, alors je ___ tout de suite.",
+      "base": "se coucher",
+      "hint": "near future",
+      "answers": ["vais me coucher"],
+      "en": "I'm very tired, so I'm going to go to bed straight away.",
+      "why": "In the near future the reflexive pronoun stays in front of the infinitive and matches the subject: je vais me coucher (not je vais se coucher)."
+    },
+    {
+      "id": "verbs-future-04",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the near future (aller + infinitive).",
+      "prompt": "Je fais mes devoirs.",
+      "answers": ["Je vais faire mes devoirs."],
+      "en": "I am going to do my homework.",
+      "why": "Put the present of aller (je vais) in front and change fais to the infinitive faire."
+    },
+    {
+      "id": "verbs-future-05",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the near future, keeping it negative.",
+      "prompt": "Ils ne prennent pas le train.",
+      "answers": ["Ils ne vont pas prendre le train."],
+      "en": "They are not going to take the train.",
+      "why": "ne ... pas goes round the conjugated part (vont); the infinitive prendre comes after pas."
+    },
+    {
+      "id": "verbs-future-06",
+      "type": "flip",
+      "front": "How do you form the simple future of regular verbs?",
+      "back": "Take the infinitive and add -ai, -as, -a, -ons, -ez, -ont. -re verbs drop their final e first. jouer -> je jouerai, finir -> tu finiras, vendre -> il vendra, regarder -> nous regarderons, choisir -> vous choisirez, attendre -> elles attendront. It means 'will': je jouerai = I will play."
+    },
+    {
+      "id": "verbs-future-07",
+      "type": "gap",
+      "prompt": "L'année prochaine, ma sœur ___ ses études à Lyon.",
+      "base": "commencer",
+      "hint": "simple future",
+      "answers": ["commencera"],
+      "en": "Next year my sister will start her studies in Lyon.",
+      "why": "Regular -er verb: infinitive commencer + -a for elle. No cedilla is needed because the c is followed by e."
+    },
+    {
+      "id": "verbs-future-08",
+      "type": "gap",
+      "prompt": "Demain matin, tu ___ le bus de huit heures.",
+      "base": "prendre",
+      "hint": "simple future",
+      "answers": ["prendras"],
+      "en": "Tomorrow morning you will take the eight o'clock bus.",
+      "why": "-re verbs drop the final e of the infinitive before the ending: prendr- + -as."
+    },
+    {
+      "id": "verbs-future-09",
+      "type": "gap",
+      "prompt": "Mes grands-parents nous ___ à l'aéroport samedi prochain.",
+      "base": "attendre",
+      "hint": "simple future",
+      "answers": ["attendront"],
+      "en": "My grandparents will wait for us at the airport next Saturday.",
+      "why": "attendre drops its final e: attendr- + -ont for a plural subject (ils)."
+    },
+    {
+      "id": "verbs-future-10",
+      "type": "flip",
+      "front": "Which common verbs have an irregular stem in the simple future?",
+      "back": "être -> ser- (je serai), avoir -> aur- (j'aurai), aller -> ir- (j'irai), faire -> fer- (je ferai), pouvoir -> pourr- (je pourrai), vouloir -> voudr- (je voudrai), devoir -> devr- (je devrai), savoir -> saur- (je saurai), venir -> viendr- (je viendrai), voir -> verr- (je verrai), envoyer -> enverr- (j'enverrai), falloir -> il faudra. The endings are the same as for regular verbs."
+    },
+    {
+      "id": "verbs-future-11",
+      "type": "gap",
+      "prompt": "L'été prochain, nous ___ en Italie pour les vacances.",
+      "base": "aller",
+      "hint": "simple future",
+      "answers": ["irons"],
+      "en": "Next summer we will go to Italy for the holidays.",
+      "why": "aller has the irregular future stem ir-: nous irons."
+    },
+    {
+      "id": "verbs-future-12",
+      "type": "gap",
+      "prompt": "Selon la météo, demain il ___ beau dans le sud de la France.",
+      "base": "faire",
+      "hint": "simple future",
+      "answers": ["fera"],
+      "en": "According to the weather forecast, it will be fine in the south of France tomorrow.",
+      "why": "faire has the irregular future stem fer-: il fera beau = it will be fine."
+    },
+    {
+      "id": "verbs-future-13",
+      "type": "gap",
+      "prompt": "Le mois prochain, mes parents ___ une voiture électrique.",
+      "base": "avoir",
+      "hint": "simple future",
+      "answers": ["auront"],
+      "en": "Next month my parents will have an electric car.",
+      "why": "avoir has the irregular future stem aur-: ils auront."
+    },
+    {
+      "id": "verbs-future-14",
+      "type": "gap",
+      "prompt": "Quand j'aurai dix-huit ans, je ___ passer mon permis de conduire.",
+      "base": "pouvoir",
+      "hint": "simple future",
+      "answers": ["pourrai"],
+      "en": "When I am eighteen, I will be able to take my driving test.",
+      "why": "pouvoir has the irregular future stem pourr- (double r): je pourrai."
+    },
+    {
+      "id": "verbs-future-15",
+      "type": "gap",
+      "prompt": "Ce soir, tu ___ ranger ta chambre avant de sortir.",
+      "base": "devoir",
+      "hint": "simple future",
+      "answers": ["devras"],
+      "en": "This evening you will have to tidy your room before going out.",
+      "why": "devoir has the irregular future stem devr-: tu devras = you will have to."
+    },
+    {
+      "id": "verbs-future-16",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the simple future.",
+      "prompt": "Mes cousins savent nager.",
+      "answers": ["Mes cousins sauront nager."],
+      "en": "My cousins will know how to swim.",
+      "why": "savoir has the irregular future stem saur-: ils sauront."
+    },
+    {
+      "id": "verbs-future-17",
+      "type": "flip",
+      "front": "Translate: 'When I am older, I will live abroad.' What is the trap?",
+      "back": "Quand je serai plus âgé(e), j'habiterai à l'étranger. After quand, French uses the future when the action is still to come; English uses the present ('when I am'). Writing 'quand je suis plus âgé' for a future idea is a classic mistake."
+    },
+    {
+      "id": "verbs-future-18",
+      "type": "gap",
+      "prompt": "Quand je ___ grand, je deviendrai pilote.",
+      "base": "être",
+      "answers": ["serai"],
+      "en": "When I grow up, I will become a pilot.",
+      "why": "quand + future: the action is still to come, so French uses the future (je serai) where English uses the present."
+    },
+    {
+      "id": "verbs-future-19",
+      "type": "gap",
+      "prompt": "Quand Paul ___ à la maison ce soir, il t'enverra un message.",
+      "base": "rentrer",
+      "answers": ["rentrera", "sera rentré"],
+      "en": "When Paul gets home this evening, he will send you a message.",
+      "why": "The main verb (enverra) is in the future, so the verb after quand must be future too: rentrera, not rentre. (The future perfect sera rentré is also correct.)"
+    },
+    {
+      "id": "verbs-future-20",
+      "type": "gap",
+      "prompt": "Quand vous viendrez à Paris, vous ___ la tour Eiffel.",
+      "base": "voir",
+      "hint": "simple future",
+      "answers": ["verrez"],
+      "en": "When you come to Paris, you will see the Eiffel Tower.",
+      "why": "voir has the irregular future stem verr-: vous verrez. Notice viendrez (venir -> viendr-) after quand as well."
+    },
+    {
+      "id": "verbs-future-21",
+      "type": "gap",
+      "prompt": "Ma cousine nous ___ des photos de son voyage au Canada.",
+      "base": "envoyer",
+      "hint": "simple future",
+      "answers": ["enverra"],
+      "en": "My cousin will send us photos of her trip to Canada.",
+      "why": "envoyer has the irregular future stem enverr-: elle enverra."
+    },
+    {
+      "id": "verbs-future-22",
+      "type": "transform",
+      "instruction": "Change the near future to the simple future.",
+      "prompt": "Il va falloir partir tôt.",
+      "answers": ["Il faudra partir tôt."],
+      "en": "We will have to leave early.",
+      "why": "falloir is only used with il; its future is il faudra (stem faudr-)."
+    },
+    {
+      "id": "verbs-future-23",
+      "type": "gap",
+      "prompt": "Demain, ma mère ___ du pain à la boulangerie.",
+      "base": "acheter",
+      "hint": "simple future",
+      "answers": ["achètera"],
+      "en": "Tomorrow my mother will buy some bread at the baker's.",
+      "why": "acheter changes e to è in its future stem (achèter-), so elle achètera."
+    },
+    {
+      "id": "verbs-future-24",
+      "type": "flip",
+      "front": "je serai or je serais? How do you tell the simple future from the conditional?",
+      "back": "Both use the same stem. The future has the endings -ai, -as, -a, -ons, -ez, -ont: je serai = I will be. The conditional has the imperfect endings -ais, -ais, -ait, -ions, -iez, -aient: je serais = I would be. The je forms can sound alike, so check the spelling carefully when you write."
+    }
+  ]
+}

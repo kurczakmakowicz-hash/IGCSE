@@ -69,11 +69,11 @@
     {
       "id": "pron-possessive-08",
       "type": "gap",
-      "prompt": "Marc a ses baskets, mais sa sœur a oublié ___.",
+      "prompt": "Ma sœur a apporté ses baskets, mais mon frère a oublié ___.",
       "base": "le sien",
       "answers": ["les siennes"],
-      "en": "Marc has his trainers, but his sister has forgotten hers.",
-      "why": "It replaces ses baskets, which is feminine plural, so les siennes; the owner being a girl does not matter."
+      "en": "My sister has brought her trainers, but my brother has forgotten his.",
+      "why": "It replaces ses baskets (une basket is feminine), so les siennes. It agrees with the trainers, not the owner: the owner is a boy, but the form is feminine."
     },
     {
       "id": "pron-possessive-09",
@@ -122,7 +122,7 @@
       "type": "gap",
       "prompt": "Tu ressembles à ton père ? Moi, je ne ressemble pas du tout ___.",
       "base": "le mien",
-      "hint": "(à + le mien)",
+      "hint": "(ressembler à)",
       "answers": ["au mien"],
       "en": "Do you look like your dad? I don't look like mine at all.",
       "why": "ressembler is followed by à, and à + le mien combines to au mien."

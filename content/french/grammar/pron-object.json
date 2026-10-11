@@ -36,10 +36,10 @@
       "id": "pron-object-03",
       "type": "transform",
       "instruction": "Replace the words in bold with a pronoun.",
-      "prompt": "Nous prenons **le bus** pour aller au collège.",
-      "answers": ["Nous le prenons pour aller au collège."],
-      "en": "We take it to go to school.",
-      "why": "le bus is masculine singular, so the direct object pronoun is le, placed before the verb."
+      "prompt": "Nous attendons **le bus** devant le collège.",
+      "answers": ["Nous l'attendons devant le collège."],
+      "en": "We wait for it in front of the school.",
+      "why": "attendre takes a direct object (no preposition, unlike English 'wait for'), so le bus becomes le, which shortens to l' before the vowel."
     },
     {
       "id": "pron-object-04",

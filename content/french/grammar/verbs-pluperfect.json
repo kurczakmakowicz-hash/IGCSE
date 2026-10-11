@@ -1,0 +1,181 @@
+{
+  "id": "verbs-pluperfect",
+  "order": 31,
+  "area": "Verbs",
+  "title": "Pluperfect tense",
+  "spec": "Verbs: tenses: pluperfect",
+  "receptive": false,
+  "summary": [
+    "The pluperfect means 'had done': imperfect of avoir or être + past participle: j'avais fini, elle était partie.",
+    "Imperfect of avoir: j'avais, tu avais, il avait, nous avions, vous aviez, ils avaient.",
+    "Imperfect of être: j'étais, tu étais, il était, nous étions, vous étiez, ils étaient.",
+    "Verbs that take être in the perfect take être in the pluperfect, and so do reflexive verbs: nous étions arrivés, elle s'était levée.",
+    "With être, the past participle agrees with the subject: Mes amies étaient déjà parties.",
+    "With avoir, the past participle only agrees with a direct object placed before the verb: les photos qu'il avait prises.",
+    "Use it for something that had already happened before another past event: J'avais déjà mangé quand il est arrivé.",
+    "déjà and ne ... pas go round the auxiliary: Le film avait déjà commencé. Je n'avais pas compris."
+  ],
+  "cards": [
+    {
+      "id": "verbs-pluperfect-01",
+      "type": "flip",
+      "front": "How do you form the pluperfect, and what does it mean?",
+      "back": "Imperfect of avoir or être + past participle. It means 'had done': j'avais mangé = I had eaten; nous étions partis = we had left. Use the same auxiliary (avoir or être) as in the perfect tense."
+    },
+    {
+      "id": "verbs-pluperfect-02",
+      "type": "gap",
+      "prompt": "Quand nous sommes arrivés au cinéma, le film ___ sans nous.",
+      "base": "commencer",
+      "hint": "pluperfect",
+      "answers": ["avait commencé"],
+      "en": "When we arrived at the cinema, the film had started without us.",
+      "why": "The film started before we arrived, so the pluperfect is used: imperfect of avoir (avait) + commencé."
+    },
+    {
+      "id": "verbs-pluperfect-03",
+      "type": "gap",
+      "prompt": "Maman était contente parce que nous ___ la cuisine.",
+      "base": "ranger",
+      "hint": "pluperfect",
+      "answers": ["avions rangé"],
+      "en": "Mum was pleased because we had tidied the kitchen.",
+      "why": "nous avions (imperfect of avoir) + rangé. With avoir the participle does not agree with the subject."
+    },
+    {
+      "id": "verbs-pluperfect-04",
+      "type": "gap",
+      "prompt": "Paul a enfin retrouvé le portable qu'il ___ dans le bus.",
+      "base": "perdre",
+      "hint": "pluperfect",
+      "answers": ["avait perdu"],
+      "en": "Paul finally found the phone he had lost on the bus.",
+      "why": "Losing the phone happened before finding it, so the pluperfect is used: il avait + perdu."
+    },
+    {
+      "id": "verbs-pluperfect-05",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the pluperfect.",
+      "prompt": "J'ai fini mes devoirs.",
+      "answers": ["J'avais fini mes devoirs."],
+      "en": "I had finished my homework.",
+      "why": "Change the present of avoir (ai) to the imperfect (avais); the past participle fini stays the same."
+    },
+    {
+      "id": "verbs-pluperfect-06",
+      "type": "flip",
+      "front": "Which verbs use être in the pluperfect, and what happens to the past participle?",
+      "back": "The same ones as in the perfect: verbs of movement or change of state (aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, rentrer, devenir, revenir) and all reflexive verbs. The participle agrees with the subject: elle était partie, ils étaient arrivés, nous nous étions levé(e)s."
+    },
+    {
+      "id": "verbs-pluperfect-07",
+      "type": "gap",
+      "prompt": "Quand Marc est arrivé à la gare, ses amis ___ sans lui.",
+      "base": "partir",
+      "hint": "pluperfect",
+      "answers": ["étaient partis"],
+      "en": "When Marc got to the station, his friends had left without him.",
+      "why": "partir takes être; ses amis is masculine plural, so the participle adds -s: étaient partis."
+    },
+    {
+      "id": "verbs-pluperfect-08",
+      "type": "gap",
+      "prompt": "Léa n'est pas venue à la fête parce qu'elle ___ malade la veille.",
+      "base": "tomber",
+      "hint": "pluperfect",
+      "answers": ["était tombée"],
+      "en": "Léa didn't come to the party because she had fallen ill the day before.",
+      "why": "tomber takes être; the participle agrees with elle (feminine singular): était tombée."
+    },
+    {
+      "id": "verbs-pluperfect-09",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the pluperfect.",
+      "prompt": "Elles sont allées en ville.",
+      "answers": ["Elles étaient allées en ville."],
+      "en": "They had gone into town.",
+      "why": "Change sont (present of être) to étaient; allées keeps its feminine plural agreement."
+    },
+    {
+      "id": "verbs-pluperfect-10",
+      "type": "flip",
+      "front": "When do you use the pluperfect? Translate: J'avais déjà mangé quand il est arrivé.",
+      "back": "'I had already eaten when he arrived.' The pluperfect is for an action that happened before another past action: eating came first (pluperfect), his arrival second (perfect). déjà goes between the auxiliary and the participle."
+    },
+    {
+      "id": "verbs-pluperfect-11",
+      "type": "gap",
+      "prompt": "Nous sommes restés à la maison parce qu'il ___ toute la nuit.",
+      "base": "pleuvoir",
+      "hint": "pluperfect",
+      "answers": ["avait plu"],
+      "en": "We stayed at home because it had rained all night.",
+      "why": "pleuvoir takes avoir and has the irregular past participle plu: il avait plu."
+    },
+    {
+      "id": "verbs-pluperfect-12",
+      "type": "gap",
+      "prompt": "Chloé était épuisée parce qu'elle ___ du sport toute la journée.",
+      "base": "faire",
+      "hint": "pluperfect",
+      "answers": ["avait fait"],
+      "en": "Chloé was exhausted because she had done sport all day.",
+      "why": "faire takes avoir and has the irregular past participle fait: elle avait fait."
+    },
+    {
+      "id": "verbs-pluperfect-13",
+      "type": "gap",
+      "prompt": "Mon frère et moi avons raté le concert parce que nous ___ trop tard.",
+      "base": "partir",
+      "hint": "pluperfect",
+      "answers": ["étions partis"],
+      "en": "My brother and I missed the concert because we had left too late.",
+      "why": "partir takes être. Mon frère et moi = nous, masculine plural, so the participle is partis."
+    },
+    {
+      "id": "verbs-pluperfect-14",
+      "type": "gap",
+      "prompt": "Ce matin-là, ma sœur ___ très tôt pour réviser.",
+      "base": "se lever",
+      "hint": "pluperfect",
+      "answers": ["s'était levée"],
+      "en": "That morning my sister had got up very early to revise.",
+      "why": "Reflexive verbs take être: se becomes s' before était, and the participle agrees with ma sœur: levée."
+    },
+    {
+      "id": "verbs-pluperfect-15",
+      "type": "transform",
+      "instruction": "Rewrite the sentence in the pluperfect.",
+      "prompt": "Il n'a pas compris la question.",
+      "answers": ["Il n'avait pas compris la question."],
+      "en": "He had not understood the question.",
+      "why": "ne ... pas goes round the auxiliary, which changes to the imperfect: n'avait pas compris."
+    },
+    {
+      "id": "verbs-pluperfect-16",
+      "type": "gap",
+      "prompt": "Ma correspondante m'a dit qu'elle ___ en Espagne l'été précédent.",
+      "base": "aller",
+      "hint": "pluperfect",
+      "answers": ["était allée"],
+      "en": "My penfriend told me that she had gone to Spain the summer before.",
+      "why": "In reported speech, an earlier past action goes into the pluperfect. aller takes être, and the participle agrees with elle: allée."
+    },
+    {
+      "id": "verbs-pluperfect-17",
+      "type": "flip",
+      "front": "In the pluperfect with avoir, when does the past participle agree?",
+      "back": "Only when a direct object comes before the verb (often que, la, l' or les): Où sont les clés que j'avais laissées sur la table ? La lettre ? Je l'avais déjà lue. With no direct object in front there is no agreement: Elle avait fini."
+    },
+    {
+      "id": "verbs-pluperfect-18",
+      "type": "gap",
+      "prompt": "Mon père a imprimé les photos que ma sœur ___ pendant les vacances.",
+      "base": "prendre",
+      "hint": "pluperfect",
+      "answers": ["avait prises"],
+      "en": "My dad printed the photos that my sister had taken during the holidays.",
+      "why": "prendre takes avoir, but que (= les photos, feminine plural) is a direct object placed before the verb, so the participle agrees with it: prises."
+    }
+  ]
+}

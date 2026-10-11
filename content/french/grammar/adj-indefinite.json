@@ -70,7 +70,7 @@
       "type": "transform",
       "instruction": "Rewrite the sentence using chaque instead of the words in bold.",
       "prompt": "Je fais du sport **tous les matins**.",
-      "answers": ["Je fais du sport chaque matin."],
+      "answers": ["Je fais du sport chaque matin.", "Chaque matin, je fais du sport."],
       "en": "I do sport every morning.",
       "why": "chaque is followed by a singular noun with no article: tous les matins = chaque matin."
     },
@@ -78,7 +78,7 @@
       "id": "adj-indefinite-08",
       "type": "flip",
       "front": "quelques or plusieurs: what is the difference?",
-      "back": "quelques = a few / some (a small number): quelques minutes. plusieurs = several (more than two, never changes): plusieurs semaines. Both go before a plural noun with no article."
+      "back": "quelques = a few / some (a small number): quelques minutes. plusieurs = several (more than one; it never changes): plusieurs semaines. Both go before a plural noun with no article."
     },
     {
       "id": "adj-indefinite-09",

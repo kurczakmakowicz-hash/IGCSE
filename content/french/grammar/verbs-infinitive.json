@@ -27,6 +27,7 @@
       "type": "gap",
       "prompt": "Ma sœur ___ devenir vétérinaire plus tard.",
       "base": "vouloir",
+      "hint": "(present tense)",
       "answers": ["veut"],
       "en": "My sister wants to become a vet later on.",
       "why": "vouloir is followed directly by an infinitive. Only the first verb is conjugated: elle veut + devenir."
@@ -126,9 +127,9 @@
       "type": "gap",
       "prompt": "Je mets de l'argent de côté ___ acheter une voiture.",
       "hint": "(in order to)",
-      "answers": ["pour"],
+      "answers": ["pour", "afin d'"],
       "en": "I'm saving money (in order) to buy a car.",
-      "why": "pour + infinitive expresses purpose: in order to."
+      "why": "pour + infinitive expresses purpose: in order to. (afin de, shortened to afin d' before a vowel, means the same but is more formal.)"
     },
     {
       "id": "verbs-infinitive-15",
@@ -144,7 +145,7 @@
       "type": "transform",
       "instruction": "Join the two sentences using pour + infinitive.",
       "prompt": "Je travaille le samedi. Je gagne de l'argent.",
-      "answers": ["Je travaille le samedi pour gagner de l'argent."],
+      "answers": ["Je travaille le samedi pour gagner de l'argent.", "Pour gagner de l'argent, je travaille le samedi."],
       "en": "I work on Saturdays to earn money.",
       "why": "pour + infinitive gives the purpose: the second verb becomes the infinitive gagner."
     },

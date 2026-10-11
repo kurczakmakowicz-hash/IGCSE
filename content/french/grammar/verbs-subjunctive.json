@@ -1,0 +1,92 @@
+{
+  "id": "verbs-subjunctive",
+  "order": 37,
+  "area": "Verbs",
+  "title": "Present subjunctive (recognition)",
+  "spec": "Verbs: subjunctive mood: present, in commonly used expressions (R)",
+  "receptive": true,
+  "summary": [
+    "The subjunctive is a verb form used after certain expressions with que. You need to recognise and understand it, not produce it.",
+    "Regular forms: ils form of the present minus -ent, plus -e, -es, -e, -ions, -iez, -ent: ils finissent -> que je finisse, ils partent -> que tu partes.",
+    "For -er verbs most forms look the same as the present: qu'il parle. The expression before que tells you it is subjunctive.",
+    "Common triggers: il faut que (must), vouloir que (to want ... to), avant que (before), bien que (although), pour que (so that), avoir peur que (to be afraid that), je ne pense pas que (I don't think that).",
+    "Key irregular forms: être -> que je sois, avoir -> que j'aie, aller -> que j'aille, faire -> que je fasse, pouvoir -> que je puisse, vouloir -> que je veuille, savoir -> que je sache.",
+    "Translate for meaning, not word for word: Il faut que tu partes = You must leave. Ma mère veut que je range ma chambre = My mum wants me to tidy my room.",
+    "je pense que + normal verb, but je ne pense pas que + subjunctive: Je pense qu'il est là. / Je ne pense pas qu'il soit là.",
+    "When the subject is the same, French uses an infinitive instead: Je veux partir (I want to leave), but Je veux que tu partes (I want you to leave)."
+  ],
+  "cards": [
+    {
+      "id": "verbs-subjunctive-01",
+      "type": "flip",
+      "front": "What is the subjunctive and how do you spot it?",
+      "back": "A special verb form used after certain expressions ending in que (il faut que, bien que, pour que...). Regular forms: ils form of the present minus -ent, plus -e, -es, -e, -ions, -iez, -ent: ils finissent -> que je finisse, que nous finissions. Look for a trigger + que + an unusual verb form."
+    },
+    {
+      "id": "verbs-subjunctive-02",
+      "type": "flip",
+      "front": "Name seven common expressions that are followed by the subjunctive.",
+      "back": "il faut que (must / it is necessary that), vouloir que (to want ... to), avant que (before), bien que (although), pour que (so that), avoir peur que (to be afraid that), je ne pense pas que (I don't think that)."
+    },
+    {
+      "id": "verbs-subjunctive-03",
+      "type": "flip",
+      "front": "Which infinitives do these subjunctive forms come from: sois, aie, aille, fasse, puisse, veuille, sache?",
+      "back": "sois -> être, aie -> avoir, aille -> aller, fasse -> faire, puisse -> pouvoir, veuille -> vouloir, sache -> savoir."
+    },
+    {
+      "id": "verbs-subjunctive-04",
+      "type": "flip",
+      "front": "Translate: Il faut que tu fasses tes devoirs ce soir.",
+      "back": "You must do your homework this evening. (il faut que + subjunctive; fasses is from faire.)"
+    },
+    {
+      "id": "verbs-subjunctive-05",
+      "type": "flip",
+      "front": "Translate: Mes parents veulent que je sois médecin.",
+      "back": "My parents want me to be a doctor. (vouloir que + subjunctive; sois is from être. English says 'want me to be', French says 'want that I be'.)"
+    },
+    {
+      "id": "verbs-subjunctive-06",
+      "type": "flip",
+      "front": "Translate: Il faut que j'aille chez le dentiste demain.",
+      "back": "I have to go to the dentist tomorrow. (il faut que + subjunctive; aille is from aller.)"
+    },
+    {
+      "id": "verbs-subjunctive-07",
+      "type": "flip",
+      "front": "Translate: Bien qu'il pleuve, nous allons faire une randonnée.",
+      "back": "Although it is raining, we are going to go hiking. (bien que = although; pleuve is from pleuvoir.)"
+    },
+    {
+      "id": "verbs-subjunctive-08",
+      "type": "flip",
+      "front": "Translate: Le prof répète la règle pour que nous puissions faire l'exercice.",
+      "back": "The teacher repeats the rule so that we can do the exercise. (pour que = so that; puissions is from pouvoir.)"
+    },
+    {
+      "id": "verbs-subjunctive-09",
+      "type": "flip",
+      "front": "Translate: Rentrons avant qu'il fasse nuit.",
+      "back": "Let's go home before it gets dark. (avant que = before; fasse is from faire: il fait nuit = it is dark.)"
+    },
+    {
+      "id": "verbs-subjunctive-10",
+      "type": "flip",
+      "front": "Translate: Je ne pense pas qu'elle ait raison. Why ait and not a?",
+      "back": "I don't think she is right. Je pense que takes the normal verb (Je pense qu'elle a raison), but je ne pense pas que takes the subjunctive: ait, from avoir (avoir raison = to be right)."
+    },
+    {
+      "id": "verbs-subjunctive-11",
+      "type": "flip",
+      "front": "Translate: J'ai peur que mon frère ne veuille pas venir à la fête.",
+      "back": "I'm afraid my brother won't want to come to the party. (avoir peur que + subjunctive; veuille is from vouloir. The present subjunctive often refers to the future.)"
+    },
+    {
+      "id": "verbs-subjunctive-12",
+      "type": "flip",
+      "front": "Why do we say 'Je veux savoir la vérité' but 'Je veux que tu saches la vérité'?",
+      "back": "When the same person wants and does the action, use the infinitive: Je veux savoir la vérité (I want to know the truth). When the subjects are different, use que + subjunctive: Je veux que tu saches la vérité (I want you to know the truth). saches is from savoir."
+    }
+  ]
+}

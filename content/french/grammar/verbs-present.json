@@ -150,7 +150,7 @@
     {
       "id": "verbs-present-17",
       "type": "transform",
-      "instruction": "Rewrite the sentence in the plural, starting with Ils.",
+      "instruction": "Rewrite the sentence with ils as the subject.",
       "prompt": "Il boit du thé et lit le journal.",
       "answers": ["Ils boivent du thé et lisent le journal.", "Ils boivent du thé et ils lisent le journal."],
       "en": "They drink tea and read the newspaper.",

@@ -7,6 +7,7 @@
   "receptive": false,
   "summary": [
     "Adjectives agree with the noun in gender and number: add -e for feminine, -s for plural, -es for feminine plural: un pull noir, une jupe noire, des pulls noirs, des jupes noires.",
+    "For a mix of masculine and feminine nouns, use the masculine plural: Mon frère et ma sœur sont grands.",
     "If the adjective already ends in -e, don't add another (une maison moderne), but -é still adds -e (fatiguée). If it ends in -s or -x, the masculine plural doesn't change (des garçons français, des enfants heureux).",
     "Feminine patterns: -eux → -euse (heureuse), -if → -ive (sportive), -er → -ère (chère), -on → -onne (bonne), -el → -elle (naturelle), -ien → -ienne (italienne).",
     "Learn the one-offs: blanc → blanche, long → longue, gentil → gentille, frais → fraîche, gros → grosse.",
@@ -197,11 +198,11 @@
     {
       "id": "adj-agreement-23",
       "type": "transform",
-      "instruction": "Rewrite the sentence about Marie instead of Marc.",
+      "instruction": "Rewrite the sentence about Marc et Julie instead of Marc.",
       "prompt": "Marc est sportif et généreux.",
-      "answers": ["Marie est sportive et généreuse."],
-      "en": "Marie is sporty and generous.",
-      "why": "In the feminine, -if becomes -ive and -eux becomes -euse."
+      "answers": ["Marc et Julie sont sportifs et généreux."],
+      "en": "Marc and Julie are sporty and generous.",
+      "why": "For a mixed group (masculine + feminine) the adjective is masculine plural: sportif → sportifs; généreux already ends in -x, so it doesn't change. The verb becomes sont."
     },
     {
       "id": "adj-agreement-24",

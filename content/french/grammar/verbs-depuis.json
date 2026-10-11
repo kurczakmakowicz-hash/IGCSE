@@ -1,0 +1,167 @@
+{
+  "id": "verbs-depuis",
+  "order": 32,
+  "area": "Verbs",
+  "title": "depuis with the present and imperfect",
+  "spec": "Verbs: use of depuis with present and imperfect tenses",
+  "receptive": false,
+  "summary": [
+    "depuis + present = something that started in the past and is still going on: J'habite ici depuis cinq ans = I have lived here for five years.",
+    "English says 'have been doing' or 'have done', but French uses the present tense: Je joue du piano depuis deux ans.",
+    "depuis + a length of time = for; depuis + a point in time = since: depuis trois mois, depuis lundi, depuis 2020.",
+    "depuis + imperfect = 'had been doing', for something still going on at a moment in the past: Je dormais depuis une heure quand le téléphone a sonné.",
+    "To ask how long: Depuis combien de temps apprends-tu le français ? To ask since when: Depuis quand habites-tu ici ? Both take the present.",
+    "pendant = for a period that is over, usually with the perfect: J'ai habité à Paris pendant trois ans (I don't live there now).",
+    "il y a + a length of time = ago, with the perfect: Je suis arrivé il y a deux jours.",
+    "Compare: J'apprends le judo depuis trois ans (and still do) / J'ai fait du judo pendant trois ans (and stopped) / J'ai commencé le judo il y a trois ans."
+  ],
+  "cards": [
+    {
+      "id": "verbs-depuis-01",
+      "type": "flip",
+      "front": "How do you say 'I have lived here for five years' in French? Why?",
+      "back": "J'habite ici depuis cinq ans. With depuis, French uses the present tense for an action that started in the past and is still going on. English says 'have lived' or 'have been living', but the French verb stays in the present."
+    },
+    {
+      "id": "verbs-depuis-02",
+      "type": "gap",
+      "prompt": "Ma famille ___ à Bordeaux depuis dix ans et nous adorons la ville.",
+      "base": "habiter",
+      "answers": ["habite"],
+      "en": "My family has lived in Bordeaux for ten years and we love the city.",
+      "why": "depuis + present for an action that is still going on: ma famille (= elle) habite."
+    },
+    {
+      "id": "verbs-depuis-03",
+      "type": "gap",
+      "prompt": "Nous ___ le français depuis quatre ans maintenant.",
+      "base": "apprendre",
+      "answers": ["apprenons"],
+      "en": "We have been learning French for four years now.",
+      "why": "We are still learning French, so depuis takes the present: nous apprenons."
+    },
+    {
+      "id": "verbs-depuis-04",
+      "type": "gap",
+      "prompt": "Mon frère ___ au foot depuis l'âge de six ans et il est très fort.",
+      "base": "jouer",
+      "answers": ["joue"],
+      "en": "My brother has played football since he was six and he is very good.",
+      "why": "depuis + a point in time means 'since'; he still plays, so the verb is in the present: il joue."
+    },
+    {
+      "id": "verbs-depuis-05",
+      "type": "flip",
+      "front": "depuis can mean 'for' or 'since'. How do you know which?",
+      "back": "depuis + a length of time = for: depuis deux ans (for two years), depuis une heure (for an hour). depuis + a point in time = since: depuis lundi (since Monday), depuis 2021, depuis mon enfance (since my childhood). The verb is in the present either way."
+    },
+    {
+      "id": "verbs-depuis-06",
+      "type": "gap",
+      "prompt": "Il ___ depuis ce matin ; prends ton parapluie !",
+      "base": "pleuvoir",
+      "answers": ["pleut"],
+      "en": "It has been raining since this morning; take your umbrella!",
+      "why": "It is still raining, so depuis takes the present: il pleut."
+    },
+    {
+      "id": "verbs-depuis-07",
+      "type": "transform",
+      "instruction": "Correct the mistake: the sentence should mean 'I have been waiting for twenty minutes'.",
+      "prompt": "J'ai attendu depuis vingt minutes.",
+      "answers": ["J'attends depuis vingt minutes.", "Depuis vingt minutes, j'attends."],
+      "en": "I have been waiting for twenty minutes.",
+      "why": "The waiting is still going on, so French uses the present with depuis, not the perfect."
+    },
+    {
+      "id": "verbs-depuis-08",
+      "type": "transform",
+      "instruction": "Rewrite the sentence using depuis, changing the verb as needed.",
+      "prompt": "J'ai commencé à jouer de la guitare il y a trois ans.",
+      "answers": ["Je joue de la guitare depuis trois ans.", "Depuis trois ans, je joue de la guitare."],
+      "en": "I have been playing the guitar for three years.",
+      "why": "Started three years ago and still going on = present + depuis: je joue de la guitare depuis trois ans."
+    },
+    {
+      "id": "verbs-depuis-09",
+      "type": "flip",
+      "front": "What does depuis mean with the imperfect? Translate: Je dormais depuis une heure quand le téléphone a sonné.",
+      "back": "'I had been sleeping for an hour when the phone rang.' depuis + imperfect describes something that had been going on up to a moment in the past and was still going on then. English uses 'had been doing'."
+    },
+    {
+      "id": "verbs-depuis-10",
+      "type": "gap",
+      "prompt": "Quand mon père est rentré, je ___ mes devoirs depuis deux heures.",
+      "base": "faire",
+      "answers": ["faisais"],
+      "en": "When my dad got home, I had been doing my homework for two hours.",
+      "why": "The homework was still going on at a moment in the past (when he got home), so depuis takes the imperfect: je faisais (stem fais-, from nous faisons)."
+    },
+    {
+      "id": "verbs-depuis-11",
+      "type": "gap",
+      "prompt": "Ma grand-mère ___ dans ce village depuis cinquante ans quand elle a déménagé.",
+      "base": "habiter",
+      "answers": ["habitait"],
+      "en": "My grandmother had lived in this village for fifty years when she moved.",
+      "why": "depuis + imperfect = 'had been doing' up to a moment in the past: elle habitait."
+    },
+    {
+      "id": "verbs-depuis-12",
+      "type": "flip",
+      "front": "How do you ask 'How long...?' and 'Since when...?' with depuis?",
+      "back": "Depuis combien de temps + present = How long (have you been...)?: Depuis combien de temps apprends-tu le français ? Depuis quand + present = Since when...?: Depuis quand habitez-vous ici ? Answer with depuis + present: J'habite ici depuis 2019."
+    },
+    {
+      "id": "verbs-depuis-13",
+      "type": "gap",
+      "prompt": "___ habites-tu à Londres ?",
+      "hint": "(since when)",
+      "answers": ["Depuis quand"],
+      "en": "Since when have you been living in London?",
+      "why": "Depuis quand asks when something started; the verb is in the present because you still live there."
+    },
+    {
+      "id": "verbs-depuis-14",
+      "type": "gap",
+      "prompt": "Vous jouez très bien ! Depuis combien de temps ___-vous du basket ?",
+      "base": "faire",
+      "answers": ["faites"],
+      "en": "You play really well! How long have you been playing basketball?",
+      "why": "Depuis combien de temps takes the present: vous faites (irregular), inverted to faites-vous."
+    },
+    {
+      "id": "verbs-depuis-15",
+      "type": "flip",
+      "front": "depuis, pendant or il y a? What is the difference?",
+      "back": "depuis + present = for/since, still going on: Je fais du judo depuis deux ans. pendant = for a period that is over, usually with the perfect: J'ai fait du judo pendant deux ans (I've stopped). il y a = ago: J'ai commencé le judo il y a deux ans."
+    },
+    {
+      "id": "verbs-depuis-16",
+      "type": "gap",
+      "prompt": "J'ai vécu au Maroc ___ deux ans, puis nous sommes rentrés en France.",
+      "hint": "(for)",
+      "answers": ["pendant", "durant"],
+      "en": "I lived in Morocco for two years, then we came back to France.",
+      "why": "The stay is over (perfect tense, then we came back), so 'for' is pendant, not depuis."
+    },
+    {
+      "id": "verbs-depuis-17",
+      "type": "gap",
+      "prompt": "Nous sommes arrivés à Nice ___ trois jours.",
+      "hint": "(ago)",
+      "answers": ["il y a"],
+      "en": "We arrived in Nice three days ago.",
+      "why": "il y a + a length of time = ago; it goes with a completed action in the perfect tense."
+    },
+    {
+      "id": "verbs-depuis-18",
+      "type": "gap",
+      "prompt": "Je fais de la natation ___ trois ans et j'adore ça.",
+      "hint": "(for)",
+      "answers": ["depuis"],
+      "en": "I have been swimming for three years and I love it.",
+      "why": "The verb is in the present and I still swim, so 'for' is depuis, not pendant."
+    }
+  ]
+}

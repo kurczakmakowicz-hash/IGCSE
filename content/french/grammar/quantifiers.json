@@ -13,7 +13,7 @@
     "assez means quite (assez cher) or enough (assez de temps); trop means too (trop cher) or too much / too many (trop de bruit).",
     "si and tellement mean so in front of an adjective or adverb: Elle est si drôle ! Il parle tellement vite !",
     "In the perfect tense beaucoup, trop and assez go between avoir and the past participle: J'ai trop mangé.",
-    "bien des + plural noun means many and is the exception that keeps des: bien des touristes."
+    "la plupart (most) is the exception: it takes de + the definite article: la plupart des élèves ont un portable (plural verb), la plupart du temps (most of the time)."
   ],
   "cards": [
     {
@@ -162,6 +162,15 @@
       "answers": ["trop"],
       "en": "Last night I ate too much and now I've got stomach ache.",
       "why": "In the perfect tense trop goes between the auxiliary avoir and the past participle mangé."
+    },
+    {
+      "id": "quantifiers-19",
+      "type": "gap",
+      "prompt": "___ élèves de ma classe ont un portable.",
+      "hint": "(most)",
+      "answers": ["La plupart des"],
+      "en": "Most pupils in my class have a mobile phone.",
+      "why": "la plupart (most) is followed by de + the definite article (des), not plain de like beaucoup de; the verb after it is plural: ont."
     }
   ]
 }

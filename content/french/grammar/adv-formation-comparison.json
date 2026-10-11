@@ -165,6 +165,16 @@
       "answers": ["meilleure"],
       "en": "My sister got a better mark than me in maths.",
       "why": "'Better' describes the noun note, so use the adjective meilleur, which agrees with the feminine noun: meilleure."
+    },
+    {
+      "id": "adv-formation-comparison-19",
+      "type": "gap",
+      "prompt": "Cette année, je fais du sport ___ que l'année dernière.",
+      "base": "régulier",
+      "hint": "(less regularly)",
+      "answers": ["moins régulièrement"],
+      "en": "This year I do sport less regularly than last year.",
+      "why": "Comparative of inferiority: moins + adverb + que. régulier → feminine régulière → régulièrement (keep the grave accent)."
     }
   ]
 }

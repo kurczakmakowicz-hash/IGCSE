@@ -1,0 +1,173 @@
+{
+  "id": "verbs-imperative",
+  "order": 34,
+  "area": "Verbs",
+  "title": "Imperative (commands)",
+  "spec": "Verbs: imperative",
+  "receptive": false,
+  "summary": [
+    "The imperative gives orders, instructions and advice. Take the tu, nous or vous form of the present tense and drop the subject pronoun: Finis ! Écoutons ! Prenez !",
+    "-er verbs, aller, and verbs like ouvrir and offrir (tu ouvres, tu offres) drop the -s of the tu form: tu regardes -> Regarde ! tu vas -> Va ! tu ouvres -> Ouvre !",
+    "The -s comes back before y and en: Vas-y ! Achètes-en !",
+    "The nous form means 'let's': Partons ! Allons au cinéma !",
+    "Irregular forms: être -> sois, soyons, soyez; avoir -> aie, ayons, ayez. Also recognise savoir -> sache, sachez and vouloir -> veuillez (Veuillez patienter = Please wait).",
+    "Negative commands: ne ... pas goes round the verb: Ne crie pas ! Ne courez pas !",
+    "Positive commands: object and reflexive pronouns go after the verb with a hyphen, and me/te become moi/toi: Lève-toi ! Regarde-moi ! Prends-le !",
+    "With two pronouns in a positive command, the direct object comes first: Donne-le-moi ! Envoie-la-moi !",
+    "Negative commands: the pronouns go back in front of the verb in their normal form: Ne te lève pas ! Ne le prends pas !"
+  ],
+  "cards": [
+    {
+      "id": "verbs-imperative-01",
+      "type": "flip",
+      "front": "How do you form the imperative (a command)?",
+      "back": "Use the tu, nous or vous form of the present tense without the pronoun: tu finis -> Finis ! nous partons -> Partons ! (Let's leave!) vous écoutez -> Écoutez ! -er verbs drop the -s in the tu form: tu regardes -> Regarde !"
+    },
+    {
+      "id": "verbs-imperative-02",
+      "type": "gap",
+      "prompt": "Tu as soif ? ___ de l'eau !",
+      "base": "boire",
+      "answers": ["Bois"],
+      "en": "Are you thirsty? Drink some water!",
+      "why": "The tu form of boire in the present (tu bois) without the pronoun: Bois !"
+    },
+    {
+      "id": "verbs-imperative-03",
+      "type": "gap",
+      "prompt": "Paul, ___ la porte, s'il te plaît !",
+      "base": "fermer",
+      "answers": ["ferme"],
+      "en": "Paul, close the door, please!",
+      "why": "fermer is an -er verb, so the tu command drops the -s: tu fermes -> Ferme !"
+    },
+    {
+      "id": "verbs-imperative-04",
+      "type": "gap",
+      "prompt": "Les enfants, ___ vos devoirs avant de jouer !",
+      "base": "finir",
+      "answers": ["finissez"],
+      "en": "Children, finish your homework before you play!",
+      "why": "Speaking to several people, so use the vous form without the pronoun: Finissez !"
+    },
+    {
+      "id": "verbs-imperative-05",
+      "type": "gap",
+      "prompt": "Il fait beau : ___ au parc cet après-midi !",
+      "base": "aller",
+      "hint": "let's",
+      "answers": ["allons"],
+      "en": "It's sunny: let's go to the park this afternoon!",
+      "why": "The nous form of the imperative means 'let's': Allons !"
+    },
+    {
+      "id": "verbs-imperative-06",
+      "type": "flip",
+      "front": "When does the tu imperative drop its -s, and when does it keep it?",
+      "back": "-er verbs, aller, and verbs like ouvrir, offrir and découvrir (whose tu form ends in -es) drop the -s: tu manges -> Mange ! tu vas -> Va ! tu ouvres -> Ouvre ! Other verbs keep it: Finis ! Prends ! Fais ! The -s comes back before y or en so that it is easier to say: Vas-y ! Manges-en !"
+    },
+    {
+      "id": "verbs-imperative-07",
+      "type": "transform",
+      "instruction": "Turn the sentence into a command.",
+      "prompt": "Tu ouvres la fenêtre.",
+      "answers": ["Ouvre la fenêtre !"],
+      "en": "Open the window!",
+      "why": "ouvrir has -er-type endings in the present (tu ouvres), so, like an -er verb, it drops the -s in the tu command: Ouvre."
+    },
+    {
+      "id": "verbs-imperative-08",
+      "type": "gap",
+      "prompt": "Tu veux aller à la piscine ? Alors ___-y !",
+      "base": "aller",
+      "answers": ["vas"],
+      "en": "You want to go to the swimming pool? Then go!",
+      "why": "Va ! normally has no -s, but before y the -s comes back for the sound: Vas-y !"
+    },
+    {
+      "id": "verbs-imperative-09",
+      "type": "flip",
+      "front": "Which verbs have irregular imperatives?",
+      "back": "être: sois, soyons, soyez (Sois sage ! = Be good!). avoir: aie, ayons, ayez (N'aie pas peur ! = Don't be afraid!). To recognise: savoir -> sache, sachons, sachez; vouloir -> veuillez, used in polite notices: Veuillez fermer la porte = Please close the door."
+    },
+    {
+      "id": "verbs-imperative-10",
+      "type": "gap",
+      "prompt": "___ sage chez ta grand-mère !",
+      "base": "être",
+      "answers": ["Sois"],
+      "en": "Be good at your grandmother's!",
+      "why": "être has an irregular imperative: sois (tu), soyons (nous), soyez (vous). ta shows it is the tu form."
+    },
+    {
+      "id": "verbs-imperative-11",
+      "type": "gap",
+      "prompt": "___ confiance en toi : tu vas réussir !",
+      "base": "avoir",
+      "answers": ["Aie"],
+      "en": "Have confidence in yourself: you're going to succeed!",
+      "why": "avoir has an irregular imperative: aie (tu), ayons (nous), ayez (vous). toi shows it is the tu form."
+    },
+    {
+      "id": "verbs-imperative-12",
+      "type": "flip",
+      "front": "Where do pronouns go in positive and negative commands? Use se lever.",
+      "back": "Positive: after the verb with a hyphen, and te/me become toi/moi: Lève-toi ! Levons-nous ! Levez-vous ! Negative: in front of the verb in their normal form: Ne te lève pas ! Ne vous levez pas ! Object pronouns work the same way: Prends-le ! / Ne le prends pas !"
+    },
+    {
+      "id": "verbs-imperative-13",
+      "type": "gap",
+      "prompt": "Il est sept heures, ___ ! Tu vas être en retard.",
+      "base": "se lever",
+      "answers": ["lève-toi"],
+      "en": "It's seven o'clock, get up! You're going to be late.",
+      "why": "Positive reflexive command: the pronoun goes after the verb with a hyphen and te becomes toi: Lève-toi !"
+    },
+    {
+      "id": "verbs-imperative-14",
+      "type": "gap",
+      "prompt": "Nous sommes en retard : ___ !",
+      "base": "se dépêcher",
+      "hint": "let's",
+      "answers": ["dépêchons-nous"],
+      "en": "We're late: let's hurry!",
+      "why": "nous imperative of a reflexive verb: the pronoun nous follows the verb with a hyphen: Dépêchons-nous !"
+    },
+    {
+      "id": "verbs-imperative-15",
+      "type": "transform",
+      "instruction": "Make the command negative.",
+      "prompt": "Lève-toi !",
+      "answers": ["Ne te lève pas !"],
+      "en": "Don't get up!",
+      "why": "In a negative command the pronoun goes back in front of the verb as te, and ne ... pas goes round both."
+    },
+    {
+      "id": "verbs-imperative-16",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Achète **le pain** !",
+      "answers": ["Achète-le !"],
+      "en": "Buy it!",
+      "why": "In a positive command the object pronoun goes after the verb, joined by a hyphen: Achète-le !"
+    },
+    {
+      "id": "verbs-imperative-17",
+      "type": "transform",
+      "instruction": "Make the command negative.",
+      "prompt": "Mange-les !",
+      "answers": ["Ne les mange pas !"],
+      "en": "Don't eat them!",
+      "why": "In a negative command the pronoun goes back in front of the verb: Ne les mange pas !"
+    },
+    {
+      "id": "verbs-imperative-18",
+      "type": "transform",
+      "instruction": "Replace the words in bold with a pronoun.",
+      "prompt": "Envoie-moi **la photo** !",
+      "answers": ["Envoie-la-moi !"],
+      "en": "Send it to me!",
+      "why": "With two pronouns after a positive command, the direct object comes first and both are joined by hyphens: Envoie-la-moi !"
+    }
+  ]
+}

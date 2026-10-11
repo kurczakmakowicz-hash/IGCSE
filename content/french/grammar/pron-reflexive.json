@@ -10,7 +10,7 @@
     "The reflexive pronouns are me, te, se, nous, vous, se: je me couche, tu te couches, il se couche, nous nous couchons, vous vous couchez, elles se couchent.",
     "me, te and se become m', t', s' before a vowel or silent h: je m'appelle, tu t'habilles, elle s'amuse. nous and vous never shorten.",
     "In the negative, ne goes before the reflexive pronoun and pas after the verb: je ne me lève pas.",
-    "In the perfect tense every reflexive verb takes être, and the past participle agrees with the subject: elle s'est levée, nous nous sommes amusés.",
+    "In the perfect tense every reflexive verb takes être, and the past participle normally agrees with the subject: elle s'est levée, nous nous sommes amusés. No agreement when a body part follows: elle s'est brossé les dents.",
     "In the negative perfect, ne ... pas goes round the pronoun and être: je ne me suis pas réveillé.",
     "After another verb, the reflexive pronoun matches the subject and goes before the infinitive: je vais me coucher, nous voulons nous reposer.",
     "In positive commands the pronoun goes after the verb with a hyphen, and te becomes toi: lève-toi, dépêchons-nous, asseyez-vous.",
@@ -84,7 +84,7 @@
       "id": "pron-reflexive-09",
       "type": "flip",
       "front": "How do reflexive verbs form the perfect tense?",
-      "back": "Always with être, with the reflexive pronoun before être; the past participle agrees with the subject: je me suis levé(e), tu t'es levé(e), il s'est levé, elle s'est levée, nous nous sommes levé(e)s, vous vous êtes levé(e)(s), ils se sont levés, elles se sont levées."
+      "back": "Always with être, with the reflexive pronoun before être; the past participle agrees with the subject: je me suis levé(e), tu t'es levé(e), il s'est levé, elle s'est levée, nous nous sommes levé(e)s, vous vous êtes levé(e)(s), ils se sont levés, elles se sont levées. Trap: no agreement when a body part follows the verb: elle s'est lavé les mains, elle s'est brossé les dents."
     },
     {
       "id": "pron-reflexive-10",
