@@ -7,10 +7,10 @@
   "receptive": false,
   "summary": [
     "The imperative gives orders, instructions and advice. Take the tu, nous or vous form of the present tense and drop the subject pronoun: Finis ! Écoutons ! Prenez !",
-    "-er verbs, aller, and verbs like ouvrir and offrir (tu ouvres, tu offres) drop the -s of the tu form: tu regardes -> Regarde ! tu vas -> Va ! tu ouvres -> Ouvre !",
+    "-er verbs, aller, and verbs like ouvrir and offrir (tu ouvres, tu offres) drop the -s of the tu form: tu regardes → Regarde ! tu vas → Va ! tu ouvres → Ouvre !",
     "The -s comes back before y and en: Vas-y ! Achètes-en !",
     "The nous form means 'let's': Partons ! Allons au cinéma !",
-    "Irregular forms: être -> sois, soyons, soyez; avoir -> aie, ayons, ayez. Also recognise savoir -> sache, sachez and vouloir -> veuillez (Veuillez patienter = Please wait).",
+    "Irregular forms: être → sois, soyons, soyez; avoir → aie, ayons, ayez. Also recognise savoir → sache, sachez and vouloir → veuillez (Veuillez patienter = Please wait).",
     "Negative commands: ne ... pas goes round the verb: Ne crie pas ! Ne courez pas !",
     "Positive commands: object and reflexive pronouns go after the verb with a hyphen, and me/te become moi/toi: Lève-toi ! Regarde-moi ! Prends-le !",
     "With two pronouns in a positive command, the direct object comes first: Donne-le-moi ! Envoie-la-moi !",
@@ -21,7 +21,7 @@
       "id": "verbs-imperative-01",
       "type": "flip",
       "front": "How do you form the imperative (a command)?",
-      "back": "Use the tu, nous or vous form of the present tense without the pronoun: tu finis -> Finis ! nous partons -> Partons ! (Let's leave!) vous écoutez -> Écoutez ! -er verbs drop the -s in the tu form: tu regardes -> Regarde !"
+      "back": "Use the tu, nous or vous form of the present tense without the pronoun: tu finis → Finis ! nous partons → Partons ! (Let's leave!) vous écoutez → Écoutez ! -er verbs drop the -s in the tu form: tu regardes → Regarde !"
     },
     {
       "id": "verbs-imperative-02",
@@ -39,7 +39,7 @@
       "base": "fermer",
       "answers": ["ferme"],
       "en": "Paul, close the door, please!",
-      "why": "fermer is an -er verb, so the tu command drops the -s: tu fermes -> Ferme !"
+      "why": "fermer is an -er verb, so the tu command drops the -s: tu fermes → Ferme !"
     },
     {
       "id": "verbs-imperative-04",
@@ -64,7 +64,7 @@
       "id": "verbs-imperative-06",
       "type": "flip",
       "front": "When does the tu imperative drop its -s, and when does it keep it?",
-      "back": "-er verbs, aller, and verbs like ouvrir, offrir and découvrir (whose tu form ends in -es) drop the -s: tu manges -> Mange ! tu vas -> Va ! tu ouvres -> Ouvre ! Other verbs keep it: Finis ! Prends ! Fais ! The -s comes back before y or en so that it is easier to say: Vas-y ! Manges-en !"
+      "back": "-er verbs, aller, and verbs like ouvrir, offrir and découvrir (whose tu form ends in -es) drop the -s: tu manges → Mange ! tu vas → Va ! tu ouvres → Ouvre ! Other verbs keep it: Finis ! Prends ! Fais ! The -s comes back before y or en so that it is easier to say: Vas-y ! Manges-en !"
     },
     {
       "id": "verbs-imperative-07",
@@ -88,7 +88,7 @@
       "id": "verbs-imperative-09",
       "type": "flip",
       "front": "Which verbs have irregular imperatives?",
-      "back": "être: sois, soyons, soyez (Sois sage ! = Be good!). avoir: aie, ayons, ayez (N'aie pas peur ! = Don't be afraid!). To recognise: savoir -> sache, sachons, sachez; vouloir -> veuillez, used in polite notices: Veuillez fermer la porte = Please close the door."
+      "back": "être: sois, soyons, soyez (Sois sage ! = Be good!). avoir: aie, ayons, ayez (N'aie pas peur ! = Don't be afraid!). To recognise: savoir → sache, sachons, sachez; vouloir → veuillez, used in polite notices: Veuillez fermer la porte = Please close the door."
     },
     {
       "id": "verbs-imperative-10",

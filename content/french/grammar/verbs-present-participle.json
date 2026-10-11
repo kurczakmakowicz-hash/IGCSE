@@ -6,9 +6,9 @@
   "spec": "Verbs: present participle, including use after en",
   "receptive": false,
   "summary": [
-    "Form: take the nous form of the present, remove -ons and add -ant: nous regardons -> regardant, nous finissons -> finissant, nous faisons -> faisant.",
-    "-ger and -cer verbs keep their nous spelling: nous mangeons -> mangeant, nous commençons -> commençant.",
-    "Only three are irregular: être -> étant, avoir -> ayant, savoir -> sachant.",
+    "Form: take the nous form of the present, remove -ons and add -ant: nous regardons → regardant, nous finissons → finissant, nous faisons → faisant.",
+    "-ger and -cer verbs keep their nous spelling: nous mangeons → mangeant, nous commençons → commençant.",
+    "Only three are irregular: être → étant, avoir → ayant, savoir → sachant.",
     "en + present participle = while, on or by doing something: Je chante en prenant ma douche. On apprend en écoutant.",
     "The en + -ant action is done by the subject of the main verb: En sortant du cinéma, nous avons vu Marc (we were coming out).",
     "tout en + -ant stresses that two things happen at the same time: Il révise tout en écoutant de la musique.",
@@ -21,7 +21,7 @@
       "id": "verbs-present-participle-01",
       "type": "flip",
       "front": "How do you form the present participle (the '-ing' form)?",
-      "back": "Take the nous form of the present tense, remove -ons and add -ant: nous parlons -> parlant, nous finissons -> finissant, nous prenons -> prenant, nous faisons -> faisant. Used as a verb, it never changes its ending."
+      "back": "Take the nous form of the present tense, remove -ons and add -ant: nous parlons → parlant, nous finissons → finissant, nous prenons → prenant, nous faisons → faisant. Used as a verb, it never changes its ending."
     },
     {
       "id": "verbs-present-participle-02",
@@ -30,7 +30,7 @@
       "base": "regarder",
       "answers": ["regardant"],
       "en": "I have my breakfast while watching the news.",
-      "why": "nous regardons -> regard- + -ant. en + present participle = while doing."
+      "why": "nous regardons → regard- + -ant. en + present participle = while doing."
     },
     {
       "id": "verbs-present-participle-03",
@@ -39,7 +39,7 @@
       "base": "conduire",
       "answers": ["conduisant"],
       "en": "My dad listens to the radio while driving his car.",
-      "why": "nous conduisons -> conduis- + -ant = conduisant."
+      "why": "nous conduisons → conduis- + -ant = conduisant."
     },
     {
       "id": "verbs-present-participle-04",
@@ -48,7 +48,7 @@
       "base": "faire",
       "answers": ["faisant"],
       "en": "You keep fit by doing sport regularly.",
-      "why": "nous faisons -> fais- + -ant. Here en + -ant means 'by doing'."
+      "why": "nous faisons → fais- + -ant. Here en + -ant means 'by doing'."
     },
     {
       "id": "verbs-present-participle-05",
@@ -72,13 +72,13 @@
       "prompt": "On apprend beaucoup **quand on voyage**.",
       "answers": ["On apprend beaucoup en voyageant."],
       "en": "You learn a lot by travelling.",
-      "why": "voyager: nous voyageons -> voyageant (the e after g stays). Both verbs have the same subject, on."
+      "why": "voyager: nous voyageons → voyageant (the e after g stays). Both verbs have the same subject, on."
     },
     {
       "id": "verbs-present-participle-08",
       "type": "flip",
       "front": "Which present participles have a spelling change or are irregular?",
-      "back": "-ger verbs keep the e: mangeant, nageant, voyageant. -cer verbs keep the ç: commençant, lançant. Irregular: être -> étant, avoir -> ayant, savoir -> sachant."
+      "back": "-ger verbs keep the e: mangeant, nageant, voyageant. -cer verbs keep the ç: commençant, lançant. Irregular: être → étant, avoir → ayant, savoir → sachant."
     },
     {
       "id": "verbs-present-participle-09",
@@ -87,7 +87,7 @@
       "base": "manger",
       "answers": ["mangeant"],
       "en": "Don't talk while you're eating, please!",
-      "why": "manger keeps the e before -ant to keep the soft g sound: nous mangeons -> mangeant."
+      "why": "manger keeps the e before -ant to keep the soft g sound: nous mangeons → mangeant."
     },
     {
       "id": "verbs-present-participle-10",
@@ -96,7 +96,7 @@
       "base": "commencer",
       "answers": ["commençant"],
       "en": "When she started her studies, Lucie found a part-time job.",
-      "why": "commencer keeps the ç before a to keep the soft c sound: nous commençons -> commençant."
+      "why": "commencer keeps the ç before a to keep the soft c sound: nous commençons → commençant."
     },
     {
       "id": "verbs-present-participle-11",
@@ -132,7 +132,7 @@
       "prompt": "Je fais mes devoirs. **J'écoute** de la musique.",
       "answers": ["Je fais mes devoirs en écoutant de la musique.", "En écoutant de la musique, je fais mes devoirs.", "Je fais mes devoirs tout en écoutant de la musique.", "Tout en écoutant de la musique, je fais mes devoirs."],
       "en": "I do my homework while listening to music.",
-      "why": "Both actions are done by the same person at the same time: en écoutant (nous écoutons -> écoutant)."
+      "why": "Both actions are done by the same person at the same time: en écoutant (nous écoutons → écoutant)."
     },
     {
       "id": "verbs-present-participle-15",
@@ -147,7 +147,7 @@
       "base": "envoyer",
       "answers": ["envoyant"],
       "en": "My sister does her homework while sending messages to her friends.",
-      "why": "nous envoyons -> envoy- + -ant = envoyant. tout en stresses that both things happen at the same time."
+      "why": "nous envoyons → envoy- + -ant = envoyant. tout en stresses that both things happen at the same time."
     },
     {
       "id": "verbs-present-participle-17",
