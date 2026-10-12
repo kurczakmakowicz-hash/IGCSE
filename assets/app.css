@@ -54,7 +54,7 @@ h3 { font-size: .95rem; margin: 0; }
 .topbar {
   display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
   padding: .6rem 1rem; background: var(--panel);
-  border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20;
+  border-bottom: 1px solid var(--line); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
 }
 .brand { font-weight: 650; text-decoration: none; color: var(--ink); letter-spacing: -.02em; }
 .brand span {

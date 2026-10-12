@@ -1346,6 +1346,35 @@
     return panel;
   }
 
+  /* Copy to the clipboard; where the browser refuses, select the text instead. */
+  function copyText(text, field, note, done) {
+    function fallback() {
+      if (field) { field.removeAttribute('readonly'); field.value = text; field.select(); }
+      note.textContent = field ? 'Selected — copy it with your device\'s Copy command.' : 'This browser would not copy. Use Download instead.';
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () { note.textContent = done; }, fallback);
+    } catch (e) { fallback(); }
+  }
+
+  /* Two-step reset: browsers inside some apps block confirm() dialogs. */
+  function resetControls() {
+    var box = el('div.row');
+    function first() {
+      box.textContent = '';
+      box.appendChild(el('button.btn', { text: 'Reset all progress', style: 'color:var(--danger);border-color:var(--danger)', onclick: second }));
+    }
+    function second() {
+      box.textContent = '';
+      box.appendChild(el('span.small', { text: 'Delete every mark and review schedule?' }));
+      box.appendChild(el('button.btn', { text: 'Yes, delete everything', style: 'color:#fff;background:var(--danger);border-color:var(--danger)',
+        onclick: function () { S.reset(); route(); } }));
+      box.appendChild(el('button.btn', { text: 'Cancel', onclick: first }));
+    }
+    first();
+    return box;
+  }
+
   function viewData() {
     var out = el('div');
     out.appendChild(el('h1', { text: 'Settings and data' }));
@@ -1360,32 +1389,49 @@
       dateInput
     ]));
 
-    var area = el('textarea', { rows: '8', readonly: '', text: S.exportJSON() });
+    var area = el('textarea', { id: 'backup', rows: '8', readonly: '', text: S.exportJSON() });
+    var backupNote = el('div.small', { 'aria-live': 'polite', style: 'margin-top:.4rem' });
     out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
       el('h3', { text: 'Backup' }),
-      el('p.small.muted', { text: 'Progress lives in this browser only. Clearing site data, or opening the app in a different browser, loses it. Copy this out somewhere safe now and then.' }),
+      el('p.small.muted', { text: 'Progress lives in this browser only. Clearing site data, or opening the app in a different browser, loses it. ' +
+        'Copy this out somewhere safe now and then (a note or an email to yourself), and paste it back here to restore — also the way to move progress to another device.' }),
       area,
       el('div.row', { style: 'margin-top:.5rem' }, [
-        el('button.btn', { text: 'Select all', onclick: function () { area.removeAttribute('readonly'); area.select(); } }),
-        el('button.btn', { text: 'Restore from pasted text', onclick: function () {
-          area.removeAttribute('readonly');
-          try { S.importJSON(area.value); alert('Progress restored.'); route(); }
-          catch (e) { alert('Could not restore: ' + e.message); }
+        el('button.btn', { text: 'Copy', onclick: function () { copyText(S.exportJSON(), area, backupNote, 'Copied — paste it somewhere safe.'); } }),
+        el('button.btn', { text: 'Paste a backup here', onclick: function () {
+          area.removeAttribute('readonly'); area.value = ''; area.focus();
+          backupNote.textContent = 'Paste the backup into the box, then press Restore.';
+        } }),
+        el('button.btn', { text: 'Restore', onclick: function () {
+          try {
+            S.importJSON(area.value);
+            route();   // redraws this page from the restored data
+            var fresh = document.querySelector('#backup ~ [aria-live]');
+            if (fresh) fresh.textContent = 'Progress restored.';
+          } catch (e) { backupNote.textContent = 'Could not restore: ' + e.message; }
         } })
-      ])
+      ]),
+      backupNote
     ]));
 
     out.appendChild(speechPanel());
+    var exportNote = el('div.small', { 'aria-live': 'polite', style: 'margin-top:.4rem' });
 
     out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
       el('h3', { text: 'Export French flashcards' }),
-      el('p.small.muted', { text: 'Tab-separated text files: front, back, tags. Anki imports them directly (File → Import); ' +
-        'for Quizlet, open the file and paste it into Create → Import. Progress is not included.' }),
-      el('div.row', {}, Object.keys(EXPORTS).map(function (k) {
+      el('p.small.muted', { text: 'Front, back and tags, separated by tabs. For Quizlet, copy a set and paste it into ' +
+        'Create → Import. For Anki, download the file and use File → Import. Progress is not included.' }),
+      el('div.row', {}, [el('span.small.muted', { style: 'min-width:5.5rem', text: 'Copy:' })].concat(Object.keys(EXPORTS).map(function (k) {
+        return el('button.btn', { text: k.charAt(0).toUpperCase() + k.slice(1), onclick: function () {
+          copyText(EXPORTS[k](), null, exportNote, 'Copied the ' + k + ' cards — paste them into Quizlet or a file.');
+        } });
+      }))),
+      el('div.row', { style: 'margin-top:.4rem' }, [el('span.small.muted', { style: 'min-width:5.5rem', text: 'Download:' })].concat(Object.keys(EXPORTS).map(function (k) {
         return el('button.btn', { text: k.charAt(0).toUpperCase() + k.slice(1), onclick: function () {
           download('igcse-french-' + k + '.tsv', EXPORTS[k]());
         } });
-      }))
+      }))),
+      exportNote
     ]));
 
     var stats = el('table.plain');
@@ -1406,10 +1452,7 @@
     out.appendChild(el('div.panel', {}, [
       el('h3', { text: 'Start over' }),
       el('p.small.muted', { text: 'Deletes every mark and review schedule in this browser. There is no undo.' }),
-      el('button.btn', { text: 'Reset all progress', style: 'color:var(--danger);border-color:var(--danger)',
-        onclick: function () {
-          if (confirm('Delete all progress? This cannot be undone.')) { S.reset(); route(); }
-        } })
+      resetControls()
     ]));
     return out;
   }
