@@ -135,6 +135,10 @@ const Speech = require('../assets/speech.js');
   ['grandes vacances (f pl)', 'grandes vacances'],
   ['le lundi/le mardi… etc (adv)', 'le lundi, le mardi'],
   ['Je ne mange **jamais** de viande.', 'Je ne mange jamais de viande.'],
+  ['quel(le)(s)?', 'quel, quelle, quelles?'],
+  ['Mme: Madame', 'Madame'],
+  ['M.: Monsieur', 'Monsieur'],
+  ['TGV: Train à Grande Vitesse', 'TGV, Train à Grande Vitesse'],
 ].forEach(function (c) { eq(Speech.speakable(c[0]), c[1], 'speaks ' + JSON.stringify(c[0])); });
 eq(Speech.speakableRow('il est allé · elle est allée · on est allé(e)(s)'), 'il est allé, elle est allée, on est allé',
   'table row drops (e)(s) shorthand');

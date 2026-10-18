@@ -2,7 +2,11 @@
 
 Usage:
   pip install piper-tts lameenc
-  python3 tools/build_audio.py <voices-dir> [--jobs 4]
+  python3 tools/build_audio.py <voices-dir> [--jobs 4] [--cache DIR]
+
+With --cache, every clip is also stored under DIR by a hash of its voice,
+speed and text, and reused next time: after editing a few sentences only
+those clips are synthesised again.
 
 <voices-dir> must hold the Piper voices fr_FR-siwis-medium.onnx(.json) and
 en_GB-alba-medium.onnx(.json) from https://huggingface.co/rhasspy/piper-voices
@@ -19,6 +23,7 @@ Clips are packed into one file per vocabulary sub-topic (41 files rather than
 6,400, which keeps a website or artifact upload manageable); the index records
 each clip's byte offset, length and duration.
 """
+import hashlib
 import json
 import os
 import subprocess
@@ -87,23 +92,43 @@ def synth(voices_dir, name, text, speed):
     return pcm
 
 
+def cache_path(cache, voice, speed, text):
+    h = hashlib.sha1(("%s|%s|%s" % (voice, speed, text)).encode("utf-8")).hexdigest()
+    return os.path.join(cache, h[:2], h + ".mp3")
+
+
+def clip(voices_dir, cache, voice, speed, text):
+    path = cache_path(cache, voice, speed, text) if cache else None
+    if path and os.path.exists(path):
+        with open(path, "rb") as fh:
+            mp3 = fh.read()
+        return mp3, len(frames(mp3)), False
+    mp3, n = encode(synth(voices_dir, voice, text, speed))
+    if path:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "wb") as fh:
+            fh.write(mp3)
+    return mp3, n, True
+
+
 def build_bank(args):
-    voices_dir, bank, entries = args
-    blob, index = bytearray(), {}
+    voices_dir, cache, bank, entries = args
+    blob, index, made = bytearray(), {}, 0
     for e in entries:
         clips = {}
         for kind, voice, speed in (("w", FR_VOICE, FR_SPEED), ("e", EN_VOICE, EN_SPEED), ("s", FR_VOICE, FR_SPEED)):
             text = e[kind]
             if not text:
                 continue
-            mp3, n = encode(synth(voices_dir, voice, text, speed))
+            mp3, n, fresh = clip(voices_dir, cache, voice, speed, text)
+            made += fresh
             clips[kind] = [len(blob), len(mp3), round(n * SAMPLES_PER_FRAME / RATE, 3)]
             blob += mp3
         index[e["key"]] = clips
     path = os.path.join(OUT_DIR, bank + ".mp3")
     with open(path, "wb") as fh:
         fh.write(blob)
-    return bank, len(blob), index
+    return bank, len(blob), index, made
 
 
 def main():
@@ -111,6 +136,7 @@ def main():
         sys.exit(__doc__)
     voices_dir = sys.argv[1]
     jobs = int(sys.argv[sys.argv.index("--jobs") + 1]) if "--jobs" in sys.argv else os.cpu_count() or 2
+    cache = sys.argv[sys.argv.index("--cache") + 1] if "--cache" in sys.argv else None
     manifest = json.loads(subprocess.check_output(["node", os.path.join(ROOT, "tools", "audio_manifest.js")]))
     missing = [m["key"] for m in manifest if not m["s"]]
     if missing:
@@ -125,13 +151,14 @@ def main():
     with open(os.path.join(OUT_DIR, "silence.mp3"), "wb") as fh:
         fh.write(silence)
 
-    index, sizes = {}, {}
+    index, sizes, made = {}, {}, 0
     with ProcessPoolExecutor(max_workers=jobs) as pool:
-        for bank, size, clips in pool.map(build_bank, [(voices_dir, b, es) for b, es in banks.items()]):
+        for bank, size, clips, fresh in pool.map(build_bank, [(voices_dir, cache, b, es) for b, es in banks.items()]):
             sizes[bank] = size
+            made += fresh
             for key, c in clips.items():
                 index[key] = dict(c, b=bank)
-            print("  %-4s %4d words  %6.1f KB" % (bank, len(clips), size / 1024), flush=True)
+            print("  %-4s %4d words  %6.1f KB  %3d new clips" % (bank, len(clips), size / 1024, fresh), flush=True)
 
     payload = {
         "format": {"rate": RATE, "kbps": KBPS, "samplesPerFrame": SAMPLES_PER_FRAME},
@@ -148,7 +175,8 @@ def main():
         json.dump(payload, fh, ensure_ascii=False, separators=(",", ":"))
         fh.write(";\n")
     total = sum(sizes.values())
-    print("audio      %d words  %d banks  %.1f MB  -> audio/fr/, data/french_audio.js" % (len(index), len(sizes), total / 1048576))
+    print("audio      %d words  %d banks  %.1f MB  %d clips synthesised  -> audio/fr/, data/french_audio.js"
+          % (len(index), len(sizes), total / 1048576, made))
 
 
 if __name__ == "__main__":

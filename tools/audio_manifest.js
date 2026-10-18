@@ -11,8 +11,9 @@ const Speech = require('../assets/speech.js');
 function englishSpeakable(en) {
   return String(en)
     .replace(/\(=\s*/g, '(')
-    .replace(/\s*\/\s*/g, ', ')
-    .replace(/[()~]/g, ' ')
+    .replace(/\s*\/\s*/g, ' or ')
+    .replace(/\s*\(\s*/g, ', ')
+    .replace(/[)~]/g, ' ')
     .replace(/\betc\b\.?|…/g, ' ')
     .replace(/\s+/g, ' ')
     .replace(/\s+([,.!?])/g, '$1')

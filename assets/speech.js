@@ -105,9 +105,14 @@ window.Speech = (function () {
    * "aller à la pêche". */
   function speakable(text) {
     var s = String(text).replace(/\*\*/g, '').replace(MARKER, ' ');
+    // Titles are never spoken as letters: "Mme: Madame" is said "Madame".
+    s = s.replace(/^\s*(M\.|Mme|Mlle)\s*:\s*/, '');
     s = s.replace(/\s*\(~[^)]*\)/g, '');   // fermier(~ière): the first form will do
-    s = s.replace(new RegExp('([' + LETTERS + ']+)\\((e|s|x|es|ne|le|se)\\)', 'g'),
-      function (m, word, end) { return word + ', ' + word + end; });
+    // lent(e) -> lent, lente; quel(le)(s) -> quel, quelle, quelles
+    var ending = new RegExp('([' + LETTERS + ']+)\\((e|s|x|es|ne|le|se)\\)');
+    while (ending.test(s)) {
+      s = s.replace(ending, function (m, word, end) { return word + ', ' + word + end; });
+    }
     s = s.replace(new RegExp('([' + LETTERS + "']+)\\/([a-zà-ÿœ]{2,6})\\b", 'g'), function (m, full, end) {
       var at = full.lastIndexOf(end.slice(0, 2));
       return full + ', ' + (at > 0 ? full.slice(0, at) + end : end);
