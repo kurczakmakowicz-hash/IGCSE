@@ -2,7 +2,14 @@
  * Run with:  node tools/test.js
  */
 global.window = {};
+const fs = require('fs');
+const path = require('path');
 const Match = require('../assets/match.js');
+function vocabWordsCount() {
+  const set = new Set();
+  global.window.IGCSE_DATA.french.topics.forEach(function (t) { t.subtopics.forEach(function (s) { s.vocab.forEach(function (v) { set.add(v.fr); }); }); });
+  return set.size;
+}
 require('../assets/srs.js');
 const SRS = global.window.SRS;
 
@@ -174,6 +181,49 @@ const grammarFiles = filesFrom([]);
 const grammarErrs = validateFiles(grammarFiles);
 grammarErrs.forEach(function (e) { console.log('   ' + e); });
 check(grammarFiles.length > 0 && !grammarErrs.length, grammarFiles.length + ' grammar topic files are valid');
+
+console.log('\nExample sentences');
+const { validate: validateSentences, DIR: SENT_DIR } = require('./validate_sentences.js');
+const sentFiles = fs.readdirSync(SENT_DIR).filter((f) => f.endsWith('.json')).map((f) => path.join(SENT_DIR, f));
+const sentErrs = validateSentences(sentFiles, true);
+sentErrs.slice(0, 10).forEach(function (e) { console.log('   ' + e); });
+check(sentFiles.length > 0 && !sentErrs.length, 'every vocabulary word has a valid example sentence');
+require('../data/french_sentences.js');
+check(Object.keys(global.window.IGCSE_DATA.frenchSentences || {}).length === vocabWordsCount(),
+  'data/french_sentences.js is built from the current sentence files');
+
+console.log('\nListening audio');
+require('../data/french_audio.js');
+const A = global.window.IGCSE_DATA.frenchAudio;
+check(!!A, 'data/french_audio.js has an audio index');
+if (A) {
+  const root = path.join(__dirname, '..');
+  const bankBytes = {};
+  let bankOk = true;
+  Object.keys(A.banks).forEach(function (b) {
+    const f = path.join(root, A.banks[b].file);
+    const ok = fs.existsSync(f) && fs.statSync(f).size === A.banks[b].bytes;
+    if (!ok) { bankOk = false; console.log('   missing or wrong size: ' + A.banks[b].file); }
+    else bankBytes[b] = fs.readFileSync(f);
+  });
+  check(bankOk, Object.keys(A.banks).length + ' audio files present with the sizes the index expects');
+  let clipsOk = true, missing = 0;
+  const words = new Set();
+  global.window.IGCSE_DATA.french.topics.forEach(function (t) { t.subtopics.forEach(function (s) { s.vocab.forEach(function (v) { words.add(v.fr); }); }); });
+  words.forEach(function (w) {
+    const c = A.clips[w];
+    if (!c || !c.w || !c.e || !c.s) { missing++; return; }
+    ['w', 'e', 's'].forEach(function (k) {
+      const buf = bankBytes[c.b];
+      const off = c[k][0], len = c[k][1];
+      if (!buf || off + len > buf.length || buf[off] !== 0xFF || (buf[off + 1] & 0xE0) !== 0xE0 || !(c[k][2] > 0.2)) clipsOk = false;
+    });
+  });
+  check(missing === 0, 'every word has French, English and sentence clips (' + missing + ' missing)');
+  check(clipsOk, 'every clip lies inside its file and starts on an MP3 frame');
+  const sil = path.join(root, A.silence.file);
+  check(fs.existsSync(sil) && A.silence.dur > 0.3, 'silence clip present');
+}
 
 console.log(failures ? '\n' + failures + ' FAILURE(S)\n' : '\nAll tests passed.\n');
 process.exit(failures ? 1 : 0);

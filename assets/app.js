@@ -330,7 +330,7 @@
 
   function frenchTabs(active) {
     var tabs = [['overview', '#/s/french', 'Overview'], ['vocab', '#/vocab', 'Vocabulary'],
-      ['grammar', '#/grammar', 'Grammar'], ['verbs', '#/verbs', 'Verbs']];
+      ['listen', '#/listen', 'Listen'], ['grammar', '#/grammar', 'Grammar'], ['verbs', '#/verbs', 'Verbs']];
     var nav = el('nav.tabs', { 'aria-label': 'French sections' }, tabs.map(function (t) {
       return el('a', { href: t[1], text: t[2], class: t[0] === active ? 'on' : null });
     }));
@@ -749,24 +749,39 @@
     return wrap;
   }
 
+  /* The example sentence for a word, with a 🔊 button, if there is one. */
+  function exampleNode(item) {
+    if (!item.ex) return null;
+    return el('div.example', {}, [
+      el('div', {}, [rich(item.ex.fr), document.createTextNode(' '), sayButton(item.ex.fr)]),
+      el('div.small.muted', { text: item.ex.en })
+    ]);
+  }
+
   function vocabCard(item, onGrade) {
     var dir = S.settings().vocabDirection;
     if (dir === 'listen' && !Speech.supported) dir = 'fr-en';
     var fr = Speech.speakable(item.fr);
     var label = 'French vocabulary · ' + (item.themes[0] ? item.themes[0].subTitle : '');
-    var flip = S.settings().vocabMode === 'flip';
+    var mode = S.settings().vocabMode;
+    var selfMarked = mode === 'flip' || mode === 'swipe';
+    var both = el('div', {}, [
+      el('div.prompt', {}, [spoken(item.fr, fr)]),
+      el('div.muted', { style: 'font-size:1.05rem', text: item.en }),
+      exampleNode(item)
+    ]);
 
     if (dir === 'listen') {
       // Listening practice: hear the word, never see it until you answer.
       Speech.say(fr);
       var play = el('div.prompt', {}, [sayButton(fr, 'Play again'),
-        el('div.small.muted', { style: 'margin-top:.4rem', text: flip ? 'What does it mean?' : 'Type what it means in English.' })]);
-      var reveal = el('div', {}, [spoken(item.fr, fr), el('div.muted', { text: item.en })]);
-      if (flip) return flipCard({ item: item, label: label, front: play, back: reveal }, onGrade);
+        el('div.small.muted', { style: 'margin-top:.4rem', text: selfMarked ? 'What does it mean?' : 'Type what it means in English.' })]);
+      if (mode === 'swipe') return swipeCard({ item: item, label: label, front: play, back: both }, onGrade);
+      if (mode === 'flip') return flipCard({ item: item, label: label, front: play, back: both }, onGrade);
       return typedCard({
         item: item, label: label, prompt: play, placeholder: 'in English…',
         check: function (v) { return { right: accepts(item.en, v), note: item.en }; },
-        reveal: function () { return el('div', {}, [spoken(item.fr, fr)]); }
+        reveal: function () { return el('div', {}, [spoken(item.fr, fr), exampleNode(item)]); }
       }, onGrade);
     }
 
@@ -774,20 +789,134 @@
     var expected = showFrench ? item.en : item.fr;
     if (showFrench) autoSay(fr);
     var prompt = showFrench ? el('div.prompt', {}, [spoken(item.fr, fr)]) : el('div.prompt', { text: item.en });
-    if (flip) {
-      return flipCard({
-        item: item, label: label, front: prompt,
-        back: showFrench ? el('div.prompt', { text: item.en }) : el('div.prompt', {}, [spoken(item.fr, fr)]),
+    if (selfMarked) {
+      var opts = {
+        item: item, label: label, front: prompt, back: both,
         onReveal: function () { if (!showFrench) autoSay(fr); }
-      }, onGrade);
+      };
+      return mode === 'swipe' ? swipeCard(opts, onGrade) : flipCard(opts, onGrade);
     }
     return typedCard({
       item: item, label: label, french: !showFrench, prompt: prompt,
       placeholder: showFrench ? 'in English…' : 'en français…',
       check: function (v) { return { right: accepts(expected, v), note: expected }; },
-      reveal: showFrench ? null : function () { return el('div', {}, [sayButton(fr, 'Hear it')]); },
+      reveal: function () {
+        return el('div', {}, [showFrench ? null : sayButton(fr, 'Hear it'), exampleNode(item)]);
+      },
       onReveal: function () { if (!showFrench) autoSay(fr); }
     }, onGrade);
+  }
+
+  /* A card you swipe: right = "I know it" (Good), left = "I don't know"
+   * (Again). Tap turns it over. Saying "don't know" before turning it over
+   * shows the answer first, so the miss teaches something. Arrow keys and
+   * the buttons underneath do the same for anyone not on a touch screen. */
+  var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function swipeCard(o, onGrade) {
+    var wrap = el('div.swipe-wrap');
+    var face = el('div.swipe-face', {}, [o.front]);
+    var hint = el('div.small.faint.swipe-hint', { text: 'Tap to turn over · swipe right if you know it, left if not' });
+    var yes = el('div.stamp.yes', { 'aria-hidden': 'true', text: 'I know it' });
+    var no = el('div.stamp.no', { 'aria-hidden': 'true', text: "Don't know" });
+    var card = el('div.card.swipe', {
+      tabindex: '0', role: 'group',
+      'aria-label': 'Flashcard. Tap to turn over. Swipe right if you know it, left if you do not.'
+    }, [el('div.small.faint', { text: o.label }), face, hint, yes, no]);
+    var buttons = el('div.swipe-buttons');
+    wrap.appendChild(card);
+    wrap.appendChild(buttons);
+
+    var flipped = false, missed = false, done = false;
+
+    function paintButtons() {
+      buttons.textContent = '';
+      if (missed) {
+        buttons.appendChild(el('button.btn.primary.wide', { type: 'button', text: 'Next →', onclick: next }));
+        return;
+      }
+      buttons.appendChild(el('button.btn.no', { type: 'button', onclick: dontKnow }, ['✗ ', "Don't know"]));
+      buttons.appendChild(el('button.btn', { type: 'button', onclick: flip, disabled: flipped ? '' : null }, ['Turn over']));
+      buttons.appendChild(el('button.btn.yes', { type: 'button', onclick: know }, ['✓ ', 'I know it']));
+    }
+    function flip() {
+      if (flipped) return;
+      flipped = true;
+      face.textContent = '';
+      face.appendChild(o.back);
+      card.classList.add('flipped');
+      hint.textContent = missed ? 'Have a good look, then carry on' : 'Swipe right if you knew it, left if not';
+      paintButtons();
+      if (o.onReveal) o.onReveal();
+    }
+    function finish(g, dir) {
+      if (done) return;
+      done = true;
+      card.classList.add(dir > 0 ? 'fly-right' : 'fly-left');
+      setTimeout(function () { onGrade(g); }, reducedMotion ? 0 : 200);
+    }
+    function know() { if (missed) next(); else finish(2, 1); }
+    function dontKnow() {
+      if (missed) { next(); return; }
+      if (!flipped) {           // show the answer before moving on
+        missed = true;
+        card.classList.add('missed');
+        flip();
+        return;
+      }
+      finish(0, -1);
+    }
+    function next() { finish(0, -1); }
+
+    // Dragging. touch-action: pan-y (CSS) leaves vertical scrolling to the page.
+    var startX = null, startY = 0, dx = 0, dragging = false;
+    function settle() {
+      card.style.transform = '';
+      yes.style.opacity = 0;
+      no.style.opacity = 0;
+    }
+    card.addEventListener('pointerdown', function (e) {
+      if (done || e.button > 0 || (e.target.closest && e.target.closest('button'))) return;
+      startX = e.clientX; startY = e.clientY; dx = 0; dragging = false;
+      if (card.setPointerCapture) card.setPointerCapture(e.pointerId);
+    });
+    card.addEventListener('pointermove', function (e) {
+      if (startX === null) return;
+      dx = e.clientX - startX;
+      if (!dragging && Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(e.clientY - startY)) {
+        dragging = true;
+        card.classList.add('dragging');
+      }
+      if (!dragging) return;
+      card.style.transform = 'translateX(' + dx + 'px) rotate(' + (dx / 24) + 'deg)';
+      var p = Math.min(1, Math.abs(dx) / 100);
+      yes.style.opacity = dx > 0 ? p : 0;
+      no.style.opacity = dx < 0 ? p : 0;
+    });
+    function release() {
+      if (startX === null) return;
+      var wasDrag = dragging, d = dx;
+      startX = null; dragging = false;
+      card.classList.remove('dragging');
+      if (wasDrag && Math.abs(d) > 90) {
+        if (d > 0) know(); else dontKnow();
+        if (!done) settle();
+        return;
+      }
+      settle();
+      if (!wasDrag) { if (!flipped) flip(); else if (missed) next(); }
+    }
+    card.addEventListener('pointerup', release);
+    card.addEventListener('pointercancel', function () { startX = null; dragging = false; card.classList.remove('dragging'); settle(); });
+
+    document.onkeydown = function (e) {
+      if (!ownKey(e) && e.target !== card) return;
+      if (e.key === 'ArrowRight') { e.preventDefault(); know(); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); dontKnow(); }
+      else if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); if (!flipped) flip(); else if (missed) next(); }
+    };
+    paintButtons();
+    return wrap;
   }
 
   function gapPrompt(c) {
@@ -929,7 +1058,7 @@
     }
     var dirSelect = settingSelect('vocabDirection', 'Direction', [['fr-en', 'French → English'], ['en-fr', 'English → French']]
       .concat(Speech.supported ? [['listen', 'Listen → English']] : []));
-    var modeSelect = settingSelect('vocabMode', 'Answer mode', [['type', 'Type the answer'], ['flip', 'Flip cards']]);
+    var modeSelect = settingSelect('vocabMode', 'Answer mode', [['swipe', 'Swipe: know / don\'t know'], ['type', 'Type the answer'], ['flip', 'Flip and grade']]);
     var size = sizeSelect([10, 20, 40], 20);
 
     out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
@@ -938,18 +1067,307 @@
       ]),
       el('div.small.muted', { style: 'margin-top:.6rem', text:
         pool.length + ' words in scope · ' + dueIn(pool) + ' due · ' + unseenCount + ' not yet seen. ' +
-        'Typing is slower but proves you know it; flip cards cover more ground. ' +
+        'Swiping covers the most ground; typing is slower but proves you know it. ' +
         (Speech.supported ? '"Listen → English" plays the word without showing it — practice for the Listening paper.' : '') })
     ]));
 
     var slot = el('div.review');
     out.appendChild(slot);
+    out.appendChild(knownPanel(pool, scope));
 
     function start() {
       // Due words first; new words shuffled, since the list is alphabetical.
       var due = buildQueue(pool.filter(function (w) { return S.confidence(w.id) > 0; }), 1e9);
       var unseen = shuffle(pool.filter(function (w) { return S.confidence(w.id) === 0; }));
       startPractice(slot, due.concat(unseen).slice(0, parseInt(size.value, 10)));
+    }
+    return out;
+  }
+
+  /* Words whose latest answer was "I know it", for the scope being drilled. */
+  function knownPanel(pool, scope) {
+    var knownWords = pool.filter(function (w) { return S.known(w.id); });
+    var learning = pool.filter(function (w) { return S.card(w.id) && !S.known(w.id); });
+    var panel = el('div.panel', { style: 'margin-top:1rem' }, [
+      el('div.spread', {}, [
+        el('h3', { text: 'Words you know: ' + knownWords.length + ' · still learning: ' + learning.length }),
+        knownWords.length ? el('a.btn.primary', { href: '#/listen' + (scope !== 'all' ? '?scope=' + encodeURIComponent(scope) : ''), text: '🎧 Listen to them' }) : null
+      ]),
+      el('p.small.muted', { style: 'margin:.3rem 0 0', text: knownWords.length
+        ? 'A word counts as known when your latest answer was "I know it". Swipe it left later and it moves back to learning.'
+        : 'Words you mark "I know it" collect here, and you can turn them into an audio track to listen to.' })
+    ]);
+    if (knownWords.length) {
+      var rows = knownWords.slice().sort(function (a, b) { return a.fr.localeCompare(b.fr, 'fr'); }).map(function (w) {
+        return el('tr', {}, [
+          el('td', {}, [document.createTextNode(w.fr + ' '), sayButton(Speech.speakable(w.fr))]),
+          el('td.muted', { text: w.en })
+        ]);
+      });
+      panel.appendChild(el('details', { style: 'margin-top:.6rem' }, [
+        el('summary.small', { text: 'Show the list' }),
+        el('div', { style: 'overflow-x:auto' }, [el('table.plain', {}, rows)])
+      ]));
+    }
+    return panel;
+  }
+
+  /* ---------- view: Listen (an audio track of your words) ---------- */
+
+  var AUDIO = window.IGCSE_DATA && window.IGCSE_DATA.frenchAudio;
+  var bankCache = {};
+  var listening = { url: null, stopSpeech: null };
+
+  function stopListening() {
+    if (listening.stopSpeech) { listening.stopSpeech(); listening.stopSpeech = null; }
+    if (listening.url) { URL.revokeObjectURL(listening.url); listening.url = null; }
+  }
+
+  function loadBank(file) {
+    if (!bankCache[file]) {
+      bankCache[file] = fetch(file).then(function (r) {
+        if (!r.ok) throw new Error(file + ': ' + r.status);
+        return r.arrayBuffer();
+      });
+      bankCache[file].catch(function () { delete bankCache[file]; });
+    }
+    return bankCache[file];
+  }
+
+  /* One MP3 track from the chosen words. Every clip is a run of whole MP3
+   * frames in the same format, so clips can simply be laid end to end. */
+  function buildTrack(words, o, progress) {
+    var files = [AUDIO.silence.file];
+    words.forEach(function (w) {
+      var f = AUDIO.banks[AUDIO.clips[w.fr].b].file;
+      if (files.indexOf(f) < 0) files.push(f);
+    });
+    var loaded = 0;
+    return Promise.all(files.map(function (f) {
+      return loadBank(f).then(function (buf) { progress(++loaded, files.length); return buf; });
+    })).then(function (bufs) {
+      var byFile = {};
+      files.forEach(function (f, i) { byFile[f] = bufs[i]; });
+      var silence = new Uint8Array(byFile[AUDIO.silence.file]);
+      var parts = [], segments = [], t = 0;
+      function gap(seconds) {
+        for (var n = Math.max(1, Math.round(seconds / AUDIO.silence.dur)); n > 0; n--) {
+          parts.push(silence);
+          t += AUDIO.silence.dur;
+        }
+      }
+      function clip(w, kind) {
+        var c = AUDIO.clips[w.fr];
+        if (!c[kind]) return false;
+        parts.push(new Uint8Array(byFile[AUDIO.banks[c.b].file], c[kind][0], c[kind][1]));
+        t += c[kind][2];
+        return true;
+      }
+      gap(0.5);
+      words.forEach(function (w) {
+        var start = t;
+        clip(w, 'w');
+        if (o.english) { gap(o.gap * 0.6); clip(w, 'e'); }
+        if (o.sentence) { gap(o.gap * 0.8); clip(w, 's'); }
+        if (o.repeat) { gap(o.gap * 0.6); clip(w, 'w'); }
+        segments.push({ start: start, end: t, item: w });
+        gap(o.gap * 1.6);
+      });
+      return { blob: new Blob(parts, { type: 'audio/mpeg' }), segments: segments, duration: t };
+    });
+  }
+
+  function clock(sec) {
+    var m = Math.floor(sec / 60), s = Math.round(sec % 60);
+    if (s === 60) { m++; s = 0; }
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+
+  function viewListen(query) {
+    var out = el('div');
+    out.appendChild(el('h1', { text: 'Listen to your French' }));
+    out.appendChild(frenchTabs('listen'));
+    out.appendChild(el('p.muted', { text:
+      'Makes one audio track from your words: each French word, what it means, and a short sentence using it. ' +
+      'Play it on the way to school — it keeps going with the screen locked.' }));
+
+    var scope = query.scope || 'all';
+    function inScope(w) { return scope === 'all' || w.themes.some(function (t) { return t.subId === scope; }); }
+    var pool = S.vocab.filter(inScope);
+    var counts = {
+      known: pool.filter(function (w) { return S.known(w.id); }).length,
+      learning: pool.filter(function (w) { return S.card(w.id) && !S.known(w.id); }).length,
+      all: pool.length
+    };
+
+    var themeSelect = el('select', { id: 'listen-theme', 'aria-label': 'Theme',
+      onchange: function () { location.hash = '#/listen' + (this.value === 'all' ? '' : '?scope=' + encodeURIComponent(this.value)); }
+    }, [el('option', { value: 'all', text: 'All themes', selected: scope === 'all' ? '' : null })]);
+    S.subjects.french.topics.forEach(function (topic) {
+      var g = el('optgroup', { label: topic.id + ' — ' + topic.title });
+      topic.subtopics.forEach(function (sub) {
+        g.appendChild(el('option', { value: sub.id, text: sub.title, selected: scope === sub.id ? '' : null }));
+      });
+      themeSelect.appendChild(g);
+    });
+    var which = el('select', { id: 'listen-which', 'aria-label': 'Which words' }, [
+      el('option', { value: 'known', text: 'Words I know (' + counts.known + ')' }),
+      el('option', { value: 'learning', text: 'Words I\'m still learning (' + counts.learning + ')' }),
+      el('option', { value: 'all', text: 'Every word in this theme (' + counts.all + ')' })
+    ]);
+    if (!counts.known) which.value = counts.learning ? 'learning' : 'all';
+    var size = el('select', { id: 'listen-size', 'aria-label': 'How many words' }, [10, 25, 50, 100, 1e9].map(function (n) {
+      return el('option', { value: String(n), text: n === 1e9 ? 'all of them' : n + ' words', selected: n === 25 ? '' : null });
+    }));
+    function check(id, key, label) {
+      return el('label.small.check', {}, [el('input', { type: 'checkbox', id: id, checked: S.settings()[key] ? '' : null,
+        onchange: function () { S.setSetting(key, this.checked); } }), ' ' + label]);
+    }
+    var gapSelect = el('select', { id: 'listen-gap', 'aria-label': 'Pauses', onchange: function () { S.setSetting('listenGap', Number(this.value)); } },
+      [[0.6, 'Short pauses'], [1.2, 'Normal pauses'], [2.2, 'Long pauses (time to repeat)']].map(function (g) {
+        return el('option', { value: String(g[0]), text: g[1], selected: Number(S.settings().listenGap) === g[0] ? '' : null });
+      }));
+    var orderSelect = el('select', { id: 'listen-order', 'aria-label': 'Order', onchange: function () { S.setSetting('listenOrder', this.value); } },
+      [['theme', 'In theme order'], ['shuffle', 'Shuffled']].map(function (o) {
+        return el('option', { value: o[0], text: o[1], selected: S.settings().listenOrder === o[0] ? '' : null });
+      }));
+    var repeat = el('input', { type: 'checkbox', id: 'listen-repeat' });
+
+    var player = el('div.listen-player');
+    out.appendChild(el('div.panel', { style: 'margin:.8rem 0' }, [
+      el('div.row', {}, [themeSelect, which, size]),
+      el('div.row', { style: 'margin-top:.5rem' }, [
+        check('listen-en', 'listenEnglish', 'English meaning'),
+        check('listen-sent', 'listenSentence', 'Example sentence'),
+        el('label.small.check', {}, [repeat, ' Say the word again']),
+        gapSelect, orderSelect
+      ]),
+      el('div.row', { style: 'margin-top:.7rem' }, [
+        el('button.btn.primary', { text: '🎧 Make my track', onclick: make }),
+        el('span.small.muted', { text: counts.known ? '' : 'Mark words "I know it" on the Vocabulary tab and they appear here.' })
+      ])
+    ]));
+    out.appendChild(player);
+
+    function chosenWords() {
+      var list = pool.filter(function (w) {
+        if (which.value === 'known') return S.known(w.id);
+        if (which.value === 'learning') return S.card(w.id) && !S.known(w.id);
+        return true;
+      });
+      if (orderSelect.value === 'shuffle') list = shuffle(list);
+      return list.slice(0, parseInt(size.value, 10));
+    }
+
+    function make() {
+      stopListening();
+      var words = chosenWords();
+      player.textContent = '';
+      if (!words.length) {
+        player.appendChild(el('div.empty', {}, [el('div', { text: 'No words to play yet.' }),
+          el('a.btn', { href: '#/vocab', text: 'Go and swipe some words' })]));
+        return;
+      }
+      var o = {
+        english: document.getElementById('listen-en').checked,
+        sentence: document.getElementById('listen-sent').checked,
+        repeat: repeat.checked,
+        gap: Number(gapSelect.value)
+      };
+      var usable = AUDIO && words.every(function (w) { return AUDIO.clips[w.fr]; });
+      if (!usable) { deviceVoice(words, o, 'The recorded audio is not available here.'); return; }
+      var status = el('div.small.muted', { text: 'Loading audio…' });
+      player.appendChild(status);
+      buildTrack(words, o, function (n, total) { status.textContent = 'Loading audio… ' + n + ' of ' + total; })
+        .then(function (track) { showTrack(words, track); })
+        .catch(function () {
+          deviceVoice(words, o, location.protocol === 'file:'
+            ? 'Recorded audio cannot load when the app is opened as a file on this computer — use the website version for that.'
+            : 'The recorded audio could not be loaded (are you offline?).');
+        });
+    }
+
+    function transcript(words, onPick) {
+      var rows = words.map(function (w, i) {
+        return el('li', { onclick: function () { onPick(i); } }, [
+          el('div', {}, [el('b', { text: w.fr }), el('span.muted', { text: ' — ' + w.en })]),
+          w.ex ? el('div.small', {}, [document.createTextNode(w.ex.fr), el('span.muted', { text: '  ' + w.ex.en })]) : null
+        ]);
+      });
+      return { list: el('ol.transcript', {}, rows), rows: rows };
+    }
+
+    function showTrack(words, track) {
+      player.textContent = '';
+      listening.url = URL.createObjectURL(track.blob);
+      var audio = el('audio', { controls: '', preload: 'auto', src: listening.url });
+      var now = el('div.now-playing', { text: words.length + ' words · ' + clock(track.duration) });
+      var t = transcript(words, function (i) { audio.currentTime = track.segments[i].start + 0.01; audio.play(); });
+      var current = -1;
+      audio.addEventListener('timeupdate', function () {
+        var x = audio.currentTime, i = 0;
+        while (i < track.segments.length - 1 && track.segments[i + 1].start <= x) i++;
+        if (i === current) return;
+        if (current >= 0) t.rows[current].classList.remove('playing');
+        current = i;
+        t.rows[i].classList.add('playing');
+        var w = track.segments[i].item;
+        now.textContent = 'Now: ' + w.fr + ' — ' + w.en + '  (' + (i + 1) + ' of ' + words.length + ')';
+      });
+      var title = 'French — ' + words.length + ' words';
+      if ('mediaSession' in navigator && window.MediaMetadata) {
+        navigator.mediaSession.metadata = new MediaMetadata({ title: title, artist: 'IGCSE French', album: 'Listen to your French' });
+      }
+      player.appendChild(el('div.panel', {}, [
+        now, audio,
+        el('div.row', { style: 'margin-top:.5rem' }, [
+          el('a.btn', { href: listening.url, download: 'igcse-french-' + words.length + '-words.mp3', text: '⬇ Save the MP3' }),
+          el('span.small.muted', { text: 'Tap a word below to jump to it.' })
+        ]),
+        t.list,
+        el('p.small.faint', { text: AUDIO.credits })
+      ]));
+      audio.play().catch(function () { /* autoplay refused: the controls are there */ });
+    }
+
+    function deviceVoice(words, o, why) {
+      player.textContent = '';
+      if (!Speech.supported) { player.appendChild(el('div.empty', { text: why + ' This browser cannot speak either.' })); return; }
+      var parts = [], starts = [];
+      words.forEach(function (w) {
+        starts.push(parts.length);
+        parts.push({ text: Speech.speakable(w.fr), lang: 'fr', pause: o.gap * 0.6 });
+        if (o.english) parts.push({ text: w.en, lang: 'en', pause: o.gap * 0.8 });
+        if (o.sentence && w.ex) parts.push({ text: w.ex.fr, lang: 'fr', pause: o.gap * 0.6 });
+        if (o.repeat) parts.push({ text: Speech.speakable(w.fr), lang: 'fr', pause: 0 });
+        parts[parts.length - 1].pause = o.gap * 1.6;
+      });
+      var now = el('div.now-playing', { text: words.length + ' words, read by this device\'s voice.' });
+      var current = -1;
+      var t = transcript(words, function (i) { play(starts[i]); });
+      function step(p) {
+        var i = 0;
+        while (i < starts.length - 1 && starts[i + 1] <= p) i++;
+        if (i === current) return;
+        if (current >= 0) t.rows[current].classList.remove('playing');
+        current = i;
+        t.rows[i].classList.add('playing');
+        now.textContent = 'Now: ' + words[i].fr + ' — ' + words[i].en;
+      }
+      function play(from) {
+        if (listening.stopSpeech) listening.stopSpeech();
+        listening.stopSpeech = Speech.sequence(parts.slice(from), function (k) { step(from + k); },
+          function () { now.textContent = 'Finished.'; });
+      }
+      player.appendChild(el('div.panel', {}, [
+        el('p.small', { style: 'color:var(--shaky)', text: why + ' Using the device voice instead: it only plays while the screen is on.' }),
+        now,
+        el('div.row', {}, [
+          el('button.btn.primary', { text: '▶ Play', onclick: function () { play(0); } }),
+          el('button.btn', { text: '■ Stop', onclick: function () { if (listening.stopSpeech) listening.stopSpeech(); } })
+        ]),
+        t.list
+      ]));
     }
     return out;
   }
@@ -1470,7 +1888,7 @@
     links.forEach(function (l) {
       var a = el('a', { href: l[0], text: l[1] });
       if (hash === l[0] || hash.indexOf(l[0] + '/') === 0 ||
-          (l[0] === '#/s/french' && /^#\/(vocab|grammar|verbs)\b/.test(hash))) a.className = 'on';
+          (l[0] === '#/s/french' && /^#\/(vocab|listen|grammar|verbs)\b/.test(hash))) a.className = 'on';
       if (l[0] === '#/review') {
         var n = S.dueCount(null);
         if (n) a.appendChild(el('span.badge', { text: String(n) }));
@@ -1500,12 +1918,14 @@
   function route() {
     document.onkeydown = null;
     Speech.stop();
+    stopListening();
     var r = parseHash();
     var node;
     switch (r.parts[0]) {
       case 's': node = viewSubject(r.parts[1]); break;
       case 'review': node = viewReview(r.parts[1] || null); break;
       case 'vocab': node = viewVocab(r.query); break;
+      case 'listen': node = viewListen(r.query); break;
       case 'grammar': node = r.parts[1] ? viewGrammarTopic(decode(r.parts[1])) : viewGrammarIndex(); break;
       case 'verbs': node = r.parts[1] ? viewVerb(decode(r.parts[1])) : viewVerbs(r.query); break;
       case 'weak': node = viewWeak(); break;

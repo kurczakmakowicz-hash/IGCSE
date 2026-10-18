@@ -36,9 +36,22 @@ rate yourself. Intervals are shown on the grade buttons so you can see what each
 answer costs you.
 
 **French vocabulary.** The minimum core vocabulary list from Appendix 1 of
-the specification, by theme. Drill by typing (answers compared ignoring accents
-and articles; any listed alternative is accepted) or as flip cards, French →
-English or English → French.
+the specification, by theme. The default is swipe cards: swipe right for "I
+know it", left for "I don't know" (or use the buttons / arrow keys); a word you
+don't know is turned over so you see the answer before moving on. You can also
+type answers (compared ignoring accents and articles; any listed alternative is
+accepted). French → English, English → French, or Listen → English. Every word
+has a short example sentence, shown on the back of the card. Words whose latest
+answer was "I know it" collect in a *words you know* list.
+
+**Listen.** Builds one MP3 track from the words you know (or are learning, or
+a whole theme): each French word, its English meaning and its example sentence,
+with pauses you can lengthen to repeat after the voice. Because it is a real
+recording rather than live speech synthesis it keeps playing with the screen
+locked, and you can save the MP3. Tap any word in the transcript to jump to it.
+The recordings are made in advance with the open-source Piper voices (see
+*Where the content came from*); if they cannot be loaded, the page falls back to
+the device's own voice, which only plays while the screen is on.
 
 **French grammar.** Every point on the specification's grammar list as a topic
 with revision notes and cards. Most cards copy the Paper 2 grammar task —
@@ -119,6 +132,15 @@ wrong, fix its `answers` list and rebuild. Verb tables are generated from the
 [verbecc](https://github.com/bretttolbert/verbecc) conjugation tables by
 `tools/build_verbs.py`.
 
+The example sentences (`content/french/sentences/`) were written for this app,
+one per word, and each batch was checked by a second reviewer for French
+accuracy, translation and level. The listening audio in `audio/fr/` is
+synthesised by `tools/build_audio.py` with [Piper](https://github.com/rhasspy/piper)
+voices: French "siwis" (SIWIS French Speech Synthesis Database, CC BY 4.0) and
+British English "alba" (University of Edinburgh, CC BY 4.0). It is computer
+speech: clear, but not a native speaker, so trust the spelling over the audio if
+the two ever seem to disagree.
+
 Pearson reissues specifications from time to time. If yours differs, rerun the
 parser against the current PDFs — see `tools/README.md`.
 
@@ -135,12 +157,16 @@ assets/store.js       catalogue + progress state
 assets/srs.js         spaced-repetition scheduling
 assets/match.js       answer matching (vocabulary, French grammar, verbs)
 assets/speech.js      reading French aloud (Web Speech API)
+audio/fr/*.mp3        recorded listening clips, one file per vocabulary topic
 data/*.js             generated content — do not edit by hand
 content/french/grammar/*.json   French grammar topics (edit these)
 tools/build_syllabus.py   spec PDF -> data/<subject>.js
 tools/build_grammar.js    content/french/grammar -> data/french_grammar.js
 tools/build_verbs.py      verbecc -> data/french_verbs.js
 tools/validate_grammar.js schema checks for the grammar topics
+content/french/sentences/*.json  example sentences, one per word (edit these)
+tools/build_sentences.js  sentences -> data/french_sentences.js
+tools/build_audio.py      Piper TTS -> audio/fr/*.mp3 + data/french_audio.js
 tools/test.js         unit and data tests
 ```
 

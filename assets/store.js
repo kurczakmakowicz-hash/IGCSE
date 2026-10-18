@@ -82,6 +82,13 @@ window.Store = (function () {
   /* French grammar cards and the verb-conjugation deck live in their own data
    * files; a missing file just means that part of the app is empty. */
   function buildFrenchExtras() {
+    // Example sentences, one per list entry: {"<entry>": ["French.", "English."]}
+    var ex = (window.IGCSE_DATA && window.IGCSE_DATA.frenchSentences) || {};
+    vocab.forEach(function (w) {
+      var e = ex[w.fr];
+      if (e) w.ex = { fr: e[0], en: e[1] };
+    });
+
     var g = window.IGCSE_DATA && window.IGCSE_DATA.frenchGrammar;
     (g ? g.topics : []).forEach(function (t) {
       var topic = {
@@ -125,8 +132,9 @@ window.Store = (function () {
     confidence: {},   // itemId -> 0 | 1 | 2
     cards: {},        // itemId -> SRS card
     settings: {
-      examDate: '2027-05-10', theme: 'auto', vocabDirection: 'fr-en', vocabMode: 'type',
-      speechAuto: true, speechRate: 0.9, speechVoice: ''
+      examDate: '2027-05-10', theme: 'auto', vocabDirection: 'fr-en', vocabMode: 'swipe',
+      speechAuto: true, speechRate: 0.9, speechVoice: '',
+      listenEnglish: true, listenSentence: true, listenGap: 1.2, listenOrder: 'theme'
     },
     log: {}           // 'YYYY-MM-DD' -> number of reviews
   };
@@ -188,8 +196,17 @@ window.Store = (function () {
 
   function card(id) { return state.cards[id] || null; }
 
+  /* Known = the latest answer was "I know it" (Good or Easy), or, for cards
+   * answered before the latest answer was recorded, marked solid. */
+  function known(id) {
+    var c = state.cards[id];
+    if (c && c.g !== undefined) return c.g >= 2;
+    return (state.confidence[id] || 0) === 2;
+  }
+
   function review(id, g) {
     state.cards[id] = window.SRS.grade(state.cards[id], g);
+    state.cards[id].g = g;   // the latest answer: does the student know it right now?
     // A failed item is no longer "solid" whatever the checklist said.
     if (g === 0) state.confidence[id] = 1;
     else if (g >= 2 && (state.confidence[id] || 0) < 2 && state.cards[id].reps >= 2) {
@@ -285,6 +302,7 @@ window.Store = (function () {
     confidence: confidence,
     setConfidence: setConfidence,
     card: card,
+    known: known,
     review: review,
     settings: settings,
     setSetting: setSetting,

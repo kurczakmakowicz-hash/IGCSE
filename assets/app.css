@@ -265,3 +265,46 @@ button.say:hover { border-color: var(--accent); color: var(--ink); }
 }
 .speech-toggle[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
 table.conj td + td { padding-left: .5rem; }
+
+/* ---------- swipe cards ---------- */
+.swipe-wrap { position: relative; }
+.card.swipe {
+  position: relative; touch-action: pan-y; user-select: none; -webkit-user-select: none; cursor: grab;
+  transition: transform .2s ease, opacity .2s ease; min-height: 14rem;
+}
+.card.swipe.dragging { transition: none; cursor: grabbing; }
+.card.swipe.fly-right { transform: translateX(130%) rotate(14deg); opacity: 0; }
+.card.swipe.fly-left { transform: translateX(-130%) rotate(-14deg); opacity: 0; }
+.card.swipe.missed { border-color: var(--shaky); }
+.card.swipe:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.swipe-face .prompt { font-size: 1.6rem; }
+.swipe-hint { margin-top: auto; text-align: center; }
+.stamp {
+  position: absolute; top: 1rem; padding: .2rem .6rem; border: 3px solid; border-radius: 8px;
+  font: 700 1.05rem/1.2 var(--sans); text-transform: uppercase; letter-spacing: .06em; opacity: 0;
+  pointer-events: none; background: var(--panel);
+}
+.stamp.yes { left: 1rem; color: var(--solid); border-color: var(--solid); transform: rotate(-10deg); }
+.stamp.no { right: 1rem; color: var(--danger); border-color: var(--danger); transform: rotate(10deg); }
+.swipe-buttons { display: grid; grid-template-columns: 1fr auto 1fr; gap: .5rem; margin-top: .8rem; }
+.swipe-buttons .wide { grid-column: 1 / -1; }
+.swipe-buttons .btn { padding: .7rem .5rem; font-size: 1rem; }
+.swipe-buttons .btn.yes { border-color: var(--solid); color: var(--solid); font-weight: 600; }
+.swipe-buttons .btn.no { border-color: var(--danger); color: var(--danger); font-weight: 600; }
+.example { margin-top: .8rem; padding-top: .6rem; border-top: 1px dashed var(--line); }
+@media (prefers-reduced-motion: reduce) { .card.swipe { transition: none; } }
+
+/* Long option labels (theme names) must not widen the page on phones. */
+select { max-width: 100%; text-overflow: ellipsis; }
+
+/* On phones the wrapped nav would eat a third of the screen if it stuck. */
+@media (max-width: 40rem) { .topbar { position: static; } }
+
+/* ---------- listen ---------- */
+label.check { display: inline-flex; align-items: center; gap: .3rem; }
+.listen-player audio { width: 100%; margin: .5rem 0; }
+.now-playing { font-weight: 600; min-height: 1.5em; }
+ol.transcript { margin: .8rem 0 0; padding-left: 1.6rem; max-height: 26rem; overflow-y: auto; }
+ol.transcript li { padding: .35rem .3rem; border-radius: 6px; cursor: pointer; }
+ol.transcript li:hover { background: var(--panel-2); }
+ol.transcript li.playing { background: var(--panel-2); background: color-mix(in srgb, var(--accent) 16%, var(--panel)); }

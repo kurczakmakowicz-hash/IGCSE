@@ -56,7 +56,43 @@ window.Speech = (function () {
     return true;
   }
 
-  function stop() { if (supported) synth.cancel(); }
+  var seqTimer = null;
+  function stop() {
+    clearTimeout(seqTimer);
+    seqTimer = null;
+    if (supported) synth.cancel();
+  }
+
+  function englishVoice() {
+    var en = voices.filter(function (v) { return /^en[-_]gb/i.test(v.lang); });
+    if (!en.length) en = voices.filter(function (v) { return /^en([-_]|$)/i.test(v.lang); });
+    return en[0] || null;
+  }
+
+  /* Speak a list of {text, lang: 'fr'|'en', pause (seconds after)} one after
+   * another, calling onStep(i) as each starts. A fallback for the Listen page
+   * when the recorded audio cannot be loaded; unlike a recording, it stops
+   * when the screen locks. Returns a function that stops it. */
+  function sequence(parts, onStep, onDone) {
+    stop();
+    var i = 0, stopped = false;
+    function next() {
+      if (stopped) return;
+      if (i >= parts.length) { if (onDone) onDone(); return; }
+      var p = parts[i];
+      if (onStep) onStep(i);
+      var u = new Utterance(p.text);
+      var v = p.lang === 'en' ? englishVoice() : voice();
+      u.lang = v ? v.lang : (p.lang === 'en' ? 'en-GB' : 'fr-FR');
+      if (v) u.voice = v;
+      u.rate = p.lang === 'en' ? 1 : options.rate;
+      u.onend = function () { i++; seqTimer = setTimeout(next, (p.pause || 0) * 1000); };
+      u.onerror = u.onend;
+      synth.speak(u);
+    }
+    if (supported) next();
+    return function () { stopped = true; stop(); };
+  }
 
   /* ---------- turning list entries into something sayable ---------- */
 
@@ -96,6 +132,7 @@ window.Speech = (function () {
     supported: supported,
     say: say,
     stop: stop,
+    sequence: sequence,
     voice: voice,
     frenchVoices: frenchVoices,
     configure: function (o) { Object.keys(o).forEach(function (k) { options[k] = o[k]; }); },

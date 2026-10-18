@@ -84,3 +84,25 @@ Item ids used for progress (`biology#2.44`, `french#v#lac (m)`,
 `french#g#articles-03`, `french#verb#aller#perfect`) are derived from the spec
 reference, the French word, the grammar card id, or the verb and tense. Progress is keyed on those, so a rebuild
 that renumbers or rewords an item silently orphans its history.
+
+## Example sentences and listening audio
+
+- `content/french/sentences/b1.json` … one array of `{w, fr, en}` per batch:
+  `w` is the vocabulary entry exactly as in `data/french.js`. After editing,
+  run `node tools/build_sentences.js` (it checks every word has one).
+- `tools/build_audio.py` turns every word into three MP3 clips (French word,
+  English meaning, French sentence) with the Piper TTS engine:
+
+  ```sh
+  pip install piper-tts lameenc
+  mkdir voices && cd voices
+  B=https://huggingface.co/rhasspy/piper-voices/resolve/main
+  for v in fr/fr_FR/siwis/medium/fr_FR-siwis-medium en/en_GB/alba/medium/en_GB-alba-medium; do
+    curl -LO "$B/$v.onnx"; curl -LO "$B/$v.onnx.json"; done
+  cd .. && python3 tools/build_audio.py voices
+  ```
+
+  Clips are constant-bitrate MP3 (mono, 22,050 Hz, 32 kbit/s) from separate
+  encoder runs, so the app can join any of them into one track; they are packed
+  one file per vocabulary sub-topic with an index of byte offsets. Takes about
+  ten minutes on four cores and produces roughly 40 MB.
