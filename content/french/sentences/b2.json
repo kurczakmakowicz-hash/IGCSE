@@ -1,0 +1,1842 @@
+[
+ {
+  "w": "améliorer (v)",
+  "fr": "Je veux améliorer mes notes en anglais cette année.",
+  "en": "I want to improve my marks in English this year."
+ },
+ {
+  "w": "asseyez-vous (v)",
+  "fr": "Bonjour tout le monde, asseyez-vous et sortez vos livres.",
+  "en": "Hello everyone, sit down and get your books out."
+ },
+ {
+  "w": "bulletin scolaire (m)",
+  "fr": "Mes parents étaient très contents de mon bulletin scolaire.",
+  "en": "My parents were very happy with my school report."
+ },
+ {
+  "w": "cahier (m)",
+  "fr": "Écrivez la date dans votre cahier, s'il vous plaît.",
+  "en": "Write the date in your exercise book, please."
+ },
+ {
+  "w": "cartable (m)",
+  "fr": "Mon cartable est très lourd le lundi.",
+  "en": "My school bag is very heavy on Mondays."
+ },
+ {
+  "w": "casque (m)",
+  "fr": "J'écoute de la musique avec mon casque dans le bus.",
+  "en": "I listen to music with my headphones on the bus."
+ },
+ {
+  "w": "CDI (m)",
+  "fr": "À midi, je vais au CDI pour emprunter un livre.",
+  "en": "At lunchtime, I go to the school library to borrow a book."
+ },
+ {
+  "w": "chaussettes (f)",
+  "fr": "Avec l'uniforme, il faut porter des chaussettes grises.",
+  "en": "With the uniform, you have to wear grey socks."
+ },
+ {
+  "w": "chaussures (f pl)",
+  "fr": "Dans mon collège, les chaussures noires sont obligatoires.",
+  "en": "At my school, black shoes are compulsory."
+ },
+ {
+  "w": "chemise (f)",
+  "fr": "Le matin, je mets une chemise blanche et une cravate.",
+  "en": "In the morning, I put on a white shirt and a tie."
+ },
+ {
+  "w": "chemisier (m)",
+  "fr": "Ma sœur porte un chemisier bleu pour aller au lycée.",
+  "en": "My sister wears a blue blouse to school."
+ },
+ {
+  "w": "collant (m)",
+  "fr": "En hiver, je porte un collant noir sous ma jupe.",
+  "en": "In winter, I wear black tights under my skirt."
+ },
+ {
+  "w": "collège (m)",
+  "fr": "Mon petit frère entre au collège en septembre.",
+  "en": "My little brother starts secondary school in September."
+ },
+ {
+  "w": "conseiller(~ère) d'orientation (m/f)",
+  "fr": "La conseillère d'orientation nous a donné des idées de métiers.",
+  "en": "The careers adviser gave us some ideas for jobs."
+ },
+ {
+  "w": "copier (v)",
+  "fr": "Il est interdit de copier sur son voisin pendant un contrôle.",
+  "en": "It is forbidden to copy from your neighbour during a test."
+ },
+ {
+  "w": "crayon (m)",
+  "fr": "Pour le cours de dessin, il faut un crayon et une gomme.",
+  "en": "For the art lesson, you need a pencil and a rubber."
+ },
+ {
+  "w": "devoirs (m)",
+  "fr": "Ce soir, j'ai beaucoup de devoirs à faire.",
+  "en": "Tonight, I have a lot of homework to do."
+ },
+ {
+  "w": "difficile (adj)",
+  "fr": "La physique est difficile, mais c'est passionnant.",
+  "en": "Physics is difficult, but it's fascinating."
+ },
+ {
+  "w": "ennuyeux(~euse) (adj)",
+  "fr": "Je trouve les cours d'histoire un peu ennuyeux.",
+  "en": "I find history lessons a bit boring."
+ },
+ {
+  "w": "épreuve (f)",
+  "fr": "Nous avons une épreuve de sciences demain matin.",
+  "en": "We have a science test tomorrow morning."
+ },
+ {
+  "w": "essai (m)",
+  "fr": "Pour lundi, je dois écrire un essai sur la pollution.",
+  "en": "For Monday, I have to write an essay on pollution."
+ },
+ {
+  "w": "être fort(e) en",
+  "fr": "Inès est très forte en maths et en physique.",
+  "en": "Inès is very good at maths and physics."
+ },
+ {
+  "w": "examen oral (m)",
+  "fr": "Mon examen oral de français est la semaine prochaine.",
+  "en": "My French oral exam is next week."
+ },
+ {
+  "w": "facile (adj)",
+  "fr": "Pour moi, l'espagnol est une matière assez facile.",
+  "en": "For me, Spanish is quite an easy subject."
+ },
+ {
+  "w": "facultative (-ive)",
+  "fr": "Le latin est une matière facultative dans mon collège.",
+  "en": "Latin is an optional subject at my school."
+ },
+ {
+  "w": "faible (adj)",
+  "fr": "Je suis un peu faible en chimie, alors je révise beaucoup.",
+  "en": "I'm a bit weak in chemistry, so I revise a lot."
+ },
+ {
+  "w": "intéressant(e) (adj)",
+  "fr": "Le cours de géographie était très intéressant aujourd'hui.",
+  "en": "The geography lesson was very interesting today."
+ },
+ {
+  "w": "jupe (f)",
+  "fr": "Les filles peuvent porter une jupe ou un pantalon.",
+  "en": "Girls can wear a skirt or trousers."
+ },
+ {
+  "w": "juste (adj)",
+  "fr": "Ta réponse est juste, bravo !",
+  "en": "Your answer is right, well done!"
+ },
+ {
+  "w": "laisser tomber",
+  "fr": "J'ai laissé tomber l'allemand parce que c'était trop dur.",
+  "en": "I dropped German because it was too hard."
+ },
+ {
+  "w": "nul(le) en (adj)",
+  "fr": "Je suis nul en dessin, mais j'adore la musique.",
+  "en": "I'm hopeless at drawing, but I love music."
+ },
+ {
+  "w": "obligatoire (adj)",
+  "fr": "Le port de l'uniforme est obligatoire dans mon école.",
+  "en": "Wearing a uniform is compulsory at my school."
+ },
+ {
+  "w": "orientation professionnelle (f)",
+  "fr": "L'orientation professionnelle m'aide à réfléchir à mon avenir.",
+  "en": "Careers advice helps me think about my future."
+ },
+ {
+  "w": "parler",
+  "fr": "En classe, on doit parler français avec la prof.",
+  "en": "In class, we have to speak French with the teacher."
+ },
+ {
+  "w": "passer un examen (v)",
+  "fr": "Je passe un examen d'histoire vendredi prochain.",
+  "en": "I'm taking a history exam next Friday."
+ },
+ {
+  "w": "préféré(e) (adj)",
+  "fr": "Ma matière préférée, c'est la biologie.",
+  "en": "My favourite subject is biology."
+ },
+ {
+  "w": "rater un examen (v)",
+  "fr": "Hugo a raté son examen parce qu'il n'avait pas révisé.",
+  "en": "Hugo failed his exam because he hadn't revised."
+ },
+ {
+  "w": "rayé(e) (adj)",
+  "fr": "Mon uniforme comprend une chemise rayée et une cravate noire.",
+  "en": "My uniform includes a striped shirt and a black tie."
+ },
+ {
+  "w": "règlement scolaire (m)",
+  "fr": "Le règlement scolaire interdit les portables en classe.",
+  "en": "The school rules ban mobile phones in class."
+ },
+ {
+  "w": "retenue (f)",
+  "fr": "Karim a eu une retenue parce qu'il était en retard.",
+  "en": "Karim got a detention because he was late."
+ },
+ {
+  "w": "réussir à un examen (v)",
+  "fr": "J'espère réussir à mon examen de chimie.",
+  "en": "I hope to pass my chemistry exam."
+ },
+ {
+  "w": "robe (f)",
+  "fr": "Pour le bal de fin d'année, Léa porte une robe rouge.",
+  "en": "For the end-of-year dance, Léa is wearing a red dress."
+ },
+ {
+  "w": "sévère (adj)",
+  "fr": "Notre prof de maths est sévère mais juste.",
+  "en": "Our maths teacher is strict but fair."
+ },
+ {
+  "w": "short (m)",
+  "fr": "Pour le cours de sport, je porte un short.",
+  "en": "For PE, I wear a pair of shorts."
+ },
+ {
+  "w": "trousse (f)",
+  "fr": "J'ai oublié ma trousse, tu peux me prêter un stylo ?",
+  "en": "I've forgotten my pencil case, can you lend me a pen?"
+ },
+ {
+  "w": "animateur (m)",
+  "fr": "Le soir, l'animateur de la colonie de vacances organise des jeux.",
+  "en": "In the evening, the activity leader at the holiday camp organises games."
+ },
+ {
+  "w": "assister à (v)",
+  "fr": "Toute la classe a assisté à un concert au théâtre.",
+  "en": "The whole class attended a concert at the theatre."
+ },
+ {
+  "w": "cérémonie de remise des prix (f)",
+  "fr": "Mes parents viennent à la cérémonie de remise des prix ce soir.",
+  "en": "My parents are coming to the award ceremony this evening."
+ },
+ {
+  "w": "compétition (f)",
+  "fr": "Notre équipe a gagné la compétition régionale de basket.",
+  "en": "Our team won the regional basketball competition."
+ },
+ {
+  "w": "correspondant(e) (m/f)",
+  "fr": "Ma correspondante française arrive chez moi la semaine prochaine.",
+  "en": "My French penpal is coming to stay at my house next week."
+ },
+ {
+  "w": "enrichissant(e) (adj)",
+  "fr": "L'échange avec l'Espagne était une expérience très enrichissante.",
+  "en": "The exchange with Spain was a very enriching experience."
+ },
+ {
+  "w": "famille d’accueil (f)",
+  "fr": "Ma famille d'accueil à Lyon était très gentille avec moi.",
+  "en": "My host family in Lyon was very kind to me."
+ },
+ {
+  "w": "graduation (f)",
+  "fr": "La cérémonie de graduation du lycée aura lieu en juin.",
+  "en": "The school graduation ceremony will take place in June."
+ },
+ {
+  "w": "grandes vacances (f pl)",
+  "fr": "Pendant les grandes vacances, je vais chez mes grands-parents.",
+  "en": "During the summer holidays, I go to my grandparents' house."
+ },
+ {
+  "w": "guide touristique (f)",
+  "fr": "Notre guide touristique nous a montré le vieux quartier.",
+  "en": "Our tourist guide showed us the old quarter."
+ },
+ {
+  "w": "invité(e) (m/f)",
+  "fr": "Nous avons trois invités à dîner ce soir.",
+  "en": "We have three guests for dinner tonight."
+ },
+ {
+  "w": "logement (m)",
+  "fr": "Pendant le voyage, notre logement était une auberge de jeunesse.",
+  "en": "During the trip, our accommodation was a youth hostel."
+ },
+ {
+  "w": "loger (v)",
+  "fr": "Pendant l'échange, je loge chez une famille française.",
+  "en": "During the exchange, I'm staying with a French family."
+ },
+ {
+  "w": "mal du pays (m)",
+  "fr": "Le premier soir, Chloé avait un peu le mal du pays.",
+  "en": "On the first evening, Chloé was a little homesick."
+ },
+ {
+  "w": "moniteur de ski (m)",
+  "fr": "Notre moniteur de ski était patient et très drôle.",
+  "en": "Our ski instructor was patient and very funny."
+ },
+ {
+  "w": "participer à (v)",
+  "fr": "Je vais participer à un tournoi de tennis samedi.",
+  "en": "I'm going to take part in a tennis tournament on Saturday."
+ },
+ {
+  "w": "prix (m)",
+  "fr": "Inès a reçu le prix du meilleur projet de sciences.",
+  "en": "Inès received the prize for the best science project."
+ },
+ {
+  "w": "spectacle (m)",
+  "fr": "Les élèves préparent un spectacle pour la fin de l'année.",
+  "en": "The pupils are preparing a show for the end of the year."
+ },
+ {
+  "w": "visite culturelle (f)",
+  "fr": "Demain, nous faisons une visite culturelle au musée d'art.",
+  "en": "Tomorrow, we're going on a cultural visit to the art museum."
+ },
+ {
+  "w": "voyage linguistique (m)",
+  "fr": "Cet été, je fais un voyage linguistique à Bordeaux.",
+  "en": "This summer, I'm going on a language trip to Bordeaux."
+ },
+ {
+  "w": "voyage scolaire/sortie scolaire",
+  "fr": "Le voyage scolaire à Paris était vraiment génial !",
+  "en": "The school trip to Paris was really great!"
+ },
+ {
+  "w": "acteur(~trice) (m/f)",
+  "fr": "Ma cousine veut devenir actrice de théâtre.",
+  "en": "My cousin wants to become a stage actress."
+ },
+ {
+  "w": "animateur (~trice) (m/f)",
+  "fr": "Cet animateur de radio me fait rire tous les matins.",
+  "en": "This radio presenter makes me laugh every morning."
+ },
+ {
+  "w": "annonce (f)",
+  "fr": "J'ai vu une annonce pour un job dans une boulangerie.",
+  "en": "I saw an advertisement for a job in a bakery."
+ },
+ {
+  "w": "apprenti(e) (m/f)",
+  "fr": "Mon frère est apprenti chez un garagiste du quartier.",
+  "en": "My brother is an apprentice with a local mechanic."
+ },
+ {
+  "w": "apprentissage (m)",
+  "fr": "Après le collège, Karim veut faire un apprentissage en cuisine.",
+  "en": "After secondary school, Karim wants to do a cooking apprenticeship."
+ },
+ {
+  "w": "au chômage (adj)",
+  "fr": "Mon oncle est au chômage depuis six mois.",
+  "en": "My uncle has been unemployed for six months."
+ },
+ {
+  "w": "bénévole (m)",
+  "fr": "Le samedi, je suis bénévole dans un refuge pour animaux.",
+  "en": "On Saturdays, I'm a volunteer at an animal shelter."
+ },
+ {
+  "w": "bien payé(e) (adj)",
+  "fr": "Le métier d'avocat est bien payé mais stressant.",
+  "en": "Being a lawyer is well paid but stressful."
+ },
+ {
+  "w": "boulanger (~ère) (m/f)",
+  "fr": "Le boulanger commence à travailler à quatre heures du matin.",
+  "en": "The baker starts work at four in the morning."
+ },
+ {
+  "w": "boulot (m)",
+  "fr": "Mon père a trouvé un nouveau boulot près de chez nous.",
+  "en": "My dad has found a new job near our home."
+ },
+ {
+  "w": "caisse (f)",
+  "fr": "Le samedi, je travaille à la caisse d'un supermarché.",
+  "en": "On Saturdays, I work on the till in a supermarket."
+ },
+ {
+  "w": "caissier (~ière) (m/f)",
+  "fr": "La caissière m'a rendu la monnaie avec un sourire.",
+  "en": "The cashier gave me my change with a smile."
+ },
+ {
+  "w": "chauffeur(~euse) de taxi (m/f)",
+  "fr": "Mon grand-père était chauffeur de taxi à Marseille.",
+  "en": "My grandfather was a taxi driver in Marseille."
+ },
+ {
+  "w": "chef de cuisine (m)",
+  "fr": "Le chef de cuisine prépare un menu spécial ce soir.",
+  "en": "The chef is preparing a special menu tonight."
+ },
+ {
+  "w": "choisir (v)",
+  "fr": "C'est difficile de choisir un métier à seize ans.",
+  "en": "It's hard to choose a career at sixteen."
+ },
+ {
+  "w": "informaticien(ne) (m/f)",
+  "fr": "Ma mère est informaticienne dans une grande entreprise.",
+  "en": "My mum is an IT expert in a big company."
+ },
+ {
+  "w": "ingénieur(e) (m/f)",
+  "fr": "Hugo veut devenir ingénieur pour construire des ponts.",
+  "en": "Hugo wants to become an engineer to build bridges."
+ },
+ {
+  "w": "job d’été (m)",
+  "fr": "Cet été, j'ai trouvé un job d'été dans un camping.",
+  "en": "This summer, I found a summer job at a campsite."
+ },
+ {
+  "w": "journaliste (m)",
+  "fr": "La journaliste pose des questions aux habitants du village.",
+  "en": "The journalist is asking the villagers some questions."
+ },
+ {
+  "w": "licence (f)/diplôme (m)",
+  "fr": "Ma sœur prépare une licence d'histoire à l'université.",
+  "en": "My sister is studying for a history degree at university."
+ },
+ {
+  "w": "maçon (m)",
+  "fr": "Le maçon construit un nouveau mur dans notre jardin.",
+  "en": "The builder is building a new wall in our garden."
+ },
+ {
+  "w": "mal payé(e) (adj)",
+  "fr": "Mon premier job était fatigant et mal payé.",
+  "en": "My first job was tiring and badly paid."
+ },
+ {
+  "w": "mannequin (m inv)",
+  "fr": "Ma cousine travaille comme mannequin pour des magazines de mode.",
+  "en": "My cousin works as a model for fashion magazines."
+ },
+ {
+  "w": "mécanicien(ne) (m/f)",
+  "fr": "Le mécanicien a réparé la voiture de mon père.",
+  "en": "The mechanic repaired my dad's car."
+ },
+ {
+  "w": "médecin (m/f)",
+  "fr": "Ma tante est médecin à l'hôpital de la ville.",
+  "en": "My aunt is a doctor at the town hospital."
+ },
+ {
+  "w": "message (m)",
+  "fr": "J'ai laissé un message à mon patron ce matin.",
+  "en": "I left a message for my boss this morning."
+ },
+ {
+  "w": "métier (m)",
+  "fr": "Quel métier veux-tu faire plus tard ?",
+  "en": "Which profession do you want to go into later on?"
+ },
+ {
+  "w": "œuvre caricative (f)",
+  "fr": "Je donne mes vieux vêtements à une œuvre caritative.",
+  "en": "I give my old clothes to a charity."
+ },
+ {
+  "w": "ouvrier(~ière) (m/f)",
+  "fr": "Mon grand-père était ouvrier dans une usine de voitures.",
+  "en": "My grandfather was a manual worker in a car factory."
+ },
+ {
+  "w": "patron(ne) (m/f)",
+  "fr": "Ma patronne est sympa mais très exigeante.",
+  "en": "My boss is nice but very demanding."
+ },
+ {
+  "w": "payé(e) (adj)",
+  "fr": "Mon stage n'est pas payé, mais c'est une bonne expérience.",
+  "en": "My work placement isn't paid, but it's good experience."
+ },
+ {
+  "w": "payer (v)",
+  "fr": "Le café me paie dix euros de l'heure.",
+  "en": "The café pays me ten euros an hour."
+ },
+ {
+  "w": "classer (v)",
+  "fr": "Au bureau, je dois classer les documents par date.",
+  "en": "At the office, I have to file the documents by date."
+ },
+ {
+  "w": "client(e) (m/f)",
+  "fr": "La cliente a demandé l'addition au serveur.",
+  "en": "The customer asked the waiter for the bill."
+ },
+ {
+  "w": "compagnie (f)",
+  "fr": "Mon père travaille pour une compagnie d'assurances.",
+  "en": "My dad works for an insurance company."
+ },
+ {
+  "w": "comptable (m/f)",
+  "fr": "La comptable vérifie les factures de l'entreprise.",
+  "en": "The accountant checks the company's invoices."
+ },
+ {
+  "w": "conseil (m)",
+  "fr": "Mon prof m'a donné un bon conseil pour l'avenir.",
+  "en": "My teacher gave me a good piece of advice for the future."
+ },
+ {
+  "w": "conseiller (v)",
+  "fr": "Je te conseille de faire un stage cet été.",
+  "en": "I advise you to do a work placement this summer."
+ },
+ {
+  "w": "conseiller (~ière) d’orientation (m/f)",
+  "fr": "J'ai rendez-vous avec le conseiller d'orientation jeudi.",
+  "en": "I have an appointment with the careers adviser on Thursday."
+ },
+ {
+  "w": "coup de téléphone (m)",
+  "fr": "J'ai reçu un coup de téléphone de l'entreprise ce matin.",
+  "en": "I got a phone call from the company this morning."
+ },
+ {
+  "w": "courrier (m)",
+  "fr": "La secrétaire ouvre le courrier tous les matins.",
+  "en": "The secretary opens the mail every morning."
+ },
+ {
+  "w": "courriel/courrier électronique (m)",
+  "fr": "Envoyez-moi un courriel avec votre CV, s'il vous plaît.",
+  "en": "Send me an email with your CV, please."
+ },
+ {
+  "w": "dentiste (m)",
+  "fr": "Je dois aller chez le dentiste, j'ai mal aux dents.",
+  "en": "I have to go to the dentist, I've got toothache."
+ },
+ {
+  "w": "électricien (~ne) (m/f)",
+  "fr": "L'électricien vient réparer la lumière de la cuisine.",
+  "en": "The electrician is coming to fix the kitchen light."
+ },
+ {
+  "w": "employé(e) (m/f)",
+  "fr": "Ma mère est employée de bureau dans une banque.",
+  "en": "My mum is an office worker in a bank."
+ },
+ {
+  "w": "emploi (m)",
+  "fr": "Mon frère cherche un emploi dans le tourisme.",
+  "en": "My brother is looking for a job in tourism."
+ },
+ {
+  "w": "employeur(~euse) (m/f)",
+  "fr": "Mon employeur m'a offert une formation gratuite.",
+  "en": "My employer offered me free training."
+ },
+ {
+  "w": "entreprise (f)",
+  "fr": "Mon oncle a créé sa propre entreprise l'année dernière.",
+  "en": "My uncle set up his own business last year."
+ },
+ {
+  "w": "expérimenté(e) (adj)",
+  "fr": "Le restaurant cherche un cuisinier expérimenté.",
+  "en": "The restaurant is looking for an experienced cook."
+ },
+ {
+  "w": "faire du bénévolat (v)",
+  "fr": "Le week-end, je fais du bénévolat dans une association.",
+  "en": "At weekends, I do voluntary work for a charity."
+ },
+ {
+  "w": "faire un stage (v)",
+  "fr": "En juin, je vais faire un stage dans un hôpital.",
+  "en": "In June, I'm going to do a work placement in a hospital."
+ },
+ {
+  "w": "formation (f)",
+  "fr": "Pour devenir pilote, il faut une longue formation.",
+  "en": "To become a pilot, you need a long period of training."
+ },
+ {
+  "w": "gagner (v)",
+  "fr": "Je gagne un peu d'argent en promenant des chiens.",
+  "en": "I earn a bit of money by walking dogs."
+ },
+ {
+  "w": "garder (v)",
+  "fr": "Je garde tout mon argent pour acheter un vélo.",
+  "en": "I'm keeping all my money to buy a bike."
+ },
+ {
+  "w": "homme/femme d'affaires (m/f)",
+  "fr": "Mon voisin est un homme d'affaires qui voyage beaucoup.",
+  "en": "My neighbour is a businessman who travels a lot."
+ },
+ {
+  "w": "imprimer (v)",
+  "fr": "Je dois imprimer mon CV avant l'entretien.",
+  "en": "I have to print my CV before the interview."
+ },
+ {
+  "w": "plombier (~ière) (m/f)",
+  "fr": "Le plombier a réparé la fuite dans la salle de bains.",
+  "en": "The plumber fixed the leak in the bathroom."
+ },
+ {
+  "w": "poser sa candidature (v)",
+  "fr": "J'ai posé ma candidature pour un job au cinéma.",
+  "en": "I've applied for a job at the cinema."
+ },
+ {
+  "w": "poste (m)",
+  "fr": "Elle a obtenu un poste de vendeuse dans une librairie.",
+  "en": "She got a job as a sales assistant in a bookshop."
+ },
+ {
+  "w": "professeur (m)",
+  "fr": "Mon professeur de français explique très bien la grammaire.",
+  "en": "My French teacher explains grammar very well."
+ },
+ {
+  "w": "programme (m)",
+  "fr": "Quel est le programme de la journée ?",
+  "en": "What's the programme for the day?"
+ },
+ {
+  "w": "progrès (m pl)",
+  "fr": "Tu as fait beaucoup de progrès en français cette année !",
+  "en": "You've made a lot of progress in French this year!"
+ },
+ {
+  "w": "qualifié(e) (adj)",
+  "fr": "Cette entreprise cherche des techniciens qualifiés.",
+  "en": "This company is looking for qualified technicians."
+ },
+ {
+  "w": "rendez-vous (m)",
+  "fr": "J'ai rendez-vous chez le médecin à dix heures.",
+  "en": "I have a doctor's appointment at ten o'clock."
+ },
+ {
+  "w": "répondeur (téléphonique) (m)",
+  "fr": "Personne n'a répondu, alors j'ai laissé un message sur le répondeur.",
+  "en": "Nobody answered, so I left a message on the answerphone."
+ },
+ {
+  "w": "réunion (f)",
+  "fr": "Le patron organise une réunion tous les lundis matin.",
+  "en": "The boss holds a meeting every Monday morning."
+ },
+ {
+  "w": "s'adresser à (v)",
+  "fr": "Pour ce poste, adressez-vous au directeur du magasin.",
+  "en": "For this job, apply to the shop manager."
+ },
+ {
+  "w": "salaire (m)",
+  "fr": "Le salaire est bon, mais les horaires sont longs.",
+  "en": "The salary is good, but the hours are long."
+ },
+ {
+  "w": "sans emploi (adj)",
+  "fr": "Depuis la fermeture de l'usine, beaucoup de gens sont sans emploi.",
+  "en": "Since the factory closed, a lot of people have been unemployed."
+ },
+ {
+  "w": "serveur(~euse) (m/f)",
+  "fr": "Le serveur nous a apporté le menu tout de suite.",
+  "en": "The waiter brought us the menu straight away."
+ },
+ {
+  "w": "soldat (m)",
+  "fr": "Mon arrière-grand-père était soldat pendant la guerre.",
+  "en": "My great-grandfather was a soldier during the war."
+ },
+ {
+  "w": "sportif (m)/sportive (f)",
+  "fr": "Ce sportif s'entraîne six heures par jour.",
+  "en": "This sportsman trains for six hours a day."
+ },
+ {
+  "w": "stagiaire (m/f)",
+  "fr": "Cette semaine, il y a une nouvelle stagiaire au bureau.",
+  "en": "This week, there's a new trainee in the office."
+ },
+ {
+  "w": "steward/hôtesse de l’air (m/f)",
+  "fr": "L'hôtesse de l'air nous a servi des boissons fraîches.",
+  "en": "The flight attendant served us cold drinks."
+ },
+ {
+  "w": "taper (v)",
+  "fr": "Ma mère tape très vite sur son ordinateur.",
+  "en": "My mum types very fast on her computer."
+ },
+ {
+  "w": "technicien(ne) en informatique (m/f)",
+  "fr": "Le technicien en informatique a réparé mon ordinateur.",
+  "en": "The IT engineer repaired my computer."
+ },
+ {
+  "w": "téléphoner à (v)",
+  "fr": "Je vais téléphoner à l'entreprise pour demander un stage.",
+  "en": "I'm going to phone the company to ask for a work placement."
+ },
+ {
+  "w": "traitement de texte (m)",
+  "fr": "J'utilise un traitement de texte pour écrire mes lettres.",
+  "en": "I use a word processor to write my letters."
+ },
+ {
+  "w": "travail (m)",
+  "fr": "Mon travail au café commence à huit heures.",
+  "en": "My work at the café starts at eight o'clock."
+ },
+ {
+  "w": "travailler (v)",
+  "fr": "Ma mère travaille dans un hôpital à Lille.",
+  "en": "My mum works in a hospital in Lille."
+ },
+ {
+  "w": "usine (f)",
+  "fr": "Mon oncle travaille dans une usine de chocolat.",
+  "en": "My uncle works in a chocolate factory."
+ },
+ {
+  "w": "vendeur(~euse) (m/f)",
+  "fr": "La vendeuse m'a aidé à trouver une veste à ma taille.",
+  "en": "The shop assistant helped me find a jacket in my size."
+ },
+ {
+  "w": "avenir (m)",
+  "fr": "À l'avenir, j'aimerais habiter à l'étranger.",
+  "en": "In the future, I'd like to live abroad."
+ },
+ {
+  "w": "avoir besoin de (v)",
+  "fr": "J'ai besoin de bonnes notes pour aller à l'université.",
+  "en": "I need good marks to go to university."
+ },
+ {
+  "w": "avoir envie de (v)",
+  "fr": "J'ai envie de voyager un peu après le lycée.",
+  "en": "I want to travel a bit after leaving school."
+ },
+ {
+  "w": "avoir l’intention de (v)",
+  "fr": "J'ai l'intention d'étudier la médecine à Paris.",
+  "en": "I intend to study medicine in Paris."
+ },
+ {
+  "w": "carrière (f)",
+  "fr": "Ma sœur veut faire carrière dans le cinéma.",
+  "en": "My sister wants to have a career in film."
+ },
+ {
+  "w": "chercher (v)",
+  "fr": "Je cherche un petit boulot pour l'été.",
+  "en": "I'm looking for a part-time job for the summer."
+ },
+ {
+  "w": "décider de (v)",
+  "fr": "J'ai décidé de continuer les langues au lycée.",
+  "en": "I've decided to carry on with languages in the sixth form."
+ },
+ {
+  "w": "diplôme (m)",
+  "fr": "Avec ce diplôme, tu peux travailler partout en Europe.",
+  "en": "With this diploma, you can work anywhere in Europe."
+ },
+ {
+  "w": "diplômé(e) (adj)",
+  "fr": "Une fois diplômée, Chloé veut travailler à l'étranger.",
+  "en": "Once she's qualified, Chloé wants to work abroad."
+ },
+ {
+  "w": "droit (m)",
+  "fr": "Après le bac, je vais étudier le droit à la fac.",
+  "en": "After the baccalaureate, I'm going to study law at university."
+ },
+ {
+  "w": "entretien (m)",
+  "fr": "Demain, j'ai un entretien pour un job au supermarché.",
+  "en": "Tomorrow, I have an interview for a job at the supermarket."
+ },
+ {
+  "w": "espérer (v)",
+  "fr": "J'espère trouver un travail intéressant plus tard.",
+  "en": "I hope to find an interesting job later on."
+ },
+ {
+  "w": "étudiant(e) (m/f)",
+  "fr": "Mon frère est étudiant en biologie à Toulouse.",
+  "en": "My brother is a biology student in Toulouse."
+ },
+ {
+  "w": "faire des études littéraires (v)",
+  "fr": "Léa adore lire, alors elle veut faire des études littéraires.",
+  "en": "Léa loves reading, so she wants to study literature and languages."
+ },
+ {
+  "w": "interview (f)",
+  "fr": "Le chanteur a donné une interview à la radio.",
+  "en": "The singer gave an interview on the radio."
+ },
+ {
+  "w": "permettre (v)",
+  "fr": "Mes parents ne me permettent pas de sortir le soir.",
+  "en": "My parents don't allow me to go out in the evening."
+ },
+ {
+  "w": "préparer (un examen)",
+  "fr": "Je prépare mon examen de maths à la bibliothèque.",
+  "en": "I'm studying for my maths exam at the library."
+ },
+ {
+  "w": "(plus) âgé(e) (adj)",
+  "fr": "Mon frère est plus âgé que moi, il a dix-huit ans.",
+  "en": "My brother is older than me, he's eighteen."
+ },
+ {
+  "w": "prochain(e) (adj)",
+  "fr": "L'année prochaine, je vais passer mon permis de conduire.",
+  "en": "Next year, I'm going to take my driving test."
+ },
+ {
+  "w": "quitter (v)",
+  "fr": "Je vais quitter l'école à dix-huit ans.",
+  "en": "I'm going to leave school at eighteen."
+ },
+ {
+  "w": "réaliser (v)",
+  "fr": "Je travaille dur pour réaliser mon rêve.",
+  "en": "I work hard to achieve my dream."
+ },
+ {
+  "w": "savoir (v)",
+  "fr": "Je ne sais pas encore ce que je veux faire plus tard.",
+  "en": "I don't know yet what I want to do later on."
+ },
+ {
+  "w": "université (f)",
+  "fr": "Ma sœur va à l'université de Bordeaux en septembre.",
+  "en": "My sister is going to the University of Bordeaux in September."
+ },
+ {
+  "w": "agréable (adj)",
+  "fr": "Notre maison est petite, mais très agréable.",
+  "en": "Our house is small, but very pleasant."
+ },
+ {
+  "w": "appartement (m)",
+  "fr": "Nous habitons dans un appartement au centre-ville.",
+  "en": "We live in a flat in the town centre."
+ },
+ {
+  "w": "au premier étage (m)",
+  "fr": "Ma chambre se trouve au premier étage.",
+  "en": "My bedroom is on the first floor."
+ },
+ {
+  "w": "au rez-de-chaussée (m)",
+  "fr": "La cuisine et le salon sont au rez-de-chaussée.",
+  "en": "The kitchen and the living room are on the ground floor."
+ },
+ {
+  "w": "baignoire (f)",
+  "fr": "Il y a une grande baignoire dans notre salle de bains.",
+  "en": "There's a big bath in our bathroom."
+ },
+ {
+  "w": "canapé (m)",
+  "fr": "Le soir, je regarde la télé sur le canapé.",
+  "en": "In the evening, I watch TV on the sofa."
+ },
+ {
+  "w": "cave (f)",
+  "fr": "Mon père range ses outils à la cave.",
+  "en": "My dad keeps his tools in the cellar."
+ },
+ {
+  "w": "chaîne hi-fi (f)",
+  "fr": "J'écoute les vieux CD de mon père sur sa chaîne hi-fi.",
+  "en": "I listen to my dad's old CDs on his stereo system."
+ },
+ {
+  "w": "chaise (f)",
+  "fr": "Il manque une chaise autour de la table.",
+  "en": "There's a chair missing around the table."
+ },
+ {
+  "w": "chambre (f)",
+  "fr": "Je partage ma chambre avec mon petit frère.",
+  "en": "I share my bedroom with my little brother."
+ },
+ {
+  "w": "clef/clé (f)",
+  "fr": "Zut, j'ai encore oublié la clé de la maison !",
+  "en": "Oh no, I've forgotten the house key again!"
+ },
+ {
+  "w": "commode (f)",
+  "fr": "Je range mes pulls dans la commode.",
+  "en": "I keep my jumpers in the chest of drawers."
+ },
+ {
+  "w": "confortable (adj)",
+  "fr": "Mon nouveau lit est très confortable.",
+  "en": "My new bed is very comfortable."
+ },
+ {
+  "w": "congélateur (m)",
+  "fr": "Il y a des glaces dans le congélateur.",
+  "en": "There are some ice creams in the freezer."
+ },
+ {
+  "w": "couteau (m)",
+  "fr": "Attention, ce couteau coupe très bien !",
+  "en": "Careful, this knife is very sharp!"
+ },
+ {
+  "w": "couverture (f)",
+  "fr": "Il fait froid cette nuit, prends une couverture de plus.",
+  "en": "It's cold tonight, take an extra blanket."
+ },
+ {
+  "w": "cuisine (f)",
+  "fr": "On mange souvent dans la cuisine le matin.",
+  "en": "We often eat in the kitchen in the morning."
+ },
+ {
+  "w": "cuisinière (f)",
+  "fr": "Ma mère prépare la soupe sur la cuisinière.",
+  "en": "My mum is making soup on the cooker."
+ },
+ {
+  "w": "escalier (m)",
+  "fr": "Ma chambre est en haut de l'escalier, à droite.",
+  "en": "My bedroom is at the top of the stairs, on the right."
+ },
+ {
+  "w": "fauteuil (m)",
+  "fr": "Mon grand-père fait la sieste dans son fauteuil.",
+  "en": "My grandfather has a nap in his armchair."
+ },
+ {
+  "w": "fenêtre (f)",
+  "fr": "Ouvre la fenêtre, il fait trop chaud ici !",
+  "en": "Open the window, it's too hot in here!"
+ },
+ {
+  "w": "four (m)",
+  "fr": "Le gâteau cuit dans le four pendant trente minutes.",
+  "en": "The cake bakes in the oven for thirty minutes."
+ },
+ {
+  "w": "four à micro-ondes (m)",
+  "fr": "Je réchauffe mon déjeuner au four à micro-ondes.",
+  "en": "I heat up my lunch in the microwave."
+ },
+ {
+  "w": "frigidaire/frigo (m)",
+  "fr": "Il reste du lait et des yaourts dans le frigo.",
+  "en": "There's still some milk and yoghurt in the fridge."
+ },
+ {
+  "w": "gaz (m)",
+  "fr": "Chez nous, on fait la cuisine au gaz.",
+  "en": "At home, we cook with gas."
+ },
+ {
+  "w": "grenier (m)",
+  "fr": "Nous gardons les vieux jouets au grenier.",
+  "en": "We keep the old toys in the attic."
+ },
+ {
+  "w": "machine à laver (f)",
+  "fr": "La machine à laver est en panne depuis hier.",
+  "en": "The washing machine has been broken since yesterday."
+ },
+ {
+  "w": "machine à laver la vaisselle (f)",
+  "fr": "Après le repas, je remplis la machine à laver la vaisselle.",
+  "en": "After the meal, I load the dishwasher."
+ },
+ {
+  "w": "maison (familiale) (f)",
+  "fr": "La maison familiale de mes grands-parents est à la campagne.",
+  "en": "My grandparents' family home is in the countryside."
+ },
+ {
+  "w": "meuble (m)",
+  "fr": "Ce vieux meuble appartenait à ma grand-mère.",
+  "en": "This old piece of furniture belonged to my grandmother."
+ },
+ {
+  "w": "moquette (f)",
+  "fr": "Il y a une moquette bleue dans ma chambre.",
+  "en": "There's a blue fitted carpet in my bedroom."
+ },
+ {
+  "w": "mur (m)",
+  "fr": "J'ai mis des posters sur les murs de ma chambre.",
+  "en": "I've put posters on my bedroom walls."
+ },
+ {
+  "w": "ouvre-boîte (m)",
+  "fr": "Passe-moi l'ouvre-boîte pour ouvrir les tomates, s'il te plaît.",
+  "en": "Pass me the tin opener to open the tomatoes, please."
+ },
+ {
+  "w": "ouvre-bouteille (m)",
+  "fr": "Je ne trouve pas l'ouvre-bouteille dans la cuisine.",
+  "en": "I can't find the bottle opener in the kitchen."
+ },
+ {
+  "w": "pavillon (m)",
+  "fr": "Nous habitons un pavillon avec un grand jardin.",
+  "en": "We live in a detached house with a big garden."
+ },
+ {
+  "w": "pelouse (f)",
+  "fr": "Le dimanche, mon père tond la pelouse.",
+  "en": "On Sundays, my dad mows the lawn."
+ },
+ {
+  "w": "pièce (f)",
+  "fr": "Notre maison a six pièces et un petit jardin.",
+  "en": "Our house has six rooms and a small garden."
+ },
+ {
+  "w": "placard (m)",
+  "fr": "Les assiettes sont dans le placard au-dessus de l'évier.",
+  "en": "The plates are in the cupboard above the sink."
+ },
+ {
+  "w": "plafond (m)",
+  "fr": "Il y a une grosse araignée au plafond de ma chambre !",
+  "en": "There's a big spider on my bedroom ceiling!"
+ },
+ {
+  "w": "plancher (m)",
+  "fr": "Le vieux plancher fait du bruit quand on marche dessus.",
+  "en": "The old floor makes a noise when you walk on it."
+ },
+ {
+  "w": "plante (f)",
+  "fr": "Ma mère arrose les plantes tous les dimanches.",
+  "en": "My mum waters the plants every Sunday."
+ },
+ {
+  "w": "poêle (f)",
+  "fr": "Je fais cuire les crêpes dans une poêle.",
+  "en": "I cook the pancakes in a frying pan."
+ },
+ {
+  "w": "poêle (m)",
+  "fr": "En hiver, on allume le poêle dans le salon.",
+  "en": "In winter, we light the stove in the living room."
+ },
+ {
+  "w": "porte (f)",
+  "fr": "Quelqu'un frappe à la porte, tu peux ouvrir ?",
+  "en": "Someone's knocking at the door, can you open it?"
+ },
+ {
+  "w": "poubelle (f)",
+  "fr": "Mets les papiers dans la poubelle, s'il te plaît.",
+  "en": "Put the papers in the bin, please."
+ },
+ {
+  "w": "radiateur (m)",
+  "fr": "Le radiateur de ma chambre ne marche pas.",
+  "en": "The radiator in my bedroom doesn't work."
+ },
+ {
+  "w": "réfrigérateur (m)",
+  "fr": "Le réfrigérateur est plein de fruits et de légumes.",
+  "en": "The refrigerator is full of fruit and vegetables."
+ },
+ {
+  "w": "rideau(x) (m)",
+  "fr": "Le matin, j'ouvre les rideaux de ma chambre.",
+  "en": "In the morning, I open my bedroom curtains."
+ },
+ {
+  "w": "robinet (m)",
+  "fr": "Ferme le robinet quand tu te brosses les dents !",
+  "en": "Turn off the tap when you brush your teeth!"
+ },
+ {
+  "w": "salle à manger (f)",
+  "fr": "Le dimanche, nous déjeunons dans la salle à manger.",
+  "en": "On Sundays, we have lunch in the dining room."
+ },
+ {
+  "w": "salle de bains (f)",
+  "fr": "Il n'y a qu'une salle de bains pour cinq personnes.",
+  "en": "There's only one bathroom for five people."
+ },
+ {
+  "w": "salle de séjour (f)",
+  "fr": "Le soir, on regarde un film dans la salle de séjour.",
+  "en": "In the evening, we watch a film in the living room."
+ },
+ {
+  "w": "salon (m)",
+  "fr": "Nous avons un grand canapé vert dans le salon.",
+  "en": "We have a big green sofa in the lounge."
+ },
+ {
+  "w": "studio (m)",
+  "fr": "Mon frère habite un petit studio près de la fac.",
+  "en": "My brother lives in a small studio flat near the university."
+ },
+ {
+  "w": "table de toilette (f)",
+  "fr": "Ma sœur se coiffe devant sa table de toilette.",
+  "en": "My sister does her hair at her dressing table."
+ },
+ {
+  "w": "tapis (m)",
+  "fr": "Le chat dort toujours sur le tapis du salon.",
+  "en": "The cat always sleeps on the living-room rug."
+ },
+ {
+  "w": "tasse (f)",
+  "fr": "Ma mère boit une tasse de café avant de partir.",
+  "en": "My mum drinks a cup of coffee before leaving."
+ },
+ {
+  "w": "jardin (m)",
+  "fr": "Il y a beaucoup de fleurs dans notre jardin.",
+  "en": "There are lots of flowers in our garden."
+ },
+ {
+  "w": "jardin de devant/de derrière (m)",
+  "fr": "Les enfants jouent au foot dans le jardin de derrière.",
+  "en": "The children play football in the back garden."
+ },
+ {
+  "w": "jardin potager (m)",
+  "fr": "Mon grand-père cultive des tomates dans son jardin potager.",
+  "en": "My grandfather grows tomatoes in his vegetable garden."
+ },
+ {
+  "w": "lampe (de table) (f)",
+  "fr": "J'allume la lampe pour lire dans mon lit.",
+  "en": "I switch on the lamp to read in bed."
+ },
+ {
+  "w": "lavabo (m)",
+  "fr": "Il y a un miroir au-dessus du lavabo.",
+  "en": "There's a mirror above the wash basin."
+ },
+ {
+  "w": "lave-vaisselle (m)",
+  "fr": "Mets ton bol dans le lave-vaisselle, s'il te plaît.",
+  "en": "Put your bowl in the dishwasher, please."
+ },
+ {
+  "w": "lit (m)",
+  "fr": "Mon lit est juste à côté de la fenêtre.",
+  "en": "My bed is right next to the window."
+ },
+ {
+  "w": "lit superposé (m)",
+  "fr": "Mon frère et moi dormons dans des lits superposés.",
+  "en": "My brother and I sleep in bunk beds."
+ },
+ {
+  "w": "terrasse (f)",
+  "fr": "En été, nous mangeons sur la terrasse.",
+  "en": "In summer, we eat on the patio."
+ },
+ {
+  "w": "toit (m)",
+  "fr": "Il y a un chat sur le toit de la maison !",
+  "en": "There's a cat on the roof of the house!"
+ },
+ {
+  "w": "verre (m)",
+  "fr": "Je voudrais un verre d'eau, s'il te plaît.",
+  "en": "I'd like a glass of water, please."
+ },
+ {
+  "w": "vestibule (m)",
+  "fr": "Laisse tes chaussures dans le vestibule, s'il te plaît.",
+  "en": "Leave your shoes in the hall, please."
+ },
+ {
+  "w": "WC (m pl)",
+  "fr": "Les WC sont au fond du couloir, à gauche.",
+  "en": "The toilet is at the end of the corridor, on the left."
+ },
+ {
+  "w": "affaires (f pl)",
+  "fr": "Range tes affaires avant de sortir !",
+  "en": "Put your things away before you go out!"
+ },
+ {
+  "w": "aider (v)",
+  "fr": "J'aide ma mère à préparer le dîner.",
+  "en": "I help my mum make dinner."
+ },
+ {
+  "w": "à la maison",
+  "fr": "Le soir, je reste à la maison pour faire mes devoirs.",
+  "en": "In the evening, I stay at home to do my homework."
+ },
+ {
+  "w": "allumer (v)",
+  "fr": "Il fait sombre, tu peux allumer la lumière ?",
+  "en": "It's dark, can you switch on the light?"
+ },
+ {
+  "w": "armoire (f)",
+  "fr": "Il y a une grande armoire en bois dans ma chambre.",
+  "en": "There's a big wooden wardrobe in my bedroom."
+ },
+ {
+  "w": "aspirateur (m)",
+  "fr": "L'aspirateur est dans le placard sous l'escalier.",
+  "en": "The vacuum cleaner is in the cupboard under the stairs."
+ },
+ {
+  "w": "assiette (f)",
+  "fr": "Mets les assiettes sur la table, s'il te plaît.",
+  "en": "Put the plates on the table, please."
+ },
+ {
+  "w": "attendre (v)",
+  "fr": "J'attends le bus devant la maison tous les matins.",
+  "en": "I wait for the bus outside the house every morning."
+ },
+ {
+  "w": "avoir chaud (v)",
+  "fr": "J'ai chaud, je vais enlever ma veste.",
+  "en": "I'm hot, I'm going to take off my jacket."
+ },
+ {
+  "w": "avoir faim (v)",
+  "fr": "Maman, j'ai faim ! On mange quand ?",
+  "en": "Mum, I'm hungry! When are we eating?"
+ },
+ {
+  "w": "avoir froid (v)",
+  "fr": "J'ai froid, je vais mettre un pull.",
+  "en": "I'm cold, I'm going to put on a jumper."
+ },
+ {
+  "w": "avoir soif (v)",
+  "fr": "Après le match, j'avais très soif.",
+  "en": "After the match, I was very thirsty."
+ },
+ {
+  "w": "bague (f)",
+  "fr": "Ma grand-mère m'a offert une jolie bague en argent.",
+  "en": "My grandmother gave me a pretty silver ring."
+ },
+ {
+  "w": "baskets (m pl)",
+  "fr": "Je mets mes baskets pour aller courir au parc.",
+  "en": "I put on my trainers to go running in the park."
+ },
+ {
+  "w": "boîte (f)",
+  "fr": "Je garde mes vieilles photos dans une boîte.",
+  "en": "I keep my old photos in a box."
+ },
+ {
+  "w": "bol (m)",
+  "fr": "Le matin, je bois un bol de chocolat chaud.",
+  "en": "In the morning, I drink a bowl of hot chocolate."
+ },
+ {
+  "w": "boucles d’oreilles (f pl)",
+  "fr": "Léa porte des boucles d'oreilles en or.",
+  "en": "Léa is wearing gold earrings."
+ },
+ {
+  "w": "brosse à cheveux (f)",
+  "fr": "Je ne trouve plus ma brosse à cheveux !",
+  "en": "I can't find my hairbrush any more!"
+ },
+ {
+  "w": "brosse à dents (f)",
+  "fr": "N'oublie pas ta brosse à dents pour le voyage !",
+  "en": "Don't forget your toothbrush for the trip!"
+ },
+ {
+  "w": "cafetière (f)",
+  "fr": "Mon père allume la cafetière dès qu'il se lève.",
+  "en": "My dad switches on the coffee maker as soon as he gets up."
+ },
+ {
+  "w": "casquette (f)",
+  "fr": "En été, je porte une casquette contre le soleil.",
+  "en": "In summer, I wear a cap to protect me from the sun."
+ },
+ {
+  "w": "nettoyer (v)",
+  "fr": "Le samedi, je dois nettoyer la salle de bains.",
+  "en": "On Saturdays, I have to clean the bathroom."
+ },
+ {
+  "w": "ordures (f pl)",
+  "fr": "C'est mon frère qui sort les ordures le mardi soir.",
+  "en": "It's my brother who takes out the rubbish on Tuesday evenings."
+ },
+ {
+  "w": "oreiller (m)",
+  "fr": "Je dors mal sans mon oreiller préféré.",
+  "en": "I sleep badly without my favourite pillow."
+ },
+ {
+  "w": "paire de (f)",
+  "fr": "J'ai besoin d'une nouvelle paire de chaussures.",
+  "en": "I need a new pair of shoes."
+ },
+ {
+  "w": "passer l’aspirateur",
+  "fr": "Je passe l'aspirateur dans le salon le samedi matin.",
+  "en": "I vacuum the living room on Saturday mornings."
+ },
+ {
+  "w": "plat (m)",
+  "fr": "Ma mère a posé un grand plat de pâtes sur la table.",
+  "en": "My mum put a big dish of pasta on the table."
+ },
+ {
+  "w": "porte-clés (m)",
+  "fr": "J'ai acheté un porte-clés comme souvenir de Paris.",
+  "en": "I bought a key ring as a souvenir of Paris."
+ },
+ {
+  "w": "prendre le petit déjeuner (v)",
+  "fr": "Je prends le petit déjeuner à sept heures.",
+  "en": "I have breakfast at seven o'clock."
+ },
+ {
+  "w": "prendre une douche (v)",
+  "fr": "Après le sport, je prends une douche.",
+  "en": "After sport, I take a shower."
+ },
+ {
+  "w": "promener le chien (v)",
+  "fr": "Le soir, je promène le chien dans le parc.",
+  "en": "In the evening, I walk the dog in the park."
+ },
+ {
+  "w": "pull(over) (m)",
+  "fr": "Il fait froid dehors, mets ton pull !",
+  "en": "It's cold outside, put your jumper on!"
+ },
+ {
+  "w": "pyjama (m)",
+  "fr": "Le dimanche, je reste en pyjama jusqu'à midi !",
+  "en": "On Sundays, I stay in my pyjamas until midday!"
+ },
+ {
+  "w": "quelquefois (adv)",
+  "fr": "Quelquefois, je fais la cuisine pour toute la famille.",
+  "en": "Sometimes I cook for the whole family."
+ },
+ {
+  "w": "ranger (v)",
+  "fr": "Ma mère me demande toujours de ranger ma chambre.",
+  "en": "My mum always asks me to tidy my bedroom."
+ },
+ {
+  "w": "rarement (adv)",
+  "fr": "Mon frère range rarement ses affaires.",
+  "en": "My brother rarely puts his things away."
+ },
+ {
+  "w": "rentrer (à la maison) (v)",
+  "fr": "Je rentre à la maison vers cinq heures.",
+  "en": "I get home at about five o'clock."
+ },
+ {
+  "w": "casserole (f)",
+  "fr": "Fais chauffer l'eau dans une casserole pour les pâtes.",
+  "en": "Heat the water in a saucepan for the pasta."
+ },
+ {
+  "w": "ceinture (f)",
+  "fr": "Ce pantalon est trop grand sans ceinture.",
+  "en": "These trousers are too big without a belt."
+ },
+ {
+  "w": "chemise de nuit (f)",
+  "fr": "Ma petite sœur porte une chemise de nuit rose.",
+  "en": "My little sister wears a pink nightdress."
+ },
+ {
+  "w": "couette (f)",
+  "fr": "En hiver, j'ai une couette bien chaude sur mon lit.",
+  "en": "In winter, I have a nice warm duvet on my bed."
+ },
+ {
+  "w": "cuiller/cuillère (f)",
+  "fr": "Il me faut une cuillère pour manger ma soupe.",
+  "en": "I need a spoon to eat my soup."
+ },
+ {
+  "w": "déchets (m pl)",
+  "fr": "Chez nous, on trie les déchets pour protéger la planète.",
+  "en": "At home, we sort our rubbish to protect the planet."
+ },
+ {
+  "w": "de/en coton",
+  "fr": "En été, je préfère les tee-shirts en coton.",
+  "en": "In summer, I prefer cotton T-shirts."
+ },
+ {
+  "w": "descendre (v)",
+  "fr": "Le matin, je descends dans la cuisine à sept heures.",
+  "en": "In the morning, I go downstairs to the kitchen at seven."
+ },
+ {
+  "w": "de/en laine",
+  "fr": "Je porte un bonnet en laine quand il neige.",
+  "en": "I wear a woolly hat when it snows."
+ },
+ {
+  "w": "de/en soie",
+  "fr": "Ma mère a une très belle robe en soie.",
+  "en": "My mum has a really beautiful silk dress."
+ },
+ {
+  "w": "drap (m)",
+  "fr": "Je change les draps de mon lit chaque semaine.",
+  "en": "I change the sheets on my bed every week."
+ },
+ {
+  "w": "étagère (f)",
+  "fr": "Mes livres sont sur l'étagère au-dessus de mon bureau.",
+  "en": "My books are on the shelf above my desk."
+ },
+ {
+  "w": "évier (m)",
+  "fr": "Mets les assiettes sales dans l'évier.",
+  "en": "Put the dirty plates in the sink."
+ },
+ {
+  "w": "faire la cuisine (v)",
+  "fr": "Le week-end, c'est mon père qui fait la cuisine.",
+  "en": "At weekends, it's my dad who does the cooking."
+ },
+ {
+  "w": "faire la vaisselle (v)",
+  "fr": "Après le dîner, je fais la vaisselle avec ma sœur.",
+  "en": "After dinner, I do the washing up with my sister."
+ },
+ {
+  "w": "faire la lessive (v)",
+  "fr": "Ma mère fait la lessive tous les lundis.",
+  "en": "My mum does the laundry every Monday."
+ },
+ {
+  "w": "faire le jardinage (v)",
+  "fr": "Mon grand-père adore faire le jardinage au printemps.",
+  "en": "My grandfather loves doing the gardening in spring."
+ },
+ {
+  "w": "faire le linge (v)",
+  "fr": "Le dimanche, mon père fait le linge pour toute la famille.",
+  "en": "On Sundays, my dad does the laundry for the whole family."
+ },
+ {
+  "w": "faire le lit (v)",
+  "fr": "Tous les matins, je fais mon lit avant de partir.",
+  "en": "Every morning, I make my bed before leaving."
+ },
+ {
+  "w": "faire le ménage (v)",
+  "fr": "Le samedi matin, toute la famille fait le ménage.",
+  "en": "On Saturday mornings, the whole family does the housework."
+ },
+ {
+  "w": "faire le repassage (v)",
+  "fr": "Je déteste faire le repassage, c'est trop long !",
+  "en": "I hate doing the ironing, it takes too long!"
+ },
+ {
+  "w": "faire les courses (v)",
+  "fr": "Je fais les courses au supermarché avec ma mère.",
+  "en": "I do the shopping at the supermarket with my mum."
+ },
+ {
+  "w": "fermer (v)",
+  "fr": "Le soir, je ferme les volets de ma chambre.",
+  "en": "In the evening, I close the shutters in my bedroom."
+ },
+ {
+  "w": "fourchette (f)",
+  "fr": "Mets une fourchette à côté de chaque assiette.",
+  "en": "Put a fork next to each plate."
+ },
+ {
+  "w": "gant (m)",
+  "fr": "En hiver, je porte des gants et une écharpe.",
+  "en": "In winter, I wear gloves and a scarf."
+ },
+ {
+  "w": "garder un enfant (v)",
+  "fr": "Pour gagner de l'argent, je garde un enfant le mercredi.",
+  "en": "To earn some money, I mind a child on Wednesdays."
+ },
+ {
+  "w": "rentrer (la lessive) (v)",
+  "fr": "Il pleut ! Tu peux rentrer la lessive, s'il te plaît ?",
+  "en": "It's raining! Can you bring in the washing, please?"
+ },
+ {
+  "w": "réveil (m)",
+  "fr": "Mon réveil sonne à sept heures, même le samedi !",
+  "en": "My alarm clock goes off at seven, even on Saturdays!"
+ },
+ {
+  "w": "rouge à lèvres (m)",
+  "fr": "Ma sœur ne sort jamais sans son rouge à lèvres.",
+  "en": "My sister never goes out without her lipstick."
+ },
+ {
+  "w": "sac à main (m)",
+  "fr": "Ma mère a laissé son sac à main dans la voiture.",
+  "en": "My mum left her handbag in the car."
+ },
+ {
+  "w": "savon (m)",
+  "fr": "Lave-toi les mains avec du savon avant de manger.",
+  "en": "Wash your hands with soap before eating."
+ },
+ {
+  "w": "se brosser les dents/les cheveux (v)",
+  "fr": "Je me brosse les dents après chaque repas.",
+  "en": "I brush my teeth after every meal."
+ },
+ {
+  "w": "s’habiller (v)",
+  "fr": "Je m'habille vite parce que je suis en retard.",
+  "en": "I get dressed quickly because I'm late."
+ },
+ {
+  "w": "shampooing (m)",
+  "fr": "Il n'y a plus de shampooing dans la salle de bains !",
+  "en": "There's no more shampoo in the bathroom!"
+ },
+ {
+  "w": "se laver (v)",
+  "fr": "Je me lave et je m'habille en dix minutes.",
+  "en": "I wash and get dressed in ten minutes."
+ },
+ {
+  "w": "se lever (v)",
+  "fr": "En semaine, je me lève à six heures et demie.",
+  "en": "During the week, I get up at half past six."
+ },
+ {
+  "w": "se préparer (à) (v)",
+  "fr": "Le matin, je me prépare pour l'école en vingt minutes.",
+  "en": "In the morning, I get ready for school in twenty minutes."
+ },
+ {
+  "w": "se raser (v)",
+  "fr": "Mon père se rase tous les matins avant le travail.",
+  "en": "My dad shaves every morning before work."
+ },
+ {
+  "w": "se réveiller (v)",
+  "fr": "Ce matin, je me suis réveillé à cause du bruit.",
+  "en": "This morning, I woke up because of the noise."
+ },
+ {
+  "w": "serviette (de bain) (m)",
+  "fr": "N'oublie pas ta serviette de bain pour la piscine !",
+  "en": "Don't forget your bath towel for the swimming pool!"
+ },
+ {
+  "w": "servir (v)",
+  "fr": "Mon père sert le dîner à huit heures.",
+  "en": "My dad serves dinner at eight o'clock."
+ },
+ {
+  "w": "sortir (la poubelle) (v)",
+  "fr": "Ce soir, c'est à toi de sortir la poubelle !",
+  "en": "Tonight, it's your turn to take out the bin!"
+ },
+ {
+  "w": "sortir (v)",
+  "fr": "Le samedi soir, je sors avec mes copains.",
+  "en": "On Saturday evenings, I go out with my friends."
+ },
+ {
+  "w": "souvent (adv)",
+  "fr": "Je vais souvent au cinéma avec ma sœur.",
+  "en": "I often go to the cinema with my sister."
+ },
+ {
+  "w": "sweat (m)",
+  "fr": "Il fait frais, alors je mets mon sweat à capuche.",
+  "en": "It's chilly, so I'm putting on my hooded sweatshirt."
+ },
+ {
+  "w": "tard (adv)",
+  "fr": "Le week-end, je me couche tard.",
+  "en": "At weekends, I go to bed late."
+ },
+ {
+  "w": "tee-shirt /t-shirt (m)",
+  "fr": "Il fait chaud, alors je mets un tee-shirt et un short.",
+  "en": "It's hot, so I'm putting on a T-shirt and shorts."
+ },
+ {
+  "w": "tiroir (m)",
+  "fr": "Mes chaussettes sont dans le premier tiroir.",
+  "en": "My socks are in the top drawer."
+ },
+ {
+  "w": "tôt (adv)",
+  "fr": "Je me lève tôt pour aller au collège.",
+  "en": "I get up early to go to school."
+ },
+ {
+  "w": "tricot (m)",
+  "fr": "Ma grand-mère m'a fait un tricot pour Noël.",
+  "en": "My grandmother made me a jumper for Christmas."
+ },
+ {
+  "w": "verser (v)",
+  "fr": "Verse l'eau dans les verres, s'il te plaît.",
+  "en": "Pour the water into the glasses, please."
+ },
+ {
+  "w": "veste (f)",
+  "fr": "Prends ta veste, il va pleuvoir cet après-midi.",
+  "en": "Take your jacket, it's going to rain this afternoon."
+ },
+ {
+  "w": "vêtement (m)",
+  "fr": "Ma sœur achète beaucoup de vêtements en ligne.",
+  "en": "My sister buys a lot of clothes online."
+ },
+ {
+  "w": "jean (m sing)",
+  "fr": "Le week-end, je porte un jean et un tee-shirt.",
+  "en": "At weekends, I wear jeans and a T-shirt."
+ },
+ {
+  "w": "jogging (m)",
+  "fr": "Le dimanche, je reste à la maison en jogging.",
+  "en": "On Sundays, I stay at home in my tracksuit."
+ },
+ {
+  "w": "le lundi/le mardi… etc (adv)",
+  "fr": "Le mardi, j'ai cours de piano après l'école.",
+  "en": "On Tuesdays, I have a piano lesson after school."
+ },
+ {
+  "w": "le matin/l’après-midi (adv)",
+  "fr": "L'après-midi, je fais mes devoirs à la bibliothèque.",
+  "en": "In the afternoon, I do my homework at the library."
+ },
+ {
+  "w": "lunettes (f pl)",
+  "fr": "Je porte des lunettes pour voir le tableau.",
+  "en": "I wear glasses to see the board."
+ },
+ {
+  "w": "maquillage (m)",
+  "fr": "Ma sœur met du maquillage avant d'aller en ville.",
+  "en": "My sister puts on make-up before going into town."
+ },
+ {
+  "w": "mettre (v)",
+  "fr": "Il fait froid, je vais mettre mon manteau.",
+  "en": "It's cold, I'm going to put on my coat."
+ },
+ {
+  "w": "mettre (la table) (v)",
+  "fr": "Avant le dîner, je mets la table pour toute la famille.",
+  "en": "Before dinner, I lay the table for the whole family."
+ },
+ {
+  "w": "monter dans une chambre (v)",
+  "fr": "Après le dîner, je monte dans ma chambre pour lire.",
+  "en": "After dinner, I go up to my bedroom to read."
+ },
+ {
+  "w": "nappe (f)",
+  "fr": "Pour Noël, ma mère met une belle nappe rouge.",
+  "en": "For Christmas, my mum puts out a beautiful red tablecloth."
+ },
+ {
+  "w": "vider (v)",
+  "fr": "C'est moi qui vide le lave-vaisselle le matin.",
+  "en": "I'm the one who empties the dishwasher in the morning."
+ },
+ {
+  "w": "visage (m)",
+  "fr": "Je me lave le visage à l'eau froide.",
+  "en": "I wash my face with cold water."
+ },
+ {
+  "w": "acteur (m)",
+  "fr": "Mon acteur préféré joue dans beaucoup de films d'action.",
+  "en": "My favourite actor is in lots of action films."
+ },
+ {
+  "w": "annonces (f, p)",
+  "fr": "Il y a trop d'annonces publicitaires à la télévision.",
+  "en": "There are too many adverts on television."
+ },
+ {
+  "w": "bon/mauvais exemple (m)",
+  "fr": "Les sportifs doivent donner le bon exemple aux jeunes.",
+  "en": "Sports stars should set a good example to young people."
+ },
+ {
+  "w": "caractéristique (f)",
+  "fr": "La patience est une caractéristique importante pour un prof.",
+  "en": "Patience is an important characteristic for a teacher."
+ },
+ {
+  "w": "célèbre (adj)",
+  "fr": "Cette chanteuse est devenue célèbre grâce à ses vidéos.",
+  "en": "This singer became famous thanks to her videos."
+ },
+ {
+  "w": "chanson (f)",
+  "fr": "Cette chanson passe tout le temps à la radio.",
+  "en": "This song is on the radio all the time."
+ },
+ {
+  "w": "comportement (m)",
+  "fr": "Le comportement de certaines stars est vraiment choquant.",
+  "en": "The behaviour of some stars is really shocking."
+ },
+ {
+  "w": "se comporter bien/mal (v)",
+  "fr": "Pendant la sortie, les élèves se sont bien comportés.",
+  "en": "During the trip, the pupils behaved well."
+ },
+ {
+  "w": "courageux (adj)",
+  "fr": "Mon grand-père était un homme très courageux.",
+  "en": "My grandfather was a very brave man."
+ },
+ {
+  "w": "défaut (m)",
+  "fr": "Mon plus grand défaut, c'est l'impatience.",
+  "en": "My biggest fault is impatience."
+ },
+ {
+  "w": "footballeur (m)",
+  "fr": "Mon frère rêve de devenir footballeur professionnel.",
+  "en": "My brother dreams of becoming a professional footballer."
+ },
+ {
+  "w": "idole (f)",
+  "fr": "Quand j'étais petit, ce chanteur était mon idole.",
+  "en": "When I was little, this singer was my idol."
+ },
+ {
+  "w": "imiter (v)",
+  "fr": "Les jeunes aiment imiter le style de leurs stars préférées.",
+  "en": "Young people like to imitate the style of their favourite stars."
+ },
+ {
+  "w": "influence (f)",
+  "fr": "Les réseaux sociaux ont une grande influence sur les ados.",
+  "en": "Social media has a big influence on teenagers."
+ },
+ {
+  "w": "les paroles (f)",
+  "fr": "J'adore cette chanson, mais je ne comprends pas les paroles.",
+  "en": "I love this song, but I don't understand the lyrics."
+ },
+ {
+  "w": "mannequin (m)",
+  "fr": "Ce mannequin défile à Paris pendant la semaine de la mode.",
+  "en": "This model is on the catwalk in Paris during fashion week."
+ },
+ {
+  "w": "modèle (m)",
+  "fr": "Ma mère est mon modèle parce qu'elle travaille dur.",
+  "en": "My mum is my role model because she works hard."
+ },
+ {
+  "w": "journal (m)",
+  "fr": "Mon père lit le journal tous les matins.",
+  "en": "My dad reads the newspaper every morning."
+ },
+ {
+  "w": "personnages célèbres (m, pl)",
+  "fr": "Au musée de cire, on voit beaucoup de personnages célèbres.",
+  "en": "At the waxworks museum, you see lots of celebrities."
+ },
+ {
+  "w": "personnalité (m)",
+  "fr": "Ma meilleure amie a une personnalité très forte.",
+  "en": "My best friend has a very strong personality."
+ },
+ {
+  "w": "qualité (f)",
+  "fr": "La générosité est sa plus grande qualité.",
+  "en": "Generosity is his greatest quality."
+ },
+ {
+  "w": "revue (f)",
+  "fr": "J'ai lu un article intéressant dans une revue scientifique.",
+  "en": "I read an interesting article in a science magazine."
+ },
+ {
+  "w": "serviable (adj)",
+  "fr": "Mon voisin est très serviable, il aide tout le monde.",
+  "en": "My neighbour is very helpful, he helps everyone."
+ },
+ {
+  "w": "suivre (v)",
+  "fr": "Beaucoup d'ados suivent leurs idoles sur les réseaux sociaux.",
+  "en": "Lots of teenagers follow their idols on social media."
+ },
+ {
+  "w": "vedette (f)",
+  "fr": "Cette vedette de cinéma est très gentille avec ses fans.",
+  "en": "This film star is very kind to fans."
+ }
+]

@@ -1,0 +1,1907 @@
+[
+ {
+  "w": "affiche (f)",
+  "fr": "Il y a une grande affiche devant le cinéma.",
+  "en": "There is a big poster in front of the cinema."
+ },
+ {
+  "w": "aimer (v)",
+  "fr": "Mes parents aiment vivre à la campagne.",
+  "en": "My parents love living in the countryside."
+ },
+ {
+  "w": "à l'étranger",
+  "fr": "Mon frère habite à l'étranger depuis deux ans.",
+  "en": "My brother has been living abroad for two years."
+ },
+ {
+  "w": "amusant(e) (adj)",
+  "fr": "Mon oncle est très amusant, il raconte des blagues.",
+  "en": "My uncle is very amusing; he tells jokes."
+ },
+ {
+  "w": "arbre (m)",
+  "fr": "Il y a un vieil arbre au milieu du jardin.",
+  "en": "There is an old tree in the middle of the garden."
+ },
+ {
+  "w": "ascenseur (m)",
+  "fr": "L'ascenseur est en panne, alors on prend l'escalier.",
+  "en": "The lift is out of order, so we're taking the stairs."
+ },
+ {
+  "w": "auberge (f)",
+  "fr": "Nous avons dîné dans une petite auberge à la campagne.",
+  "en": "We had dinner in a small inn in the countryside."
+ },
+ {
+  "w": "banlieue (f)",
+  "fr": "J'habite en banlieue, à vingt minutes de Paris.",
+  "en": "I live in the suburbs, twenty minutes from Paris."
+ },
+ {
+  "w": "bâtiment (m)",
+  "fr": "Ce bâtiment moderne est le nouvel hôpital de la ville.",
+  "en": "This modern building is the town's new hospital."
+ },
+ {
+  "w": "beau/belle (adj)",
+  "fr": "Notre village est très beau au printemps.",
+  "en": "Our village is very beautiful in spring."
+ },
+ {
+  "w": "bibliothèque (f)",
+  "fr": "Je vais à la bibliothèque pour emprunter des livres.",
+  "en": "I'm going to the library to borrow some books."
+ },
+ {
+  "w": "campagne (f)",
+  "fr": "Le week-end, nous allons souvent à la campagne.",
+  "en": "At the weekend, we often go to the countryside."
+ },
+ {
+  "w": "canard (m)",
+  "fr": "Les enfants donnent du pain aux canards sur le lac.",
+  "en": "The children give bread to the ducks on the lake."
+ },
+ {
+  "w": "carrefour (m)",
+  "fr": "Tournez à gauche au prochain carrefour.",
+  "en": "Turn left at the next crossroads."
+ },
+ {
+  "w": "centre-ville (m)",
+  "fr": "Il y a beaucoup de magasins au centre-ville.",
+  "en": "There are lots of shops in the town centre."
+ },
+ {
+  "w": "chat (m)",
+  "fr": "Mon chat dort toute la journée sur le canapé.",
+  "en": "My cat sleeps all day on the sofa."
+ },
+ {
+  "w": "château (m)",
+  "fr": "Nous avons visité un château du Moyen Âge.",
+  "en": "We visited a medieval castle."
+ },
+ {
+  "w": "cheval (m)",
+  "fr": "Il y a un cheval blanc dans le champ.",
+  "en": "There is a white horse in the field."
+ },
+ {
+  "w": "circulation (f)",
+  "fr": "Il y a trop de circulation en ville le matin.",
+  "en": "There is too much traffic in town in the morning."
+ },
+ {
+  "w": "cochon (m)",
+  "fr": "Le fermier a trois cochons et des vaches.",
+  "en": "The farmer has three pigs and some cows."
+ },
+ {
+  "w": "colline (f)",
+  "fr": "Notre maison se trouve en haut d'une colline.",
+  "en": "Our house is at the top of a hill."
+ },
+ {
+  "w": "commissariat (m)",
+  "fr": "J'ai perdu mon portefeuille, je vais au commissariat.",
+  "en": "I've lost my wallet, so I'm going to the police station."
+ },
+ {
+  "w": "complexe sportif (m)",
+  "fr": "Le nouveau complexe sportif a une piscine olympique.",
+  "en": "The new sports centre has an Olympic swimming pool."
+ },
+ {
+  "w": "coq (m)",
+  "fr": "Le coq chante tous les matins à six heures.",
+  "en": "The cockerel crows every morning at six o'clock."
+ },
+ {
+  "w": "département (m)",
+  "fr": "La France est divisée en départements et en régions.",
+  "en": "France is divided into administrative districts and regions."
+ },
+ {
+  "w": "distraction (f)",
+  "fr": "Il n'y a pas beaucoup de distractions dans mon village.",
+  "en": "There aren't many pastimes on offer in my village."
+ },
+ {
+  "w": "endroit (m)",
+  "fr": "C'est un endroit idéal pour un pique-nique.",
+  "en": "It's an ideal place for a picnic."
+ },
+ {
+  "w": "ennuyeux/euse (adj)",
+  "fr": "La vie dans un petit village peut être ennuyeuse.",
+  "en": "Life in a small village can be boring."
+ },
+ {
+  "w": "étage (m)",
+  "fr": "Nous habitons au troisième étage d'un immeuble.",
+  "en": "We live on the third floor of a block of flats."
+ },
+ {
+  "w": "ferme (f)",
+  "fr": "Mes grands-parents ont une ferme en Normandie.",
+  "en": "My grandparents have a farm in Normandy."
+ },
+ {
+  "w": "fermier(~ière) (m/f)",
+  "fr": "Le fermier se lève très tôt pour s'occuper des animaux.",
+  "en": "The farmer gets up very early to look after the animals."
+ },
+ {
+  "w": "feu (m)",
+  "fr": "Le soir, on fait un feu dans la cheminée.",
+  "en": "In the evening, we light a fire in the fireplace."
+ },
+ {
+  "w": "lac (m)",
+  "fr": "On peut se baigner dans le lac en été.",
+  "en": "You can swim in the lake in summer."
+ },
+ {
+  "w": "lent(e) (adj)",
+  "fr": "Internet est très lent dans mon village.",
+  "en": "The internet is very slow in my village."
+ },
+ {
+  "w": "loin (adv)",
+  "fr": "La gare est trop loin pour y aller à pied.",
+  "en": "The station is too far to walk to."
+ },
+ {
+  "w": "magasin (m)",
+  "fr": "Ce magasin ferme à dix-neuf heures.",
+  "en": "This shop closes at 7 p.m."
+ },
+ {
+  "w": "mairie (f)",
+  "fr": "Mes parents se sont mariés à la mairie.",
+  "en": "My parents got married at the town hall."
+ },
+ {
+  "w": "métro (m)",
+  "fr": "Je prends le métro pour aller au lycée.",
+  "en": "I take the underground to get to school."
+ },
+ {
+  "w": "montagne (f)",
+  "fr": "En hiver, nous faisons du ski à la montagne.",
+  "en": "In winter, we go skiing in the mountains."
+ },
+ {
+  "w": "moustique (m)",
+  "fr": "Il y a beaucoup de moustiques près du lac le soir.",
+  "en": "There are lots of mosquitoes near the lake in the evening."
+ },
+ {
+  "w": "mouton (m)",
+  "fr": "Les moutons mangent l'herbe dans le champ.",
+  "en": "The sheep are eating the grass in the field."
+ },
+ {
+  "w": "musée (m)",
+  "fr": "Le musée est gratuit pour les jeunes de moins de dix-huit ans.",
+  "en": "The museum is free for young people under eighteen."
+ },
+ {
+  "w": "palais (m)",
+  "fr": "Le palais du roi est ouvert aux visiteurs en été.",
+  "en": "The king's palace is open to visitors in summer."
+ },
+ {
+  "w": "parc (m)",
+  "fr": "Après l'école, je joue au foot au parc.",
+  "en": "After school, I play football in the park."
+ },
+ {
+  "w": "parking (m)",
+  "fr": "Le parking du supermarché est toujours plein le samedi.",
+  "en": "The supermarket car park is always full on Saturdays."
+ },
+ {
+  "w": "paysage (m)",
+  "fr": "Le paysage de cette région est magnifique.",
+  "en": "The landscape in this region is magnificent."
+ },
+ {
+  "w": "(aller à la) pêche (f)",
+  "fr": "Le dimanche, je vais à la pêche avec mon grand-père.",
+  "en": "On Sundays, I go fishing with my grandfather."
+ },
+ {
+  "w": "pied (m)",
+  "fr": "J'ai mal au pied après la randonnée.",
+  "en": "My foot hurts after the hike."
+ },
+ {
+  "w": "à pied",
+  "fr": "Je vais au collège à pied tous les jours.",
+  "en": "I go to school on foot every day."
+ },
+ {
+  "w": "piéton(ne) (m/adj)",
+  "fr": "Cette rue est réservée aux piétons.",
+  "en": "This street is reserved for pedestrians."
+ },
+ {
+  "w": "piscine (f)",
+  "fr": "Je vais à la piscine le mercredi après-midi.",
+  "en": "I go to the swimming pool on Wednesday afternoons."
+ },
+ {
+  "w": "pittoresque (adj)",
+  "fr": "Nous avons visité un petit port très pittoresque.",
+  "en": "We visited a very picturesque little harbour."
+ },
+ {
+  "w": "place (f)",
+  "fr": "On se retrouve sur la place, devant l'église ?",
+  "en": "Shall we meet in the square, in front of the church?"
+ },
+ {
+  "w": "place du marché (f)",
+  "fr": "Les cafés de la place du marché sont très animés.",
+  "en": "The cafés in the market square are very lively."
+ },
+ {
+  "w": "pont (m)",
+  "fr": "Il faut traverser le pont pour aller au centre-ville.",
+  "en": "You have to cross the bridge to get to the town centre."
+ },
+ {
+  "w": "port (m)",
+  "fr": "Les bateaux de pêche rentrent au port le soir.",
+  "en": "The fishing boats come back to the harbour in the evening."
+ },
+ {
+  "w": "poule (f)",
+  "fr": "Ma grand-mère a des poules dans son jardin.",
+  "en": "My grandmother has hens in her garden."
+ },
+ {
+  "w": "poulet (m)",
+  "fr": "Ce soir, on mange du poulet avec des frites.",
+  "en": "Tonight, we're having chicken and chips."
+ },
+ {
+  "w": "quartier (m)",
+  "fr": "J'habite dans un quartier calme près du parc.",
+  "en": "I live in a quiet district near the park."
+ },
+ {
+  "w": "région (f)",
+  "fr": "La Bretagne est une région très touristique.",
+  "en": "Brittany is a very touristy region."
+ },
+ {
+  "w": "rivière (f)",
+  "fr": "Une petite rivière traverse notre village.",
+  "en": "A small river runs through our village."
+ },
+ {
+  "w": "route (f)",
+  "fr": "La route est dangereuse quand il neige.",
+  "en": "The road is dangerous when it snows."
+ },
+ {
+  "w": "rue (f)",
+  "fr": "Ma rue est très calme le dimanche.",
+  "en": "My street is very quiet on Sundays."
+ },
+ {
+  "w": "se trouver (v)",
+  "fr": "La gare se trouve en face de la poste.",
+  "en": "The station is situated opposite the post office."
+ },
+ {
+  "w": "feu rouge (m)",
+  "fr": "Tournez à droite au feu rouge.",
+  "en": "Turn right at the traffic lights."
+ },
+ {
+  "w": "fleur (f)",
+  "fr": "Ma mère plante des fleurs devant la maison.",
+  "en": "My mum is planting flowers in front of the house."
+ },
+ {
+  "w": "fleuve (m)",
+  "fr": "La Seine est un fleuve qui traverse Paris.",
+  "en": "The Seine is a river that flows through Paris."
+ },
+ {
+  "w": "fontaine (f)",
+  "fr": "Il y a une belle fontaine au milieu de la place.",
+  "en": "There is a beautiful fountain in the middle of the square."
+ },
+ {
+  "w": "galerie (f)",
+  "fr": "Nous avons vu des tableaux modernes dans une galerie.",
+  "en": "We saw some modern paintings in a gallery."
+ },
+ {
+  "w": "habitant (m)",
+  "fr": "Mon village a seulement cinq cents habitants.",
+  "en": "My village has only five hundred inhabitants."
+ },
+ {
+  "w": "habiter (v)",
+  "fr": "J'habite dans une petite maison près de la mer.",
+  "en": "I live in a small house near the sea."
+ },
+ {
+  "w": "herbe (f)",
+  "fr": "Les enfants jouent dans l'herbe au parc.",
+  "en": "The children are playing on the grass in the park."
+ },
+ {
+  "w": "heure de pointe (f)",
+  "fr": "Le métro est plein de monde à l'heure de pointe.",
+  "en": "The underground is packed at rush hour."
+ },
+ {
+  "w": "historique (adj)",
+  "fr": "Le centre historique de la ville est très joli.",
+  "en": "The historic town centre is very pretty."
+ },
+ {
+  "w": "hôtel de ville (m)",
+  "fr": "L'hôtel de ville se trouve sur la place principale.",
+  "en": "The town hall is on the main square."
+ },
+ {
+  "w": "industriel(le) (adj)",
+  "fr": "C'est une ville industrielle avec beaucoup d'usines.",
+  "en": "It's an industrial town with lots of factories."
+ },
+ {
+  "w": "jardin public (m)",
+  "fr": "Je lis souvent un livre dans le jardin public.",
+  "en": "I often read a book in the public garden."
+ },
+ {
+  "w": "kiosque à journaux (m)",
+  "fr": "Mon père achète son journal au kiosque à journaux.",
+  "en": "My dad buys his newspaper at the news stand."
+ },
+ {
+  "w": "site touristique (m)",
+  "fr": "Le château est le site touristique le plus visité de la région.",
+  "en": "The castle is the most visited place of interest in the region."
+ },
+ {
+  "w": "stade (m)",
+  "fr": "Le samedi, on va au stade pour voir le match.",
+  "en": "On Saturdays, we go to the stadium to watch the match."
+ },
+ {
+  "w": "tour (f)",
+  "fr": "De la tour, on a une belle vue sur la ville.",
+  "en": "From the tower, you have a lovely view of the town."
+ },
+ {
+  "w": "tranquille (adj)",
+  "fr": "Je préfère la campagne parce que c'est plus tranquille.",
+  "en": "I prefer the countryside because it's quieter."
+ },
+ {
+  "w": "vache (f)",
+  "fr": "Les vaches de la ferme donnent du lait.",
+  "en": "The cows on the farm give milk."
+ },
+ {
+  "w": "village (m)",
+  "fr": "Mes grands-parents habitent dans un petit village en montagne.",
+  "en": "My grandparents live in a small village in the mountains."
+ },
+ {
+  "w": "ville (f)",
+  "fr": "Ma ville a un cinéma, une piscine et un stade.",
+  "en": "My town has a cinema, a swimming pool and a stadium."
+ },
+ {
+  "w": "vivre (v)",
+  "fr": "Plus tard, je voudrais vivre au bord de la mer.",
+  "en": "When I'm older, I'd like to live by the sea."
+ },
+ {
+  "w": "zone piétonne (f)",
+  "fr": "Les voitures sont interdites dans la zone piétonne.",
+  "en": "Cars are banned in the pedestrian area."
+ },
+ {
+  "w": "accueil (m)",
+  "fr": "L'accueil à l'hôtel était très chaleureux.",
+  "en": "The welcome at the hotel was very warm."
+ },
+ {
+  "w": "accueillir (v)",
+  "fr": "La famille de Léa nous accueille à la gare.",
+  "en": "Léa's family welcomes us at the station."
+ },
+ {
+  "w": "à droite (adv)",
+  "fr": "Prenez la deuxième rue à droite.",
+  "en": "Take the second street on the right."
+ },
+ {
+  "w": "à gauche (adv)",
+  "fr": "La pharmacie est à gauche, après la banque.",
+  "en": "The chemist's is on the left, after the bank."
+ },
+ {
+  "w": "auberge de jeunesse (f)",
+  "fr": "Nous dormons dans une auberge de jeunesse pas chère.",
+  "en": "We're sleeping in a cheap youth hostel."
+ },
+ {
+  "w": "au bord de la mer",
+  "fr": "Cet été, nous passons nos vacances au bord de la mer.",
+  "en": "This summer, we're spending our holidays at the seaside."
+ },
+ {
+  "w": "bain (de mer) (m)",
+  "fr": "Le matin, je prends un bain de mer avant le petit-déjeuner.",
+  "en": "In the morning, I have a swim in the sea before breakfast."
+ },
+ {
+  "w": "balcon (m)",
+  "fr": "Notre chambre a un petit balcon avec vue sur la mer.",
+  "en": "Our room has a small balcony with a sea view."
+ },
+ {
+  "w": "bloc sanitaire (m)",
+  "fr": "Le bloc sanitaire du camping est propre et moderne.",
+  "en": "The campsite's shower block is clean and modern."
+ },
+ {
+  "w": "brochure (f)",
+  "fr": "J'ai pris une brochure sur les excursions en bateau.",
+  "en": "I picked up a brochure about boat trips."
+ },
+ {
+  "w": "camping (m)",
+  "fr": "Le camping est à cinq minutes de la plage.",
+  "en": "The campsite is five minutes from the beach."
+ },
+ {
+  "w": "carte postale (f)",
+  "fr": "J'envoie une carte postale à ma grand-mère.",
+  "en": "I'm sending a postcard to my grandmother."
+ },
+ {
+  "w": "chambre à deux lits (f)",
+  "fr": "Je voudrais réserver une chambre à deux lits, s'il vous plaît.",
+  "en": "I would like to book a twin-bedded room, please."
+ },
+ {
+  "w": "changer (v)",
+  "fr": "Où est-ce que je peux changer de l'argent ?",
+  "en": "Where can I change some money?"
+ },
+ {
+  "w": "château de sable (m)",
+  "fr": "Les enfants construisent un château de sable sur la plage.",
+  "en": "The children are building a sandcastle on the beach."
+ },
+ {
+  "w": "climatisation (f)",
+  "fr": "Il fait très chaud, mais la chambre a la climatisation.",
+  "en": "It's very hot, but the room has air conditioning."
+ },
+ {
+  "w": "colonie de vacances (f)",
+  "fr": "Chaque été, mon petit frère part en colonie de vacances.",
+  "en": "Every summer, my little brother goes to summer camp."
+ },
+ {
+  "w": "lunettes de soleil (f)",
+  "fr": "N'oublie pas tes lunettes de soleil, il fait beau !",
+  "en": "Don't forget your sunglasses, it's sunny!"
+ },
+ {
+  "w": "maillot de bain (m)",
+  "fr": "J'ai acheté un nouveau maillot de bain pour les vacances.",
+  "en": "I bought a new swimsuit for the holidays."
+ },
+ {
+  "w": "mer (f)",
+  "fr": "L'eau de la mer est encore froide en juin.",
+  "en": "The sea water is still cold in June."
+ },
+ {
+  "w": "non potable (adj)",
+  "fr": "L'eau de cette fontaine est non potable, ne la bois pas !",
+  "en": "The water from this fountain is not for drinking, so don't drink it!"
+ },
+ {
+  "w": "office de tourisme (m)",
+  "fr": "On peut demander un plan à l'office de tourisme.",
+  "en": "You can ask for a map at the tourist office."
+ },
+ {
+  "w": "oublier (v)",
+  "fr": "Zut, j'ai oublié mon passeport !",
+  "en": "Oh no, I've forgotten my passport!"
+ },
+ {
+  "w": "partir(v)",
+  "fr": "Le train part à huit heures et quart.",
+  "en": "The train leaves at quarter past eight."
+ },
+ {
+  "w": "passeport (m)",
+  "fr": "Il faut montrer son passeport à l'aéroport.",
+  "en": "You have to show your passport at the airport."
+ },
+ {
+  "w": "passer (v)",
+  "fr": "J'ai passé deux semaines chez mon correspondant.",
+  "en": "I spent two weeks at my exchange partner's house."
+ },
+ {
+  "w": "pays (m)",
+  "fr": "Quel pays voudrais-tu visiter un jour ?",
+  "en": "Which country would you like to visit one day?"
+ },
+ {
+  "w": "pension (f)",
+  "fr": "Nous avons logé dans une petite pension près du port.",
+  "en": "We stayed in a little guest house near the harbour."
+ },
+ {
+  "w": "pension complète (f)",
+  "fr": "L'hôtel propose la pension complète pour soixante euros.",
+  "en": "The hotel offers full board for sixty euros."
+ },
+ {
+  "w": "personne (f)",
+  "fr": "La chambre coûte cinquante euros par personne.",
+  "en": "The room costs fifty euros per person."
+ },
+ {
+  "w": "plage (f)",
+  "fr": "On passe toute la journée à la plage.",
+  "en": "We spend the whole day at the beach."
+ },
+ {
+  "w": "plan de la ville (m)",
+  "fr": "Avez-vous un plan de la ville, s'il vous plaît ?",
+  "en": "Do you have a street map, please?"
+ },
+ {
+  "w": "potable (adj)",
+  "fr": "Est-ce que l'eau du robinet est potable ici ?",
+  "en": "Is the tap water drinkable here?"
+ },
+ {
+  "w": "pour aller à X ? (v)",
+  "fr": "Pardon, madame, pour aller à la gare ?",
+  "en": "Excuse me, madam, how do I get to the station?"
+ },
+ {
+  "w": "près de (pron)",
+  "fr": "Notre hôtel est près de la plage.",
+  "en": "Our hotel is near the beach."
+ },
+ {
+  "w": "complet (complète) (adj)",
+  "fr": "Désolé, l'hôtel est complet ce week-end.",
+  "en": "Sorry, the hotel is full this weekend."
+ },
+ {
+  "w": "compris(e) (adj)",
+  "fr": "Le petit-déjeuner est compris dans le prix.",
+  "en": "Breakfast is included in the price."
+ },
+ {
+  "w": "continuer (v)",
+  "fr": "Continuez tout droit jusqu'au pont.",
+  "en": "Go straight on as far as the bridge."
+ },
+ {
+  "w": "crème solaire (f)",
+  "fr": "Mets de la crème solaire avant d'aller à la plage.",
+  "en": "Put some suncream on before going to the beach."
+ },
+ {
+  "w": "décrire (v)",
+  "fr": "Peux-tu décrire ta ville en quelques mots ?",
+  "en": "Can you describe your town in a few words?"
+ },
+ {
+  "w": "défaire sa valise",
+  "fr": "Léa défait sa valise dès qu'elle arrive à l'hôtel.",
+  "en": "Léa unpacks as soon as she arrives at the hotel."
+ },
+ {
+  "w": "demi-pension",
+  "fr": "Nous avons choisi la demi-pension pour être libres à midi.",
+  "en": "We chose half board so that we're free at lunchtime."
+ },
+ {
+  "w": "dépliant (m)",
+  "fr": "Ce dépliant présente les activités de la région.",
+  "en": "This brochure lists the activities in the region."
+ },
+ {
+  "w": "donner sur (v)",
+  "fr": "Ma chambre donne sur la mer.",
+  "en": "My room overlooks the sea."
+ },
+ {
+  "w": "douche (f)",
+  "fr": "Je prends une douche après la plage.",
+  "en": "I have a shower after the beach."
+ },
+ {
+  "w": "durée (m)",
+  "fr": "Quelle est la durée du voyage en train ?",
+  "en": "How long does the train journey take?"
+ },
+ {
+  "w": "emplacement (m)",
+  "fr": "Nous avons réservé un emplacement près de la rivière.",
+  "en": "We've booked a pitch near the river."
+ },
+ {
+  "w": "en avance",
+  "fr": "Il vaut mieux réserver l'hôtel en avance en été.",
+  "en": "It's better to book the hotel in advance in summer."
+ },
+ {
+  "w": "en plein air",
+  "fr": "Ce soir, il y a un concert en plein air.",
+  "en": "Tonight, there's an outdoor concert."
+ },
+ {
+  "w": "envoyer (v)",
+  "fr": "J'envoie des photos de la plage à mes amis.",
+  "en": "I send photos of the beach to my friends."
+ },
+ {
+  "w": "estivant (m)",
+  "fr": "En août, le village est plein d'estivants.",
+  "en": "In August, the village is full of summer visitors."
+ },
+ {
+  "w": "excursion (f)",
+  "fr": "Demain, nous faisons une excursion aux îles.",
+  "en": "Tomorrow, we're going on an outing to the islands."
+ },
+ {
+  "w": "faire du camping",
+  "fr": "Cet été, on va faire du camping dans les Alpes.",
+  "en": "This summer, we're going camping in the Alps."
+ },
+ {
+  "w": "faire la connaissance de",
+  "fr": "En vacances, j'ai fait la connaissance de jeunes Italiens.",
+  "en": "On holiday, I got to know some young Italians."
+ },
+ {
+  "w": "faire ses bagages",
+  "fr": "Hugo fait ses bagages la veille du départ.",
+  "en": "Hugo packs the day before he leaves."
+ },
+ {
+  "w": "fiche (f)",
+  "fr": "Remplissez cette fiche, s'il vous plaît.",
+  "en": "Fill in this form, please."
+ },
+ {
+  "w": "gîte (m)",
+  "fr": "Nous avons loué un gîte à la campagne pour une semaine.",
+  "en": "We rented a holiday cottage in the countryside for a week."
+ },
+ {
+  "w": "grand lit (m)",
+  "fr": "Je voudrais une chambre avec un grand lit.",
+  "en": "I'd like a room with a double bed."
+ },
+ {
+  "w": "guide touristique (m)",
+  "fr": "Le guide touristique nous explique l'histoire du château.",
+  "en": "The tourist guide explains the history of the castle to us."
+ },
+ {
+  "w": "hébergement (m)",
+  "fr": "Nous cherchons un hébergement pas cher près de la plage.",
+  "en": "We're looking for cheap accommodation near the beach."
+ },
+ {
+  "w": "inclus(e) (adj)",
+  "fr": "Le service est inclus dans le prix du repas.",
+  "en": "Service is included in the price of the meal."
+ },
+ {
+  "w": "lampe de poche (f)",
+  "fr": "Prends une lampe de poche pour aller aux toilettes la nuit.",
+  "en": "Take a torch to go to the toilets at night."
+ },
+ {
+  "w": "libre (adj)",
+  "fr": "Excusez-moi, est-ce que cette place est libre ?",
+  "en": "Excuse me, is this seat free?"
+ },
+ {
+  "w": "location (f)",
+  "fr": "La location de la voiture coûte trente euros par jour.",
+  "en": "Car rental costs thirty euros a day."
+ },
+ {
+  "w": "louer (v)",
+  "fr": "On peut louer des vélos près de la plage.",
+  "en": "You can hire bikes near the beach."
+ },
+ {
+  "w": "loyer (m)",
+  "fr": "Le loyer de l'appartement est de huit cents euros par mois.",
+  "en": "The rent for the flat is eight hundred euros a month."
+ },
+ {
+  "w": "projet (m)",
+  "fr": "Quels sont tes projets pour les grandes vacances ?",
+  "en": "What are your plans for the summer holidays?"
+ },
+ {
+  "w": "quinze jours (m)",
+  "fr": "Nous partons en Espagne pour quinze jours.",
+  "en": "We're going to Spain for a fortnight."
+ },
+ {
+  "w": "réception (f)",
+  "fr": "Laissez votre clé à la réception, s'il vous plaît.",
+  "en": "Please leave your key at reception."
+ },
+ {
+  "w": "rencontrer (v)",
+  "fr": "J'ai rencontré des jeunes sympas au camping.",
+  "en": "I met some nice young people at the campsite."
+ },
+ {
+  "w": "réserver (v)",
+  "fr": "Mon père a réservé une chambre pour trois nuits.",
+  "en": "My dad has booked a room for three nights."
+ },
+ {
+  "w": "rester (v)",
+  "fr": "Nous restons une semaine chez nos cousins.",
+  "en": "We're staying with our cousins for a week."
+ },
+ {
+  "w": "rond-point (m)",
+  "fr": "Au rond-point, prenez la première sortie.",
+  "en": "At the roundabout, take the first exit."
+ },
+ {
+  "w": "sable (m)",
+  "fr": "Le sable est très chaud à midi.",
+  "en": "The sand is very hot at midday."
+ },
+ {
+  "w": "sac de couchage (m)",
+  "fr": "N'oublie pas ton sac de couchage pour le camping.",
+  "en": "Don't forget your sleeping bag for camping."
+ },
+ {
+  "w": "salle de jeux (f)",
+  "fr": "Le soir, les enfants vont dans la salle de jeux de l'hôtel.",
+  "en": "In the evening, the children go to the hotel's games room."
+ },
+ {
+  "w": "se baigner (v)",
+  "fr": "Il fait beau, allons nous baigner dans la mer !",
+  "en": "It's nice weather, let's go swimming in the sea!"
+ },
+ {
+  "w": "(se faire) bronzer (v)",
+  "fr": "Ma sœur aime se faire bronzer sur la plage.",
+  "en": "My sister likes sunbathing on the beach."
+ },
+ {
+  "w": "séjour (m)",
+  "fr": "Notre séjour à Nice a été très agréable.",
+  "en": "Our stay in Nice was very pleasant."
+ },
+ {
+  "w": "sens unique (m)",
+  "fr": "Tu ne peux pas tourner ici, c'est un sens unique.",
+  "en": "You can't turn here, it's a one-way street."
+ },
+ {
+  "w": "ski nautique (m)",
+  "fr": "Mon frère fait du ski nautique sur le lac.",
+  "en": "My brother goes water-skiing on the lake."
+ },
+ {
+  "w": "spacieux (~se) (adj)",
+  "fr": "La chambre est spacieuse et très lumineuse.",
+  "en": "The room is spacious and very bright."
+ },
+ {
+  "w": "syndicat d’initiative (m)",
+  "fr": "Le syndicat d'initiative est ouvert de neuf heures à midi.",
+  "en": "The tourist information office is open from nine o'clock until midday."
+ },
+ {
+  "w": "tourner (v)",
+  "fr": "Au bout de la rue, tournez à gauche.",
+  "en": "At the end of the street, turn left."
+ },
+ {
+  "w": "tout droit (adv)",
+  "fr": "Pour aller à la plage, allez tout droit.",
+  "en": "To get to the beach, go straight ahead."
+ },
+ {
+  "w": "traverser (v)",
+  "fr": "Traversez la place et la poste est en face.",
+  "en": "Cross the square and the post office is opposite."
+ },
+ {
+  "w": "vers (prep)",
+  "fr": "Nous marchons vers la plage avec nos serviettes.",
+  "en": "We're walking towards the beach with our towels."
+ },
+ {
+  "w": "visiter (v)",
+  "fr": "Cet été, nous allons visiter Rome et Florence.",
+  "en": "This summer, we're going to visit Rome and Florence."
+ },
+ {
+  "w": "voir (v)",
+  "fr": "Du balcon, on peut voir la mer.",
+  "en": "From the balcony, you can see the sea."
+ },
+ {
+  "w": "vue (sur) (f)",
+  "fr": "J'adore la vue sur les montagnes depuis notre chambre.",
+  "en": "I love the view of the mountains from our room."
+ },
+ {
+  "w": "agent de police (m/f)",
+  "fr": "Un agent de police m'a aidé à trouver la gare.",
+  "en": "A police officer helped me find the station."
+ },
+ {
+  "w": "appel d’urgence (m)",
+  "fr": "Pour un appel d'urgence, composez le 112.",
+  "en": "For an emergency call, dial 112."
+ },
+ {
+  "w": "appeler (v)",
+  "fr": "Je vais appeler ma mère ce soir.",
+  "en": "I'm going to ring my mum this evening."
+ },
+ {
+  "w": "argent (m)",
+  "fr": "Je n'ai plus d'argent pour acheter des souvenirs.",
+  "en": "I haven't got any money left to buy souvenirs."
+ },
+ {
+  "w": "boîte aux lettres (f)",
+  "fr": "Mets la carte dans la boîte aux lettres jaune.",
+  "en": "Put the card in the yellow letterbox."
+ },
+ {
+  "w": "bureau de change (m)",
+  "fr": "Il y a un bureau de change à l'aéroport.",
+  "en": "There's a bureau de change at the airport."
+ },
+ {
+  "w": "bureau de poste (m)",
+  "fr": "Le bureau de poste ferme à midi le samedi.",
+  "en": "The post office closes at midday on Saturdays."
+ },
+ {
+  "w": "bureau des objets trouvés (m)",
+  "fr": "J'ai récupéré mon sac au bureau des objets trouvés.",
+  "en": "I got my bag back from the lost property office."
+ },
+ {
+  "w": "cabine téléphonique (f)",
+  "fr": "Il y a de moins en moins de cabines téléphoniques en ville.",
+  "en": "There are fewer and fewer telephone boxes in town."
+ },
+ {
+  "w": "centre d’appel (m)",
+  "fr": "Ma tante travaille dans un centre d'appel à Lyon.",
+  "en": "My aunt works in a call centre in Lyon."
+ },
+ {
+  "w": "coiffeur(~euse) (m/f)",
+  "fr": "Je vais chez le coiffeur une fois par mois.",
+  "en": "I go to the hairdresser's once a month."
+ },
+ {
+  "w": "commissariat de police (m)",
+  "fr": "Pour signaler un vol, allez au commissariat de police.",
+  "en": "To report a theft, go to the police station."
+ },
+ {
+  "w": "composer un numéro",
+  "fr": "Il faut composer un numéro à dix chiffres.",
+  "en": "You have to dial a ten-digit number."
+ },
+ {
+  "w": "coupe (f)",
+  "fr": "Ta nouvelle coupe de cheveux te va très bien !",
+  "en": "Your new haircut really suits you!"
+ },
+ {
+  "w": "couper (v)",
+  "fr": "Le coiffeur me coupe les cheveux très court.",
+  "en": "The hairdresser cuts my hair very short."
+ },
+ {
+  "w": "erreur (f)",
+  "fr": "Désolé, j'ai fait une erreur en écrivant votre adresse.",
+  "en": "Sorry, I made a mistake when writing your address."
+ },
+ {
+  "w": "excusez-moi",
+  "fr": "Excusez-moi, je ne voulais pas vous déranger.",
+  "en": "I'm sorry, I didn't mean to disturb you."
+ },
+ {
+  "w": "facteur(~trice) (m/f)",
+  "fr": "Le facteur apporte le courrier vers dix heures.",
+  "en": "The postman brings the post at about ten o'clock."
+ },
+ {
+  "w": "faute (f)",
+  "fr": "Ce n'est pas ma faute si le train est en retard !",
+  "en": "It's not my fault if the train is late!"
+ },
+ {
+  "w": "fonctionner (v)",
+  "fr": "Le distributeur de billets ne fonctionne pas.",
+  "en": "The cash machine isn't working."
+ },
+ {
+  "w": "formulaire (m)",
+  "fr": "Pour ouvrir un compte, il faut remplir ce formulaire.",
+  "en": "To open an account, you have to fill in this form."
+ },
+ {
+  "w": "gendarme (m)",
+  "fr": "Un gendarme nous a arrêtés sur la route.",
+  "en": "A police officer stopped us on the road."
+ },
+ {
+  "w": "gendarmerie (f)",
+  "fr": "La gendarmerie se trouve à la sortie du village.",
+  "en": "The police station is on the edge of the village."
+ },
+ {
+  "w": "je m’appelle",
+  "fr": "Bonjour, je m'appelle Inès et j'ai quinze ans.",
+  "en": "Hello, my name is Inès and I'm fifteen."
+ },
+ {
+  "w": "merci",
+  "fr": "Merci beaucoup pour votre aide, monsieur.",
+  "en": "Thank you very much for your help, sir."
+ },
+ {
+  "w": "ne quittez pas (v)",
+  "fr": "Ne quittez pas, je vous passe le directeur.",
+  "en": "Please hold, I'll put you through to the manager."
+ },
+ {
+  "w": "nom (m)",
+  "fr": "Écrivez votre nom et votre prénom ici.",
+  "en": "Write your surname and your first name here."
+ },
+ {
+  "w": "perdre (v)",
+  "fr": "J'ai perdu mes clés dans le bus.",
+  "en": "I lost my keys on the bus."
+ },
+ {
+  "w": "perte (f)",
+  "fr": "Je voudrais déclarer la perte de mon passeport.",
+  "en": "I'd like to report the loss of my passport."
+ },
+ {
+  "w": "plombier (m)",
+  "fr": "Il y a une fuite d'eau, il faut appeler le plombier.",
+  "en": "There's a water leak, so we need to call the plumber."
+ },
+ {
+  "w": "policier (m)",
+  "fr": "Le policier m'a demandé mes papiers.",
+  "en": "The police officer asked me for my ID."
+ },
+ {
+  "w": "pompier (m)",
+  "fr": "Les pompiers sont arrivés très vite pour éteindre le feu.",
+  "en": "The firefighters arrived very quickly to put out the fire."
+ },
+ {
+  "w": "La Poste (f)",
+  "fr": "Mon cousin travaille pour La Poste depuis dix ans.",
+  "en": "My cousin has worked for the French postal service for ten years."
+ },
+ {
+  "w": "poste (f)",
+  "fr": "Je vais à la poste pour envoyer un colis.",
+  "en": "I'm going to the post office to send a parcel."
+ },
+ {
+  "w": "prénom (m)",
+  "fr": "Comment s'écrit ton prénom, s'il te plaît ?",
+  "en": "How do you spell your first name, please?"
+ },
+ {
+  "w": "recevoir (v)",
+  "fr": "J'ai reçu une lettre de ma correspondante ce matin.",
+  "en": "I received a letter from my penfriend this morning."
+ },
+ {
+  "w": "remercier (v)",
+  "fr": "Je voudrais vous remercier pour ce beau cadeau.",
+  "en": "I'd like to thank you for this lovely present."
+ },
+ {
+  "w": "remplir (v)",
+  "fr": "Il faut remplir la fiche avec votre adresse.",
+  "en": "You have to fill in the form with your address."
+ },
+ {
+  "w": "renseignement (m)",
+  "fr": "Je voudrais un renseignement sur les horaires d'ouverture.",
+  "en": "I'd like some information about the opening hours."
+ },
+ {
+  "w": "réparer (v)",
+  "fr": "Mon père répare mon vélo dans le garage.",
+  "en": "My dad is repairing my bike in the garage."
+ },
+ {
+  "w": "sac (m)",
+  "fr": "On m'a volé mon sac dans le métro.",
+  "en": "My bag was stolen on the underground."
+ },
+ {
+  "w": "se retrouver (v)",
+  "fr": "On se retrouve devant la poste à quinze heures ?",
+  "en": "Shall we meet up in front of the post office at 3 p.m.?"
+ },
+ {
+  "w": "s'il vous plaît ?",
+  "fr": "Un timbre pour l'Angleterre, s'il vous plaît.",
+  "en": "A stamp for England, please."
+ },
+ {
+  "w": "timbre (m)",
+  "fr": "Combien coûte un timbre pour envoyer une lettre en Italie ?",
+  "en": "How much is a stamp to send a letter to Italy?"
+ },
+ {
+  "w": "trouver (v)",
+  "fr": "Je ne trouve pas mon portable, tu l'as vu ?",
+  "en": "I can't find my mobile; have you seen it?"
+ },
+ {
+  "w": "voleur/voleuse (m/f)",
+  "fr": "La police a arrêté le voleur près de la gare.",
+  "en": "The police arrested the thief near the station."
+ },
+ {
+  "w": "vouloir (v)",
+  "fr": "Tu veux venir à la banque avec moi ?",
+  "en": "Do you want to come to the bank with me?"
+ },
+ {
+  "w": "allumette (f)",
+  "fr": "Passe-moi les allumettes pour allumer les bougies.",
+  "en": "Pass me the matches to light the candles."
+ },
+ {
+  "w": "anniversaire (m)",
+  "fr": "Mon anniversaire, c'est le douze mars.",
+  "en": "My birthday is on the twelfth of March."
+ },
+ {
+  "w": "bonne année (f)",
+  "fr": "Bonne année et bonne santé à toute la famille !",
+  "en": "Happy New Year and good health to all the family!"
+ },
+ {
+  "w": "bougie (f)",
+  "fr": "Il y a quinze bougies sur mon gâteau d'anniversaire.",
+  "en": "There are fifteen candles on my birthday cake."
+ },
+ {
+  "w": "brûler (v)",
+  "fr": "Attention, la soupe est très chaude, tu vas te brûler !",
+  "en": "Careful, the soup is very hot, you'll burn yourself!"
+ },
+ {
+  "w": "cadeau (m)",
+  "fr": "Qu'est-ce que tu as reçu comme cadeau pour Noël ?",
+  "en": "What did you get as a present for Christmas?"
+ },
+ {
+  "w": "carnaval (m)",
+  "fr": "Le carnaval de Nice a lieu en février.",
+  "en": "The Nice carnival takes place in February."
+ },
+ {
+  "w": "carte de vœux (f)",
+  "fr": "J'envoie une carte de vœux à mes grands-parents.",
+  "en": "I'm sending a greetings card to my grandparents."
+ },
+ {
+  "w": "cathédrale (f)",
+  "fr": "La cathédrale de Chartres est très célèbre.",
+  "en": "Chartres Cathedral is very famous."
+ },
+ {
+  "w": "champagne (m)",
+  "fr": "Les adultes boivent du champagne à minuit.",
+  "en": "The adults drink champagne at midnight."
+ },
+ {
+  "w": "déesse (f)",
+  "fr": "Vénus est la déesse romaine de l'amour.",
+  "en": "Venus is the Roman goddess of love."
+ },
+ {
+  "w": "Dieu(x) (m)",
+  "fr": "Les Grecs anciens croyaient en plusieurs dieux.",
+  "en": "The ancient Greeks believed in several gods."
+ },
+ {
+  "w": "échanger (v)",
+  "fr": "À Noël, on échange des cadeaux en famille.",
+  "en": "At Christmas, we exchange presents as a family."
+ },
+ {
+  "w": "église (f)",
+  "fr": "Le dimanche, ma grand-mère va à l'église.",
+  "en": "On Sundays, my grandmother goes to church."
+ },
+ {
+  "w": "fête (f)",
+  "fr": "Il y a une grande fête dans le village en juillet.",
+  "en": "There's a big celebration in the village in July."
+ },
+ {
+  "w": "fête des Mères/Pères (f)",
+  "fr": "Pour la fête des Mères, j'offre des fleurs à ma mère.",
+  "en": "For Mother's Day, I give my mum flowers."
+ },
+ {
+  "w": "fêter (v)",
+  "fr": "Ce week-end, nous fêtons l'anniversaire de mon père.",
+  "en": "This weekend, we're celebrating my dad's birthday."
+ },
+ {
+  "w": "feu de joie (m)",
+  "fr": "Le soir de la Saint-Jean, on fait un grand feu de joie.",
+  "en": "On St John's Eve, we have a big bonfire."
+ },
+ {
+  "w": "feux d’artifice (m pl)",
+  "fr": "Le 14 juillet, on regarde les feux d'artifice.",
+  "en": "On the 14th of July, we watch the fireworks."
+ },
+ {
+  "w": "folklorique (adj)",
+  "fr": "Pendant la fête, on écoute de la musique folklorique.",
+  "en": "During the festival, we listen to folk music."
+ },
+ {
+  "w": "jour de congé (m)",
+  "fr": "Lundi, c'est mon jour de congé, alors je reste à la maison.",
+  "en": "Monday is my day off, so I'm staying at home."
+ },
+ {
+  "w": "jour de l’An (m)",
+  "fr": "Le jour de l'An, on rend visite à nos grands-parents.",
+  "en": "On New Year's Day, we visit our grandparents."
+ },
+ {
+  "w": "joyeux Noël (m)",
+  "fr": "Joyeux Noël et bonnes fêtes à tous !",
+  "en": "Happy Christmas and happy holidays, everyone!"
+ },
+ {
+  "w": "lumière (f)",
+  "fr": "En décembre, il y a de jolies lumières dans les rues.",
+  "en": "In December, there are pretty lights in the streets."
+ },
+ {
+  "w": "meilleurs vœux (m pl)",
+  "fr": "Je vous envoie mes meilleurs vœux pour la nouvelle année.",
+  "en": "I send you my best wishes for the new year."
+ },
+ {
+  "w": "mosquée (f)",
+  "fr": "La famille de Karim va à la mosquée le vendredi.",
+  "en": "Karim's family goes to the mosque on Fridays."
+ },
+ {
+  "w": "mort (f)",
+  "fr": "La mort de son chien l'a rendu très triste.",
+  "en": "The death of his dog made him very sad."
+ },
+ {
+  "w": "mourir (v)",
+  "fr": "Sans eau, les plantes vont mourir.",
+  "en": "Without water, the plants are going to die."
+ },
+ {
+  "w": "naissance (f)",
+  "fr": "Nous fêtons la naissance de ma petite sœur.",
+  "en": "We're celebrating the birth of my little sister."
+ },
+ {
+  "w": "naître (v)",
+  "fr": "Ma cousine est née le jour de Noël.",
+  "en": "My cousin was born on Christmas Day."
+ },
+ {
+  "w": "Noël (m)",
+  "fr": "À Noël, toute la famille se réunit chez mes grands-parents.",
+  "en": "At Christmas, the whole family gets together at my grandparents' house."
+ },
+ {
+  "w": "Nouvel An (m)",
+  "fr": "Pour le Nouvel An, on fait une grande fête entre amis.",
+  "en": "For New Year, we have a big party with friends."
+ },
+ {
+  "w": "ouvrir (v)",
+  "fr": "Les enfants ouvrent leurs cadeaux le matin de Noël.",
+  "en": "The children open their presents on Christmas morning."
+ },
+ {
+  "w": "Pâques (f pl)",
+  "fr": "À Pâques, les enfants cherchent des œufs en chocolat dans le jardin.",
+  "en": "At Easter, the children look for chocolate eggs in the garden."
+ },
+ {
+  "w": "Père Noël (m)",
+  "fr": "Mon petit frère a écrit une lettre au Père Noël.",
+  "en": "My little brother has written a letter to Father Christmas."
+ },
+ {
+  "w": "préparatifs (m pl)",
+  "fr": "Les préparatifs de la fête prennent toute la journée.",
+  "en": "The preparations for the party take all day."
+ },
+ {
+  "w": "Saint-Valentin (f)",
+  "fr": "Pour la Saint-Valentin, il lui a offert des roses.",
+  "en": "For St Valentine's Day, he gave her roses."
+ },
+ {
+  "w": "s’amuser (v)",
+  "fr": "Les enfants s'amusent beaucoup au carnaval.",
+  "en": "The children have lots of fun at the carnival."
+ },
+ {
+  "w": "sapin de Noël (m)",
+  "fr": "Nous décorons le sapin de Noël début décembre.",
+  "en": "We decorate the Christmas tree at the beginning of December."
+ },
+ {
+  "w": "synagogue (f)",
+  "fr": "Il y a une belle synagogue ancienne dans le vieux quartier.",
+  "en": "There's a beautiful old synagogue in the old quarter."
+ },
+ {
+  "w": "association du quartier (f)",
+  "fr": "L'association du quartier organise une fête en juin.",
+  "en": "The neighbourhood association is organising a party in June."
+ },
+ {
+  "w": "chants (m) de Noël",
+  "fr": "À l'école, nous chantons des chants de Noël en décembre.",
+  "en": "At school, we sing Christmas carols in December."
+ },
+ {
+  "w": "communauté (f)",
+  "fr": "Il y a une grande communauté portugaise dans ma ville.",
+  "en": "There's a large Portuguese community in my town."
+ },
+ {
+  "w": "déjeuner (m)",
+  "fr": "Le déjeuner est servi à midi et demi.",
+  "en": "Lunch is served at half past twelve."
+ },
+ {
+  "w": "déjeuner",
+  "fr": "Le dimanche, nous déjeunons chez ma grand-mère.",
+  "en": "On Sundays, we have lunch at my grandmother's."
+ },
+ {
+  "w": "jour férié (f)",
+  "fr": "Le premier mai est un jour férié en France.",
+  "en": "The first of May is a public holiday in France."
+ },
+ {
+  "w": "prendre le goûter",
+  "fr": "Après l'école, les enfants prennent le goûter à quatre heures.",
+  "en": "After school, the children have afternoon tea at four o'clock."
+ },
+ {
+  "w": "procession (f)",
+  "fr": "Une procession traverse le village le jour de la fête.",
+  "en": "A procession goes through the village on the day of the festival."
+ },
+ {
+  "w": "réveillon du Nouvel An",
+  "fr": "Pour le réveillon du Nouvel An, nous mangeons des huîtres.",
+  "en": "For our New Year's Eve meal, we eat oysters."
+ },
+ {
+  "w": "tradition (f)",
+  "fr": "C'est une tradition de manger des crêpes en février.",
+  "en": "It's a tradition to eat pancakes in February."
+ },
+ {
+  "w": "voisin(e) (m/f)",
+  "fr": "Notre voisine garde notre chat pendant les vacances.",
+  "en": "Our neighbour looks after our cat during the holidays."
+ },
+ {
+  "w": "allemand (m)",
+  "fr": "J'apprends l'allemand depuis trois ans.",
+  "en": "I've been learning German for three years."
+ },
+ {
+  "w": "anglais (m)",
+  "fr": "L'anglais est ma matière préférée.",
+  "en": "English is my favourite subject."
+ },
+ {
+  "w": "apprendre (v)",
+  "fr": "Nous apprenons le vocabulaire pour le contrôle de demain.",
+  "en": "We're learning the vocabulary for tomorrow's test."
+ },
+ {
+  "w": "arts plastiques (m pl)",
+  "fr": "En arts plastiques, nous faisons de la peinture.",
+  "en": "In art, we do painting."
+ },
+ {
+  "w": "assistant(e) (de français)",
+  "fr": "Notre assistante de français vient de Lyon.",
+  "en": "Our French language assistant comes from Lyon."
+ },
+ {
+  "w": "bac/baccalauréat (m)",
+  "fr": "Après le bac, Hugo veut aller à l'université.",
+  "en": "After his baccalauréat, Hugo wants to go to university."
+ },
+ {
+  "w": "bien (adv)",
+  "fr": "Tu parles très bien français !",
+  "en": "You speak French very well!"
+ },
+ {
+  "w": "biologie (f)",
+  "fr": "En biologie, nous étudions le corps humain.",
+  "en": "In biology, we're studying the human body."
+ },
+ {
+  "w": "bureau (m)",
+  "fr": "Le directeur est dans son bureau.",
+  "en": "The head teacher is in his office."
+ },
+ {
+  "w": "chimie (f)",
+  "fr": "J'aime la chimie parce qu'on fait des expériences.",
+  "en": "I like chemistry because we do experiments."
+ },
+ {
+  "w": "classeur (m)",
+  "fr": "Range tes feuilles dans ton classeur, s'il te plaît.",
+  "en": "Put your sheets in your folder, please."
+ },
+ {
+  "w": "commencer (v)",
+  "fr": "Les cours commencent à huit heures du matin.",
+  "en": "Lessons start at eight in the morning."
+ },
+ {
+  "w": "cour (f)",
+  "fr": "Pendant la récré, on joue au foot dans la cour.",
+  "en": "During break, we play football in the playground."
+ },
+ {
+  "w": "cours (m)",
+  "fr": "J'ai un cours de maths à dix heures.",
+  "en": "I have a maths lesson at ten o'clock."
+ },
+ {
+  "w": "court de tennis (m)",
+  "fr": "Notre collège a deux courts de tennis.",
+  "en": "Our school has two tennis courts."
+ },
+ {
+  "w": "design (m)",
+  "fr": "En design, nous fabriquons une lampe en bois.",
+  "en": "In design, we're making a wooden lamp."
+ },
+ {
+  "w": "dessin (m)",
+  "fr": "Mon petit frère fait un dessin pour ma mère.",
+  "en": "My little brother is doing a drawing for my mum."
+ },
+ {
+  "w": "dessiner (v)",
+  "fr": "J'adore dessiner des animaux pendant mon temps libre.",
+  "en": "I love drawing animals in my free time."
+ },
+ {
+  "w": "dictionnaire (m)",
+  "fr": "Cherche le mot dans le dictionnaire.",
+  "en": "Look the word up in the dictionary."
+ },
+ {
+  "w": "directeur/directrice (m/f)",
+  "fr": "La directrice veut parler à tes parents.",
+  "en": "The head teacher wants to speak to your parents."
+ },
+ {
+  "w": "discuter (v)",
+  "fr": "En classe, nous discutons de l'environnement.",
+  "en": "In class, we discuss the environment."
+ },
+ {
+  "w": "durer (v)",
+  "fr": "Chaque cours dure cinquante-cinq minutes.",
+  "en": "Each lesson lasts fifty-five minutes."
+ },
+ {
+  "w": "échange (m)",
+  "fr": "Cette année, je participe à un échange avec un collège français.",
+  "en": "This year, I'm taking part in an exchange with a French school."
+ },
+ {
+  "w": "école maternelle (f)",
+  "fr": "Ma petite sœur va à l'école maternelle.",
+  "en": "My little sister goes to infant school."
+ },
+ {
+  "w": "école primaire (f)",
+  "fr": "J'ai beaucoup aimé mon école primaire.",
+  "en": "I really liked my primary school."
+ },
+ {
+  "w": "école secondaire (f)",
+  "fr": "Après l'école primaire, on va à l'école secondaire.",
+  "en": "After primary school, you go to secondary school."
+ },
+ {
+  "w": "écrit(e)",
+  "fr": "Demain, nous avons un examen écrit en français.",
+  "en": "Tomorrow, we have a written exam in French."
+ },
+ {
+  "w": "maths (m pl)",
+  "fr": "Je trouve les maths difficiles mais utiles.",
+  "en": "I find maths difficult but useful."
+ },
+ {
+  "w": "matière (f)",
+  "fr": "Quelle est ta matière préférée ?",
+  "en": "What is your favourite subject?"
+ },
+ {
+  "w": "moderne (adj)",
+  "fr": "Notre lycée est très moderne et bien équipé.",
+  "en": "Our school is very modern and well equipped."
+ },
+ {
+  "w": "moniteur (personne)",
+  "fr": "Le moniteur de ski est très patient avec nous.",
+  "en": "The ski instructor is very patient with us."
+ },
+ {
+  "w": "mot (m)",
+  "fr": "Je ne comprends pas ce mot.",
+  "en": "I don't understand this word."
+ },
+ {
+  "w": "musique (f)",
+  "fr": "Je joue de la guitare pendant le cours de musique.",
+  "en": "I play the guitar in the music lesson."
+ },
+ {
+  "w": "note (f)",
+  "fr": "J'ai eu une bonne note en histoire.",
+  "en": "I got a good mark in history."
+ },
+ {
+  "w": "oral (m)",
+  "fr": "J'ai un oral de français la semaine prochaine.",
+  "en": "I have a French oral next week."
+ },
+ {
+  "w": "ordinateur (m)",
+  "fr": "Nous utilisons un ordinateur en cours d'informatique.",
+  "en": "We use a computer in IT lessons."
+ },
+ {
+  "w": "pantalon (m)",
+  "fr": "L'uniforme, c'est un pantalon gris et une chemise blanche.",
+  "en": "The uniform is grey trousers and a white shirt."
+ },
+ {
+  "w": "papier (m)",
+  "fr": "Prenez une feuille de papier et un stylo.",
+  "en": "Take a sheet of paper and a pen."
+ },
+ {
+  "w": "pause déjeuner (f)",
+  "fr": "Pendant la pause déjeuner, je mange à la cantine.",
+  "en": "During the lunch break, I eat in the canteen."
+ },
+ {
+  "w": "physique (f)",
+  "fr": "En physique, on étudie l'électricité.",
+  "en": "In physics, we're studying electricity."
+ },
+ {
+  "w": "poser une question",
+  "fr": "Si tu ne comprends pas, tu peux poser une question.",
+  "en": "If you don't understand, you can ask a question."
+ },
+ {
+  "w": "pratiquer (v)",
+  "fr": "Je pratique mon français avec mon correspondant.",
+  "en": "I practise my French with my exchange partner."
+ },
+ {
+  "w": "professeur (m/f)",
+  "fr": "Mon professeur de maths explique très bien.",
+  "en": "My maths teacher explains things really well."
+ },
+ {
+  "w": "prononciation (f)",
+  "fr": "La prononciation française est difficile pour moi.",
+  "en": "French pronunciation is difficult for me."
+ },
+ {
+  "w": "psychologie (f)",
+  "fr": "Ma sœur étudie la psychologie à l'université.",
+  "en": "My sister studies psychology at university."
+ },
+ {
+  "w": "qualification (f)",
+  "fr": "Il faut une bonne qualification pour trouver un emploi.",
+  "en": "You need a good qualification to find a job."
+ },
+ {
+  "w": "qualifié (adj)",
+  "fr": "Ma mère est une infirmière très qualifiée.",
+  "en": "My mother is a highly qualified nurse."
+ },
+ {
+  "w": "récréation (f)",
+  "fr": "La récréation commence à dix heures et quart.",
+  "en": "Break time starts at quarter past ten."
+ },
+ {
+  "w": "règle (f)",
+  "fr": "J'ai besoin d'une règle pour tracer une ligne.",
+  "en": "I need a ruler to draw a line."
+ },
+ {
+  "w": "religion (f)",
+  "fr": "En cours de religion, nous parlons des fêtes du monde.",
+  "en": "In R.E., we talk about festivals around the world."
+ },
+ {
+  "w": "rentrée (f)",
+  "fr": "La rentrée scolaire a lieu début septembre.",
+  "en": "The new school year starts at the beginning of September."
+ },
+ {
+  "w": "répondre (v)",
+  "fr": "Le professeur pose une question et je réponds.",
+  "en": "The teacher asks a question and I reply."
+ },
+ {
+  "w": "résumé (m)",
+  "fr": "Écrivez un résumé du texte en cinquante mots.",
+  "en": "Write a summary of the text in fifty words."
+ },
+ {
+  "w": "résumer (v)",
+  "fr": "Peux-tu résumer l'histoire en quelques phrases ?",
+  "en": "Can you summarise the story in a few sentences?"
+ },
+ {
+  "w": "rétroprojecteur (m)",
+  "fr": "Le vieux rétroprojecteur ne marche plus.",
+  "en": "The old overhead projector doesn't work any more."
+ },
+ {
+  "w": "salle de classe (f)",
+  "fr": "Notre salle de classe est au premier étage.",
+  "en": "Our classroom is on the first floor."
+ },
+ {
+  "w": "salle de musique (f)",
+  "fr": "Il y a un piano dans la salle de musique.",
+  "en": "There is a piano in the music room."
+ },
+ {
+  "w": "salle des professeurs (f)",
+  "fr": "Les élèves ne peuvent pas entrer dans la salle des professeurs.",
+  "en": "Pupils aren't allowed into the staffroom."
+ },
+ {
+  "w": "éducation civique (f)",
+  "fr": "En éducation civique, on parle des droits de l'enfant.",
+  "en": "In citizenship, we talk about children's rights."
+ },
+ {
+  "w": "élève (m/f)",
+  "fr": "Il y a trente élèves dans ma classe.",
+  "en": "There are thirty pupils in my class."
+ },
+ {
+  "w": "emploi du temps (m)",
+  "fr": "Le lundi, mon emploi du temps est très chargé.",
+  "en": "On Mondays, my timetable is very busy."
+ },
+ {
+  "w": "enseignement (m)",
+  "fr": "L'enseignement est gratuit dans les écoles publiques.",
+  "en": "Education is free in state schools."
+ },
+ {
+  "w": "EPS (f)",
+  "fr": "En EPS, nous faisons du basket et de l'athlétisme.",
+  "en": "In PE, we do basketball and athletics."
+ },
+ {
+  "w": "espagnol (m)",
+  "fr": "Je voudrais apprendre l'espagnol l'année prochaine.",
+  "en": "I'd like to learn Spanish next year."
+ },
+ {
+  "w": "étudier (v)",
+  "fr": "Ce soir, je dois étudier pour mon examen de chimie.",
+  "en": "Tonight, I have to study for my chemistry exam."
+ },
+ {
+  "w": "études (f pl)",
+  "fr": "Mon frère fait des études de droit à Paris.",
+  "en": "My brother is studying law in Paris."
+ },
+ {
+  "w": "exemple (m)",
+  "fr": "Le professeur donne un exemple au tableau.",
+  "en": "The teacher gives an example on the board."
+ },
+ {
+  "w": "expliquer (v)",
+  "fr": "Pouvez-vous expliquer encore une fois, s'il vous plaît ?",
+  "en": "Can you explain again, please?"
+ },
+ {
+  "w": "faire l’appel (v)",
+  "fr": "Le professeur fait l'appel au début du cours.",
+  "en": "The teacher takes the register at the start of the lesson."
+ },
+ {
+  "w": "finir (v)",
+  "fr": "Les cours finissent à seize heures trente.",
+  "en": "Lessons finish at 4.30 p.m."
+ },
+ {
+  "w": "français (m)",
+  "fr": "Nous avons français quatre fois par semaine.",
+  "en": "We have French four times a week."
+ },
+ {
+  "w": "géographie (f)",
+  "fr": "En géographie, nous étudions les volcans.",
+  "en": "In geography, we're studying volcanoes."
+ },
+ {
+  "w": "gomme (f)",
+  "fr": "Tu peux me prêter ta gomme, s'il te plaît ?",
+  "en": "Can you lend me your rubber, please?"
+ },
+ {
+  "w": "gymnase (m)",
+  "fr": "Quand il pleut, le cours d'EPS a lieu au gymnase.",
+  "en": "When it rains, the PE lesson takes place in the gym."
+ },
+ {
+  "w": "heure (f)",
+  "fr": "Le mardi, j'ai deux heures de maths.",
+  "en": "On Tuesdays, I have two periods of maths."
+ },
+ {
+  "w": "histoire (f)",
+  "fr": "En histoire, nous étudions la Révolution française.",
+  "en": "In history, we're studying the French Revolution."
+ },
+ {
+  "w": "informatique (f)",
+  "fr": "En informatique, nous apprenons à créer un site web.",
+  "en": "In computer science, we're learning to create a website."
+ },
+ {
+  "w": "instituteur/institutrice (m/f)",
+  "fr": "L'institutrice lit une histoire aux enfants.",
+  "en": "The primary school teacher reads a story to the children."
+ },
+ {
+  "w": "italien (m)",
+  "fr": "Ma mère parle italien parce qu'elle a grandi à Rome.",
+  "en": "My mother speaks Italian because she grew up in Rome."
+ },
+ {
+  "w": "journée (scolaire) (f)",
+  "fr": "La journée scolaire est longue en France.",
+  "en": "The school day is long in France."
+ },
+ {
+  "w": "laboratoire (m)",
+  "fr": "Les cours de chimie ont lieu dans le laboratoire.",
+  "en": "Chemistry lessons take place in the laboratory."
+ },
+ {
+  "w": "langue (f)",
+  "fr": "Je parle trois langues : français, anglais et arabe.",
+  "en": "I speak three languages: French, English and Arabic."
+ },
+ {
+  "w": "leçon (f)",
+  "fr": "Pour demain, apprenez la leçon sur les verbes.",
+  "en": "For tomorrow, learn the lesson on verbs."
+ },
+ {
+  "w": "livre (m)",
+  "fr": "Ouvrez vos livres à la page vingt.",
+  "en": "Open your books at page twenty."
+ },
+ {
+  "w": "lycée (m)",
+  "fr": "L'année prochaine, j'entre au lycée.",
+  "en": "Next year, I'm starting at upper secondary school."
+ },
+ {
+  "w": "maître d’école/maîtresse d’école",
+  "fr": "La maîtresse d'école est très gentille avec les petits.",
+  "en": "The primary school teacher is very kind to the little ones."
+ },
+ {
+  "w": "salle de réunion (f)",
+  "fr": "Toute l'école se rassemble dans la salle de réunion.",
+  "en": "The whole school gathers in the assembly hall."
+ },
+ {
+  "w": "scolaire (adj)",
+  "fr": "Je n'aime pas porter l'uniforme scolaire.",
+  "en": "I don't like wearing school uniform."
+ },
+ {
+  "w": "sixième (f)",
+  "fr": "Mon petit frère entre en sixième en septembre.",
+  "en": "My little brother starts the first year of secondary school in September."
+ },
+ {
+  "w": "sociologie (f)",
+  "fr": "Au lycée, je voudrais étudier la sociologie.",
+  "en": "At sixth-form college, I'd like to study sociology."
+ },
+ {
+  "w": "sonner (v)",
+  "fr": "La cloche sonne à midi pour la pause déjeuner.",
+  "en": "The bell rings at midday for the lunch break."
+ },
+ {
+  "w": "sport (m)",
+  "fr": "Je fais du sport trois fois par semaine.",
+  "en": "I do sport three times a week."
+ },
+ {
+  "w": "stage en entreprise (m)",
+  "fr": "En juin, je fais un stage en entreprise dans une banque.",
+  "en": "In June, I'm doing work experience in a bank."
+ },
+ {
+  "w": "stylo (m)",
+  "fr": "J'ai oublié mon stylo, tu peux m'en prêter un ?",
+  "en": "I've forgotten my pen; can you lend me one?"
+ },
+ {
+  "w": "survêtement (m)",
+  "fr": "Pour le cours d'EPS, il faut mettre un survêtement.",
+  "en": "For PE lessons, you have to wear a tracksuit."
+ },
+ {
+  "w": "tableau (m)",
+  "fr": "Il y a un beau tableau dans le couloir de l'école.",
+  "en": "There's a beautiful picture in the school corridor."
+ },
+ {
+  "w": "tableau blanc (interactif) (m)",
+  "fr": "Le professeur écrit les devoirs sur le tableau blanc interactif.",
+  "en": "The teacher writes the homework on the interactive whiteboard."
+ },
+ {
+  "w": "tableau noir (m)",
+  "fr": "Dans l'ancienne école, il y avait un tableau noir.",
+  "en": "In the old school, there was a chalkboard."
+ },
+ {
+  "w": "taille-crayon (m)",
+  "fr": "Mon crayon est cassé, as-tu un taille-crayon ?",
+  "en": "My pencil is broken; have you got a pencil sharpener?"
+ },
+ {
+  "w": "terminale (f)",
+  "fr": "Ma sœur est en terminale, c'est sa dernière année au lycée.",
+  "en": "My sister is in the final year; it's her last year at school."
+ },
+ {
+  "w": "terrain de sport (m)",
+  "fr": "Le collège a un grand terrain de sport derrière le gymnase.",
+  "en": "The school has a big sports field behind the gym."
+ },
+ {
+  "w": "toilettes (f pl)",
+  "fr": "Excusez-moi, où sont les toilettes ?",
+  "en": "Excuse me, where are the toilets?"
+ },
+ {
+  "w": "trimestre (m)",
+  "fr": "L'année scolaire est divisée en trois trimestres.",
+  "en": "The school year is divided into three terms."
+ },
+ {
+  "w": "utile (adj)",
+  "fr": "L'anglais est très utile pour voyager.",
+  "en": "English is very useful for travelling."
+ },
+ {
+  "w": "vestiaire (m)",
+  "fr": "Nous nous changeons dans le vestiaire avant le cours d'EPS.",
+  "en": "We get changed in the changing room before PE."
+ },
+ {
+  "w": "vrai (adj)",
+  "fr": "C'est vrai, tu as tout à fait raison !",
+  "en": "That's right, you're absolutely correct!"
+ }
+]
