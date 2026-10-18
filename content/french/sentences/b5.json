@@ -1,0 +1,1817 @@
+[
+ {
+  "w": "Bac: baccalauréat",
+  "fr": "Après le bac, Hugo veut étudier la médecine à Lyon.",
+  "en": "After the bac, Hugo wants to study medicine in Lyon."
+ },
+ {
+  "w": "EPS: éducation physique et sportive",
+  "fr": "Le mardi, nous avons deux heures d'EPS au gymnase.",
+  "en": "On Tuesdays we have two hours of PE in the sports hall."
+ },
+ {
+  "w": "M.: Monsieur",
+  "fr": "M. Martin est notre nouveau professeur de maths.",
+  "en": "Mr Martin is our new maths teacher."
+ },
+ {
+  "w": "Mme: Madame",
+  "fr": "Mme Dubois travaille à la mairie depuis dix ans.",
+  "en": "Mrs Dubois has worked at the town hall for ten years."
+ },
+ {
+  "w": "Mlle: Mademoiselle",
+  "fr": "La lettre est adressée à Mlle Léa Moreau.",
+  "en": "The letter is addressed to Miss Léa Moreau."
+ },
+ {
+  "w": "ONU: Organisation des Nations Unies",
+  "fr": "L'ONU aide les enfants qui vivent dans des pays pauvres.",
+  "en": "The UN helps children who live in poor countries."
+ },
+ {
+  "w": "SNCF: Société nationale des chemins de fer français",
+  "fr": "Mon père travaille pour la SNCF comme conducteur de train.",
+  "en": "My dad works for the SNCF as a train driver."
+ },
+ {
+  "w": "TGV: Train à Grande Vitesse",
+  "fr": "On va à Marseille en TGV, c'est très rapide.",
+  "en": "We're going to Marseille by TGV; it's very fast."
+ },
+ {
+  "w": "TVA: Taxe sur la valeur ajoutée",
+  "fr": "Le prix de ce téléphone comprend la TVA.",
+  "en": "The price of this phone includes VAT."
+ },
+ {
+  "w": "UE: Union Européenne",
+  "fr": "La France fait partie de l'UE depuis le début.",
+  "en": "France has been part of the EU since the beginning."
+ },
+ {
+  "w": "à bientôt",
+  "fr": "Bon voyage, Chloé, et à bientôt !",
+  "en": "Have a good trip, Chloé, and see you soon!"
+ },
+ {
+  "w": "à demain",
+  "fr": "Je dois partir maintenant, à demain au collège !",
+  "en": "I have to go now; see you tomorrow at school!"
+ },
+ {
+  "w": "à tout à l’heure",
+  "fr": "Je vais à la boulangerie, à tout à l'heure !",
+  "en": "I'm going to the bakery; see you later!"
+ },
+ {
+  "w": "amicalement",
+  "fr": "Pour finir une lettre à un ami, on écrit souvent amicalement.",
+  "en": "To end a letter to a friend, you often write 'kind regards'."
+ },
+ {
+  "w": "au revoir",
+  "fr": "Avant de partir, Léa dit au revoir à ses grands-parents.",
+  "en": "Before leaving, Léa says goodbye to her grandparents."
+ },
+ {
+  "w": "au secours!",
+  "fr": "Au secours ! Mon petit frère est tombé dans la piscine !",
+  "en": "Help! My little brother has fallen into the pool!"
+ },
+ {
+  "w": "bonjour",
+  "fr": "Bonjour madame, je voudrais deux croissants, s'il vous plaît.",
+  "en": "Hello, madam, I'd like two croissants, please."
+ },
+ {
+  "w": "bonne journée",
+  "fr": "Merci beaucoup, monsieur, et bonne journée !",
+  "en": "Thank you very much, sir, and have a nice day!"
+ },
+ {
+  "w": "bonne nuit",
+  "fr": "Il est tard, bonne nuit et fais de beaux rêves !",
+  "en": "It's late; good night and sweet dreams!"
+ },
+ {
+  "w": "bonsoir",
+  "fr": "Bonsoir, nous avons réservé une table pour quatre personnes.",
+  "en": "Good evening, we've booked a table for four people."
+ },
+ {
+  "w": "de rien",
+  "fr": "Tu me remercies ? Mais de rien, c'est normal !",
+  "en": "You're thanking me? Oh, don't mention it!"
+ },
+ {
+  "w": "(je suis) désolé(e)",
+  "fr": "Je suis désolée, je ne peux pas venir à ta fête.",
+  "en": "I'm sorry, I can't come to your party."
+ },
+ {
+  "w": "enchanté(e)",
+  "fr": "Bonjour, je m'appelle Hugo. Enchanté de faire ta connaissance !",
+  "en": "Hello, my name is Hugo. Pleased to meet you!"
+ },
+ {
+  "w": "félicitations!",
+  "fr": "Tu as réussi ton examen ? Félicitations !",
+  "en": "You passed your exam? Congratulations!"
+ },
+ {
+  "w": "salut",
+  "fr": "Salut Karim, tu viens au match ce soir ?",
+  "en": "Hi Karim, are you coming to the match tonight?"
+ },
+ {
+  "w": "s’il vous plaît",
+  "fr": "Deux billets pour le film, s'il vous plaît.",
+  "en": "Two tickets for the film, please."
+ },
+ {
+  "w": "à",
+  "fr": "Ce week-end, nous allons à la plage à vélo.",
+  "en": "This weekend we're going to the beach by bike."
+ },
+ {
+  "w": "à cause de",
+  "fr": "Le match est annulé à cause de la pluie.",
+  "en": "The match is cancelled because of the rain."
+ },
+ {
+  "w": "à l’arrière-plan",
+  "fr": "Sur la photo, on voit des montagnes à l'arrière-plan.",
+  "en": "In the photo, you can see mountains in the background."
+ },
+ {
+  "w": "à l'extérieur de",
+  "fr": "Les élèves attendent à l'extérieur de la salle de classe.",
+  "en": "The pupils are waiting outside the classroom."
+ },
+ {
+  "w": "après",
+  "fr": "Après le dîner, je fais mes devoirs dans ma chambre.",
+  "en": "After dinner, I do my homework in my bedroom."
+ },
+ {
+  "w": "au lieu de",
+  "fr": "Bois de l'eau au lieu de boire des sodas !",
+  "en": "Drink water instead of fizzy drinks!"
+ },
+ {
+  "w": "au premier plan",
+  "fr": "Au premier plan de la photo, il y a ma petite sœur.",
+  "en": "In the foreground of the photo, there's my little sister."
+ },
+ {
+  "w": "avant",
+  "fr": "Je me brosse les dents avant de me coucher.",
+  "en": "I brush my teeth before going to bed."
+ },
+ {
+  "w": "avec",
+  "fr": "Le samedi, je joue au tennis avec mon meilleur ami.",
+  "en": "On Saturdays I play tennis with my best friend."
+ },
+ {
+  "w": "chez",
+  "fr": "Ce soir, je dors chez ma grand-mère.",
+  "en": "Tonight I'm sleeping at my grandmother's house."
+ },
+ {
+  "w": "contre",
+  "fr": "Demain, notre équipe joue contre le collège voisin.",
+  "en": "Tomorrow our team is playing against the neighbouring school."
+ },
+ {
+  "w": "dans",
+  "fr": "Mes livres sont dans mon sac à dos.",
+  "en": "My books are in my rucksack."
+ },
+ {
+  "w": "en cas de",
+  "fr": "En cas de pluie, le pique-nique aura lieu au gymnase.",
+  "en": "In case of rain, the picnic will take place in the sports hall."
+ },
+ {
+  "w": "en haut",
+  "fr": "Ma chambre est en haut, à côté de la salle de bains.",
+  "en": "My bedroom is upstairs, next to the bathroom."
+ },
+ {
+  "w": "entre",
+  "fr": "La pharmacie se trouve entre la banque et la poste.",
+  "en": "The chemist's is between the bank and the post office."
+ },
+ {
+  "w": "environ",
+  "fr": "Le trajet en bus dure environ vingt minutes.",
+  "en": "The bus journey takes about twenty minutes."
+ },
+ {
+  "w": "jusqu'à",
+  "fr": "Le magasin est ouvert jusqu'à vingt heures.",
+  "en": "The shop is open until eight o'clock in the evening."
+ },
+ {
+  "w": "loin de",
+  "fr": "Notre maison n'est pas loin de la gare.",
+  "en": "Our house isn't far from the station."
+ },
+ {
+  "w": "par",
+  "fr": "Pour aller au parc, on passe par le centre-ville.",
+  "en": "To get to the park, we go through the town centre."
+ },
+ {
+  "w": "parmi",
+  "fr": "Parmi tous mes amis, Inès est la plus drôle.",
+  "en": "Among all my friends, Inès is the funniest."
+ },
+ {
+  "w": "pendant",
+  "fr": "Pendant les vacances, je travaille dans un café.",
+  "en": "During the holidays, I work in a café."
+ },
+ {
+  "w": "pour",
+  "fr": "J'ai acheté un cadeau pour l'anniversaire de ma mère.",
+  "en": "I bought a present for my mum's birthday."
+ },
+ {
+  "w": "près de",
+  "fr": "J'habite près de la mer, dans une petite ville.",
+  "en": "I live near the sea, in a small town."
+ },
+ {
+  "w": "sans",
+  "fr": "Mon père ne peut pas commencer la journée sans un café.",
+  "en": "My dad can't start the day without a coffee."
+ },
+ {
+  "w": "de",
+  "fr": "C'est le vélo de mon frère, pas le mien.",
+  "en": "It's my brother's bike, not mine."
+ },
+ {
+  "w": "depuis",
+  "fr": "Je joue du piano depuis l'âge de six ans.",
+  "en": "I've been playing the piano since I was six."
+ },
+ {
+  "w": "derrière",
+  "fr": "Le jardin se trouve derrière la maison.",
+  "en": "The garden is behind the house."
+ },
+ {
+  "w": "devant",
+  "fr": "Je t'attends devant le cinéma à huit heures.",
+  "en": "I'll wait for you in front of the cinema at eight o'clock."
+ },
+ {
+  "w": "en",
+  "fr": "En été, nous passons nos vacances en Espagne.",
+  "en": "In summer, we spend our holidays in Spain."
+ },
+ {
+  "w": "sauf",
+  "fr": "Je mange de tout sauf les champignons.",
+  "en": "I eat everything except mushrooms."
+ },
+ {
+  "w": "selon",
+  "fr": "Selon la météo, il va faire beau demain.",
+  "en": "According to the weather forecast, it's going to be nice tomorrow."
+ },
+ {
+  "w": "sous",
+  "fr": "Le chat dort sous la table de la cuisine.",
+  "en": "The cat is sleeping under the kitchen table."
+ },
+ {
+  "w": "sur",
+  "fr": "Nous avons regardé un documentaire sur les animaux d'Afrique.",
+  "en": "We watched a documentary about African animals."
+ },
+ {
+  "w": "actuel",
+  "fr": "Dans le monde actuel, presque tout le monde a un portable.",
+  "en": "In today's world, almost everyone has a mobile phone."
+ },
+ {
+  "w": "affreux(~euse)",
+  "fr": "Il a fait un temps affreux pendant tout le week-end.",
+  "en": "The weather was dreadful all weekend."
+ },
+ {
+  "w": "ancien(ne)",
+  "fr": "Mon ancienne école était plus petite que celle-ci.",
+  "en": "My former school was smaller than this one."
+ },
+ {
+  "w": "autre",
+  "fr": "Je préfère l'autre robe, la bleue.",
+  "en": "I prefer the other dress, the blue one."
+ },
+ {
+  "w": "bête",
+  "fr": "Je suis bête, j'ai oublié mes clés à la maison !",
+  "en": "How silly of me, I've left my keys at home!"
+ },
+ {
+  "w": "beau (belle)",
+  "fr": "Quelle belle maison, avec un grand jardin !",
+  "en": "What a beautiful house, with a big garden!"
+ },
+ {
+  "w": "bon(ne)",
+  "fr": "Ce restaurant est très bon et pas trop cher.",
+  "en": "This restaurant is very good and not too expensive."
+ },
+ {
+  "w": "bref (brève)",
+  "fr": "Le professeur nous a fait une brève présentation du livre.",
+  "en": "The teacher gave us a brief presentation of the book."
+ },
+ {
+  "w": "bruyant",
+  "fr": "Mon quartier est trop bruyant la nuit à cause des voitures.",
+  "en": "My neighbourhood is too noisy at night because of the cars."
+ },
+ {
+  "w": "cassé(e)",
+  "fr": "Je ne peux pas t'appeler, mon portable est cassé.",
+  "en": "I can't call you; my mobile is broken."
+ },
+ {
+  "w": "charmant",
+  "fr": "Nous avons logé dans un petit village charmant en Provence.",
+  "en": "We stayed in a charming little village in Provence."
+ },
+ {
+  "w": "chouette",
+  "fr": "Ton nouveau vélo est vraiment chouette !",
+  "en": "Your new bike is really great!"
+ },
+ {
+  "w": "confortable",
+  "fr": "Le lit de l'hôtel était grand et très confortable.",
+  "en": "The hotel bed was big and very comfortable."
+ },
+ {
+  "w": "content",
+  "fr": "Je suis content parce que j'ai eu une bonne note.",
+  "en": "I'm happy because I got a good mark."
+ },
+ {
+  "w": "dangereux",
+  "fr": "C'est dangereux de traverser la rue sans regarder.",
+  "en": "It's dangerous to cross the road without looking."
+ },
+ {
+  "w": "de bonne humeur",
+  "fr": "Ce matin, mon père est de bonne humeur, il chante.",
+  "en": "This morning my dad is in a good mood; he's singing."
+ },
+ {
+  "w": "debout (inv)",
+  "fr": "Il n'y a plus de places, alors nous restons debout.",
+  "en": "There are no seats left, so we stay standing."
+ },
+ {
+  "w": "dégoûtant(e)",
+  "fr": "Beurk, cette soupe froide est dégoûtante !",
+  "en": "Yuck, this cold soup is disgusting!"
+ },
+ {
+  "w": "dernier (dernière)",
+  "fr": "Le dernier bus part à onze heures du soir.",
+  "en": "The last bus leaves at eleven at night."
+ },
+ {
+  "w": "désolé(e)",
+  "fr": "Nous sommes désolés pour le retard du train.",
+  "en": "We are very sorry for the delay to the train."
+ },
+ {
+  "w": "d'une grande valeur",
+  "fr": "Ma grand-mère m'a donné une bague d'une grande valeur.",
+  "en": "My grandmother gave me a very valuable ring."
+ },
+ {
+  "w": "dur(e)",
+  "fr": "Le travail à la ferme est dur, surtout en hiver.",
+  "en": "Work on the farm is hard, especially in winter."
+ },
+ {
+  "w": "dynamique",
+  "fr": "Notre professeur d'EPS est jeune et très dynamique.",
+  "en": "Our PE teacher is young and very dynamic."
+ },
+ {
+  "w": "efficace",
+  "fr": "Ce médicament est très efficace contre le mal de tête.",
+  "en": "This medicine is very effective against headaches."
+ },
+ {
+  "w": "en colère",
+  "fr": "Ma mère est en colère parce que ma chambre est sale.",
+  "en": "My mum is angry because my room is dirty."
+ },
+ {
+  "w": "épuisé",
+  "fr": "Après le marathon, Karim était complètement épuisé.",
+  "en": "After the marathon, Karim was completely exhausted."
+ },
+ {
+  "w": "léger (légère)",
+  "fr": "Prends ce sac, il est plus léger que l'autre.",
+  "en": "Take this bag; it's lighter than the other one."
+ },
+ {
+  "w": "lourd(e)",
+  "fr": "Ma valise est trop lourde, je ne peux pas la porter.",
+  "en": "My suitcase is too heavy; I can't carry it."
+ },
+ {
+  "w": "magnifique",
+  "fr": "De notre balcon, on a une vue magnifique sur la mer.",
+  "en": "From our balcony we have a magnificent view of the sea."
+ },
+ {
+  "w": "marrant",
+  "fr": "Ce film est vraiment marrant, j'ai beaucoup ri.",
+  "en": "This film is really funny; I laughed a lot."
+ },
+ {
+  "w": "mauvais(e)",
+  "fr": "J'ai eu une mauvaise note en histoire cette semaine.",
+  "en": "I got a bad mark in history this week."
+ },
+ {
+  "w": "meilleur(e)",
+  "fr": "Cette pizza est meilleure que celle d'hier soir.",
+  "en": "This pizza is better than the one last night."
+ },
+ {
+  "w": "merveilleux(~euse)",
+  "fr": "Nous avons passé des vacances merveilleuses en Grèce.",
+  "en": "We had a marvellous holiday in Greece."
+ },
+ {
+  "w": "même",
+  "fr": "Léa et moi, nous avons le même âge.",
+  "en": "Léa and I are the same age."
+ },
+ {
+  "w": "moche",
+  "fr": "Je trouve ce pull vraiment moche, je ne le porte jamais.",
+  "en": "I find this jumper really ugly; I never wear it."
+ },
+ {
+  "w": "mûr(e)",
+  "fr": "Ces bananes ne sont pas encore mûres.",
+  "en": "These bananas aren't ripe yet."
+ },
+ {
+  "w": "nécessaire",
+  "fr": "Il est nécessaire de bien dormir avant un examen.",
+  "en": "It's necessary to sleep well before an exam."
+ },
+ {
+  "w": "neuf (neuve)",
+  "fr": "Mes chaussures sont neuves, je les ai achetées hier.",
+  "en": "My shoes are new; I bought them yesterday."
+ },
+ {
+  "w": "nombreux(~euse)",
+  "fr": "Il y a de nombreux touristes à Paris en été.",
+  "en": "There are many tourists in Paris in summer."
+ },
+ {
+  "w": "nouveau (nouvelle)",
+  "fr": "Nous avons une nouvelle élève dans la classe.",
+  "en": "We have a new pupil in the class."
+ },
+ {
+  "w": "pareil",
+  "fr": "Nos deux sacs sont pareils, ne les mélange pas !",
+  "en": "Our two bags are alike, so don't mix them up!"
+ },
+ {
+  "w": "parfait(e)",
+  "fr": "Le temps était parfait pour un pique-nique.",
+  "en": "The weather was perfect for a picnic."
+ },
+ {
+  "w": "pire",
+  "fr": "Ce film est encore pire que le premier.",
+  "en": "This film is even worse than the first one."
+ },
+ {
+  "w": "plein(e)",
+  "fr": "Le train était plein, il n'y avait plus de places.",
+  "en": "The train was full; there were no seats left."
+ },
+ {
+  "w": "pressé(e)",
+  "fr": "Désolée, je ne peux pas parler, je suis pressée.",
+  "en": "Sorry, I can't talk, I'm in a hurry."
+ },
+ {
+  "w": "prochain(e)",
+  "fr": "La semaine prochaine, nous partons en voyage scolaire.",
+  "en": "Next week we're going on a school trip."
+ },
+ {
+  "w": "proche",
+  "fr": "La gare est proche de l'hôtel, à cinq minutes à pied.",
+  "en": "The station is near the hotel, five minutes' walk away."
+ },
+ {
+  "w": "propre",
+  "fr": "Ma sœur a sa propre chambre, mais je partage la mienne.",
+  "en": "My sister has her own room, but I share mine."
+ },
+ {
+  "w": "reconnaissant(e)",
+  "fr": "Je suis très reconnaissante pour ton aide.",
+  "en": "I am very grateful for your help."
+ },
+ {
+  "w": "réel(le)",
+  "fr": "Ce film est inspiré de faits réels.",
+  "en": "This film is based on real events."
+ },
+ {
+  "w": "sale",
+  "fr": "Mets ton jean sale dans la machine à laver.",
+  "en": "Put your dirty jeans in the washing machine."
+ },
+ {
+  "w": "salé",
+  "fr": "Je préfère les crêpes salées aux crêpes sucrées.",
+  "en": "I prefer savoury pancakes to sweet ones."
+ },
+ {
+  "w": "satisfait",
+  "fr": "Le professeur est satisfait de nos résultats.",
+  "en": "The teacher is satisfied with our results."
+ },
+ {
+  "w": "sensass (inv)",
+  "fr": "Le concert d'hier soir était vraiment sensass !",
+  "en": "Last night's concert was really sensational!"
+ },
+ {
+  "w": "faible",
+  "fr": "Je suis faible en maths, mais fort en anglais.",
+  "en": "I'm weak at maths, but strong at English."
+ },
+ {
+  "w": "fatigant(e)",
+  "fr": "La randonnée en montagne était longue et fatigante.",
+  "en": "The mountain hike was long and tiring."
+ },
+ {
+  "w": "fatigué",
+  "fr": "Je suis fatigué parce que je me suis couché tard.",
+  "en": "I'm tired because I went to bed late."
+ },
+ {
+  "w": "faux (fausse)",
+  "fr": "Cette information est fausse, il ne faut pas la croire.",
+  "en": "This information is false; you mustn't believe it."
+ },
+ {
+  "w": "favori (favorite)",
+  "fr": "Ma matière favorite, c'est la géographie.",
+  "en": "My favourite subject is geography."
+ },
+ {
+  "w": "fermé(e) à clef",
+  "fr": "Je ne peux pas entrer, la porte est fermée à clef.",
+  "en": "I can't get in; the door is locked."
+ },
+ {
+  "w": "formidable",
+  "fr": "On a passé une soirée formidable chez Chloé.",
+  "en": "We had a brilliant evening at Chloé's."
+ },
+ {
+  "w": "fort(e)",
+  "fr": "Mon grand frère est très fort, il fait de la musculation.",
+  "en": "My big brother is very strong; he does weight training."
+ },
+ {
+  "w": "gros(se)",
+  "fr": "Il y a un gros chien noir devant la maison.",
+  "en": "There's a big black dog in front of the house."
+ },
+ {
+  "w": "haut(e)",
+  "fr": "Cette montagne est très haute et couverte de neige.",
+  "en": "This mountain is very high and covered in snow."
+ },
+ {
+  "w": "incroyable",
+  "fr": "C'est incroyable, notre équipe a gagné le championnat !",
+  "en": "It's unbelievable, our team won the championship!"
+ },
+ {
+  "w": "jeune",
+  "fr": "Mes parents sont encore jeunes et très sportifs.",
+  "en": "My parents are still young and very sporty."
+ },
+ {
+  "w": "sérieux(~euse)",
+  "fr": "Inès est une élève sérieuse qui travaille beaucoup.",
+  "en": "Inès is a serious pupil who works hard."
+ },
+ {
+  "w": "seul(e)",
+  "fr": "Le soir, ma grand-mère est souvent seule à la maison.",
+  "en": "In the evening, my grandmother is often alone at home."
+ },
+ {
+  "w": "silencieux (~ieuse)",
+  "fr": "La bibliothèque est très silencieuse le matin.",
+  "en": "The library is very quiet in the morning."
+ },
+ {
+  "w": "sûr(e) (adj)",
+  "fr": "Tu es sûre que le film commence à huit heures ?",
+  "en": "Are you sure the film starts at eight o'clock?"
+ },
+ {
+  "w": "tard",
+  "fr": "Le samedi, je me lève tard, vers onze heures.",
+  "en": "On Saturdays I get up late, around eleven."
+ },
+ {
+  "w": "tôt",
+  "fr": "Pendant la semaine, je me lève tôt pour prendre le bus.",
+  "en": "During the week, I get up early to catch the bus."
+ },
+ {
+  "w": "tranquille",
+  "fr": "J'aime habiter à la campagne parce que c'est tranquille.",
+  "en": "I like living in the countryside because it's peaceful."
+ },
+ {
+  "w": "typique",
+  "fr": "La raclette est un plat typique de la montagne.",
+  "en": "Raclette is a typical dish from the mountains."
+ },
+ {
+  "w": "utile",
+  "fr": "Un dictionnaire est très utile pour apprendre une langue.",
+  "en": "A dictionary is very useful for learning a language."
+ },
+ {
+  "w": "valable",
+  "fr": "Ton billet de train est valable pendant une semaine.",
+  "en": "Your train ticket is valid for one week."
+ },
+ {
+  "w": "vrai(e)",
+  "fr": "C'est vrai que tu pars vivre au Canada ?",
+  "en": "Is it true that you're going to live in Canada?"
+ },
+ {
+  "w": "accepter",
+  "fr": "J'accepte avec plaisir ton invitation à dîner.",
+  "en": "I accept your dinner invitation with pleasure."
+ },
+ {
+  "w": "accueillir",
+  "fr": "Ma famille va accueillir une correspondante anglaise en mai.",
+  "en": "My family is going to welcome an English exchange partner in May."
+ },
+ {
+  "w": "accompagner",
+  "fr": "Est-ce que tu peux m'accompagner chez le dentiste ?",
+  "en": "Can you come with me to the dentist's?"
+ },
+ {
+  "w": "acheter",
+  "fr": "Je vais acheter du pain à la boulangerie.",
+  "en": "I'm going to buy some bread at the bakery."
+ },
+ {
+  "w": "aider",
+  "fr": "Le week-end, j'aide mon père dans le jardin.",
+  "en": "At weekends, I help my dad in the garden."
+ },
+ {
+  "w": "aimer",
+  "fr": "J'aime beaucoup mes grands-parents, ils sont très gentils.",
+  "en": "I love my grandparents very much; they are very kind."
+ },
+ {
+  "w": "aller",
+  "fr": "Demain, nous allons au musée avec la classe.",
+  "en": "Tomorrow we're going to the museum with the class."
+ },
+ {
+  "w": "allumer",
+  "fr": "Peux-tu allumer la lumière, s'il te plaît ?",
+  "en": "Can you switch on the light, please?"
+ },
+ {
+  "w": "améliorer",
+  "fr": "Je regarde des films français pour améliorer mon accent.",
+  "en": "I watch French films to improve my accent."
+ },
+ {
+  "w": "appeler",
+  "fr": "Je vais appeler ma grand-mère pour son anniversaire.",
+  "en": "I'm going to ring my grandmother for her birthday."
+ },
+ {
+  "w": "apprendre",
+  "fr": "J'apprends l'espagnol depuis deux ans au collège.",
+  "en": "I've been learning Spanish at school for two years."
+ },
+ {
+  "w": "arrêter",
+  "fr": "Mon oncle a arrêté de fumer l'année dernière.",
+  "en": "My uncle stopped smoking last year."
+ },
+ {
+  "w": "arriver",
+  "fr": "Le train arrive à Paris à midi.",
+  "en": "The train arrives in Paris at midday."
+ },
+ {
+  "w": "attendre",
+  "fr": "J'attends le bus depuis vingt minutes !",
+  "en": "I've been waiting for the bus for twenty minutes!"
+ },
+ {
+  "w": "atterrir",
+  "fr": "Notre avion va atterrir à Nice dans dix minutes.",
+  "en": "Our plane is going to land in Nice in ten minutes."
+ },
+ {
+  "w": "attraper",
+  "fr": "Le chat essaie d'attraper une souris dans le jardin.",
+  "en": "The cat is trying to catch a mouse in the garden."
+ },
+ {
+  "w": "avoir",
+  "fr": "J'ai deux frères et une petite sœur.",
+  "en": "I have two brothers and a little sister."
+ },
+ {
+  "w": "avoir besoin de",
+  "fr": "J'ai besoin d'un stylo pour l'examen.",
+  "en": "I need a pen for the exam."
+ },
+ {
+  "w": "avoir envie de",
+  "fr": "J'ai envie d'aller au cinéma ce soir.",
+  "en": "I want to go to the cinema tonight."
+ },
+ {
+  "w": "avoir l’intention de",
+  "fr": "J'ai l'intention de faire un apprentissage après le lycée.",
+  "en": "I intend to do an apprenticeship after leaving school."
+ },
+ {
+  "w": "avoir lieu",
+  "fr": "Le concert aura lieu samedi soir dans le parc.",
+  "en": "The concert will take place on Saturday evening in the park."
+ },
+ {
+  "w": "nager",
+  "fr": "En été, je nage dans la mer tous les jours.",
+  "en": "In summer, I swim in the sea every day."
+ },
+ {
+  "w": "naître",
+  "fr": "Je suis né à Lyon, mais j'habite à Paris.",
+  "en": "I was born in Lyon, but I live in Paris."
+ },
+ {
+  "w": "naviguer",
+  "fr": "Le soir, je navigue sur Internet pendant une heure.",
+  "en": "In the evening, I browse the internet for an hour."
+ },
+ {
+  "w": "nettoyer",
+  "fr": "Le samedi, je dois nettoyer ma chambre.",
+  "en": "On Saturdays I have to clean my room."
+ },
+ {
+  "w": "oublier",
+  "fr": "Zut, j'ai oublié de faire mes devoirs de français !",
+  "en": "Oh no, I forgot to do my French homework!"
+ },
+ {
+  "w": "ouvrir",
+  "fr": "Il fait chaud, tu peux ouvrir la fenêtre ?",
+  "en": "It's hot; can you open the window?"
+ },
+ {
+  "w": "pardonner",
+  "fr": "Pardonnez-moi, monsieur, où est la gare ?",
+  "en": "Excuse me, sir, where is the station?"
+ },
+ {
+  "w": "partir",
+  "fr": "Nous partons en vacances demain matin.",
+  "en": "We're going on holiday tomorrow morning."
+ },
+ {
+  "w": "passer",
+  "fr": "J'ai passé deux semaines chez mon oncle en Bretagne.",
+  "en": "I spent two weeks at my uncle's in Brittany."
+ },
+ {
+  "w": "payer",
+  "fr": "Je peux payer par carte bancaire ?",
+  "en": "Can I pay by card?"
+ },
+ {
+  "w": "penser",
+  "fr": "Je pense que le français est une belle langue.",
+  "en": "I think French is a beautiful language."
+ },
+ {
+  "w": "perdre",
+  "fr": "J'ai perdu mon porte-monnaie dans le bus.",
+  "en": "I lost my purse on the bus."
+ },
+ {
+  "w": "permettre",
+  "fr": "Mes parents ne me permettent pas de sortir le soir.",
+  "en": "My parents don't allow me to go out in the evening."
+ },
+ {
+  "w": "piquer",
+  "fr": "Aïe ! Une abeille m'a piqué au bras !",
+  "en": "Ouch! A bee stung me on the arm!"
+ },
+ {
+  "w": "plaire",
+  "fr": "Ce nouveau jeu vidéo me plaît beaucoup.",
+  "en": "I really like this new video game."
+ },
+ {
+  "w": "pleurer",
+  "fr": "Le bébé pleure parce qu'il a faim.",
+  "en": "The baby is crying because he's hungry."
+ },
+ {
+  "w": "pleuvoir",
+  "fr": "Il pleut beaucoup en Bretagne en automne.",
+  "en": "It rains a lot in Brittany in autumn."
+ },
+ {
+  "w": "plonger",
+  "fr": "Hugo aime plonger dans la piscine du camping.",
+  "en": "Hugo loves diving into the campsite swimming pool."
+ },
+ {
+  "w": "poser",
+  "fr": "Pose ton sac sur la chaise, s'il te plaît.",
+  "en": "Put your bag on the chair, please."
+ },
+ {
+  "w": "boire",
+  "fr": "Je bois un verre de lait chaque matin.",
+  "en": "I drink a glass of milk every morning."
+ },
+ {
+  "w": "bouder",
+  "fr": "Mon petit frère boude parce qu'il ne peut pas jouer dehors.",
+  "en": "My little brother is sulking because he can't play outside."
+ },
+ {
+  "w": "brûler",
+  "fr": "Attention, le four est chaud, tu vas te brûler !",
+  "en": "Careful, the oven is hot, you'll burn yourself!"
+ },
+ {
+  "w": "cacher",
+  "fr": "Ma mère cache les bonbons dans le placard.",
+  "en": "My mum hides the sweets in the cupboard."
+ },
+ {
+  "w": "changer",
+  "fr": "Je voudrais changer de place, je ne vois pas le tableau.",
+  "en": "I'd like to change seats; I can't see the board."
+ },
+ {
+  "w": "chanter",
+  "fr": "Ma sœur chante dans la chorale du collège.",
+  "en": "My sister sings in the school choir."
+ },
+ {
+  "w": "chercher",
+  "fr": "Je cherche mes lunettes, tu les as vues ?",
+  "en": "I'm looking for my glasses; have you seen them?"
+ },
+ {
+  "w": "choisir",
+  "fr": "C'est difficile de choisir un cadeau pour mon père.",
+  "en": "It's difficult to choose a present for my dad."
+ },
+ {
+  "w": "choquer",
+  "fr": "Son comportement impoli a choqué tout le monde.",
+  "en": "His rude behaviour shocked everyone."
+ },
+ {
+  "w": "cliquer",
+  "fr": "Pour télécharger le document, il faut cliquer ici.",
+  "en": "To download the document, you have to click here."
+ },
+ {
+  "w": "commander",
+  "fr": "Au restaurant, j'ai commandé un steak-frites.",
+  "en": "At the restaurant, I ordered steak and chips."
+ },
+ {
+  "w": "commencer",
+  "fr": "Les cours commencent à huit heures et demie.",
+  "en": "Lessons start at half past eight."
+ },
+ {
+  "w": "comprendre",
+  "fr": "Je ne comprends pas cet exercice, tu peux m'aider ?",
+  "en": "I don't understand this exercise; can you help me?"
+ },
+ {
+  "w": "compter",
+  "fr": "Mon petit frère sait compter jusqu'à cent.",
+  "en": "My little brother can count to a hundred."
+ },
+ {
+  "w": "conduire",
+  "fr": "Mon père me conduit au collège en voiture.",
+  "en": "My dad drives me to school."
+ },
+ {
+  "w": "connaître",
+  "fr": "Tu connais la nouvelle voisine du troisième étage ?",
+  "en": "Do you know the new neighbour on the third floor?"
+ },
+ {
+  "w": "conseiller",
+  "fr": "Le médecin m'a conseillé de faire plus de sport.",
+  "en": "The doctor advised me to do more sport."
+ },
+ {
+  "w": "continuer",
+  "fr": "Continuez tout droit, puis tournez à gauche.",
+  "en": "Carry on straight ahead, then turn left."
+ },
+ {
+  "w": "contrôler",
+  "fr": "Dans le train, un employé contrôle les billets des passagers.",
+  "en": "On the train, an employee checks the passengers' tickets."
+ },
+ {
+  "w": "copier",
+  "fr": "Il est interdit de copier sur son voisin pendant l'examen.",
+  "en": "It's forbidden to copy from your neighbour during the exam."
+ },
+ {
+  "w": "couper",
+  "fr": "Peux-tu couper le gâteau en huit morceaux ?",
+  "en": "Can you cut the cake into eight pieces?"
+ },
+ {
+  "w": "coûter",
+  "fr": "Combien coûte ce tee-shirt rouge ?",
+  "en": "How much does this red T-shirt cost?"
+ },
+ {
+  "w": "courir",
+  "fr": "Le dimanche matin, je cours dans le parc.",
+  "en": "On Sunday mornings, I go running in the park."
+ },
+ {
+  "w": "croire",
+  "fr": "Je crois qu'il va pleuvoir cet après-midi.",
+  "en": "I think it's going to rain this afternoon."
+ },
+ {
+  "w": "danser",
+  "fr": "À la fête, nous avons dansé toute la nuit.",
+  "en": "At the party, we danced all night."
+ },
+ {
+  "w": "décider",
+  "fr": "Nous avons décidé de partir en Italie cet été.",
+  "en": "We've decided to go to Italy this summer."
+ },
+ {
+  "w": "décoller",
+  "fr": "L'avion pour Londres va décoller dans cinq minutes.",
+  "en": "The plane to London is going to take off in five minutes."
+ },
+ {
+  "w": "décrire",
+  "fr": "Peux-tu décrire ta maison idéale ?",
+  "en": "Can you describe your ideal house?"
+ },
+ {
+  "w": "demander",
+  "fr": "Je vais demander l'addition au serveur.",
+  "en": "I'm going to ask the waiter for the bill."
+ },
+ {
+  "w": "dépenser",
+  "fr": "Je dépense tout mon argent de poche en vêtements.",
+  "en": "I spend all my pocket money on clothes."
+ },
+ {
+  "w": "descendre",
+  "fr": "Nous descendons du bus devant la mairie.",
+  "en": "We get off the bus in front of the town hall."
+ },
+ {
+  "w": "désirer",
+  "fr": "Bonjour monsieur, qu'est-ce que vous désirez boire ?",
+  "en": "Hello, sir, what would you like to drink?"
+ },
+ {
+  "w": "dessiner",
+  "fr": "Ma petite sœur adore dessiner des animaux.",
+  "en": "My little sister loves drawing animals."
+ },
+ {
+  "w": "pousser",
+  "fr": "Pour ouvrir la porte, il faut pousser fort.",
+  "en": "To open the door, you have to push hard."
+ },
+ {
+  "w": "pouvoir",
+  "fr": "Est-ce que je peux aller aux toilettes, s'il vous plaît ?",
+  "en": "May I go to the toilet, please?"
+ },
+ {
+  "w": "pratiquer",
+  "fr": "Je pratique la natation trois fois par semaine.",
+  "en": "I go swimming three times a week."
+ },
+ {
+  "w": "prendre",
+  "fr": "Le matin, je prends le bus pour aller au lycée.",
+  "en": "In the morning, I take the bus to go to school."
+ },
+ {
+  "w": "préférer",
+  "fr": "Je préfère le thé au café, surtout le matin.",
+  "en": "I prefer tea to coffee, especially in the morning."
+ },
+ {
+  "w": "préparer",
+  "fr": "Je prépare mes examens, alors je révise tous les soirs.",
+  "en": "I'm preparing for my exams, so I revise every evening."
+ },
+ {
+  "w": "présenter",
+  "fr": "Maman, je te présente mon ami Karim.",
+  "en": "Mum, let me introduce my friend Karim."
+ },
+ {
+  "w": "prêter",
+  "fr": "Tu peux me prêter ton stylo, s'il te plaît ?",
+  "en": "Can you lend me your pen, please?"
+ },
+ {
+  "w": "quitter",
+  "fr": "Je quitte la maison à sept heures et demie.",
+  "en": "I leave the house at half past seven."
+ },
+ {
+  "w": "raconter",
+  "fr": "Mon grand-père nous raconte des histoires de son enfance.",
+  "en": "My grandfather tells us stories from his childhood."
+ },
+ {
+  "w": "ralentir",
+  "fr": "Les voitures doivent ralentir devant l'école.",
+  "en": "Cars must slow down in front of the school."
+ },
+ {
+  "w": "rater",
+  "fr": "Dépêche-toi, on va rater le train !",
+  "en": "Hurry up, we're going to miss the train!"
+ },
+ {
+  "w": "recevoir",
+  "fr": "J'ai reçu beaucoup de cadeaux pour mon anniversaire.",
+  "en": "I received lots of presents for my birthday."
+ },
+ {
+  "w": "regarder",
+  "fr": "Le soir, je regarde des séries avec ma sœur.",
+  "en": "In the evening, I watch TV series with my sister."
+ },
+ {
+  "w": "regretter",
+  "fr": "Je regrette, mais je ne peux pas venir samedi.",
+  "en": "I'm sorry, but I can't come on Saturday."
+ },
+ {
+  "w": "remercier",
+  "fr": "Je voudrais vous remercier pour votre aide.",
+  "en": "I'd like to thank you for your help."
+ },
+ {
+  "w": "remplir",
+  "fr": "Remplissez ce formulaire avec votre nom et votre adresse.",
+  "en": "Fill in this form with your name and address."
+ },
+ {
+  "w": "rencontrer",
+  "fr": "J'ai rencontré mon meilleur ami à l'école primaire.",
+  "en": "I met my best friend at primary school."
+ },
+ {
+  "w": "rentrer",
+  "fr": "Je rentre à la maison vers cinq heures.",
+  "en": "I go home at around five o'clock."
+ },
+ {
+  "w": "réparer",
+  "fr": "Mon père répare mon vélo dans le garage.",
+  "en": "My dad is repairing my bike in the garage."
+ },
+ {
+  "w": "répéter",
+  "fr": "Pouvez-vous répéter, s'il vous plaît ? Je n'ai pas compris.",
+  "en": "Could you repeat that, please? I didn't understand."
+ },
+ {
+  "w": "répondre",
+  "fr": "Je réponds toujours vite aux messages de mes amis.",
+  "en": "I always reply quickly to my friends' messages."
+ },
+ {
+  "w": "réserver",
+  "fr": "Nous avons réservé une chambre dans un hôtel près de la plage.",
+  "en": "We've booked a room in a hotel near the beach."
+ },
+ {
+  "w": "respirer",
+  "fr": "À la montagne, on respire de l'air pur.",
+  "en": "In the mountains, you breathe pure air."
+ },
+ {
+  "w": "rester",
+  "fr": "Ce week-end, je reste à la maison pour réviser.",
+  "en": "This weekend I'm staying at home to revise."
+ },
+ {
+  "w": "résumer",
+  "fr": "Pour les devoirs, il faut résumer le texte en dix lignes.",
+  "en": "For homework, we have to summarise the text in ten lines."
+ },
+ {
+  "w": "retourner",
+  "fr": "Je me suis retourné quand quelqu'un a crié mon nom.",
+  "en": "I turned round when someone shouted my name."
+ },
+ {
+  "w": "réussir",
+  "fr": "J'espère réussir tous mes examens cette année.",
+  "en": "I hope to pass all my exams this year."
+ },
+ {
+  "w": "revenir, retourner",
+  "fr": "Mon frère revient de Londres demain soir.",
+  "en": "My brother is coming back from London tomorrow evening."
+ },
+ {
+  "w": "rire",
+  "fr": "Mes amis me font toujours rire.",
+  "en": "My friends always make me laugh."
+ },
+ {
+  "w": "s’amuser",
+  "fr": "On s'amuse bien à la fête de Léa !",
+  "en": "We're having great fun at Léa's party!"
+ },
+ {
+  "w": "s’arrêter",
+  "fr": "Le bus s'arrête devant le collège.",
+  "en": "The bus stops in front of the school."
+ },
+ {
+  "w": "s'asseoir",
+  "fr": "Asseyez-vous, s'il vous plaît, le cours va commencer.",
+  "en": "Sit down, please; the lesson is about to start."
+ },
+ {
+  "w": "sauter",
+  "fr": "Le chat a sauté sur la table de la cuisine.",
+  "en": "The cat jumped onto the kitchen table."
+ },
+ {
+  "w": "détester",
+  "fr": "Je déteste me lever tôt le dimanche.",
+  "en": "I hate getting up early on Sundays."
+ },
+ {
+  "w": "détruire",
+  "fr": "La tempête a détruit beaucoup d'arbres dans la forêt.",
+  "en": "The storm destroyed lots of trees in the forest."
+ },
+ {
+  "w": "devenir",
+  "fr": "Plus tard, je voudrais devenir vétérinaire.",
+  "en": "Later on, I'd like to become a vet."
+ },
+ {
+  "w": "devoir",
+  "fr": "Je dois finir mes devoirs avant le dîner.",
+  "en": "I have to finish my homework before dinner."
+ },
+ {
+  "w": "dire",
+  "fr": "Qu'est-ce que tu dis ? Je n'entends rien.",
+  "en": "What are you saying? I can't hear anything."
+ },
+ {
+  "w": "disputer",
+  "fr": "Mon frère et moi, nous nous disputons souvent.",
+  "en": "My brother and I often argue."
+ },
+ {
+  "w": "donner",
+  "fr": "Je donne mes vieux vêtements à une association.",
+  "en": "I give my old clothes to a charity."
+ },
+ {
+  "w": "donner sur",
+  "fr": "Notre chambre d'hôtel donne sur la mer.",
+  "en": "Our hotel room overlooks the sea."
+ },
+ {
+  "w": "dormir",
+  "fr": "Le week-end, je dors jusqu'à dix heures.",
+  "en": "At weekends, I sleep until ten o'clock."
+ },
+ {
+  "w": "doubler",
+  "fr": "Il est dangereux de doubler dans un virage.",
+  "en": "It's dangerous to overtake on a bend."
+ },
+ {
+  "w": "durer",
+  "fr": "Le film dure deux heures et demie.",
+  "en": "The film lasts two and a half hours."
+ },
+ {
+  "w": "échanger",
+  "fr": "Je voudrais échanger ce pull contre une taille plus grande.",
+  "en": "I'd like to exchange this jumper for a bigger size."
+ },
+ {
+  "w": "écouter",
+  "fr": "J'écoute de la musique dans le bus.",
+  "en": "I listen to music on the bus."
+ },
+ {
+  "w": "écrire",
+  "fr": "J'écris une lettre à ma correspondante française.",
+  "en": "I'm writing a letter to my French penfriend."
+ },
+ {
+  "w": "effacer",
+  "fr": "Le professeur efface le tableau à la fin du cours.",
+  "en": "The teacher wipes the board at the end of the lesson."
+ },
+ {
+  "w": "embrasser",
+  "fr": "Avant de partir, j'embrasse ma mère.",
+  "en": "Before leaving, I kiss my mum."
+ },
+ {
+  "w": "emprunter",
+  "fr": "J'emprunte souvent des livres à la bibliothèque.",
+  "en": "I often borrow books from the library."
+ },
+ {
+  "w": "enregistrer",
+  "fr": "Je vais enregistrer le match pour le regarder demain.",
+  "en": "I'm going to record the match to watch it tomorrow."
+ },
+ {
+  "w": "entendre",
+  "fr": "Tu entends ce bruit dans le jardin ?",
+  "en": "Can you hear that noise in the garden?"
+ },
+ {
+  "w": "entrer",
+  "fr": "Frappez avant d'entrer dans le bureau du directeur.",
+  "en": "Knock before going into the head teacher's office."
+ },
+ {
+  "w": "envoyer",
+  "fr": "Je t'envoie les photos de la fête ce soir.",
+  "en": "I'll send you the photos from the party tonight."
+ },
+ {
+  "w": "espérer",
+  "fr": "J'espère qu'il va faire beau demain.",
+  "en": "I hope the weather will be nice tomorrow."
+ },
+ {
+  "w": "essayer",
+  "fr": "J'essaie de manger plus de légumes.",
+  "en": "I try to eat more vegetables."
+ },
+ {
+  "w": "être",
+  "fr": "Mon père est infirmier dans un grand hôpital.",
+  "en": "My dad is a nurse in a big hospital."
+ },
+ {
+  "w": "étudier",
+  "fr": "Ma sœur étudie le droit à l'université de Lille.",
+  "en": "My sister studies law at the University of Lille."
+ },
+ {
+  "w": "éviter",
+  "fr": "J'évite de manger trop de sucre.",
+  "en": "I avoid eating too much sugar."
+ },
+ {
+  "w": "expliquer",
+  "fr": "Le professeur explique la grammaire très clairement.",
+  "en": "The teacher explains grammar very clearly."
+ },
+ {
+  "w": "faire",
+  "fr": "Le dimanche, je fais du vélo avec mon père.",
+  "en": "On Sundays, I go cycling with my dad."
+ },
+ {
+  "w": "falloir",
+  "fr": "Il faut porter un uniforme dans mon école.",
+  "en": "You have to wear a uniform at my school."
+ },
+ {
+  "w": "fermer",
+  "fr": "Peux-tu fermer la fenêtre ? Il fait froid ici.",
+  "en": "Can you close the window? It's cold in here."
+ },
+ {
+  "w": "fêter",
+  "fr": "Nous allons fêter l'anniversaire de mamie au restaurant.",
+  "en": "We're going to celebrate Grandma's birthday at a restaurant."
+ },
+ {
+  "w": "finir",
+  "fr": "Le film finit à dix heures et demie.",
+  "en": "The film finishes at half past ten."
+ },
+ {
+  "w": "fonctionner",
+  "fr": "L'ordinateur de la salle de classe ne fonctionne plus.",
+  "en": "The classroom computer doesn't work any more."
+ },
+ {
+  "w": "frapper",
+  "fr": "Quelqu'un frappe à la porte, tu peux ouvrir ?",
+  "en": "Someone's knocking at the door; can you open it?"
+ },
+ {
+  "w": "sauvegarder",
+  "fr": "N'oublie pas de sauvegarder ton travail sur une clé USB.",
+  "en": "Don't forget to back up your work on a USB stick."
+ },
+ {
+  "w": "savoir",
+  "fr": "Tu sais où se trouve la gare ?",
+  "en": "Do you know where the station is?"
+ },
+ {
+  "w": "s'échapper",
+  "fr": "Le chien s'est échappé du jardin ce matin.",
+  "en": "The dog escaped from the garden this morning."
+ },
+ {
+  "w": "se dépêcher",
+  "fr": "Il faut se dépêcher, le film commence dans cinq minutes.",
+  "en": "We need to hurry up; the film starts in five minutes."
+ },
+ {
+  "w": "s'ennuyer",
+  "fr": "Je m'ennuie pendant les longs voyages en voiture.",
+  "en": "I get bored on long car journeys."
+ },
+ {
+  "w": "s'intéresser à",
+  "fr": "Je m'intéresse beaucoup à l'histoire et à la politique.",
+  "en": "I'm very interested in history and politics."
+ },
+ {
+  "w": "s’inscrire",
+  "fr": "Je vais m'inscrire au club de théâtre cette année.",
+  "en": "I'm going to sign up for the drama club this year."
+ },
+ {
+  "w": "s'occuper de",
+  "fr": "Le samedi, je m'occupe de mon petit frère.",
+  "en": "On Saturdays, I look after my little brother."
+ },
+ {
+  "w": "se baigner",
+  "fr": "Il fait chaud, on va se baigner dans le lac ?",
+  "en": "It's hot; shall we go swimming in the lake?"
+ },
+ {
+  "w": "(se faire) bronzer",
+  "fr": "En vacances, ma sœur adore se faire bronzer sur la plage.",
+  "en": "On holiday, my sister loves sunbathing on the beach."
+ },
+ {
+  "w": "se comporter",
+  "fr": "Les élèves doivent bien se comporter pendant la sortie.",
+  "en": "Pupils must behave well during the trip."
+ },
+ {
+  "w": "se connecter",
+  "fr": "Je me connecte au site du collège pour voir mes notes.",
+  "en": "I log on to the school website to see my marks."
+ },
+ {
+  "w": "se débrouiller",
+  "fr": "Je me débrouille bien en anglais, mais pas en allemand.",
+  "en": "I manage well in English, but not in German."
+ },
+ {
+  "w": "se détendre",
+  "fr": "Après les cours, j'écoute de la musique pour me détendre.",
+  "en": "After lessons, I listen to music to relax."
+ },
+ {
+  "w": "se fâcher",
+  "fr": "Ma mère se fâche quand je rentre trop tard.",
+  "en": "My mum gets angry when I come home too late."
+ },
+ {
+  "w": "se lever",
+  "fr": "En semaine, je me lève à six heures et demie.",
+  "en": "During the week, I get up at half past six."
+ },
+ {
+  "w": "se passer",
+  "fr": "Qu'est-ce qui se passe ? Pourquoi tout le monde crie ?",
+  "en": "What's happening? Why is everyone shouting?"
+ },
+ {
+  "w": "se rappeler de",
+  "fr": "Je ne me rappelle plus le nom de cet acteur.",
+  "en": "I can't remember that actor's name."
+ },
+ {
+  "w": "se raser",
+  "fr": "Mon père se rase tous les matins avant le petit-déjeuner.",
+  "en": "My dad shaves every morning before breakfast."
+ },
+ {
+  "w": "se reposer",
+  "fr": "Après le match, les joueurs se reposent dans les vestiaires.",
+  "en": "After the match, the players rest in the changing rooms."
+ },
+ {
+  "w": "se retrouver",
+  "fr": "Le samedi, mes amis et moi, nous nous retrouvons au parc.",
+  "en": "On Saturdays, my friends and I meet up at the park."
+ },
+ {
+  "w": "se réveiller",
+  "fr": "Ce matin, je me suis réveillé à cause du bruit.",
+  "en": "This morning I woke up because of the noise."
+ },
+ {
+  "w": "se sentir",
+  "fr": "Je ne me sens pas bien, j'ai mal à la tête.",
+  "en": "I don't feel well; I've got a headache."
+ },
+ {
+  "w": "se servir de",
+  "fr": "Je me sers de mon portable pour faire mes devoirs.",
+  "en": "I use my mobile to do my homework."
+ },
+ {
+  "w": "se taire",
+  "fr": "Taisez-vous, s'il vous plaît, le film commence !",
+  "en": "Be quiet, please, the film is starting!"
+ },
+ {
+  "w": "se trouver",
+  "fr": "Le musée se trouve en face de la cathédrale.",
+  "en": "The museum is opposite the cathedral."
+ },
+ {
+  "w": "sembler",
+  "fr": "Tu sembles fatigué, tu veux te reposer un peu ?",
+  "en": "You seem tired; do you want to rest a little?"
+ },
+ {
+  "w": "sentir",
+  "fr": "Ça sent bon ! Qu'est-ce que tu prépares ?",
+  "en": "That smells good! What are you making?"
+ },
+ {
+  "w": "servir",
+  "fr": "À la cantine, on sert des frites le vendredi.",
+  "en": "In the canteen, they serve chips on Fridays."
+ },
+ {
+  "w": "sonner",
+  "fr": "Le téléphone sonne, tu peux répondre ?",
+  "en": "The phone's ringing; can you answer it?"
+ },
+ {
+  "w": "sortir",
+  "fr": "Le vendredi soir, je sors avec mes copains.",
+  "en": "On Friday evenings, I go out with my friends."
+ },
+ {
+  "w": "souffrir",
+  "fr": "Mon grand-père souffre du dos depuis des années.",
+  "en": "My grandfather has suffered from back pain for years."
+ },
+ {
+  "w": "sourire",
+  "fr": "Ma prof de français sourit toujours en entrant dans la classe.",
+  "en": "My French teacher always smiles as she comes into the classroom."
+ },
+ {
+  "w": "fumer",
+  "fr": "Il est interdit de fumer dans les restaurants en France.",
+  "en": "It's forbidden to smoke in restaurants in France."
+ },
+ {
+  "w": "gagner",
+  "fr": "Notre équipe a gagné le match trois à zéro.",
+  "en": "Our team won the match three-nil."
+ },
+ {
+  "w": "garder",
+  "fr": "Je garde toutes les lettres de ma grand-mère.",
+  "en": "I keep all my grandmother's letters."
+ },
+ {
+  "w": "garer",
+  "fr": "Mon père gare la voiture devant la maison.",
+  "en": "My dad parks the car in front of the house."
+ },
+ {
+  "w": "grandir",
+  "fr": "J'ai grandi dans un petit village à la montagne.",
+  "en": "I grew up in a small village in the mountains."
+ },
+ {
+  "w": "grimper",
+  "fr": "Les enfants aiment grimper aux arbres dans le parc.",
+  "en": "The children love climbing trees in the park."
+ },
+ {
+  "w": "gronder",
+  "fr": "Ma mère m'a grondé parce que je suis rentré tard.",
+  "en": "My mum told me off because I came home late."
+ },
+ {
+  "w": "grossir",
+  "fr": "Si tu manges trop de bonbons, tu vas grossir.",
+  "en": "If you eat too many sweets, you'll put on weight."
+ },
+ {
+  "w": "habiter",
+  "fr": "J'habite dans un appartement au centre-ville.",
+  "en": "I live in a flat in the town centre."
+ },
+ {
+  "w": "heurter",
+  "fr": "La voiture a heurté un arbre à cause du verglas.",
+  "en": "The car hit a tree because of the black ice."
+ },
+ {
+  "w": "il vaut mieux",
+  "fr": "Il vaut mieux prendre un parapluie, il va pleuvoir.",
+  "en": "It's better to take an umbrella; it's going to rain."
+ },
+ {
+  "w": "imiter",
+  "fr": "Mon frère imite très bien la voix de notre prof.",
+  "en": "My brother imitates our teacher's voice really well."
+ },
+ {
+  "w": "imprimer",
+  "fr": "Je dois imprimer mon billet d'avion avant de partir.",
+  "en": "I have to print my plane ticket before leaving."
+ },
+ {
+  "w": "inviter",
+  "fr": "J'invite tous mes amis à ma fête d'anniversaire.",
+  "en": "I'm inviting all my friends to my birthday party."
+ },
+ {
+  "w": "jeter",
+  "fr": "Il ne faut pas jeter les papiers par terre.",
+  "en": "You mustn't throw litter on the ground."
+ },
+ {
+  "w": "jouer",
+  "fr": "Le mercredi après-midi, je joue au foot avec mes copains.",
+  "en": "On Wednesday afternoons, I play football with my mates."
+ },
+ {
+  "w": "laisser",
+  "fr": "J'ai laissé mon parapluie au restaurant.",
+  "en": "I left my umbrella at the restaurant."
+ },
+ {
+  "w": "lancer",
+  "fr": "Lance-moi le ballon, s'il te plaît !",
+  "en": "Throw me the ball, please!"
+ },
+ {
+  "w": "lire",
+  "fr": "Avant de dormir, je lis un roman policier.",
+  "en": "Before going to sleep, I read a detective novel."
+ },
+ {
+  "w": "louer",
+  "fr": "On peut louer des vélos près de la gare.",
+  "en": "You can hire bikes near the station."
+ },
+ {
+  "w": "maigrir",
+  "fr": "Mon oncle fait du sport pour maigrir.",
+  "en": "My uncle does sport to lose weight."
+ },
+ {
+  "w": "manger",
+  "fr": "À midi, je mange à la cantine avec mes amis.",
+  "en": "At lunchtime I eat in the canteen with my friends."
+ },
+ {
+  "w": "mener",
+  "fr": "Ce chemin mène directement à la plage.",
+  "en": "This path leads straight to the beach."
+ },
+ {
+  "w": "mentir",
+  "fr": "Ce n'est pas bien de mentir à ses parents.",
+  "en": "It's not good to lie to your parents."
+ },
+ {
+  "w": "mériter",
+  "fr": "Tu as beaucoup travaillé, tu mérites des vacances !",
+  "en": "You've worked hard; you deserve a holiday!"
+ },
+ {
+  "w": "mettre",
+  "fr": "Je mets un manteau parce qu'il fait froid.",
+  "en": "I'm putting on a coat because it's cold."
+ },
+ {
+  "w": "monter",
+  "fr": "Nous montons au sommet de la tour à pied.",
+  "en": "We're going up to the top of the tower on foot."
+ },
+ {
+  "w": "montrer",
+  "fr": "Je vais te montrer les photos de mes vacances.",
+  "en": "I'm going to show you my holiday photos."
+ },
+ {
+  "w": "mourir",
+  "fr": "Mon vieux chien est mort l'année dernière.",
+  "en": "My old dog died last year."
+ },
+ {
+  "w": "suivre",
+  "fr": "Suivez-moi, je vais vous montrer votre chambre.",
+  "en": "Follow me; I'll show you your room."
+ },
+ {
+  "w": "supprimer",
+  "fr": "J'ai supprimé toutes les vieilles photos de mon portable.",
+  "en": "I deleted all the old photos from my phone."
+ },
+ {
+  "w": "taper",
+  "fr": "Je tape mes devoirs à l'ordinateur.",
+  "en": "I type my homework on the computer."
+ },
+ {
+  "w": "télécharger",
+  "fr": "Je télécharge de la musique sur mon portable.",
+  "en": "I download music onto my phone."
+ },
+ {
+  "w": "tenir",
+  "fr": "Tiens bien la main de ton petit frère dans la rue.",
+  "en": "Hold your little brother's hand tightly in the street."
+ },
+ {
+  "w": "tirer",
+  "fr": "Arrête de tirer les cheveux de ta sœur !",
+  "en": "Stop pulling your sister's hair!"
+ },
+ {
+  "w": "tomber",
+  "fr": "Je suis tombé de mon vélo et je me suis fait mal.",
+  "en": "I fell off my bike and hurt myself."
+ },
+ {
+  "w": "toucher",
+  "fr": "Au musée, il ne faut pas toucher les tableaux.",
+  "en": "At the museum, you mustn't touch the paintings."
+ },
+ {
+  "w": "tourner",
+  "fr": "Au feu rouge, tournez à droite.",
+  "en": "At the traffic lights, turn right."
+ },
+ {
+  "w": "tousser",
+  "fr": "Mon petit frère tousse beaucoup, il a un rhume.",
+  "en": "My little brother is coughing a lot; he's got a cold."
+ },
+ {
+  "w": "travailler",
+  "fr": "Ma mère travaille dans un bureau au centre-ville.",
+  "en": "My mum works in an office in the town centre."
+ },
+ {
+  "w": "traverser",
+  "fr": "Regarde à gauche et à droite avant de traverser la rue.",
+  "en": "Look left and right before crossing the road."
+ },
+ {
+  "w": "trouver",
+  "fr": "J'ai trouvé un billet de dix euros dans la rue.",
+  "en": "I found a ten-euro note in the street."
+ },
+ {
+  "w": "tuer",
+  "fr": "La pollution tue beaucoup de poissons dans les rivières.",
+  "en": "Pollution kills lots of fish in the rivers."
+ },
+ {
+  "w": "utiliser",
+  "fr": "Nous utilisons des tablettes en cours de sciences.",
+  "en": "We use tablets in science lessons."
+ },
+ {
+  "w": "vendre",
+  "fr": "Mes grands-parents vendent leur maison pour habiter en ville.",
+  "en": "My grandparents are selling their house to live in town."
+ },
+ {
+  "w": "venir",
+  "fr": "Tu viens au cinéma avec nous samedi ?",
+  "en": "Are you coming to the cinema with us on Saturday?"
+ },
+ {
+  "w": "vérifier",
+  "fr": "Vérifie bien tes réponses avant de rendre ta copie.",
+  "en": "Check your answers carefully before handing in your paper."
+ },
+ {
+  "w": "verser",
+  "fr": "Verse le lait dans le bol, puis ajoute le sucre.",
+  "en": "Pour the milk into the bowl, then add the sugar."
+ },
+ {
+  "w": "vider",
+  "fr": "C'est mon tour de vider le lave-vaisselle ce soir.",
+  "en": "It's my turn to empty the dishwasher tonight."
+ },
+ {
+  "w": "visiter",
+  "fr": "L'été dernier, nous avons visité les châteaux de la Loire.",
+  "en": "Last summer we visited the châteaux of the Loire."
+ },
+ {
+  "w": "vivre",
+  "fr": "Je voudrais vivre au bord de la mer plus tard.",
+  "en": "I'd like to live by the sea when I'm older."
+ },
+ {
+  "w": "vomir",
+  "fr": "En bateau, mon frère a souvent envie de vomir.",
+  "en": "On boats, my brother often feels like he's going to be sick."
+ },
+ {
+  "w": "zapper",
+  "fr": "Arrête de zapper, je veux regarder ce film !",
+  "en": "Stop channel hopping; I want to watch this film!"
+ }
+]

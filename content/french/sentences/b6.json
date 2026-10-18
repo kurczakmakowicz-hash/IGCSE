@@ -1,0 +1,1132 @@
+[
+  {
+    "w": "actuellement",
+    "fr": "Actuellement, ma sœur fait ses études à Lyon.",
+    "en": "Currently, my sister is studying in Lyon."
+  },
+  {
+    "w": "autrefois",
+    "fr": "Autrefois, il y avait une boulangerie dans notre rue.",
+    "en": "In the past, there was a bakery in our street."
+  },
+  {
+    "w": "bien",
+    "fr": "Hugo parle très bien l'anglais et l'espagnol.",
+    "en": "Hugo speaks English and Spanish very well."
+  },
+  {
+    "w": "cependant, pourtant",
+    "fr": "Le film était long ; cependant, je ne me suis pas ennuyé.",
+    "en": "The film was long; however, I wasn't bored."
+  },
+  {
+    "w": "déjà",
+    "fr": "Tu as déjà fini tes devoirs ?",
+    "en": "Have you already finished your homework?"
+  },
+  {
+    "w": "dehors",
+    "fr": "Il fait beau, alors les enfants jouent dehors.",
+    "en": "The weather is nice, so the children are playing outside."
+  },
+  {
+    "w": "encore",
+    "fr": "Mon petit frère dort encore, ne fais pas de bruit !",
+    "en": "My little brother is still asleep, don't make any noise!"
+  },
+  {
+    "w": "ensemble",
+    "fr": "Le samedi, mes amis et moi faisons du vélo ensemble.",
+    "en": "On Saturdays, my friends and I go cycling together."
+  },
+  {
+    "w": "ici",
+    "fr": "J'habite ici depuis cinq ans avec ma famille.",
+    "en": "I have lived here for five years with my family."
+  },
+  {
+    "w": "là",
+    "fr": "Pose ton sac là, à côté de la porte.",
+    "en": "Put your bag there, next to the door."
+  },
+  {
+    "w": "là-bas",
+    "fr": "Tu vois le café là-bas, près de la rivière ?",
+    "en": "Can you see the café down there, near the river?"
+  },
+  {
+    "w": "là-haut",
+    "fr": "Le château est là-haut, au sommet de la colline.",
+    "en": "The castle is up there, at the top of the hill."
+  },
+  {
+    "w": "longtemps",
+    "fr": "Ce matin, j'ai attendu le bus très longtemps.",
+    "en": "This morning, I waited a very long time for the bus."
+  },
+  {
+    "w": "mal",
+    "fr": "J'ai mal dormi parce que mes voisins faisaient du bruit.",
+    "en": "I slept badly because my neighbours were making a noise."
+  },
+  {
+    "w": "mieux",
+    "fr": "Léa chante beaucoup mieux que moi.",
+    "en": "Léa sings much better than me."
+  },
+  {
+    "w": "partout",
+    "fr": "J'ai cherché mes clés partout dans la maison.",
+    "en": "I looked everywhere in the house for my keys."
+  },
+  {
+    "w": "peut-être",
+    "fr": "Il va peut-être pleuvoir cet après-midi.",
+    "en": "Perhaps it will rain this afternoon."
+  },
+  {
+    "w": "plus",
+    "fr": "Je voudrais passer plus de temps avec mes amis.",
+    "en": "I would like to spend more time with my friends."
+  },
+  {
+    "w": "plutôt",
+    "fr": "Notre professeur de maths est plutôt sympa.",
+    "en": "Our maths teacher is rather nice."
+  },
+  {
+    "w": "pourtant",
+    "fr": "Il a beaucoup révisé, et pourtant il a raté l'examen.",
+    "en": "He revised a lot, and yet he failed the exam."
+  },
+  {
+    "w": "presque",
+    "fr": "Il est presque huit heures, dépêche-toi !",
+    "en": "It's nearly eight o'clock, hurry up!"
+  },
+  {
+    "w": "quelquefois",
+    "fr": "Quelquefois, je vais au collège à vélo.",
+    "en": "Sometimes I go to school by bike."
+  },
+  {
+    "w": "toujours",
+    "fr": "Ma grand-mère est toujours de bonne humeur.",
+    "en": "My grandmother is always in a good mood."
+  },
+  {
+    "w": "tout de suite",
+    "fr": "Viens ici tout de suite, le dîner est prêt !",
+    "en": "Come here immediately, dinner is ready!"
+  },
+  {
+    "w": "très",
+    "fr": "Ce gâteau au chocolat est très bon.",
+    "en": "This chocolate cake is very good."
+  },
+  {
+    "w": "trop",
+    "fr": "Ce jean est trop cher pour moi.",
+    "en": "These jeans are too expensive for me."
+  },
+  {
+    "w": "récemment",
+    "fr": "Récemment, nous avons déménagé dans une plus grande maison.",
+    "en": "Recently, we moved to a bigger house."
+  },
+  {
+    "w": "souvent",
+    "fr": "Je regarde souvent des séries le week-end.",
+    "en": "I often watch TV series at the weekend."
+  },
+  {
+    "w": "surtout",
+    "fr": "J'aime tous les sports, surtout le tennis.",
+    "en": "I like all sports, especially tennis."
+  },
+  {
+    "w": "vouloir",
+    "fr": "Je veux devenir médecin plus tard.",
+    "en": "I want to become a doctor later on."
+  },
+  {
+    "w": "blanc(he)",
+    "fr": "En hiver, la montagne est toute blanche.",
+    "en": "In winter, the mountain is all white."
+  },
+  {
+    "w": "bleu(e)",
+    "fr": "Mon frère a les yeux bleus comme notre père.",
+    "en": "My brother has blue eyes like our father."
+  },
+  {
+    "w": "brun(e)",
+    "fr": "Ma sœur a les cheveux bruns et les yeux verts.",
+    "en": "My sister has brown hair and green eyes."
+  },
+  {
+    "w": "clair",
+    "fr": "Je voudrais un pull bleu clair, s'il vous plaît.",
+    "en": "I'd like a light blue jumper, please."
+  },
+  {
+    "w": "foncé",
+    "fr": "Mon père porte toujours un costume gris foncé.",
+    "en": "My father always wears a dark grey suit."
+  },
+  {
+    "w": "gris(e)",
+    "fr": "Le ciel est gris, il va sûrement pleuvoir.",
+    "en": "The sky is grey; it's probably going to rain."
+  },
+  {
+    "w": "jaune",
+    "fr": "J'ai acheté un parapluie jaune pour l'hiver.",
+    "en": "I bought a yellow umbrella for the winter."
+  },
+  {
+    "w": "marron (inv)",
+    "fr": "Il porte des chaussures marron avec son jean.",
+    "en": "He is wearing brown shoes with his jeans."
+  },
+  {
+    "w": "noir(e)",
+    "fr": "Mon chat noir dort toujours sur mon lit.",
+    "en": "My black cat always sleeps on my bed."
+  },
+  {
+    "w": "orange",
+    "fr": "En automne, les feuilles des arbres deviennent orange.",
+    "en": "In autumn, the leaves on the trees turn orange."
+  },
+  {
+    "w": "rose",
+    "fr": "Ma petite sœur adore sa chambre rose.",
+    "en": "My little sister loves her pink bedroom."
+  },
+  {
+    "w": "rouge",
+    "fr": "Il y a une voiture rouge devant chez moi.",
+    "en": "There is a red car in front of my house."
+  },
+  {
+    "w": "vert(e)",
+    "fr": "Karim porte une veste verte pour aller au collège.",
+    "en": "Karim wears a green jacket to go to school."
+  },
+  {
+    "w": "violet",
+    "fr": "J'ai peint les murs de ma chambre en violet.",
+    "en": "I painted my bedroom walls purple."
+  },
+  {
+    "w": "assez de",
+    "fr": "Nous n'avons pas assez de chaises pour tout le monde.",
+    "en": "We don't have enough chairs for everyone."
+  },
+  {
+    "w": "cent",
+    "fr": "Mon arrière-grand-mère va bientôt avoir cent ans.",
+    "en": "My great-grandmother will soon be a hundred years old."
+  },
+  {
+    "w": "une centaine",
+    "fr": "Une centaine de personnes sont venues au concert.",
+    "en": "About a hundred people came to the concert."
+  },
+  {
+    "w": "beaucoup de",
+    "fr": "Il y a beaucoup de monde au marché le samedi.",
+    "en": "There are a lot of people at the market on Saturdays."
+  },
+  {
+    "w": "plusieurs",
+    "fr": "J'ai visité plusieurs pays européens l'année dernière.",
+    "en": "I visited several European countries last year."
+  },
+  {
+    "w": "un quart de",
+    "fr": "Aujourd'hui, un quart de la classe est malade.",
+    "en": "Today, a quarter of the class is ill."
+  },
+  {
+    "w": "la moitié",
+    "fr": "J'ai déjà lu la moitié du livre.",
+    "en": "I've already read half of the book."
+  },
+  {
+    "w": "quelques",
+    "fr": "J'ai acheté quelques pommes au marché.",
+    "en": "I bought some apples at the market."
+  },
+  {
+    "w": "mille",
+    "fr": "Il y a mille habitants dans mon village.",
+    "en": "There are a thousand inhabitants in my village."
+  },
+  {
+    "w": "un millier (m)",
+    "fr": "Un millier de spectateurs ont regardé le match.",
+    "en": "About a thousand spectators watched the match."
+  },
+  {
+    "w": "un milliard (m)",
+    "fr": "Il y a plus d'un milliard d'habitants en Inde.",
+    "en": "There are more than a billion inhabitants in India."
+  },
+  {
+    "w": "un morceau de",
+    "fr": "Tu veux un morceau de gâteau ?",
+    "en": "Do you want a piece of cake?"
+  },
+  {
+    "w": "un paquet de",
+    "fr": "Achète un paquet de biscuits pour le goûter, s'il te plaît.",
+    "en": "Buy a packet of biscuits for the afternoon snack, please."
+  },
+  {
+    "w": "un peu de",
+    "fr": "Tu veux un peu de sucre dans ton café ?",
+    "en": "Do you want a little sugar in your coffee?"
+  },
+  {
+    "w": "un pot de",
+    "fr": "Maman a acheté un pot de confiture de fraises.",
+    "en": "Mum bought a pot of strawberry jam."
+  },
+  {
+    "w": "un tiers de",
+    "fr": "Je dépense un tiers de mon argent de poche en vêtements.",
+    "en": "I spend a third of my pocket money on clothes."
+  },
+  {
+    "w": "une boîte de",
+    "fr": "Il faut une boîte de tomates pour cette recette.",
+    "en": "You need a tin of tomatoes for this recipe."
+  },
+  {
+    "w": "une bouteille de",
+    "fr": "Nous avons apporté une bouteille de jus d'orange au pique-nique.",
+    "en": "We brought a bottle of orange juice to the picnic."
+  },
+  {
+    "w": "une dizaine de",
+    "fr": "J'ai invité une dizaine de copains à mon anniversaire.",
+    "en": "I invited about ten friends to my birthday party."
+  },
+  {
+    "w": "une douzaine de",
+    "fr": "Elle a acheté une douzaine de croissants pour le petit-déjeuner.",
+    "en": "She bought a dozen croissants for breakfast."
+  },
+  {
+    "w": "une tranche de",
+    "fr": "Le matin, je mange une tranche de pain avec de la confiture.",
+    "en": "In the morning, I eat a slice of bread with jam."
+  },
+  {
+    "w": "aussi",
+    "fr": "J'aime le foot et j'aime aussi le basket.",
+    "en": "I like football and I also like basketball."
+  },
+  {
+    "w": "ensuite",
+    "fr": "D'abord, je prends une douche, ensuite je m'habille.",
+    "en": "First I have a shower, then I get dressed."
+  },
+  {
+    "w": "et",
+    "fr": "Mon frère et moi partageons la même chambre.",
+    "en": "My brother and I share the same bedroom."
+  },
+  {
+    "w": "d'abord",
+    "fr": "D'abord, il faut acheter les billets de train.",
+    "en": "First of all, we need to buy the train tickets."
+  },
+  {
+    "w": "donc",
+    "fr": "Il pleut, donc nous restons à la maison.",
+    "en": "It's raining, so we are staying at home."
+  },
+  {
+    "w": "mais",
+    "fr": "J'aime les maths, mais je trouve la physique difficile.",
+    "en": "I like maths, but I find physics difficult."
+  },
+  {
+    "w": "ou",
+    "fr": "Tu préfères le thé ou le café ?",
+    "en": "Do you prefer tea or coffee?"
+  },
+  {
+    "w": "puis",
+    "fr": "Nous avons mangé au restaurant, puis nous sommes allés au cinéma.",
+    "en": "We ate at the restaurant, then we went to the cinema."
+  },
+  {
+    "w": "à l'heure (adv)",
+    "fr": "Le train est arrivé à l'heure pour une fois.",
+    "en": "The train arrived on time for once."
+  },
+  {
+    "w": "an (m)",
+    "fr": "Mon frère a passé un an en Australie.",
+    "en": "My brother spent a year in Australia."
+  },
+  {
+    "w": "année (f)",
+    "fr": "Cette année, je passe mes examens en juin.",
+    "en": "This year, I'm taking my exams in June."
+  },
+  {
+    "w": "après-midi (m)",
+    "fr": "Cet après-midi, je vais jouer au tennis avec Hugo.",
+    "en": "This afternoon, I'm going to play tennis with Hugo."
+  },
+  {
+    "w": "au début (adv)",
+    "fr": "Au début, je ne comprenais rien en cours de français.",
+    "en": "At the beginning, I didn't understand anything in French lessons."
+  },
+  {
+    "w": "au printemps (m)",
+    "fr": "Au printemps, les arbres du parc sont en fleurs.",
+    "en": "In spring, the trees in the park are in blossom."
+  },
+  {
+    "w": "après-demain (adv)",
+    "fr": "Nous partons en vacances en Espagne après-demain.",
+    "en": "We are going on holiday to Spain the day after tomorrow."
+  },
+  {
+    "w": "aujourd'hui (adv)",
+    "fr": "Aujourd'hui, il fait très chaud à Marseille.",
+    "en": "Today, it is very hot in Marseille."
+  },
+  {
+    "w": "bientôt (adv)",
+    "fr": "Les grandes vacances commencent bientôt, j'ai hâte !",
+    "en": "The summer holidays start soon; I can't wait!"
+  },
+  {
+    "w": "demain (adv)",
+    "fr": "Demain, j'ai un contrôle de maths.",
+    "en": "Tomorrow, I have a maths test."
+  },
+  {
+    "w": "de temps en temps (adv)",
+    "fr": "De temps en temps, nous mangeons au restaurant.",
+    "en": "From time to time, we eat at a restaurant."
+  },
+  {
+    "w": "d’ici cinq ans",
+    "fr": "D'ici cinq ans, je voudrais habiter à l'étranger.",
+    "en": "In five years' time, I would like to live abroad."
+  },
+  {
+    "w": "en automne (m)",
+    "fr": "En automne, nous ramassons des champignons dans la forêt.",
+    "en": "In autumn, we pick mushrooms in the forest."
+  },
+  {
+    "w": "en été",
+    "fr": "En été, nous allons toujours au bord de la mer.",
+    "en": "In summer, we always go to the seaside."
+  },
+  {
+    "w": "en hiver (m)",
+    "fr": "En hiver, j'aime boire un chocolat chaud au coin du feu.",
+    "en": "In winter, I like drinking a hot chocolate by the fire."
+  },
+  {
+    "w": "fois (f)",
+    "fr": "Je vais à la piscine deux fois par semaine.",
+    "en": "I go to the swimming pool twice a week."
+  },
+  {
+    "w": "hier (adv)",
+    "fr": "Hier, je suis allé au cinéma avec mes cousins.",
+    "en": "Yesterday, I went to the cinema with my cousins."
+  },
+  {
+    "w": "jour (m)",
+    "fr": "Je reste chez ma tante pendant trois jours.",
+    "en": "I'm staying at my aunt's for three days."
+  },
+  {
+    "w": "journée (f)",
+    "fr": "J'ai passé une bonne journée à la plage.",
+    "en": "I had a good day at the beach."
+  },
+  {
+    "w": "le lendemain",
+    "fr": "Nous sommes arrivés samedi et le lendemain, nous avons visité la ville.",
+    "en": "We arrived on Saturday and the following day, we visited the town."
+  },
+  {
+    "w": "maintenant (adv)",
+    "fr": "Je dois partir maintenant, mon bus arrive.",
+    "en": "I have to leave now; my bus is coming."
+  },
+  {
+    "w": "matin (m)",
+    "fr": "Le matin, je prends le bus à sept heures.",
+    "en": "In the morning, I take the bus at seven o'clock."
+  },
+  {
+    "w": "midi (m)",
+    "fr": "À midi, je mange à la cantine avec mes amis.",
+    "en": "At midday, I eat in the canteen with my friends."
+  },
+  {
+    "w": "minuit (m)",
+    "fr": "Le 31 décembre, on ne se couche jamais avant minuit.",
+    "en": "On 31st December, we never go to bed before midnight."
+  },
+  {
+    "w": "mois (m)",
+    "fr": "Le mois prochain, nous partons en vacances au Maroc.",
+    "en": "Next month, we're going on holiday to Morocco."
+  },
+  {
+    "w": "nuit (f)",
+    "fr": "Pendant la nuit, il a beaucoup neigé.",
+    "en": "During the night, it snowed a lot."
+  },
+  {
+    "w": "quinzaine (f)",
+    "fr": "Nous partons en Italie pour une quinzaine de jours.",
+    "en": "We're going to Italy for a fortnight."
+  },
+  {
+    "w": "semaine (f)",
+    "fr": "La semaine prochaine, nous allons en voyage scolaire.",
+    "en": "Next week, we're going on a school trip."
+  },
+  {
+    "w": "soir (m)",
+    "fr": "Le soir, je fais mes devoirs après le dîner.",
+    "en": "In the evening, I do my homework after dinner."
+  },
+  {
+    "w": "soirée (f)",
+    "fr": "Merci pour cette excellente soirée chez vous !",
+    "en": "Thank you for this excellent evening at your house!"
+  },
+  {
+    "w": "tous les jours (m pl)",
+    "fr": "Je promène mon chien tous les jours après l'école.",
+    "en": "I walk my dog every day after school."
+  },
+  {
+    "w": "tout à l'heure (adv)",
+    "fr": "Je ne peux pas maintenant, je t'appelle tout à l'heure.",
+    "en": "I can't now; I'll call you shortly."
+  },
+  {
+    "w": "combien?",
+    "fr": "Combien coûte ce pull, s'il vous plaît ?",
+    "en": "How much does this jumper cost, please?"
+  },
+  {
+    "w": "comment?",
+    "fr": "Comment vas-tu au collège le matin ?",
+    "en": "How do you get to school in the morning?"
+  },
+  {
+    "w": "dans quelle mesure/jusqu’à quel point est-ce que",
+    "fr": "Dans quelle mesure est-ce que les réseaux sociaux sont dangereux pour nous ?",
+    "en": "To what extent are social networks dangerous for us?"
+  },
+  {
+    "w": "où?",
+    "fr": "Où est-ce que tu passes tes vacances cet été ?",
+    "en": "Where are you spending your holidays this summer?"
+  },
+  {
+    "w": "pour quelle raison?",
+    "fr": "Pour quelle raison est-ce que tu veux changer de collège ?",
+    "en": "For what reason do you want to change schools?"
+  },
+  {
+    "w": "pourquoi?",
+    "fr": "Pourquoi est-ce que tu es en retard ce matin ?",
+    "en": "Why are you late this morning?"
+  },
+  {
+    "w": "quand?",
+    "fr": "Quand est-ce que tu pars en vacances ?",
+    "en": "When are you going on holiday?"
+  },
+  {
+    "w": "quel(le)(s)?",
+    "fr": "Quel sport préfères-tu, le foot ou le rugby ?",
+    "en": "Which sport do you prefer, football or rugby?"
+  },
+  {
+    "w": "qu’est-ce que?",
+    "fr": "Qu'est-ce que tu fais ce week-end ?",
+    "en": "What are you doing this weekend?"
+  },
+  {
+    "w": "qui?",
+    "fr": "Qui veut venir au cinéma avec moi samedi ?",
+    "en": "Who wants to come to the cinema with me on Saturday?"
+  },
+  {
+    "w": "à moi",
+    "fr": "Ce stylo bleu n'est pas à toi, il est à moi.",
+    "en": "This blue pen isn't yours, it's mine."
+  },
+  {
+    "w": "à mon avis",
+    "fr": "À mon avis, le français est une belle langue.",
+    "en": "In my opinion, French is a beautiful language."
+  },
+  {
+    "w": "avec plaisir",
+    "fr": "J'accepte avec plaisir ton invitation à la fête.",
+    "en": "I gladly accept your invitation to the party."
+  },
+  {
+    "w": "avoir raison",
+    "fr": "Tu as raison, ce film est vraiment génial.",
+    "en": "You're right, this film is really great."
+  },
+  {
+    "w": "avoir tort",
+    "fr": "Il a tort, Paris n'est pas la capitale de la Belgique.",
+    "en": "He's wrong, Paris isn't the capital of Belgium."
+  },
+  {
+    "w": "bien sûr",
+    "fr": "Bien sûr, tu peux emprunter mon vélo demain.",
+    "en": "Of course you can borrow my bike tomorrow."
+  },
+  {
+    "w": "bof!",
+    "fr": "Bof, je n'aime pas trop les films d'horreur.",
+    "en": "Meh, I'm not really into horror films."
+  },
+  {
+    "w": "bonne chance",
+    "fr": "Bonne chance pour ton examen de demain !",
+    "en": "Good luck in your exam tomorrow!"
+  },
+  {
+    "w": "ça dépend",
+    "fr": "Je fais du vélo le week-end, mais ça dépend du temps.",
+    "en": "I go cycling at the weekend, but it depends on the weather."
+  },
+  {
+    "w": "ça m'est égal",
+    "fr": "On peut aller au cinéma ou au parc, ça m'est égal.",
+    "en": "We can go to the cinema or the park, I don't mind."
+  },
+  {
+    "w": "ça ne fait rien",
+    "fr": "Ça ne fait rien si tu arrives un peu en retard.",
+    "en": "It doesn't matter if you arrive a bit late."
+  },
+  {
+    "w": "ça s'écrit comment ?",
+    "fr": "Ton nom de famille, ça s'écrit comment ?",
+    "en": "Your surname, how do you spell that?"
+  },
+  {
+    "w": "ça va ?",
+    "fr": "Salut Chloé, ça va ce matin ?",
+    "en": "Hi Chloé, how are you this morning?"
+  },
+  {
+    "w": "d'accord",
+    "fr": "D'accord, on se retrouve devant la gare à midi.",
+    "en": "OK, let's meet in front of the station at midday."
+  },
+  {
+    "w": "d'habitude",
+    "fr": "D'habitude, je me lève à sept heures.",
+    "en": "Usually, I get up at seven o'clock."
+  },
+  {
+    "w": "encore une fois",
+    "fr": "Tu peux répéter encore une fois, s'il te plaît ?",
+    "en": "Can you repeat that once more, please?"
+  },
+  {
+    "w": "être en train de (faire)",
+    "fr": "Je suis en train de faire mes devoirs, je t'appelle après.",
+    "en": "I'm in the middle of doing my homework; I'll call you afterwards."
+  },
+  {
+    "w": "être sur le point de",
+    "fr": "Le film est sur le point de commencer, éteins ton portable !",
+    "en": "The film is about to start, switch off your mobile!"
+  },
+  {
+    "w": "j'en ai assez/marre",
+    "fr": "J'en ai marre de cette pluie, je veux du soleil !",
+    "en": "I'm fed up with this rain, I want some sunshine!"
+  },
+  {
+    "w": "quel dommage",
+    "fr": "Le concert est annulé, quel dommage !",
+    "en": "The concert is cancelled, what a pity!"
+  },
+  {
+    "w": "par rapport à",
+    "fr": "Mon collège est petit par rapport à celui de mon cousin.",
+    "en": "My school is small compared to my cousin's."
+  },
+  {
+    "w": "tant mieux",
+    "fr": "Il va faire beau demain ? Tant mieux, on ira à la plage !",
+    "en": "It's going to be sunny tomorrow? All the better, we'll go to the beach!"
+  },
+  {
+    "w": "tant pis",
+    "fr": "Il n'y a plus de billets, tant pis pour nous.",
+    "en": "There are no tickets left; too bad for us."
+  },
+  {
+    "w": "voici",
+    "fr": "Voici mon frère, il s'appelle Hugo.",
+    "en": "Here is my brother; his name is Hugo."
+  },
+  {
+    "w": "voilà",
+    "fr": "Voilà le bus qui arrive enfin !",
+    "en": "There's the bus coming at last!"
+  },
+  {
+    "w": "cela (pron)",
+    "fr": "Cela me semble une très bonne idée.",
+    "en": "That seems like a very good idea to me."
+  },
+  {
+    "w": "chose (f)",
+    "fr": "J'ai beaucoup de choses à faire ce week-end.",
+    "en": "I have lots of things to do this weekend."
+  },
+  {
+    "w": "comme (conj)",
+    "fr": "Comme il pleuvait, nous sommes restés à la maison.",
+    "en": "As it was raining, we stayed at home."
+  },
+  {
+    "w": "comme (comp)",
+    "fr": "Comme mon père, j'adore regarder le rugby à la télé.",
+    "en": "Like my father, I love watching rugby on TV."
+  },
+  {
+    "w": "idée (f)",
+    "fr": "C'est une bonne idée d'aller à la plage demain.",
+    "en": "It's a good idea to go to the beach tomorrow."
+  },
+  {
+    "w": "façon (de faire) (f)",
+    "fr": "Chacun a sa propre façon de réviser pour les examens.",
+    "en": "Everyone has their own way of revising for exams."
+  },
+  {
+    "w": "genre (m)",
+    "fr": "Quel genre de musique est-ce que tu écoutes ?",
+    "en": "What type of music do you listen to?"
+  },
+  {
+    "w": "inconvénient (m)",
+    "fr": "Le seul inconvénient de mon village, c'est le manque de bus.",
+    "en": "The only disadvantage of my village is the lack of buses."
+  },
+  {
+    "w": "Madame (f)",
+    "fr": "Madame Martin est notre prof de français cette année.",
+    "en": "Mrs Martin is our French teacher this year."
+  },
+  {
+    "w": "Mademoiselle (f)",
+    "fr": "Mademoiselle Leroy travaille à la bibliothèque du village.",
+    "en": "Miss Leroy works at the village library."
+  },
+  {
+    "w": "Monsieur (m)",
+    "fr": "Monsieur Bernard est le directeur de mon collège.",
+    "en": "Mr Bernard is the head teacher of my school."
+  },
+  {
+    "w": "nombre (m)",
+    "fr": "Le nombre de touristes augmente chaque été.",
+    "en": "The number of tourists increases every summer."
+  },
+  {
+    "w": "non (adv)",
+    "fr": "Non, je ne veux pas aller à la piscine aujourd'hui.",
+    "en": "No, I don't want to go to the swimming pool today."
+  },
+  {
+    "w": "oui (adv)",
+    "fr": "Oui, j'aimerais beaucoup venir à ta fête samedi.",
+    "en": "Yes, I'd really like to come to your party on Saturday."
+  },
+  {
+    "w": "parce que (conj)",
+    "fr": "Je suis fatigué parce que je me suis couché tard.",
+    "en": "I'm tired because I went to bed late."
+  },
+  {
+    "w": "par exemple (m)",
+    "fr": "J'aime les sports d'équipe, par exemple le basket et le hand.",
+    "en": "I like team sports, for example basketball and handball."
+  },
+  {
+    "w": "quelqu'un (pron)",
+    "fr": "Quelqu'un a laissé son sac dans la salle de classe.",
+    "en": "Someone has left their bag in the classroom."
+  },
+  {
+    "w": "quelque chose (f)",
+    "fr": "Tu veux boire quelque chose de chaud ?",
+    "en": "Do you want something hot to drink?"
+  },
+  {
+    "w": "raison (f)",
+    "fr": "La raison de mon retard, c'est la grève des trains.",
+    "en": "The reason for my lateness is the train strike."
+  },
+  {
+    "w": "si (conj)",
+    "fr": "Si tu es fatigué, va te coucher tôt.",
+    "en": "If you're tired, go to bed early."
+  },
+  {
+    "w": "si (adv)",
+    "fr": "Ce film était si drôle que j'ai pleuré de rire.",
+    "en": "This film was so funny that I cried with laughter."
+  },
+  {
+    "w": "tout le monde (m sing)",
+    "fr": "Tout le monde aime les vacances d'été.",
+    "en": "Everyone loves the summer holidays."
+  },
+  {
+    "w": "Afrique (f)",
+    "fr": "Mon oncle travaille en Afrique depuis trois ans.",
+    "en": "My uncle has been working in Africa for three years."
+  },
+  {
+    "w": "Allemagne (f)",
+    "fr": "Cet été, nous allons voir nos cousins en Allemagne.",
+    "en": "This summer, we're going to see our cousins in Germany."
+  },
+  {
+    "w": "Amérique du Nord (f)",
+    "fr": "Je rêve de faire un grand voyage en Amérique du Nord.",
+    "en": "I dream of going on a big trip to North America."
+  },
+  {
+    "w": "Amérique du Sud/Amérique latine (f)",
+    "fr": "Ma tante a voyagé en Amérique du Sud pendant six mois.",
+    "en": "My aunt travelled around South America for six months."
+  },
+  {
+    "w": "Angleterre (f)",
+    "fr": "Mon correspondant habite dans le nord de l'Angleterre.",
+    "en": "My penfriend lives in the north of England."
+  },
+  {
+    "w": "Asie (f)",
+    "fr": "Plus tard, je voudrais voyager en Asie avec mes amis.",
+    "en": "Later on, I'd like to travel around Asia with my friends."
+  },
+  {
+    "w": "Autriche (f)",
+    "fr": "Vienne, la capitale de l'Autriche, est une très belle ville.",
+    "en": "Vienna, the capital of Austria, is a very beautiful city."
+  },
+  {
+    "w": "Bangladesh (m)",
+    "fr": "Mes grands-parents habitent au Bangladesh, près de Dacca.",
+    "en": "My grandparents live in Bangladesh, near Dhaka."
+  },
+  {
+    "w": "Belgique (f)",
+    "fr": "Nous allons à Bruxelles, en Belgique, pour le week-end.",
+    "en": "We're going to Brussels, in Belgium, for the weekend."
+  },
+  {
+    "w": "Canada (m)",
+    "fr": "Au Canada, il fait très froid en hiver.",
+    "en": "In Canada, it's very cold in winter."
+  },
+  {
+    "w": "Chine (f)",
+    "fr": "Mon père va souvent en Chine pour son travail.",
+    "en": "My father often goes to China for work."
+  },
+  {
+    "w": "Danemark (m)",
+    "fr": "Au Danemark, beaucoup de gens vont au travail à vélo.",
+    "en": "In Denmark, lots of people cycle to work."
+  },
+  {
+    "w": "Écosse (f)",
+    "fr": "L'été dernier, nous avons fait du camping en Écosse.",
+    "en": "Last summer, we went camping in Scotland."
+  },
+  {
+    "w": "Espagne (f)",
+    "fr": "Nous passons nos vacances en Espagne, au bord de la mer.",
+    "en": "We're spending our holidays in Spain, at the seaside."
+  },
+  {
+    "w": "États-Unis (m pl)",
+    "fr": "Ma cousine fait ses études aux États-Unis.",
+    "en": "My cousin is studying in the United States."
+  },
+  {
+    "w": "Europe (f)",
+    "fr": "Je voudrais faire le tour de l'Europe en train.",
+    "en": "I'd like to travel around Europe by train."
+  },
+  {
+    "w": "France (f)",
+    "fr": "Je vais en France avec ma classe en avril.",
+    "en": "I'm going to France with my class in April."
+  },
+  {
+    "w": "Grande-Bretagne (f)",
+    "fr": "En Grande-Bretagne, on roule à gauche.",
+    "en": "In Great Britain, people drive on the left."
+  },
+  {
+    "w": "Grèce (f)",
+    "fr": "Cet été, nous allons en Grèce pour voir les îles.",
+    "en": "This summer, we're going to Greece to see the islands."
+  },
+  {
+    "w": "Inde (f)",
+    "fr": "En Inde, la cuisine est souvent très épicée.",
+    "en": "In India, the food is often very spicy."
+  },
+  {
+    "w": "Irlande (f)",
+    "fr": "Mon amie Chloé apprend l'anglais en Irlande cet été.",
+    "en": "My friend Chloé is learning English in Ireland this summer."
+  },
+  {
+    "w": "Italie (f)",
+    "fr": "En Italie, nous avons mangé des pizzas délicieuses.",
+    "en": "In Italy, we ate delicious pizzas."
+  },
+  {
+    "w": "Japon (m)",
+    "fr": "Hugo rêve d'aller au Japon pour voir Tokyo.",
+    "en": "Hugo dreams of going to Japan to see Tokyo."
+  },
+  {
+    "w": "Pakistan (m)",
+    "fr": "Mon voisin est parti voir sa famille au Pakistan.",
+    "en": "My neighbour has gone to see his family in Pakistan."
+  },
+  {
+    "w": "Pays-Bas (m pl)",
+    "fr": "Aux Pays-Bas, il y a beaucoup de pistes cyclables.",
+    "en": "In the Netherlands, there are lots of cycle lanes."
+  },
+  {
+    "w": "Pays de Galles (m)",
+    "fr": "Le Pays de Galles est célèbre pour ses montagnes et ses châteaux.",
+    "en": "Wales is famous for its mountains and castles."
+  },
+  {
+    "w": "Portugal (m)",
+    "fr": "Nous avons loué une maison au Portugal pour l'été.",
+    "en": "We rented a house in Portugal for the summer."
+  },
+  {
+    "w": "Royaume-Uni (m)",
+    "fr": "Au Royaume-Uni, les élèves portent souvent un uniforme.",
+    "en": "In the United Kingdom, pupils often wear a uniform."
+  },
+  {
+    "w": "Russie",
+    "fr": "La Russie est le plus grand pays du monde.",
+    "en": "Russia is the biggest country in the world."
+  },
+  {
+    "w": "Suède (f)",
+    "fr": "En Suède, les hivers sont longs et froids.",
+    "en": "In Sweden, the winters are long and cold."
+  },
+  {
+    "w": "Suisse (f)",
+    "fr": "En Suisse, on parle français, allemand et italien.",
+    "en": "In Switzerland, people speak French, German and Italian."
+  },
+  {
+    "w": "africain(e)",
+    "fr": "J'adore la musique africaine, surtout les percussions.",
+    "en": "I love African music, especially the drums."
+  },
+  {
+    "w": "allemand(e)",
+    "fr": "Ma correspondante allemande arrive à Paris demain.",
+    "en": "My German penfriend arrives in Paris tomorrow."
+  },
+  {
+    "w": "américain(e)",
+    "fr": "J'aime regarder des séries américaines en version originale.",
+    "en": "I like watching American TV series in the original language."
+  },
+  {
+    "w": "anglais(e)",
+    "fr": "Mon prof de maths est anglais, il vient de Londres.",
+    "en": "My maths teacher is English; he comes from London."
+  },
+  {
+    "w": "asiatique",
+    "fr": "Il y a un nouveau restaurant asiatique dans ma rue.",
+    "en": "There is a new Asian restaurant in my street."
+  },
+  {
+    "w": "autrichien(ne)",
+    "fr": "Les montagnes autrichiennes sont magnifiques en hiver.",
+    "en": "The Austrian mountains are magnificent in winter."
+  },
+  {
+    "w": "du Bangladesh",
+    "fr": "La cuisine du Bangladesh est très épicée et délicieuse.",
+    "en": "Bangladeshi food is very spicy and delicious."
+  },
+  {
+    "w": "belge",
+    "fr": "Les frites belges sont les meilleures du monde !",
+    "en": "Belgian chips are the best in the world!"
+  },
+  {
+    "w": "canadien(ne)",
+    "fr": "Ma tante est canadienne, elle habite à Montréal.",
+    "en": "My aunt is Canadian; she lives in Montreal."
+  },
+  {
+    "w": "chinois(e)",
+    "fr": "Le Nouvel An chinois est en janvier ou en février.",
+    "en": "Chinese New Year is in January or February."
+  },
+  {
+    "w": "danois(e)",
+    "fr": "Ma correspondante danoise parle très bien français.",
+    "en": "My Danish penfriend speaks French very well."
+  },
+  {
+    "w": "écossais(e)",
+    "fr": "Mon grand-père est écossais, il vient d'Édimbourg.",
+    "en": "My grandfather is Scottish; he comes from Edinburgh."
+  },
+  {
+    "w": "espagnol(e)",
+    "fr": "J'adore la cuisine espagnole, surtout la paella.",
+    "en": "I love Spanish food, especially paella."
+  },
+  {
+    "w": "européen(ne)",
+    "fr": "Nous avons visité cinq capitales européennes cet été.",
+    "en": "We visited five European capitals this summer."
+  },
+  {
+    "w": "français(e)",
+    "fr": "J'aime beaucoup le fromage français, surtout le camembert.",
+    "en": "I really like French cheese, especially camembert."
+  },
+  {
+    "w": "gallois(e)",
+    "fr": "Ma copine galloise chante dans une chorale.",
+    "en": "My Welsh friend sings in a choir."
+  },
+  {
+    "w": "grec (grecque)",
+    "fr": "J'adore la salade grecque avec de la feta.",
+    "en": "I love Greek salad with feta."
+  },
+  {
+    "w": "indien(ne)",
+    "fr": "Ce soir, nous mangeons dans un restaurant indien.",
+    "en": "Tonight, we're eating in an Indian restaurant."
+  },
+  {
+    "w": "irlandais(e)",
+    "fr": "J'aime beaucoup la musique traditionnelle irlandaise.",
+    "en": "I really like traditional Irish music."
+  },
+  {
+    "w": "italien(ne)",
+    "fr": "Mon plat italien préféré, ce sont les lasagnes.",
+    "en": "My favourite Italian dish is lasagne."
+  },
+  {
+    "w": "japonais(e)",
+    "fr": "Hugo adore les dessins animés japonais.",
+    "en": "Hugo loves Japanese cartoons."
+  },
+  {
+    "w": "néerlandais(e)",
+    "fr": "Mon voisin néerlandais va au travail à vélo.",
+    "en": "My Dutch neighbour cycles to work."
+  },
+  {
+    "w": "portugais(e)",
+    "fr": "Ma meilleure amie est portugaise, elle vient de Lisbonne.",
+    "en": "My best friend is Portuguese; she comes from Lisbon."
+  },
+  {
+    "w": "suédois(e)",
+    "fr": "J'ai un correspondant suédois qui s'appelle Erik.",
+    "en": "I have a Swedish penfriend called Erik."
+  },
+  {
+    "w": "suisse",
+    "fr": "J'ai rapporté du chocolat suisse pour toute la famille.",
+    "en": "I brought back Swiss chocolate for the whole family."
+  },
+  {
+    "w": "Alpes (f pl)",
+    "fr": "Chaque hiver, nous faisons du ski dans les Alpes.",
+    "en": "Every winter, we go skiing in the Alps."
+  },
+  {
+    "w": "Bretagne (f)",
+    "fr": "En Bretagne, on mange beaucoup de crêpes.",
+    "en": "In Brittany, people eat lots of crêpes."
+  },
+  {
+    "w": "Édimbourg",
+    "fr": "Nous avons visité le château d'Édimbourg pendant les vacances.",
+    "en": "We visited Edinburgh Castle during the holidays."
+  },
+  {
+    "w": "Londres",
+    "fr": "Mon cousin travaille dans un restaurant à Londres.",
+    "en": "My cousin works in a restaurant in London."
+  },
+  {
+    "w": "Manche (f)",
+    "fr": "Nous avons traversé la Manche en ferry.",
+    "en": "We crossed the English Channel by ferry."
+  },
+  {
+    "w": "Massif Central (m)",
+    "fr": "Le Massif Central est une région de volcans et de montagnes.",
+    "en": "The Massif Central is a region of volcanoes and mountains."
+  },
+  {
+    "w": "Midi (m)",
+    "fr": "Mes grands-parents habitent dans le Midi, près de Montpellier.",
+    "en": "My grandparents live in the South of France, near Montpellier."
+  },
+  {
+    "w": "Pyrénées (f pl)",
+    "fr": "Les Pyrénées sont entre la France et l'Espagne.",
+    "en": "The Pyrenees are between France and Spain."
+  }
+]

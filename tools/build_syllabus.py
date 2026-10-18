@@ -342,6 +342,25 @@ def _split_entry(words):
     return _tidy(" ".join(fr)), en_s
 
 
+# Typing errors in the published list, corrected so the app never teaches a
+# misspelling. Keyed by the entry exactly as printed. Re-check after a reissue.
+FRENCH_ERRATA = {
+    "œuvre caricative (f)": "œuvre caritative (f)",
+    "bureau des objects trouvés (m)": "bureau des objets trouvés (m)",
+    "pansemen (m)": "pansement (m)",
+    "gauffre (f)": "gaufre (f)",
+    "à toute à l’heure": "à tout à l’heure",
+    "à l’arrière plan": "à l’arrière-plan",
+    "server": "servir",
+    "qu-est-ce que?": "qu’est-ce que?",
+    "grec (greque)": "grec (grecque)",
+}
+# Glosses that are wrong as printed ("si" the conjunction means "if").
+FRENCH_GLOSS_ERRATA = {
+    "si (conj)": ("so, therefore", "if"),
+}
+
+
 def parse_french(path):
     themes, theme, sub = [], None, None
     for ev in _french_events(path):
@@ -368,6 +387,9 @@ def parse_french(path):
             raise ValueError("vocabulary entry before any sub-topic: %r"
                              % " ".join(w["text"] for w in ev[1]))
         fr, en = _split_entry(ev[1])
+        fr = FRENCH_ERRATA.get(fr, fr)
+        if fr in FRENCH_GLOSS_ERRATA and en == FRENCH_GLOSS_ERRATA[fr][0]:
+            en = FRENCH_GLOSS_ERRATA[fr][1]
         sub["vocab"].append({"fr": fr, "en": en})
 
     for t in themes:

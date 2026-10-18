@@ -127,7 +127,7 @@
  {
   "w": "distraction (f)",
   "fr": "Il n'y a pas beaucoup de distractions dans mon village.",
-  "en": "There aren't many pastimes on offer in my village."
+  "en": "There aren't many things to do in my village."
  },
  {
   "w": "endroit (m)",
@@ -642,7 +642,7 @@
  {
   "w": "demi-pension",
   "fr": "Nous avons choisi la demi-pension pour être libres à midi.",
-  "en": "We chose half board so that we're free at lunchtime."
+  "en": "We chose half board so that we'd be free at lunchtime."
  },
  {
   "w": "dépliant (m)",
@@ -817,7 +817,7 @@
  {
   "w": "se baigner (v)",
   "fr": "Il fait beau, allons nous baigner dans la mer !",
-  "en": "It's nice weather, let's go swimming in the sea!"
+  "en": "The weather's lovely, let's go swimming in the sea!"
  },
  {
   "w": "(se faire) bronzer (v)",
@@ -1166,8 +1166,8 @@
  },
  {
   "w": "champagne (m)",
-  "fr": "Les adultes boivent du champagne à minuit.",
-  "en": "The adults drink champagne at midnight."
+  "fr": "À minuit, les adultes boivent du champagne pour fêter le Nouvel An.",
+  "en": "At midnight, the adults drink champagne to celebrate New Year."
  },
  {
   "w": "déesse (f)",
@@ -1232,7 +1232,7 @@
  {
   "w": "joyeux Noël (m)",
   "fr": "Joyeux Noël et bonnes fêtes à tous !",
-  "en": "Happy Christmas and happy holidays, everyone!"
+  "en": "Happy Christmas and season's greetings to everyone!"
  },
  {
   "w": "lumière (f)",
@@ -1316,8 +1316,8 @@
  },
  {
   "w": "synagogue (f)",
-  "fr": "Il y a une belle synagogue ancienne dans le vieux quartier.",
-  "en": "There's a beautiful old synagogue in the old quarter."
+  "fr": "Il y a une très belle synagogue dans le vieux quartier.",
+  "en": "There's a very beautiful synagogue in the old quarter."
  },
  {
   "w": "association du quartier (f)",
@@ -1601,8 +1601,8 @@
  },
  {
   "w": "qualification (f)",
-  "fr": "Il faut une bonne qualification pour trouver un emploi.",
-  "en": "You need a good qualification to find a job."
+  "fr": "Il faut de bonnes qualifications pour trouver un bon emploi.",
+  "en": "You need good qualifications to find a good job."
  },
  {
   "w": "qualifié (adj)",
@@ -1821,8 +1821,8 @@
  },
  {
   "w": "sociologie (f)",
-  "fr": "Au lycée, je voudrais étudier la sociologie.",
-  "en": "At sixth-form college, I'd like to study sociology."
+  "fr": "À l'université, je voudrais étudier la sociologie.",
+  "en": "At university, I'd like to study sociology."
  },
  {
   "w": "sonner (v)",
@@ -1871,8 +1871,8 @@
  },
  {
   "w": "terminale (f)",
-  "fr": "Ma sœur est en terminale, c'est sa dernière année au lycée.",
-  "en": "My sister is in the final year; it's her last year at school."
+  "fr": "Ma sœur est en terminale, elle passe le bac en juin.",
+  "en": "My sister is in her final year of school; she's taking her baccalauréat in June."
  },
  {
   "w": "terrain de sport (m)",

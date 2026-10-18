@@ -1,0 +1,2127 @@
+[
+ {
+  "w": "aide (f)",
+  "fr": "Je demande de l'aide au prof d'informatique.",
+  "en": "I ask the IT teacher for help."
+ },
+ {
+  "w": "appli (f)",
+  "fr": "J'utilise une appli pour apprendre le français.",
+  "en": "I use an app to learn French."
+ },
+ {
+  "w": "base de données (f)",
+  "fr": "Le collège garde nos notes dans une base de données.",
+  "en": "The school keeps our marks in a database."
+ },
+ {
+  "w": "chatter/tchater (v)",
+  "fr": "Le soir, je tchate avec mes amis sur mon portable.",
+  "en": "In the evening, I chat with my friends on my phone."
+ },
+ {
+  "w": "clavier (m)",
+  "fr": "Le clavier de mon ordinateur est un peu sale.",
+  "en": "My computer keyboard is a bit dirty."
+ },
+ {
+  "w": "clé USB (f)",
+  "fr": "J'ai mis mes devoirs sur une clé USB.",
+  "en": "I put my homework on a USB stick."
+ },
+ {
+  "w": "cliquer (v)",
+  "fr": "Pour ouvrir le fichier, il faut cliquer ici.",
+  "en": "To open the file, you have to click here."
+ },
+ {
+  "w": "coller (v)",
+  "fr": "Tu copies le texte, puis tu le colles dans ton document.",
+  "en": "You copy the text, then you paste it into your document."
+ },
+ {
+  "w": "console (f)",
+  "fr": "Mon petit frère joue à la console tous les soirs.",
+  "en": "My little brother plays on the games console every evening."
+ },
+ {
+  "w": "curseur (m)",
+  "fr": "Mets le curseur au début de la phrase.",
+  "en": "Put the cursor at the beginning of the sentence."
+ },
+ {
+  "w": "disque dur (m)",
+  "fr": "Toutes mes photos sont sur le disque dur.",
+  "en": "All my photos are on the hard drive."
+ },
+ {
+  "w": "dossier (m)",
+  "fr": "J'ai rangé mes documents dans un nouveau dossier.",
+  "en": "I've put my documents in a new folder."
+ },
+ {
+  "w": "écran (m)",
+  "fr": "Ne restez pas trop longtemps devant l'écran !",
+  "en": "Don't stay in front of the screen for too long!"
+ },
+ {
+  "w": "effacer (v)",
+  "fr": "Le prof efface le tableau à la fin du cours.",
+  "en": "The teacher erases the board at the end of the lesson."
+ },
+ {
+  "w": "e-mail (m)",
+  "fr": "Je t'envoie un e-mail ce soir avec les détails.",
+  "en": "I'll send you an email this evening with the details."
+ },
+ {
+  "w": "en direct",
+  "fr": "Ce soir, on regarde le match en direct à la télé.",
+  "en": "Tonight, we're watching the match live on TV."
+ },
+ {
+  "w": "en ligne",
+  "fr": "Ma mère fait souvent ses courses en ligne.",
+  "en": "My mum often does her shopping online."
+ },
+ {
+  "w": "enregistrer (v)",
+  "fr": "J'enregistre mon émission préférée pour la regarder plus tard.",
+  "en": "I record my favourite programme to watch it later."
+ },
+ {
+  "w": "forum de discussion (m)",
+  "fr": "Sur ce forum de discussion, on parle de jeux vidéo.",
+  "en": "In this chat room, people talk about video games."
+ },
+ {
+  "w": "haut débit (m)",
+  "fr": "Avec le haut débit, les vidéos se chargent très vite.",
+  "en": "With broadband, videos load very quickly."
+ },
+ {
+  "w": "imprimante (f)",
+  "fr": "L'imprimante de la bibliothèque ne marche pas aujourd'hui.",
+  "en": "The library printer isn't working today."
+ },
+ {
+  "w": "internaute (m)",
+  "fr": "Beaucoup d'internautes regardent des vidéos le soir.",
+  "en": "Lots of web users watch videos in the evening."
+ },
+ {
+  "w": "lecteur DVD (m)",
+  "fr": "Mes grands-parents ont encore un vieux lecteur DVD.",
+  "en": "My grandparents still have an old DVD player."
+ },
+ {
+  "w": "livre numérique (m)",
+  "fr": "Je lis un livre numérique sur ma tablette.",
+  "en": "I'm reading an e-book on my tablet."
+ },
+ {
+  "w": "logiciel (m)",
+  "fr": "Ce logiciel m'aide à faire mes exposés.",
+  "en": "This software helps me do my presentations."
+ },
+ {
+  "w": "messagerie électronique (f)",
+  "fr": "Je vérifie ma messagerie électronique tous les matins.",
+  "en": "I check my email inbox every morning."
+ },
+ {
+  "w": "moniteur (informatique) (m)",
+  "fr": "Mon père a acheté un grand moniteur pour son bureau.",
+  "en": "My dad bought a big monitor for his office."
+ },
+ {
+  "w": "mot de passe (m)",
+  "fr": "Ne donne jamais ton mot de passe à personne !",
+  "en": "Never give your password to anyone!"
+ },
+ {
+  "w": "navigateur (m)",
+  "fr": "Quel navigateur est-ce que tu utilises sur ton ordinateur ?",
+  "en": "Which browser do you use on your computer?"
+ },
+ {
+  "w": "naviguer (v)",
+  "fr": "J'aime naviguer sur Internet pour trouver des recettes.",
+  "en": "I like browsing the internet to find recipes."
+ },
+ {
+  "w": "numérique (adj)",
+  "fr": "Aujourd'hui, presque toutes les photos sont numériques.",
+  "en": "Nowadays, almost all photos are digital."
+ },
+ {
+  "w": "ordinateur portable (m)",
+  "fr": "Pour mon anniversaire, j'ai reçu un ordinateur portable.",
+  "en": "For my birthday, I got a laptop."
+ },
+ {
+  "w": "page d’accueil (f)",
+  "fr": "La page d'accueil du site est très claire.",
+  "en": "The website's homepage is very clear."
+ },
+ {
+  "w": "piratage (m)",
+  "fr": "Le piratage de musique est illégal en France.",
+  "en": "Music piracy is illegal in France."
+ },
+ {
+  "w": "pirate (m)",
+  "fr": "Un pirate a volé les mots de passe de l'entreprise.",
+  "en": "A hacker stole the company's passwords."
+ },
+ {
+  "w": "portable (m)",
+  "fr": "Mon portable n'a plus de batterie.",
+  "en": "My mobile phone's battery is dead."
+ },
+ {
+  "w": "réseau social (m)",
+  "fr": "Ma sœur passe des heures sur les réseaux sociaux.",
+  "en": "My sister spends hours on social networks."
+ },
+ {
+  "w": "sans fil",
+  "fr": "J'ai des écouteurs sans fil pour écouter de la musique.",
+  "en": "I have wireless earphones for listening to music."
+ },
+ {
+  "w": "sauvegarder (v)",
+  "fr": "Pense à sauvegarder ton exposé sur ta clé USB !",
+  "en": "Remember to back up your presentation on your USB stick!"
+ },
+ {
+  "w": "se connecter (v)",
+  "fr": "Je me connecte au site avec mon mot de passe.",
+  "en": "I log in to the website with my password."
+ },
+ {
+  "w": "site (web) (m)",
+  "fr": "Le site web du collège donne les dates des vacances.",
+  "en": "The school website gives the holiday dates."
+ },
+ {
+  "w": "SMS (m)",
+  "fr": "Ma mère m'envoie un SMS quand elle arrive.",
+  "en": "My mum sends me a text message when she arrives."
+ },
+ {
+  "w": "souris (informatique) (f)",
+  "fr": "La souris ne marche plus, il faut changer la pile.",
+  "en": "The mouse doesn't work anymore; the battery needs changing."
+ },
+ {
+  "w": "supprimer (v)",
+  "fr": "J'ai supprimé les vieilles photos de mon portable.",
+  "en": "I deleted the old photos from my phone."
+ },
+ {
+  "w": "surfer sur Internet (v)",
+  "fr": "Le week-end, je surfe sur Internet pendant des heures.",
+  "en": "At the weekend, I surf the internet for hours."
+ },
+ {
+  "w": "tablette (f)",
+  "fr": "Ma grand-mère lit les nouvelles sur sa tablette.",
+  "en": "My grandmother reads the news on her tablet."
+ },
+ {
+  "w": "télécharger (v)",
+  "fr": "Je télécharge souvent de la musique sur mon portable.",
+  "en": "I often download music onto my phone."
+ },
+ {
+  "w": "télé par satellite (f)",
+  "fr": "Grâce à la télé par satellite, on regarde des chaînes anglaises.",
+  "en": "Thanks to satellite TV, we watch English channels."
+ },
+ {
+  "w": "texto (m)",
+  "fr": "Envoie-moi un texto quand tu arrives !",
+  "en": "Send me a text when you arrive!"
+ },
+ {
+  "w": "touche (f)",
+  "fr": "Appuie sur cette touche pour effacer la lettre.",
+  "en": "Press this key to delete the letter."
+ },
+ {
+  "w": "réalité virtuelle (f)",
+  "fr": "Avec ce casque, on peut essayer la réalité virtuelle.",
+  "en": "With this headset, you can try virtual reality."
+ },
+ {
+  "w": "virus (m)",
+  "fr": "Mon ordinateur est très lent à cause d'un virus.",
+  "en": "My computer is very slow because of a virus."
+ },
+ {
+  "w": "wifi/Wi-Fi (m)",
+  "fr": "Est-ce qu'il y a le wifi à l'hôtel ?",
+  "en": "Is there Wi-Fi in the hotel?"
+ },
+ {
+  "w": "acrobate (m/f)",
+  "fr": "Au cirque, l'acrobate marche sur une corde très haute.",
+  "en": "At the circus, the acrobat walks on a very high rope."
+ },
+ {
+  "w": "animal (m)",
+  "fr": "Mon animal préféré au zoo, c'est le lion.",
+  "en": "My favourite animal at the zoo is the lion."
+ },
+ {
+  "w": "bienvenu(e) (adj)",
+  "fr": "Vous êtes toujours les bienvenus chez nous !",
+  "en": "You are always welcome at our house!"
+ },
+ {
+  "w": "bijou(x) (m)",
+  "fr": "Pour son anniversaire, j'ai offert un bijou à ma mère.",
+  "en": "For her birthday, I gave my mum a piece of jewellery."
+ },
+ {
+  "w": "bizarre (adj)",
+  "fr": "C'est bizarre, il n'y a personne à la fête.",
+  "en": "It's strange, there's nobody at the party."
+ },
+ {
+  "w": "bon appétit (m)",
+  "fr": "À table, tout le monde ! Bon appétit !",
+  "en": "Dinner's ready, everyone! Enjoy your meal!"
+ },
+ {
+  "w": "bonjour (m)",
+  "fr": "Quand j'arrive chez mes grands-parents, je dis bonjour à tout le monde.",
+  "en": "When I arrive at my grandparents' house, I say hello to everyone."
+ },
+ {
+  "w": "boum/soirée/fête (m)",
+  "fr": "Samedi, je vais à une boum chez Léa.",
+  "en": "On Saturday, I'm going to a party at Léa's house."
+ },
+ {
+  "w": "bouteille (f)",
+  "fr": "On a acheté une bouteille de jus d'orange pour la fête.",
+  "en": "We bought a bottle of orange juice for the party."
+ },
+ {
+  "w": "cadeau(x) (m)",
+  "fr": "J'ai reçu beaucoup de cadeaux pour mon anniversaire.",
+  "en": "I got lots of presents for my birthday."
+ },
+ {
+  "w": "cérémonie (f)",
+  "fr": "La cérémonie du mariage commence à quinze heures.",
+  "en": "The wedding ceremony starts at three o'clock."
+ },
+ {
+  "w": "(restaurant) chic (inv adj)",
+  "fr": "Mes parents dînent dans un restaurant chic ce soir.",
+  "en": "My parents are having dinner in a posh restaurant tonight."
+ },
+ {
+  "w": "circonstances (f pl)",
+  "fr": "Dans ces circonstances, on ne peut pas faire la fête.",
+  "en": "In these circumstances, we can't celebrate."
+ },
+ {
+  "w": "cirque (m)",
+  "fr": "Pour mon anniversaire, on va au cirque.",
+  "en": "For my birthday, we're going to the circus."
+ },
+ {
+  "w": "embrasser (v)",
+  "fr": "Ma grand-mère m'embrasse quand j'arrive chez elle.",
+  "en": "My grandmother hugs me when I arrive at her house."
+ },
+ {
+  "w": "en famille",
+  "fr": "À Noël, nous mangeons toujours en famille.",
+  "en": "At Christmas, we always eat as a family."
+ },
+ {
+  "w": "faire la bise (v+f)",
+  "fr": "En France, on fait la bise pour dire bonjour.",
+  "en": "In France, people kiss on the cheek to say hello."
+ },
+ {
+  "w": "fast-food (m)",
+  "fr": "Après le cinéma, on mange dans un fast-food.",
+  "en": "After the cinema, we eat at a fast-food restaurant."
+ },
+ {
+  "w": "félicitations",
+  "fr": "Tu as réussi ton examen ? Félicitations !",
+  "en": "You passed your exam? Congratulations!"
+ },
+ {
+  "w": "fiançailles (pl)",
+  "fr": "Ma cousine fête ses fiançailles samedi prochain.",
+  "en": "My cousin is celebrating her engagement next Saturday."
+ },
+ {
+  "w": "fiancé(e) (m/f)",
+  "fr": "Ma sœur nous présente son fiancé ce week-end.",
+  "en": "My sister is introducing her fiancé to us this weekend."
+ },
+ {
+  "w": "gardien(ne) (m/f)",
+  "fr": "Le gardien du zoo donne à manger aux singes.",
+  "en": "The zookeeper feeds the monkeys."
+ },
+ {
+  "w": "gaspillage d'argent",
+  "fr": "Acheter des vêtements trop chers, c'est un gaspillage d'argent.",
+  "en": "Buying clothes that are too expensive is a waste of money."
+ },
+ {
+  "w": "gâteau de fête (m)",
+  "fr": "Ma mère prépare un gâteau de fête pour mes seize ans.",
+  "en": "My mum is making a celebration cake for my sixteenth birthday."
+ },
+ {
+  "w": "grand public (m)",
+  "fr": "Ce film est pour le grand public, pas seulement pour les enfants.",
+  "en": "This film is for the general public, not just for children."
+ },
+ {
+  "w": "impressionnant(e) (adj)",
+  "fr": "Le feu d'artifice du 14 juillet est vraiment impressionnant.",
+  "en": "The 14th of July fireworks display is really impressive."
+ },
+ {
+  "w": "mariage (m)",
+  "fr": "Le mariage de ma tante a lieu en juin.",
+  "en": "My aunt's wedding takes place in June."
+ },
+ {
+  "w": "marié (m)",
+  "fr": "Le marié porte un costume gris très élégant.",
+  "en": "The groom is wearing a very elegant grey suit."
+ },
+ {
+  "w": "mariée (f)",
+  "fr": "La mariée arrive à l'église avec son père.",
+  "en": "The bride arrives at the church with her father."
+ },
+ {
+  "w": "montre (f)",
+  "fr": "Mes parents m'ont offert une montre pour Noël.",
+  "en": "My parents gave me a watch for Christmas."
+ },
+ {
+  "w": "noces (f pl)",
+  "fr": "Après la cérémonie, les noces durent toute la nuit.",
+  "en": "After the ceremony, the wedding festivities go on all night."
+ },
+ {
+  "w": "parc d’attractions (m)",
+  "fr": "Au parc d'attractions, les montagnes russes sont géniales.",
+  "en": "At the theme park, the roller coasters are brilliant."
+ },
+ {
+  "w": "parc aquatique (m)",
+  "fr": "En été, on passe la journée au parc aquatique.",
+  "en": "In summer, we spend the day at the waterpark."
+ },
+ {
+  "w": "parfum (m)",
+  "fr": "J'ai acheté un parfum pour la fête des Mères.",
+  "en": "I bought some perfume for Mother's Day."
+ },
+ {
+  "w": "passionnant(e) (adj)",
+  "fr": "Le spectacle était passionnant du début à la fin.",
+  "en": "The show was gripping from start to finish."
+ },
+ {
+  "w": "pique-nique (m)",
+  "fr": "S'il fait beau, on fait un pique-nique au parc.",
+  "en": "If the weather is nice, we'll have a picnic in the park."
+ },
+ {
+  "w": "présenter (v)",
+  "fr": "Je te présente mon ami Karim.",
+  "en": "Let me introduce my friend Karim to you."
+ },
+ {
+  "w": "ravi(e) (adj)",
+  "fr": "Je suis ravie de te voir à ma fête !",
+  "en": "I'm delighted to see you at my party!"
+ },
+ {
+  "w": "rendre visite à (v)",
+  "fr": "Le dimanche, nous rendons visite à nos grands-parents.",
+  "en": "On Sundays, we visit our grandparents."
+ },
+ {
+  "w": "ruban (m)",
+  "fr": "Le cadeau est décoré avec un joli ruban rouge.",
+  "en": "The present is decorated with a pretty red ribbon."
+ },
+ {
+  "w": "self-(service) (m)",
+  "fr": "À midi, je mange au self avec mes copains.",
+  "en": "At lunchtime, I eat in the self-service canteen with my friends."
+ },
+ {
+  "w": "serviette (m)",
+  "fr": "Mets une serviette à côté de chaque assiette, s'il te plaît.",
+  "en": "Put a napkin next to each plate, please."
+ },
+ {
+  "w": "sortie (scolaire) (f)",
+  "fr": "La sortie scolaire au musée est prévue pour jeudi.",
+  "en": "The school trip to the museum is planned for Thursday."
+ },
+ {
+  "w": "sortie (f)",
+  "fr": "La sortie est à droite, après la caisse.",
+  "en": "The exit is on the right, after the till."
+ },
+ {
+  "w": "souhaiter la bienvenue (v)",
+  "fr": "Le directeur souhaite la bienvenue aux nouveaux élèves.",
+  "en": "The head teacher welcomes the new pupils."
+ },
+ {
+  "w": "spécialité (de la maison) (f)",
+  "fr": "Je vais prendre la spécialité de la maison, s'il vous plaît.",
+  "en": "I'll have the speciality of the house, please."
+ },
+ {
+  "w": "tutoyer (v)",
+  "fr": "Je tutoie mes amis mais je vouvoie mes profs.",
+  "en": "I call my friends 'tu' but I call my teachers 'vous'."
+ },
+ {
+  "w": "visiteur(euse) (m/f)",
+  "fr": "Le château reçoit beaucoup de visiteurs en été.",
+  "en": "The castle gets lots of visitors in summer."
+ },
+ {
+  "w": "(jardin) zoo(logique) (m)",
+  "fr": "On a vu des girafes et des lions au zoo.",
+  "en": "We saw giraffes and lions at the zoo."
+ },
+ {
+  "w": "aller à la pêche (v)",
+  "fr": "Le samedi matin, mon grand-père va à la pêche.",
+  "en": "On Saturday mornings, my grandfather goes fishing."
+ },
+ {
+  "w": "aller chercher (v)",
+  "fr": "Je vais chercher mon petit frère à l'école.",
+  "en": "I'm going to fetch my little brother from school."
+ },
+ {
+  "w": "athlétisme (m)",
+  "fr": "Je fais de l'athlétisme deux fois par semaine.",
+  "en": "I do athletics twice a week."
+ },
+ {
+  "w": "balle (de tennis) (f)",
+  "fr": "Il a lancé la balle de tennis par-dessus le mur.",
+  "en": "He threw the tennis ball over the wall."
+ },
+ {
+  "w": "ballon de football (m)",
+  "fr": "Hugo a reçu un nouveau ballon de football.",
+  "en": "Hugo got a new football."
+ },
+ {
+  "w": "batterie (f)",
+  "fr": "Mon frère joue de la batterie dans un groupe.",
+  "en": "My brother plays the drums in a band."
+ },
+ {
+  "w": "boîte de nuit (f)",
+  "fr": "Ma grande sœur sort en boîte de nuit le samedi soir.",
+  "en": "My big sister goes out to a nightclub on Saturday nights."
+ },
+ {
+  "w": "bowling (m)",
+  "fr": "Il y a un bowling près du centre commercial.",
+  "en": "There's a bowling alley near the shopping centre."
+ },
+ {
+  "w": "bricolage (m)",
+  "fr": "Mon père adore le bricolage, il répare tout à la maison.",
+  "en": "My dad loves DIY; he fixes everything at home."
+ },
+ {
+  "w": "centre sportif (m)",
+  "fr": "Je vais au centre sportif après les cours.",
+  "en": "I go to the sports centre after lessons."
+ },
+ {
+  "w": "chez moi",
+  "fr": "Ce soir, mes amis viennent regarder un film chez moi.",
+  "en": "Tonight, my friends are coming to watch a film at my house."
+ },
+ {
+  "w": "danser (v)",
+  "fr": "J'adore danser avec mes copines le week-end.",
+  "en": "I love dancing with my friends at the weekend."
+ },
+ {
+  "w": "échecs (m pl)",
+  "fr": "Mon grand-père m'apprend à jouer aux échecs.",
+  "en": "My grandfather is teaching me to play chess."
+ },
+ {
+  "w": "équipe (f)",
+  "fr": "Notre équipe a gagné le match dimanche.",
+  "en": "Our team won the match on Sunday."
+ },
+ {
+  "w": "faire de la musculation (v)",
+  "fr": "Je fais de la musculation à la salle de sport.",
+  "en": "I do weight training at the gym."
+ },
+ {
+  "w": "faire de la natation (v)",
+  "fr": "Inès fait de la natation trois fois par semaine.",
+  "en": "Inès goes swimming three times a week."
+ },
+ {
+  "w": "faire de la peinture (v)",
+  "fr": "Le mercredi, je fais de la peinture dans un atelier.",
+  "en": "On Wednesdays, I do painting in a studio."
+ },
+ {
+  "w": "faire de la planche à voile (v)",
+  "fr": "En vacances, nous faisons de la planche à voile sur la mer.",
+  "en": "On holiday, we go windsurfing on the sea."
+ },
+ {
+  "w": "faire de la voile (v)",
+  "fr": "L'été dernier, j'ai fait de la voile en Bretagne.",
+  "en": "Last summer, I went sailing in Brittany."
+ },
+ {
+  "w": "faire de l'équitation (v)",
+  "fr": "Chloé fait de l'équitation depuis l'âge de six ans.",
+  "en": "Chloé has been horse riding since the age of six."
+ },
+ {
+  "w": "faire du bowling (v)",
+  "fr": "On fait du bowling pour l'anniversaire de Karim.",
+  "en": "We're going bowling for Karim's birthday."
+ },
+ {
+  "w": "faire du cheval (v)",
+  "fr": "À la campagne, je fais du cheval avec ma cousine.",
+  "en": "In the countryside, I go horse riding with my cousin."
+ },
+ {
+  "w": "faire du footing (v)",
+  "fr": "Mon père fait du footing tous les matins avant le travail.",
+  "en": "My dad goes jogging every morning before work."
+ },
+ {
+  "w": "faire du roller (v)",
+  "fr": "Le dimanche, on fait du roller au bord du lac.",
+  "en": "On Sundays, we go rollerblading by the lake."
+ },
+ {
+  "w": "faire du skate (v)",
+  "fr": "Après l'école, je fais du skate au parc avec Hugo.",
+  "en": "After school, I go skateboarding in the park with Hugo."
+ },
+ {
+  "w": "faire du ski (nautique) (v)",
+  "fr": "Cet hiver, nous allons faire du ski dans les Alpes.",
+  "en": "This winter, we're going skiing in the Alps."
+ },
+ {
+  "w": "faire du sport (v)",
+  "fr": "Il est important de faire du sport régulièrement.",
+  "en": "It's important to do sport regularly."
+ },
+ {
+  "w": "jardinage (m)",
+  "fr": "Ma grand-mère passe ses après-midi à faire du jardinage.",
+  "en": "My grandmother spends her afternoons doing the gardening."
+ },
+ {
+  "w": "jardiner (v)",
+  "fr": "Mon père aime jardiner le dimanche matin.",
+  "en": "My dad likes gardening on Sunday mornings."
+ },
+ {
+  "w": "jeu de société (m)",
+  "fr": "Le soir, on joue à un jeu de société en famille.",
+  "en": "In the evening, we play a board game as a family."
+ },
+ {
+  "w": "jeu électronique (m)",
+  "fr": "Mon petit cousin a reçu un jeu électronique pour Noël.",
+  "en": "My little cousin got an electronic game for Christmas."
+ },
+ {
+  "w": "jeu vidéo (m)",
+  "fr": "Ce nouveau jeu vidéo est vraiment difficile.",
+  "en": "This new video game is really difficult."
+ },
+ {
+  "w": "jouer de (v)",
+  "fr": "Je joue de la guitare depuis trois ans.",
+  "en": "I've been playing the guitar for three years."
+ },
+ {
+  "w": "jouer à (v)",
+  "fr": "Le mercredi, je joue au basket avec mes amis.",
+  "en": "On Wednesdays, I play basketball with my friends."
+ },
+ {
+  "w": "jouer aux boules (v)",
+  "fr": "Dans le village, les retraités jouent aux boules sur la place.",
+  "en": "In the village, the pensioners play boules in the square."
+ },
+ {
+  "w": "lancer (v)",
+  "fr": "Lance-moi le ballon, s'il te plaît !",
+  "en": "Throw me the ball, please!"
+ },
+ {
+  "w": "lecture (f)",
+  "fr": "La lecture est mon passe-temps préféré.",
+  "en": "Reading is my favourite pastime."
+ },
+ {
+  "w": "loisirs (m pl)",
+  "fr": "Quels sont tes loisirs préférés ?",
+  "en": "What are your favourite leisure activities?"
+ },
+ {
+  "w": "maison des jeunes (f)",
+  "fr": "Le vendredi soir, je vais à la maison des jeunes.",
+  "en": "On Friday evenings, I go to the youth club."
+ },
+ {
+  "w": "match de (m)",
+  "fr": "Samedi, nous allons voir un match de rugby.",
+  "en": "On Saturday, we're going to see a rugby match."
+ },
+ {
+  "w": "nager (v)",
+  "fr": "Je nage dans la mer pendant les vacances.",
+  "en": "I swim in the sea during the holidays."
+ },
+ {
+  "w": "passe-temps (m)",
+  "fr": "Le dessin est un passe-temps relaxant.",
+  "en": "Drawing is a relaxing pastime."
+ },
+ {
+  "w": "patinage (artistique) (m)",
+  "fr": "Le patinage artistique demande beaucoup d'entraînement.",
+  "en": "Figure skating requires a lot of training."
+ },
+ {
+  "w": "patinoire (f)",
+  "fr": "En hiver, on va à la patinoire avec la classe.",
+  "en": "In winter, we go to the ice rink with the class."
+ },
+ {
+  "w": "patins à glace (m pl)",
+  "fr": "J'ai loué des patins à glace à la patinoire.",
+  "en": "I hired some ice skates at the rink."
+ },
+ {
+  "w": "patins à roulettes (m pl)",
+  "fr": "Ma petite sœur a eu des patins à roulettes roses.",
+  "en": "My little sister got pink rollerskates."
+ },
+ {
+  "w": "piano (m)",
+  "fr": "Il y a un vieux piano dans le salon de mes grands-parents.",
+  "en": "There's an old piano in my grandparents' living room."
+ },
+ {
+  "w": "plonger (v)",
+  "fr": "Il plonge dans la piscine depuis le grand plongeoir.",
+  "en": "He dives into the pool from the high diving board."
+ },
+ {
+  "w": "raquette (f)",
+  "fr": "J'ai oublié ma raquette de tennis à la maison.",
+  "en": "I left my tennis racket at home."
+ },
+ {
+  "w": "roman (m)",
+  "fr": "Je lis un roman policier en ce moment.",
+  "en": "I'm reading a detective novel at the moment."
+ },
+ {
+  "w": "s'amuser (v)",
+  "fr": "On s'est bien amusés à la fête hier soir.",
+  "en": "We really enjoyed ourselves at the party last night."
+ },
+ {
+  "w": "se détendre (v)",
+  "fr": "Le soir, j'écoute de la musique pour me détendre.",
+  "en": "In the evening, I listen to music to relax."
+ },
+ {
+  "w": "s'inscrire (v)",
+  "fr": "Je me suis inscrit à une course de dix kilomètres.",
+  "en": "I've entered a ten-kilometre race."
+ },
+ {
+  "w": "se promener (v)",
+  "fr": "Le dimanche, nous nous promenons dans la forêt.",
+  "en": "On Sundays, we go for a walk in the forest."
+ },
+ {
+  "w": "se reposer (v)",
+  "fr": "Après le match, les joueurs se reposent.",
+  "en": "After the match, the players rest."
+ },
+ {
+  "w": "faire du vélo (v)",
+  "fr": "Je fais du vélo avec mon père le week-end.",
+  "en": "I go cycling with my dad at the weekend."
+ },
+ {
+  "w": "faire partie de (v)",
+  "fr": "Je fais partie de l'équipe de foot du collège.",
+  "en": "I'm part of the school football team."
+ },
+ {
+  "w": "faire une promenade (v)",
+  "fr": "Après le repas, on fait une promenade au bord de la mer.",
+  "en": "After the meal, we go for a walk by the sea."
+ },
+ {
+  "w": "faire une randonnée (v)",
+  "fr": "Cet été, nous allons faire une randonnée en montagne.",
+  "en": "This summer, we're going to go hiking in the mountains."
+ },
+ {
+  "w": "flûte (f)",
+  "fr": "Inès joue de la flûte dans l'orchestre du collège.",
+  "en": "Inès plays the flute in the school orchestra."
+ },
+ {
+  "w": "flûte à bec (f)",
+  "fr": "À l'école primaire, j'ai appris à jouer de la flûte à bec.",
+  "en": "At primary school, I learnt to play the recorder."
+ },
+ {
+  "w": "gymnastique (f)",
+  "fr": "Ma sœur est très souple parce qu'elle fait de la gymnastique.",
+  "en": "My sister is very flexible because she does gymnastics."
+ },
+ {
+  "w": "sportif(~tive) (adj)",
+  "fr": "Mon frère est très sportif, il joue au tennis et au foot.",
+  "en": "My brother is very sporty; he plays tennis and football."
+ },
+ {
+  "w": "temps libre (m)",
+  "fr": "Pendant mon temps libre, je dessine des mangas.",
+  "en": "In my spare time, I draw manga."
+ },
+ {
+  "w": "trompette (f)",
+  "fr": "Karim joue de la trompette dans une fanfare.",
+  "en": "Karim plays the trumpet in a brass band."
+ },
+ {
+  "w": "violon (m)",
+  "fr": "J'apprends le violon au conservatoire.",
+  "en": "I'm learning the violin at the music school."
+ },
+ {
+  "w": "achats (m pl)",
+  "fr": "Ma mère met tous ses achats dans un grand sac.",
+  "en": "My mum puts all her purchases in a big bag."
+ },
+ {
+  "w": "acheter (v)",
+  "fr": "Je voudrais acheter un cadeau pour ma mère.",
+  "en": "I'd like to buy a present for my mum."
+ },
+ {
+  "w": "argent de poche (m)",
+  "fr": "Mes parents me donnent vingt euros d'argent de poche par mois.",
+  "en": "My parents give me twenty euros pocket money a month."
+ },
+ {
+  "w": "banque (f)",
+  "fr": "La banque est fermée le dimanche.",
+  "en": "The bank is closed on Sundays."
+ },
+ {
+  "w": "bijouterie (f)",
+  "fr": "Mon père a acheté une bague dans une bijouterie.",
+  "en": "My dad bought a ring in a jewellery shop."
+ },
+ {
+  "w": "bon marché (inv adj)",
+  "fr": "Ce tee-shirt est très bon marché, il coûte cinq euros.",
+  "en": "This T-shirt is very cheap; it costs five euros."
+ },
+ {
+  "w": "boucherie (f)",
+  "fr": "J'achète du poulet à la boucherie du quartier.",
+  "en": "I buy chicken at the local butcher's."
+ },
+ {
+  "w": "boulangerie (f)",
+  "fr": "Tous les matins, mon père achète des croissants à la boulangerie.",
+  "en": "Every morning, my dad buys croissants at the baker's."
+ },
+ {
+  "w": "boutique (f)",
+  "fr": "Il y a une petite boutique de vêtements dans ma rue.",
+  "en": "There's a small clothes shop in my street."
+ },
+ {
+  "w": "bureau de tabac (m)",
+  "fr": "On peut acheter des timbres au bureau de tabac.",
+  "en": "You can buy stamps at the tobacconist's."
+ },
+ {
+  "w": "carte de crédit (f)",
+  "fr": "Est-ce que je peux payer par carte de crédit ?",
+  "en": "Can I pay by credit card?"
+ },
+ {
+  "w": "carte bancaire (f)",
+  "fr": "Ma mère paie les courses avec sa carte bancaire.",
+  "en": "My mum pays for the shopping with her debit card."
+ },
+ {
+  "w": "centre commercial (m)",
+  "fr": "Le samedi, je retrouve mes amis au centre commercial.",
+  "en": "On Saturdays, I meet my friends at the shopping centre."
+ },
+ {
+  "w": "chapeau (m)",
+  "fr": "Il fait très chaud, mets ton chapeau !",
+  "en": "It's very hot, put your hat on!"
+ },
+ {
+  "w": "charcuterie (f)",
+  "fr": "Nous achetons du jambon à la charcuterie.",
+  "en": "We buy ham at the delicatessen."
+ },
+ {
+  "w": "faire des économies (v)",
+  "fr": "Je fais des économies pour acheter un vélo.",
+  "en": "I'm saving up to buy a bike."
+ },
+ {
+  "w": "faire du lèche-vitrine (v)",
+  "fr": "Comme on n'a pas d'argent, on fait du lèche-vitrine en ville.",
+  "en": "As we haven't got any money, we go window shopping in town."
+ },
+ {
+  "w": "faire du shopping (v)",
+  "fr": "Ce week-end, je vais faire du shopping avec ma sœur.",
+  "en": "This weekend, I'm going shopping with my sister."
+ },
+ {
+  "w": "fermeture (f)",
+  "fr": "Attention, fermeture du magasin dans dix minutes !",
+  "en": "Attention please, the shop is closing in ten minutes!"
+ },
+ {
+  "w": "grande surface (f)",
+  "fr": "Mes parents font les courses dans une grande surface.",
+  "en": "My parents do the shopping at a supermarket."
+ },
+ {
+  "w": "grand magasin (m)",
+  "fr": "On trouve de tout dans ce grand magasin parisien.",
+  "en": "You can find everything in this Parisian department store."
+ },
+ {
+  "w": "hypermarché (m)",
+  "fr": "L'hypermarché est ouvert jusqu'à vingt-deux heures.",
+  "en": "The hypermarket is open until 10 p.m."
+ },
+ {
+  "w": "librairie (f)",
+  "fr": "J'ai acheté ce roman à la librairie près de chez moi.",
+  "en": "I bought this novel at the bookshop near my house."
+ },
+ {
+  "w": "magasin de cadeaux (m)",
+  "fr": "Après la visite du château, on va au magasin de cadeaux.",
+  "en": "After the castle tour, we go to the gift shop."
+ },
+ {
+  "w": "libre-service (m)",
+  "fr": "Le petit libre-service du village est ouvert le dimanche matin.",
+  "en": "The village's little self-service shop is open on Sunday mornings."
+ },
+ {
+  "w": "marchand (m)",
+  "fr": "Le marchand de fruits me donne toujours une pomme.",
+  "en": "The fruit seller always gives me an apple."
+ },
+ {
+  "w": "marché (m)",
+  "fr": "Le samedi, il y a un marché sur la place.",
+  "en": "On Saturdays, there's a market in the square."
+ },
+ {
+  "w": "marque (m)",
+  "fr": "De quelle marque est ton portable ?",
+  "en": "What make is your phone?"
+ },
+ {
+  "w": "monnaie (f)",
+  "fr": "Désolé, je n'ai pas de monnaie pour le parking.",
+  "en": "Sorry, I haven't got any change for the car park."
+ },
+ {
+  "w": "ouverture (f)",
+  "fr": "Les heures d'ouverture sont affichées sur la porte.",
+  "en": "The opening hours are displayed on the door."
+ },
+ {
+  "w": "papeterie (f)",
+  "fr": "J'achète mes cahiers et mes stylos à la papeterie.",
+  "en": "I buy my exercise books and pens at the stationery shop."
+ },
+ {
+  "w": "pharmacie (f)",
+  "fr": "Je vais à la pharmacie pour acheter des médicaments.",
+  "en": "I'm going to the chemist's to buy some medicine."
+ },
+ {
+  "w": "chèque (de voyage) (m)",
+  "fr": "Mon grand-père paie encore par chèque.",
+  "en": "My grandfather still pays by cheque."
+ },
+ {
+  "w": "cher/chère (adj)",
+  "fr": "Ces baskets sont trop chères pour moi.",
+  "en": "These trainers are too expensive for me."
+ },
+ {
+  "w": "choix (m)",
+  "fr": "Il y a beaucoup de choix dans ce magasin.",
+  "en": "There's a lot of choice in this shop."
+ },
+ {
+  "w": "commander (v)",
+  "fr": "J'ai commandé un pull sur Internet.",
+  "en": "I ordered a jumper on the internet."
+ },
+ {
+  "w": "commerçant(e) (m/f)",
+  "fr": "Les commerçants du quartier sont très sympas.",
+  "en": "The local shopkeepers are very nice."
+ },
+ {
+  "w": "concurrence (f)",
+  "fr": "Avec la concurrence d'Internet, les petits magasins ferment.",
+  "en": "With competition from the internet, small shops are closing."
+ },
+ {
+  "w": "confiserie (f)",
+  "fr": "On achète des bonbons à la confiserie du village.",
+  "en": "We buy sweets at the village sweet shop."
+ },
+ {
+  "w": "consommateur (m)",
+  "fr": "Le consommateur veut des produits moins chers.",
+  "en": "The consumer wants cheaper products."
+ },
+ {
+  "w": "cuir (m)",
+  "fr": "Mon père porte une veste en cuir noir.",
+  "en": "My dad wears a black leather jacket."
+ },
+ {
+  "w": "doigt (m)",
+  "fr": "Cette bague est trop petite pour mon doigt.",
+  "en": "This ring is too small for my finger."
+ },
+ {
+  "w": "exercice (m)",
+  "fr": "Faire de l'exercice tous les jours est bon pour la santé.",
+  "en": "Doing exercise every day is good for your health."
+ },
+ {
+  "w": "facture (f)",
+  "fr": "La facture d'électricité est très élevée ce mois-ci.",
+  "en": "The electricity bill is very high this month."
+ },
+ {
+  "w": "pointure (f)",
+  "fr": "Bonjour madame, quelle pointure faites-vous ?",
+  "en": "Hello madam, what shoe size are you?"
+ },
+ {
+  "w": "portefeuille (m)",
+  "fr": "J'ai perdu mon portefeuille dans le bus.",
+  "en": "I lost my wallet on the bus."
+ },
+ {
+  "w": "porte-monnaie (m)",
+  "fr": "Ma grand-mère garde ses pièces dans un petit porte-monnaie.",
+  "en": "My grandmother keeps her coins in a little purse."
+ },
+ {
+  "w": "produit (m)",
+  "fr": "Ce magasin vend des produits bio.",
+  "en": "This shop sells organic products."
+ },
+ {
+  "w": "rayon (m)",
+  "fr": "Le rayon des jouets est au deuxième étage.",
+  "en": "The toy department is on the second floor."
+ },
+ {
+  "w": "sac (en plastique) (m)",
+  "fr": "Au supermarché, les sacs en plastique sont payants maintenant.",
+  "en": "At the supermarket, you have to pay for plastic bags now."
+ },
+ {
+  "w": "solde (m)",
+  "fr": "En janvier, il y a des soldes dans tous les magasins.",
+  "en": "In January, there are sales in all the shops."
+ },
+ {
+  "w": "supermarché (m)",
+  "fr": "Le supermarché est à cinq minutes de chez moi.",
+  "en": "The supermarket is five minutes from my house."
+ },
+ {
+  "w": "taille (f)",
+  "fr": "Vous avez ce pantalon dans une taille plus grande ?",
+  "en": "Do you have these trousers in a bigger size?"
+ },
+ {
+  "w": "vendre (v)",
+  "fr": "Mon voisin vend son vieux vélo sur Internet.",
+  "en": "My neighbour is selling his old bike online."
+ },
+ {
+  "w": "vêtements (m pl)",
+  "fr": "J'achète mes vêtements dans les magasins d'occasion.",
+  "en": "I buy my clothes in second-hand shops."
+ },
+ {
+  "w": "vitrine (f)",
+  "fr": "J'ai vu une jolie robe dans la vitrine.",
+  "en": "I saw a pretty dress in the shop window."
+ },
+ {
+  "w": "alcool (m)",
+  "fr": "L'alcool est mauvais pour la santé des jeunes.",
+  "en": "Alcohol is bad for young people's health."
+ },
+ {
+  "w": "aller mieux (v)",
+  "fr": "J'étais malade hier, mais je vais mieux aujourd'hui.",
+  "en": "I was ill yesterday, but I'm better today."
+ },
+ {
+  "w": "asthme (m)",
+  "fr": "Mon frère a de l'asthme, il a toujours son inhalateur.",
+  "en": "My brother has asthma; he always has his inhaler."
+ },
+ {
+  "w": "avoir (de) la fièvre (v)",
+  "fr": "Ma petite sœur a de la fièvre depuis hier soir.",
+  "en": "My little sister has had a temperature since last night."
+ },
+ {
+  "w": "avoir mal à l'estomac (v)",
+  "fr": "J'ai mal à l'estomac, j'ai trop mangé.",
+  "en": "I've got stomach ache; I ate too much."
+ },
+ {
+  "w": "avoir mal à l'oreille (v)",
+  "fr": "Hugo a mal à l'oreille, il doit aller chez le médecin.",
+  "en": "Hugo has earache; he has to go to the doctor's."
+ },
+ {
+  "w": "avoir mal à la gorge (v)",
+  "fr": "J'ai mal à la gorge, je ne peux pas chanter.",
+  "en": "I've got a sore throat; I can't sing."
+ },
+ {
+  "w": "avoir mal à la tête (v)",
+  "fr": "J'ai mal à la tête à cause du bruit.",
+  "en": "I've got a headache because of the noise."
+ },
+ {
+  "w": "avoir mal au cœur (v)",
+  "fr": "En voiture, j'ai souvent mal au cœur.",
+  "en": "In the car, I often feel sick."
+ },
+ {
+  "w": "avoir mal au cou (v)",
+  "fr": "J'ai mal au cou parce que j'ai mal dormi.",
+  "en": "I've got a stiff neck because I slept badly."
+ },
+ {
+  "w": "avoir mal au dos (v)",
+  "fr": "Mon père a mal au dos après le jardinage.",
+  "en": "My dad has backache after the gardening."
+ },
+ {
+  "w": "maigrir (v)",
+  "fr": "Il a maigri parce qu'il fait beaucoup de sport.",
+  "en": "He has lost weight because he does a lot of sport."
+ },
+ {
+  "w": "main (f)",
+  "fr": "Lave-toi les mains avant de manger !",
+  "en": "Wash your hands before eating!"
+ },
+ {
+  "w": "malade (adj)",
+  "fr": "Je ne vais pas à l'école parce que je suis malade.",
+  "en": "I'm not going to school because I'm ill."
+ },
+ {
+  "w": "maladie (f)",
+  "fr": "La grippe est une maladie très contagieuse.",
+  "en": "Flu is a very contagious illness."
+ },
+ {
+  "w": "médicament (m)",
+  "fr": "Prends ce médicament trois fois par jour.",
+  "en": "Take this medicine three times a day."
+ },
+ {
+  "w": "mouchoir (en papier) (m)",
+  "fr": "Tu as un mouchoir ? J'ai le nez qui coule.",
+  "en": "Have you got a tissue? My nose is running."
+ },
+ {
+  "w": "nez (m)",
+  "fr": "Avec ce rhume, j'ai le nez bouché.",
+  "en": "With this cold, my nose is blocked."
+ },
+ {
+  "w": "œil (m) yeux (m pl)",
+  "fr": "Elle a un œil rouge, c'est peut-être une infection.",
+  "en": "She has a red eye; it might be an infection."
+ },
+ {
+  "w": "ordonnance (f)",
+  "fr": "Le médecin me donne une ordonnance pour la pharmacie.",
+  "en": "The doctor gives me a prescription for the chemist's."
+ },
+ {
+  "w": "mal d’oreille (f)",
+  "fr": "Avec ce mal d'oreille, je n'entends plus rien.",
+  "en": "With this earache, I can't hear anything anymore."
+ },
+ {
+  "w": "avoir mal au ventre (v)",
+  "fr": "J'ai mal au ventre, je ne veux pas manger.",
+  "en": "I've got stomach ache; I don't want to eat."
+ },
+ {
+  "w": "avoir mal aux dents (v)",
+  "fr": "J'ai mal aux dents, je dois aller chez le dentiste.",
+  "en": "I've got toothache; I have to go to the dentist's."
+ },
+ {
+  "w": "blessé(e) (adj)",
+  "fr": "Le joueur blessé quitte le terrain.",
+  "en": "The injured player leaves the pitch."
+ },
+ {
+  "w": "bras (m)",
+  "fr": "Je me suis cassé le bras en faisant du ski.",
+  "en": "I broke my arm skiing."
+ },
+ {
+  "w": "cœur (m)",
+  "fr": "Le sport est bon pour le cœur.",
+  "en": "Sport is good for the heart."
+ },
+ {
+  "w": "comprimé (m)",
+  "fr": "Prenez deux comprimés après chaque repas.",
+  "en": "Take two tablets after each meal."
+ },
+ {
+  "w": "corps (m)",
+  "fr": "Le yoga est bon pour le corps et l'esprit.",
+  "en": "Yoga is good for the body and the mind."
+ },
+ {
+  "w": "dent (f)",
+  "fr": "Je me brosse les dents deux fois par jour.",
+  "en": "I brush my teeth twice a day."
+ },
+ {
+  "w": "diarrhée (f)",
+  "fr": "Après ce repas, j'ai eu la diarrhée toute la nuit.",
+  "en": "After that meal, I had diarrhoea all night."
+ },
+ {
+  "w": "être enrhumé(e) (v)",
+  "fr": "Je suis enrhumée, je tousse et j'éternue.",
+  "en": "I've got a cold; I'm coughing and sneezing."
+ },
+ {
+  "w": "être en (pleine) forme (v)",
+  "fr": "Après les vacances, je suis en pleine forme !",
+  "en": "After the holidays, I'm on top form!"
+ },
+ {
+  "w": "fumer (v)",
+  "fr": "Mon oncle a arrêté de fumer l'année dernière.",
+  "en": "My uncle stopped smoking last year."
+ },
+ {
+  "w": "fumeur (m)",
+  "fr": "Mon grand-père était un gros fumeur.",
+  "en": "My grandfather was a heavy smoker."
+ },
+ {
+  "w": "garder le lit (v)",
+  "fr": "Le médecin dit que je dois garder le lit pendant deux jours.",
+  "en": "The doctor says I have to stay in bed for two days."
+ },
+ {
+  "w": "genou (m)",
+  "fr": "Je suis tombé et je me suis fait mal au genou.",
+  "en": "I fell and hurt my knee."
+ },
+ {
+  "w": "gorge (f)",
+  "fr": "J'ai la gorge très sèche ce matin.",
+  "en": "My throat is very dry this morning."
+ },
+ {
+  "w": "grave (adj)",
+  "fr": "Ne t'inquiète pas, ce n'est pas grave.",
+  "en": "Don't worry, it's not serious."
+ },
+ {
+  "w": "grippe (f)",
+  "fr": "Toute ma famille a la grippe cette semaine.",
+  "en": "My whole family has flu this week."
+ },
+ {
+  "w": "grossir (v)",
+  "fr": "Si tu manges trop de bonbons, tu vas grossir.",
+  "en": "If you eat too many sweets, you'll put on weight."
+ },
+ {
+  "w": "heurter (v)",
+  "fr": "Le vélo a heurté une voiture au carrefour.",
+  "en": "The bike hit a car at the crossroads."
+ },
+ {
+  "w": "hôpital (m)",
+  "fr": "Après l'accident, on l'a emmené à l'hôpital.",
+  "en": "After the accident, he was taken to hospital."
+ },
+ {
+  "w": "infirmier(~ère) (m/f)",
+  "fr": "L'infirmière du collège prend ma température.",
+  "en": "The school nurse takes my temperature."
+ },
+ {
+  "w": "jambe (f)",
+  "fr": "Il a la jambe cassée, il ne peut pas marcher.",
+  "en": "He has a broken leg; he can't walk."
+ },
+ {
+  "w": "pilule (f)",
+  "fr": "Il faut avaler cette pilule avec un verre d'eau.",
+  "en": "You have to swallow this pill with a glass of water."
+ },
+ {
+  "w": "piquer (v)",
+  "fr": "Une abeille m'a piqué au bras dans le jardin.",
+  "en": "A bee stung me on the arm in the garden."
+ },
+ {
+  "w": "piqûre (f)",
+  "fr": "J'ai une piqûre de moustique sur la jambe.",
+  "en": "I've got a mosquito bite on my leg."
+ },
+ {
+  "w": "poitrine (f)",
+  "fr": "J'ai une douleur dans la poitrine quand je cours.",
+  "en": "I get a pain in my chest when I run."
+ },
+ {
+  "w": "prendre (v)",
+  "fr": "Je prends des vitamines tous les matins en hiver.",
+  "en": "I take vitamins every morning in winter."
+ },
+ {
+  "w": "respirer (v)",
+  "fr": "Avec mon asthme, j'ai du mal à respirer.",
+  "en": "With my asthma, I find it hard to breathe."
+ },
+ {
+  "w": "sain(e) (adj)",
+  "fr": "Une alimentation saine est importante pour les ados.",
+  "en": "A healthy diet is important for teenagers."
+ },
+ {
+  "w": "SAMU (m)",
+  "fr": "Après l'accident, on a appelé le SAMU.",
+  "en": "After the accident, we called the ambulance service."
+ },
+ {
+  "w": "sang (m)",
+  "fr": "Il y a du sang sur ton genou !",
+  "en": "There's blood on your knee!"
+ },
+ {
+  "w": "santé (f)",
+  "fr": "Je dors huit heures par nuit pour ma santé.",
+  "en": "I sleep eight hours a night for my health."
+ },
+ {
+  "w": "sirop (m)",
+  "fr": "Le médecin m'a donné un sirop contre la toux.",
+  "en": "The doctor gave me some cough mixture."
+ },
+ {
+  "w": "souffrir (v)",
+  "fr": "Ma grand-mère souffre du dos depuis des années.",
+  "en": "My grandmother has suffered with her back for years."
+ },
+ {
+  "w": "pansement (m)",
+  "fr": "Tu as un pansement ? Je me suis coupé le doigt.",
+  "en": "Have you got a plaster? I've cut my finger."
+ },
+ {
+  "w": "tabac (m)",
+  "fr": "Le tabac provoque beaucoup de maladies graves.",
+  "en": "Tobacco causes many serious illnesses."
+ },
+ {
+  "w": "tête (f)",
+  "fr": "Je me suis cogné la tête contre la porte.",
+  "en": "I banged my head on the door."
+ },
+ {
+  "w": "tomber (v)",
+  "fr": "Ma petite sœur est tombée de son vélo.",
+  "en": "My little sister fell off her bike."
+ },
+ {
+  "w": "tomber malade",
+  "fr": "Je tombe toujours malade pendant les vacances !",
+  "en": "I always fall ill during the holidays!"
+ },
+ {
+  "w": "tousser (v)",
+  "fr": "Il tousse beaucoup la nuit, il devrait voir un médecin.",
+  "en": "He coughs a lot at night; he should see a doctor."
+ },
+ {
+  "w": "ventre (m)",
+  "fr": "Après le repas, j'ai le ventre plein.",
+  "en": "After the meal, my stomach is full."
+ },
+ {
+  "w": "vomir (v)",
+  "fr": "Le bébé a vomi après son biberon.",
+  "en": "The baby vomited after his bottle."
+ },
+ {
+  "w": "yeux (m pl)",
+  "fr": "Après deux heures d'écran, j'ai mal aux yeux.",
+  "en": "After two hours in front of a screen, my eyes hurt."
+ },
+ {
+  "w": "abricot (m)",
+  "fr": "Les abricots du marché sont très sucrés cette année.",
+  "en": "The apricots at the market are very sweet this year."
+ },
+ {
+  "w": "agneau (m)",
+  "fr": "À Pâques, nous mangeons souvent de l'agneau.",
+  "en": "At Easter, we often eat lamb."
+ },
+ {
+  "w": "ananas (m)",
+  "fr": "Je mets de l'ananas dans ma salade de fruits.",
+  "en": "I put pineapple in my fruit salad."
+ },
+ {
+  "w": "baguette (f)",
+  "fr": "Va acheter une baguette à la boulangerie, s'il te plaît.",
+  "en": "Go and buy a baguette at the baker's, please."
+ },
+ {
+  "w": "banane (f)",
+  "fr": "Après le sport, je mange une banane.",
+  "en": "After sport, I eat a banana."
+ },
+ {
+  "w": "lait (m)",
+  "fr": "Je bois un verre de lait avant de dormir.",
+  "en": "I drink a glass of milk before going to sleep."
+ },
+ {
+  "w": "lard (m)",
+  "fr": "Mon père fait des œufs au lard le dimanche.",
+  "en": "My dad makes bacon and eggs on Sundays."
+ },
+ {
+  "w": "légume (m)",
+  "fr": "Mon légume préféré, c'est la courgette.",
+  "en": "My favourite vegetable is courgette."
+ },
+ {
+  "w": "limonade (f)",
+  "fr": "Il fait chaud, je vais boire une limonade bien fraîche.",
+  "en": "It's hot; I'm going to drink a nice cold lemonade."
+ },
+ {
+  "w": "beurre (m)",
+  "fr": "Je mets du beurre et de la confiture sur mon pain.",
+  "en": "I put butter and jam on my bread."
+ },
+ {
+  "w": "bien cuit(e) (adj)",
+  "fr": "Je voudrais mon steak bien cuit, s'il vous plaît.",
+  "en": "I'd like my steak well done, please."
+ },
+ {
+  "w": "bière (f)",
+  "fr": "Avant dix-huit ans, on ne peut pas acheter de bière.",
+  "en": "You can't buy beer before the age of eighteen."
+ },
+ {
+  "w": "bifteck (m)",
+  "fr": "Mon père fait cuire un bifteck sur le barbecue.",
+  "en": "My dad is cooking a steak on the barbecue."
+ },
+ {
+  "w": "bœuf (m)",
+  "fr": "Je n'aime pas beaucoup le bœuf, je préfère le poulet.",
+  "en": "I don't really like beef; I prefer chicken."
+ },
+ {
+  "w": "boire (v)",
+  "fr": "Il faut boire beaucoup d'eau quand il fait chaud.",
+  "en": "You must drink a lot of water when it's hot."
+ },
+ {
+  "w": "boisson (f)",
+  "fr": "Quelle est ta boisson préférée en été ?",
+  "en": "What's your favourite drink in summer?"
+ },
+ {
+  "w": "bon(ne) (adj)",
+  "fr": "Ce gâteau au chocolat est vraiment bon !",
+  "en": "This chocolate cake is really good!"
+ },
+ {
+  "w": "bon appétit",
+  "fr": "Le serveur pose les assiettes et nous souhaite bon appétit.",
+  "en": "The waiter puts down the plates and tells us to enjoy our meal."
+ },
+ {
+  "w": "bonbon (m)",
+  "fr": "Ma grand-mère a toujours des bonbons dans son sac.",
+  "en": "My grandmother always has sweets in her bag."
+ },
+ {
+  "w": "café (m)",
+  "fr": "Mes parents boivent un café après le déjeuner.",
+  "en": "My parents drink a coffee after lunch."
+ },
+ {
+  "w": "café au lait (m)",
+  "fr": "Le matin, je bois un grand café au lait.",
+  "en": "In the morning, I drink a big coffee with milk."
+ },
+ {
+  "w": "(café) crème (m)",
+  "fr": "Au café, ma mère commande toujours un crème.",
+  "en": "At the café, my mum always orders a white coffee."
+ },
+ {
+  "w": "(café) expresso (m)",
+  "fr": "Un expresso et un thé, s'il vous plaît.",
+  "en": "An espresso and a tea, please."
+ },
+ {
+  "w": "café noir",
+  "fr": "Mon père boit son café noir, sans sucre.",
+  "en": "My dad drinks his coffee black, without sugar."
+ },
+ {
+  "w": "cannette de (f)",
+  "fr": "J'ai acheté une cannette de limonade au distributeur.",
+  "en": "I bought a can of lemonade from the vending machine."
+ },
+ {
+  "w": "carotte (f)",
+  "fr": "Ma mère râpe des carottes pour l'entrée.",
+  "en": "My mum grates carrots for the starter."
+ },
+ {
+  "w": "casse-croûte (m)",
+  "fr": "Je prends un casse-croûte pour la randonnée.",
+  "en": "I'm taking a snack for the hike."
+ },
+ {
+  "w": "céréales (f pl)",
+  "fr": "Au petit-déjeuner, je mange des céréales avec du lait.",
+  "en": "For breakfast, I eat cereal with milk."
+ },
+ {
+  "w": "cerise (f)",
+  "fr": "Il y a un cerisier plein de cerises dans notre jardin.",
+  "en": "There's a cherry tree full of cherries in our garden."
+ },
+ {
+  "w": "champignon (m)",
+  "fr": "Je voudrais une pizza aux champignons, s'il vous plaît.",
+  "en": "I'd like a mushroom pizza, please."
+ },
+ {
+  "w": "chips (f pl)",
+  "fr": "On a acheté des chips et des boissons pour la fête.",
+  "en": "We bought crisps and drinks for the party."
+ },
+ {
+  "w": "chocolat (chaud) (m)",
+  "fr": "En hiver, je bois un chocolat chaud après l'école.",
+  "en": "In winter, I drink a hot chocolate after school."
+ },
+ {
+  "w": "chou (m)",
+  "fr": "Je n'aime pas le chou, ça sent mauvais.",
+  "en": "I don't like cabbage; it smells bad."
+ },
+ {
+  "w": "chou de Bruxelles (m)",
+  "fr": "Mon petit frère refuse de manger les choux de Bruxelles.",
+  "en": "My little brother refuses to eat Brussels sprouts."
+ },
+ {
+  "w": "chou-fleur (m)",
+  "fr": "Ce soir, il y a un gratin de chou-fleur.",
+  "en": "Tonight, there's cauliflower cheese."
+ },
+ {
+  "w": "cidre (m)",
+  "fr": "En Normandie, on boit du cidre avec les crêpes.",
+  "en": "In Normandy, people drink cider with pancakes."
+ },
+ {
+  "w": "citron (m)",
+  "fr": "Je bois un thé au citron quand j'ai mal à la gorge.",
+  "en": "I drink lemon tea when I have a sore throat."
+ },
+ {
+  "w": "coca (m)",
+  "fr": "Je prends un coca avec mon sandwich.",
+  "en": "I'll have a cola with my sandwich."
+ },
+ {
+  "w": "concombre (m)",
+  "fr": "J'ajoute du concombre et des tomates dans la salade.",
+  "en": "I add cucumber and tomatoes to the salad."
+ },
+ {
+  "w": "manger (v)",
+  "fr": "Nous mangeons à sept heures et demie le soir.",
+  "en": "We eat at half past seven in the evening."
+ },
+ {
+  "w": "meilleur(e) (adj)",
+  "fr": "La pizza de ce restaurant est meilleure que la mienne.",
+  "en": "This restaurant's pizza is better than mine."
+ },
+ {
+  "w": "morceau de (m)",
+  "fr": "Tu veux un morceau de gâteau ?",
+  "en": "Would you like a piece of cake?"
+ },
+ {
+  "w": "moules (marinière) (f)",
+  "fr": "Au restaurant, mon père commande des moules marinière.",
+  "en": "At the restaurant, my dad orders mussels cooked in white wine."
+ },
+ {
+  "w": "moutarde (f)",
+  "fr": "La moutarde de Dijon est très forte.",
+  "en": "Dijon mustard is very strong."
+ },
+ {
+  "w": "nourriture (f)",
+  "fr": "La nourriture de la cantine n'est pas mauvaise.",
+  "en": "The canteen food isn't bad."
+ },
+ {
+  "w": "œuf (m)",
+  "fr": "Le dimanche, je mange un œuf à la coque.",
+  "en": "On Sundays, I eat a boiled egg."
+ },
+ {
+  "w": "oignon (m)",
+  "fr": "Couper les oignons me fait pleurer.",
+  "en": "Chopping onions makes me cry."
+ },
+ {
+  "w": "omelette (f)",
+  "fr": "Pour le dîner, je fais une omelette au fromage.",
+  "en": "For dinner, I'm making a cheese omelette."
+ },
+ {
+  "w": "orange (f)",
+  "fr": "Je mange une orange à la récréation.",
+  "en": "I eat an orange at break time."
+ },
+ {
+  "w": "pain (m)",
+  "fr": "On achète du pain frais tous les jours.",
+  "en": "We buy fresh bread every day."
+ },
+ {
+  "w": "pain grillé (m)",
+  "fr": "Le matin, je mange du pain grillé avec du beurre.",
+  "en": "In the morning, I eat toast with butter."
+ },
+ {
+  "w": "pâté (m)",
+  "fr": "Pour le pique-nique, on a du pain et du pâté.",
+  "en": "For the picnic, we've got bread and pâté."
+ },
+ {
+  "w": "pâté en croûte (m)",
+  "fr": "En entrée, il y a du pâté en croûte.",
+  "en": "For the starter, there's meat pie."
+ },
+ {
+  "w": "pâtes (f)",
+  "fr": "Les pâtes à la sauce tomate, c'est mon plat préféré.",
+  "en": "Pasta with tomato sauce is my favourite dish."
+ },
+ {
+  "w": "pâtisserie (f)",
+  "fr": "Le dimanche, nous achetons des pâtisseries pour le dessert.",
+  "en": "On Sundays, we buy cakes for dessert."
+ },
+ {
+  "w": "pêche (f)",
+  "fr": "Les pêches sont très juteuses en été.",
+  "en": "Peaches are very juicy in summer."
+ },
+ {
+  "w": "petit-déjeuner (m)",
+  "fr": "Je prends mon petit-déjeuner à sept heures.",
+  "en": "I have my breakfast at seven o'clock."
+ },
+ {
+  "w": "petit pain (m)",
+  "fr": "Je voudrais deux petits pains, s'il vous plaît.",
+  "en": "I'd like two bread rolls, please."
+ },
+ {
+  "w": "petits pois (m pl)",
+  "fr": "Mon frère ne mange jamais ses petits pois.",
+  "en": "My brother never eats his peas."
+ },
+ {
+  "w": "plat du jour (m)",
+  "fr": "Le plat du jour, c'est du poisson avec des légumes.",
+  "en": "Today's special is fish with vegetables."
+ },
+ {
+  "w": "plat principal (m)",
+  "fr": "Comme plat principal, je vais prendre le poulet.",
+  "en": "For the main course, I'll have the chicken."
+ },
+ {
+  "w": "poire (f)",
+  "fr": "Cette poire est bien mûre et très sucrée.",
+  "en": "This pear is nice and ripe and very sweet."
+ },
+ {
+  "w": "poisson (m)",
+  "fr": "Le vendredi, on mange du poisson à la cantine.",
+  "en": "On Fridays, we eat fish in the canteen."
+ },
+ {
+  "w": "poissonnerie (f)",
+  "fr": "Ma mère achète des crevettes à la poissonnerie.",
+  "en": "My mum buys prawns at the fishmonger's."
+ },
+ {
+  "w": "poivre (m)",
+  "fr": "Tu peux me passer le sel et le poivre ?",
+  "en": "Can you pass me the salt and pepper?"
+ },
+ {
+  "w": "pomme (f)",
+  "fr": "Je mange une pomme tous les jours à midi.",
+  "en": "I eat an apple every day at lunchtime."
+ },
+ {
+  "w": "pomme de terre (f)",
+  "fr": "On fait de la purée de pommes de terre ce soir.",
+  "en": "We're making mashed potatoes tonight."
+ },
+ {
+  "w": "porc (m)",
+  "fr": "Je ne mange pas de porc pour des raisons religieuses.",
+  "en": "I don't eat pork for religious reasons."
+ },
+ {
+  "w": "confiture (f)",
+  "fr": "Ma grand-mère fait de la confiture de fraises.",
+  "en": "My grandmother makes strawberry jam."
+ },
+ {
+  "w": "côtelette (f)",
+  "fr": "Je prends une côtelette de porc avec des frites.",
+  "en": "I'll have a pork chop with chips."
+ },
+ {
+  "w": "crème (f)",
+  "fr": "Je mets de la crème sur mes fraises.",
+  "en": "I put cream on my strawberries."
+ },
+ {
+  "w": "crêpe (f)",
+  "fr": "Pour Mardi gras, on mange des crêpes au sucre.",
+  "en": "On Shrove Tuesday, we eat pancakes with sugar."
+ },
+ {
+  "w": "crêperie (f)",
+  "fr": "On mange à la crêperie près de la plage.",
+  "en": "We eat at the pancake stall near the beach."
+ },
+ {
+  "w": "crevette (f)",
+  "fr": "J'adore les crevettes avec de la mayonnaise.",
+  "en": "I love prawns with mayonnaise."
+ },
+ {
+  "w": "croque-madame (m)",
+  "fr": "Je prends un croque-madame, avec un œuf sur le dessus.",
+  "en": "I'll have a croque-madame, with an egg on top."
+ },
+ {
+  "w": "croque-monsieur (m)",
+  "fr": "À midi, je mange un croque-monsieur au jambon et au fromage.",
+  "en": "At lunchtime, I eat a toasted ham and cheese sandwich."
+ },
+ {
+  "w": "crudités (f pl)",
+  "fr": "Je commence toujours le repas par des crudités.",
+  "en": "I always start the meal with raw vegetables."
+ },
+ {
+  "w": "délicieux(~ieuse)",
+  "fr": "Merci, le repas était délicieux !",
+  "en": "Thank you, the meal was delicious!"
+ },
+ {
+  "w": "dessert (m)",
+  "fr": "Comme dessert, je voudrais une glace à la vanille.",
+  "en": "For dessert, I'd like a vanilla ice cream."
+ },
+ {
+  "w": "dinde (f)",
+  "fr": "À Noël, nous mangeons de la dinde aux marrons.",
+  "en": "At Christmas, we eat turkey with chestnuts."
+ },
+ {
+  "w": "dîner (m)",
+  "fr": "Le dîner est prêt, venez à table !",
+  "en": "Dinner is ready, come to the table!"
+ },
+ {
+  "w": "eau minérale (f)",
+  "fr": "Une bouteille d'eau minérale, s'il vous plaît.",
+  "en": "A bottle of mineral water, please."
+ },
+ {
+  "w": "farine (f)",
+  "fr": "Il faut de la farine pour faire un gâteau.",
+  "en": "You need flour to make a cake."
+ },
+ {
+  "w": "filet (m)",
+  "fr": "Le chef prépare un filet de bœuf aux champignons.",
+  "en": "The chef is preparing a fillet of beef with mushrooms."
+ },
+ {
+  "w": "frais (fraîche) (adj)",
+  "fr": "J'achète des légumes frais au marché.",
+  "en": "I buy fresh vegetables at the market."
+ },
+ {
+  "w": "fraise (f)",
+  "fr": "En juin, nous allons cueillir des fraises à la ferme.",
+  "en": "In June, we go strawberry picking at the farm."
+ },
+ {
+  "w": "framboise (f)",
+  "fr": "Ma tarte préférée, c'est la tarte aux framboises.",
+  "en": "My favourite tart is raspberry tart."
+ },
+ {
+  "w": "frites (f pl)",
+  "fr": "Les enfants adorent le poulet avec des frites.",
+  "en": "Children love chicken and chips."
+ },
+ {
+  "w": "fromage (m)",
+  "fr": "En France, il y a des centaines de fromages différents.",
+  "en": "In France, there are hundreds of different cheeses."
+ },
+ {
+  "w": "fruits de mer (m pl)",
+  "fr": "Au bord de la mer, on mange des fruits de mer.",
+  "en": "At the seaside, we eat seafood."
+ },
+ {
+  "w": "fumé(e) (adj)",
+  "fr": "J'adore le saumon fumé avec un peu de citron.",
+  "en": "I love smoked salmon with a bit of lemon."
+ },
+ {
+  "w": "gâteau (m)",
+  "fr": "Ma sœur fait un gâteau au chocolat pour mon anniversaire.",
+  "en": "My sister is making a chocolate cake for my birthday."
+ },
+ {
+  "w": "gaufre (f)",
+  "fr": "À la fête foraine, j'achète une gaufre au chocolat.",
+  "en": "At the funfair, I buy a chocolate waffle."
+ },
+ {
+  "w": "goûter (v)",
+  "fr": "Tu veux goûter ma soupe ?",
+  "en": "Do you want to taste my soup?"
+ },
+ {
+  "w": "potage (m)",
+  "fr": "En hiver, ma grand-mère prépare un potage aux légumes.",
+  "en": "In winter, my grandmother makes vegetable soup."
+ },
+ {
+  "w": "prendre un repas",
+  "fr": "Nous prenons un repas ensemble tous les dimanches.",
+  "en": "We have a meal together every Sunday."
+ },
+ {
+  "w": "pression (f)",
+  "fr": "Mon père commande une pression et un jus d'orange pour moi.",
+  "en": "My dad orders a draught beer and an orange juice for me."
+ },
+ {
+  "w": "prune (f)",
+  "fr": "Ma grand-mère fait une tarte aux prunes délicieuse.",
+  "en": "My grandmother makes a delicious plum tart."
+ },
+ {
+  "w": "radis (m)",
+  "fr": "J'aime manger des radis avec du beurre et du sel.",
+  "en": "I like eating radishes with butter and salt."
+ },
+ {
+  "w": "ragoût (m)",
+  "fr": "Le ragoût de bœuf cuit pendant trois heures.",
+  "en": "The beef casserole cooks for three hours."
+ },
+ {
+  "w": "raisin (m)",
+  "fr": "Je préfère le raisin blanc au raisin noir.",
+  "en": "I prefer white grapes to black grapes."
+ },
+ {
+  "w": "recette (f)",
+  "fr": "Ma mère m'a donné sa recette de gâteau.",
+  "en": "My mum gave me her cake recipe."
+ },
+ {
+  "w": "repas (m)",
+  "fr": "En France, le repas de midi dure souvent une heure.",
+  "en": "In France, the midday meal often lasts an hour."
+ },
+ {
+  "w": "riz (m)",
+  "fr": "Je mange du riz avec du poulet et des légumes.",
+  "en": "I eat rice with chicken and vegetables."
+ },
+ {
+  "w": "rôti(e) (adj)",
+  "fr": "Le dimanche, nous mangeons du poulet rôti.",
+  "en": "On Sundays, we eat roast chicken."
+ },
+ {
+  "w": "salade (verte) (f)",
+  "fr": "Je prends une salade verte avec mon steak.",
+  "en": "I'll have a green salad with my steak."
+ },
+ {
+  "w": "sandwich (au fromage/au jambon) (m)",
+  "fr": "Pour le pique-nique, je prépare des sandwichs au jambon.",
+  "en": "For the picnic, I'm making ham sandwiches."
+ },
+ {
+  "w": "sauce vinaigrette (f)",
+  "fr": "Je mets un peu de sauce vinaigrette sur la salade.",
+  "en": "I put a little oil and vinegar dressing on the salad."
+ },
+ {
+  "w": "saucisse (f)",
+  "fr": "Au barbecue, on fait griller des saucisses.",
+  "en": "At the barbecue, we grill sausages."
+ },
+ {
+  "w": "saucisson (m)",
+  "fr": "Mon grand-père coupe le saucisson avec son couteau.",
+  "en": "My grandfather slices the dried sausage with his knife."
+ },
+ {
+  "w": "saumon (m)",
+  "fr": "Le saumon est mon poisson préféré.",
+  "en": "Salmon is my favourite fish."
+ },
+ {
+  "w": "savoureux(~euse) (adj)",
+  "fr": "Ce plat est simple mais très savoureux.",
+  "en": "This dish is simple but very tasty."
+ },
+ {
+  "w": "sel (m)",
+  "fr": "Il y a trop de sel dans cette soupe.",
+  "en": "There's too much salt in this soup."
+ },
+ {
+  "w": "soda (m)",
+  "fr": "Les sodas contiennent beaucoup de sucre.",
+  "en": "Fizzy drinks contain a lot of sugar."
+ },
+ {
+  "w": "souper (m)",
+  "fr": "Après le spectacle, nous prenons un petit souper.",
+  "en": "After the show, we have a light supper."
+ },
+ {
+  "w": "steak-frites (m)",
+  "fr": "Au restaurant, mon frère commande toujours un steak-frites.",
+  "en": "At the restaurant, my brother always orders steak and chips."
+ },
+ {
+  "w": "sucre (m)",
+  "fr": "Je ne mets jamais de sucre dans mon thé.",
+  "en": "I never put sugar in my tea."
+ },
+ {
+  "w": "tarte (aux pommes) (f)",
+  "fr": "La tarte aux pommes de ma tante est la meilleure !",
+  "en": "My aunt's apple tart is the best!"
+ },
+ {
+  "w": "tartine (f)",
+  "fr": "Le matin, je mange une tartine avec du beurre et du miel.",
+  "en": "In the morning, I eat a slice of bread with butter and honey."
+ },
+ {
+  "w": "thé (m)",
+  "fr": "Ma mère boit du thé vert tous les après-midi.",
+  "en": "My mum drinks green tea every afternoon."
+ },
+ {
+  "w": "thon (m)",
+  "fr": "Je prends une salade au thon, s'il vous plaît.",
+  "en": "I'll have a tuna salad, please."
+ },
+ {
+  "w": "tomate (f)",
+  "fr": "Je cultive des tomates dans mon jardin.",
+  "en": "I grow tomatoes in my garden."
+ },
+ {
+  "w": "tranche de (f)",
+  "fr": "Je voudrais quatre tranches de jambon, s'il vous plaît.",
+  "en": "I'd like four slices of ham, please."
+ },
+ {
+  "w": "(avoir) un goût de",
+  "fr": "Cette glace a un goût de fraise.",
+  "en": "This ice cream tastes of strawberry."
+ },
+ {
+  "w": "veau (m)",
+  "fr": "Au restaurant, mon père prend une escalope de veau.",
+  "en": "At the restaurant, my dad has a veal escalope."
+ },
+ {
+  "w": "végétarien(ne) (adj)",
+  "fr": "Ma sœur est végétarienne, elle ne mange pas de viande.",
+  "en": "My sister is vegetarian; she doesn't eat meat."
+ },
+ {
+  "w": "goûter (m)",
+  "fr": "Après l'école, je prends un goûter avec du pain et du chocolat.",
+  "en": "After school, I have an afternoon snack of bread and chocolate."
+ },
+ {
+  "w": "haricot vert (m)",
+  "fr": "Je mange des haricots verts avec mon poisson.",
+  "en": "I eat green beans with my fish."
+ },
+ {
+  "w": "hors d'œuvre (m)",
+  "fr": "Comme hors d'œuvre, je vais prendre le melon.",
+  "en": "As a starter, I'll have the melon."
+ },
+ {
+  "w": "huile (m)",
+  "fr": "Fais cuire les légumes avec un peu d'huile d'olive.",
+  "en": "Cook the vegetables with a little olive oil."
+ },
+ {
+  "w": "jambon (m)",
+  "fr": "Mon petit frère mange des pâtes au jambon.",
+  "en": "My little brother is eating pasta with ham."
+ },
+ {
+  "w": "jus (m)",
+  "fr": "Je voudrais un jus de pomme, s'il vous plaît.",
+  "en": "I'd like an apple juice, please."
+ },
+ {
+  "w": "viande (f)",
+  "fr": "Je mange de la viande seulement deux fois par semaine.",
+  "en": "I only eat meat twice a week."
+ },
+ {
+  "w": "vin (m)",
+  "fr": "Mes parents boivent un verre de vin au repas.",
+  "en": "My parents drink a glass of wine with their meal."
+ },
+ {
+  "w": "vinaigre (m)",
+  "fr": "Pour la vinaigrette, il faut de l'huile et du vinaigre.",
+  "en": "For the dressing, you need oil and vinegar."
+ },
+ {
+  "w": "yaourt (m)",
+  "fr": "Le matin, je mange un yaourt avec des fruits.",
+  "en": "In the morning, I eat a yoghurt with some fruit."
+ }
+]

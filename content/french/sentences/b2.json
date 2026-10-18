@@ -465,7 +465,7 @@
   "en": "Which profession do you want to go into later on?"
  },
  {
-  "w": "œuvre caricative (f)",
+  "w": "œuvre caritative (f)",
   "fr": "Je donne mes vieux vêtements à une œuvre caritative.",
   "en": "I give my old clothes to a charity."
  },
@@ -1016,8 +1016,8 @@
  },
  {
   "w": "ouvre-boîte (m)",
-  "fr": "Passe-moi l'ouvre-boîte pour ouvrir les tomates, s'il te plaît.",
-  "en": "Pass me the tin opener to open the tomatoes, please."
+  "fr": "Passe-moi l'ouvre-boîte pour ouvrir la boîte de thon, s'il te plaît.",
+  "en": "Pass me the tin opener to open the tin of tuna, please."
  },
  {
   "w": "ouvre-bouteille (m)",
@@ -1702,7 +1702,7 @@
  {
   "w": "nappe (f)",
   "fr": "Pour Noël, ma mère met une belle nappe rouge.",
-  "en": "For Christmas, my mum puts out a beautiful red tablecloth."
+  "en": "For Christmas, my mum puts a beautiful red tablecloth on the table."
  },
  {
   "w": "vider (v)",
@@ -1837,6 +1837,6 @@
  {
   "w": "vedette (f)",
   "fr": "Cette vedette de cinéma est très gentille avec ses fans.",
-  "en": "This film star is very kind to fans."
+  "en": "This film star is very kind to their fans."
  }
 ]

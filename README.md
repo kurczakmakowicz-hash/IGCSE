@@ -8,7 +8,7 @@ the actual specification content rather than a generic flashcard box.
 | Biology | 4BI1 | 176 spec points (42 Paper 2 only, 14 practicals) |
 | Chemistry | 4CH1 | 182 spec points (52 Paper 2 only, 12 practicals) |
 | Mathematics A | 4MA1 | 241 items, Higher Tier (78 Higher-only) |
-| French | 4FR1 | 2,145 prescribed words · 39 grammar topics (738 cards) · 60 verbs × 7 tenses (400 cards) |
+| French | 4FR1 | 2,144 prescribed words · 39 grammar topics (738 cards) · 60 verbs × 7 tenses (400 cards) |
 
 Target series: **May/June 2027**.
 
@@ -143,6 +143,12 @@ the two ever seem to disagree.
 
 Pearson reissues specifications from time to time. If yours differs, rerun the
 parser against the current PDFs — see `tools/README.md`.
+
+A handful of obvious typing errors in the published vocabulary list ("pansemen",
+"gauffre", "à toute à l'heure", "œuvre caricative", "qu-est-ce que", the gloss
+"so, therefore" for the conjunction *si*…) are corrected at build time so the
+app never teaches a misspelling; the full list is `FRENCH_ERRATA` in
+`tools/build_syllabus.py`.
 
 **Check anything that matters against the official specification.** The parser
 reads a PDF's text layer, which is a lossy thing to do; the structure has been

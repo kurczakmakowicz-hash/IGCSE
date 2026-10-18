@@ -1,0 +1,1907 @@
+[
+ {
+  "w": "adopté(e) (adj)",
+  "fr": "Ma cousine a été adoptée quand elle avait deux ans.",
+  "en": "My cousin was adopted when she was two."
+ },
+ {
+  "w": "adresse (f)",
+  "fr": "Je t'envoie une carte, quelle est ton adresse ?",
+  "en": "I'm sending you a card, so what's your address?"
+ },
+ {
+  "w": "âgé(e) (adj)",
+  "fr": "Ma voisine est une dame âgée très gentille.",
+  "en": "My neighbour is a very kind elderly lady."
+ },
+ {
+  "w": "âgé(e) de X ans",
+  "fr": "J'ai une petite sœur âgée de huit ans.",
+  "en": "I have a little sister who is eight years old."
+ },
+ {
+  "w": "aimable (adj)",
+  "fr": "Le nouveau professeur est toujours très aimable avec nous.",
+  "en": "The new teacher is always very pleasant to us."
+ },
+ {
+  "w": "aîné(e) (adj)",
+  "fr": "Mon frère aîné étudie à l'université de Lyon.",
+  "en": "My older brother studies at the university in Lyon."
+ },
+ {
+  "w": "ami(e) (m/f)",
+  "fr": "Léa est ma meilleure amie depuis l'école primaire.",
+  "en": "Léa has been my best friend since primary school."
+ },
+ {
+  "w": "amitié (f)",
+  "fr": "Pour moi, l'amitié est plus importante que l'argent.",
+  "en": "For me, friendship is more important than money."
+ },
+ {
+  "w": "amour (m)",
+  "fr": "Ce film raconte une belle histoire d'amour.",
+  "en": "This film tells a beautiful love story."
+ },
+ {
+  "w": "animal domestique (m)",
+  "fr": "Nous avons un chat comme animal domestique.",
+  "en": "We have a cat as a pet."
+ },
+ {
+  "w": "avoir les cheveux (noirs) (v)",
+  "fr": "Mon père a les cheveux noirs et courts.",
+  "en": "My father has short black hair."
+ },
+ {
+  "w": "avoir X ans (v)",
+  "fr": "Mon petit frère a dix ans aujourd'hui.",
+  "en": "My little brother is ten years old today."
+ },
+ {
+  "w": "barbe (f)",
+  "fr": "Mon oncle a une longue barbe grise.",
+  "en": "My uncle has a long grey beard."
+ },
+ {
+  "w": "bavard(e)",
+  "fr": "Chloé est très bavarde en classe.",
+  "en": "Chloé is very chatty in class."
+ },
+ {
+  "w": "bébé (m/f)",
+  "fr": "Ma tante vient d'avoir un bébé.",
+  "en": "My aunt has just had a baby."
+ },
+ {
+  "w": "bête (adj)",
+  "fr": "Je me sens bête quand je fais une erreur.",
+  "en": "I feel stupid when I make a mistake."
+ },
+ {
+  "w": "blond(e) (adj)",
+  "fr": "Ma sœur a les cheveux blonds et les yeux bleus.",
+  "en": "My sister has blond hair and blue eyes."
+ },
+ {
+  "w": "bouche (f)",
+  "fr": "Ne parle pas la bouche pleine, s'il te plaît !",
+  "en": "Don't talk with your mouth full, please!"
+ },
+ {
+  "w": "bouclé (adj)",
+  "fr": "Hugo a les cheveux bruns et bouclés.",
+  "en": "Hugo has curly brown hair."
+ },
+ {
+  "w": "cadet(te) (adj)",
+  "fr": "Ma sœur cadette a seulement six ans.",
+  "en": "My younger sister is only six."
+ },
+ {
+  "w": "camarade (de classe) (m/f)",
+  "fr": "Mes camarades de classe sont très sympas.",
+  "en": "My school friends are really nice."
+ },
+ {
+  "w": "caractère (m)",
+  "fr": "Inès a un caractère calme et patient.",
+  "en": "Inès has a calm, patient personality."
+ },
+ {
+  "w": "célibataire (adj)",
+  "fr": "Mon oncle a quarante ans et il est célibataire.",
+  "en": "My uncle is forty and he is single."
+ },
+ {
+  "w": "châtain (adj inv)",
+  "fr": "Mon frère est châtain, comme mon père.",
+  "en": "My brother has brown hair, like my father."
+ },
+ {
+  "w": "chauve (adj)",
+  "fr": "Mon grand-père est chauve depuis longtemps.",
+  "en": "My grandfather has been bald for a long time."
+ },
+ {
+  "w": "cheveux (m pl)",
+  "fr": "Je me lave les cheveux tous les matins.",
+  "en": "I wash my hair every morning."
+ },
+ {
+  "w": "chien (m)",
+  "fr": "Tous les soirs, je promène mon chien au parc.",
+  "en": "Every evening, I walk my dog in the park."
+ },
+ {
+  "w": "cobaye (m)",
+  "fr": "Mon petit frère a un cobaye qui s'appelle Noisette.",
+  "en": "My little brother has a guinea pig called Noisette."
+ },
+ {
+  "w": "cochon d’Inde (m)",
+  "fr": "Le cochon d'Inde mange des carottes et de la salade.",
+  "en": "The guinea pig eats carrots and lettuce."
+ },
+ {
+  "w": "confiant(e) (adj)",
+  "fr": "Karim est très confiant avant son examen de maths.",
+  "en": "Karim is very confident before his maths exam."
+ },
+ {
+  "w": "généreux(~euse) (adj)",
+  "fr": "Ma grand-mère est très généreuse avec tout le monde.",
+  "en": "My grandmother is very generous to everyone."
+ },
+ {
+  "w": "gentil(le) (adj)",
+  "fr": "Ma voisine est gentille, elle m'aide souvent.",
+  "en": "My neighbour is kind; she often helps me."
+ },
+ {
+  "w": "grand(e) (adj)",
+  "fr": "Mon frère est très grand, il mesure un mètre quatre-vingt-dix.",
+  "en": "My brother is very tall; he is one metre ninety."
+ },
+ {
+  "w": "grand-mère (f)",
+  "fr": "Le dimanche, je rends visite à ma grand-mère.",
+  "en": "On Sundays, I visit my grandmother."
+ },
+ {
+  "w": "grand-père (m)",
+  "fr": "Mon grand-père me raconte souvent des histoires.",
+  "en": "My grandfather often tells me stories."
+ },
+ {
+  "w": "heureux(~euse) (adj)",
+  "fr": "Je suis heureux quand je suis avec ma famille.",
+  "en": "I am happy when I am with my family."
+ },
+ {
+  "w": "homme (m)",
+  "fr": "L'homme à côté de moi lit un journal.",
+  "en": "The man next to me is reading a newspaper."
+ },
+ {
+  "w": "honnête (adj)",
+  "fr": "Mon meilleur ami est toujours honnête avec moi.",
+  "en": "My best friend is always honest with me."
+ },
+ {
+  "w": "impoli(e) (adj)",
+  "fr": "C'est impoli de parler pendant que le prof parle.",
+  "en": "It's rude to talk while the teacher is talking."
+ },
+ {
+  "w": "joli(e) (adj)",
+  "fr": "Ta robe est vraiment jolie aujourd'hui !",
+  "en": "Your dress is really pretty today!"
+ },
+ {
+  "w": "jumeau(x) (m)",
+  "fr": "Mes deux cousins sont jumeaux, mais ils sont très différents.",
+  "en": "My two cousins are twins, but they are very different."
+ },
+ {
+  "w": "jumelle(s) (f)",
+  "fr": "Léa et Chloé sont jumelles, elles ont quinze ans.",
+  "en": "Léa and Chloé are twin sisters; they are fifteen."
+ },
+ {
+  "w": "laid(e) (adj)",
+  "fr": "Je trouve ce bâtiment vraiment laid.",
+  "en": "I find this building really ugly."
+ },
+ {
+  "w": "lapin (m)",
+  "fr": "Mon lapin habite dans une cage dans le jardin.",
+  "en": "My rabbit lives in a hutch in the garden."
+ },
+ {
+  "w": "long(ue) (adj)",
+  "fr": "Ma sœur a les cheveux très longs.",
+  "en": "My sister has very long hair."
+ },
+ {
+  "w": "maigre (adj)",
+  "fr": "Après sa maladie, mon chat était très maigre.",
+  "en": "After his illness, my cat was very thin."
+ },
+ {
+  "w": "maman (f)",
+  "fr": "Maman prépare le dîner pour toute la famille.",
+  "en": "Mum is making dinner for the whole family."
+ },
+ {
+  "w": "mari (m)",
+  "fr": "Le mari de ma tante est espagnol.",
+  "en": "My aunt's husband is Spanish."
+ },
+ {
+  "w": "marié(e) (adj)",
+  "fr": "Mes parents sont mariés depuis vingt ans.",
+  "en": "My parents have been married for twenty years."
+ },
+ {
+  "w": "marron (adj inv)",
+  "fr": "Mon frère a les yeux marron comme ma mère.",
+  "en": "My brother has brown eyes like my mother."
+ },
+ {
+  "w": "méchant(e) (adj)",
+  "fr": "Attention, le chien du voisin est méchant !",
+  "en": "Careful, the neighbour's dog is nasty!"
+ },
+ {
+  "w": "mère (f)",
+  "fr": "Ma mère travaille dans un hôpital.",
+  "en": "My mother works in a hospital."
+ },
+ {
+  "w": "mignon(ne) (adj)",
+  "fr": "Ton petit chat est vraiment mignon !",
+  "en": "Your kitten is really cute!"
+ },
+ {
+  "w": "mince (adj)",
+  "fr": "Ma cousine est grande et mince.",
+  "en": "My cousin is tall and slim."
+ },
+ {
+  "w": "mort(e) (adj)",
+  "fr": "Mes plantes sont mortes parce que j'ai oublié de les arroser.",
+  "en": "My plants are dead because I forgot to water them."
+ },
+ {
+  "w": "nationalité (f)",
+  "fr": "Quelle est ta nationalité ? Je suis française.",
+  "en": "What is your nationality? I'm French."
+ },
+ {
+  "w": "neveu (m)",
+  "fr": "Mon neveu a trois ans et il adore les dinosaures.",
+  "en": "My nephew is three and he loves dinosaurs."
+ },
+ {
+  "w": "nièce (f)",
+  "fr": "Ma mère achète un cadeau pour sa nièce.",
+  "en": "My mother is buying a present for her niece."
+ },
+ {
+  "w": "nom (de famille) (m)",
+  "fr": "Mon nom de famille est difficile à prononcer.",
+  "en": "My family name is hard to pronounce."
+ },
+ {
+  "w": "oncle (m)",
+  "fr": "Mon oncle habite à Marseille avec ses enfants.",
+  "en": "My uncle lives in Marseille with his children."
+ },
+ {
+  "w": "papa (m)",
+  "fr": "Papa, tu peux m'aider avec mes devoirs ?",
+  "en": "Dad, can you help me with my homework?"
+ },
+ {
+  "w": "parents (m pl)",
+  "fr": "Mes parents travaillent tous les deux à Paris.",
+  "en": "My parents both work in Paris."
+ },
+ {
+  "w": "paresseux(~euse) (adj)",
+  "fr": "Mon frère est paresseux, il reste au lit jusqu'à midi.",
+  "en": "My brother is lazy; he stays in bed until midday."
+ },
+ {
+  "w": "connaître (v)",
+  "fr": "Tu connais le nouvel élève de notre classe ?",
+  "en": "Do you know the new pupil in our class?"
+ },
+ {
+  "w": "content(e) (adj)",
+  "fr": "Je suis très content de mes résultats.",
+  "en": "I am very pleased with my results."
+ },
+ {
+  "w": "copain (m)",
+  "fr": "Je vais au cinéma avec mes copains samedi.",
+  "en": "I'm going to the cinema with my friends on Saturday."
+ },
+ {
+  "w": "copine (f)",
+  "fr": "Ma copine Inès vient dormir chez moi ce soir.",
+  "en": "My friend Inès is coming to sleep over at my house tonight."
+ },
+ {
+  "w": "court(e)",
+  "fr": "Mon père a les cheveux courts et gris.",
+  "en": "My dad has short grey hair."
+ },
+ {
+  "w": "cousin (m)",
+  "fr": "Mon cousin habite au Canada avec ses parents.",
+  "en": "My cousin lives in Canada with his parents."
+ },
+ {
+  "w": "cousine (f)",
+  "fr": "Ma cousine Chloé a le même âge que moi.",
+  "en": "My cousin Chloé is the same age as me."
+ },
+ {
+  "w": "demi-frère (m)",
+  "fr": "Mon demi-frère a cinq ans de plus que moi.",
+  "en": "My half-brother is five years older than me."
+ },
+ {
+  "w": "demi-sœur (f)",
+  "fr": "Je partage ma chambre avec ma demi-sœur.",
+  "en": "I share my bedroom with my half-sister."
+ },
+ {
+  "w": "divorcé(e)",
+  "fr": "Mes parents sont divorcés, mais ils s'entendent bien.",
+  "en": "My parents are divorced, but they get on well."
+ },
+ {
+  "w": "égoïste (adj)",
+  "fr": "Mon frère est égoïste, il ne partage jamais rien.",
+  "en": "My brother is selfish; he never shares anything."
+ },
+ {
+  "w": "enfant (unique) (m/f)",
+  "fr": "Je suis enfant unique, je n'ai ni frère ni sœur.",
+  "en": "I am an only child; I have no brothers or sisters."
+ },
+ {
+  "w": "épouser (v)",
+  "fr": "Ma tante va épouser son petit ami en juin.",
+  "en": "My aunt is going to marry her boyfriend in June."
+ },
+ {
+  "w": "être amoureux de (v)",
+  "fr": "Hugo est amoureux de la sœur de son meilleur ami.",
+  "en": "Hugo is in love with his best friend's sister."
+ },
+ {
+  "w": "être né(e) (v)",
+  "fr": "Je suis née à Lyon, mais j'habite à Paris.",
+  "en": "I was born in Lyon, but I live in Paris."
+ },
+ {
+  "w": "famille (f)",
+  "fr": "Le week-end, je passe du temps avec ma famille.",
+  "en": "At the weekend, I spend time with my family."
+ },
+ {
+  "w": "fatigant (adj)",
+  "fr": "Le voyage en car était long et fatigant.",
+  "en": "The coach journey was long and tiring."
+ },
+ {
+  "w": "fatigue (f)",
+  "fr": "Avec la fatigue, je n'arrive pas à me concentrer.",
+  "en": "Because of tiredness, I can't concentrate."
+ },
+ {
+  "w": "fatigué(e) (adj)",
+  "fr": "Je suis très fatigué parce que je me suis couché tard.",
+  "en": "I am very tired because I went to bed late."
+ },
+ {
+  "w": "femme (f)",
+  "fr": "La femme de mon oncle est professeur de chimie.",
+  "en": "My uncle's wife is a chemistry teacher."
+ },
+ {
+  "w": "fille (f)",
+  "fr": "Mes voisins ont deux filles et un fils.",
+  "en": "My neighbours have two daughters and a son."
+ },
+ {
+  "w": "fils (m)",
+  "fr": "Mon oncle a un fils qui s'appelle Hugo.",
+  "en": "My uncle has a son called Hugo."
+ },
+ {
+  "w": "foncé(e) (adj)",
+  "fr": "Ma mère a les cheveux foncés et bouclés.",
+  "en": "My mother has dark curly hair."
+ },
+ {
+  "w": "fou (folle) (adj)",
+  "fr": "Mon chien devient fou quand il voit un chat.",
+  "en": "My dog goes crazy when he sees a cat."
+ },
+ {
+  "w": "frère (m)",
+  "fr": "J'ai un frère et deux sœurs.",
+  "en": "I have one brother and two sisters."
+ },
+ {
+  "w": "frisé(e) (adj)",
+  "fr": "Mon petit cousin a les cheveux roux et frisés.",
+  "en": "My little cousin has curly red hair."
+ },
+ {
+  "w": "garçon (m)",
+  "fr": "Il y a quinze garçons dans ma classe.",
+  "en": "There are fifteen boys in my class."
+ },
+ {
+  "w": "gâté(e) (adj)",
+  "fr": "Ma petite sœur est très gâtée par mes grands-parents.",
+  "en": "My little sister is very spoilt by my grandparents."
+ },
+ {
+  "w": "partager (v)",
+  "fr": "Je partage toujours mes bonbons avec mes amis.",
+  "en": "I always share my sweets with my friends."
+ },
+ {
+  "w": "père (m)",
+  "fr": "Mon père est cuisinier dans un restaurant.",
+  "en": "My father is a cook in a restaurant."
+ },
+ {
+  "w": "petit(e) (adj)",
+  "fr": "Nous habitons dans une petite maison à la campagne.",
+  "en": "We live in a small house in the countryside."
+ },
+ {
+  "w": "petit ami (m)",
+  "fr": "Le petit ami de ma sœur s'appelle Karim.",
+  "en": "My sister's boyfriend is called Karim."
+ },
+ {
+  "w": "petite amie (f)",
+  "fr": "Hugo a une petite amie depuis deux mois.",
+  "en": "Hugo has had a girlfriend for two months."
+ },
+ {
+  "w": "poisson rouge (m)",
+  "fr": "Mon poisson rouge s'appelle Bulle.",
+  "en": "My goldfish is called Bulle."
+ },
+ {
+  "w": "poli(e) (adj)",
+  "fr": "Il faut être poli avec les adultes.",
+  "en": "You must be polite to adults."
+ },
+ {
+  "w": "rire (v)",
+  "fr": "Mon père nous fait toujours rire avec ses blagues.",
+  "en": "My dad always makes us laugh with his jokes."
+ },
+ {
+  "w": "roux (rousse) (adj)",
+  "fr": "Ma meilleure amie est rousse avec des taches de rousseur.",
+  "en": "My best friend is red-headed with freckles."
+ },
+ {
+  "w": "sœur (f)",
+  "fr": "Ma sœur et moi, nous nous disputons souvent.",
+  "en": "My sister and I often argue."
+ },
+ {
+  "w": "souris (f)",
+  "fr": "Ma petite sœur a une souris blanche dans une cage.",
+  "en": "My little sister has a white mouse in a cage."
+ },
+ {
+  "w": "sportif (adj)",
+  "fr": "Mon frère est très sportif, il joue au foot et au tennis.",
+  "en": "My brother is very sporty; he plays football and tennis."
+ },
+ {
+  "w": "sympathique (adj)",
+  "fr": "Les parents de mon copain sont très sympathiques.",
+  "en": "My friend's parents are very friendly."
+ },
+ {
+  "w": "tante (f)",
+  "fr": "Ma tante m'offre toujours des livres pour mon anniversaire.",
+  "en": "My aunt always gives me books for my birthday."
+ },
+ {
+  "w": "timide (adj)",
+  "fr": "Au début, j'étais timide dans ma nouvelle école.",
+  "en": "At first, I was shy at my new school."
+ },
+ {
+  "w": "tortue (f)",
+  "fr": "Notre tortue mange de la salade dans le jardin.",
+  "en": "Our tortoise eats lettuce in the garden."
+ },
+ {
+  "w": "triste (adj)",
+  "fr": "Je suis triste parce que mon meilleur ami déménage.",
+  "en": "I am sad because my best friend is moving house."
+ },
+ {
+  "w": "unique (adj)",
+  "fr": "Mon copain est fils unique et ses parents le gâtent.",
+  "en": "My friend is an only child and his parents spoil him."
+ },
+ {
+  "w": "vieux (vieille) (adj)",
+  "fr": "Mon grand-père conduit une vieille voiture rouge.",
+  "en": "My grandfather drives an old red car."
+ },
+ {
+  "w": "voix (f)",
+  "fr": "Ma sœur a une très belle voix, elle chante bien.",
+  "en": "My sister has a very beautiful voice; she sings well."
+ },
+ {
+  "w": "adorer (v)",
+  "fr": "Quand j'étais petit, j'adorais les dessins animés.",
+  "en": "When I was little, I loved cartoons."
+ },
+ {
+  "w": "bébé (m)",
+  "fr": "Quand j'étais bébé, je pleurais toute la nuit.",
+  "en": "When I was a baby, I cried all night."
+ },
+ {
+  "w": "bande dessinée (f)",
+  "fr": "Enfant, je lisais une bande dessinée chaque soir.",
+  "en": "As a child, I read a comic book every evening."
+ },
+ {
+  "w": "bouder (v)",
+  "fr": "Quand j'étais petite, je boudais souvent dans ma chambre.",
+  "en": "When I was little, I often sulked in my room."
+ },
+ {
+  "w": "courir (v)",
+  "fr": "Nous courions dans le jardin pendant des heures.",
+  "en": "We used to run around in the garden for hours."
+ },
+ {
+  "w": "détester (v)",
+  "fr": "Quand j'étais petit, je détestais les légumes.",
+  "en": "When I was little, I hated vegetables."
+ },
+ {
+  "w": "dormir (v)",
+  "fr": "Mon petit frère dort avec son ours en peluche.",
+  "en": "My little brother sleeps with his teddy bear."
+ },
+ {
+  "w": "enfance (f)",
+  "fr": "J'ai passé mon enfance dans un petit village.",
+  "en": "I spent my childhood in a small village."
+ },
+ {
+  "w": "enfant (m/f)",
+  "fr": "Chaque enfant a reçu un cadeau à Noël.",
+  "en": "Every child got a present at Christmas."
+ },
+ {
+  "w": "figurine (f)",
+  "fr": "Mon frère collectionnait les figurines de super-héros.",
+  "en": "My brother used to collect superhero action figures."
+ },
+ {
+  "w": "grande personne (f)",
+  "fr": "Quand je serai une grande personne, je voyagerai partout.",
+  "en": "When I'm a grown-up, I'll travel everywhere."
+ },
+ {
+  "w": "grandir (v)",
+  "fr": "J'ai grandi dans une ferme en Normandie.",
+  "en": "I grew up on a farm in Normandy."
+ },
+ {
+  "w": "grimper (v)",
+  "fr": "Enfant, j'aimais grimper aux arbres avec mes cousins.",
+  "en": "As a child, I liked climbing trees with my cousins."
+ },
+ {
+  "w": "gronder (v)",
+  "fr": "Ma mère me grondait quand je rentrais tard.",
+  "en": "My mother used to tell me off when I came home late."
+ },
+ {
+  "w": "jeu (m)",
+  "fr": "Notre jeu préféré était cache-cache.",
+  "en": "Our favourite game was hide-and-seek."
+ },
+ {
+  "w": "jeune (adj)",
+  "fr": "Ma mère est encore jeune, elle a trente-cinq ans.",
+  "en": "My mother is still young; she is thirty-five."
+ },
+ {
+  "w": "jeune (m/f)",
+  "fr": "Beaucoup de jeunes passent trop de temps sur leur portable.",
+  "en": "Lots of young people spend too much time on their phones."
+ },
+ {
+  "w": "jouet (m)",
+  "fr": "Mon jouet préféré était un petit train en bois.",
+  "en": "My favourite toy was a little wooden train."
+ },
+ {
+  "w": "poupée (f)",
+  "fr": "Ma sœur jouait avec ses poupées tous les jours.",
+  "en": "My sister played with her dolls every day."
+ },
+ {
+  "w": "pleurer (v)",
+  "fr": "Le bébé pleure parce qu'il a faim.",
+  "en": "The baby is crying because he is hungry."
+ },
+ {
+  "w": "préférer (v)",
+  "fr": "Je préfère la plage à la montagne.",
+  "en": "I prefer the beach to the mountains."
+ },
+ {
+  "w": "raconter (v)",
+  "fr": "Mon père me racontait une histoire avant de dormir.",
+  "en": "My dad used to tell me a story before bed."
+ },
+ {
+  "w": "répéter (v)",
+  "fr": "Pouvez-vous répéter la question, s'il vous plaît ?",
+  "en": "Can you repeat the question, please?"
+ },
+ {
+  "w": "sauter (v)",
+  "fr": "Les enfants sautent dans les flaques d'eau.",
+  "en": "The children are jumping in the puddles."
+ },
+ {
+  "w": "ampoule (f)",
+  "fr": "Nous utilisons des ampoules qui consomment peu d'énergie.",
+  "en": "We use lightbulbs that use very little energy."
+ },
+ {
+  "w": "avoir peur (v)",
+  "fr": "J'ai peur pour l'avenir de notre planète.",
+  "en": "I'm afraid for the future of our planet."
+ },
+ {
+  "w": "bio(logique) (adj)",
+  "fr": "Ma famille achète des fruits et légumes bio.",
+  "en": "My family buys organic fruit and vegetables."
+ },
+ {
+  "w": "bois (m)",
+  "fr": "Cette table est faite en bois recyclé.",
+  "en": "This table is made of recycled wood."
+ },
+ {
+  "w": "catastrophe (f)",
+  "fr": "Le tremblement de terre a été une catastrophe terrible.",
+  "en": "The earthquake was a terrible catastrophe."
+ },
+ {
+  "w": "changement (m)",
+  "fr": "Le changement climatique nous inquiète tous.",
+  "en": "Climate change worries us all."
+ },
+ {
+  "w": "charbon (m)",
+  "fr": "Brûler du charbon pollue beaucoup l'air.",
+  "en": "Burning coal pollutes the air a lot."
+ },
+ {
+  "w": "contamination (f)",
+  "fr": "La contamination de l'eau est un grave problème.",
+  "en": "Water contamination is a serious problem."
+ },
+ {
+  "w": "couche d’ozone (f)",
+  "fr": "La couche d'ozone nous protège des rayons du soleil.",
+  "en": "The ozone layer protects us from the sun's rays."
+ },
+ {
+  "w": "co-voiturage (m)",
+  "fr": "Mes parents font du co-voiturage pour aller au travail.",
+  "en": "My parents car-share to get to work."
+ },
+ {
+  "w": "déchets ménagers (m)",
+  "fr": "Il faut trier les déchets ménagers à la maison.",
+  "en": "We have to sort household waste at home."
+ },
+ {
+  "w": "détruire (v)",
+  "fr": "Les incendies détruisent des milliers d'arbres chaque année.",
+  "en": "Fires destroy thousands of trees every year."
+ },
+ {
+  "w": "écologique (adj)",
+  "fr": "Le vélo est un moyen de transport écologique.",
+  "en": "The bike is an ecological means of transport."
+ },
+ {
+  "w": "effet de serre (m)",
+  "fr": "Les voitures contribuent à l'effet de serre.",
+  "en": "Cars contribute to the greenhouse effect."
+ },
+ {
+  "w": "embouteillage (m)",
+  "fr": "Il y a un énorme embouteillage sur l'autoroute ce matin.",
+  "en": "There is a huge traffic jam on the motorway this morning."
+ },
+ {
+  "w": "énergie (nucléaire) (f)",
+  "fr": "La France produit beaucoup d'énergie nucléaire.",
+  "en": "France produces a lot of nuclear energy."
+ },
+ {
+  "w": "énergie renouvelable (f)",
+  "fr": "Notre ville utilise de plus en plus d'énergie renouvelable.",
+  "en": "Our town uses more and more renewable energy."
+ },
+ {
+  "w": "environnement (m)",
+  "fr": "Nous devons tous protéger l'environnement.",
+  "en": "We must all protect the environment."
+ },
+ {
+  "w": "en voie de disparition",
+  "fr": "Beaucoup d'animaux sont en voie de disparition.",
+  "en": "Many animals are endangered."
+ },
+ {
+  "w": "éoliennes (f)",
+  "fr": "On voit des éoliennes sur la colline près du village.",
+  "en": "You can see wind turbines on the hill near the village."
+ },
+ {
+  "w": "espèce (f)",
+  "fr": "Chaque année, des espèces animales disparaissent.",
+  "en": "Every year, animal species disappear."
+ },
+ {
+  "w": "essence (f)",
+  "fr": "Le prix de l'essence augmente encore.",
+  "en": "The price of petrol is going up again."
+ },
+ {
+  "w": "être vert (v)",
+  "fr": "Pour être vert, je recycle et je prends mon vélo.",
+  "en": "To be green, I recycle and I ride my bike."
+ },
+ {
+  "w": "forêt équatoriale (f)",
+  "fr": "La forêt équatoriale disparaît à cause de l'homme.",
+  "en": "The rainforest is disappearing because of humans."
+ },
+ {
+  "w": "incendie (de forêt) (m)",
+  "fr": "Cet été, un incendie de forêt a menacé notre village.",
+  "en": "This summer, a forest fire threatened our village."
+ },
+ {
+  "w": "inondation (f)",
+  "fr": "Après les fortes pluies, il y a eu une inondation.",
+  "en": "After the heavy rain, there was a flood."
+ },
+ {
+  "w": "investissement (m)",
+  "fr": "L'école a fait un gros investissement dans l'énergie solaire.",
+  "en": "The school has made a big investment in solar energy."
+ },
+ {
+  "w": "malsain (adj)",
+  "fr": "Respirer cet air pollué est malsain.",
+  "en": "Breathing this polluted air is unhealthy."
+ },
+ {
+  "w": "marée noire (f)",
+  "fr": "La marée noire a tué beaucoup d'oiseaux de mer.",
+  "en": "The oil slick killed lots of seabirds."
+ },
+ {
+  "w": "menacer (v)",
+  "fr": "La pollution menace la vie dans les océans.",
+  "en": "Pollution threatens life in the oceans."
+ },
+ {
+  "w": "monter (v)",
+  "fr": "Les températures montent chaque été.",
+  "en": "Temperatures go up every summer."
+ },
+ {
+  "w": "panneaux solaires (m)",
+  "fr": "Mes voisins ont installé des panneaux solaires sur leur toit.",
+  "en": "My neighbours have put solar panels on their roof."
+ },
+ {
+  "w": "pénurie (f)",
+  "fr": "Dans certains pays, il y a une pénurie d'eau.",
+  "en": "In some countries, there is a water shortage."
+ },
+ {
+  "w": "pétrole (m)",
+  "fr": "Un jour, il n'y aura plus de pétrole.",
+  "en": "One day, there will be no more oil."
+ },
+ {
+  "w": "pluie acide (f)",
+  "fr": "La pluie acide abîme les arbres et les lacs.",
+  "en": "Acid rain damages trees and lakes."
+ },
+ {
+  "w": "polluant(e) (adj)",
+  "fr": "Les vieilles voitures sont très polluantes.",
+  "en": "Old cars are very polluting."
+ },
+ {
+  "w": "pollué(e) (adj)",
+  "fr": "L'air est très pollué dans les grandes villes.",
+  "en": "The air is very polluted in big cities."
+ },
+ {
+  "w": "propre (adj)",
+  "fr": "Il faut garder nos plages propres.",
+  "en": "We must keep our beaches clean."
+ },
+ {
+  "w": "réchauffement de la planète (m)",
+  "fr": "Le réchauffement de la planète fait fondre la glace.",
+  "en": "Global warming is melting the ice."
+ },
+ {
+  "w": "recyclage (m)",
+  "fr": "Le recyclage du papier sauve des arbres.",
+  "en": "Recycling paper saves trees."
+ },
+ {
+  "w": "sale (adj)",
+  "fr": "La rivière est sale à cause des usines.",
+  "en": "The river is dirty because of the factories."
+ },
+ {
+  "w": "sauver (v)",
+  "fr": "Nous pouvons sauver la planète si nous agissons.",
+  "en": "We can save the planet if we act."
+ },
+ {
+  "w": "sécheresse (f)",
+  "fr": "Cet été, la sécheresse a été terrible pour les agriculteurs.",
+  "en": "This summer, the drought was terrible for farmers."
+ },
+ {
+  "w": "sécurité (f)",
+  "fr": "La sécurité des centrales nucléaires est très importante.",
+  "en": "The safety of nuclear power stations is very important."
+ },
+ {
+  "w": "terre (f)",
+  "fr": "Nous devons protéger la Terre pour nos enfants.",
+  "en": "We must protect the Earth for our children."
+ },
+ {
+  "w": "tornade (f)",
+  "fr": "Une tornade a détruit plusieurs maisons hier soir.",
+  "en": "A tornado destroyed several houses last night."
+ },
+ {
+  "w": "tuer (v)",
+  "fr": "Les produits chimiques tuent les poissons de la rivière.",
+  "en": "Chemicals are killing the fish in the river."
+ },
+ {
+  "w": "vague (f)",
+  "fr": "Les vagues sont très hautes aujourd'hui.",
+  "en": "The waves are very high today."
+ },
+ {
+  "w": "victime (f)",
+  "fr": "Les victimes de l'inondation ont perdu leur maison.",
+  "en": "The flood victims lost their homes."
+ },
+ {
+  "w": "averse (f)",
+  "fr": "Il y aura des averses cet après-midi.",
+  "en": "There will be showers this afternoon."
+ },
+ {
+  "w": "beau (adj)",
+  "fr": "Demain, le temps sera beau et chaud.",
+  "en": "Tomorrow, the weather will be fine and hot."
+ },
+ {
+  "w": "brouillard (m)",
+  "fr": "Ce matin, le brouillard est très épais.",
+  "en": "This morning, the fog is very thick."
+ },
+ {
+  "w": "brume (f)",
+  "fr": "Il y a de la brume sur la rivière ce matin.",
+  "en": "There is mist over the river this morning."
+ },
+ {
+  "w": "brumeux(~euse) (adj)",
+  "fr": "En automne, les matins sont souvent brumeux.",
+  "en": "In autumn, the mornings are often misty."
+ },
+ {
+  "w": "chaleur (f)",
+  "fr": "Je ne supporte pas la chaleur en été.",
+  "en": "I can't stand the heat in summer."
+ },
+ {
+  "w": "chaud(e) (adj)",
+  "fr": "Le sable est trop chaud pour marcher pieds nus.",
+  "en": "The sand is too hot to walk on barefoot."
+ },
+ {
+  "w": "ciel (m)",
+  "fr": "Le ciel est bleu, il n'y a pas de nuages.",
+  "en": "The sky is blue; there are no clouds."
+ },
+ {
+  "w": "climat (m)",
+  "fr": "Le climat est doux dans le sud de la France.",
+  "en": "The climate is mild in the south of France."
+ },
+ {
+  "w": "couvert(e) (m)",
+  "fr": "Le ciel est couvert, il va pleuvoir.",
+  "en": "The sky is overcast; it's going to rain."
+ },
+ {
+  "w": "degré (m)",
+  "fr": "La température va baisser de cinq degrés ce soir.",
+  "en": "The temperature is going to drop by five degrees this evening."
+ },
+ {
+  "w": "écharpe (f)",
+  "fr": "Il fait froid, mets ton écharpe et tes gants.",
+  "en": "It's cold, so put on your scarf and gloves."
+ },
+ {
+  "w": "éclaircie (f)",
+  "fr": "Après la pluie, il y aura quelques éclaircies.",
+  "en": "After the rain, there will be a few sunny intervals."
+ },
+ {
+  "w": "est (m)",
+  "fr": "Le soleil se lève à l'est.",
+  "en": "The sun rises in the east."
+ },
+ {
+  "w": "étoile (f)",
+  "fr": "Ce soir, on voit beaucoup d'étoiles dans le ciel.",
+  "en": "Tonight, you can see lots of stars in the sky."
+ },
+ {
+  "w": "foulard (m)",
+  "fr": "Ma grand-mère porte un foulard quand il y a du vent.",
+  "en": "My grandmother wears a headscarf when it's windy."
+ },
+ {
+  "w": "fort(e) (adj)",
+  "fr": "Le vent est très fort sur la côte aujourd'hui.",
+  "en": "The wind is very strong on the coast today."
+ },
+ {
+  "w": "froid(e) (adj)",
+  "fr": "L'eau de la piscine est trop froide !",
+  "en": "The pool water is too cold!"
+ },
+ {
+  "w": "glace (f)",
+  "fr": "Attention, il y a de la glace sur la route !",
+  "en": "Careful, there is ice on the road!"
+ },
+ {
+  "w": "il fait X degrés (v)",
+  "fr": "Aujourd'hui, il fait trente degrés à Marseille.",
+  "en": "Today, it is thirty degrees in Marseille."
+ },
+ {
+  "w": "il fait beau",
+  "fr": "Il fait beau, allons pique-niquer au parc !",
+  "en": "It's fine, so let's go for a picnic in the park!"
+ },
+ {
+  "w": "il fait chaud",
+  "fr": "En juillet, il fait chaud dans le sud.",
+  "en": "In July, it is warm in the south."
+ },
+ {
+  "w": "il fait soleil/il y a du soleil",
+  "fr": "Il y a du soleil aujourd'hui, on va à la plage.",
+  "en": "It's sunny today, so we're going to the beach."
+ },
+ {
+  "w": "il fait froid",
+  "fr": "Il fait froid ce matin, mets un pull !",
+  "en": "It's cold this morning, so put on a jumper!"
+ },
+ {
+  "w": "il fait mauvais",
+  "fr": "Il fait mauvais, alors nous restons à la maison.",
+  "en": "The weather is bad, so we are staying at home."
+ },
+ {
+  "w": "il gèle",
+  "fr": "Il gèle dehors, la route est très glissante.",
+  "en": "It's icy outside; the road is very slippery."
+ },
+ {
+  "w": "il neige",
+  "fr": "Il neige depuis ce matin dans les Alpes.",
+  "en": "It has been snowing in the Alps since this morning."
+ },
+ {
+  "w": "il tonne",
+  "fr": "Il tonne et il pleut très fort ce soir.",
+  "en": "It is thundering and raining very hard tonight."
+ },
+ {
+  "w": "il y a du brouillard",
+  "fr": "Il y a du brouillard, conduis lentement !",
+  "en": "It's foggy, so drive slowly!"
+ },
+ {
+  "w": "il y a du vent",
+  "fr": "Il y a du vent, c'est parfait pour la planche à voile.",
+  "en": "It's windy, which is perfect for windsurfing."
+ },
+ {
+  "w": "imperméable (m)",
+  "fr": "Prends ton imperméable, il va pleuvoir cet après-midi.",
+  "en": "Take your raincoat; it's going to rain this afternoon."
+ },
+ {
+  "w": "manteau (m)",
+  "fr": "En hiver, je porte un gros manteau noir.",
+  "en": "In winter, I wear a big black coat."
+ },
+ {
+  "w": "mauvais(e) (adj)",
+  "fr": "Le mauvais temps a gâché nos vacances.",
+  "en": "The bad weather spoilt our holiday."
+ },
+ {
+  "w": "météo (f)",
+  "fr": "D'après la météo, il fera beau demain.",
+  "en": "According to the weather forecast, it will be fine tomorrow."
+ },
+ {
+  "w": "neige (f)",
+  "fr": "Les enfants jouent dans la neige toute la journée.",
+  "en": "The children play in the snow all day long."
+ },
+ {
+  "w": "neiger (v)",
+  "fr": "Il va neiger en montagne ce week-end.",
+  "en": "It's going to snow in the mountains this weekend."
+ },
+ {
+  "w": "neigeux(~euse) (adj)",
+  "fr": "Les sommets neigeux des Alpes sont magnifiques.",
+  "en": "The snowy peaks of the Alps are magnificent."
+ },
+ {
+  "w": "nord (m)",
+  "fr": "Il pleut souvent dans le nord de la France.",
+  "en": "It often rains in the north of France."
+ },
+ {
+  "w": "nuage (m)",
+  "fr": "Un gros nuage noir cache le soleil.",
+  "en": "A big black cloud is hiding the sun."
+ },
+ {
+  "w": "nuageux(~euse) (adj)",
+  "fr": "Demain, le ciel sera nuageux le matin.",
+  "en": "Tomorrow, the sky will be cloudy in the morning."
+ },
+ {
+  "w": "orage (m)",
+  "fr": "Il y a eu un violent orage hier soir.",
+  "en": "There was a violent storm last night."
+ },
+ {
+  "w": "ouest (m)",
+  "fr": "La Bretagne est dans l'ouest de la France.",
+  "en": "Brittany is in the west of France."
+ },
+ {
+  "w": "parapluie (m)",
+  "fr": "N'oublie pas ton parapluie, il pleut beaucoup.",
+  "en": "Don't forget your umbrella; it's raining a lot."
+ },
+ {
+  "w": "pleuvoir (v)",
+  "fr": "Il commence à pleuvoir, rentrons vite !",
+  "en": "It's starting to rain, so let's go home quickly!"
+ },
+ {
+  "w": "pluie (f)",
+  "fr": "J'aime le bruit de la pluie sur la fenêtre.",
+  "en": "I like the sound of the rain on the window."
+ },
+ {
+  "w": "saison (f)",
+  "fr": "Ma saison préférée est le printemps.",
+  "en": "My favourite season is spring."
+ },
+ {
+  "w": "soleil (m)",
+  "fr": "Le soleil brille et le ciel est bleu.",
+  "en": "The sun is shining and the sky is blue."
+ },
+ {
+  "w": "sud (m)",
+  "fr": "Nous passons nos vacances dans le sud de l'Espagne.",
+  "en": "We spend our holidays in the south of Spain."
+ },
+ {
+  "w": "température (f)",
+  "fr": "En été, la température dépasse souvent les trente degrés ici.",
+  "en": "In summer, the temperature often goes above thirty degrees here."
+ },
+ {
+  "w": "temps (m)",
+  "fr": "Quel temps fait-il chez toi aujourd'hui ?",
+  "en": "What's the weather like where you are today?"
+ },
+ {
+  "w": "tonnerre (m)",
+  "fr": "Mon chien a peur du tonnerre.",
+  "en": "My dog is afraid of thunder."
+ },
+ {
+  "w": "vent (m)",
+  "fr": "À cause du vent, je ne peux pas faire de vélo.",
+  "en": "Because of the wind, I can't go cycling."
+ },
+ {
+  "w": "accident (m)",
+  "fr": "Il y a eu un accident sur la route ce matin.",
+  "en": "There was an accident on the road this morning."
+ },
+ {
+  "w": "aéroglisseur (m)",
+  "fr": "Autrefois, on traversait la Manche en aéroglisseur.",
+  "en": "In the past, people crossed the Channel by hovercraft."
+ },
+ {
+  "w": "aéroport (m)",
+  "fr": "Mon père m'emmène à l'aéroport en voiture.",
+  "en": "My father is driving me to the airport."
+ },
+ {
+  "w": "à l'étranger (adv)",
+  "fr": "Cet été, nous partons en vacances à l'étranger.",
+  "en": "This summer, we are going on holiday abroad."
+ },
+ {
+  "w": "aller-retour (m/adj)",
+  "fr": "Un aller-retour pour Lyon, s'il vous plaît.",
+  "en": "A return ticket to Lyon, please."
+ },
+ {
+  "w": "aller simple (m/adj)",
+  "fr": "Je voudrais un aller simple pour Bordeaux.",
+  "en": "I'd like a single ticket to Bordeaux."
+ },
+ {
+  "w": "arrêt d'autobus (m)",
+  "fr": "L'arrêt d'autobus est juste devant mon collège.",
+  "en": "The bus stop is right in front of my school."
+ },
+ {
+  "w": "arrivée (f)",
+  "fr": "L'arrivée du train est prévue à dix-huit heures.",
+  "en": "The train is due to arrive at six p.m."
+ },
+ {
+  "w": "arriver (v)",
+  "fr": "Le train arrive à Paris à midi.",
+  "en": "The train arrives in Paris at midday."
+ },
+ {
+  "w": "atterrir (v)",
+  "fr": "L'avion va atterrir dans dix minutes.",
+  "en": "The plane is going to land in ten minutes."
+ },
+ {
+  "w": "automobiliste (m/f)",
+  "fr": "Les automobilistes doivent faire attention aux cyclistes.",
+  "en": "Drivers must watch out for cyclists."
+ },
+ {
+  "w": "autoroute (f)",
+  "fr": "Nous prenons l'autoroute pour aller à la mer.",
+  "en": "We take the motorway to go to the seaside."
+ },
+ {
+  "w": "avion (m)",
+  "fr": "C'est la première fois que je prends l'avion.",
+  "en": "It's the first time I've travelled by plane."
+ },
+ {
+  "w": "bagages (m pl)",
+  "fr": "N'oublie pas tes bagages dans le train !",
+  "en": "Don't leave your luggage on the train!"
+ },
+ {
+  "w": "bateau (m)",
+  "fr": "Nous allons en Corse en bateau.",
+  "en": "We are going to Corsica by boat."
+ },
+ {
+  "w": "billet (m)",
+  "fr": "J'ai acheté mon billet de train sur Internet.",
+  "en": "I bought my train ticket online."
+ },
+ {
+  "w": "bon séjour (adj+m)",
+  "fr": "Bienvenue à l'hôtel, et bon séjour à Paris !",
+  "en": "Welcome to the hotel, and have a nice stay in Paris!"
+ },
+ {
+  "w": "bon voyage (adj+m)",
+  "fr": "Au revoir, et bon voyage en Italie !",
+  "en": "Goodbye, and have a good journey to Italy!"
+ },
+ {
+  "w": "bicyclette (f)",
+  "fr": "Mon grand-père va au marché à bicyclette.",
+  "en": "My grandfather goes to the market by bicycle."
+ },
+ {
+  "w": "bus (m)",
+  "fr": "Je prends le bus pour aller au collège.",
+  "en": "I take the bus to go to school."
+ },
+ {
+  "w": "camion (m)",
+  "fr": "Un gros camion bloque la rue.",
+  "en": "A big lorry is blocking the street."
+ },
+ {
+  "w": "car (m)",
+  "fr": "Nous allons à Londres en car.",
+  "en": "We are going to London by coach."
+ },
+ {
+  "w": "chauffeur (m)",
+  "fr": "Le chauffeur de taxi nous aide avec nos valises.",
+  "en": "The taxi driver helps us with our suitcases."
+ },
+ {
+  "w": "chemin de fer (m)",
+  "fr": "Le chemin de fer passe derrière notre maison.",
+  "en": "The railway runs behind our house."
+ },
+ {
+  "w": "coffre (m)",
+  "fr": "Mets les valises dans le coffre de la voiture.",
+  "en": "Put the suitcases in the boot of the car."
+ },
+ {
+  "w": "coin (m)",
+  "fr": "La boulangerie est au coin de la rue.",
+  "en": "The bakery is on the corner of the street."
+ },
+ {
+  "w": "gare (f)",
+  "fr": "Je vais à la gare à pied.",
+  "en": "I walk to the station."
+ },
+ {
+  "w": "gazole (m)",
+  "fr": "Notre voiture roule au gazole, pas à l'essence.",
+  "en": "Our car runs on diesel, not petrol."
+ },
+ {
+  "w": "gare routière (f)",
+  "fr": "Le car pour Nantes part de la gare routière.",
+  "en": "The coach to Nantes leaves from the bus station."
+ },
+ {
+  "w": "gare SNCF (f)",
+  "fr": "La gare SNCF est à dix minutes du centre-ville.",
+  "en": "The railway station is ten minutes from the town centre."
+ },
+ {
+  "w": "gas-oil (m)",
+  "fr": "Le prix du gas-oil a beaucoup augmenté.",
+  "en": "The price of diesel has gone up a lot."
+ },
+ {
+  "w": "garer (v)",
+  "fr": "Mon père gare la voiture devant la maison.",
+  "en": "My father parks the car in front of the house."
+ },
+ {
+  "w": "guichet (m)",
+  "fr": "On achète les billets au guichet de la gare.",
+  "en": "You buy tickets at the ticket office in the station."
+ },
+ {
+  "w": "kilomètre (m)",
+  "fr": "Mon collège est à trois kilomètres de chez moi.",
+  "en": "My school is three kilometres from my house."
+ },
+ {
+  "w": "marcher (v)",
+  "fr": "J'aime marcher dans la forêt le dimanche.",
+  "en": "I like walking in the forest on Sundays."
+ },
+ {
+  "w": "mètre (m)",
+  "fr": "L'arrêt de bus est à cent mètres d'ici.",
+  "en": "The bus stop is a hundred metres from here."
+ },
+ {
+  "w": "mobylette (f)",
+  "fr": "Mon frère va au lycée en mobylette.",
+  "en": "My brother goes to school by moped."
+ },
+ {
+  "w": "monter dans (v)",
+  "fr": "Nous montons dans le train à huit heures.",
+  "en": "We get on the train at eight o'clock."
+ },
+ {
+  "w": "moteur (m)",
+  "fr": "Le moteur de la voiture fait un bruit bizarre.",
+  "en": "The car's engine is making a strange noise."
+ },
+ {
+  "w": "motocyclette (f)",
+  "fr": "Mon oncle a une vieille motocyclette rouge.",
+  "en": "My uncle has an old red motorbike."
+ },
+ {
+  "w": "panne (f)",
+  "fr": "Nous avons eu une panne sur la route des vacances.",
+  "en": "We had a breakdown on the way to our holiday destination."
+ },
+ {
+  "w": "permis de conduire (m)",
+  "fr": "Ma sœur vient d'avoir son permis de conduire.",
+  "en": "My sister has just got her driving licence."
+ },
+ {
+  "w": "pièce d'identité (f)",
+  "fr": "Il faut montrer une pièce d'identité à l'aéroport.",
+  "en": "You have to show identification at the airport."
+ },
+ {
+  "w": "piéton(ne) (adj+m)",
+  "fr": "Cette rue est réservée aux piétons.",
+  "en": "This street is for pedestrians only."
+ },
+ {
+  "w": "pneu (m)",
+  "fr": "Mon vélo a un pneu crevé.",
+  "en": "My bike has a flat tyre."
+ },
+ {
+  "w": "portière (f)",
+  "fr": "Ferme bien la portière de la voiture, s'il te plaît.",
+  "en": "Close the car door properly, please."
+ },
+ {
+  "w": "priorité (f)",
+  "fr": "Sur le passage piéton, les piétons ont la priorité.",
+  "en": "On the zebra crossing, pedestrians have priority."
+ },
+ {
+  "w": "quai (m)",
+  "fr": "Le train pour Lille part du quai numéro trois.",
+  "en": "The train to Lille leaves from platform three."
+ },
+ {
+  "w": "ralentir (v)",
+  "fr": "Il faut ralentir près des écoles.",
+  "en": "You must slow down near schools."
+ },
+ {
+  "w": "rater (v)",
+  "fr": "Dépêche-toi, on va rater le train !",
+  "en": "Hurry up, we're going to miss the train!"
+ },
+ {
+  "w": "retard (m)",
+  "fr": "Le train a vingt minutes de retard.",
+  "en": "The train is twenty minutes late."
+ },
+ {
+  "w": "roue (f)",
+  "fr": "Mon père change la roue de la voiture.",
+  "en": "My father is changing the car wheel."
+ },
+ {
+  "w": "route (nationale) (f)",
+  "fr": "Nous prenons la route nationale pour éviter le péage.",
+  "en": "We're taking the main road to avoid the toll."
+ },
+ {
+  "w": "salle d'attente (f)",
+  "fr": "Nous attendons le train dans la salle d'attente.",
+  "en": "We are waiting for the train in the waiting room."
+ },
+ {
+  "w": "sans plomb (adj)",
+  "fr": "Le plein d'essence sans plomb, s'il vous plaît.",
+  "en": "Fill it up with unleaded petrol, please."
+ },
+ {
+  "w": "s'arrêter (v)",
+  "fr": "Le bus s'arrête devant la mairie.",
+  "en": "The bus stops in front of the town hall."
+ },
+ {
+  "w": "sortie (de secours) (f)",
+  "fr": "En cas d'incendie, utilisez la sortie de secours.",
+  "en": "In case of fire, use the emergency exit."
+ },
+ {
+  "w": "conducteur/conductrice (m/f)",
+  "fr": "La conductrice du bus est très sympa.",
+  "en": "The bus driver is very nice."
+ },
+ {
+  "w": "conduire (v)",
+  "fr": "Mon frère apprend à conduire avec mon père.",
+  "en": "My brother is learning to drive with my dad."
+ },
+ {
+  "w": "consigne (f)",
+  "fr": "Nous laissons nos valises à la consigne de la gare.",
+  "en": "We leave our suitcases at the station's left-luggage office."
+ },
+ {
+  "w": "contrôleur (m)",
+  "fr": "Le contrôleur vérifie les billets dans le train.",
+  "en": "The ticket inspector checks the tickets on the train."
+ },
+ {
+  "w": "décoller (v)",
+  "fr": "Notre avion décolle à six heures du matin.",
+  "en": "Our plane takes off at six in the morning."
+ },
+ {
+  "w": "défense de (+verb)",
+  "fr": "Regarde le panneau : défense de fumer dans la gare.",
+  "en": "Look at the sign: do not smoke in the station."
+ },
+ {
+  "w": "départ (m)",
+  "fr": "Le départ du car est prévu à sept heures.",
+  "en": "The coach is due to depart at seven o'clock."
+ },
+ {
+  "w": "descendre de (v)",
+  "fr": "Je descends du bus devant le collège.",
+  "en": "I get off the bus in front of the school."
+ },
+ {
+  "w": "douane (f)",
+  "fr": "À la douane, on doit ouvrir nos valises.",
+  "en": "At customs, we have to open our suitcases."
+ },
+ {
+  "w": "doubler (v)",
+  "fr": "Il est dangereux de doubler dans un virage.",
+  "en": "It's dangerous to overtake on a bend."
+ },
+ {
+  "w": "en panne (adj)",
+  "fr": "Notre voiture est en panne, on doit appeler un garage.",
+  "en": "Our car has broken down; we have to call a garage."
+ },
+ {
+  "w": "faire de l'auto-stop (v)",
+  "fr": "C'est dangereux de faire de l'auto-stop seul.",
+  "en": "It's dangerous to hitchhike alone."
+ },
+ {
+  "w": "faire le plein (v)",
+  "fr": "Papa s'arrête pour faire le plein avant l'autoroute.",
+  "en": "Dad is stopping to fill the tank before the motorway."
+ },
+ {
+  "w": "ferry(boat) (m)",
+  "fr": "Nous prenons le ferry pour aller en Angleterre.",
+  "en": "We take the ferry to go to England."
+ },
+ {
+  "w": "frontière (f)",
+  "fr": "Nous avons passé la frontière espagnole ce matin.",
+  "en": "We crossed the Spanish border this morning."
+ },
+ {
+  "w": "stationner (v)",
+  "fr": "Il est interdit de stationner devant l'école.",
+  "en": "It is forbidden to park in front of the school."
+ },
+ {
+  "w": "station-service (f)",
+  "fr": "Il y a une station-service à la sortie du village.",
+  "en": "There is a service station on the way out of the village."
+ },
+ {
+  "w": "taxi (m)",
+  "fr": "Nous prenons un taxi pour aller à l'hôtel.",
+  "en": "We are taking a taxi to the hotel."
+ },
+ {
+  "w": "train (m)",
+  "fr": "Le train pour Paris part dans cinq minutes.",
+  "en": "The train to Paris leaves in five minutes."
+ },
+ {
+  "w": "trajet (m)",
+  "fr": "Le trajet entre la maison et le collège dure vingt minutes.",
+  "en": "The journey between home and school takes twenty minutes."
+ },
+ {
+  "w": "tram (m)",
+  "fr": "À Bordeaux, beaucoup de gens vont au travail en tram.",
+  "en": "In Bordeaux, lots of people go to work by tram."
+ },
+ {
+  "w": "transports en commun (m)",
+  "fr": "Dans ma ville, les transports en commun sont gratuits.",
+  "en": "In my town, public transport is free."
+ },
+ {
+  "w": "tunnel sous la Manche (m)",
+  "fr": "Nous avons traversé le tunnel sous la Manche en train.",
+  "en": "We went through the Channel Tunnel by train."
+ },
+ {
+  "w": "vélo (m)",
+  "fr": "Je vais au collège à vélo tous les jours.",
+  "en": "I cycle to school every day."
+ },
+ {
+  "w": "vélomoteur (m)",
+  "fr": "Mon cousin a acheté un vélomoteur d'occasion.",
+  "en": "My cousin bought a second-hand moped."
+ },
+ {
+  "w": "vérifier/contrôler (v)",
+  "fr": "Le mécanicien vérifie les freins de la voiture.",
+  "en": "The mechanic checks the car's brakes."
+ },
+ {
+  "w": "vite (adv)",
+  "fr": "Ne conduis pas trop vite, il pleut !",
+  "en": "Don't drive too fast; it's raining!"
+ },
+ {
+  "w": "vitesse (f)",
+  "fr": "La vitesse est limitée à cinquante kilomètres à l'heure en ville.",
+  "en": "The speed limit is fifty kilometres an hour in town."
+ },
+ {
+  "w": "voiture (f)",
+  "fr": "Mes parents ont acheté une nouvelle voiture électrique.",
+  "en": "My parents have bought a new electric car."
+ },
+ {
+  "w": "voler (v)",
+  "fr": "Notre avion vole au-dessus de la Manche.",
+  "en": "Our plane is flying over the Channel."
+ },
+ {
+  "w": "voyager (v)",
+  "fr": "J'adore voyager en train avec mes amis.",
+  "en": "I love travelling by train with my friends."
+ },
+ {
+  "w": "actualités (f pl)",
+  "fr": "Mon père regarde les actualités tous les soirs.",
+  "en": "My dad watches the news every evening."
+ },
+ {
+  "w": "adulte (adj)",
+  "fr": "Ce film est réservé à un public adulte.",
+  "en": "This film is for an adult audience only."
+ },
+ {
+  "w": "auditeur (m)",
+  "fr": "Les auditeurs peuvent appeler la radio pendant l'émission.",
+  "en": "Listeners can call the radio station during the programme."
+ },
+ {
+  "w": "chaîne (de télévision) (f)",
+  "fr": "Il y a un bon film sur cette chaîne ce soir.",
+  "en": "There's a good film on this channel tonight."
+ },
+ {
+  "w": "chanter (v)",
+  "fr": "Ma sœur chante dans la chorale du collège.",
+  "en": "My sister sings in the school choir."
+ },
+ {
+  "w": "hebdomadaire (adj)",
+  "fr": "Je lis un magazine hebdomadaire sur le sport.",
+  "en": "I read a weekly sports magazine."
+ },
+ {
+  "w": "jeu télévisé (m)",
+  "fr": "Ma grand-mère adore regarder les jeux télévisés.",
+  "en": "My grandmother loves watching game shows."
+ },
+ {
+  "w": "journal télévisé (m)",
+  "fr": "Le journal télévisé commence à vingt heures.",
+  "en": "The news starts at eight p.m."
+ },
+ {
+  "w": "lire (v)",
+  "fr": "J'aime lire des romans avant de dormir.",
+  "en": "I like reading novels before I go to sleep."
+ },
+ {
+  "w": "mode (f)",
+  "fr": "Ma cousine s'intéresse beaucoup à la mode.",
+  "en": "My cousin is very interested in fashion."
+ },
+ {
+  "w": "montrer (v)",
+  "fr": "Le reportage montre la vie des jeunes en Afrique.",
+  "en": "The report shows the lives of young people in Africa."
+ },
+ {
+  "w": "nouvelles (f)",
+  "fr": "As-tu entendu les nouvelles ce matin ?",
+  "en": "Did you hear the news this morning?"
+ },
+ {
+  "w": "personnalité (f)",
+  "fr": "Beaucoup de personnalités étaient au festival de Cannes.",
+  "en": "Lots of celebrities were at the Cannes festival."
+ },
+ {
+  "w": "petites annonces (f pl)",
+  "fr": "Mon frère cherche un vélo dans les petites annonces.",
+  "en": "My brother is looking for a bike in the small ads."
+ },
+ {
+  "w": "pièce de théâtre (f)",
+  "fr": "Notre classe joue une pièce de théâtre en juin.",
+  "en": "Our class is putting on a play in June."
+ },
+ {
+  "w": "chanteur(~euse) (m/f)",
+  "fr": "Ma chanteuse préférée chante en français et en anglais.",
+  "en": "My favourite singer sings in French and in English."
+ },
+ {
+  "w": "choquer (v)",
+  "fr": "Ce reportage a choqué beaucoup de téléspectateurs.",
+  "en": "This report shocked a lot of viewers."
+ },
+ {
+  "w": "combien (adv)",
+  "fr": "Combien coûte un billet pour le concert ?",
+  "en": "How much is a ticket for the concert?"
+ },
+ {
+  "w": "comédie de situation/sitcom (f)",
+  "fr": "Cette comédie de situation me fait beaucoup rire.",
+  "en": "This sitcom makes me laugh a lot."
+ },
+ {
+  "w": "coûter (v)",
+  "fr": "Les places de cinéma coûtent trop cher.",
+  "en": "Cinema tickets cost too much."
+ },
+ {
+  "w": "dessin animé (m)",
+  "fr": "Mon petit frère regarde des dessins animés le matin.",
+  "en": "My little brother watches cartoons in the morning."
+ },
+ {
+  "w": "documentaire (m)",
+  "fr": "Hier soir, j'ai vu un documentaire sur les requins.",
+  "en": "Last night, I saw a documentary about sharks."
+ },
+ {
+  "w": "doublé(e) (adj)",
+  "fr": "Je préfère les films en version originale, pas doublés.",
+  "en": "I prefer films in the original language, not dubbed."
+ },
+ {
+  "w": "drôle (adj)",
+  "fr": "Ce film est vraiment drôle, j'ai beaucoup ri.",
+  "en": "This film is really funny; I laughed a lot."
+ },
+ {
+  "w": "écouter (v)",
+  "fr": "J'écoute de la musique dans le bus.",
+  "en": "I listen to music on the bus."
+ },
+ {
+  "w": "effets spéciaux (m pl)",
+  "fr": "Les effets spéciaux de ce film sont incroyables.",
+  "en": "The special effects in this film are incredible."
+ },
+ {
+  "w": "émission (f)",
+  "fr": "Quelle est ton émission préférée à la télé ?",
+  "en": "What's your favourite TV programme?"
+ },
+ {
+  "w": "émouvant(e) (adj)",
+  "fr": "La fin du film était très émouvante.",
+  "en": "The end of the film was very moving."
+ },
+ {
+  "w": "entrée (f)",
+  "fr": "L'entrée du musée est gratuite pour les jeunes.",
+  "en": "Entry to the museum is free for young people."
+ },
+ {
+  "w": "fana (m/f)",
+  "fr": "Mon frère est un vrai fana de jeux vidéo.",
+  "en": "My brother is a real video game fan."
+ },
+ {
+  "w": "fanatique de (adj)",
+  "fr": "Mon père est fanatique de rugby depuis toujours.",
+  "en": "My dad has always been a rugby fan."
+ },
+ {
+  "w": "feuilleton (m)",
+  "fr": "Ma mère ne rate jamais son feuilleton du soir.",
+  "en": "My mum never misses her evening soap opera."
+ },
+ {
+  "w": "film comique (m)",
+  "fr": "Ce soir, on regarde un film comique en famille.",
+  "en": "Tonight, we're watching a comedy as a family."
+ },
+ {
+  "w": "film d'amour (f)",
+  "fr": "Ma sœur adore les films d'amour, mais pas moi.",
+  "en": "My sister loves romantic films, but I don't."
+ },
+ {
+  "w": "film d'horreur (m)",
+  "fr": "Je ne peux pas dormir après un film d'horreur.",
+  "en": "I can't sleep after a horror film."
+ },
+ {
+  "w": "film policier (m)",
+  "fr": "J'ai vu un bon film policier au cinéma.",
+  "en": "I saw a good crime film at the cinema."
+ },
+ {
+  "w": "fin (f)",
+  "fr": "Je n'ai pas compris la fin du film.",
+  "en": "I didn't understand the end of the film."
+ },
+ {
+  "w": "poste de télévision/de radio (m)",
+  "fr": "Nous avons un poste de télévision dans le salon.",
+  "en": "We have a television set in the living room."
+ },
+ {
+  "w": "présentateur(~trice) (m/f)",
+  "fr": "La présentatrice du journal parle très clairement.",
+  "en": "The newsreader speaks very clearly."
+ },
+ {
+  "w": "pub(licité) (f)",
+  "fr": "Il y a trop de pubs pendant les films.",
+  "en": "There are too many adverts during films."
+ },
+ {
+  "w": "quotidien (m)",
+  "fr": "Mon grand-père lit le quotidien régional chaque matin.",
+  "en": "My grandfather reads the regional daily paper every morning."
+ },
+ {
+  "w": "réduit(e) (adj)",
+  "fr": "Les élèves paient un tarif réduit au cinéma.",
+  "en": "School pupils pay a reduced price at the cinema."
+ },
+ {
+  "w": "regarder (v)",
+  "fr": "Le soir, je regarde des séries avec ma sœur.",
+  "en": "In the evening, I watch series with my sister."
+ },
+ {
+  "w": "reportage (sportif) (m)",
+  "fr": "J'ai vu un reportage sportif sur le Tour de France.",
+  "en": "I saw a sports report on the Tour de France."
+ },
+ {
+  "w": "réserver (à l’avance) (v)",
+  "fr": "Il faut réserver les places à l'avance pour le concert.",
+  "en": "You have to book seats in advance for the concert."
+ },
+ {
+  "w": "roman (d’aventures) (m)",
+  "fr": "Je lis un roman d'aventures sur des pirates.",
+  "en": "I'm reading an adventure novel about pirates."
+ },
+ {
+  "w": "roman policier (m)",
+  "fr": "Ma mère lit un roman policier chaque semaine.",
+  "en": "My mother reads a detective novel every week."
+ },
+ {
+  "w": "séance (f)",
+  "fr": "La dernière séance commence à vingt-deux heures.",
+  "en": "The last showing starts at ten p.m."
+ },
+ {
+  "w": "série (f)",
+  "fr": "Cette série a cinq saisons, je les ai toutes vues.",
+  "en": "This series has five seasons; I've watched them all."
+ },
+ {
+  "w": "se divertir (v)",
+  "fr": "Le week-end, je me divertis en jouant aux jeux vidéo.",
+  "en": "At the weekend, I entertain myself by playing video games."
+ },
+ {
+  "w": "sous-titré(e) (adj)",
+  "fr": "Je regarde des films anglais sous-titrés en français.",
+  "en": "I watch English films subtitled in French."
+ },
+ {
+  "w": "spot publicitaire (m)",
+  "fr": "Ce spot publicitaire passe toutes les dix minutes !",
+  "en": "This commercial is on every ten minutes!"
+ },
+ {
+  "w": "station de radio (f)",
+  "fr": "Quelle est ta station de radio préférée ?",
+  "en": "What's your favourite radio station?"
+ },
+ {
+  "w": "tarif (m)",
+  "fr": "Les tarifs du cinéma sont affichés à l'entrée.",
+  "en": "The cinema prices are displayed at the entrance."
+ },
+ {
+  "w": "télécommande (f)",
+  "fr": "Où est la télécommande ? Je ne la trouve pas.",
+  "en": "Where's the remote control? I can't find it."
+ },
+ {
+  "w": "télé-réalité (f)",
+  "fr": "Je trouve les émissions de télé-réalité un peu bêtes.",
+  "en": "I find reality TV shows a bit stupid."
+ },
+ {
+  "w": "zapper (v)",
+  "fr": "Mon frère zappe tout le temps, c'est énervant !",
+  "en": "My brother keeps channel hopping; it's annoying!"
+ }
+]
