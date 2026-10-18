@@ -1279,7 +1279,7 @@
       var status = el('div.small.muted', { text: 'Loading audio…' });
       player.appendChild(status);
       buildTrack(words, o, function (n, total) { status.textContent = 'Loading audio… ' + n + ' of ' + total; })
-        .then(function (track) { showTrack(words, track); })
+        .then(function (track) { showTrack(words, track, o); })
         .catch(function () {
           deviceVoice(words, o, location.protocol === 'file:'
             ? 'Recorded audio cannot load when the app is opened as a file on this computer — use the website version for that.'
@@ -1297,10 +1297,14 @@
       return { list: el('ol.transcript', {}, rows), rows: rows };
     }
 
-    function showTrack(words, track) {
+    function showTrack(words, track, o) {
       player.textContent = '';
       listening.url = URL.createObjectURL(track.blob);
       var audio = el('audio', { controls: '', preload: 'auto', src: listening.url });
+      // Some embedded browsers refuse media from blob: URLs; fall back rather than sit silent.
+      audio.addEventListener('error', function () {
+        deviceVoice(words, o, 'This browser would not play the recorded track.');
+      });
       var now = el('div.now-playing', { text: words.length + ' words · ' + clock(track.duration) });
       var t = transcript(words, function (i) { audio.currentTime = track.segments[i].start + 0.01; audio.play(); });
       var current = -1;
