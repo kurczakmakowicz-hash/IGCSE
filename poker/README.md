@@ -26,9 +26,13 @@ From Python: `from poker import decide; print(decide("As Kd", "Qh Jc 2s", pot=10
 ## How it decides
 
 1. **Hand evaluator** finds your best 5 of 7 cards.
-2. **Opponent range** is guessed from the bet: preflop by its size in big blinds
-   (limp = any hand, open raise = top 30%, 3-bet = top 12%, bigger = top 5%);
-   after the flop by bet/pot (≤40% pot → top 60% … overbet → top 15%).
+2. **Opponent range** is guessed from the bet. How wide: preflop by raise size in
+   big blinds (limp = any hand, open raise = top 30%, 3-bet = top 12%, bigger =
+   top 5%); after the flop by bet/pot (≤40% pot → top 60% … overbet → top 15%).
+   Which hands: preflop the best starting hands; **after the flop, the hands that
+   fit this board best** — every possible hand is ranked against the board, and
+   flush draws / open-ended straight draws count as strong because people bet
+   them. 15% of the time a bettor is bluffing with any two cards.
 3. **Equity** = Monte Carlo: deal opponents hands from that range and the rest
    of the board 5,000 times, count how often you win (ties split).
 4. **Pot odds** = `to_call / (pot + to_call)`: the win chance you need to break even.
@@ -37,11 +41,14 @@ From Python: `from poker import decide; print(decide("As Kd", "Qh Jc 2s", pot=10
      share, else **CHECK** (never fold for free)
    - facing a bet → **FOLD** if equity < pot odds; **RAISE** if equity is far above
      both pot odds and your fair share; otherwise **CALL**
+   - on the river a raise must also win ≥60% against the hands that would *call*
+     it (the top half of the betting range); if not, it checks/calls instead
 
 ## Limits — read these
 
-- Opponent ranges are based on preflop strength only (Chen formula). The engine
-  does not know that someone who bets a K-high flop is more likely to hold a king.
+- Board ranges ignore what happened earlier in the hand: a player who raised
+  preflop and bets three streets is read the same as one who only bet the river.
+  Gutshots and backdoor draws are not counted as draws.
 - No position, no bluffing, no implied odds, no player reads. It plays an honest
   "do I have the price?" game. It will not beat good players; it will stop you
   making clearly unprofitable calls.

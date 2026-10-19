@@ -1,6 +1,7 @@
 import unittest
 
 from poker import decide, evaluate, parse_cards, estimate_equity
+from poker.equity import build_range, _has_flush_draw, _has_open_ended_draw
 from poker.evaluator import (HIGH_CARD, PAIR, TWO_PAIR, TRIPS, STRAIGHT, FLUSH,
                              FULL_HOUSE, QUADS, STRAIGHT_FLUSH)
 
@@ -68,7 +69,39 @@ class TestEquity(unittest.TestCase):
         self.assertLess(tight, loose - 0.1)
 
 
+class TestBoardRanges(unittest.TestCase):
+    def test_big_bet_range_on_wet_river_is_strong(self):
+        board = parse_cards("Kh 9h 2h 5c 7d")
+        dead = set(board) | set(parse_cards("Ks Qd"))
+        for combo in build_range(dead, board, 0.15):
+            self.assertGreaterEqual(evaluate(list(combo) + board)[0], TWO_PAIR)
+
+    def test_draws_are_in_flop_betting_range(self):
+        board = parse_cards("Kh 9h 2c")
+        r = build_range(set(board) | set(parse_cards("As Ad")), board, 0.3)
+        self.assertTrue(any(_has_flush_draw(c, board) for c in r))
+
+    def test_draw_detection(self):
+        self.assertTrue(_has_flush_draw(parse_cards("Ah 3h"), parse_cards("Kh 9h 2c")))
+        self.assertFalse(_has_flush_draw(parse_cards("Ac 3d"), parse_cards("Kh 9h 2h")))
+        self.assertTrue(_has_open_ended_draw(parse_cards("8c 7d"), parse_cards("6h 5s Kd")))
+        self.assertFalse(_has_open_ended_draw(parse_cards("8c 2d"), parse_cards("6h 5s Kd")))
+        self.assertFalse(_has_open_ended_draw(parse_cards("Ac Kd"), parse_cards("Qh Js 2d")))
+
+    def test_bet_on_board_lowers_equity(self):
+        # AK high on Q-J-2: a bettor usually has a pair or a draw, not random cards
+        hole, board = parse_cards("As Kd"), parse_cards("Qh Jc 2s")
+        loose, _ = estimate_equity(hole, board, 1, 1.0, 3000, seed=3)
+        tight, _ = estimate_equity(hole, board, 1, 0.4, 3000, seed=3)
+        self.assertLess(tight, loose - 0.1)
+
+
 class TestDecide(unittest.TestCase):
+    def test_no_thin_river_raise(self):
+        # top pair on a three-flush river: only better hands call a raise
+        d = decide("Ks Qd", "Kh 9h 2h 5c 7d", pot=120, to_call=20, seed=1)
+        self.assertEqual(d.action, "CALL")
+
     def test_trash_folds_to_bet(self):
         d = decide("7c 2d", "As Kh Qd", pot=100, to_call=80, seed=1)
         self.assertEqual(d.action, "FOLD")
