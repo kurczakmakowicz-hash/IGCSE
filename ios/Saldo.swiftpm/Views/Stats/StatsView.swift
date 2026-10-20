@@ -163,7 +163,7 @@ struct BalanceBars: View {
                         .foregroundStyle(.secondary)
                 }
         }
-        .chartXAxis { AxisMarks { AxisGridLine(); AxisValueLabel() } }
+        .chartXAxis { AxisMarks { _ in AxisGridLine(); AxisValueLabel() } }
         .chartXScale(range: .plotDimension(padding: 40))
         .frame(height: CGFloat(rows.count) * 38 + 30)
     }
@@ -175,7 +175,7 @@ struct BalanceLines: View {
     var body: some View {
         let points = Ledger.balanceHistory(games: games.map(\.record))
         Chart {
-            RuleMark(y: .value("Zero", 0)).foregroundStyle(.secondary.opacity(0.4))
+            RuleMark(y: .value("Zero", 0.0)).foregroundStyle(Color.secondary.opacity(0.4))
             ForEach(points) { p in
                 LineMark(x: .value("Game", p.gameNumber), y: .value("Balance", Double(p.balance) / 100))
                     .foregroundStyle(by: .value("Player", p.name))

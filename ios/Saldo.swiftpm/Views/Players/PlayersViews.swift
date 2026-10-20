@@ -154,7 +154,7 @@ struct PlayerDetailView: View {
             if history.count > 1 {
                 Section("Balance over time") {
                     Chart {
-                        RuleMark(y: .value("Zero", 0)).foregroundStyle(.secondary.opacity(0.4))
+                        RuleMark(y: .value("Zero", 0.0)).foregroundStyle(Color.secondary.opacity(0.4))
                         ForEach(history) { p in
                             LineMark(x: .value("Game", p.index), y: .value("Balance", Double(p.balance) / 100))
                                 .interpolationMethod(.monotone)

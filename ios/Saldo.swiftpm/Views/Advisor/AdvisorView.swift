@@ -306,7 +306,7 @@ struct AdvisorView: View {
 
     // MARK: Compute
 
-    private func recompute() async {
+    @MainActor private func recompute() async {
         try? await Task.sleep(for: .milliseconds(150))
         if Task.isCancelled { return }
         let hole = spots[0..<2].compactMap { $0 }
