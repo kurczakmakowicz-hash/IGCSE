@@ -21,6 +21,10 @@ python3 -m poker --hand "Ah 5h" --board "Kh 9h 2c 3d" --pot 80 --to-call 40 --op
 | `--bb` | big blind size, used to read preflop raises (default 1) |
 | `--range` | override how strong opponents are: top X of hands, 0–1 |
 
+**In a browser (iPad, phone):** open `poker/web/index.html`. It runs
+`poker/web/engine.js`, a JavaScript copy of this engine;
+`poker/tests/test_web_parity.py` checks the two agree.
+
 From Python: `from poker import decide; print(decide("As Kd", "Qh Jc 2s", pot=100, to_call=30))`
 
 ## How it decides

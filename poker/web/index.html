@@ -1,0 +1,416 @@
+<title>Hold'em Decision Engine</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a felt "table" holding your cards and the board, a 52-card picker under it,
+   and a side panel (or, on narrow screens, the next block) with the bet sizes and the call. */
+:root {
+  --bg: #e9efeb;
+  --surface: #ffffff;
+  --line: #cfd9d3;
+  --ink: #14201b;
+  --muted: #56665e;
+  --felt: #1d5a45;
+  --felt-edge: #154434;
+  --felt-ink: #e9f3ee;
+  --brass: #b07d1f;
+  --card: #fbfcfb;
+  --card-ink: #17221d;
+  --red-suit: #c3352b;
+  --fold: #b8382e;
+  --call: #2f62b3;
+  --raise: #1d7a4f;
+  --check: #5f6d66;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1411; --surface: #16201b; --line: #2a3832; --ink: #e4ece7; --muted: #94a59c;
+    --felt: #164534; --felt-edge: #0f3326; --felt-ink: #dcebe3; --brass: #d8a640;
+    --card: #eef2ef; --card-ink: #17221d; --red-suit: #c3352b;
+    --fold: #e0675c; --call: #6d9ae6; --raise: #4cc08a; --check: #9aa8a1;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1411; --surface: #16201b; --line: #2a3832; --ink: #e4ece7; --muted: #94a59c;
+  --felt: #164534; --felt-edge: #0f3326; --felt-ink: #dcebe3; --brass: #d8a640;
+  --card: #eef2ef; --card-ink: #17221d; --red-suit: #c3352b;
+  --fold: #e0675c; --call: #6d9ae6; --raise: #4cc08a; --check: #9aa8a1;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 40px;
+  -webkit-tap-highlight-color: transparent;
+}
+.wrap { max-width: 1180px; margin: 0 auto; display: grid; gap: 20px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: 2.1rem; letter-spacing: .01em; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0; font-size: .95rem; }
+.layout { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 940px) { .layout { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: start; } }
+.col { display: grid; gap: 20px; min-width: 0; }
+
+.label { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; }
+
+/* felt */
+.felt {
+  background: radial-gradient(ellipse at 50% 30%, color-mix(in srgb, var(--felt) 88%, #fff 12%), var(--felt) 70%);
+  border: 6px solid var(--felt-edge); border-radius: 28px; color: var(--felt-ink);
+  padding: 18px 18px 20px; display: grid; gap: 16px;
+}
+.felt-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.street-pill { font-family: var(--display); font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  border: 1px solid color-mix(in srgb, var(--felt-ink) 40%, transparent); border-radius: 999px; padding: 2px 12px; font-size: .9rem; }
+.mini-call { font-family: var(--display); font-weight: 700; font-size: 1.15rem; letter-spacing: .04em;
+  background: var(--card); color: var(--card-ink); border-radius: 8px; padding: 2px 10px; }
+.mini-call[data-a="FOLD"] { color: #b8382e; } .mini-call[data-a="CALL"] { color: #2f62b3; }
+.mini-call[data-a="RAISE"], .mini-call[data-a="ALL-IN"] { color: #1d7a4f; }
+@media (min-width: 940px) { .mini-call { display: none; } }
+.rows { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: flex-end; }
+.group { display: grid; gap: 6px; }
+.group .label { color: color-mix(in srgb, var(--felt-ink) 75%, transparent); }
+.slots { display: flex; gap: 8px; flex-wrap: wrap; }
+.slot {
+  width: clamp(46px, 11vw, 64px); aspect-ratio: 5 / 7; border-radius: 8px; border: 2px dashed color-mix(in srgb, var(--felt-ink) 45%, transparent);
+  background: transparent; color: var(--felt-ink); font: inherit; cursor: pointer; padding: 0;
+  display: grid; place-items: center; position: relative;
+}
+.slot .hint { font-size: .7rem; opacity: .7; font-family: var(--display); letter-spacing: .06em; text-transform: uppercase; }
+.slot.filled { border: 1px solid #0003; background: var(--card); color: var(--card-ink); box-shadow: 0 2px 0 #0002; }
+.slot.active { outline: 3px solid var(--brass); outline-offset: 2px; }
+.slot.gap { margin-left: 6px; }
+.face { display: grid; justify-items: center; line-height: 1; gap: 2px; }
+.face .r { font-family: var(--display); font-weight: 700; font-size: clamp(1.25rem, 3.2vw, 1.7rem); }
+.face .s { font-size: clamp(1rem, 2.6vw, 1.35rem); }
+.red { color: var(--red-suit); }
+.felt-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.ghost { font: 600 .9rem var(--body); color: var(--felt-ink); background: transparent; border: 1px solid color-mix(in srgb, var(--felt-ink) 45%, transparent);
+  border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+.ghost:hover { background: color-mix(in srgb, var(--felt-ink) 12%, transparent); }
+.tip { font-size: .9rem; color: color-mix(in srgb, var(--felt-ink) 80%, transparent); margin: 0; }
+
+/* picker */
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.panel-head .label { color: var(--muted); }
+.picker { display: grid; grid-template-columns: repeat(13, minmax(0, 1fr)); gap: 4px; }
+.pick {
+  font: inherit; border: 1px solid var(--line); background: var(--card); color: var(--card-ink); border-radius: 6px;
+  min-height: 44px; padding: 4px 0; cursor: pointer; display: grid; place-items: center;
+}
+.pick .face .r { font-size: clamp(.95rem, 2.4vw, 1.2rem); }
+.pick .face .s { font-size: clamp(.8rem, 2vw, 1rem); }
+.pick.used { opacity: .28; }
+.pick.mine { opacity: 1; outline: 2px solid var(--brass); outline-offset: -2px; }
+.pick:focus-visible, .slot:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--brass); outline-offset: 2px; }
+
+/* numbers */
+.fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px 14px; }
+.field { display: grid; gap: 4px; min-width: 0; align-content: start; }
+.field label { font-weight: 600; font-size: .95rem; }
+.field small { color: var(--muted); font-size: .8rem; line-height: 1.3; }
+.field input {
+  font: 500 1.05rem var(--mono); color: var(--ink); background: var(--bg); border: 1px solid var(--line);
+  border-radius: 8px; padding: 9px 10px; width: 100%; min-width: 0;
+}
+.stepper { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; gap: 6px; }
+.stepper button { font: 600 1.2rem var(--body); border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 8px; cursor: pointer; }
+.stepper input { text-align: center; }
+.quick { display: flex; flex-wrap: wrap; gap: 6px; }
+.quick button { font: 600 .85rem var(--body); border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 999px; padding: 5px 11px; cursor: pointer; }
+
+/* verdict */
+.verdict { border-width: 2px; }
+.verdict[data-a="FOLD"] { border-color: var(--fold); } .verdict[data-a="CALL"] { border-color: var(--call); }
+.verdict[data-a="RAISE"], .verdict[data-a="ALL-IN"] { border-color: var(--raise); } .verdict[data-a="CHECK"] { border-color: var(--check); }
+.action-line { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.action { font-family: var(--display); font-weight: 700; font-size: 3.4rem; line-height: 1; letter-spacing: .02em; }
+[data-a="FOLD"] .action { color: var(--fold); } [data-a="CALL"] .action { color: var(--call); }
+[data-a="RAISE"] .action, [data-a="ALL-IN"] .action { color: var(--raise); } [data-a="CHECK"] .action { color: var(--check); }
+.amount { font: 500 1.1rem var(--mono); color: var(--muted); }
+.hand { font-weight: 600; margin: 0; }
+.meter { display: grid; gap: 6px; }
+.bar { position: relative; height: 18px; border-radius: 9px; background: var(--bg); border: 1px solid var(--line); overflow: visible; }
+.fill { position: absolute; inset: 0 auto 0 0; border-radius: 9px; background: currentColor; transition: width .25s ease; }
+[data-a="FOLD"] .fill { color: var(--fold); } [data-a="CALL"] .fill { color: var(--call); }
+[data-a="RAISE"] .fill, [data-a="ALL-IN"] .fill { color: var(--raise); } [data-a="CHECK"] .fill { color: var(--check); }
+.tick { position: absolute; top: -5px; bottom: -5px; width: 2px; background: var(--ink); }
+.tick.raise { background: var(--brass); }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .88rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.legend b { color: var(--ink); font-family: var(--mono); font-weight: 500; }
+.key { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; background: var(--ink); }
+.key.raise { background: var(--brass); }
+.reasons { margin: 0; padding-left: 1.1rem; display: grid; gap: 4px; color: var(--ink); }
+.reasons li::marker { color: var(--muted); }
+.waiting { color: var(--muted); margin: 0; }
+.note { color: var(--muted); font-size: .85rem; margin: 0; max-width: 70ch; }
+@media (prefers-reduced-motion: reduce) { .fill { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Hold'em Decision Engine</h1>
+    <p class="sub">Fold, check, call or raise, worked out from your cards, the board and the pot.</p>
+  </header>
+
+  <div class="layout">
+    <div class="col">
+      <section class="felt" aria-label="Table">
+        <div class="felt-top">
+          <span class="street-pill" id="street">Flop</span>
+          <span class="mini-call" id="miniCall" hidden></span>
+        </div>
+        <div class="rows">
+          <div class="group">
+            <span class="label">Your hand</span>
+            <div class="slots" id="handSlots"></div>
+          </div>
+          <div class="group">
+            <span class="label">Board</span>
+            <div class="slots" id="boardSlots"></div>
+          </div>
+        </div>
+        <p class="tip" id="tip">Example hand loaded. Tap a card spot, then pick a card below.</p>
+        <div class="felt-actions">
+          <button class="ghost" id="newHand" type="button">New hand</button>
+          <button class="ghost" id="clearBoard" type="button">Clear board</button>
+        </div>
+      </section>
+
+      <section class="panel" aria-label="Pick cards">
+        <div class="panel-head">
+          <span class="label">Deck</span>
+          <span class="note">Tap a card to place it. Tap a placed card to take it back.</span>
+        </div>
+        <div class="picker" id="picker"></div>
+      </section>
+    </div>
+
+    <div class="col">
+      <section class="panel verdict" id="verdict" aria-live="polite">
+        <div id="verdictBody"><p class="waiting">Working it out…</p></div>
+      </section>
+
+      <section class="panel" aria-label="Pot and bet">
+        <div class="panel-head"><span class="label">Pot and bet</span></div>
+        <div class="fields">
+          <div class="field">
+            <label for="pot">Pot</label>
+            <input id="pot" type="number" inputmode="decimal" min="0" step="any" value="100">
+            <small>All chips in the middle now, including the bet you face</small>
+          </div>
+          <div class="field">
+            <label for="toCall">To call</label>
+            <input id="toCall" type="number" inputmode="decimal" min="0" step="any" value="30">
+            <small>0 if nobody has bet</small>
+          </div>
+          <div class="field">
+            <label for="opponents">Opponents</label>
+            <div class="stepper">
+              <button type="button" id="oppMinus" aria-label="Fewer opponents">−</button>
+              <input id="opponents" type="number" inputmode="numeric" min="1" max="8" value="1">
+              <button type="button" id="oppPlus" aria-label="More opponents">+</button>
+            </div>
+            <small>Players still in the hand besides you</small>
+          </div>
+          <div class="field">
+            <label for="stack">Your stack</label>
+            <input id="stack" type="number" inputmode="decimal" min="0" step="any" placeholder="optional">
+            <small>Chips you have left</small>
+          </div>
+          <div class="field">
+            <label for="bb">Big blind</label>
+            <input id="bb" type="number" inputmode="decimal" min="0" step="any" value="1">
+            <small>Used to read preflop raises</small>
+          </div>
+        </div>
+        <div class="group">
+          <small class="note">Bet you face, as a share of the pot before it:</small>
+          <div class="quick" id="quick">
+            <button type="button" data-f="0">No bet</button>
+            <button type="button" data-f="0.33">⅓ pot</button>
+            <button type="button" data-f="0.5">½ pot</button>
+            <button type="button" data-f="0.75">¾ pot</button>
+            <button type="button" data-f="1">Pot</button>
+          </div>
+        </div>
+      </section>
+
+      <p class="note">This plays a "do I have the price?" game: it doesn't use your seat, bluffs, player reads, or what happened earlier in the hand. It stops clearly bad calls; it won't beat strong players. Win chances come from 10,000 simulated deals, so expect about ±1% noise.</p>
+    </div>
+  </div>
+</div>
+
+<script src="engine.js"></script>
+<script>
+(function () {
+  "use strict";
+  const E = window.PokerEngine;
+  const RANKS = [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2];
+  const RANK_LABEL = { 14: "A", 13: "K", 12: "Q", 11: "J", 10: "10" };
+  const SUIT_SYM = ["♣", "♦", "♥", "♠"];
+  const SUIT_NAME = ["clubs", "diamonds", "hearts", "spades"];
+  const SUIT_ORDER = [3, 2, 1, 0];
+  const $ = (id) => document.getElementById(id);
+
+  // 7 spots: 0-1 your hand, 2-6 board. Each holds a card id or null.
+  const P = (r, s) => (r - 2) * 4 + s;
+  let spots = [P(14, 3), P(13, 1), P(12, 2), P(11, 0), P(2, 3), null, null];
+  let active = 5;
+
+  const toCard = (id) => [Math.floor(id / 4) + 2, id % 4];
+  const rankLabel = (r) => RANK_LABEL[r] || String(r);
+  const faceHTML = (id) => {
+    const [r, s] = toCard(id);
+    const red = s === 1 || s === 2 ? " red" : "";
+    return `<span class="face${red}"><span class="r">${rankLabel(r)}</span><span class="s">${SUIT_SYM[s]}</span></span>`;
+  };
+  const cardName = (id) => { const [r, s] = toCard(id); return `${rankLabel(r)} of ${SUIT_NAME[s]}`; };
+
+  function renderSlots() {
+    const make = (i, hint, extra) => {
+      const id = spots[i];
+      const cls = ["slot", id != null ? "filled" : "", i === active ? "active" : "", extra || ""].join(" ");
+      const inner = id != null ? faceHTML(id) : `<span class="hint">${hint}</span>`;
+      const label = id != null ? `${cardName(id)}, tap to remove` : `Empty: ${hint}`;
+      return `<button type="button" class="${cls}" data-i="${i}" aria-label="${label}">${inner}</button>`;
+    };
+    $("handSlots").innerHTML = make(0, "card") + make(1, "card");
+    $("boardSlots").innerHTML = make(2, "flop") + make(3, "flop") + make(4, "flop") +
+      make(5, "turn", "gap") + make(6, "river", "gap");
+  }
+
+  function renderPicker() {
+    const used = new Map(spots.map((id, i) => [id, i]).filter(([id]) => id != null));
+    let html = "";
+    for (const s of SUIT_ORDER) for (const r of RANKS) {
+      const id = P(r, s);
+      const cls = used.has(id) ? (used.get(id) < 2 ? "pick used mine" : "pick used") : "pick";
+      html += `<button type="button" class="${cls}" data-id="${id}" aria-label="${cardName(id)}${used.has(id) ? ", in use" : ""}">${faceHTML(id)}</button>`;
+    }
+    $("picker").innerHTML = html;
+  }
+
+  function nextEmpty(from) {
+    for (let k = 0; k < 7; k++) { const i = (from + k) % 7; if (spots[i] == null) return i; }
+    return -1;
+  }
+
+  $("handSlots").parentElement.parentElement.addEventListener("click", (e) => {
+    const b = e.target.closest(".slot"); if (!b) return;
+    const i = +b.dataset.i;
+    if (spots[i] != null) spots[i] = null;
+    active = i;
+    update();
+  });
+
+  $("picker").addEventListener("click", (e) => {
+    const b = e.target.closest(".pick"); if (!b) return;
+    const id = +b.dataset.id;
+    const at = spots.indexOf(id);
+    if (at >= 0) { spots[at] = null; active = at; update(); return; }
+    if (active < 0 || spots[active] != null) active = nextEmpty(0);
+    if (active < 0) return;
+    spots[active] = id;
+    active = nextEmpty(active);
+    update();
+  });
+
+  $("newHand").addEventListener("click", () => { spots = spots.map(() => null); active = 0; update(); });
+  $("clearBoard").addEventListener("click", () => { for (let i = 2; i < 7; i++) spots[i] = null; active = spots[0] == null ? 0 : spots[1] == null ? 1 : 2; update(); });
+
+  const num = (id) => { const v = parseFloat($(id).value); return Number.isFinite(v) ? v : null; };
+  ["pot", "toCall", "stack", "bb", "opponents"].forEach((id) => $(id).addEventListener("input", schedule));
+  const setOpp = (d) => { const v = Math.min(8, Math.max(1, (num("opponents") || 1) + d)); $("opponents").value = v; schedule(); };
+  $("oppMinus").addEventListener("click", () => setOpp(-1));
+  $("oppPlus").addEventListener("click", () => setOpp(1));
+  $("quick").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    const f = +b.dataset.f;
+    const pot = num("pot") || 0, toCall = num("toCall") || 0;
+    const before = Math.max(pot - toCall, 0) || pot;
+    const bet = Math.round(before * f * 100) / 100;
+    $("toCall").value = bet; $("pot").value = Math.round((before + bet) * 100) / 100;
+    schedule();
+  });
+
+  let timer = null;
+  function schedule() { clearTimeout(timer); timer = setTimeout(compute, 120); }
+
+  function update() { renderSlots(); renderPicker(); schedule(); }
+
+  const pct = (x) => `${Math.round(x * 100)}%`;
+  const fmt = (x) => String(+x.toFixed(2));
+  const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const STREET_NAME = { 0: "Preflop", 3: "Flop", 4: "Turn", 5: "River" };
+
+  function showMessage(msg) {
+    $("verdict").removeAttribute("data-a");
+    $("verdictBody").innerHTML = `<p class="waiting">${msg}</p>`;
+    $("miniCall").hidden = true;
+  }
+
+  function compute() {
+    const hole = spots.slice(0, 2).filter((x) => x != null).map(toCard);
+    const board = spots.slice(2).filter((x) => x != null).map(toCard);
+    $("street").textContent = STREET_NAME[board.length] || `${board.length} board cards`;
+    const filledAll = spots.some((x) => x != null);
+    $("tip").textContent = active >= 0
+      ? (active < 2 ? "Pick your card from the deck below." : `Pick the ${active < 5 ? "flop" : active === 5 ? "turn" : "river"} card, or leave the board empty for preflop.`)
+      : "All cards placed. Tap any card to change it.";
+    if (!filledAll) $("tip").textContent = "Tap a card spot, then pick a card below.";
+
+    if (hole.length < 2) return showMessage("Pick your two cards to get a call.");
+    if (board.length === 1 || board.length === 2) {
+      return showMessage(`The flop is three cards: add ${3 - board.length} more, or clear the board for preflop.`);
+    }
+    const pot = num("pot"), toCall = num("toCall") ?? 0, bb = num("bb") || 1;
+    const stack = num("stack"), opponents = Math.min(8, Math.max(1, Math.round(num("opponents") || 1)));
+    if (pot == null) return showMessage("Enter the pot size.");
+    let d;
+    try {
+      d = E.decide({ hole, board, pot, toCall, opponents, stack, bigBlind: bb, iterations: 10000 });
+    } catch (err) {
+      return showMessage(esc(err.message) + ".");
+    }
+    const fairShare = 1 / (opponents + 1), raiseLine = fairShare + (1 - fairShare) * 0.35;
+    const amountText = d.action === "CHECK" || d.action === "FOLD" ? ""
+      : `put in ${fmt(d.amount)}`;
+    $("verdict").dataset.a = d.action;
+    $("verdictBody").innerHTML = `
+      <div style="display:grid;gap:14px">
+        <div class="action-line"><span class="action">${d.action === "RAISE" && toCall === 0 ? "BET" : d.action}</span><span class="amount">${amountText}</span></div>
+        <p class="hand">${esc(d.hand)}</p>
+        <div class="meter">
+          <div class="bar" role="img" aria-label="Win chance ${pct(d.equity)}, needed ${pct(d.potOdds)}, raise line ${pct(raiseLine)}">
+            <div class="fill" style="width:${(d.equity * 100).toFixed(1)}%"></div>
+            ${toCall > 0 ? `<div class="tick" style="left:calc(${(d.potOdds * 100).toFixed(1)}% - 1px)"></div>` : ""}
+            <div class="tick raise" style="left:calc(${(raiseLine * 100).toFixed(1)}% - 1px)"></div>
+          </div>
+          <div class="legend">
+            <span>Win chance <b>${pct(d.equity)}</b></span>
+            ${toCall > 0 ? `<span><i class="key"></i>Needed to call <b>${pct(d.potOdds)}</b></span>` : ""}
+            <span><i class="key raise"></i>Raise line <b>${pct(raiseLine)}</b></span>
+            <span>Opponents on <b>top ${pct(d.opponentRange)}</b></span>
+          </div>
+        </div>
+        <ul class="reasons">${d.reasons.map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
+      </div>`;
+    const mini = $("miniCall");
+    mini.hidden = false; mini.dataset.a = d.action;
+    mini.textContent = (d.action === "RAISE" && toCall === 0 ? "BET" : d.action) + (amountText ? " " + fmt(d.amount) : "");
+  }
+
+  update();
+})();
+</script>
